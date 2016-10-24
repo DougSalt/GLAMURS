@@ -1,0 +1,1364 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#"
+     xml:base="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviourOrBehaviourPattern -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviourOrBehaviourPattern">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeProperty"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has associated behaviour or behavioural pattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviouralDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviouralDomain">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviourOrBehaviourPattern"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has associated behavioural impact on well-being</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasBarrierOrMotivationToMembership -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasBarrierOrMotivationToMembership">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasMembershipAspect"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BarriersToMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has barrier or motivation to membership</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasBehaviourDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasBehaviourDomain">
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has behaviour domain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasConceptsOfSustainability -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasConceptsOfSustainability">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSocialAndPersonalBackground"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConceptsOfSustainability"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has concept of sustainability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasCurrentGovernanceAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasCurrentGovernanceAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasFutureOrCurrentGovernanceAspect"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfCurrentGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has current governance aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasEducationOrExperience -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasEducationOrExperience">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSocialAndPersonalBackground"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EducationOrExperience"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has education or experience</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasEngagementInInitiativeAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasEngagementInInitiativeAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasMembershipAspect"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfEngagementInInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has engagement in initiative aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasFutureOrCurrentGovernanceAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasFutureOrCurrentGovernanceAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeProperty"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has future or current governance aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasHinderingFactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasHinderingFactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviourOrBehaviourPattern"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#HinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has hindering factor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasImpactOnLifestyleAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasImpactOnLifestyleAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasMembershipAspect"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has impact on lifestyle aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Initiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has initiative property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeRelatedImpactOnWellbeing -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeRelatedImpactOnWellbeing">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasWellBeingProperty"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InitiativeRelatedImpactOnWellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has initiative related impact on well-being</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasMembershipAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasMembershipAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeProperty"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has membership aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasNegativeChangeOnWellbeing -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasNegativeChangeOnWellbeing">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasWellBeingProperty"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#NegativeChangeOnWellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has negative change on well-being</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasPersonalAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasPersonalAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSocialAndPersonalBackground"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has personal aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasPoliticalEngagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasPoliticalEngagement">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSocialAndPersonalBackground"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalEngagement"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has political engagement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasPositiveChangeOnWellBeing -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasPositiveChangeOnWellBeing">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasWellBeingProperty"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PositiveChangeOnWellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has positive change of well-being</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSocialAndPersonalBackground -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSocialAndPersonalBackground">
+        <rdfs:domain rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has social and personal background</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSupportingFactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasSupportingFactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviourOrBehaviourPattern"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has supporting factor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasTimeRelatedBehaviour -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasTimeRelatedBehaviour">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasAssociatedBehaviourOrBehaviourPattern"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeRelatedBehaviour"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has time related behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasUnits -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasUnits">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#isForPeriodOfTime"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Measurement"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has units</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasWellBeingProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasWellBeingProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasInitiativeProperty"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has well-being property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#isForPeriodOfTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#isForPeriodOfTime">
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PeriodOfTime"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is for period of time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#isMemberOfInitiative -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#isMemberOfInitiative">
+        <rdfs:domain rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Initiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is a member of the initiative</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#mayHaveFutureGovernanceAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#mayHaveFutureGovernanceAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#hasFutureOrCurrentGovernanceAspect"/>
+        <rdfs:range rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may have future governance aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Adult -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person"/>
+        <owl:disjointWith rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Age -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Age">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalAspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AgeOfKids -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AgeOfKids">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalAspect"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age of kids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AimsOfTheIniative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AimsOfTheIniative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConceptsOfSustainability"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge of aims of the iniative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfCurrentGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfCurrentGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of current governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfEngagementInInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfEngagementInInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engagement in the initiative aspect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of future or better governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfGovernance">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of membership of the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Attitude -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Attitude">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BadHabits -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BadHabits">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bad habit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BadPracticeInInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BadPracticeInInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfEngagementInInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bad practice in the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BarriersToMembershipOfInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BarriersToMembershipOfInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation or barrier to membership of the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour or behavioural pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Belief -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Belief">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BetterManagerialGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BetterManagerialGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Better managerial governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ChangeInPerceptionsOfGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ChangeInPerceptionsOfGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfCurrentGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change in perceptions of governanace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Child -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Child">
+        <owl:equivalentClass rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Kid"/>
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ChildhoodEducation -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ChildhoodEducation">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Childhood education</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ChildhoodExperience -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ChildhoodExperience">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Childhood experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CognitiveEffort -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CognitiveEffort">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive effort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Communication -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConceptsOfSustainability -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConceptsOfSustainability">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concepts of sustainability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConceptualisationOfGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConceptualisationOfGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfCurrentGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptualisation of governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictOrCopingBehaviour -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictOrCopingBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict or coping behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictOrCopingBehaviour"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict trigger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictingMoralValue -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictingMoralValue">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflicting moral value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Consumption -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Consumption">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Copes -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Copes">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictOrCopingBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CopingByAction -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CopingByAction">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Copes"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copes by action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CopingByNoConflict -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CopingByNoConflict">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Copes"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copes by no conflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CopingByThinking -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CopingByThinking">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Copes"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copes by thinking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CreationOfConflictDueToInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CreationOfConflictDueToInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict created due to initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CurrentGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#CurrentGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfCurrentGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Current governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#DisillusionWithGovernace -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#DisillusionWithGovernace">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfCurrentGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disillusion with governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Displeasure -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Displeasure">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EmotionRelatedToAConflictOrDilemmaOrCoping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Education -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Education">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EducationOrExperience -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EducationOrExperience">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education or experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EffectOnBehaviourDueToInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EffectOnBehaviourDueToInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural effect due to initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EffectOnCopingWithConflictDueToInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EffectOnCopingWithConflictDueToInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A coping with conflict due to the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EffectOnLifestyleDueToInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EffectOnLifestyleDueToInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An increase in conflict due to the initative</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifestyle effect due to initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EmotionRelatedToAConflictOrDilemmaOrCoping -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EmotionRelatedToAConflictOrDilemmaOrCoping">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictOrCopingBehaviour"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emotion related to either conflict or coping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EmotionalImpact -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EmotionalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InitiativeRelatedImpactOnWellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emotional impact on well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Energy -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExperienceOfPoliticalConditions -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExperienceOfPoliticalConditions">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalEngagement"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experience of political conditions in the past</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalHinderingFactor -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalHinderingFactor">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#HinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External hindering factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupport -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupport">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupportingFactor -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupportingFactor">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External supporting factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#FamilyStatus -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#FamilyStatus">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalAspect"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Food -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Food">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#FutureOrientation -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#FutureOrientation">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Future orientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#GoodPracticeInInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#GoodPracticeInInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfEngagementInInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Good practice in the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#GovernanceOriginatingFromACommunity -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#GovernanceOriginatingFromACommunity">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Governance originating from a community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Habit -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Habit">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#HinderingFactor -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#HinderingFactor">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hindering factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#HinderingInfrastructure -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#HinderingInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalHinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hindering infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Housing -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Housing">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Idea -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Idea">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An impact on lifestyle due to initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#IncreaseOfConflictDueToInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#IncreaseOfConflictDueToInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ImpactOnLifestyleDueToInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Increase in conflict due to the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Individual -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Individual">
+        <owl:equivalentClass rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InformationAccessibility -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InformationAccessibility">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information accessibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InformationAvailability -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InformationAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Initiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Initiative"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InitiativeRelatedImpactOnWellBeing -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InitiativeRelatedImpactOnWellBeing">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initiative-related impact on well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InsufficientMoney -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InsufficientMoney">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insufficient time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InsufficientTime -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InsufficientTime">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insufficient time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalHinderingFactor -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalHinderingFactor">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#HinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal hindering factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal supporting factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Kid -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Kid">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LackOfKnowledge -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LackOfKnowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalHinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lack of knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LackOfPower -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LackOfPower">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lack of power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LackOfSkill -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LackOfSkill">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalHinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lack of skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Laziness -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Laziness">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LifestyleSatisfactionImpact -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#LifestyleSatisfactionImpact">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InitiativeRelatedImpactOnWellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifestyle satisfaction impact on well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Measurement -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Measurement"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Mobility -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Mobility">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MoreEducation -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MoreEducation">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MoreInformation -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MoreInformation">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MoreRadicalGovernance -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MoreRadicalGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More radical governance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Motivation -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Motivation">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MotivationToJoinInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MotivationToJoinInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BarriersToMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation to join the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MotivationToStayInvolvedWithIniative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#MotivationToStayInvolvedWithIniative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BarriersToMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation to stay involved with the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#NegativeChangeOnWellBeing -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#NegativeChangeOnWellBeing">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative change on well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#NoSupport -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#NoSupport">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalHinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ObstacleToJoiningTheInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ObstacleToJoiningTheInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BarriersToMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obstacle to joining the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ObstacleToRemainingWithInitiative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ObstacleToRemainingWithInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BarriersToMembershipOfInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obstacle to reamaining with the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Occupation -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Occupation">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalAspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#OriginatingFromAnIndividual -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#OriginatingFromAnIndividual">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfFutureOrBetterGovernance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#OverlyComplex -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#OverlyComplex">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalHinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Overly complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PeriodOfTime -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PeriodOfTime">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalAspect -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalAspect">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Aspect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalDevelopmentalImpact -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalDevelopmentalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InitiativeRelatedImpactOnWellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal development impact on well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Pleasure -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Pleasure">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EmotionRelatedToAConflictOrDilemmaOrCoping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalActitivity -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalActitivity">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Politcal Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalEngagement -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalEngagement">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political engagement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PositiveChangeOnWellBeing -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PositiveChangeOnWellBeing">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Positive change on well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PreviousPoliticalEngagement -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PreviousPoliticalEngagement">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalEngagement"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Previous political engagement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Pride -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Pride">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EmotionRelatedToAConflictOrDilemmaOrCoping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ProfessionalKnowledge -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ProfessionalKnowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professional knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ReferenceToPoliticalBiography -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ReferenceToPoliticalBiography">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PoliticalEngagement"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference to a political biography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RelevantEducation -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RelevantEducation">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EducationOrExperience"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant education</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RelevantExperience -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RelevantExperience">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EducationOrExperience"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RelevantTraning -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RelevantTraning">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#EducationOrExperience"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ResdienceInRelationToWorkPlace -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ResdienceInRelationToWorkPlace">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PersonalAspect"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation of residence to work place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RoleInInitative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#RoleInInitative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfEngagementInInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role in the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social and personal background</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialImpact -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialImpact">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InitiativeRelatedImpactOnWellBeing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social impact on well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialPeerPressure -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialPeerPressure">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ConflictTrigger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social peer pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SupportingFactor -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SupportingFactor">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supporting factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SupportingInfrastructure -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SupportingInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalSupportingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supporting infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SustainableBehaviour -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SustainableBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sustainable behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeManagementIssue -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeManagementIssue">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeRelatedBehaviour"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time management issue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeRelatedBehaviour -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeRelatedBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time related behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeScarcity -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeScarcity">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeRelatedBehaviour"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time scarcity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeStress -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeStress">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeRelatedBehaviour"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeUsedForTheInitative -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#TimeUsedForTheInitative">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfEngagementInInitiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time used for the initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#UnavailableLand -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#UnavailableLand">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#ExternalHinderingFactor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unavailable land</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#UnitOfTime -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#UnitOfTime">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#PeriodOfTime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Value -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Value">
+        <rdfs:subClassOf rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#InternalSupportingFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing -->
+
+    <owl:Class rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Well-being</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

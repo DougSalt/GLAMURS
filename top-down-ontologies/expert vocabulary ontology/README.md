@@ -1,0 +1,1 @@
+This directory contains the ontology for the expert vocabulary. This is the combination of the top 200 word groups (terminology of 2 to 3 words) that have the highest combined familiarity and frequency. The familiarity in this case is defined using the corresponding property for that word in [WordNet](https://wordnet.princeton.edu/).

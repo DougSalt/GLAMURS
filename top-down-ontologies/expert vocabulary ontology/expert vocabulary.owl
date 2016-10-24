@@ -1,0 +1,1662 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:top-down-common="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms">
+        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en">#Methodology
+
+Blurb about how these terms were obtained.</rdfs:comment>
+        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#placeAttachment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#placeAttachment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#placeIdentity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#placeIdentity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#socialCapital -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#socialCapital">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#collectiveActionProblem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#collectiveActionProblem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#economicGrowth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#economicGrowth">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#environmentalImpactAssessment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#environmentalImpactAssessment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#finalDemand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#finalDemand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#hasWaterFootprint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#hasWaterFootprint">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#indirectEnergy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#indirectEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#materialFootPrint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#materialFootPrint">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#materialFootprint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#materialFootprint">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#openSpace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#openSpace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#timePressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#timePressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#timeUse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#timeUse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#travelMode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#travelMode">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#waterFootprint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#waterFootprint">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#BehaviourChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#BehaviourChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Behaviour change</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CapabilityApproach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CapabilityApproach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CriticalAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CriticalAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Economy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnergyDemand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnergyDemand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy"/>
+        <rdfs:label xml:lang="en">Energy demand</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energyDemand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnergyProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnergyProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy"/>
+        <rdfs:label xml:lang="en">Energy production</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energyProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnergySaving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnergySaving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy"/>
+        <rdfs:label xml:lang="en">Energy saving</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energySaving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#FocusGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#FocusGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#GreenEconomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#GreenEconomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy"/>
+        <rdfs:label xml:lang="en">Green Economy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenEconomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#LifeCycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#LifeCycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#LifestyleChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#LifestyleChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#NetworkAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#NetworkAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PostiveFeedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PostiveFeedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PublicGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PublicGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#ReboundEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#ReboundEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SocialIdentityTheory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SocialIdentityTheory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#TimeManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#TimeManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#TravelBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#TravelBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#reenGrowth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#reenGrowth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <rdfs:label rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <rdfs:label xml:lang="en">Green growth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">A persistent change in the pattern of behaviour of an agent or system.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Behaviour change is a term that tends to be used to refer to the study of how individual behaviour do or may (or may not) change in a number of different domain areas - including e.g. health, environment, etc..</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:agentBasedModelling"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:artificialIntelligence"/>
+        <rdfs:label xml:lang="en">Behaviour change</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A persistent change in the pattern of behaviour of an agent or system.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Behaviour change is a term that tends to be used to refer to the study of how individual behaviour do or may (or may not) change in a number of different domain areas - including e.g. health, environment, etc..</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:agentBasedModelling"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:behaviourChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:artificialIntelligence"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:developmentStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:comment xml:lang="en">A capability approach is an analytical perspective that looks at people&apos;s freedoms (effective opportunities) to do something or be something.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The CA was developed by the economist and philosopher Amartya Sen as a critique to standard welfare economics, but also with the aim of proposing an alternative method for descriptive,  prospective, and evaluative analyses. Within this framework, the ultimate goal of development is good human life, expressed through the enhancement of oneâ€™s capability set (Sen 1999). A good life thus goes beyond the notion of achieving specific functionings by including the freedom to achieve them.</rdfs:comment>
+        <rdfs:label xml:lang="en">Capability approach</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A capability approach is an analytical perspective that looks at people&apos;s freedoms (effective opportunities) to do something or be something.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">The CA was developed by the economist and philosopher Amartya Sen as a critique to standard welfare economics, but also with the aim of proposing an alternative method for descriptive,  prospective, and evaluative analyses. Within this framework, the ultimate goal of development is good human life, expressed through the enhancement of oneâ€™s capability set (Sen 1999). A good life thus goes beyond the notion of achieving specific functionings by including the freedom to achieve them.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:developmentStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:capabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:caseStudyRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:caseStudyRegion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">The regions in which the case studies took place. These were
+
+1. The region of Lazio (Italy)
+2. The region of Rotterdam-Delft-The Hague (Netherlands)
+3. The region of the Danube-Bohemian Forest (Austria)
+4. The region of Banat-Timis (Romania)
+5. The region of Central Germany (Germany)
+6. The region of Aberdeenshire (Scotland)
+7. The region of Galicia (Spain)</rdfs:comment>
+        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://glamurs.eu/case-studies/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Case study region</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:choiceModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:choiceModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:comment xml:lang="en">A model that attempts to depict the decision making process of an individual or a group in a particular context.</rdfs:comment>
+        <rdfs:label xml:lang="en">Choice model</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:choiceModel"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:choiceModel"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A model that attempts to depict the decision making process of an individual or a group in a particular context.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:collectiveAction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:collectiveAction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sociology"/>
+        <top-down-common:partOfDiscipline xml:lang="en">term associated with management of public goods. a situation where everyone benefits from the action but the cost of making it is too high for an individual on its own to do it. the solution is collective action and sharing of the cost amongst individuals.</top-down-common:partOfDiscipline>
+        <rdfs:label xml:lang="en">Collective action</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:collectiveAction"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:collectiveAction"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:collectiveAction"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget xml:lang="en">term associated with management of public goods. a situation where everyone benefits from the action but the cost of making it is too high for an individual on its own to do it. the solution is collective action and sharing of the cost amongst individuals.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:criticalAnalysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:criticalAnalysis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:comment xml:lang="en">Critical analysis is here understood in a common sense way, expressing an analysis (here meant at a conceptual/theoretical level) characterised by a  sceptical stance, open to contestation and critical enquiry rather than (uncritical) affirmation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Critical analysis</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:criticalAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:criticalAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:criticalAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:criticalAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Critical analysis is here understood in a common sense way, expressing an analysis (here meant at a conceptual/theoretical level) characterised by a  sceptical stance, open to contestation and critical enquiry rather than (uncritical) affirmation.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicGrowth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicGrowth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline xml:lang="en">The increase in the production potential of a given economy, typically reflected in the increase in gross domestic product (gdp), after adjusting for inflation.</top-down-common:partOfDiscipline>
+        <rdfs:comment xml:lang="en">Economic growth means that the gross national product, which is the monetary value of all goods and services produced, increases from one year to the other. The value only comprises of goods and services which are traded in the market.</rdfs:comment>
+        <rdfs:label xml:lang="en">Economic growth</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget xml:lang="en">The increase in the production potential of a given economy, typically reflected in the increase in gross domestic product (gdp), after adjusting for inflation.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Economic growth means that the gross national product, which is the monetary value of all goods and services produced, increases from one year to the other. The value only comprises of goods and services which are traded in the market.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicSystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:comment xml:lang="en">A system describes a relation of objects. Economic system the most important objects which influence the economy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Economic system</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicSystem"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:economicSystem"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A system describes a relation of objects. Economic system the most important objects which influence the economy.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energyDemand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energyDemand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:label xml:lang="en">Energy demand</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energyProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energyProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:label xml:lang="en">Energy production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energySaving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:energySaving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:label xml:lang="en">Energy saving</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:comment xml:lang="en">The quantification of the environmental resources consumed and the emissions caused by of a unit of analysis (e.g. a person over the course of a year , a product,  a process, policy, a country, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">Environment impact assessment</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:environmentalImpactAssessment"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">The quantification of the environmental resources consumed and the emissions caused by of a unit of analysis (e.g. a person over the course of a year , a product,  a process, policy, a country, etc.).</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:finalDemand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:finalDemand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:comment xml:lang="en">Term used to designate the demand for goods/services by consumers as opposed to demand for output from one sector to another sector(i.e. intermediate demand).</rdfs:comment>
+        <rdfs:label xml:lang="en">Final demand</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:finalDemand"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:finalDemand"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Term used to designate the demand for goods/services by consumers as opposed to demand for output from one sector to another sector(i.e. intermediate demand).</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:focusGroup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:focusGroup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:comment xml:lang="en">Focus groups, or more precisely: focus group discussions, are a method for the collection of qualitative data. They are based on facilitated discussions within a group of people, where the participants engage in a debate with each other on a topic introduced by the facilitator.</rdfs:comment>
+        <rdfs:label xml:lang="en">Focus group</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:focusGroup"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:focusGroup"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:focusGroup"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:focusGroup"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Focus groups, or more precisely: focus group discussions, are a method for the collection of qualitative data. They are based on facilitated discussions within a group of people, where the participants engage in a debate with each other on a topic introduced by the facilitator.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenEconomy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenEconomy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:ecologicalEconomics"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">The green economy is defined as an economy that aims at reducing environmental risks and ecological scarcities, and that aims for sustainable development without degrading the environment. It is closely related with ecological economics, but has a more politically applied focus. The 2011 UNEP Green Economy Report argues &quot;that to be green, an economy must not only be efficient, but also fair. Fairness implies recognising global and country level equity dimensions, particularly in assuring a just transition to an economy that is low-carbon, resource efficient, and socially inclusive</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>https://en.wikipedia.org/wiki/Green_economy</rdfs:isDefinedBy>
+        <rdfs:label>Green economy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenEconomy"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:ecologicalEconomics"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Green_economy</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:foresight"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:macroEconomics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:policy"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sustainabilityTransitions"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:technologyStudies"/>
+        <rdfs:comment xml:lang="en">Green growth is a term to describe a path of economic growth that uses natural resources in a sustainable manner. It is used globally to provide an alternative concept to typical industrial economic growth. It assumes that our environmental impact can be reduced by sustainable innovation and green technologies</rdfs:comment>
+        <rdfs:comment xml:lang="en">Green growth is defined by OECD as &quot;fostering economic growth and development, while ensuring that natural assets continue to provide the resources and environmental services on which our well-being relies.&quot; Compared to the conventional concept of economic growth, which is narrowly defined as the increase of an economy&apos;s capacity to produce goods and services, the concept of green growth in addition emphasizes the sustainability in natural resources and environmental services provision.  
+
+OECD (2016): What is green growth and how can it help deliver sustainable development? Retrieved June 30, 2016, from http://www.oecd.org/greengrowth/whatisgreengrowthandhowcanithelpdeliversustainabledevelopment.htm</rdfs:comment>
+        <rdfs:label xml:lang="en">Green growth</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:foresight"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:macroEconomics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TSC"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:policy"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sustainabilityTransitions"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:technologyStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Green growth is a term to describe a path of economic growth that uses natural resources in a sustainable manner. It is used globally to provide an alternative concept to typical industrial economic growth. It assumes that our environmental impact can be reduced by sustainable innovation and green technologies</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:greenGrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Green growth is defined by OECD as &quot;fostering economic growth and development, while ensuring that natural assets continue to provide the resources and environmental services on which our well-being relies.&quot; Compared to the conventional concept of economic growth, which is narrowly defined as the increase of an economy&apos;s capacity to produce goods and services, the concept of green growth in addition emphasizes the sustainability in natural resources and environmental services provision.  
+
+OECD (2016): What is green growth and how can it help deliver sustainable development? Retrieved June 30, 2016, from http://www.oecd.org/greengrowth/whatisgreengrowthandhowcanithelpdeliversustainabledevelopment.htm</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TSC"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:comment xml:lang="en">Energy embodied in the life cycle of a product or service excluding the use phase.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The amount of energy embodied in the production and distribution of products before they reach their final consumers</rdfs:comment>
+        <rdfs:label xml:lang="en">Indirect energy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Energy embodied in the life cycle of a product or service excluding the use phase.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:indirectEnergy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">The amount of energy embodied in the production and distribution of products before they reach their final consumers</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:comment xml:lang="en">All the stages of a product&apos;s life from cradle to grave (i.e., from raw material extraction through materials processing, manufacture, distribution, use, repair and maintenance, and disposal or recycling).</rdfs:comment>
+        <rdfs:label xml:lang="en">Life cycle</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeCycle"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">All the stages of a product&apos;s life from cradle to grave (i.e., from raw material extraction through materials processing, manufacture, distribution, use, repair and maintenance, and disposal or recycling).</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeSatistfaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifeSatistfaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:isDefinedBy>Life satisfaction is the way persons evaluate their lives and how they feel about their directions and options for the future.[1] It is a measure of well-being and may be assessed in terms of mood, satisfaction with relations with others and with achieved goals, self-concepts, and self-perceived ability to cope with daily life. It is having a favorable attitude of one&apos;s life as a whole rather than an assessment of current feelings. Life satisfaction has been measured in relation to economic standing, amount of education, experiences, and residence, as well as many other topics</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Life_satisfaction</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Life satisfaction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifestyleChange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifestyleChange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">Related to &apos;behaviour change&apos;.  The act of intentionally trying to change one&apos;s lifestyle</rdfs:comment>
+        <rdfs:label xml:lang="en">Lifestyle change</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifestyleChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:lifestyleChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Related to &apos;behaviour change&apos;.  The act of intentionally trying to change one&apos;s lifestyle</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialConsumption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialConsumption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:label xml:lang="en">Material consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:comment xml:lang="en">The full material requirements of an individual, process, country, etc. measured in weight (e.g. tons)</rdfs:comment>
+        <rdfs:label xml:lang="en">Material footprint</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:materialFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">The full material requirements of an individual, process, country, etc. measured in weight (e.g. tons)</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:networkAnalysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:networkAnalysis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:comment xml:lang="en">Network analysis, here understood as social network analysis, is an investigation of social structures, social relationships and flows (eg of information),often using specific network- and graph-theoretical frameworks.</rdfs:comment>
+        <rdfs:label xml:lang="en">Network analysis</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:networkAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:networkAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:networkAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:networkAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Network analysis, here understood as social network analysis, is an investigation of social structures, social relationships and flows (eg of information),often using specific network- and graph-theoretical frameworks.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:openSpace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:openSpace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">Something like &quot;a section of publicly accessible land with no buildings on it.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">Open space</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:openSpace"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:openSpace"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Something like &quot;a section of publicly accessible land with no buildings on it.&quot;</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeAttachment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeAttachment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:comment xml:lang="en">An ongoing relationship (i.e. emotional attachment) between individuals, and a particular place.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Place attachment is an emotional bond between person and place.</rdfs:comment>
+        <rdfs:label xml:lang="en">Place attachment</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeAttachment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeAttachment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeAttachment"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeAttachment"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">An ongoing relationship (i.e. emotional attachment) between individuals, and a particular place.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeAttachment"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Place attachment is an emotional bond between person and place.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeIdentity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeIdentity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:comment xml:lang="en">Place identity can be understood in two ways:
+
+1. As an identity ascribed by people to a place
+2. As those parts of a person&apos;s identity that are connected to a specific place. 
+
+The term is usually used in the latter sense.</rdfs:comment>
+        <rdfs:label xml:lang="en">Place identity</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeIdentity"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeIdentity"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeIdentity"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:placeIdentity"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Place identity can be understood in two ways:
+
+1. As an identity ascribed by people to a place
+2. As those parts of a person&apos;s identity that are connected to a specific place. 
+
+The term is usually used in the latter sense.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:positiveFeedback -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:positiveFeedback">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">As it goes, the definition in the glossary is technically correct (if one sees the world as a collection of variables), but I think it could be generalized by saying that positive feedback is a response of a given system to a particular behaviour that encourages such a behaviour within that system to continue or grow.</rdfs:comment>
+        <rdfs:label xml:lang="en">Positive feeback</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:positiveFeedback"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:positiveFeedback"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">As it goes, the definition in the glossary is technically correct (if one sees the world as a collection of variables), but I think it could be generalized by saying that positive feedback is a response of a given system to a particular behaviour that encourages such a behaviour within that system to continue or grow.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:publicGood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:publicGood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:comment xml:lang="en">A good with the following two properties: non-excludability and non-rivalrous consumption. Non-excludability means that individuals cannot be excluded from consuming the good once it is provided.  Non-rivalrous consumption means that one individual&apos;s consumption of the good does not reduce the availability of the good to other individuals. In reality there are varying degrees of &apos;public&apos; goods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Public good</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:publicGood"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:publicGood"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A good with the following two properties: non-excludability and non-rivalrous consumption. Non-excludability means that individuals cannot be excluded from consuming the good once it is provided.  Non-rivalrous consumption means that one individual&apos;s consumption of the good does not reduce the availability of the good to other individuals. In reality there are varying degrees of &apos;public&apos; goods.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">I think in economics, the rebound effect refers to the process whereby technological improvements reduces the incentive to cut consumption (or something like that). The terms rebound is also used in psychology in relation to thought suppression (i.e. the act of suppression making it more likely that those thoughts will be more cognitively accessible, and therefore more likely to be recalled at higher frequency, etc..)</rdfs:comment>
+        <rdfs:comment xml:lang="en">In conservation and energy economics, the rebound effect (or take-back effect, RE) is the reduction in expected gains from new technologies that increase the efficiency of resource use, because of behavioral or other systemic responses. These responses usually tend to offset the beneficial effects of the new technology or other measures taken. While the literature on the rebound effect generally focuses on the effect of technological improvements on energy consumption, the theory can also be applied to the use of any natural resource or other input, such as labor. The rebound effect is generally expressed as a ratio of the lost benefit compared to the expected environmental benefit when holding consumption constant. (from Wikipedia)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:label xml:lang="en">Rebound effect</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">I think in economics, the rebound effect refers to the process whereby technological improvements reduces the incentive to cut consumption (or something like that). The terms rebound is also used in psychology in relation to thought suppression (i.e. the act of suppression making it more likely that those thoughts will be more cognitively accessible, and therefore more likely to be recalled at higher frequency, etc..)</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">In conservation and energy economics, the rebound effect (or take-back effect, RE) is the reduction in expected gains from new technologies that increase the efficiency of resource use, because of behavioral or other systemic responses. These responses usually tend to offset the beneficial effects of the new technology or other measures taken. While the literature on the rebound effect generally focuses on the effect of technological improvements on energy consumption, the theory can also be applied to the use of any natural resource or other input, such as labor. The rebound effect is generally expressed as a ratio of the lost benefit compared to the expected environmental benefit when holding consumption constant. (from Wikipedia)</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:reboundEffect"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialCapital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialCapital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:label xml:lang="en">Social capital</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialCapital"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialCapital"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialCapital"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialIdentityTheory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialIdentityTheory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:comment xml:lang="en">A social identity is the portion of an individual&apos;s self-concept derived from perceived membership in a relevant social group.Social identity theory is best described as a theory that predicts certain intergroup behaviours on the basis of perceived group status differences, the perceived legitimacy and stability of those status differences, and the perceived ability to move from one group to another.[3][5] This contrasts with occasions where the term &quot;social identity theory&quot; is used to refer to general theorizing about human social selves. (From Wikipedia)</rdfs:comment>
+        <rdfs:label xml:lang="en">Social identity theory</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialIdentityTheory"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A social identity is the portion of an individual&apos;s self-concept derived from perceived membership in a relevant social group.Social identity theory is best described as a theory that predicts certain intergroup behaviours on the basis of perceived group status differences, the perceived legitimacy and stability of those status differences, and the perceived ability to move from one group to another.[3][5] This contrasts with occasions where the term &quot;social identity theory&quot; is used to refer to general theorizing about human social selves. (From Wikipedia)</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialIdentityTheory"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalPsychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialIdentityTheory"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:environmentalSociology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialIdentityTheory"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:governanceStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialInfluence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialInfluence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">The influence of one person or groups behavior or opinions on another persons behaviour or opinions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social influence</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialInfluence"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialInfluence"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">The influence of one person or groups behavior or opinions on another persons behaviour or opinions.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialNetwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialNetwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Missing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sociology"/>
+        <rdfs:isDefinedBy xml:lang="en">A social network is a social structure made up of a set of social actors (such as individuals or organizations), sets of dyadic ties, and other social interactions between actors. The social network perspective provides a set of methods for analyzing the structure of whole social entities as well as a variety of theories explaining the patterns observed in these structures. The study of these structures uses social network analysis to identify local and global patterns, locate influential entities, and examine network dynamics.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Social_network</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Social network</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:socialNetwork"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sociology"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Social_network</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:technologicalChange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:technologicalChange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:foresight"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:technologyStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transitionManagement"/>
+        <rdfs:comment xml:lang="en">Technological change is any change in technology. In economics it is seen as the outcome of processes of invention, innovation, commercialisation and diffusion. In backcasting technological changes are those changes involving technology and knowledge that are needed to bring about an envisaged desirable future vision</rdfs:comment>
+        <rdfs:label xml:lang="en">Technological change</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:technologicalChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:foresight"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:technologicalChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:technologicalChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:technologyStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:technologicalChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transitionManagement"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:technologicalChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Technological change is any change in technology. In economics it is seen as the outcome of processes of invention, innovation, commercialisation and diffusion. In backcasting technological changes are those changes involving technology and knowledge that are needed to bring about an envisaged desirable future vision</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">The process of deciding how to schedule activities over a set period of time. Time management is often used as a term to indicate a particular style of management - i.e. it is the stuff of popular business psychology airport books!</rdfs:comment>
+        <rdfs:label xml:lang="en">Time management</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeManagement"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeManagement"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">The process of deciding how to schedule activities over a set period of time. Time management is often used as a term to indicate a particular style of management - i.e. it is the stuff of popular business psychology airport books!</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timePressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timePressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">In the glossary, the term is given for &quot;perceived time pressure&quot;, where is is described as a &apos;stress reaction&apos;.  Personally, I prefer the approach of Gärling et al, who distinguish time-pressure from time-stress.  Time pressure in this view is essentially the same as &quot;perceived time scarcity&quot; as defined in the glossary (i.e. a perception of there being a mismatch between time available and time required for a number of things that one desires to do).  Time stress, on the other hand is the the negative outcome associated with experiencing too much time pressure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time pressure</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timePressure"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timePressure"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">In the glossary, the term is given for &quot;perceived time pressure&quot;, where is is described as a &apos;stress reaction&apos;.  Personally, I prefer the approach of Gärling et al, who distinguish time-pressure from time-stress.  Time pressure in this view is essentially the same as &quot;perceived time scarcity&quot; as defined in the glossary (i.e. a perception of there being a mismatch between time available and time required for a number of things that one desires to do).  Time stress, on the other hand is the the negative outcome associated with experiencing too much time pressure.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">As the phrase suggests, time use is quite simply the way in which time is used.  In sociological studies of time use, the unit of analysis tends to by an individual person, and the focus tends to be on the temporal patterning of everyday behaviour. Differences in sociodemographics are often studied in this domain, as are event-sequences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time use</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeUse"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:timeUse"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">As the phrase suggests, time use is quite simply the way in which time is used.  In sociological studies of time use, the unit of analysis tends to by an individual person, and the focus tends to be on the temporal patterning of everyday behaviour. Differences in sociodemographics are often studied in this domain, as are event-sequences.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelBehaviour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelBehaviour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transportStudies"/>
+        <rdfs:comment xml:lang="en">individual&apos;s choices relating to travel, including destination, purpose, distance, mode of travel, time of departure/arrival, frequency of travel, route choice, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Travel behaviour</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelBehaviour"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelBehaviour"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transportStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelBehaviour"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">individual&apos;s choices relating to travel, including destination, purpose, distance, mode of travel, time of departure/arrival, frequency of travel, route choice, etc.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelMode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelMode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelBehaviour"/>
+        <rdfs:comment xml:lang="en">This refers to the mode of transport used by individuals to go from a place of origin to a place of destination and can have different purposes (e.g. travel to work, travel to school, shopping, business, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">Travel mode</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelMode"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelBehaviour"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:travelMode"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">This refers to the mode of transport used by individuals to go from a place of origin to a place of destination and can have different purposes (e.g. travel to work, travel to school, shopping, business, etc.).</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <rdfs:comment xml:lang="en">The water footprint is a measure of humanityâ€™s appropriation of fresh water in volumes of water consumed and/or polluted.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:label xml:lang="en">Water footprint</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:biotechnology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:engineering"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:chemistry"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#term:waterFootprint"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget xml:lang="en">Water footprint</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

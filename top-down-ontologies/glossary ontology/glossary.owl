@@ -1,0 +1,833 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:top-down-common="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary">
+        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common"/>
+        <rdfs:comment xml:lang="en">The methodology for the creation of this ontology is as follows:
+
+1. Run ./filter_for_valid_glossary.pl glossary.txt global.raw.csv, where glossary.txt contains all the glossary single words,
+    word groups and abbreviations; global.raw.csv is a file that contains all possible single words, 2 and 3 word groupings.
+   This program will then output in RDF/XML format a bunch of individuals for inclusion in an OWL file. These represent
+   single-words in the glossary that have exceeded e^^4 and word groups in the glossary with e^^3.
+2. The glossary was then gone through assigning the definition of each term to an institution (this is easy because it
+     is listed in the glossary). 
+3. Additional information is then sort from the top-terms and online-questionnaire ontologies to see if this can provide
+    any further, definition informaiton.
+4. All aditional axioms are interpretation of the author of this ontology over the latest version of the official GLAMURS
+    glossary.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
+
+The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
+ 
++ classes begin with an upper case letter
++ object properties begin with a lower case letter
++ data properties begin with a lower case letter and are suffixed with -value unless the data value is boolean.
++ data properties and object properties being with has unless another verb makes better sense.
++ individuals gerneally begin with a lowercase letter, unless it is a proper name
+
+Note these conventions relate to the underlying entity and not what is shown as its name in Protégé (which is normally the value of the label for whatever default the language is set to).
+
++ a label must be provided (usually with a language specification) and should be make sense in the language of choice
+
+Markdown will be used in all text.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</rdfs:comment>
+        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Glossary"/>
+        <rdfs:comment xml:lang="en">Not in glossary</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#actor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">An actor is an individual person, a group of persons or an organisation. Actors are part of a network; within an initiative there are actors or networks of actors. You can either use their name (Tim Miller) or their role (representative of the community</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#agents -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#agents">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Refers broadly to a bundle of data and methods representing an entity residing within the dynamic simulated system. Examples of possible agents include: individuals (e.g., consumers and producers); social groupings (e.g., households, firms, communities, and government agencies); institutions (e.g., markets and regulatory systems); biological entities (e.g., crops, livestock, and forests); and physical entities (e.g., infrastructure, weather, and geographical regions). Agents can also be composed of other agents, permitting hierarchical constructions. In various degrees, agents are capable of:
+
++ adaptation to environmental conditions,
++ social communication with other agents,
++ goal-directed anticipatory learning, and
++ autonomy (self-activation and self-determinism based on private internal processes), (Borril &amp; Tesfatsion, 2011).
+
+[See also](http://www2.econ.iastate.edu/tesfatsi/ace.htm)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Agents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#altruism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#altruism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Concern for others. Environmental concern may be a form of altruism.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Altruism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#attitude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#attitude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A psychological tendency that is expressed by evaluating a particular entity with some degree of favour or disfavour.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UVT"/>
+        <rdfs:label xml:lang="en">Attitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#attribute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#attribute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">In OWL, attributes are called datatype properties. They provide a vocabulary for describing individuals according to data values, such as age or date of birth. See (http://www.w3.org/TR/2012/REC-owl2-primer-20121211/#Datatypes).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Attribute</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#backcasting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#backcasting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Backcasting literally means looking back from the future. It can be defined as &quot;generating a desirable future, and then looking backwards from that future to the present in order to strategize and to plan how it could be achieved&quot; (Vergragt &amp; Quist, 2011: 747)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Backcasting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#behaviour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#behaviour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Behaviour is the range of actions towards the social and physical environment. It is a response to various stimuli or inputs, whether internal or external, conscious or subconscious, overt or covert, and voluntary or involuntary. Behaviour can be observed objectively (http://en.wikipedia.org/wiki/Behaviour). For Glamurs, it is essential to agree on the level of the behaviour in order to operationalized it, i.e. is it defined as „daily water usage“, „number of baths“, „way of washing-up“, and so on?</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Behaviour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#carbonFootprint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#carbonFootprint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">The “carbon footprint” of a functional unit is the climate impact under a specified metric that considers all relevant emission sources, sinks, and storage in both consumption and production within the specified spatial and temporal system boundary. Other names that refer to it are “consumption based emissions” or “consumer emissions”. The total global long-lived greenhouse gas emissions of a system is aggregated using 100-year global warming potential (see Global Warming Potential (GWP)), hence, greenhouse gases with various radiative properties are compared and weighed for a time horizon of 100 years.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Carbon footprint</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#class -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#class">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A class defines a group of individuals that belong together because they share some properties (See http://www.w3.org/TR/2004/REC-owl-features-20040210/#Class). A class can be considered as a label for a set of individuals - for example, the class of Adults (by convention classes are given an initial capital letter) is the class of Persons who are 18 or more years old. As the above example shows, classes can be subclasses of each other (Adults are a subclass of Person because all Adults are persons). Other terms from set theory (intersection and union) can also be applied to class descriptions. See also: (http://www.w3.org/TR/2012/REC-owl2-primer-20121211/#Classes_and_Instances).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#consumptionCategories -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#consumptionCategories">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Footprint analyses can allocate total environmental footprints among categories of consumption, typically Food, Shelter, Mobility, Goods (Manufactured Goods, Clothing etc.) and Services. Consistent categorization across studies allows for comparison of the footprint of individual consumption components across regions, and the relative contribution of each category to the region’s overall footprint. To avoid double counting of environmental impacts coming from the production of goods and services, it is important that consumables are allocated to only one consumption category</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Consumption categories</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#copingStrategies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#copingStrategies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:comment xml:lang="en">Coping is expending conscious effort to solve personal and interpersonal problems, and seeking to master, minimize or tolerate stress or conflict. The effectiveness of the coping efforts depend on the type of stress and/or conflict, the particular individual, and the circumstances (http://en.wikipedia.org/wiki/Coping_(psychology)). We distinguish 2 broad types of coping strategies:
+
++ problem-focused: Directed towards reducing or eliminating a stressor, adaptive behavioural.
++ emotion-focused: Directed towards changing one&apos;s own emotional reaction (also via challenging one&apos;s own assumptions).
+
+For Glamurs, coping strategies are relevant in terms of dealing with internal conflicts, time scarcity, difficulties in adopting a sustainable lifestyle, or dealing with certain governance policies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Coping strategies</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#discreteChoice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#discreteChoice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A decision environment where agents have two or more options to choose from, e.g. green and brown goods / activities. This is an alternative way to modelling choice when the decision variable is assumed to be continuous, e.g. level of consumption.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Discrete choice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#downshifting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#downshifting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Downshifting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#driver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#driver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Driver</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#ecologicalFootprint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#ecologicalFootprint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">An aggregated indicator intended to be a proxy of environmental impact by estimating a hypothetical area (footprint) of biologically productive land needed to support the consumption of products and services, or at the aggregate, countries. It can be calculated via many of the existing methods for embodied emissions and land use calculations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Ecological footprint</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#ecovillage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#ecovillage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Human-scale full-featured settlement in which human activities are harmlessly integrated into the natural world in a way that is supportive of healthy human development, and can be successfully continued into the indefinite future.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UVT"/>
+        <rdfs:label xml:lang="en">Ecovillage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#emotion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#emotion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Emotions are composed by a subjectively experienced feeling, a physiological response, and a behavioural and/or expressive response (Hockenbury &amp; Hockenbury, 2007). Emotions refer to an object or an event and they are conscious and in the centre of attention (Rothermund, 2011). Examples for emotions are: anxiety, anger, disgust, jealousy, surprise, grief, joy, sympathy, gratitude, love and hope. For Glamurs, emotions are of importance as consequences of or motivation for membership/engagement; and in relation to endeavours of sustainable living, internal conflicts, reactions to governance policies, and time-use.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Emotion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#environmentalImpacts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#environmentalImpacts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Environmental stressors can be aggregated into environmental impact categories using life-cycle impact assessment methods. Environmental impact categories (e.g. land use, global warming potential, freshwater use etc.) can be computed by multiplying the emissions of stressors with their equivalence factors.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Environmental impacts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#expectations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#expectations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Beliefs formed about the probability of certain events occurring, e.g. future prices, proportion of agent types within a population etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Expectations</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#finalDemand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#finalDemand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Final demand of goods and services within a specific geographical region arises from households, non-profit institutions serving households (NPISH), governments, gross capital formation and changes in inventories and valuables. Additionally, the System of National Accounts considers exports as a separate source of final demand, although in an input-output framework exports are instead allocated to intermediate (e.g. industries) or final users (e.g. households) from other regions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Final demand</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#focusGroups -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#focusGroups">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Focus groups</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#governance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#governance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">The preferred definition: &quot;The sum of the many ways individuals and institutions, public and private, manage their common affairs. It is a continuing process through which conflicting or diverse interests may be accommodated and co-operative action may be taken. It includes formal institutions and regimes empowered to enforce compliance, as well as informal arrangements that people and institutions either have agreed to or perceive to be in their interest&quot; (Commission on Global Governance, 1995). DOW tells us: Body of mechanisms regulating the use and management of resources (including time); Further definitions:
+
++ the structure and processes for collective decision making involving governmental and non-governmental actors (Nye and Donahue 2000); 
++ &quot;The reflexive self-organization of independent actors involved in complex relations of reciprocal interdependence, with such self-organization being based on continuing dialogue and resource-sharing to develop mutually beneficial joint projects and to manage the contradictions and dilemmas inevitably involved in such situations&quot; (Jessop, 2002: 1). 
++ &quot;Governance refers to sustaining co-ordination and coherence among a wide variety of actors with different purposes and objectives such as political actors and institutions, civil society, corporate interest and transnational organizations&quot; (Pierre 2001: 3)</rdfs:comment>
+        <rdfs:label xml:lang="en">Governance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#groundedTheory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#groundedTheory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Grounded theory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#household -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#household">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A small group of persons who share the same living accommodation, who pool some or all of their income and wealth and who consume certain types of goods and services collectively, mainly housing and food. The individual members of multi-person households are not treated as separate institutional units, because many assets are owned and liabilities incurred jointly. Moreover, many expenditure decisions, e.g. relating to the consumption of food or housing, may be made collectively. This is why the household must be treated as an institutional unit. A person living alone may also constitute a household.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Household</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#householdEnvironmentalImpacts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#householdEnvironmentalImpacts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Includes all environmental effects (e.g. CO₂ emissions, resource use etc.) from economic activity that can be linked to households either directly, through their use of products (e.g. driving a car, using electricity at home), or indirectly, through the impacts embodied in their purchases (e.g. use of energy to produce consumable items).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Household environmental impacts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#intention -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#intention">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">By intention we refer to what Bamberg (2013) calls goal intention, namely the willingness to alter a current or show a new behaviour (i.e. a single action or a set of actions). Goal intention is a substantiation of a motivational background. In Glamurs, we focus on people with an intention to behave sustainably</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Intention</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#interactions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#interactions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">They are the behaviours of agents that may affect the decisions of other agents. Interactions may be direct (norms, negotiation, markets, imitation) or indirect (‘stigmergic’: ant trails, signs, writing, traps). (See also http://www2.econ.iastate.edu/tesfatsi/ace.htm).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Interactions</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#item -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#item">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">An item is the basic element of a standardized questionnaire or test. It can be a question, opinion, or statement that induces a person’s reaction (-&gt; indicator).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#OVGU"/>
+        <rdfs:label xml:lang="en">Item</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Related to adaptive beliefs/expectations which lie between rational and naïve expectations. Agents learn about future realizations of variables by extrapolating from the past.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Learning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#leisure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#leisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Different from the free-time, leisure is an uncoerced activity undertaken during free time where such activity is something people want to do and, at a personally satisfying level using their abilities and resources, they succeed in doing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UVT"/>
+        <rdfs:label xml:lang="en">Leisure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#lifeSatisfaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#lifeSatisfaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Life satisfaction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#lifestyle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#lifestyle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Patterns of consumption/activities that take place in given locations and have associated time patterns.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lifestyle</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#lifestyle"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Patterns of consumption/activities that take place in given locations and have associated time patterns.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#materialFootprint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#materialFootprint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Life cycle material use of final consumption expressed in tons (t). This only includes economically used materials. The indicator reflects the raw material extraction, particularly that of primary crops, crop residues, fodder crops, grazing, wood, aquatic animals, metal ores, non-metallic minerals and fossil fuels.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Material footprint</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#materialism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#materialism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Materialism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#mediation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#mediation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">In this type of analysis, evidence supporting a mechanism is found in the existence of an indirect effect of X on Y through the proposed mediator variable M. The causal chain of effects from X to M to Y—the indirect effect—represents the mechanism through which X’s effect on Y operates. One can hypothesize the existence of a mediation model when a variable (X) affects one or more mediating variables (M1, M2, ... Mx), which in turn, affect an outcome (Y).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UNIROMA3"/>
+        <rdfs:label xml:lang="en">Mediation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#memory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#memory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">In a dynamic setting, agents may consider more not just the last value of the fitness of a choice option but some number of previous realizations. In the limit, this may be a weighted average of all past realizations, with an exponentially decaying memory factor</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Memory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#mindfulness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#mindfulness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Mindfulness involves the reflexive contemplation of one’s own experience in the domains of the body, states of mind, feelings and experiential phenomena. It is a process of observation and lucid awareness of one’s experience, which leads to the development of clear comprehension, a cognitive element that helps distinguish between wholesome and unwholesome mental factors. Mindfulness has a strong ethical and emotional component, as it involves qualities such as kindness, tolerance, patience, generosity, courage and equanimity.(cf. Bodhi 2011, Dreyfus 2010).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Mindfulness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#model -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#model">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A representation or description of something (a phenomenon or set of relationships) that aids in understanding or studying it; a set of assumptions about relationships used to study their interactions. Usually the purpose of constructing a model is to test it. The most common form of model is an equation, which is a model that states a theory in foral, symbolic language, as in a regression equation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UDC"/>
+        <rdfs:label xml:lang="en">Model</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#moderation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#moderation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Moderation approach establishes whether an effect exists under conditions in which the mechanism is allowed to operate but not under conditions in which it is disrupted. For example, a moderation model occurs when a third variable (M) dampens or enhances the effect of an independent variable (X) on outcome (Y). Again, moderation occurs when a third variable (M) reverses the relationship between an independent variable (X) and an outcome variable (Y).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UNIROMA3"/>
+        <rdfs:label xml:lang="en">Moderation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#motivation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#motivation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Motivation is the active orientation on a specific outcome with the aim of reducing needs, maximizing benefits and attaining goals. Internal processes like considerations, behavioural planning, perceptional preparedness, and arousal translate these orientations into specific conduct (Heckhausen, 1980). For Glamurs, motivation is important to be considered in terms of (non-) membership, (non-) engagement, and (non-) sustainable lifestyles</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Motivation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#needs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#needs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Most basic reasons for action that require no further explanation or justification. Such abstract needs (for freedom, subsistence, understanding, …) are to be differentiated from the means or strategies used to satisfy/realize the needs  (e.g. cars, specific food, large apartment, university education, …). The fulfilment of needs creates objective and subjective wellbeing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Needs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#network -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#network">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">‘‘A network is a more or less stable patterns of social relations between interdependent actors, which take shape around policy problems and/or policy programmes” (Klijn, 1997, 30). In these networks, the institutional context and rules limit and structure the possible range of activities (Ostrom et al., 1994). In our case the region is a network of initiatives or of single actors</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Network</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#network"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">‘‘A network is a more or less stable patterns of social relations between interdependent actors, which take shape around policy problems and/or policy programmes” (Klijn, 1997, 30). In these networks, the institutional context and rules limit and structure the possible range of activities (Ostrom et al., 1994). In our case the region is a network of initiatives or of single actors</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Taken from Network Analysis document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#ontology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#ontology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A formal, explicit representation of a shared conceptualisation. Formal in that the ontology document is machine-readable and allows inferences to be made; explicit in that all concepts are represented; shared in that there is some agreement by a group about the ontology (debatable), conceptualisation in that it is an abstraction of reality. (Gruber 1993; Fensel 2001)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Ontology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#opportunities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#opportunities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Situational conditions that enable or prevent, facilitate or impede certain behaviours. Application of the term opportunities is based on the NOA-Model (Vlek, Jager, &amp; Steg, 1997 (Needs Opportunities Abilities (NOA) Model).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Opportunities</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#permaculture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#permaculture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Permaculture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#positiveFeedback -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#positiveFeedback">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">This is the self-reinforcement mechanism of a decision system where an increase (or decrease) of a dynamic variable in the utility leads to higher incentives for agents to increase (or decrease) that variable even further.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Positive feedback</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A process is a dynamic that causes the state of the world to change – specifically, assertions about classes, attributes, relationships and individuals would be retracted after the process has run, and new assertions might be made. For example, aging-by-one-year is a process in which an individual’s age is increased by 1. This means retracting the assertion that they are, say, 44, and adding the assertion that they are 45.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#prospectTheory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#prospectTheory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">The prospect theory refers to the process of decision making. According to this theory, the utility of an alternative is substituted with the value of an alternative: if utility is defined in terms of net benefit, the value is defined in terms of gain and loss.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UVT"/>
+        <rdfs:label xml:lang="en">Prospect theory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#qualityOfLife -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#qualityOfLife">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Quality of life can be defined as subjective wellbeing and personal growth in a healthy and prosperous environment (Lane, 1996). Thus it has two components, an objective which is given by the frame conditions (income, security, institutions, quality of nature, access to education, talents etc.) and the subjective feeling about one’s own life.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Quality of life</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#quotations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#quotations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Quotations</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#relationship -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#relationship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">In OWL, relationships are called object properties. They allow the assertion that individuals are linked in some way, examples being ‘spouse’, ‘owns’, ‘part’. Relationships can also be asserted to be subproperties of each other. For example, ‘husband’ is a subproperty of ‘spouse’ because if one person is the husband of another, they are necessarily also the latter’s spouse (See http://www.w3.org/TR/2012/REC-owl2-primer-20121211/#Object_Properties).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Relationship</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#risk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#risk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">&quot;Risk is commonly defined concerning two quite distinct dimensions -one concerns probability and the other one concern the effects-, so risk concept arises as the probability of a particular adverse event that occurs in an explicit period of time, (…) but in practice these two dimensions tend to be examined in tandem. (...) In terms of likelihood, risk refers to the probability of concrete negatives events -outlined in terms of amount, intensity and duration- resulted from an exposure to a hazard -anything that could be detrimental-, and in terms of effects, risk is referred to the extent of the detriment -a numerical estimate of the harm- associated with the adverse event.&quot;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UDC"/>
+        <rdfs:label xml:lang="en">Risk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#situationalFactors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#situationalFactors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Situational factors</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#socialCapital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#socialCapital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">&quot;A lot of research has been carried out focusing on the relations between social capital and subjective wellbeing. Helliwell (Helliwell, 2001) for instance argues that social capital has substantial effects on wellbeing, and also Diener and Suh (Diener et al., 1997) emphasize the importance of social relations related to subjective wellbeing. […] Social capital generally represents the degree of social cohesion which exists in communities (WHO, 1998) and encompasses networks, together with shared norms, values and understandings which facilitate cooperation within or among groups (OECD, 2001). However, there is a broad variety of definitions related to “social capital”. Coleman (Coleman, 1988) describes social capital as a variety of different entities with two common elements: social structure and certain actions of actors within the structure, which includes vertical (bridging) as well as horizontal (bonding) associations. Social capital is closely linked to existing ties in terms of closeness, kindness, or support, to norms in terms of obligatory rights and duties as well as to mutual trust. On the individual level, social capital is used in order to maximize the level of individual happiness. On the societal level (communities, etc.), social capital is developed and applied in order to assure adequate functioning of societal processes. Social capital can be seen as a measure for the number and strength/intensity of social relationships and can be examined on three levels: the micro-level, the meso-level and the macro-level (Gehmacher et al., 2006).&quot; (Grünberger &amp; Omann, 2011).
+
+Taken from &quot;Background information for questions to be included in the in-depth interviews, resulting from 5.1&quot; internal document</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Social capital</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#socialInteractions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#socialInteractions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Agents are not isolated in their decisions and other agents’ decisions influence them with a (network) externality. Social interactions enter the utility with a term which depends on the distribution of decision variables across other agents.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Social interactions</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#socialNorms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#socialNorms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">We adopt the same definitions from psychology, i.e. descriptive, injunctive, subjective. However, when capturing social norms within a framework of utility maximisation we cannot distinguish between these different norms. The gain/loss in utility from compliance/non-compliance relates to all three norms depending on the context. Social norms are generally incorporated within the utility function as the negative of the distance function (absolute or squared) between the individual’s choice variable (to be decided as an outcome of the utility maximisation process) and the norm.  Modelled in this way means that a choice variable different to the norm generates negative utility whereas perfect compliance implies a zero negative term</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Social norms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#spillover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#spillover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">The term spillover in the domain of pro-environmental behaviour refers to the relations between different behavioural domains (e.g. electricity consumption, recycling, car use…). In most empirical studies a moderate positive correlation between such behaviours was found. The correlation is stronger if behaviours are more “similar” (e.g. different forms of recycling).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#OVGU"/>
+        <rdfs:label xml:lang="en">Spillover</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#stakeholder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#stakeholder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A stakeholder can be any relevant person, group or organisation with an interest in the issue, either because they will be affected by the subject (victim, gainer) or because they have influence, knowledge or experience with the subject” (European Commission, 2003: 63).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Stakeholder</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#stakeholder"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A stakeholder can be any relevant person, group or organisation with an interest in the issue, either because they will be affected by the subject (victim, gainer) or because they have influence, knowledge or experience with the subject” (European Commission, 2003: 63).</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Taken from Network Analysis guidelines.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#sustainableLifestyles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#sustainableLifestyles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Patterns of consumption/activities that can be continued for the long-run taking into account resource constraints</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Sustainable lifestyles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#timeScarcity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#timeScarcity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Time scarcity is the quotient/ difference of the amount of time necessary and the amount of time available for a certain tasks, process or action. For Glamurs, we should agree upon which aspect (time scarcity, perceived time scarcity, perceived time pressure) we refer to.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Time scarcity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#transition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#transition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">A transition can be defined as a gradual, continuous process of change where the structural character of a society (or a complex sub-system of society) transforms. Transitions are not uniform, and nor is the transition process deterministic: there are large differences in the scale of change and the period over which it occurs. Transitions involve a range of possible development paths, whose direction, scale and speed government policy can influence, but never entirely control.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Rotmans et al. (2001: 16): transitions &quot;can be described as a set of connected changes, which reinforce each other but take place in several different areas, such as technology, the economy, institutions, behaviour, culture, ecology and belief systems&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Transition</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#transition"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Rotmans et al. (2001: 16): transitions &quot;can be described as a set of connected changes, which reinforce each other but take place in several different areas, such as technology, the economy, institutions, behaviour, culture, ecology and belief systems&quot;.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#utility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#utility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Satisfaction/enjoyment/well-being derived from certain elements, e.g. consumption, leisure, environment.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UBAH"/>
+        <rdfs:label xml:lang="en">Utility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#values -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#values">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Philosophy: The attribution of a specific degree of importance to a need or strategy or to a set thereof. In this regard, sustainable development is a value as it confers high importance to specific strategies to particularly meet the needs of PROTECTION and AFFECTION (Rauschmayer et al., 2011). Psychology approach: Values are general preferences for end states or ways of acting; they serve as goals and guiding principles that apply across different contexts and underlie more specific attitudes, preferences, and behaviours. Values vary inter-individually and intra-individually (between situations) in their importance. Examples for values are: beauty, peace, and wealth (Clayton, 2009) (Schwartz, 1992, p. 21). For Glamurs, it is important to be clear of whether we mean 
+
+a) the importance of a need, or
+b) general preferences for end states or ways of acting/ guiding principle, and whether
+c) we refer to values of individuals and/ or social entities (initiatives,…)?
+
+For empirical work (e.g. task 5.2) the psychological definition seems appropriate, for conceptual work (e.g. parts of task 3.3) the transition science definition seems appropriate.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <rdfs:label xml:lang="en">Values</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#voluntarySimplicityLifestyle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#voluntarySimplicityLifestyle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/glossary#NotInGlossary"/>
+        <rdfs:label xml:lang="en">Voluntary simplicity lifestyle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#waterFootprint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/single-words#waterFootprint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">The volume of water consumed as a result of the delivery of a set of goods or services for final consumption, expressed in cubic meters (m3). The indicator reflects water use for agriculture and livestock, manufacturing, electricity and the direct demand for water. The water footprint can be calculated for blue water (surface, e.g. river and lakes, and groundwater), green water (rainwater), and grey water (freshwater required to assimilate the load of pollutants) consumption/extraction</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#NTNU"/>
+        <rdfs:label xml:lang="en">Water footprint</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

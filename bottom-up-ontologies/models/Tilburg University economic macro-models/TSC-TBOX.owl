@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research question:
+
+Should the regulator use speed up or slow down the transition, i.e. implement a tax that rises or falls over time?</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasConsumption">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Time"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalConsumption"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumption"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalWeighting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalWeight"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasHabit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasHabit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Time"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalHabit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InifinitesimalHabit"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalWeighting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalWeight"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Habit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalConsumption">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Time"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalHabit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalHabit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumer"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalConsumption"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumption"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalHabit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InifinitesimalHabit"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InifinitesimalHabit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalWeighting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalWeighting">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalGood"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Time"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasHabit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Habit"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasInfinitesimalHabit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InifinitesimalHabit"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalWeight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasUtility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasUtility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Time"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasConsumption"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumption"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasHabit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Habit"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Utility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#infinitesimalConsumer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#infinitesimalConsumer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#setsValueFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#setsValueFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Regulator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Tax"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasEnglishLanguageValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasEnglishLanguageValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasSymbolicFormValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasSymbolicFormValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasTaxValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasTaxValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Tax"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasWeightOfGoodValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasWeightOfGoodValue">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#w_i"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasEnglishLanguageValue"/>
+        <rdfs:label>has weight of good</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#w_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#w_i">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#AFirm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#AFirm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Agent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Produce the good
+Rationally anticipate the policy
+Change supply to maximize profits</rdfs:comment>
+        <rdfs:label>A Firm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Agent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Have good-specific habits
+Myopic and slow in changing</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Good"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Habit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Habit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Consumption"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Good"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalWeight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InfinitesimalWeight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Weight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InifinitesimalHabit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#InifinitesimalHabit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#ReboundEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#ReboundEffect">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Even though the new technology allows to produce the same output with less energy, the equilibrium outcome is more use of energy</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rebound Effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Regulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Regulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Agent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implements policy to curb excessive consumption of some good.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Tax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Tax"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Utility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Utility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Variable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#Weight"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#HabitsAndStatusConsumptionModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/5/UVT-TBOX#HabitsAndStatusConsumptionModel">
+        <rdfs:label xml:lang="en">Habit and Status Consumption Model</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

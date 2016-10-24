@@ -1,0 +1,842 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#agentFollowsNorm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#agentFollowsNorm">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Norm"/>
+        <rdfs:label xml:lang="en">follows norm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#agentHasUtility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#agentHasUtility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ConsumptionUtility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EudonicWellBeing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#IndividualConsumptionOfAGood"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PerceivedEnvironmentalDamage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtillity"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPriceValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#UtilityOfAnAgent"/>
+        <rdfs:label xml:lang="en">agent has utility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#followsPersonalNorm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#followsPersonalNorm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#agentFollowsNorm"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PersonalNorm"/>
+        <rdfs:label xml:lang="en">follows personal norm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasConsumptionUtility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasConsumptionUtility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#IndividualConsumptionOfAGood"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ConsumptionUtility"/>
+        <rdfs:label xml:lang="en">has consumption utility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEudonicWellBeing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEudonicWellBeing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#IndividualConsumptionOfAGood"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EudonicWellBeing"/>
+        <rdfs:label xml:lang="en">has eudonic well being</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasIndividualConsumptionOfAGood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasIndividualConsumptionOfAGood">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+        <rdfs:label xml:lang="en">has individual consumption of a good</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasLifestyleChoice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasLifestyleChoice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Lifestyle"/>
+        <rdfs:label xml:lang="en">has lifestyle choice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPart">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isPartOf"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamage">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isTotalConsumptionForGood"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PerceivedEnvironmentalDamage"/>
+        <rdfs:label xml:lang="en">has perceived damage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSocialUtility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSocialUtility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAllAgents"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtillity"/>
+        <rdfs:label xml:lang="en">has social utility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSupply -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSupply">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Supply"/>
+        <rdfs:label xml:lang="en">has supply</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasTotalConsumptionForGood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasTotalConsumptionForGood">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isTotalConsumptionForGood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#TotalConsumptionOfAGood"/>
+        <rdfs:label xml:lang="en">has total consumption for a good</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isMediatedByNorm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isMediatedByNorm">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EudonicWellBeing"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtillity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Norm"/>
+        <rdfs:label xml:lang="en">is mediated by norm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isTotalConsumptionForGood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isTotalConsumptionForGood">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#TotalConsumptionOfAGood"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+        <rdfs:label xml:lang="en">is the total consumption for a good</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#D_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#D_i">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D_i = D(Q) iff D&apos;(Q) &gt; 0 AND D&apos;&apos;(Q) &gt;= 0</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#G_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#G_i">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEudonicWellBeingValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G_i = G(q_i)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#I_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#I_i">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSocialUtilityFromDescriptiveNormsValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Q -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Q">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodDemandValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#S -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#S">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSupplyValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#U_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#U_i">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasConsumptionUtilityValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U_i \equiv U(q_i) iff U&apos;(q_i) &gt; 0 AND U&apos;&apos;(q_i) &lt;= 0</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#W_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#W_i">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasUtilityOfAnAgentValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#beta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#beta">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasHomogeneityValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#containsNumberOfAgents -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#containsNumberOfAgents">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAgents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label xml:lang="en">contains number of agents</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#delta_g -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#delta_g">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValueForGreenNorm"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#D_i"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#delta_r -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#delta_r">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValueForRedNorm"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#D_i"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasConsumptionUtilityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasConsumptionUtilityValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ConsumptionUtility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has consumption utility value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEudonicWellBeingValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEudonicWellBeingValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EudonicWellBeing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has eudonic wellbeing value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodDemandValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodDemandValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#TotalConsumptionOfAGood"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has total demand for good value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionGreenNormValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionGreenNormValue">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_r"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionValue"/>
+        <rdfs:label xml:lang="en">has red consumption of an individual good value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionRedNormValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionRedNormValue">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_g"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionValue"/>
+        <rdfs:label xml:lang="en">has green consumption of an individual good value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasGoodIndvidualConsumptionValue">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_i"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#GoodConsumption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has consumption of an individual good value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasHomogeneityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasHomogeneityValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAgents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has homegeneity value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PerceivedEnvironmentalDamage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has perceived damage value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValueForGreenNorm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValueForGreenNorm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValue"/>
+        <rdfs:label xml:lang="en">has perceived damage value for green norm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValueForRedNorm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValueForRedNorm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPerceivedDamageValue"/>
+        <rdfs:label xml:lang="en">has perceived damage value for red norm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPriceValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPriceValue">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#p"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has price value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasProportionOfAgentsFollowingNormValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasProportionOfAgentsFollowingNormValue">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#x_i"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAgents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has proportion of agents following norm value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSocialUtilityFromDescriptiveNormsValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSocialUtilityFromDescriptiveNormsValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtillity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has social utility fom descriptive norms value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSupplyValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSupplyValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Supply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:label xml:lang="en">has supply value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasUtilityOfAnAgentValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasUtilityOfAnAgentValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasEnglishLanguageValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#UtilityOfAnAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">= U_i - pq_i - D_i + G_i + I_i
+where U_i is hasUtilityValue</rdfs:comment>
+        <rdfs:label xml:lang="en">has utility of an agent value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#p -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#p">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_g -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_g">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_i"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_i">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_r -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_r">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#q_i"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#x_i -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#x_i">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasSymbolicFormValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#AgentsFollowingSameNorm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#AgentsFollowingSameNorm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAgents"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#agentFollowsNorm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Norm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Agents following the same norm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#BasicModelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#BasicModelType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ModelType"/>
+        <rdfs:label xml:lang="en">Basic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAgents">
+        <rdfs:label xml:lang="en">Collection of agents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAllAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAllAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CollectionOfAgents"/>
+        <rdfs:label xml:lang="en">Collection of all agents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ConsumptionUtility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ConsumptionUtility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Utility"/>
+        <rdfs:label xml:lang="en">Consumption utility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CrowdingOutModelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#CrowdingOutModelType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ModelType"/>
+        <rdfs:label xml:lang="en">Crowding out</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EnvironmentalDamage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EnvironmentalDamage">
+        <rdfs:label xml:lang="en">Environmental damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Equilibrium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Equilibrium">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is a state where two economic forces are balanced in the absence of external influences.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EudonicWellBeing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EudonicWellBeing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isMediatedByNorm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PersonalNorm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Eudonic well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ExpectationsModelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ExpectationsModelType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ModelType"/>
+        <rdfs:label xml:lang="en">Expectation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#GoodConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#GoodConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Consumption"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#IndividualConsumptionOfAGood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Consumption of a good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#GreenLifestyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#GreenLifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Lifestyle"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#RedLifestyle"/>
+        <rdfs:label xml:lang="en">Green lifestyle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#HarmfulGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#HarmfulGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Good"/>
+        <rdfs:label xml:lang="en">Harmful good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#IndividualConsumptionOfAGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#IndividualConsumptionOfAGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#GoodConsumption"/>
+        <rdfs:label xml:lang="en">Individual consumption of a good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Lifestyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Lifestyle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ModelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ModelType">
+        <rdfs:label xml:lang="en">Model type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Norm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Norm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PerceivedEnvironmentalDamage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PerceivedEnvironmentalDamage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#EnvironmentalDamage"/>
+        <rdfs:label xml:lang="en">Perceived environmental damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PersonalNorm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#PersonalNorm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Norm"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pyschologic well-being or warm-glow</rdfs:comment>
+        <rdfs:label xml:lang="en">Personal norm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#RedLifestyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#RedLifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Lifestyle"/>
+        <rdfs:label xml:lang="en">Red lifestyle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtilityNorm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtilityNorm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Norm"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptive</rdfs:comment>
+        <rdfs:label xml:lang="en">Social utility norm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtillity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtillity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Utility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#isMediatedByNorm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#SocialUtilityNorm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Social utility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Supply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Supply"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#TotalConsumptionOfAGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#TotalConsumptionOfAGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#GoodConsumption"/>
+        <rdfs:label xml:lang="en">Total consumption of a good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Utility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Utility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#UtilityOfAnAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#UtilityOfAnAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Utility"/>
+        <rdfs:label xml:lang="en">Utility of an agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#Variable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#VariableEudonicWellBeingModelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#VariableEudonicWellBeingModelType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/19/UBAH#ModelType"/>
+        <rdfs:label xml:lang="en">Variable eudonic well being</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

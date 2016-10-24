@@ -1,0 +1,976 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#acceptOrRefuse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#acceptOrRefuse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkSmartTeam"/>
+        <rdfs:label xml:lang="en">accept or refuse</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#accompany -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#accompany">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TradesUnion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:label xml:lang="en">accompany</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#administer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#administer">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FacilitiesTeam"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#ITTeam"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#OfficeBuillding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkplaceICTInfrastructure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">administer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#administrates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#administrates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilArea"/>
+        <rdfs:label xml:lang="en">administrates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#advise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#advise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HRTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement"/>
+        <rdfs:label xml:lang="en">advise</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#advised -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#advised">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BritishTelecomm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement"/>
+        <rdfs:label xml:lang="en">advised</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#appeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#appeal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkSmartTeam"/>
+        <rdfs:label xml:lang="en">appeal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#apply -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#apply">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkSmartTeam"/>
+        <rdfs:label xml:lang="en">apply</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#assign -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#assign">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Councillors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Bduget"/>
+        <rdfs:label xml:lang="en">assign</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#assigned -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#assigned">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile"/>
+        <rdfs:label xml:lang="en">assigned</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#constituency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#constituency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Councillors"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Ward"/>
+        <rdfs:label xml:lang="en">constituency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#constrains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#constrains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#UKGovernment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilTax"/>
+        <rdfs:label xml:lang="en">constrains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#decides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#decides">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SocttishGovernment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#UKGovernment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#EssentialService"/>
+        <rdfs:label xml:lang="en">decides</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#determines -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#determines">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Income"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Bduget"/>
+        <rdfs:label xml:lang="en">determines</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#devolvesActivities -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#devolvesActivities">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#UKGovernment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SocttishGovernment"/>
+        <rdfs:label xml:lang="en">devolves activities</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#discuss -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#discuss">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:label xml:lang="en">discuss</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#elect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#elect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Public"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Councillors"/>
+        <rdfs:label xml:lang="en">elect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#employ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#employ">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:label xml:lang="en">employ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#ensureCompliance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#ensureCompliance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HRTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Legislation"/>
+        <rdfs:label xml:lang="en">ensure compliance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#hasICTInfrastructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#hasICTInfrastructure">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Home"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#OfficeBuillding"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HomeICTInfrastructure"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkplaceICTInfrastructure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">has ICT infrastructure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#implementPolicyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#implementPolicyOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Councillors"/>
+        <rdfs:label xml:lang="en">implement policy of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#instruct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#instruct">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader"/>
+        <rdfs:label xml:lang="en">instruct</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#live -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#live">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Home"/>
+        <rdfs:label xml:lang="en">live</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#location">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Desk"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Home"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HoursWorked"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Zone"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Home"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#OfficeBuillding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Ward"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Zone"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#manage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#manage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+        <rdfs:label xml:lang="en">manage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#manageSale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#manageSale">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FacilitiesTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#OfficeBuillding"/>
+        <rdfs:label xml:lang="en">manage sale</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#memberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+        <rdfs:label xml:lang="en">member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#monitor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#monitor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkSmartTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile"/>
+        <rdfs:label xml:lang="en">monitors</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#notify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#notify">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkSmartTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader"/>
+        <rdfs:label xml:lang="en">notify</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#overseeAssignment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#overseeAssignment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HRTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile"/>
+        <rdfs:label xml:lang="en">oversee assignment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#part">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilTax"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Grant"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Income"/>
+        <rdfs:label xml:lang="en">part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#pays -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#pays">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Public"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SocttishGovernment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#UKGovernment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BlockGrant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilTax"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Grant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#IncomeTax"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">pays</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#provide -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#provide">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BritishTelecomm"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HomeICTInfrastructure"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Service"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">provide</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#providedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#providedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Public"/>
+        <rdfs:label xml:lang="en">provided to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#receives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#receives">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BlockGrant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Grant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#IncomeTax"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SocttishGovernment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#UKGovernment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">receives</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#reportTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#reportTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement"/>
+        <rdfs:label xml:lang="en">report to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#run -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#run">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil"/>
+        <rdfs:label xml:lang="en">run</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#sell -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#sell">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#OfficeBuillding"/>
+        <rdfs:label xml:lang="en">sell</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#sets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#sets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilTax"/>
+        <rdfs:label xml:lang="en">sets</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#spend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#spend">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Bduget"/>
+        <rdfs:label xml:lang="en">spend</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#time -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HoursWorked"/>
+        <rdfs:label xml:lang="en">time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#work -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#work">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Home"/>
+        <rdfs:label xml:lang="en">work</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#workAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#workAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Desk"/>
+        <rdfs:label xml:lang="en">work at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#AberdeenshireCouncil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Aberdeenshire Council</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact">
+        <rdfs:label xml:lang="en">Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Bduget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Bduget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Budget</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BlockGrant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BlockGrant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Block Grant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BritishTelecomm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#BritishTelecomm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">British Telecomm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#ChildrenAndFamiliesAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#ChildrenAndFamiliesAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Legislation"/>
+        <rdfs:label xml:lang="en">Children and Families Act 2014</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Council Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilTax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#CouncilTax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Council Tax</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Councillors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Councillors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Councillors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Desk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Desk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Desk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#EmploymentAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#EmploymentAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Legislation"/>
+        <rdfs:label xml:lang="en">Employment Rights Act 1996</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#EquallityAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#EquallityAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Legislation"/>
+        <rdfs:label xml:lang="en">Equality Act 2010</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#EssentialService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#EssentialService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Service"/>
+        <rdfs:label xml:lang="en">Essential Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FacilitiesTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FacilitiesTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+        <rdfs:label xml:lang="en">Facilities Team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FixedHours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FixedHours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile"/>
+        <rdfs:label xml:lang="en">Fixed Hours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FixedWorking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FixedWorking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile"/>
+        <rdfs:label xml:lang="en">Fixed Working</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FlexibleWorking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FlexibleWorking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile"/>
+        <rdfs:label xml:lang="en">Flexible Working</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FlexibleWorkingRegulations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#FlexibleWorkingRegulations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Legislation"/>
+        <rdfs:label xml:lang="en">Flexible Working Regulatioins 2002</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Grant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Grant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Grant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HRTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HRTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+        <rdfs:label xml:lang="en">HR Team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Home -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Home">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Home</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HomeICTInfrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HomeICTInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Home ICT Infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HoursWorked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#HoursWorked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Hours Worked</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#ITTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#ITTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+        <rdfs:label xml:lang="en">IT Team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Income -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Income">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Income</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#IncomeTax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#IncomeTax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Income Tax</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Legislation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Legislation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Legislation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#MobileWorking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#MobileWorking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile"/>
+        <rdfs:label xml:lang="en">Mobile Working</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#OfficeBuillding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#OfficeBuillding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Office Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:comment>Public</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SeniorManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Senior Management</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SocttishGovernment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#SocttishGovernment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Scottish Government</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Staff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TeamLeader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Team Leader</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TradesUnion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#TradesUnion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">Trades Union</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#UKGovernment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#UKGovernment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Actor"/>
+        <rdfs:label xml:lang="en">UK Government</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Ward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Ward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Ward</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkSmartTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkSmartTeam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Team"/>
+        <rdfs:label xml:lang="en">Worksmart Team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkingProfile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Working Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkplaceICTInfrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#WorkplaceICTInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Workplace ICT  Infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Worksmart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Worksmart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Zone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Zone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/15/SocialNetworkAnalysis/Scotland#Artefact"/>
+        <rdfs:label xml:lang="en">Zone</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

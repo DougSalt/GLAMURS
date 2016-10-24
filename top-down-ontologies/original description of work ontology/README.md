@@ -1,0 +1,1 @@
+This directory contains the ontology created from the description of work at the start of the project.

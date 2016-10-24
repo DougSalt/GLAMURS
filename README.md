@@ -2,7 +2,7 @@
 
 This is the repository for all ontologies created during the [GLAMURS project](http://glamurs.eu/).
 
-Essentially this site is a set of directories containing a series of directories, each leaf directory containing a one or two ontologies and common roots containing any imported ontologies common to the leaf ontologies, or alternatively a integration of the ontologies present in the leaf directories.
+Essentially this site is a set of directories containing ontologies. Each leaf directory contains a one or two ontologies and common roots contain any imported ontologies common to those leaf ontologies, or alternatively a integration of the ontologies present in those leaf directories.
 
 Note that many of these ontologies in are TBox only (or TBox sparsely populated with anonymous data). This has been done in order to protect any referenced participants privacy.
 

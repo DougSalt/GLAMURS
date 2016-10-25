@@ -9,12 +9,58 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire">
         <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common"/>
-        <rdfs:comment xml:lang="en">This is all responses to the online questionnaire answered before 2016-06-29. 
+        <rdfs:comment xml:lang="en">This is all responses to the online questionnaire answered before 2016-07-27. 
 
-Within the GLAMURS project, this ontology is generally referred to as the questionnaire ontology.</rdfs:comment>
+Within the GLAMURS project, this ontology is generally referred to as the questionnaire ontology.
+
+All terms are defined as individuals initially and placed in the [Terminology]() class.
+
+Each term that is defined will also have a seeAlso annotation which refers to the term individual from which the class, object property or data types was original defined in. 
+
+If there is no seeAlso or definedBy annotation, then the class, datatype or property was created by the author. However such &quot;unsupported&quot; definition is usually made explicity with the definedBy annotation and the author. Such axioms or definitions are usually for convenience and obvious logical connections or groupings. 
+
+Other than the caveats previously mentiioned, no additional attempt has been made to classify or link, the classes, datatypes or properties. The derived ontology  is purely the results gathered from the questionnaire at (http://surveys.hutton.ac.uk/index.php/559132?newtest=Y).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
+
+The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
+ 
++ classes begin with an upper case letter
++ object properties begin with a lower case letter
++ data properties begin with a lower case letter and are suffixed with -value unless the data value is boolean.
++ data properties and object properties being with has unless another verb makes better sense.
++ individuals gerneally begin with a lowercase letter, unless it is a proper name
+
+Note these conventions relate to the underlying entity and not what is shown as its name in Protégé (which is normally the value of the label for whatever default the language is set to).
+
++ a label must be provided (usually with a language specification) and should be make sense in the language of choice
+
+Markdown will be used in all text.</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
         <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
     
 
 
@@ -34,7 +80,20 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#constructIsMeasuredBy">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Item"/>
+        <rdfs:label xml:lang="en">construct is measured by</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:construct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#geenLifestyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#geenLifestyle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
+        <rdfs:label xml:lang="en">green lifestyle</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:greenLifestyle"/>
     </owl:ObjectProperty>
     
 
@@ -45,7 +104,17 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Agent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <rdfs:label xml:lang="en">has behaviour</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#organizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#organizes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
     </owl:ObjectProperty>
     
 
@@ -54,6 +123,7 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#psychologicalWellBeing">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
+        <rdfs:label xml:lang="en">pychological well-being</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:psychologicalWellBeing"/>
     </owl:ObjectProperty>
     
@@ -64,6 +134,7 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#simulates">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model"/>
+        <rdfs:label xml:lang="en">simulates</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:simulates"/>
     </owl:ObjectProperty>
     
@@ -75,7 +146,18 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
+        <rdfs:label xml:lang="en">social practice</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:socialPractice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#sufficiency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#sufficiency">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
+        <rdfs:label xml:lang="en">sufficiency</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:sufficiency"/>
     </owl:ObjectProperty>
     
 
@@ -86,6 +168,7 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <rdfs:label xml:lang="en">value action gap</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:valueActionGap"/>
     </owl:ObjectProperty>
     
@@ -102,115 +185,127 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasAdaptiveBelief -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#adaptiveBelief -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasAdaptiveBelief">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#adaptiveBelief">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+        <rdfs:label xml:lang="en">adaptive belief</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:AdaptiveBelief"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasAltruism -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#altruism -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasAltruism">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#altruism">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+        <rdfs:label xml:lang="en">altruism</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:altruism"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasAttitude -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#attitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasAttitude">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#attitude">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Agent"/>
+        <rdfs:label xml:lang="en">attitude</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:attitude"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasConstruct -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#construct -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasConstruct">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#construct">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+        <rdfs:label xml:lang="en">construct</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:construct"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasEnvironmentalFootprint -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#environmentalFootprint -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasEnvironmentalFootprint">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#environmentalFootprint">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+        <rdfs:label xml:lang="en">environmental footprint</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:environmentalFootprint"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasEnvironmentalOrSustainabilityConcern -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#environmentalOrSustainabilityConcern -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasEnvironmentalOrSustainabilityConcern">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#environmentalOrSustainabilityConcern">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+        <rdfs:label xml:lang="en">environmental concern or sustainability concern</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:environmentalOrSustainabilityConcern"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasName -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#name -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasName">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#name">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model"/>
+        <rdfs:comment xml:lang="en">name</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TiPaC"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasPersonalUncertainty -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#personalUncertainty -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasPersonalUncertainty">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#personalUncertainty">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
+        <rdfs:label xml:lang="en">personal uncertainty</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:personalUncertainty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasScenario -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#scenario -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasScenario">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#scenario">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Vision"/>
+        <rdfs:label xml:lang="en">scenario</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:scenario"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasUpscaling -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#upscaling -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasUpscaling">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#upscaling">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+        <rdfs:label xml:lang="en">up-scaling</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:upscaling"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasVersion -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#version -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasVersion">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#version">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model"/>
-        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TiPaC"/>
+        <rdfs:label xml:lang="en">version</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:TiPaC"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasWellBeing -->
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#wellBeing -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#hasWellBeing">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#wellBeing">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#QualityOfLife"/>
+        <rdfs:label xml:lang="en">well-being</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:wellBeing"/>
     </owl:DatatypeProperty>
     
@@ -231,7 +326,8 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Governance"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:futureVision"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:governance"/>
     </owl:Class>
     
 
@@ -240,7 +336,13 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Agent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#DisagreeWithGlossary"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:organizationalPsychology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transitionManagement"/>
+        <rdfs:comment xml:lang="en">The more or less explicit claim or expression of a future that is idealised in order to mobilise present potential to move into the direction of this future(van der Helm, 2009, p. 100).</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:agent"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:futureVision"/>
     </owl:Class>
     
 
@@ -250,8 +352,62 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#AgentBasedModel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TiPaC"/>
+        <rdfs:label xml:lang="en">Agent-based model</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:TiPaC"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Attention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Attention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Attention</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Attribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Attribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Attribution"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#DecisionMaking"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SelfPerception"/>
+        <rdfs:label xml:lang="en">Attribution</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:spillOver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BackCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BackCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#WillOfInitiativeOrganizers"/>
+        <top-down-common:periodOfProcess xml:lang="en">several day parts</top-down-common:periodOfProcess>
+        <rdfs:label xml:lang="en">Back-casting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BackCasting"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Insight"/>
+        <rdfs:comment xml:lang="en">Stakeholders learn to reflect on futures.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BackCasting"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Network"/>
+        <rdfs:comment xml:lang="en">Networks may be formed.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BackCasting"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Vision"/>
+        <rdfs:comment xml:lang="en">Future visions are explicitly articulated.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -259,7 +415,99 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
+        <rdfs:label xml:lang="en">Behaviour</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:behaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BehaviouralPotential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BehaviouralPotential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label>Behavioural potential</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CausalRelationship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CausalRelationship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Casual relationship</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:pathAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CircularEconomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CircularEconomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Economy"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Circular economy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:circularEconomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:label xml:lang="en">Citizen</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Collective</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveThinking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveThinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Collective thinking</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveWellBeing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveWellBeing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Collective well-being</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
     </owl:Class>
     
 
@@ -270,6 +518,26 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense"/>
         <rdfs:label xml:lang="en">Commuter</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:commuter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Consumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Consumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Consumption</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Crisis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:transition"/>
     </owl:Class>
     
 
@@ -288,7 +556,18 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Culture">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#DecisionMaking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#DecisionMaking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Decision making</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:spillOver"/>
     </owl:Class>
     
 
@@ -297,8 +576,147 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveThinking"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecocide"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Sharing"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Surplus"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence"/>
+        <top-down-common:periodOfProcess xml:lang="en">1 decade to 1 century</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Degrowth</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Income"/>
+        <rdfs:comment xml:lang="en">Equalized</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Unemployment"/>
+        <rdfs:comment xml:lang="en">Decreases.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#follows"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence"/>
+        <rdfs:comment xml:lang="en">Increases</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizens"/>
+        <rdfs:comment xml:lang="en">Gains freedom.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveWellBeing"/>
+        <rdfs:comment xml:lang="en">Maximized.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Consumption"/>
+        <rdfs:comment xml:lang="en">Diminishes.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecosystem"/>
+        <rdfs:comment xml:lang="en">It thrives.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecocide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecocide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Ecocide</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Economy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:circularEconomy"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecosystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecosystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Ecosystem</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EfficiencyIncrease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EfficiencyIncrease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Efficiency increase</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:reboundEffect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EquilibriumSelection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EquilibriumSelection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Equilibrium selection</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:tippingPoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ExogenousFactors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ExogenousFactors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Exeogenous factors</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Experience</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Feedback</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Footprint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Footprint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Footprint</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:reboundEffect"/>
     </owl:Class>
     
 
@@ -312,11 +730,40 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     
 
 
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#GrassrootsMovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#GrassrootsMovement">
+        <rdfs:label xml:lang="en">Grassroots movement</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:grassrootsMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#GreenLifestyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#GreenLifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
+        <rdfs:label xml:lang="en">Green lifestyle</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:greenLifestyle"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Identity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Identity">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Income -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Income">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Income</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
     </owl:Class>
     
 
@@ -338,10 +785,75 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     
 
 
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Information</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InformationProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InformationProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Information processing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitativeOrganizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitativeOrganizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitiativeOrganizer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Initiative organizers</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitiativeOrganizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitiativeOrganizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#organizes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Will"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Initative organizer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Insight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Insight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Insight</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Interaction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Interaction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
+        <rdfs:label xml:lang="en">Interaction</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:interaction"/>
     </owl:Class>
     
@@ -362,6 +874,7 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ItemResponseTheory">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+        <rdfs:label xml:lang="en">Item response theory</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:itemResponseTheory"/>
     </owl:Class>
     
@@ -372,9 +885,36 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Learning">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Attention"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Experience"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Feedback"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Information"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InformationProcessing"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Motivation"/>
+        <top-down-common:frequencyOfProcess xml:lang="en">continually</top-down-common:frequencyOfProcess>
+        <top-down-common:periodOfProcess xml:lang="en">always</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Learning"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <rdfs:comment xml:lang="en">Other expression</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Learning"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <rdfs:comment xml:lang="en">Via new information and experiences.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Learning"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BehaviouralPotential"/>
+        <rdfs:comment xml:lang="en">More options</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -382,6 +922,7 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#DisagreeWithGlossary"/>
+        <rdfs:label xml:lang="en">Lifestyle</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:lifestyle"/>
     </owl:Class>
     
@@ -392,7 +933,38 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#DisagreeWithGlossary"/>
+        <rdfs:label xml:lang="en">Model</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ModelAccuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ModelAccuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Accuracy of model</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:pathAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Motivation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Motivation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Motivation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Network</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
     </owl:Class>
     
 
@@ -402,9 +974,17 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathAnalysis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CausalRelationship"/>
+        <top-down-common:periodOfProcess xml:lang="en">Causal relations among several variables are represented by graphs (path diagrams) showing the &quot;paths&quot; along which causal influences travel.</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Path analysis</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:pathAnalysis"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#periodOfProcess"/>
+        <owl:annotatedTarget xml:lang="en">Causal relations among several variables are represented by graphs (path diagrams) showing the &quot;paths&quot; along which causal influences travel.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Researcher can calculate direct and indirect effects of independent variables.</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -431,7 +1011,7 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Commuter"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:commuter"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Individual"/>
@@ -448,11 +1028,40 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     
 
 
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PhaseTransition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PhaseTransition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Phase transition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:tippingPoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:policy"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Practice -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Practice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PriceChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PriceChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Price change</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:reboundEffect"/>
     </owl:Class>
     
 
@@ -470,8 +1079,29 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ReboundEffect">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EfficiencyIncrease"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PriceChange"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Savings"/>
+        <top-down-common:frequencyOfProcess xml:lang="en">whenever there is a saving in efficiency or monetary savings</top-down-common:frequencyOfProcess>
+        <top-down-common:periodOfProcess xml:lang="en">months or years</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Rebound effect</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:reboundEffect"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ReboundEffect"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Footprint"/>
+        <rdfs:comment xml:lang="en">It increases unintendedly.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#RegimeDestabilisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#RegimeDestabilisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Regime destablisation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:transition"/>
     </owl:Class>
     
 
@@ -494,11 +1124,51 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     
 
 
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Savings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Savings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Savings</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:reboundEffect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SelfPerception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SelfPerception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Self perception</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:spillOver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Sharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Sharing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess"/>
+        <rdfs:label xml:lang="en">Sharing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SocialNorms -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SocialNorms">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Governance"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SociotechnicalSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SociotechnicalSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Sociotechnical system</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:transition"/>
     </owl:Class>
     
 
@@ -508,8 +1178,20 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SpillOver">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:frequencyOfProcess xml:lang="en">As often as one decides between behavioural options.</top-down-common:frequencyOfProcess>
+        <top-down-common:periodOfProcess xml:lang="en">Without ending</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Spill-over</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:spillOver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Surplus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Surplus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Surplus</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
     </owl:Class>
     
 
@@ -526,7 +1208,18 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Time">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:lifestyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Time"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Time affluence</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
     </owl:Class>
     
 
@@ -535,16 +1228,62 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TippingPoint">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EquilibriumSelection"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PhaseTransition"/>
+        <top-down-common:frequencyOfProcess xml:lang="en">Rarely</top-down-common:frequencyOfProcess>
+        <top-down-common:periodOfProcess xml:lang="en">It is &apos;fast&apos; with respect to the time scale of the process.</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Tipping point</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:tippingPoint"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TippingPoint"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Individual"/>
+        <rdfs:comment xml:lang="en">Changes behaviour.</rdfs:comment>
+    </owl:Axiom>
     
 
 
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Crisis"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ExogenousFactors"/>
+        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#RegimeDestabilisation"/>
+        <top-down-common:frequencyOfProcess xml:lang="en">rarely</top-down-common:frequencyOfProcess>
+        <top-down-common:periodOfProcess xml:lang="en">several decades</top-down-common:periodOfProcess>
+        <rdfs:label xml:lang="en">Transition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:transition"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Culture"/>
+        <rdfs:comment xml:lang="en">Sustainable practices have become widespread.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Economy"/>
+        <rdfs:comment xml:lang="en">Production and consumption processes do not deplete finite resources</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SociotechnicalSystem"/>
+        <rdfs:comment xml:lang="en">Technologies and the way these technologies are used in society have become sustainable</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Unemployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Unemployment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Unemployment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
     </owl:Class>
     
 
@@ -569,12 +1308,39 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
     
 
 
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Will -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Will">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:label xml:lang="en">Will</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#WillOfInitiativeOrganizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#WillOfInitiativeOrganizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Will"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitativeOrganizers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Will of initiative organizers</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Worker -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Worker">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Commuter"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:commuter"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Worker"/>
@@ -662,6 +1428,13 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:backcasting">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:ethics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:philosophy"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:publicAdministration"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sustainableDevelopment"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Back-casting</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -681,6 +1454,12 @@ Within the GLAMURS project, this ontology is generally referred to as the questi
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:circularEconomy">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:economics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:industrialEcology"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#term:business"/>
+        <rdfs:comment xml:lang="en">A Circular Economy is an economic and industrial system where material loops are closed and value creation is aimed for at every chain in the system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Circular economy</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -769,6 +1548,7 @@ Reference: Oliver, P. E., Marwell, G., &amp; Teixeira, R. (1985). A theory of th
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:futureVision">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <rdfs:label xml:lang="en">Future vision</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -788,7 +1568,15 @@ Reference: Oliver, P. E., Marwell, G., &amp; Teixeira, R. (1985). A theory of th
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:grassrootsMovement -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:grassrootsMovement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:ethics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:publicAdministration"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sustainableDevelopment"/>
+        <rdfs:comment xml:lang="en">Grassroots movements are urban-orientated mobilizations that influence structural social change and transform the urban meanings.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Grassroots movement</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -797,6 +1585,12 @@ Reference: Oliver, P. E., Marwell, G., &amp; Teixeira, R. (1985). A theory of th
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:greenLifestyle">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:agentBasedModelling"/>
+        <rdfs:comment xml:lang="en">&quot;Actually I think the term is self-contradictory with respect to scale. It is impossible to know whether a lifestyle is &apos;green&apos;... Lifetyle is an individual thing, greenness a global thing. (Similarly, sustainable lifestyle, which is also contradictory with respect to time.)
+
+In general, however, I suspect what is meant is lifestyles that at least at some level involve choices and aspirations that are associated with lower supposed environmental impact.&quot;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:label xml:lang="en">Green lifestyle</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -840,10 +1634,37 @@ Reference: Oliver, P. E., Marwell, G., &amp; Teixeira, R. (1985). A theory of th
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
         <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transitionManagement"/>
+        <rdfs:comment xml:lang="en">A process where new information is assimilated, based on past experiences and via a feedback-stimulus is applied in subsequent actions, leading to permanent or potential behavioural change.</rdfs:comment>
         <rdfs:label xml:lang="en">Learning</rdfs:label>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:psychology"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UFZ"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transitionManagement"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:learning"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">A process where new information is assimilated, based on past experiences and via a feedback-stimulus is applied in subsequent actions, leading to permanent or potential behavioural change.</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+    </owl:Axiom>
     
 
 
@@ -922,6 +1743,13 @@ The concept of what a model is differs from one discipline to another. Central t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:policy">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:ethics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:publicAdministration"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sustainableDevelopment"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:isDefinedBy xml:lang="en">Policy entails the plans, choices and actions of one or more administrative agencies that are oriented towards the management of a certain societal development.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Policy</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1028,6 +1856,12 @@ The concept of what a model is differs from one discipline to another. Central t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:sufficiency">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:foresight"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:transitionManagement"/>
+        <rdfs:comment xml:lang="en">Sufficiency stands for consumption and lifestyles in which the level of material consumption is strongly reduced, and in which quality of life is more determined by wellbeing, social relationships, more quality time, less time pressure. It can also be related to alternative economic models like degrowth, steady state (developed by Herman Daly), and Tim Jacksons (2009) plea for prosperity without growth</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Sufficiency</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1048,6 +1882,13 @@ The concept of what a model is differs from one discipline to another. Central t
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:transition">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:ethics"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:innovationStudies"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:philosophy"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:publicAdministration"/>
+        <top-down-common:partOfDiscipline rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#discipline:sustainableDevelopment"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#TUD"/>
+        <rdfs:label xml:lang="en">Transition</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1142,6 +1983,12 @@ The concept of what a model is differs from one discipline to another. Central t
         <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:wellBeing"/>
         <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
     </owl:Axiom>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
 </rdf:RDF>
 
 

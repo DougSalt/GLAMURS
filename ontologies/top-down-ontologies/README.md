@@ -2,7 +2,7 @@ This directory contains ontologies created from the description of work and the 
 
 + top-down-common.owl - this is a common framework on which most of the top-down 
 	ontologies have been built. The only top-down ontology that does not directly import this ontology is the original description of work ontology.
-+ top-downn.owl - this is the top-down ontology with all component ontologies from this directory 
++ top-down.owl - this is the top-down ontology with all component ontologies from this directory 
 	integrated together. This is the ontology to which all bottom-up ontologies will link.
 
 The remaining parts are additional directories each containing an ontology as described below: 

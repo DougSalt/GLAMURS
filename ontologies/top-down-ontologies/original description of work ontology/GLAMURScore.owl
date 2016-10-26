@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/GLAMURScore.owl#"
+     xml:base="http://www.glamurs.eu/ontologies/GLAMURScore.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl">
+        <rdfs:comment rdf:datatype="&xsd;string">This ontology is the &apos;core&apos; ontology of GLAMURS, which is intended to act as the &apos;glue&apos; holding all the concepts in GLAMURS. It is centred around the entities in the GLAMURS WP2 integration research question: &quot;How the project has provided a context in which citizens, policymakers, stakeholders and researchers come to know what needs to be done to transform their ways of life and ways of thinking such that they are socially, individually, environmentally and economically sustainable.&quot;</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasContext">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasGeography -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasGeography">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasKnowledge -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasKnowledge">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyle">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyleDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyleDomain">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasSustainability -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasSustainability">
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability"/>
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasThinking -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasThinking">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformation -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformation">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom"/>
+            <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom">
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation"/>
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#usesKnowledge -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#usesKnowledge">
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor">
+        <rdfs:comment>An actor (not a thespian or a concept from Actor Network Theory) is a person or a group of people.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Cooperative -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Cooperative">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#EconomicSustainability -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#EconomicSustainability">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Ecovillage -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Ecovillage">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#EnergyUseInHomes -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#EnergyUseInHomes">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#EnvironmentalSustainability -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#EnvironmentalSustainability">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#FlexibleWorking -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#FlexibleWorking">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Food -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Food">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Home -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Home">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#IndividualSustainability -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#IndividualSustainability">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Policymaker -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Policymaker">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Project -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Project">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Researcher -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#SocialSustainability -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#SocialSustainability">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Stakeholder -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#StatusOfHomes -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#StatusOfHomes">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#WorkLifeBalance -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#WorkLifeBalance">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Workplace -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Workplace">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top"
+     xmlns:vocabulary="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top">
+        <owl:imports rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isRepresentedBy -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isRepresentedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#modifies -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#modifies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#uses -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology">
+        <rdfs:label xml:lang="en">Bottom-up ontology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#TopDownOntology">
+        <rdfs:label xml:lang="en">Top-down ontology</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

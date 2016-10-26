@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS"
+     xmlns:ntnu-abox-namespaced="http://www.semanticweb.org/ds42723/ontologies/2016/7/NTNU-ABOX-namespaced#"
+     xmlns:glamurs="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#"
+     xmlns:ntnu-tbox="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#"
+     xmlns:vocabulary="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS">
+        <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/TiPaC.owl"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/7/NTNU-ABOX-namespaced"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX"/>
+        <owl:imports rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Airport_labels -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Airport_labels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Bicycles -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Bicycles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Cars -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Firms -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Firms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Junction_links -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Junction_links">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Junctions -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Junctions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Patch -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Patch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Persons -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Persons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/TiPaC.owl#Station_labels -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/TiPaC.owl#Station_labels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfGovernance -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfGovernance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#AspectOfMembershipOfInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviourOrBehaviouralPattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#BehaviouralDomain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Individual -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Individual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Initiative -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Initiative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Measurement -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Measurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#SocialAndPersonalBackground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#WellBeing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#AgentBasedModelOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#AgentBasedModelOntology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#ModelOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#InitiativeInterviewOntology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#ModelOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#ModelOntology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#TiPaCOntology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#AgentBasedModelOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/integration/bottom-to-top#BottomUpOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CountryAbbreviation -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CountryAbbreviation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Expenditure -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Expenditure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Footprint -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Footprint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasEmissions -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasEmissions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGases -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Land -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Land">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Person -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#EnvironmentImpactOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Accountants -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Accountants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Activity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Area -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Assumption -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Assumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Awareness -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Awareness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Change -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Citizens -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Citizens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Consumption -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Consumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Culture -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Culture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#EducationSystem -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#EducationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Emotion -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Emotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#FutureImage -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#FutureImage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Innovation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Innovation -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Innovation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Lifestyle -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Lifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#LifestyleActivity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#LifestyleActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Organization -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#OrganizationAndDivisionOfRoles -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#OrganizationAndDivisionOfRoles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Person -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Question -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Question">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Resource -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Vision -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Vision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Welfare -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Welfare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Workshop -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/1/backcasting/NL/TBOX#Workshop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/10/26/GLAMURS#BackCastingOntology"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

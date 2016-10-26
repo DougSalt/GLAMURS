@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#"
+     xml:base="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-26</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/9/07/GLAMURS/integration/vocabulary#author:DougSalt"/>
+        <rdfs:comment xml:lang="en">This is one of serveral ontologies which will link all the ontologies in GLAMURS together, primarily in a star pattern through the top-down ontology. 
+
+This ontology will provide the vocabulary to link. Thus, this ontology will only consist of relationships and nothing else.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#allegoricallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#allegoricallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#approximates"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isAllegoricallyRepresentedBy"/>
+        <rdfs:label xml:lang="en">allegorially represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#approximates -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#approximates">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isApproximatedBy"/>
+        <rdfs:label xml:lang="en">approximates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#formallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#formallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isFormallyRepresentedBy"/>
+        <rdfs:label xml:lang="en">formally represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart">
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isAllegoricallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isAllegoricallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isApproximatedBy"/>
+        <rdfs:label xml:lang="en">is allegorically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isApproximatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isApproximatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isRepresentedBy"/>
+        <rdfs:label xml:lang="en">is approximated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isFormallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isFormallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isRepresentedBy"/>
+        <rdfs:label xml:lang="en">is formally represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isLogicallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isLogicallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isFormallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#logicallyRepresents"/>
+        <rdfs:label xml:lang="en">is logically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isMeasuredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isMeasuredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isNumericallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#measures"/>
+        <rdfs:label xml:lang="en">is measured by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isMetaphoricallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isMetaphoricallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isApproximatedBy"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#metaphoricallyRepresents"/>
+        <rdfs:label xml:lang="en">is metaphorically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#modifies"/>
+        <rdfs:label xml:lang="en">is modified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isNumericallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isNumericallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isFormallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents"/>
+        <rdfs:label xml:lang="en">is numerically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents"/>
+        <rdfs:label xml:lang="en">is represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isSimulatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isSimulatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isLogicallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#simulates"/>
+        <rdfs:label xml:lang="en">is simulated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy">
+        <owl:inverseOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#uses"/>
+        <rdfs:label xml:lang="en">is used by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#logicallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#logicallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#formallyRepresents"/>
+        <rdfs:label xml:lang="en">logically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#measures -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#measures">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents"/>
+        <rdfs:label xml:lang="en">measures</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#metaphoricallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#metaphoricallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#approximates"/>
+        <rdfs:label xml:lang="en">metaphorically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#modifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#modifies">
+        <rdfs:label xml:lang="en">modifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#formallyRepresents"/>
+        <rdfs:label xml:lang="en">numerically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents">
+        <rdfs:label xml:lang="en">represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#simulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#simulates">
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#logicallyRepresents"/>
+        <rdfs:label xml:lang="en">simulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#uses">
+        <rdfs:label xml:lang="en">uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt">
+        <rdfs:label>Doug Salt</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

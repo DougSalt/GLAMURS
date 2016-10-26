@@ -1,0 +1,1032 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/25/top-down#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/25/top-down"
+     xmlns:glamurs="http://www.glamurs.eu/ontologies/glamurs-WS20140131.owl#"
+     xmlns:top-terms="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:top-down-common="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:online-questionnaire="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/25/top-down">
+        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire"/>
+        <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl/1.0.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en">This takes the original ontology from the description of work and combines with several other top down ontologies. In particular:
+
++ The expert terms ontology.
++ The on-line questionnaire ontology</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
+
+The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
+ 
++ classes begin with an upper case letter
++ object properties begin with a lower case letter
++ data properties begin with a lower case letter and are suffixed with -value unless the data value is boolean.
++ data properties and object properties being with has unless another verb makes better sense.
++ individuals gerneally begin with a lowercase letter, unless it is a proper name
+
+Note these conventions relate to the underlying entity and not what is shown as its name in ProtÃ©gÃ© (which is normally the value of the label for whatever default the language is set to).
+
++ a label must be provided (usually with a language specification) and should be make sense in the language of choice
+
+Markdown will be used in all text.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#environmentalOrSustainabilityConcern -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#environmentalOrSustainabilityConcern">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#environmentalOrSustainabilityConcern"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Actor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CaseStudy"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#MaterialConsumption"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#EnergyUseInHomes -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#EnergyUseInHomes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnergyUse"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Food -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Food">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Food"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Home -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Home">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Household"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#KnowledgeAcquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#KnowledgeAcquisition"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Lifestyle"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Country"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Place"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Policymaker -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Policymaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Policymaker"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Region"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Place"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Researcher -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Researcher"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Stakeholder -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Stakeholder">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Stakeholder"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Experience"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#KnowledgeAcquisition"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Experience"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#KnowledgeAcquisition"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Travel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Travel"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#BehaviourChange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#BehaviourChange"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveThinking -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveThinking">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveThinking"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Commuter -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Commuter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Commuter"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#reenGrowth"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#reenGrowth"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Footprint -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Footprint">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#GrassrootsMovement -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#GrassrootsMovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#GrassrootsMovement"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Identity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Identity">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Identity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ModelAccuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ModelAccuracy"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Model"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathAnalysis -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathCoefficient"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Policy -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Policy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Policymaker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ReboundEffect -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ReboundEffect">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#ReboundEffect"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SelfPerception -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SelfPerception">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SelfPerception"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Vision -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Vision">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Vision"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Actor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CapabilityApproach -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CapabilityApproach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CapabilityApproach"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CaseStudy -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CaseStudy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Country -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CriticalAnalysis -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CriticalAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#CriticalAnalysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Environment -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Environment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecosystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnvironmentalImpact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Environment"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#EnvironmentalImpact"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#FocusGroup -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#FocusGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#FocusGroup"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Government -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Actor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Governance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Government"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Actor"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Government"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Governance"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Government"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Country"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Household -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Household"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Identity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Identity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Lifestyle -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Lifestyle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#MaterialConsumption -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#MaterialConsumption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Mood -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Mood">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#WorkLifeBalance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Mood"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#WorkLifeBalance"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#NetworkAnalysis -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#NetworkAnalysis">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Place -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Place">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Place"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PostiveFeedback -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PostiveFeedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Feedback"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#ReboundEffect -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#ReboundEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Region -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SelfReflection -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SelfReflection">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SelfReflection"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SocialIdentityTheory -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SocialIdentityTheory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#SocialIdentityTheory"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Stakeholder -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Stakeholder"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#TravelBehaviour -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#TravelBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#TravelBehaviour"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Institution -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Institution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Actor"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt -->
+
+    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:TiPaC -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:TiPaC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#AgentBasedModel"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Researcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasContext">
+        <rdfs:label xml:lang="en">has context</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasGeography">
+        <rdfs:label xml:lang="en">has geography</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasKnowledge">
+        <rdfs:label xml:lang="en">has knowledge</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyle">
+        <rdfs:label xml:lang="en">has lifestyle</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyleDomain">
+        <rdfs:label xml:lang="en">has lifestyle domain</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasSustainability">
+        <rdfs:label xml:lang="en">has sustainability</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasThinking">
+        <rdfs:label xml:lang="en">has thinking</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformation">
+        <rdfs:label xml:lang="en">transformation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom">
+        <rdfs:label xml:lang="en">transformation from</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo">
+        <rdfs:label xml:lang="en">transformation to</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#usesKnowledge">
+        <rdfs:label xml:lang="en">uses knowledge</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

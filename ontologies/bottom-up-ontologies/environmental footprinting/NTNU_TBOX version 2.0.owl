@@ -1,0 +1,1440 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#"
+     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2.0</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This  version of the NTNU ontology and is based on the schema for the attached IRI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/Expenditure%20by%20consumption%20cat%20ontology.xlsx</rdfs:isDefinedBy>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/schemata%20ontology.xlsx</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerPersonIsAMeasurePer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerPersonIsAMeasurePer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isAMeasurePer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerCapita"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GWP100PerCapitaIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GWP100PerCapitaIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMeasuredIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GWP100"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasesPerCapita"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#KgOfC02Equivalent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GWP100PerPersonIsAMeasurePer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GWP100PerPersonIsAMeasurePer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isAMeasurePer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasesPerCapita"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForClothingIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForClothingIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConstructionIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConstructionIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMeasuredIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForFoodIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForFoodIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForManufacturedProductsIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForManufacturedProductsIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForMobilityIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForMobilityIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForServicesIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForServicesIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForShelterIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForShelterIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForTradeIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForTradeIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#expenditureForConsumablesIsMeasuredIn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#footprintPerCapitaIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#footprintPerCapitaIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMeasuredIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerCapita"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasCountryAbbreviation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasCountryAbbreviation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasCountryProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CountryAbbreviation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasCountryProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasCountryProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimension"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimensionForKgOfC02Equivalent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimensionForKgOfC02Equivalent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimension"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#KgOfC02Equivalent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilotonne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimensionForMillimetresCubed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimensionForMillimetresCubed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimension"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MilimetresCubed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millimetres"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimensionForSquareKilometre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimensionForSquareKilometre">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasDimension"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SquareKilometre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilometre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForClothing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForClothing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForClothing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConstruction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConstruction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConstruction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasCountryProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForFood">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForFood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForManufacturedProducts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForManufacturedProducts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForManufacturedProducts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForMobility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForMobility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForMobility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForServices -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForServices">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForServices"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForShelter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForShelter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForShelter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForTrade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForTrade">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForTrade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForClothing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForClothing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForClothing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConstruction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConstruction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConstruction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForFood">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForFood"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForManufacturedProducts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForManufacturedProducts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForManufacturedProducts"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForMobility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForMobility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForMobility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForServices -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForServices">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForServices"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForShelter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForShelter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForShelter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForTrade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForTrade">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#hasTimePeriodForExpenditureForConsumables"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForTrade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isAMeasureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isAMeasureOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isAMeasurePer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isAMeasurePer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMeasuredIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMultipleUnitsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMultipleUnitsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isOfFundamentalMagnitude"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#materialFootprintPerCapitaIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#materialFootprintPerCapitaIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#footprintPerCapitaIsMeasuredIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerCapita"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MaterialFootprint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilotonne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#totalLandAreaPerCapitaIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#totalLandAreaPerCapitaIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isMeasuredIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#LandPerCapita"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SquareKilometre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#waterFootprintPerCapitaIsMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#waterFootprintPerCapitaIsMeasuredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#footprintPerCapitaIsMeasuredIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerCapita"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#WaterFootprint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MilimetresCubed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isNumberOfOtherUnitsOfMeasure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isNumberOfOtherUnitsOfMeasure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#rational"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isOfFundamentalMagnitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isOfFundamentalMagnitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Australia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Australia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Austria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Austria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Belgium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Belgium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Brazil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Brazil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Bulgaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Bulgaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Canada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Canada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#China -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#China">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CountryAbbreviation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CountryAbbreviation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Cyprus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Cyprus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CzechRepublic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CzechRepublic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Denmark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Denmark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Estonia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Estonia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Expenditure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Expenditure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForClothing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForClothing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Expenditure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForManufacturedProducts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForManufacturedProducts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForMobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForMobility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForServices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForServices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForShelter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForShelter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForTrade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForTrade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConsumables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Finland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Finland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Footprint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Footprint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#FootprintPerCapita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Footprint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#France -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#France">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GWP100 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GWP100">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasEmissions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Germany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Germany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Gram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Gram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Greece -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Greece">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasEmissions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasEmissions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasesPerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasesPerCapita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGasEmissions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Hungary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Hungary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#India -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#India">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Indonesia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Indonesia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Ireland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Ireland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Italy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Italy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Japan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Japan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#KgOfC02Equivalent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#KgOfC02Equivalent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilogramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilogramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilometre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilometre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Length"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilotonne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilotonne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Land -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Land"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#LandPerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#LandPerCapita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Land"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Latvia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Latvia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Length -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Length">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Lithuania -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Lithuania">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Luxembourg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Luxembourg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Malta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Malta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MaterialFootprint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MaterialFootprint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Footprint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Metres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Metres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Length"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mexico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mexico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MilimetresCubed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MilimetresCubed">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millilitres"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Volume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millilitres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millilitres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Volume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millimetres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millimetres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Length"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MultipleUnitsOfFundamentalMagnitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MultipleUnitsOfFundamentalMagnitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isOfFundamentalMagnitude"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Netherlands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Netherlands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Norway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Norway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Poland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Poland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Portugal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Portugal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Romania -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Romania">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Russia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Russia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Slovakia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Slovakia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Slovenia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Slovenia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SouthAfrica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SouthAfrica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SouthKorea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SouthKorea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Spain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Spain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SquareKilometre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SquareKilometre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Sweden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Sweden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Switzerland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Switzerland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Taiwan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Taiwan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Tonne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Tonne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Turkey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Turkey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitedKingdom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitedKingdom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitedStates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitedStates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitsOfFundamentalMagnitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitsOfFundamentalMagnitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#isOfFundamentalMagnitude"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitOfMeasurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#WaterFootprint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#WaterFootprint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Footprint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Years -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Years">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#TimePeriod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#euro1000000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#euro1000000">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#MonetaryUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#aSingleYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#aSingleYear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Years"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#carbonDioxide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#carbonDioxide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#GreenHouseGases"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#gram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#gram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Gram"/>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilogramOfCarbonDioxide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilogramOfCarbonDioxide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#KgOfC02Equivalent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilogramme"/>
+        <isAMeasureOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#carbonDioxide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilogramme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilogramme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilogramme"/>
+        <isMultipleUnitsOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#gram"/>
+        <isNumberOfOtherUnitsOfMeasure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</isNumberOfOtherUnitsOfMeasure>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilometre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilometre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilometre"/>
+        <isMultipleUnitsOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#metre"/>
+        <isNumberOfOtherUnitsOfMeasure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</isNumberOfOtherUnitsOfMeasure>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilotonne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilotonne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilotonne"/>
+        <isMultipleUnitsOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#tonne"/>
+        <isNumberOfOtherUnitsOfMeasure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</isNumberOfOtherUnitsOfMeasure>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilotonneOfMaterial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilotonneOfMaterial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Kilotonne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#metre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#metre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Metres"/>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#milimetrecubedOfWater -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#milimetrecubedOfWater">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millilitres"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#millimetre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#millimetre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Millimetres"/>
+        <isMultipleUnitsOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#metre"/>
+        <isNumberOfOtherUnitsOfMeasure rdf:datatype="http://www.w3.org/2002/07/owl#rational">1 / 1000</isNumberOfOtherUnitsOfMeasure>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#notionalIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#notionalIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#squareKilometre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#squareKilometre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SquareKilometre"/>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#tonne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#tonne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Tonne"/>
+        <isMultipleUnitsOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#kilogramme"/>
+        <isNumberOfOtherUnitsOfMeasure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</isNumberOfOtherUnitsOfMeasure>
+        <isOfFundamentalMagnitude rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOfFundamentalMagnitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#euro1,000,000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#euro1,000,000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#euro1000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Australia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Brazil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Canada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#China"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#EUMember"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#India"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Indonesia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Japan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Mexico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Norway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Russia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SouthAfrica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#SouthKorea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Switzerland"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Taiwan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Turkey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitedStates"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Austria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Belgium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Bulgaria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Cyprus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#CzechRepublic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Denmark"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Estonia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Finland"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#France"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Germany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Greece"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Hungary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Ireland"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Italy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Latvia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Lithuania"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Luxembourg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Malta"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Netherlands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Poland"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Portugal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Romania"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Slovakia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Slovenia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Spain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#Sweden"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#UnitedKingdom"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForClothing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForConstruction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForFood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForManufacturedProducts"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForMobility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForServices"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForShelter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/8/12/NTNU-TBOX#ExpenditureForTrade"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

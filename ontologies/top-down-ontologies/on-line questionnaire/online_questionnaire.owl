@@ -9,6 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire">
         <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">This is all responses to the online questionnaire answered before 2016-07-27. 
 
 Within the GLAMURS project, this ontology is generally referred to as the questionnaire ontology.
@@ -20,6 +21,7 @@ Each term that is defined will also have a seeAlso annotation which refers to th
 If there is no seeAlso or definedBy annotation, then the class, datatype or property was created by the author. However such &quot;unsupported&quot; definition is usually made explicity with the definedBy annotation and the author. Such axioms or definitions are usually for convenience and obvious logical connections or groupings. 
 
 Other than the caveats previously mentiioned, no additional attempt has been made to classify or link, the classes, datatypes or properties. The derived ontology  is purely the results gathered from the questionnaire at (http://surveys.hutton.ac.uk/index.php/559132?newtest=Y).</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
 
 The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
@@ -35,8 +37,6 @@ Note these conventions relate to the underlying entity and not what is shown as 
 + a label must be provided (usually with a language specification) and should be make sense in the language of choice
 
 Markdown will be used in all text.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
-        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
     </owl:Ontology>
     
 
@@ -385,6 +385,9 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BackCasting">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Insight"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Network"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Vision"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#WillOfInitiativeOrganizers"/>
         <top-down-common:periodOfProcess xml:lang="en">several day parts</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Back-casting</rdfs:label>
@@ -468,7 +471,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -482,7 +485,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -576,11 +579,17 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizens"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveWellBeing"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Consumption"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecosystem"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Income"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Unemployment"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#CollectiveThinking"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Ecocide"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Sharing"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Surplus"/>
-        <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence"/>
         <top-down-common:periodOfProcess xml:lang="en">1 decade to 1 century</top-down-common:periodOfProcess>
         <rdfs:label xml:lang="en">Degrowth</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:degrowth"/>
@@ -594,14 +603,14 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
-        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Unemployment"/>
-        <rdfs:comment xml:lang="en">Decreases.</rdfs:comment>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence"/>
+        <rdfs:comment xml:lang="en">Increases</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
-        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#follows"/>
-        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TimeAffluence"/>
-        <rdfs:comment xml:lang="en">Increases</rdfs:comment>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#changes"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Unemployment"/>
+        <rdfs:comment xml:lang="en">Decreases.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Degrowth"/>
@@ -773,8 +782,8 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Individual">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Person"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Lifestyle"/>
         <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:environmentalOrSustainabilityConcern"/>
+        <rdfs:seeAlso rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:lifestyle"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Individual"/>
@@ -812,7 +821,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitiativeOrganizer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -886,6 +895,8 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Behaviour"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#BehaviouralPotential"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Attention"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Experience"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Feedback"/>
@@ -1001,7 +1012,7 @@ Markdown will be used in all text.</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PathCoefficient"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
     </owl:Axiom>
     
 
@@ -1079,6 +1090,7 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ReboundEffect">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Footprint"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EfficiencyIncrease"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PriceChange"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Savings"/>
@@ -1119,7 +1131,7 @@ Markdown will be used in all text.</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Risk"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
-        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
     </owl:Axiom>
     
 
@@ -1228,6 +1240,7 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#TippingPoint">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Individual"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#EquilibriumSelection"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#PhaseTransition"/>
         <top-down-common:frequencyOfProcess xml:lang="en">Rarely</top-down-common:frequencyOfProcess>
@@ -1249,6 +1262,9 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Transition">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#AgreeWithGlossary"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Culture"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Economy"/>
+        <top-down-common:changes rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#SociotechnicalSystem"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Crisis"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#ExogenousFactors"/>
         <top-down-common:follows rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#RegimeDestabilisation"/>
@@ -1325,7 +1341,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOf"/>
+                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitativeOrganizers"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1768,7 +1784,7 @@ The concept of what a model is differs from one discipline to another. Central t
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:psychologicalWellBeing"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
         <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:wellBeing"/>
-        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
     </owl:Axiom>
     
 
@@ -1981,13 +1997,21 @@ The concept of what a model is differs from one discipline to another. Central t
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:psychologicalWellBeing"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
         <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#term:wellBeing"/>
-        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
     </owl:Axiom>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen"/>
     </rdf:Description>
     <rdf:Description>
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
 </rdf:RDF>
 

@@ -1,12 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#"
      xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common"
+     xmlns:vocabulary="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common">
+        <owl:imports rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">This ontology is the common basis for four parts of the top-down ontology used in GLAMURS.
 
 These ontologies are:
@@ -34,7 +37,6 @@ Note these conventions relate to the underlying entity and not what is shown as 
 
 Markdown will be used in all text.</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
-        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
     </owl:Ontology>
     
 
@@ -107,7 +109,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#disciplineHasSpecialization -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#disciplineHasSpecialization">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
         <rdfs:label xml:lang="en">discipline has specialization</rdfs:label>
     </owl:ObjectProperty>
@@ -119,15 +121,6 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#follows">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#follows"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#hasPart">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOf"/>
-        <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -145,34 +138,6 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#isCommonSense">
         <rdfs:range rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense"/>
         <rdfs:label xml:lang="en">is common sense</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#isModifedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#isModifedBy">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#modifes"/>
-        <rdfs:label xml:lang="en">is modified by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#modifes -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#modifes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
-        <rdfs:label xml:lang="en">modifes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -280,7 +245,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
     </owl:ObjectProperty>
     
 
@@ -727,7 +692,9 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense">
-        <rdfs:comment xml:lang="en">These are terms that are considered not to need defining and should be obvious in their context</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is a metadata class.
+
+These are terms that are considered not to need defining and should be obvious in their context</rdfs:comment>
         <rdfs:label xml:lang="en">Common sense</rdfs:label>
     </owl:Class>
     
@@ -843,7 +810,9 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Glossary -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Glossary">
-        <rdfs:comment xml:lang="en">These are terms that are in the GLAMURS glossary</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is a metadata class.
+
+These are terms that are in the GLAMURS glossary</rdfs:comment>
     </owl:Class>
     
 
@@ -1021,7 +990,9 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass">
-        <rdfs:comment xml:lang="en">These are classes that are defined or suggested by the responses found in the questionnaire data.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is a metadata class.
+
+These are classes that are defined or suggested by the responses found in the questionnaire data.</rdfs:comment>
         <rdfs:label xml:lang="en">Suggested class</rdfs:label>
     </owl:Class>
     
@@ -1031,7 +1002,9 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedProcess">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process"/>
-        <rdfs:comment xml:lang="en">This is a class suggested by the responses to the questionnaire data</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is a metadata class.
+
+This is a class suggested by the responses to the questionnaire data</rdfs:comment>
         <rdfs:label xml:lang="en">Suggested process</rdfs:label>
     </owl:Class>
     
@@ -1112,7 +1085,9 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType">
-        <rdfs:comment xml:lang="en">These are terms that are not defined in the questionnaire responses. This can be for two reasons: either the questionnaire was not completed for that particular term, or the respondent has chosen not to define that term and terminated the questionnaire.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is a metadata class.
+
+These are terms that are not defined in the questionnaire responses. This can be for two reasons: either the questionnaire was not completed for that particular term, or the respondent has chosen not to define that term and terminated the questionnaire.</rdfs:comment>
         <rdfs:label xml:lang="en">Undefined entity type</rdfs:label>
     </owl:Class>
     
@@ -1224,6 +1199,16 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UVT">
         <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Institution"/>
         <rdfs:comment>Univrsiteit van Tilburg</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt">
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#JHI"/>
+        <rdfs:comment xml:lang="en">This is the author of this ontology.</rdfs:comment>
+        <rdfs:label>Doug Salt</rdfs:label>
     </owl:NamedIndividual>
     
 

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/25/top-down#"
-     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/25/top-down"
+<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#"
+     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/top-down"
      xmlns:glamurs="http://www.glamurs.eu/ontologies/glamurs-WS20140131.owl#"
      xmlns:top-terms="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,7 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:online-questionnaire="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/25/top-down">
+    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down">
         <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl/1.0.0"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms"/>
@@ -36,6 +36,53 @@ Note these conventions relate to the underlying entity and not what is shown as 
 
 Markdown will be used in all text.</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isModifedBy"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#isUsedBy"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#numericallyRepresents"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
+    
+
+
+    <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#represents"/>
     
 
 
@@ -961,9 +1008,9 @@ Markdown will be used in all text.</rdfs:comment>
 
     <!-- http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt -->
 
-    <rdf:Description rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt">
+    <owl:NamedIndividual rdf:about="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#author:DougSalt">
         <owl:sameAs rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 

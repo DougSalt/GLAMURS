@@ -6,7 +6,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:regionalSco="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#"
      xmlns:GLAMURS="http://www.glamurs.eu/ontologies/2016/10/26/GLAMURS#"
-     xmlns:top-down-common="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#"
+     xmlns:top-down-common="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:NTNU="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -1382,14 +1382,6 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor">
@@ -1438,105 +1430,105 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Governance -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Governance -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Governance">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Governance">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Theory -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Theory">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Theory">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Economy -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Economy">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Economy">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Energy -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#Energy">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Energy">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#NetworkAnalysis -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#NetworkAnalysis -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#NetworkAnalysis">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#NetworkAnalysis">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PublicGood -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#PublicGood -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/top-terms#PublicGood">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#PublicGood">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#CommonSense -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#CommonSense">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#CommonSense">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Discipline -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Discipline -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Discipline">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Discipline">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Glossary -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Glossary -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Glossary">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Glossary">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Process">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#UndefinedEntityType -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#UndefinedEntityType">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#UndefinedEntityType">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
     </rdf:Description>
     
@@ -1566,7 +1558,7 @@ Markdown will be used in all text.</rdfs:comment>
         <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#author:DougSalt"/>
         <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#author:DougSalt"/>
         <owl:sameAs rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
     </rdf:Description>
     
 
@@ -1631,9 +1623,9 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
 </rdf:RDF>
 
 

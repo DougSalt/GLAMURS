@@ -1,17 +1,34 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#"
-     xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups"
+<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#"
+     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:top-down-common="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#"
+     xmlns:top-down-common=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups">
-        <owl:imports rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common"/>
+    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups">
+        <owl:imports rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- "http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term -->
+
+    <owl:Class rdf:about=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
     
 
 
@@ -26,1855 +43,1855 @@
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:agentBasedModelling -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:agentBasedModelling -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:agentBasedModelling">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:agentBasedModelling">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Agent BasedModelling</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:anInitiative -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:anInitiative -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:anInitiative">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:anInitiative">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">An Initiative</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:appliedSocialPsychology -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:appliedSocialPsychology -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:appliedSocialPsychology">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:appliedSocialPsychology">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Applied SocialPsychology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:averageHousehold -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averageHousehold -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:averageHousehold">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averageHousehold">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Average Household</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:averagePersonnelCosts -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averagePersonnelCosts -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:averagePersonnelCosts">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averagePersonnelCosts">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Average PersonnelCosts</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:basicPsychologicalNeeds -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:basicPsychologicalNeeds -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:basicPsychologicalNeeds">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:basicPsychologicalNeeds">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Basic Psychological Needs</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:behavioralChange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behavioralChange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:behavioralChange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behavioralChange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Behavioral Change</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:behaviouralControl -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behaviouralControl -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:behaviouralControl">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behaviouralControl">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Behavioural Control</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:boundedRationality -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:boundedRationality -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:boundedRationality">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:boundedRationality">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Bounded Rationality</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:carbonFootprint -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:carbonFootprint -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:carbonFootprint">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:carbonFootprint">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Carbon Footprint</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:changeInSustainability -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:changeInSustainability -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:changeInSustainability">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:changeInSustainability">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Change In Sustainability</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:civilSociety -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:civilSociety -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:civilSociety">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:civilSociety">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Civil Society</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:cleanTechnology -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanTechnology -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:cleanTechnology">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanTechnology">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Clean Technology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:cleanerProduction -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanerProduction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:cleanerProduction">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanerProduction">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Cleaner Production</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:climateChange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climateChange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:climateChange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climateChange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Climate Change</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:climatePolicy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climatePolicy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:climatePolicy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climatePolicy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Climate Policy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:clusterAnalysis -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:clusterAnalysis -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:clusterAnalysis">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:clusterAnalysis">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Cluster Analysis</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:codingFramework -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:codingFramework -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:codingFramework">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:codingFramework">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Coding Framework</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:cognitiveDissonance -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cognitiveDissonance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:cognitiveDissonance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cognitiveDissonance">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Cognitive Dissonance</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:collaborativeConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collaborativeConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:collaborativeConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collaborativeConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Collaborative Consumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:collectiveInterest -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collectiveInterest -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:collectiveInterest">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collectiveInterest">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Collective Interest</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:communityArena -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:communityArena -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:communityArena">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:communityArena">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Community Arena</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:comparativeAnalysis -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:comparativeAnalysis -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:comparativeAnalysis">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:comparativeAnalysis">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Comparative Analysis</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:conceptualFramework -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:conceptualFramework -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:conceptualFramework">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:conceptualFramework">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Conceptual Framework</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consensualValidation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consensualValidation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consensualValidation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consensualValidation">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Consensual Validation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consortiumAgreement -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consortiumAgreement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consortiumAgreement">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consortiumAgreement">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Consortium Agreement</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consumerBehavior -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerBehavior -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consumerBehavior">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerBehavior">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Consumer Behavior</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consumerExpenditure -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerExpenditure -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consumerExpenditure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerExpenditure">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Consumer Expenditure</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consumptionExpenditure -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumptionExpenditure -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:consumptionExpenditure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumptionExpenditure">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Consumption Expenditure</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:currentConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:currentConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:currentConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:currentConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Current Consumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:dcModel -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:dcModel -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:dcModel">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:dcModel">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Dc Model</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:directCosts -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directCosts -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:directCosts">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directCosts">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Direct Costs</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:directEnergy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directEnergy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:directEnergy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directEnergy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Direct Energy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:discreteChoice -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoice -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:discreteChoice">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoice">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Discrete Choice</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:discreteChoiceModel -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoiceModel -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:discreteChoiceModel">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoiceModel">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Discrete Choice Model</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:disseminationStrategy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:disseminationStrategy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:disseminationStrategy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:disseminationStrategy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Dissemination Strategy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:ecologicalEconomics -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalEconomics -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:ecologicalEconomics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalEconomics">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Ecological Economics</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:ecologicalFootprint -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalFootprint -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:ecologicalFootprint">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalFootprint">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Ecological Footprint</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:ecologicallySustainable -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicallySustainable -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:ecologicallySustainable">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicallySustainable">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Ecologically Sustainable</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:economicBehavior -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicBehavior -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:economicBehavior">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicBehavior">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Economic Behavior</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:economicCrisis -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicCrisis -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:economicCrisis">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicCrisis">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Economic Crisis</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:egoDepletion -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:egoDepletion -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:egoDepletion">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:egoDepletion">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Ego Depletion</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:empiricalResearch -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:empiricalResearch -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:empiricalResearch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:empiricalResearch">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Empirical Research</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyConservation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyConservation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyConservation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyConservation">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Conservation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyEfficiency -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficiency -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyEfficiency">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficiency">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Efficiency</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyEfficient -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficient -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyEfficient">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficient">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Efficient</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyIntensity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyIntensity -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyIntensity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyIntensity">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Intensity</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyModel -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyModel -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyModel">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyModel">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Model</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyPolicy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyPolicy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyPolicy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyPolicy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Policy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyRequirement -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyRequirement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energyRequirement">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyRequirement">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Requirement</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energySaving -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energySaving -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:energySaving">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energySaving">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Energy Saving</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalActivism -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalActivism -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalActivism">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalActivism">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Activism</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalAssessment -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalAssessment -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalAssessment">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalAssessment">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Assessment</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalBehaviour -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalBehaviour -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalBehaviour">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalBehaviour">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Behaviour</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalConcern -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalConcern -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalConcern">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalConcern">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Concern</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalDamage -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalDamage -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalDamage">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalDamage">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Damage</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalEconomics -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEconomics -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalEconomics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEconomics">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Economics</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalEducation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEducation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalEducation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEducation">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Education</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalEffects -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEffects -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalEffects">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEffects">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Effects</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalFootprint -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalFootprint -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalFootprint">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalFootprint">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Footprint</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalImpact -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalImpact -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalImpact">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalImpact">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Impact</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalPerformance -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPerformance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalPerformance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPerformance">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Performance</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalPolicy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPolicy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalPolicy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPolicy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Policy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalPsychology -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPsychology -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalPsychology">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPsychology">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Psychology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalQuality -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalQuality -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalQuality">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalQuality">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Quality</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalSustainability -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalSustainability -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalSustainability">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalSustainability">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Sustainability</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalValues -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalValues -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentalValues">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalValues">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmental Values</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyFriendly -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyFriendly -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyFriendly">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyFriendly">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmentally Friendly</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyRelevant -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevant -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyRelevant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevant">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmentally Relevant</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyRelevantBehavior -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevantBehavior -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyRelevantBehavior">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevantBehavior">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmentally RelevantBehavior</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyResponsible -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyResponsible -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:environmentallyResponsible">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyResponsible">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Environmentally Responsible</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:fairTrade -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:fairTrade -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:fairTrade">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:fairTrade">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Fair Trade</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:finalConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:finalConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:finalConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:finalConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Final Consumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:footprintCalculator -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:footprintCalculator -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:footprintCalculator">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:footprintCalculator">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Footprint Calculator</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:frameworkProgramme -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:frameworkProgramme -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:frameworkProgramme">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:frameworkProgramme">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Framework Programme</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:gameTheory -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:gameTheory -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:gameTheory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:gameTheory">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Game Theory</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:globalClimate -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalClimate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:globalClimate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalClimate">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Global Climate</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:globalEnvironmentalChange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalEnvironmentalChange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:globalEnvironmentalChange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalEnvironmentalChange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Global Environmental Change</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:goodLife -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:goodLife -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:goodLife">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:goodLife">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Good Life</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:governanceApproach -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:governanceApproach -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:governanceApproach">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:governanceApproach">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Governance Approach</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:greenEconomy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:greenEconomy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Green Economy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:greenEconomyGrant -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomyGrant -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:greenEconomyGrant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomyGrant">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Green Economy Grant</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:greenhouseGas -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenhouseGas -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:greenhouseGas">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenhouseGas">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Greenhouse Gas</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:groupIdentification -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:groupIdentification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:groupIdentification">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:groupIdentification">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Group Identification</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:healthyFood -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:healthyFood -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:healthyFood">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:healthyFood">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Healthy Food</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdCarbon -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbon -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdCarbon">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbon">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household Carbon</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdCarbonFootprint -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbonFootprint -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdCarbonFootprint">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbonFootprint">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household CarbonFootprint</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household Consumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdEnergy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdEnergy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household Energy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdEnergyUse -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergyUse -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdEnergyUse">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergyUse">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household Energy Use</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdExpenditure -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdExpenditure -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdExpenditure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdExpenditure">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household Expenditure</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdIncome -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdIncome -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdIncome">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdIncome">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household Income</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdProduction -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdProduction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:householdProduction">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdProduction">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Household Production</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanDecision -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDecision -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanDecision">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDecision">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Human Decision</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanDevelopment -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDevelopment -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanDevelopment">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDevelopment">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Human Development</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanEcology -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanEcology -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanEcology">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanEcology">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Human Ecology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanNeeds -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanNeeds -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:humanNeeds">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanNeeds">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Human Needs</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:identityTheory -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:identityTheory -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:identityTheory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:identityTheory">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Identity Theory</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectCost -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCost -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectCost">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCost">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Indirect Cost</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectCosts -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCosts -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectCosts">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCosts">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Indirect Costs</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectEffects -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEffects -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectEffects">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEffects">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Indirect Effects</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectEnergy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEnergy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:indirectEnergy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEnergy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Indirect Energy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:industrialEcology -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:industrialEcology -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:industrialEcology">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:industrialEcology">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Industrial Ecology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:initialOntology -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initialOntology -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:initialOntology">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initialOntology">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Initial Ontology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:initiativeLevel -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeLevel -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:initiativeLevel">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeLevel">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Initiative Level</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:initiativeSurvey -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeSurvey -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:initiativeSurvey">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeSurvey">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Initiative Survey</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:intelligentCooking -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intelligentCooking -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:intelligentCooking">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intelligentCooking">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Intelligent Cooking</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:intentionalCommunity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intentionalCommunity -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:intentionalCommunity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intentionalCommunity">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Intentional Community</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:landFootprint -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:landFootprint -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:landFootprint">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:landFootprint">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Land Footprint</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:legalEntity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:legalEntity -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:legalEntity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:legalEntity">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Legal Entity</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lessSustainable -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lessSustainable -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lessSustainable">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lessSustainable">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Less Sustainable</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lifestyleChange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleChange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lifestyleChange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleChange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Lifestyle Change</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lifestyleSatisfaction -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleSatisfaction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lifestyleSatisfaction">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleSatisfaction">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Lifestyle Satisfaction</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lowCarbon -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lowCarbon -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:lowCarbon">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lowCarbon">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Low Carbon</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:microeconomicModel -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:microeconomicModel -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:microeconomicModel">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:microeconomicModel">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Microeconomic Model</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:mindfulnessMeditation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:mindfulnessMeditation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:mindfulnessMeditation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:mindfulnessMeditation">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Mindfulness Meditation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:modelRegion -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:modelRegion -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:modelRegion">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:modelRegion">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Model Region</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:moralNorm -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:moralNorm -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:moralNorm">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:moralNorm">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Moral Norm</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:motivatingSustainableConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:motivatingSustainableConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:motivatingSustainableConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:motivatingSustainableConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Motivating SustainableConsumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:naturalResource -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:naturalResource -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:naturalResource">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:naturalResource">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Natural Resource</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:networkData -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:networkData -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:networkData">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:networkData">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Network Data</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:normActivation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:normActivation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:normActivation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:normActivation">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Norm Activation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:opposingSubgroup -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:opposingSubgroup -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:opposingSubgroup">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:opposingSubgroup">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Opposing Subgroup</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:organicFarming -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFarming -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:organicFarming">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFarming">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Organic Farming</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:organicFood -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFood -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:organicFood">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFood">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Organic Food</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:participatoryVision -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:participatoryVision -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:participatoryVision">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:participatoryVision">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Participatory Vision</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:perceivedBehaviouralControl -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:perceivedBehaviouralControl -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:perceivedBehaviouralControl">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:perceivedBehaviouralControl">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Perceived BehaviouralControl</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:policyLandscape -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:policyLandscape -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:policyLandscape">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:policyLandscape">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Policy Landscape</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:pressureCooker -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:pressureCooker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:pressureCooker">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:pressureCooker">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Pressure Cooker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:productiveHours -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:productiveHours -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:productiveHours">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:productiveHours">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Productive Hours</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:prospectTheory -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:prospectTheory -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:prospectTheory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:prospectTheory">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Prospect Theory</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:publicPolicy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicPolicy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:publicPolicy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicPolicy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Public Policy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:publicSector -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicSector -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:publicSector">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicSector">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Public Sector</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:purposeInLife -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:purposeInLife -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:purposeInLife">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:purposeInLife">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Purpose InLife</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:qualitativeAnalysis -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:qualitativeAnalysis -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:qualitativeAnalysis">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:qualitativeAnalysis">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Qualitative Analysis</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:quantitativeSurvey -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:quantitativeSurvey -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:quantitativeSurvey">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:quantitativeSurvey">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Quantitative Survey</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:reboundEffect -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffect -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:reboundEffect">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffect">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Rebound Effect</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:reboundEffects -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffects -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:reboundEffects">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffects">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Rebound Effects</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:reflexiveGovernance -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reflexiveGovernance -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:reflexiveGovernance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reflexiveGovernance">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Reflexive Governance</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:regionalSustainability -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:regionalSustainability -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:regionalSustainability">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:regionalSustainability">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Regional Sustainability</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:renewableEnergy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:renewableEnergy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:renewableEnergy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:renewableEnergy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Renewable Energy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:resourceEconomics -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:resourceEconomics -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:resourceEconomics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:resourceEconomics">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Resource Economics</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:responsibleConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:responsibleConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:responsibleConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:responsibleConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Responsible Consumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sampleSize -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sampleSize -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sampleSize">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sampleSize">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sample Size</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:scenarioDevelopment -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:scenarioDevelopment -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:scenarioDevelopment">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:scenarioDevelopment">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Scenario Development</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:seventhFrameworkProgramme -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:seventhFrameworkProgramme -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:seventhFrameworkProgramme">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:seventhFrameworkProgramme">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Seventh FrameworkProgramme</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:simplicityLifestyle -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:simplicityLifestyle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:simplicityLifestyle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:simplicityLifestyle">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Simplicity Lifestyle</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialChange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialChange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialChange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialChange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Change</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialCohesion -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialCohesion -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialCohesion">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialCohesion">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Cohesion</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialContext -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialContext -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialContext">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialContext">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Context</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialDilemma -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialDilemma -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialDilemma">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialDilemma">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Dilemma</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialEconomy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialEconomy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialEconomy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialEconomy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Economy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialIdentity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialIdentity -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialIdentity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialIdentity">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Identity</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialInnovation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialInnovation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialInnovation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialInnovation">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Innovation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialLearning -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialLearning -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialLearning">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialLearning">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Learning</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialMarketing -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialMarketing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialMarketing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialMarketing">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Marketing</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialNetwork -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNetwork -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialNetwork">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNetwork">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Network</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialNorm -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNorm -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialNorm">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNorm">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Norm</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialPsychology -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialPsychology -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialPsychology">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialPsychology">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Psychology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialRelations -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialRelations -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialRelations">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialRelations">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Relations</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialResponsibility -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialResponsibility -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialResponsibility">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialResponsibility">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Responsibility</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialStatus -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStatus -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialStatus">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStatus">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Status</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialStructure -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStructure -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialStructure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStructure">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Structure</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialSupport -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialSupport -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:socialSupport">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialSupport">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Social Support</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:stakeholderAnalysis -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:stakeholderAnalysis -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:stakeholderAnalysis">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:stakeholderAnalysis">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Stakeholder Analysis</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:structuralEquivalence -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:structuralEquivalence -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:structuralEquivalence">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:structuralEquivalence">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Structural Equivalence</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:studyExchange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:studyExchange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:studyExchange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:studyExchange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Study Exchange</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:subjectiveWellbeing -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:subjectiveWellbeing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:subjectiveWellbeing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:subjectiveWellbeing">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Subjective Wellbeing</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:summaryReport -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:summaryReport -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:summaryReport">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:summaryReport">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Summary Report</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:supplyChain -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:supplyChain -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:supplyChain">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:supplyChain">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Supply Chain</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainabilityInitiative -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityInitiative -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainabilityInitiative">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityInitiative">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainability Initiative</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainabilityTransition -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityTransition -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainabilityTransition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityTransition">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainability Transition</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableBehavior -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehavior -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableBehavior">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehavior">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Behavior</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableBehaviour -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehaviour -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableBehaviour">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehaviour">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Behaviour</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Consumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableDevelopment -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableDevelopment -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableDevelopment">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableDevelopment">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Development</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableEnergy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEnergy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableEnergy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEnergy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Energy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableEurope -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEurope -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableEurope">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEurope">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Europe</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableFood -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFood -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableFood">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFood">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Food</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableFoodConsumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFoodConsumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableFoodConsumption">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFoodConsumption">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable FoodConsumption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableFuture -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFuture -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableFuture">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFuture">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Future</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableHousehold -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableHousehold -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableHousehold">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableHousehold">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Household</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableLifestyle -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLifestyle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableLifestyle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLifestyle">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Lifestyle</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableLiving -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLiving -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableLiving">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLiving">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Living</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableMobility -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableMobility -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableMobility">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableMobility">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Mobility</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableSociety -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableSociety -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:sustainableSociety">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableSociety">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Sustainable Society</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:systemChange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemChange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:systemChange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemChange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">System Change</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:systemInnovation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemInnovation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:systemInnovation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemInnovation">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">System Innovation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologicalChange -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalChange -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologicalChange">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalChange">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Technological Change</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologicalForecasting -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalForecasting -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologicalForecasting">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalForecasting">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Technological Forecasting</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologicalProgress -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalProgress -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologicalProgress">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalProgress">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Technological Progress</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologyAnalysis -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologyAnalysis -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:technologyAnalysis">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologyAnalysis">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Technology Analysis</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeAffluence -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeAffluence -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeAffluence">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeAffluence">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Time Affluence</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeScarcity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeScarcity -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeScarcity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeScarcity">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Time Scarcity</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeSeries -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeSeries -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeSeries">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeSeries">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Time Series</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeUseSurvey -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeUseSurvey -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:timeUseSurvey">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeUseSurvey">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Time UseSurvey</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:totalEnergy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:totalEnergy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:totalEnergy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:totalEnergy">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Total Energy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:transitionManagement -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:transitionManagement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:transitionManagement">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:transitionManagement">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Transition Management</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:urbanAgriculture -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanAgriculture -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:urbanAgriculture">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanAgriculture">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Urban Agriculture</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:urbanArea -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanArea -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:urbanArea">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanArea">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Urban Area</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:urbanPlanning -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanPlanning -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:urbanPlanning">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanPlanning">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Urban Planning</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:utilityFunction -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:utilityFunction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:utilityFunction">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:utilityFunction">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Utility Function</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:visionDevelopment -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:visionDevelopment -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:visionDevelopment">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:visionDevelopment">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Vision Development</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:voluntarySimplicity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicity -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:voluntarySimplicity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicity">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Voluntary Simplicity</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:voluntarySimplicityLifestyle -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicityLifestyle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:voluntarySimplicityLifestyle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicityLifestyle">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Voluntary SimplicityLifestyle</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:waterUsage -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:waterUsage -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/20/high-frequency/world-groups#term:waterUsage">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#Term"/>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:waterUsage">
+        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <rdfs:label xml:lang="en">Water Usage</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>

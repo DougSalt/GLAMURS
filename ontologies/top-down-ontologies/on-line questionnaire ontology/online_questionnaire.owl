@@ -471,7 +471,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Collective"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#Citizen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -485,7 +485,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -821,7 +821,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitiativeOrganizer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1341,7 +1341,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#SuggestedClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/18/online-questionnaire#InitativeOrganizers"/>
             </owl:Restriction>
         </rdfs:subClassOf>

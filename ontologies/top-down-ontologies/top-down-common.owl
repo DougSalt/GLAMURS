@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#"
      xml:base="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common"
-     xmlns:vocabulary="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#"
+     xmlns:vocabulary="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common">
-        <owl:imports rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary"/>
+        <owl:imports rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary"/>
         <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">This ontology is the common basis for four parts of the top-down ontology used in GLAMURS.
 
@@ -109,7 +109,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#disciplineHasSpecialization -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#disciplineHasSpecialization">
-        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline"/>
         <rdfs:label xml:lang="en">discipline has specialization</rdfs:label>
     </owl:ObjectProperty>
@@ -245,7 +245,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ds42723/ontologies/2016/9/19/top-down-common#partOfDiscipline">
-        <rdfs:subPropertyOf rdf:resource="http://www.hutton.ac.uk/ds42723/2016/10/26/GLAMURS/integration/vocabulary#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
     </owl:ObjectProperty>
     
 

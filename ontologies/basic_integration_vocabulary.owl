@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.glamurs.eu/ontology/TBOX/vocabulary#"
-     xml:base="http://www.glamurs.eu/ontology/TBOX/vocabulary"
+<rdf:RDF xmlns="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#"
+     xml:base="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -154,6 +154,15 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
     
 
 
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isRequiredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isRequiredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isUsedBy"/>
+        <rdfs:label xml:lang="en">is required by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isSimulatedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isSimulatedBy">
@@ -231,6 +240,15 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#represents">
         <rdfs:label xml:lang="en">represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#requires">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses"/>
+        <rdfs:label xml:lang="en">requires</rdfs:label>
     </owl:ObjectProperty>
     
 

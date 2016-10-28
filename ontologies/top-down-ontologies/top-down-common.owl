@@ -10,7 +10,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common">
         <owl:imports rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">This ontology is the common basis for four parts of the top-down ontology used in GLAMURS.
 
 These ontologies are:
@@ -22,6 +21,7 @@ These ontologies are:
     generally referred to as the glossary ontology.
 4. Single words and word groups of two or more that are not nonsense and are not common-sense. This ontology is known as the 
     high-frequency ontology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
 
 The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
@@ -50,23 +50,6 @@ Markdown will be used in all text.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#changes -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#changes">
-        <rdfs:label xml:lang="en">changes</rdfs:label>
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#follows -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#follows">
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
-    </owl:AnnotationProperty>
     
 
 
@@ -113,15 +96,6 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#partOfDiscipline"/>
         <rdfs:label xml:lang="en">discipline has specialization</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#follows -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#follows">
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#follows"/>
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
     </owl:ObjectProperty>
     
 
@@ -900,6 +874,16 @@ These are terms that are in the GLAMURS glossary</rdfs:comment>
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#MissingDefinitions -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#MissingDefinitions">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
+        <rdfs:comment xml:lang="en">Those terms missing definitions for whatever reason</rdfs:comment>
+        <rdfs:label xml:lang="en">Missing definitions</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#OrganizationalPsychology -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#OrganizationalPsychology">
@@ -1071,6 +1055,16 @@ This is a class suggested by the responses to the questionnaire data</rdfs:comme
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term">
         <rdfs:comment xml:lang="en">A term that requires definition.</rdfs:comment>
         <rdfs:label xml:lang="en">Term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#TerminatedQuestionnaire -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#TerminatedQuestionnaire">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#MissingDefinitions"/>
+        <rdfs:comment xml:lang="en">Those terms with no definitions because the questionnaire was terminated before providing class, property or attribute definitions</rdfs:comment>
+        <rdfs:label xml:lang="en">Terminated questionnaire</rdfs:label>
     </owl:Class>
     
 
@@ -1628,9 +1622,6 @@ These are terms that are not defined in the questionnaire responses. This can be
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#follows">
-        <rdfs:label xml:lang="en">follows</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#partOfDiscipline">
         <rdfs:label xml:lang="en">part of discipline</rdfs:label>
     </rdf:Description>

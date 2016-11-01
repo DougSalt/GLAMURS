@@ -174,7 +174,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#collectiveActionProblem">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#PublicGood"/>
-        <rdfs:label xml:lang="en">Collective action problem</rdfs:label>
+        <rdfs:label xml:lang="en">collective action problem</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:collectiveAction"/>
     </owl:DatatypeProperty>
     
@@ -185,7 +185,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#economicGrowth">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#EconomicOutput"/>
-        <rdfs:label xml:lang="en">Economic growth</rdfs:label>
+        <rdfs:label xml:lang="en">economic growth</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:economicGrowth"/>
     </owl:DatatypeProperty>
     
@@ -196,7 +196,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#environmentalImpactAssessment">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#EnvironmentalImpact"/>
-        <rdfs:label xml:lang="en">Environmental impact assessment</rdfs:label>
+        <rdfs:label xml:lang="en">environmental impact assessment</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:environmentalImpactAssessment"/>
     </owl:DatatypeProperty>
     
@@ -207,7 +207,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#finalDemand">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute"/>
         <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#OutputDemand"/>
-        <rdfs:label xml:lang="en">Final demand</rdfs:label>
+        <rdfs:label xml:lang="en">final demand</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:finalDemand"/>
     </owl:DatatypeProperty>
     
@@ -227,7 +227,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:label xml:lang="en">Indirect energy</rdfs:label>
+        <rdfs:label xml:lang="en">indirect energy</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:indirectEnergy"/>
     </owl:DatatypeProperty>
     
@@ -251,7 +251,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:label xml:lang="en">Material footprint</rdfs:label>
+        <rdfs:label xml:lang="en">material footprint</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:materialFootprint"/>
     </owl:DatatypeProperty>
     
@@ -269,7 +269,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:label xml:lang="en">Open space</rdfs:label>
+        <rdfs:label xml:lang="en">open space</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:openSpace"/>
     </owl:DatatypeProperty>
     
@@ -302,7 +302,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
                 </owl:unionOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <rdfs:label xml:lang="en">Technological change</rdfs:label>
+        <rdfs:label xml:lang="en">technological change</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:technologicalChange"/>
     </owl:DatatypeProperty>
     
@@ -312,7 +312,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#timePressure">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute"/>
-        <rdfs:label xml:lang="en">Time pressure</rdfs:label>
+        <rdfs:label xml:lang="en">time pressure</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:timePressure"/>
     </owl:DatatypeProperty>
     
@@ -369,7 +369,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
                 </owl:unionOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <rdfs:label xml:lang="en">Travel mode</rdfs:label>
+        <rdfs:label xml:lang="en">travel mode</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:travelMode"/>
     </owl:DatatypeProperty>
     
@@ -392,7 +392,7 @@ Other than the caveats previously mentiioned, no additional attempt has been mad
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:label xml:lang="en">Water footprint</rdfs:label>
+        <rdfs:label xml:lang="en">water footprint</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:waterFootprint"/>
     </owl:DatatypeProperty>
     
@@ -2749,5 +2749,5 @@ The term is usually used in the latter sense.</owl:annotatedTarget>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

@@ -7,8 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-26</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-26</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
         <rdfs:comment xml:lang="en">This is one of serveral ontologies which will link all the ontologies in GLAMURS together, primarily in a star pattern through the top-down ontology. 
 
@@ -48,6 +48,15 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
     
 
 
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#creates -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#creates">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#wasCreatedBy"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#formallyRepresents -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#formallyRepresents">
@@ -67,10 +76,21 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
     
 
 
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasProperty">
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isPropertyOf"/>
+        <rdfs:label xml:lang="en">has property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isAllegoricallyRepresentedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isAllegoricallyRepresentedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isApproximatedBy"/>
+        <rdfs:comment xml:lang="en">The difference between an allegory and metaphor is that an allegory uses a narrative in its entirety to express an idea or teach a lesson, while a metaphor uses a word or phrase to represent an idea.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://classroom.synonym.com/examples-allegories-vs-metaphors-22515.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">is allegorically represented by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -119,6 +139,8 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isMetaphoricallyRepresentedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isApproximatedBy"/>
         <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#metaphoricallyRepresents"/>
+        <rdfs:comment xml:lang="en">The difference between an allegory and metaphor is that an allegory uses a narrative in its entirety to express an idea or teach a lesson, while a metaphor uses a word or phrase to represent an idea.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://classroom.synonym.com/examples-allegories-vs-metaphors-22515.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">is metaphorically represented by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -140,6 +162,14 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isFormallyRepresentedBy"/>
         <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#numericallyRepresents"/>
         <rdfs:label xml:lang="en">is numerically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isPropertyOf">
+        <rdfs:label xml:lang="en">is property of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -229,8 +259,13 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:comment xml:lang="en">Should be 
+
++transitive
++reflexive
++anti-symmetric
+
+Transitive breaks the Pellet reaonser, and reflexive messes with the domains and codamins in the integration ontology.</rdfs:comment>
         <rdfs:label xml:lang="en">part of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -262,10 +297,188 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
     
 
 
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyAllegoricallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyAllegoricallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyApproximates"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsAllegoricallyRepresentedBy"/>
+        <rdfs:label xml:lang="en">specifically allegorically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyApproximates -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyApproximates">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyRepresents"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsApproximatedBy"/>
+        <rdfs:label xml:lang="en">specifically approximates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyFormallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyFormallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyRepresents"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsFormallyRepresentedBy"/>
+        <rdfs:label xml:lang="en">specifically formally represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsAllegoricallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsAllegoricallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsApproximatedBy"/>
+        <rdfs:label xml:lang="en">specifically is allegorically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsApproximatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsApproximatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsRepresentedBy"/>
+        <rdfs:label xml:lang="en">specifically is approximated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsFormallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsFormallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsRepresentedBy"/>
+        <rdfs:label xml:lang="en">specifically is formally represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsLogicallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsLogicallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsFormallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyLogicallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically is logically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsMeasuredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsMeasuredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsNumericallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyMeasures"/>
+        <rdfs:label xml:lang="en">specifically is measured by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsMetaphoricallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsMetaphoricallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsApproximatedBy"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyMetaphoricallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically is metaphorically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsNumericallyRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsNumericallyRepresentedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsFormallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyNumericallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically is numerically represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsRepresentedBy">
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically is represented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsSimulatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsSimulatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyIsLogicallyRepresentedBy"/>
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallySimulates"/>
+        <rdfs:label xml:lang="en">specifically is simulated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyLogicallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyLogicallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyFormallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically logically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyMeasures -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyMeasures">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyNumericallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically measures</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyMetaphoricallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyMetaphoricallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyApproximates"/>
+        <rdfs:label xml:lang="en">specifically metaphorically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyNumericallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyNumericallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyFormallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically numerically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyRepresents">
+        <rdfs:label xml:lang="en">specifically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallySimulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallySimulates">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyLogicallyRepresents"/>
+        <rdfs:label xml:lang="en">specifically simulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses">
         <rdfs:label xml:lang="en">uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#wasCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#wasCreatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isUsedBy"/>
+        <rdfs:label xml:lang="en">was created by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -290,5 +503,5 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

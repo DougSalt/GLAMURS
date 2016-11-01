@@ -322,12 +322,6 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor"/>
-    
-
-
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor">
@@ -1199,7 +1193,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor"/>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass"/>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:commuter"/>
     </owl:Class>
@@ -1207,12 +1201,6 @@ Markdown will be used in all text.</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Individual"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
         <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doug Salt</rdfs:isDefinedBy>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor"/>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doug Salt</rdfs:isDefinedBy>
     </owl:Axiom>
     
@@ -1625,9 +1613,26 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Will">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Will</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:backcasting"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Will"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
+    </owl:Axiom>
     
 
 
@@ -1635,7 +1640,7 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#WillOfInitiativeOrganizers">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Will"/>
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedProcess"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
@@ -2309,14 +2314,14 @@ The concept of what a model is differs from one discipline to another. Central t
         <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Citizen"/>
     </rdf:Description>
     <rdf:Description>
-        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

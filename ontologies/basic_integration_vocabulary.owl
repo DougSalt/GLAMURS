@@ -483,6 +483,15 @@ Transitive breaks the Pellet reaonser, and reflexive messes with the domains and
     
 
 
+    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#wasCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#wasCreatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isUsedBy"/>
+        <rdfs:label xml:lang="en">was created by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

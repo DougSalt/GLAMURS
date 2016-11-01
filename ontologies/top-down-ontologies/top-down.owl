@@ -259,6 +259,20 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Experience -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Experience">
+        <owl:equivalentClass rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#creates"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#FocusGroup -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#FocusGroup">
@@ -1225,12 +1239,6 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1249,6 +1257,12 @@ Markdown will be used in all text.</rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
     </owl:Axiom>
     

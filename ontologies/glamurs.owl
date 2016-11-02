@@ -3,26 +3,27 @@
      xml:base="http://www.glamurs.eu/ontologies/2016/GLAMURS"
      xmlns:questionnaire="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#"
      xmlns:directional-vocab="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#"
-     xmlns:TSC="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:top-down-common="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#"
      xmlns:regionalSco="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#"
-     xmlns:GLAMURS="http://www.glamurs.eu/ontologies/2016/10/26/GLAMURS#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:NTNU="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:TiPaC="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#"
      xmlns:regionalRoE="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#"
-     xmlns:sna-roe="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#"
-     xmlns:backcasting="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:UBAH="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#"
      xmlns:vocabulary="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:initative="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:NTNU-abox="http://www.glamurs.eu/ontologies/2016/ABOX/bottom-up/NTNU-ABOX#"
+     xmlns:TSC="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#"
+     xmlns:top-down-common="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#"
+     xmlns:GLAMURS="http://www.glamurs.eu/ontologies/2016/10/26/GLAMURS#"
+     xmlns:NTNU="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#"
+     xmlns:sna-roe="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#"
+     xmlns:backcasting="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/"
+     xmlns:initative="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sna-sco="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#"
      xmlns:ukhls="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#"
-     xmlns:NTNU-abox="http://www.glamurs.eu/ontologies/2016/ABOX/bottom-up/NTNU-ABOX#"
      xmlns:top-down="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#">
     <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS">
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary"/>
@@ -55,51 +56,11 @@ Note these conventions relate to the underlying entity and not what is shown as 
 + a label must be provided (usually with a language specification) and should be make sense in the language of choice
 
 Markdown will be used in all text.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">This is the ontology for the entire project.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#author:DougSalt"/>
     </owl:Ontology>
     
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#hasPart -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#hasPart">
-        <owl:equivalentProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#hasPart"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#hasPart -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#hasPart"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#hasPersonProperty -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#hasPersonProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#hasProperty"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#hasPart"/>
-    </rdf:Description>
-    
 
 
     <!-- 
@@ -284,7 +245,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#AgentBasedModelOntology"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Car"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -321,6 +282,12 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#numericallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyNumericallyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Country"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -372,6 +339,12 @@ Markdown will be used in all text.</rdfs:comment>
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#Land">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#EnvironmentalFootprintOntology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#specificallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -668,6 +641,12 @@ Markdown will be used in all text.</rdfs:comment>
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -1665,6 +1644,15 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#author:DougSalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#author:DougSalt">
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/author:DougSalt"/>
+        <rdfs:label>Doug Salt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#author:DougSalt -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#author:DougSalt">
@@ -1685,19 +1673,32 @@ Markdown will be used in all text.</rdfs:comment>
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#author:DougSalt -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#author:DougSalt"/>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#author:DougSalt">
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#author:DougSalt"/>
+    </rdf:Description>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/author:DougSalt -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/author:DougSalt"/>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/author:DougSalt">
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#author:DougSalt"/>
+    </rdf:Description>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#author:DougSalt -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#author:DougSalt"/>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#author:DougSalt">
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#author:DougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#author:DougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#author:DougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#author:DougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#author:DougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#author:DougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
+        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
+    </rdf:Description>
     
 
 
@@ -1746,9 +1747,785 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
+
+
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Lifestyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#UnitOfMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#UnitsOfMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#UnitOfMeasurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#UnitsOfMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#Location">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Household">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Household"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#GroupOfPeople">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#GroupOfPeople"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Transport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Utility">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Utility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Variable">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#Country">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Household">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Household"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Household">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Household"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LifestyleActivity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#measures"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#measures"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#measures"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Lifestyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Lifestyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LifestyleActivity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifestyleChange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#LifeStyleChange">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifestyleChange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#GovernmentOfficeRegion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Supply">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#SupplyChain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Utility">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Utilisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Utility">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Utilisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizens">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Citizen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizens">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Citizens"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Collective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#WellBeing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#CollectiveWellBeing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#logicallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Culture">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Culture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#Footprint">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Footprint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#GovernmentOfficeRegion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Governance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#GreenLifestyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Income">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Income"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Lifestyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Model">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Vision">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Vision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#Actor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizens">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LifestyleActivity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Lifestyle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#GovernmentOfficeRegion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
 </rdf:RDF>
-
-
-
 <!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

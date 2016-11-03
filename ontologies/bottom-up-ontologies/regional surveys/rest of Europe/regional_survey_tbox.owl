@@ -905,7 +905,6 @@ I have done it this way, so I can assign data values to the Journey class.</rdfs
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#isPartOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
         <rdfs:comment xml:lang="en">Should be 
 
 +transitive

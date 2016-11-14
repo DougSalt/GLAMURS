@@ -1599,7 +1599,7 @@ Transitive breaks the Pellet reaonser, and reflexive messes with the domains and
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#doesNumberOfHoursVolunteerWorkPerWeek">
         <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#hasWL2Value"/>
         <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#UnpaidVolunteerWork"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:label xml:lang="en">Please, indicate the number of hours you spend on unpaid volunteer work per week,
 approximately</rdfs:label>
     </owl:DatatypeProperty>

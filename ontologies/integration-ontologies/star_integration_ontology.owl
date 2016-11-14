@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#"
      xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary"
-     xmlns:vocabulary="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,7 +10,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary">
-        <owl:imports rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-26</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
@@ -37,6 +35,14 @@
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isPartOfOntologyType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isPartOfOntologyType">
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#OntologyType"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -48,361 +54,160 @@
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#allegoricallyRepresents -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-logically-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#allegoricallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isAllegoricallyRepresentedBy"/>
-        <rdfs:label xml:lang="en">allegorically represents</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-logically-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-measures -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isApproximatedBy"/>
-        <rdfs:label xml:lang="en">approximates</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-measures">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-numerically-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-numerically-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isFormallyRepresentedBy"/>
-        <rdfs:label xml:lang="en">formally represents</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-numerically-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isAllegoricallyRepresentedBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isAllegoricallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isApproximatedBy"/>
-        <rdfs:label xml:lang="en">is allegorically represented by</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologicalClass"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologicalClass"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isApproximatedBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isApproximatedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isRepresentedBy"/>
-        <rdfs:label xml:lang="en">is approximated by</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isFormallyRepresentedBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-weakly-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isFormallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isRepresentedBy"/>
-        <rdfs:label xml:lang="en">is formally represented by</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-weakly-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isLogicallyRepresentedBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isLogicallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isFormallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#logicallyRepresents"/>
-        <rdfs:label xml:lang="en">is logically represented by</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologicalClass"/>
+        <isPartOfOntologyType rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:bottomUp"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isMeasuredBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isMeasuredBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isNumericallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#measures"/>
-        <rdfs:label xml:lang="en">is measured by</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologicalClass"/>
+        <isPartOfOntologyType rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:topDown"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isMetaphoricallyRepresentedBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isPartOfOntologyType -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isMetaphoricallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isApproximatedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#metaphoricallyRepresents"/>
-        <rdfs:label xml:lang="en">is metaphorically represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isNumericallyRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isNumericallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isFormallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#numericallyRepresents"/>
-        <rdfs:label xml:lang="en">is numerically represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isRepresentedBy">
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents"/>
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
-        <rdfs:label xml:lang="en">is represented by</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isPartOfOntologyType"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
-        <rdfs:comment xml:lang="en">This tells us that this is the &quot;same&quot; term. This means when identifying terms in the top-down ontology, and linking these terms using this relation, then we may be able to identify the relative implementation of a given concept in the top-down ontology.</rdfs:comment>
-        <rdfs:label xml:lang="en">is semantically related to</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-logically-represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-logically-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSimulatedBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-measures -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSimulatedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isLogicallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#simulates"/>
-        <rdfs:label xml:lang="en">is simulated by</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-measures">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-numerically-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#logicallyRepresents -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-numerically-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#logicallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
-        <rdfs:label xml:lang="en">logically represents</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-numerically-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#measures -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#measures">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#numericallyRepresents"/>
-        <rdfs:label xml:lang="en">measures</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologicalClass"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologicalClass"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#metaphoricallyRepresents -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#metaphoricallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#approximates"/>
-        <rdfs:label xml:lang="en">metaphorically represents</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#numericallyRepresents -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#numericallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#formallyRepresents"/>
-        <rdfs:label xml:lang="en">numerically represents</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#represents">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
-        <rdfs:label xml:lang="en">represents</rdfs:label>
-    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#simulates -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologicalDataPropertyValue -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#simulates">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#logicallyRepresents"/>
-        <rdfs:label xml:lang="en">simulates</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologicalDataPropertyValue">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologicalClass"/>
+        <isPartOfOntologyType rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:bottomUp"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyAllegoricallyRepresents -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalDataPropertyValue -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyAllegoricallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyApproximates"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsAllegoricallyRepresentedBy"/>
-        <rdfs:label xml:lang="en">specifically allegorically represents</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyApproximates -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyApproximates">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsApproximatedBy"/>
-        <rdfs:label xml:lang="en">specifically approximates</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyFormallyRepresents -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyFormallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsFormallyRepresentedBy"/>
-        <rdfs:label xml:lang="en">specifically formally represents</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsAllegoricallyRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsAllegoricallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsApproximatedBy"/>
-        <rdfs:label xml:lang="en">is specifically allegorically represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsApproximatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsApproximatedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsRepresentedBy"/>
-        <rdfs:label xml:lang="en">is specifically approximated by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsFormallyRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsFormallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsRepresentedBy"/>
-        <rdfs:label xml:lang="en">is specifically formally represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsLogicallyRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsLogicallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsFormallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyLogicallyRepresents"/>
-        <rdfs:label xml:lang="en">is specifically logically represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsMeasuredBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsMeasuredBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsNumericallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyMeasures"/>
-        <rdfs:label xml:lang="en">is specifically measured by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsMetaphoricallyRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsMetaphoricallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsApproximatedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyMetaphoricallyRepresents"/>
-        <rdfs:label xml:lang="en">is specifically metaphorically represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsNumericallyRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsNumericallyRepresentedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsFormallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyNumericallyRepresents"/>
-        <rdfs:label xml:lang="en">is specifically numerically represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsRepresentedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsRepresentedBy">
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents"/>
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
-        <rdfs:label xml:lang="en">is specifically represented by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsSimulatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsSimulatedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsLogicallyRepresentedBy"/>
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallySimulates"/>
-        <rdfs:label xml:lang="en">is specifically simulated by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyLogicallyRepresents -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyLogicallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyFormallyRepresents"/>
-        <rdfs:label xml:lang="en">specifically logically represents</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyMeasures -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyMeasures">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyNumericallyRepresents"/>
-        <rdfs:label xml:lang="en">specifically measures</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyMetaphoricallyRepresents -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyMetaphoricallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyApproximates"/>
-        <rdfs:label xml:lang="en">specifically metaphorically represents</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyNumericallyRepresents -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyNumericallyRepresents">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyFormallyRepresents"/>
-        <rdfs:label xml:lang="en">specifically numerically represents</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
-        <rdfs:label xml:lang="en">specifically represents</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallySimulates -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallySimulates">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyLogicallyRepresents"/>
-        <rdfs:label xml:lang="en">specifically simulates</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalDataPropertyValue">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologicalClass"/>
+        <isPartOfOntologyType rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:topDown"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -417,10 +222,34 @@
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologicalClass -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologicalClass">
+        <isPartOfOntologyType rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:bottomUp"/>
+        <rdfs:label xml:lang="en">Bottom-up ontology</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology">
-        <rdfs:label xml:lang="en">Bottom-up ontology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#OntologyType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#OntologyType -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#OntologyType"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologicalClass -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologicalClass">
+        <isPartOfOntologyType rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:topDown"/>
+        <rdfs:label xml:lang="en">Top-down ontology</rdfs:label>
     </owl:Class>
     
 
@@ -428,8 +257,36 @@
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology">
-        <rdfs:label xml:lang="en">Top-down ontology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#OntologyType"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:bottomUp -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:bottomUp">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:topDown -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#ontology:topDown">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntology"/>
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntology"/>
+    </owl:NamedIndividual>
     
 
 
@@ -441,18 +298,27 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#a">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#c">
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b2">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whether a bottom up semantically linked term is related to a top term</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -461,56 +327,9 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents"/>
-                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#a"/>
-                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
-                                <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#a"/>
-                                <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#c"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyIsRepresentedBy"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
                         <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b"/>
-                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whether two bottom-up terms are sematically related to each other.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents"/>
-                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#a"/>
-                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#c"/>
+                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t1"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -519,9 +338,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#specificallyRepresents"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
                                 <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b"/>
-                                <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#c"/>
+                                <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t2"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -536,8 +355,55 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
-                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#a"/>
-                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b"/>
+                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t1"/>
+                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b1"/>
+                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                                <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b2"/>
+                                <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b1"/>
+                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#b2"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>

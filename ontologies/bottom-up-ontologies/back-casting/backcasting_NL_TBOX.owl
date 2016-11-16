@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/"
-     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/"
+<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#"
+     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/">
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/9/1/TBOX/bottom-up/backcasting/author:DougSalt"/>
+    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting">
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/author:DougSalt"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-01</rdfs:comment>
         <rdfs:comment xml:lang="en">This a TBOX ontology created for the Netherlands backcasting sessions.</rdfs:comment>
@@ -26,103 +26,103 @@
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#causedBy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#causedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#causedBy">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Change"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#causedBy">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Change"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caused by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasAssumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasAssumption -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasAssumption">
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Assumption"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasAssumption">
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Assumption"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has assumption</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasLifestyleActivity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasLifestyleActivity -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasLifestyleActivity">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Assumption"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LifestyleActivity"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasLifestyleActivity">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Assumption"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#LifestyleActivity"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has lifestyle activity</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasOrganizationAndDivsionOfRoles -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasOrganizationAndDivsionOfRoles -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasOrganizationAndDivsionOfRoles">
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasOrganizationAndDivsionOfRoles">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has organization and division of roles</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasPart -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasPart">
-        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#partOf"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasPart">
+        <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#partOf"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasPersonnel -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasPersonnel -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#hasPersonnel">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#hasPersonnel">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has personnel</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#interactsWith -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#interactsWith -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#interactsWith">
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#interactsWith">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:comment xml:lang="en">This should be transitive as well. Unfortunately the Pellet reason cannot cope with transitivity.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interacts with</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#interrogates -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#interrogates -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#interrogates">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Question"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#interrogates">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Question"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#isAssociatedWithEmotion -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#isAssociatedWithEmotion -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#isAssociatedWithEmotion">
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Emotion"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#isAssociatedWithEmotion">
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Emotion"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is associated with the emotion</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#occursAsAResultOf -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#occursAsAResultOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#occursAsAResultOf">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Change"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Activity"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#occursAsAResultOf">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Change"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Activity"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs as a result of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#partOf -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#partOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#partOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#partOf">
+        <rdfs:comment xml:lang="en">This should be transitive and reflexive as well. Unfortunately the Pellet reason cannot cope with transitivity.</rdfs:comment>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -138,420 +138,420 @@
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Accountant -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Accountant -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Accountant">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Accountant">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Accountants -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Accountants -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Accountants"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Accountants"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Activity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Activity -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Activity"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Activity"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ActivityCultureOrBehaviour -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ActivityCultureOrBehaviour -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ActivityCultureOrBehaviour">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Activity"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ActivityCultureOrBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Activity"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cultural or behavioural actitivity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ActivityInstitutionalStructures -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ActivityInstitutionalStructures -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ActivityInstitutionalStructures">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Activity"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ActivityInstitutionalStructures">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Activity"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institutional structure activity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ActivityTechnologyAndKnowledge -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ActivityTechnologyAndKnowledge -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ActivityTechnologyAndKnowledge">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Activity"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ActivityTechnologyAndKnowledge">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Activity"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technology and knowledge activity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Area -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Area -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Area"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Area"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Assumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Assumption -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Assumption"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Assumption"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Awareness -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Awareness -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Awareness"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Awareness"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Bank -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Bank -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Bank">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Bank">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Business -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Business -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Business">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Business">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Change -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Change -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Change">
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Change">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizen"/>
-                    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+                    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Citizen"/>
+                    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#causedBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Accountant"/>
+                        <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#causedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Accountant"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#occursAsAResultOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Activity"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#occursAsAResultOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ChangeOfCultureAndBehaviour -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ChangeOfCultureAndBehaviour -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ChangeOfCultureAndBehaviour">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Change"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ChangeOfCultureAndBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Change"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change of culture and behaviour</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ChangeOfInstitutionalStructures -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ChangeOfInstitutionalStructures -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ChangeOfInstitutionalStructures">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Change"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ChangeOfInstitutionalStructures">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Change"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change of institutional structures</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ChangeOfTechnologyAndKnowledge -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ChangeOfTechnologyAndKnowledge -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ChangeOfTechnologyAndKnowledge">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Change"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ChangeOfTechnologyAndKnowledge">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Change"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change of technology and knowledge</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizen -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Citizen -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizen">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Citizen">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizens -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Citizens -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Citizens"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Citizens"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Consumption -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Consumption"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Culture -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Culture -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Culture"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Culture"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Economic -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Economic -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Economic">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Innovation"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Economic">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Innovation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#EducationSystem -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#EducationSystem -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#EducationSystem"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#EducationSystem"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#EducationalInstitution -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#EducationalInstitution -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#EducationalInstitution">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#EducationalInstitution">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Emotion -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Emotion -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Emotion"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Emotion"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Energy -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Energy -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Energy">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Consumption"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Consumption"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Facilitator -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Facilitator -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Facilitator">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Facilitator">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#FutureImage -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#FutureImage -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#FutureImage">
-        <owl:equivalentClass rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Vision"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#FutureImage">
+        <owl:equivalentClass rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Vision"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Government -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Government -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Government">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Government">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Innovation -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Innovation -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Innovation"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Innovation"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Interested -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Interested -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Interested">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Emotion"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Interested">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Emotion"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Intuition -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Intuition -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Intuition">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Emotion"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Intuition">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Emotion"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#KnowledgeInstitution -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#KnowledgeInstitution -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#KnowledgeInstitution">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#KnowledgeInstitution">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Lifestyle -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Lifestyle"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LifestyleActivity -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#LifestyleActivity -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LifestyleActivity"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#LifestyleActivity"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LocalFirm -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#LocalFirm -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LocalFirm">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Business"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#LocalFirm">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Business"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LocalGovernment -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#LocalGovernment -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#LocalGovernment">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#LocalGovernment">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Negative -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Negative -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Negative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Emotion"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Negative">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Emotion"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#OrganizationAndDivisionOfRoles -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#OrganizationAndDivisionOfRoles -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#OrganizationAndDivisionOfRoles">
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#OrganizationAndDivisionOfRoles">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization and division of roles</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Participant -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Participant -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Participant">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Participant">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Postive -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Postive -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Postive">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Emotion"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Postive">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Emotion"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Question -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Question -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Question"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Question"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Resource -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Resource -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Resource"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Resource"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Rural -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Rural -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Rural">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Area"/>
-        <owl:disjointWith rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Urban"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Rural">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Area"/>
+        <owl:disjointWith rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Urban"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Stakeholder -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Stakeholder -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Stakeholder">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Person"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#StatisticalAgency -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#StatisticalAgency -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#StatisticalAgency">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Organization"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#StatisticalAgency">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#SustainableLifestyle -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#SustainableLifestyle -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#SustainableLifestyle">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle"/>
-        <owl:disjointWith rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#UnsustainableLifestyle"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#SustainableLifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Lifestyle"/>
+        <owl:disjointWith rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#UnsustainableLifestyle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Technological -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Technological -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Technological">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Innovation"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Technological">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Innovation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#UnsustainableLifestyle -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#UnsustainableLifestyle -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#UnsustainableLifestyle">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Lifestyle"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#UnsustainableLifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Lifestyle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Urban -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Urban -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Urban">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Area"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Urban">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Area"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ValueSystem -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ValueSystem -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#ValueSystem">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Innovation"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#ValueSystem">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Innovation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Vision -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Vision -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Vision"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Vision"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Welfare -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Welfare -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Welfare"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Welfare"/>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Workshop -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Workshop -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/#Workshop"/>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Workshop"/>
     
 
 
@@ -566,14 +566,14 @@
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/author:DougSalt -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#author:DougSalt -->
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting/author:DougSalt">
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#author:DougSalt">
         <rdfs:label>Doug Salt</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

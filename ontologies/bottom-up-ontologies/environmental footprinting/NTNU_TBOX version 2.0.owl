@@ -14,7 +14,7 @@
 This is essentially environmental footprinting on a country by country basis.</rdfs:isDefinedBy>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This  version of the NTNU ontology and is based on the schema for the attached IRI</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/Expenditure%20by%20consumption%20cat%20ontology.xlsx</rdfs:isDefinedBy>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-08-12</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-12</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/schemata%20ontology.xlsx</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#author:DougSalt"/>
     </owl:Ontology>

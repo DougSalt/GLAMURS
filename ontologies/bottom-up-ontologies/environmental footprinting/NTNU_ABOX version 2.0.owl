@@ -12,7 +12,7 @@
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
         <rdfs:comment xml:lang="en">This is environmental footprinting and consumption on a per country basis.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/Expenditure%20by%20consumption%20cat%20ontology.xlsx</rdfs:isDefinedBy>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-08-12</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-08-12</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/schemata%20ontology.xlsx</rdfs:comment>
         <rdfs:comment xml:lang="en">This  version of the NTNU ontology and is based on the schema for the attached IRIs</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#author:DougSalt"/>

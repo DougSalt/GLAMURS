@@ -35,7 +35,7 @@ Note these conventions relate to the underlying entity and not what is shown as 
 + a label must be provided (usually with a language specification) and should be make sense in the language of choice
 
 Markdown will be used in all text.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#author:DougSalt"/>
     </owl:Ontology>
     
 
@@ -131,7 +131,6 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Country -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Country">
-        <owl:equivalentClass rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation"/>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Agent"/>
     </rdf:Description>
     
@@ -259,20 +258,6 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Experience -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Experience">
-        <owl:equivalentClass rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Experience"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#creates"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#FocusGroup -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#FocusGroup">
@@ -332,6 +317,19 @@ Markdown will be used in all text.</rdfs:comment>
         </owl:annotatedTarget>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#GreenGrowth -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#GreenGrowth">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#EconomicSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
@@ -567,19 +565,6 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#reenGrowth -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#reenGrowth">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#EconomicSystem"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor">
@@ -733,12 +718,12 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Degrowth -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Degrowth">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#reenGrowth"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#GreenGrowth"/>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Degrowth"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#reenGrowth"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#GreenGrowth"/>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
     </owl:Axiom>
     
@@ -1239,6 +1224,12 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1257,12 +1248,6 @@ Markdown will be used in all text.</rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </owl:annotatedTarget>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Thinking"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
     </owl:Axiom>
     
@@ -1315,20 +1300,11 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:TiPaC -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down#author:DougSalt -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:TiPaC">
-        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#AgentBasedModel"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt">
-        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Researcher"/>
-        <owl:sameAs rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#author:DougSalt">
+        <rdfs:label>Doug Salt</rdfs:label>
+    </owl:NamedIndividual>
     
 
 

@@ -14,64 +14,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#_junction_links -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#_junction_links">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junction_links"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#colleagues -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#colleagues">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#junction_links -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#junction_links">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#junction_links_"/>
-            <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#_junction_links"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#junction_links_ -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#junction_links_">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junction_links"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#location -->
-
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#location">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -124,9 +66,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#arrive_at_work_minute -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#arrive_at_work_minute">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#arrive_at_work_minute"/>
     
 
 
@@ -228,49 +168,37 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_home -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_home">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_home"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_home_list -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_home_list">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_home_list"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_work -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_work">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_work"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_work_list -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_work_list">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#commute_time_to_work_list"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#current_patch -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#current_patch">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#current_patch"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#current_ticks -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#current_ticks">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#current_ticks"/>
     
 
 
@@ -294,17 +222,13 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#delta_speed -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#delta_speed">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#delta_speed"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#eight_fold -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#eight_fold">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#eight_fold"/>
     
 
 
@@ -316,9 +240,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#employer -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#employer">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#employer"/>
     
 
 
@@ -348,9 +270,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#has_waited_for_bicycle_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#has_waited_for_bicycle_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#has_waited_for_bicycle_"/>
     
 
 
@@ -374,81 +294,61 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#initial_pcolor -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#initial_pcolor">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#initial_pcolor"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_coast_patch_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_coast_patch_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_coast_patch_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_junction_patch_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_junction_patch_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_junction_patch_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_redundant_road_patch_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_redundant_road_patch_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_redundant_road_patch_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_road_patch_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_road_patch_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_road_patch_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_sea_patch_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_sea_patch_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_sea_patch_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_trunk_road_patch_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_trunk_road_patch_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_trunk_road_patch_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_urban_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_urban_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_urban_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_walking_to_home_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_walking_to_home_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_walking_to_home_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_walking_to_work_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_walking_to_work_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#is_walking_to_work_"/>
     
 
 
@@ -460,41 +360,31 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#leave_home_minute -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#leave_home_minute">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#leave_home_minute"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#leave_work_minute -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#leave_work_minute">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#leave_work_minute"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_junction_patches -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_junction_patches">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_junction_patches"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_patch -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_patch">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_patch"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_road_patch -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_road_patch">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#live_road_patch"/>
     
 
 
@@ -506,17 +396,13 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#map_to_home -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#map_to_home">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#map_to_home"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#map_to_work -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#map_to_work">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#map_to_work"/>
     
 
 
@@ -570,9 +456,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#name -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#name">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Firms"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#name"/>
     
 
 
@@ -590,10 +474,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#owner -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#owner">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Bicycles"/>
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#owner"/>
     
 
 
@@ -605,9 +486,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#path_total -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#path_total">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junctions"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#path_total"/>
     
 
 
@@ -619,9 +498,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#postcode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#postcode">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Firms"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#postcode"/>
     
 
 
@@ -633,9 +510,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#road_patches -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#road_patches">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junction_links"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#road_patches"/>
     
 
 
@@ -647,25 +522,19 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_table -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_table">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_table"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_table_weight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_table_weight">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_table_weight"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_to_this_junction -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_to_this_junction">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junctions"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#route_to_this_junction"/>
     
 
 
@@ -677,9 +546,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#speed -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#speed">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#speed"/>
     
 
 
@@ -691,9 +558,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#speed_limit -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#speed_limit">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#speed_limit"/>
     
 
 
@@ -759,9 +624,7 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#through_junction_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#through_junction_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#through_junction_"/>
     
 
 
@@ -779,41 +642,31 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_between_patches_table -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_between_patches_table">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_between_patches_table"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_offroad_home -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_offroad_home">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_offroad_home"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_offroad_work -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_offroad_work">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#time_offroad_work"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#to_cycle_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#to_cycle_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#to_cycle_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#to_walk_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#to_walk_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#to_walk_"/>
     
 
 
@@ -849,41 +702,31 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#vehicle -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#vehicle">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#vehicle"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#visited_junction_ -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#visited_junction_">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junctions"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#visited_junction_"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#weight_time -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#weight_time">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#weight_time"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#work_junction_patches -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#work_junction_patches">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#work_junction_patches"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#work_road_patch -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#work_road_patch">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#work_road_patch"/>
     
 
 
@@ -917,83 +760,16 @@
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#zone -->
 
-    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#zone">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#zone"/>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#zone_list -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#zone_list"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Airport_labels -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Airport_labels"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Bicycles -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Bicycles"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Cars"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Firms -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Firms"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junction_links -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junction_links"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junctions -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Junctions"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Patch"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Station_labels -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Station_labels"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

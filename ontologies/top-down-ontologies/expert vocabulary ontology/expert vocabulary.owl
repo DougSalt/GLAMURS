@@ -10,7 +10,6 @@
     <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary">
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
 
 The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
@@ -35,6 +34,7 @@ Each term that is defined will also have a seeAlso annotation which refers to th
 If there is no seeAlso or definedBy annotation, then the class, datatype or property was created by the author. However such &quot;unsupported&quot; definition is usually made explicity with the definedBy annotation and the author. Such axioms or definitions are usually for convenience and obvious logical connections or groupings. 
 
 Other than the caveats previously mentiioned, no additional attempt has been made to classify or link, the classes, datatypes or properties. The derived ontology  is purely the results gathered from the questionnaire at (http://surveys.hutton.ac.uk/index.php/559132?newtest=Y).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#author:DougSalt"/>
     </owl:Ontology>
     
 
@@ -970,6 +970,18 @@ However just to note for the purpose of attribution, the period-of-occurrence: &
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#GreenGrowth -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#GreenGrowth">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
+        <top-down-common:frequencyOfProcess xml:lang="en">Continually or sequentially</top-down-common:frequencyOfProcess>
+        <top-down-common:periodOfProcess xml:lang="en">(Most probably) years.</top-down-common:periodOfProcess>
+        <rdfs:label xml:lang="en">Green growth</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:greenGrowth"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Household -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Household">
@@ -1422,18 +1434,6 @@ However just to note for the purpose of attribution, the period-of-occurrence: &
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#reenGrowth -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#reenGrowth">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process"/>
-        <top-down-common:frequencyOfProcess xml:lang="en">Continually or sequentially</top-down-common:frequencyOfProcess>
-        <top-down-common:periodOfProcess xml:lang="en">(Most probably) years.</top-down-common:periodOfProcess>
-        <rdfs:label rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:greenGrowth"/>
-        <rdfs:label xml:lang="en">Green growth</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1442,6 +1442,14 @@ However just to note for the purpose of attribution, the period-of-occurrence: &
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#author:DougSalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#author:DougSalt">
+        <rdfs:label>Doug Salt</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -2729,22 +2737,6 @@ The term is usually used in the latter sense.</owl:annotatedTarget>
         <owl:annotatedTarget xml:lang="en">Water footprint</owl:annotatedTarget>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#NTNU"/>
     </owl:Axiom>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt">
-        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Individual"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt">
-        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Individual"/>
-    </rdf:Description>
 </rdf:RDF>
 
 

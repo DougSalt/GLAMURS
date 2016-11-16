@@ -21,7 +21,6 @@ If there is no seeAlso or definedBy annotation, then the class, datatype or prop
 
 Other than the caveats previously mentiioned, no additional attempt has been made to classify or link, the classes, datatypes or properties. The derived ontology  is purely the results gathered from the questionnaire at (http://surveys.hutton.ac.uk/index.php/559132?newtest=Y).</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
         <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
 
 The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
@@ -562,7 +561,6 @@ Markdown will be used in all text.</rdfs:comment>
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Construct">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass"/>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#UndefinedEntityType"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
         <rdfs:label>Construct</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:construct"/>
     </owl:Class>
@@ -1697,7 +1695,6 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:TiPaC -->
 
     <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:TiPaC">
-        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Model"/>
         <top-down-common:partOfDiscipline rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#discipline:socialSimulation"/>
         <rdfs:comment>A model of commuting in Aberdeenshire</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#JHI"/>
@@ -1886,7 +1883,6 @@ Reference: Oliver, P. E., Marwell, G., &amp; Teixeira, R. (1985). A theory of th
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:grassrootsMovement -->
 
     <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:grassrootsMovement">
-        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#AgreeWithGlossary"/>
         <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
         <top-down-common:partOfDiscipline rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#discipline:ethics"/>
         <top-down-common:partOfDiscipline rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#discipline:innovationStudies"/>
@@ -2305,19 +2301,11 @@ The concept of what a model is differs from one discipline to another. Central t
         <owl:annotatedTarget rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#term:wellBeing"/>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt"/>
     </owl:Axiom>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt -->
-
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#author:dougSalt">
-        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Citizen"/>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
     </rdf:Description>
 </rdf:RDF>
 

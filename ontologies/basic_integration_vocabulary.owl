@@ -58,7 +58,6 @@ This ontology will provide the vocabulary to link. Thus, this ontology will only
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isModifedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isModifedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#modifies"/>
         <rdfs:label xml:lang="en">is modified by</rdfs:label>
     </owl:ObjectProperty>

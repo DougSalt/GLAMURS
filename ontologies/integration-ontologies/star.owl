@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#"
+     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star"
+     xmlns:metadata="http://www.glamurs.eu/ontologies/2016/KB/metadata#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star">
+        <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata"/>
+        <metadata:creator rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#author:DougSalt"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-26</rdfs:comment>
+        <metadata:ontologyShortName rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#star"/>
+        <rdfs:comment xml:lang="en">This is the integration ontology which will map the star pattern for the overall ontology. This enforces (if you don&apos;t select the underlying basic vocabulary) the direction of any use of the integration vocabulary (if the reasoner is selected that validates domains and codomains).</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaLogicallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaLogicallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaStronglyRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaMeasures -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaMeasures">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaNumericallyRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaNumericallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaNumericallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaStronglyRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaStronglyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaStronglyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaWeaklyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaWeaklyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasOntologicalOrientation -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasOntologicalOrientation">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#Term"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#OntologyOrientation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaLogicallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaLogicallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaMeasures -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaMeasures">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaNumericallyRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaNumericallyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaNumericallyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
+        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents">
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologyDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologyDataProperty">
+        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntology -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntology">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#OntologyOrientation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass">
+        <rdfs:label xml:lang="en">Bottom-up ontology class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#OntologyOrientation -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#OntologyOrientation">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#MetaDatum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntology -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntology">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#OntologyOrientation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass">
+        <rdfs:label xml:lang="en">Top-down ontology class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#star -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#star">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#OntologyShortName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#bottomUp:ontology -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#bottomUp:ontology">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#topDown:ontology -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#topDown:ontology">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntology"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

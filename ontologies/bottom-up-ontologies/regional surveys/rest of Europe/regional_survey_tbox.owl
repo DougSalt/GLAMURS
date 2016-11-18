@@ -44,47 +44,6 @@ Notice my ultimate aim in creating these ontologies is to build vocabularies acr
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#has_use_of_sustainability_initiative_services_value -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#has_use_of_sustainability_initiative_services_value">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#date -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#time -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////

@@ -76,6 +76,15 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down#Satisfaction -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#Satisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#author:DougSalt"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor">
@@ -355,6 +364,14 @@ Markdown will be used in all text.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Knowledge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#Satisfaction"/>
     </rdf:Description>
     
 
@@ -883,6 +900,19 @@ Markdown will be used in all text.</rdfs:comment>
         </owl:annotatedTarget>
         <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#Satisfaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 

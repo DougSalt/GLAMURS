@@ -1,33 +1,36 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/GLAMURS#"
      xml:base="http://www.glamurs.eu/ontologies/2016/GLAMURS"
+     xmlns:expert="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#"
+     xmlns:ubah="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#"
      xmlns:questionnaire="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#"
-     xmlns:directional-vocab="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#"
+     xmlns:metadata="http://www.glamurs.eu/ontologies/2016/KB/metadata#"
+     xmlns:tsc="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:regionalSco="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:TiPaC="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#"
      xmlns:regionalRoE="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:UBAH="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#"
-     xmlns:vocabulary="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#"
+     xmlns:common="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:NTNU-abox="http://www.glamurs.eu/ontologies/2016/ABOX/bottom-up/NTNU-ABOX#"
-     xmlns:TSC="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#"
+     xmlns:star="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#"
+     xmlns:ntnu-abox="http://www.glamurs.eu/ontologies/2016/ABOX/bottom-up/NTNU-ABOX#"
      xmlns:top-down-common="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#"
-     xmlns:NTNU="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:tipac="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#"
      xmlns:sna-roe="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#"
-     xmlns:GLAMURScore="http://www.glamurs.eu/ontologies/GLAMURScore.owl#"
+     xmlns:core="http://www.glamurs.eu/ontologies/GLAMURScore.owl#"
      xmlns:glamurs="http://www.glamurs.eu/ontologies/2016/GLAMURS#"
      xmlns:backcasting="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#"
      xmlns:initative="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sna-sco="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#"
      xmlns:ukhls="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#"
+     xmlns:ntnu="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#"
      xmlns:top-down="http://www.glamurs.eu/ontologies/2016/TBOX/top-down#">
     <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS">
-        <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC"/>
@@ -38,6 +41,7 @@
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE"/>
+        <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/ABOX/bottom-up/NTNU-ABOX"/>
         <owl:imports rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
@@ -74,165 +78,9 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isPartOfOntologyType -->
 
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologyDataProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologyDataProperty"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#organizes -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#organizes"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasProperty"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedProperty"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isCommonSense -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isCommonSense"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isPropertyOf -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isPropertyOf"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasContext -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasContext"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasGeography -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasGeography"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasKnowledge -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasKnowledge"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyle -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyle"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyleDomain -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyleDomain"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasSustainability -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasSustainability"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasThinking -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasThinking"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformation -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformation"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#usesKnowledge -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#usesKnowledge"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasProperty"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isModifedBy -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isModifedBy"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isPropertyOf -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isPropertyOf"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isUsedBy -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isUsedBy"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#modifies -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#modifies"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses -->
-
-    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses"/>
+    <owl:AnnotationProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isPartOfOntologyType"/>
     
 
 
@@ -258,7 +106,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasBackCastingOntologyProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasBackCastingOntologyProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -266,7 +114,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasEnvironmentFootprintOntologyProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasEnvironmentFootprintOntologyProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -274,7 +122,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasInitiativeInterviewOntologyProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasInitiativeInterviewOntologyProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -298,7 +146,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasModelOntologyProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasModelOntologyProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -322,7 +170,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasRegionalSurveyOntologyProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasRegionalSurveyOntologyProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -346,7 +194,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasSocialNeworkingAnalysisProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasSocialNeworkingAnalysisProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -362,7 +210,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasUKHLSOntologyProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasUKHLSOntologyProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomDownOntologicalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -1362,7 +1210,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#organizes -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#organizes">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1370,7 +1218,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasProperty -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1378,7 +1226,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedProperty -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1386,7 +1234,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isCommonSense -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isCommonSense">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1394,7 +1242,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isPropertyOf -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#isPropertyOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1402,7 +1250,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasContext -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasContext">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1410,7 +1258,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasGeography -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasGeography">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1418,7 +1266,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasKnowledge -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasKnowledge">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1426,7 +1274,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyle -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyle">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1434,7 +1282,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyleDomain -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasLifestyleDomain">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1442,7 +1290,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasSustainability -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasSustainability">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1450,7 +1298,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasThinking -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#hasThinking">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1458,7 +1306,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformation -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformation">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1466,7 +1314,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationFrom">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1474,7 +1322,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#transformationTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1482,7 +1330,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#usesKnowledge -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#usesKnowledge">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1490,7 +1338,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1498,7 +1346,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasProperty -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1506,7 +1354,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isModifedBy -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isModifedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1514,7 +1362,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isPropertyOf -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isPropertyOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1522,7 +1370,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isUsedBy -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#isUsedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1530,7 +1378,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#modifies -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#modifies">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1538,7 +1386,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1546,7 +1394,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#uses">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologicalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologicalProperty"/>
     </rdf:Description>
     
 
@@ -1573,7 +1421,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasBackCastingOntologyDataProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasBackCastingOntologyDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -1581,7 +1429,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasEnvironmentalFootprintOntologyDataProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasEnvironmentalFootprintOntologyDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -1589,7 +1437,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasInitiativeInterviewOntologyDataProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasInitiativeInterviewOntologyDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -1613,7 +1461,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasModelOntologyOntologyDataProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasModelOntologyOntologyDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -1637,7 +1485,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasRegionalSurveyOntologyDataProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasRegionalSurveyOntologyDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -1661,7 +1509,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasSocialNetworkingAnalysisOntologyDataProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasSocialNetworkingAnalysisOntologyDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -1677,7 +1525,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#hasUKHLSOntologyDataProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#hasUKHLSOntologyDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasBottomUpOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasBottomUpOntologyDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -3037,7 +2885,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#hasSuggestedAttribute">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#hasTopDownOntologyDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasTopDownOntologyDataProperty"/>
     </rdf:Description>
     
 
@@ -3062,14 +2910,28 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#Austria -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#Austria">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Vision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Back-casting ontology class</rdfs:label>
@@ -3080,8 +2942,32 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#EnvironmentalFootprintOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#EnvironmentalFootprintOntologyClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaNumericallyRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Environmental footprinting ontology  class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#EuropeanUnion -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#EuropeanUnion">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#author:DougSalt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#Germany -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#Germany">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#author:DougSalt"/>
     </owl:Class>
     
 
@@ -3089,14 +2975,28 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#InitiativeInterviewOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#InitiativeInterviewOntologyClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#InitativeOrganizers"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#InitiativeOrganizer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#CaseStudy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Initiative interview ontology  class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#Italy -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#Italy">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
     </owl:Class>
     
 
@@ -3105,12 +3005,6 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#MacroEconomicModelOntologyClass">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#ModelOntologyClass"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Country"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Macro-economic model ontology class</rdfs:label>
     </owl:Class>
     
@@ -3128,10 +3022,10 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#ModelOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#ModelOntologyClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3140,10 +3034,24 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#Netherlands -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#Netherlands">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForRestOfEuropeOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForRestOfEuropeOntologyClass">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyOntologyClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Regional survey for the rest of Europe ontology class</rdfs:label>
     </owl:Class>
     
@@ -3155,7 +3063,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#Scotland"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3167,20 +3075,36 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyOntologyClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Regional survey ontology  class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#Romania -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#Romania">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
     </owl:Class>
     
 
@@ -3200,7 +3124,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#SocialNetworkingAnalysisOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#Scotland"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3213,6 +3137,12 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#SocialNetworkingAnalysisForTheRestOfEuropeOntologyClass">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#SocialNetworkingAnalysisOntologyClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Social networking analysis for the rest of Europe ontology class</rdfs:label>
     </owl:Class>
     
@@ -3221,14 +3151,23 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#SocialNetworkingAnalysisOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#SocialNetworkingAnalysisOntologyClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#SocialNetwork"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Social networking ontology class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#Spain -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#Spain">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RestOfEurope"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#author:DougSalt"/>
     </owl:Class>
     
 
@@ -3239,7 +3178,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#AgentBasedModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Car"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3251,20 +3190,42 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UnitedKingdom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">UKHLS ontology class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Home"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">UKHLS ontology class</rdfs:label>
     </owl:Class>
     
 
@@ -3284,13 +3245,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#EnvironmentalFootprintOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-numerically-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Nation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3320,7 +3275,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#EnvironmentalFootprintOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Footprint"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3350,7 +3305,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#EnvironmentalFootprintOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Geography"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3364,7 +3319,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#EnvironmentalFootprintOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#UnitsOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3375,28 +3330,28 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3406,16 +3361,16 @@ Markdown will be used in all text.</rdfs:comment>
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#ConsumerDuarables -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#ConsumerDuarables">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#ConsumerDuarables">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass"/>
+    </owl:Class>
     
 
 
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#EconomicActivity -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#EconomicActivity">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass"/>
     </rdf:Description>
     
 
@@ -3426,19 +3381,19 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Governance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3450,6 +3405,12 @@ Markdown will be used in all text.</rdfs:comment>
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#GroupOfPeople">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Citizens"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -3457,10 +3418,10 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Household -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Household">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Household"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3471,7 +3432,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#HouseholdWaste -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#HouseholdWaste">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass"/>
     </rdf:Description>
     
 
@@ -3479,10 +3440,10 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Income -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Income">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Income"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3501,7 +3462,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Location -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Location">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass"/>
     </rdf:Description>
     
 
@@ -3509,7 +3470,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Person -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Person">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass"/>
     </rdf:Description>
     
 
@@ -3517,7 +3478,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#PoliticalParty -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#PoliticalParty">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass"/>
     </rdf:Description>
     
 
@@ -3525,7 +3486,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Qualification -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Qualification">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass"/>
     </rdf:Description>
     
 
@@ -3533,7 +3494,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Room -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Room">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyHouseholdClass"/>
     </rdf:Description>
     
 
@@ -3541,7 +3502,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#TimePeriod -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#TimePeriod">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass"/>
     </rdf:Description>
     
 
@@ -3549,10 +3510,10 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Transport -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Transport">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#UKHLSOntologyPersonClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3630,20 +3591,8 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Citizen"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Citizens"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Citizen"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3656,49 +3605,49 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Consumables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3712,7 +3661,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Culture"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3758,37 +3707,37 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Lifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-measures"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaMeasures"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Lifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Lifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3802,19 +3751,19 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-measures"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaMeasures"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifestyleChange"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3844,31 +3793,31 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3898,7 +3847,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#BackCastingOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Vision"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3970,19 +3919,32 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LifestyleSatisfactionImpact -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LifestyleSatisfactionImpact">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaMeasures"/>
+                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement">
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#InitiativeInterviewOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#UnitOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-RoE#UnitsOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3996,19 +3958,19 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#InitiativeInterviewOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4094,7 +4056,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#TiPaCOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4116,19 +4078,19 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MacroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4142,37 +4104,37 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MacroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4202,7 +4164,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MacroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4240,13 +4202,13 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MacroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Utility"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Utilisation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4260,7 +4222,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MacroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Variable"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4282,13 +4244,13 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MicroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4310,31 +4272,31 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MicroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4380,37 +4342,37 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MicroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#gamma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#gammaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-measures"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaMeasures"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Lifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Lifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#GreenLifestyle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4440,7 +4402,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MicroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#SupplyChain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4454,7 +4416,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#MicroEconomicModelOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-strongly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaStronglyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Utilisation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4516,7 +4478,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForRestOfEuropeOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Collective"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4666,7 +4628,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForRestOfEuropeOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifestyleChange"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4680,7 +4642,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForRestOfEuropeOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4846,7 +4808,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForRestOfEuropeOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#CollectiveWellBeing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4860,43 +4822,43 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForScotlandOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Consumables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#ConsumptionOfMaterialGoods"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Consumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-weakly-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaWeaklyRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#MaterialConsumption"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4910,7 +4872,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForScotlandOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#GroupOfPeople"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4924,13 +4886,13 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForScotlandOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Household"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Household"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4944,13 +4906,13 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForScotlandOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/agent-based-modelling/TiPaC.owl#Persons"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4980,13 +4942,13 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#RegionalSurveyForScotlandOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/UKHLS#Transport"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transport"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5000,19 +4962,7 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#SocialNetworkingAnalysisForTheRestOfEuropeOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5026,25 +4976,13 @@ Markdown will be used in all text.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#SocialNetworkingAnalysisForScotlandOntologyClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#isSemanticallyRelatedTo"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#Actor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Actor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
-                <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Actor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#sigma-represents"/>
+                <owl:onProperty rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
                 <owl:someValuesFrom rdf:resource="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5060,17 +4998,17 @@ Markdown will be used in all text.</rdfs:comment>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#BottomUpOntologyClass">
-        <owl:disjointWith rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass">
+        <owl:disjointWith rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass -->
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass -->
 
-    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     
 
 
@@ -5085,7 +5023,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Economy -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Economy">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5093,7 +5031,15 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Energy -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#Energy">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#LifeSatisfaction">
+        <star:isPartOfOntologyType rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#topDown:ontology"/>
     </rdf:Description>
     
 
@@ -5101,7 +5047,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#NetworkAnalysis -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#NetworkAnalysis">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5109,7 +5055,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#PublicGood -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#PublicGood">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5117,7 +5063,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Governance -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Governance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5125,7 +5071,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Theory -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#Theory">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5133,7 +5079,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#CommonSense -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#CommonSense">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5141,7 +5087,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Discipline -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Discipline">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5149,7 +5095,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Glossary -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Glossary">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5157,7 +5103,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Process">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5165,7 +5111,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#SuggestedClass">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5173,7 +5119,8 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#TopDownTerm"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5181,7 +5128,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#UndefinedEntityType -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#UndefinedEntityType">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5189,7 +5136,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Actor">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5197,7 +5144,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Context">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5205,7 +5152,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#LifestyleDomain">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5219,7 +5166,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Sustainability">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5227,7 +5174,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#Transformation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5235,7 +5182,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/GLAMURScore.owl#TransformedThing">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/directional-vocabulary#TopDownOntologyClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass"/>
     </rdf:Description>
     
 
@@ -5255,6 +5202,58 @@ Markdown will be used in all text.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#author:DougSalt">
         <rdfs:label>Doug Salt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#bottomUp:ontology -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#bottomUp:ontology">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#term:lifeSatisfactionImpact -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#term:lifeSatisfactionImpact">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#BottomUpTerm"/>
+        <metadata:isOntologicalEntity rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#ontology:class"/>
+        <star:hasOntologicalOrientation rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#bottomUp:ontology"/>
+        <star:sigmaMeasures rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:lifeSatistfaction"/>
+        <metadata:describes rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LifestyleSatisfactionImpact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#term:tsc:utility -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#term:tsc:utility">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#BottomUpTerm"/>
+        <metadata:isOntologicalEntity rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#ontology:class"/>
+        <star:hasOntologicalOrientation rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#bottomUp:ontology"/>
+        <star:sigmaRepresents rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:lifeSatistfaction"/>
+        <metadata:describes rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC#Utility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#term:ubah:utility -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#term:ubah:utility">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#BottomUpTerm"/>
+        <metadata:isOntologicalEntity rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#ontology:class"/>
+        <star:hasOntologicalOrientation rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#bottomUp:ontology"/>
+        <star:sigmaNumericallyRepresents rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:lifeSatistfaction"/>
+        <metadata:describes rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-micro-models/UBAH#Utility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/GLAMURS#topDown:ontology -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#topDown:ontology">
+        <rdf:type rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntology"/>
     </owl:NamedIndividual>
     
 
@@ -5320,6 +5319,160 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#author:DougSalt -->
 
     <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#author:DougSalt"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:lifeSatistfaction -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert-vocabulary#term:lifeSatistfaction">
+        <metadata:isOntologicalEntity rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#ontology:class"/>
+        <star:hasOntologicalOrientation rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#topDown:ontology"/>
+    </rdf:Description>
+    <rdf:Description>
+        <metadata:creator rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#author:DougSalt"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#b1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.glamurs.eu/ontologies/2016/GLAMURS#b2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is to determine semantically related terms between bottom up ontologies.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#TopDownTerm"/>
+                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasOntologicalOrientation"/>
+                                <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#t"/>
+                                <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#topDown:ontology"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#BottomUpTerm"/>
+                                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasOntologicalOrientation"/>
+                                                <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b1"/>
+                                                <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#bottomUp:ontology"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
+                                                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#t"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#BottomUpTerm"/>
+                                                                <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#hasOntologicalOrientation"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b2"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#bottomUp:ontology"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#sigmaRepresents"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b2"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#t"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#isSemanticallyRelatedTo"/>
+                        <swrl:argument1 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b1"/>
+                        <swrl:argument2 rdf:resource="http://www.glamurs.eu/ontologies/2016/GLAMURS#b2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 

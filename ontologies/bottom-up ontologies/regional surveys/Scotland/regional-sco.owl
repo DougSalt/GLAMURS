@@ -1,0 +1,2190 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-sco#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-sco>
+Annotation(rdfs:comment "2016-09-09"^^xsd:date)
+Annotation(rdfs:comment "The methodology for the construction of this ontology was to go through the coding and create data types for each of the questions.
+
+Once this has been done, then the answers to these questioins can be used to create either domain restricted classes and superclasses, or domain restricted properties between those classes.
+
+Finally the names of the datatypes are replaced with the literals from the actual questionnaire."^^xsd:string)
+Annotation(rdfs:isDefinedBy <http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/regional-survey/regional-survey-Sco#author:DougSalt>)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:BathroomOrToilet))
+Declaration(Class(:Bedroom))
+Declaration(Class(:Bungalow))
+Declaration(Class(:Car))
+Declaration(Class(:CollegeQualification))
+Declaration(Class(:Consumables))
+Declaration(Class(:Detached))
+Declaration(Class(:DoctoralDegree))
+Declaration(Class(:ElectricHeating))
+Declaration(Class(:Female))
+Declaration(Class(:FlatOrMaisonetteOrApartment))
+Declaration(Class(:Garage))
+Declaration(Class(:GasHeating))
+Declaration(Class(:GroupOfPeople))
+Declaration(Class(:GroupOfPeopleConsistingOf6OrMorePeople))
+Declaration(Class(:GroupOfPeopleConsistingOfFivePeople))
+Declaration(Class(:GroupOfPeopleConsistingOfFourPeople))
+Declaration(Class(:GroupOfPeopleConsistingOfOnePerson))
+Declaration(Class(:GroupOfPeopleConsistingOfThreePeople))
+Declaration(Class(:GroupOfPeopleConsistingOfTwoPeople))
+Declaration(Class(:HeatingSupply))
+Declaration(Class(:HighSchoolQualification))
+Declaration(Class(:House))
+Declaration(Class(:HouseHoldRentedFromEmpoyerOfAResident))
+Declaration(Class(:Household))
+Declaration(Class(:HouseholdMortgaged))
+Declaration(Class(:HouseholdOccupiedRentFree))
+Declaration(Class(:HouseholdOwned))
+Declaration(Class(:HouseholdOwnedOutright))
+Declaration(Class(:HouseholdRented))
+Declaration(Class(:HouseholdRentedFromCouncilOrLocalAuthority))
+Declaration(Class(:HouseholdRentedFromFriendOrRelativeOfAResident))
+Declaration(Class(:HouseholdRentedFromHousingAssociation))
+Declaration(Class(:HouseholdRentedFromOther))
+Declaration(Class(:HouseholdRentedFromPrivateLandlord))
+Declaration(Class(:HouseholdSharedOwnership))
+Declaration(Class(:Kitchen))
+Declaration(Class(:LivingRoom))
+Declaration(Class(:Male))
+Declaration(Class(:NoCentralHeating))
+Declaration(Class(:NoQualifications))
+Declaration(Class(:OilFiredHeating))
+Declaration(Class(:OtherQualification))
+Declaration(Class(:OtherTypeOfFuelForHeating))
+Declaration(Class(:Person))
+Declaration(Class(:PostgraduateDiplomaOrDegree))
+Declaration(Class(:Qualification))
+Declaration(Class(:Residents))
+Declaration(Class(:ResidentsConsistingOf6OrMorePeople))
+Declaration(Class(:ResidentsConsistingOfFivePeople))
+Declaration(Class(:ResidentsConsistingOfFourPeople))
+Declaration(Class(:ResidentsConsistingOfOnePerson))
+Declaration(Class(:ResidentsConsistingOfThreePeople))
+Declaration(Class(:ResidentsConsistingOfTwoPeople))
+Declaration(Class(:Room))
+Declaration(Class(:SemiDetached))
+Declaration(Class(:SolidFuelHeating))
+Declaration(Class(:StudyOrOffice))
+Declaration(Class(:Tenure))
+Declaration(Class(:Terraced))
+Declaration(Class(:Transport))
+Declaration(Class(:UniversityDegree))
+Declaration(Class(:UtilityRoom))
+Declaration(Class(:Van))
+Declaration(Class(:VocationalOrProfessionalQualification))
+Declaration(ObjectProperty(:hasBathroomOrToilet))
+Declaration(ObjectProperty(:hasBedroom))
+Declaration(ObjectProperty(:hasCollegeQualification))
+Declaration(ObjectProperty(:hasConnectionFrom))
+Declaration(ObjectProperty(:hasConnectionTo))
+Declaration(ObjectProperty(:hasDoctoralDegree))
+Declaration(ObjectProperty(:hasElectricCentralHeating))
+Declaration(ObjectProperty(:hasGarage))
+Declaration(ObjectProperty(:hasGasCentralHeating))
+Declaration(ObjectProperty(:hasGroupMember))
+Declaration(ObjectProperty(:hasGroupOfPeopleProperty))
+Declaration(ObjectProperty(:hasHeating))
+Declaration(ObjectProperty(:hasHighSchoolQualification))
+Declaration(ObjectProperty(:hasHouseholdProperty))
+Declaration(ObjectProperty(:hasKitchen))
+Declaration(ObjectProperty(:hasLivingRoom))
+Declaration(ObjectProperty(:hasNoCentralHeating))
+Declaration(ObjectProperty(:hasNoQualifications))
+Declaration(ObjectProperty(:hasOilFiredCentralHeating))
+Declaration(ObjectProperty(:hasOtherQualification))
+Declaration(ObjectProperty(:hasOtherTypeOfCentralHeating))
+Declaration(ObjectProperty(:hasPersonProperty))
+Declaration(ObjectProperty(:hasPostgraduateDiplomaOrDegree))
+Declaration(ObjectProperty(:hasQualification))
+Declaration(ObjectProperty(:hasRelationshipWith))
+Declaration(ObjectProperty(:hasResidentGroupOfPeople))
+Declaration(ObjectProperty(:hasRoom))
+Declaration(ObjectProperty(:hasSex))
+Declaration(ObjectProperty(:hasSolidFuelCentralHeating))
+Declaration(ObjectProperty(:hasStudyOrOffice))
+Declaration(ObjectProperty(:hasUniversityDegree))
+Declaration(ObjectProperty(:hasUseOf))
+Declaration(ObjectProperty(:hasUseOfCarOrVan))
+Declaration(ObjectProperty(:hasUtilityRoom))
+Declaration(ObjectProperty(:hasVocationalOrProfessionalQualification))
+Declaration(ObjectProperty(:isOccupiedRentFreeBy))
+Declaration(ObjectProperty(:isOwnedButMortgagedBy))
+Declaration(ObjectProperty(:isOwnedBy))
+Declaration(ObjectProperty(:isOwnedOutrightBy))
+Declaration(ObjectProperty(:isOwnerOf))
+Declaration(ObjectProperty(:isRentedBy))
+Declaration(ObjectProperty(:isRentedFromAFriendOrRelativeOfAResidentBy))
+Declaration(ObjectProperty(:isRentedFromCouncilOrLocalAuthorityBy))
+Declaration(ObjectProperty(:isRentedFromEmployerOfAResidentBy))
+Declaration(ObjectProperty(:isRentedFromHousingAssociationBy))
+Declaration(ObjectProperty(:isRentedFromOtherBy))
+Declaration(ObjectProperty(:isRentedFromPrivateLandlordBy))
+Declaration(ObjectProperty(:isRentedOrOwnedBy))
+Declaration(ObjectProperty(:isResidentGroupOfPeopleForHousehold))
+Declaration(ObjectProperty(:isSharedOwnedBy))
+Declaration(ObjectProperty(:outrightOwner))
+Declaration(ObjectProperty(:ownerPayinMortgageOrLoan))
+Declaration(ObjectProperty(:paysNoRentFor))
+Declaration(ObjectProperty(:paysRentFor))
+Declaration(ObjectProperty(:paysRentToCouncilOrLocalAuthorityFor))
+Declaration(ObjectProperty(:paysRentToEmpolyerOfAResidentFor))
+Declaration(ObjectProperty(:paysRentToFriendOrRelativeOfAResidentFor))
+Declaration(ObjectProperty(:paysRentToHousingAssociationFor))
+Declaration(ObjectProperty(:paysRentToOtherFor))
+Declaration(ObjectProperty(:paysRentToPrivateLandLordFor))
+Declaration(ObjectProperty(:sharesOwnership))
+Declaration(DataProperty(:amToldWhatToDoFrequently))
+Declaration(DataProperty(:amountOfTimeSpentAtWork))
+Declaration(DataProperty(:amountOfTimeSpentOnLeisure))
+Declaration(DataProperty(:buyFruitAndVegGrownLocally))
+Declaration(DataProperty(:buyOrganicFoods))
+Declaration(DataProperty(:buysEcoFriendlyPoducts))
+Declaration(DataProperty(:choosesFoodToBeEnvironmentallyFriendly))
+Declaration(DataProperty(:collectsAndRecylesUsedPaper))
+Declaration(DataProperty(:considersPeersAsFriends))
+Declaration(DataProperty(:doesHoursPerWeekOfUnpaidVoluntaryWork))
+Declaration(DataProperty(:doesUnpaidVoluntaryWork))
+Declaration(DataProperty(:everythingDoneIsHurried))
+Declaration(DataProperty(:feelAbleToExpressSelf))
+Declaration(DataProperty(:feelCaredFor))
+Declaration(DataProperty(:feelsLikeFreeToDecideMannerOfLifestyle))
+Declaration(DataProperty(:feelsLikeNeverHasADayOff))
+Declaration(DataProperty(:feelsPressured))
+Declaration(DataProperty(:feelsThatQualityOfSleepIsGood))
+Declaration(DataProperty(:findsItHardToSleepAtNight))
+Declaration(DataProperty(:getsAlongWithOthers))
+Declaration(DataProperty(:gowsOwnFoodDesription))
+Declaration(DataProperty(:growsOnFoodAttribute))
+Declaration(DataProperty(:growsOwnFoodValue))
+Declaration(DataProperty(:happyWithCommutingTime))
+Declaration(DataProperty(:happyWithWorkLeisureBalance))
+Declaration(DataProperty(:hasAcquiredTheImportantThingsInLife))
+Declaration(DataProperty(:hasAgeForPerson2Value))
+Declaration(DataProperty(:hasAgeForPerson3Value))
+Declaration(DataProperty(:hasAgeForPerson4Value))
+Declaration(DataProperty(:hasAgeForPerson5Value))
+Declaration(DataProperty(:hasAgeForPerson6Value))
+Declaration(DataProperty(:hasAgeValue))
+Declaration(DataProperty(:hasAllMembersOfHouseholdEatSameMealCookedAtHomeValue))
+Declaration(DataProperty(:hasAmountSpentOnEatingOutPerWeekValue))
+Declaration(DataProperty(:hasAmountSpentOnFoodPerWeek))
+Declaration(DataProperty(:hasAttitudeAttribute))
+Declaration(DataProperty(:hasCentralHeatingAttribute))
+Declaration(DataProperty(:hasCookMealsFromScratchValue))
+Declaration(DataProperty(:hasCurrentEmploymentStatusValue))
+Declaration(DataProperty(:hasDietaryAttribute))
+Declaration(DataProperty(:hasDwellingDescriptionValue))
+Declaration(DataProperty(:hasEatMainMealFromTakeAwayValue))
+Declaration(DataProperty(:hasEatPreparedFoodsValue))
+Declaration(DataProperty(:hasEatingAttribute))
+Declaration(DataProperty(:hasEatingOfDiaryProductsValue))
+Declaration(DataProperty(:hasEatingOfFishValue))
+Declaration(DataProperty(:hasEatingOfFruitValue))
+Declaration(DataProperty(:hasEatingOfRedMeatValue))
+Declaration(DataProperty(:hasEatingOfWhiteMeatValue))
+Declaration(DataProperty(:hasEatingofVegetablesValue))
+Declaration(DataProperty(:hasElectricCentralHeatingValue))
+Declaration(DataProperty(:hasEmotionalResponseAttribute))
+Declaration(DataProperty(:hasEverydayBehaviourAttribute))
+Declaration(DataProperty(:hasExcellentLifestyle))
+Declaration(DataProperty(:hasFeelingsOnTransportAttribute))
+Declaration(DataProperty(:hasFeelingsOnTransportByBike))
+Declaration(DataProperty(:hasFeelingsOnTransportByBus))
+Declaration(DataProperty(:hasFeelingsOnTransportByCar))
+Declaration(DataProperty(:hasFeelingsOnTransportByTrain))
+Declaration(DataProperty(:hasFeelingsOnTransportByWalking))
+Declaration(DataProperty(:hasFlexiTime))
+Declaration(DataProperty(:hasFlexiTimeAvailable))
+Declaration(DataProperty(:hasFullAndSpecificJobTitleValue))
+Declaration(DataProperty(:hasGasCentralHeatingValue))
+Declaration(DataProperty(:hasHighestLevelEducationalQualifcationAttribute))
+Declaration(DataProperty(:hasHighestLevelEducationalQualifcationNameValue))
+Declaration(DataProperty(:hasHighestLevelEducationalQualifcationValue))
+Declaration(DataProperty(:hasHouseDescriptionValue))
+Declaration(DataProperty(:hasHouseholdAGarden))
+Declaration(DataProperty(:hasHouseholdAttribute))
+Declaration(DataProperty(:hasIntentionToRemainInTheNorthEastOfScotlandValue))
+Declaration(DataProperty(:hasJobSharing))
+Declaration(DataProperty(:hasJobSharingAvailable))
+Declaration(DataProperty(:hasLandlordValue))
+Declaration(DataProperty(:hasLifestyleAttribute))
+Declaration(DataProperty(:hasLivedInTheNorthEastOfScotlandNumberOfYearsValue))
+Declaration(DataProperty(:hasMainWorkplaceAddress))
+Declaration(DataProperty(:hasMainWorkplaceAddressPostcodeValue))
+Declaration(DataProperty(:hasMainWorkplaceAddressValue))
+Declaration(DataProperty(:hasMainWorkplaceMultipleChoiceValue))
+Declaration(DataProperty(:hasMostCommonModeOfTransportToWorkAttribute))
+Declaration(DataProperty(:hasMostCommonModeOfTransportToWorkValue))
+Declaration(DataProperty(:hasNameOfOrganisationThatWorksForValue))
+Declaration(DataProperty(:hasNoCentralHeatingValue))
+Declaration(DataProperty(:hasNoFlexibleWorkingArrangements))
+Declaration(DataProperty(:hasNoFlexibleWorkingArrangementsAvailable))
+Declaration(DataProperty(:hasNumberOfBathroomsOrToiletsValue))
+Declaration(DataProperty(:hasNumberOfBedroomsValue))
+Declaration(DataProperty(:hasNumberOfCarsAvailableToHouseholdAttribute))
+Declaration(DataProperty(:hasNumberOfCarsAvailableToHouseholdGreaterThanFourValue))
+Declaration(DataProperty(:hasNumberOfCarsAvailableToHouseholdValue))
+Declaration(DataProperty(:hasNumberOfGaragesValue))
+Declaration(DataProperty(:hasNumberOfKitchensValue))
+Declaration(DataProperty(:hasNumberOfLivingRoomsValue))
+Declaration(DataProperty(:hasNumberOfPeopleLivingInHouseholdValue))
+Declaration(DataProperty(:hasNumberOfRoomsAttribute))
+Declaration(DataProperty(:hasNumberOfStudiesOrOfficesValue))
+Declaration(DataProperty(:hasNumberOfTimesGoesShoppingPerWeekValue))
+Declaration(DataProperty(:hasNumberOfUtilityRoomsValue))
+Declaration(DataProperty(:hasOfficeTypeValue))
+Declaration(DataProperty(:hasOilCentralHeatingValue))
+Declaration(DataProperty(:hasOtherCentralHeatingValue))
+Declaration(DataProperty(:hasOtherFlexibleWorkingArrangments))
+Declaration(DataProperty(:hasOtherFlexibleWorkingArrangmentsAvailable))
+Declaration(DataProperty(:hasOtherMostCommonModeOfTransportToWorkValue))
+Declaration(DataProperty(:hasOtherTravelTypeToShoppingValue))
+Declaration(DataProperty(:hasOtherTypeOfCentralHeatingName))
+Declaration(DataProperty(:hasOtherWorkingArrangementForPeriodicallyWorkingFromHomeValue))
+Declaration(DataProperty(:hasOwnDeskAtWorkValue))
+Declaration(DataProperty(:hasOwnOrRentAccomodationAttribute))
+Declaration(DataProperty(:hasOwnOrRentAccomodationValue))
+Declaration(DataProperty(:hasPartTimeWorking))
+Declaration(DataProperty(:hasPartTimeWorkingAvailable))
+Declaration(DataProperty(:hasPeriodicallyWorkedFromHomeAttribute))
+Declaration(DataProperty(:hasPeriodicallyWorkedFromHomeValue))
+Declaration(DataProperty(:hasPersonAttribute))
+Declaration(DataProperty(:hasPositionOnPoliticalSpectrum))
+Declaration(DataProperty(:hasPostcodeValue))
+Declaration(DataProperty(:hasQuantifiedFlexibilityForWorkingArrangementValue))
+Declaration(DataProperty(:hasRelationshipAttribute))
+Declaration(DataProperty(:hasRelationshipNameForPerson2Value))
+Declaration(DataProperty(:hasRelationshipNameForPerson3Value))
+Declaration(DataProperty(:hasRelationshipNameForPerson4Value))
+Declaration(DataProperty(:hasRelationshipNameForPerson5Value))
+Declaration(DataProperty(:hasRelationshipNameForPerson6Value))
+Declaration(DataProperty(:hasRelationshipWithPerson2Attributes))
+Declaration(DataProperty(:hasRelationshipWithPerson3Attributes))
+Declaration(DataProperty(:hasRelationshipWithPerson4Attributes))
+Declaration(DataProperty(:hasRelationshipWithPerson5Attributes))
+Declaration(DataProperty(:hasRelationshipWithPerson6Attributes))
+Declaration(DataProperty(:hasSatisfactionAttribute))
+Declaration(DataProperty(:hasSexForPerson2Value))
+Declaration(DataProperty(:hasSexForPerson3Value))
+Declaration(DataProperty(:hasSexForPerson4Value))
+Declaration(DataProperty(:hasSexForPerson5Value))
+Declaration(DataProperty(:hasSexForPerson6Value))
+Declaration(DataProperty(:hasSexValue))
+Declaration(DataProperty(:hasSolidFuelCentralHeatingValue))
+Declaration(DataProperty(:hasTotalGrossIncomeValue))
+Declaration(DataProperty(:hasTravelTypeToShoppingAttribute))
+Declaration(DataProperty(:hasTravelTypeToShoppingValue))
+Declaration(DataProperty(:hasWorkArrangementsAvailable))
+Declaration(DataProperty(:hasWorkAttribute))
+Declaration(DataProperty(:hasWorkDeskAttribute))
+Declaration(DataProperty(:hasWorkThatRequiresADeskValue))
+Declaration(DataProperty(:hasWorkingACompressedWeek))
+Declaration(DataProperty(:hasWorkingACompressedWeekAvailable))
+Declaration(DataProperty(:hasWorkingAnnualisedHours))
+Declaration(DataProperty(:hasWorkingAnnualisedHoursAvailable))
+Declaration(DataProperty(:hasWorkingArrangementForPeriodicallyWorkingFromHomeValue))
+Declaration(DataProperty(:hasWorkingFromHome))
+Declaration(DataProperty(:hasWorkingFromHomeAvailable))
+Declaration(DataProperty(:hasWorkingTermTimeOnly))
+Declaration(DataProperty(:hasWorkingTermTimeOnlyAvailable))
+Declaration(DataProperty(:haveAlmostIdealLifestyle))
+Declaration(DataProperty(:haveLowSocialInterraction))
+Declaration(DataProperty(:haveRecentlyAcquiredNewSkills))
+Declaration(DataProperty(:howFarUsuallyTravelledToDoShoppingValue))
+Declaration(DataProperty(:ifLivedLifeAgainWouldChangeNothing))
+Declaration(DataProperty(:inWinterKeepHouseWarmEnoughToWearTeeshirt))
+Declaration(DataProperty(:isEasilyInterrupted))
+Declaration(DataProperty(:isJobSharing))
+Declaration(DataProperty(:isRushedForTime))
+Declaration(DataProperty(:isSatisfiedWithFinancialPositionOfHouseholdValue))
+Declaration(DataProperty(:isSatisfiedWithLife))
+Declaration(DataProperty(:isUsingNoFlexibleWorkingArrangements))
+Declaration(DataProperty(:isUsingOtherFlexibleWorkingArrangments))
+Declaration(DataProperty(:isWorkingACompressedWeek))
+Declaration(DataProperty(:isWorkingAnnualisedHours))
+Declaration(DataProperty(:isWorkingFlexiTime))
+Declaration(DataProperty(:isWorkingFromHome))
+Declaration(DataProperty(:isWorkingPartTime))
+Declaration(DataProperty(:isWorkingTermTimeOnly))
+Declaration(DataProperty(:leaveTVOnStandbyOvernight))
+Declaration(DataProperty(:likesImmediatePeerGroup))
+Declaration(DataProperty(:neverHaveEnoughTime))
+Declaration(DataProperty(:oftenDoubtsCompetence))
+Declaration(DataProperty(:oftenWakesDuringNight))
+Declaration(DataProperty(:othersAreConsiderateOfMyself))
+Declaration(DataProperty(:paceOfLifeIsAboutRight))
+Declaration(DataProperty(:paysForCarWashingRegularly))
+Declaration(DataProperty(:paysForChildcareRegularly))
+Declaration(DataProperty(:paysForCleaningRegularly))
+Declaration(DataProperty(:paysForCookingOrCateringRegularly))
+Declaration(DataProperty(:paysForDogWalkingRegularly))
+Declaration(DataProperty(:paysForGardeningRegularly))
+Declaration(DataProperty(:paysForHomeImprovementRegularly))
+Declaration(DataProperty(:paysForHomeMaintenanceRegularly))
+Declaration(DataProperty(:paysForLaundryOrIroningRegularly))
+Declaration(DataProperty(:paysForServiceRegularlyAttribute))
+Declaration(DataProperty(:paysForWindowCleaningRegularly))
+Declaration(DataProperty(:peopleComplimentWork))
+Declaration(DataProperty(:planMealsBeforeShopping))
+Declaration(DataProperty(:recycleEmptyGlassBottles))
+Declaration(DataProperty(:recycleGardenWaste))
+Declaration(DataProperty(:recyclesEmptyPlasticBottles))
+Declaration(DataProperty(:regularlyFeelHaveAchieved))
+Declaration(DataProperty(:snackUnawares))
+Declaration(DataProperty(:sometimesHoldsTongue))
+Declaration(DataProperty(:supervisesAnyEmployees))
+Declaration(DataProperty(:switchOffLightsInUnusedRooms))
+Declaration(DataProperty(:thinksBetterToBeIndividualistic))
+Declaration(DataProperty(:thinksDeadlinesAreUseful))
+Declaration(DataProperty(:thinksItIsOKToBeLateOccasionally))
+Declaration(DataProperty(:useTumbleDryerToDryLaundry))
+Declaration(DataProperty(:whereWouldMostLikeToWorkInAberdeen))
+Declaration(DataProperty(:whereWouldMostWantToLiveInAberdeen))
+Declaration(DataProperty(:withHouseholdIncome))
+Declaration(DataProperty(:withTheHouseYouLiveIn))
+Declaration(DataProperty(:withYourNeighbourhood))
+Declaration(DataProperty(:worksNumberOfHoursAWeekValue))
+Declaration(DataProperty(:yourDistanceToWork))
+Declaration(DataProperty(:yourNeighbours))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasBathroomOrToilet (:hasBathroomOrToilet)
+
+AnnotationAssertion(rdfs:comment :hasBathroomOrToilet "Q2_5"^^xsd:string)
+SubObjectPropertyOf(:hasBathroomOrToilet :hasRoom)
+ObjectPropertyDomain(:hasBathroomOrToilet DataSomeValuesFrom(:hasNumberOfBathroomsOrToiletsValue xsd:nonNegativeInteger))
+ObjectPropertyRange(:hasBathroomOrToilet :BathroomOrToilet)
+
+# Object Property: :hasBedroom (:hasBedroom)
+
+AnnotationAssertion(rdfs:comment :hasBedroom "Q2_1"^^xsd:string)
+SubObjectPropertyOf(:hasBedroom :hasRoom)
+ObjectPropertyDomain(:hasBedroom DataSomeValuesFrom(:hasNumberOfBedroomsValue xsd:nonNegativeInteger))
+ObjectPropertyRange(:hasBedroom :Bedroom)
+
+# Object Property: :hasCollegeQualification (:hasCollegeQualification)
+
+AnnotationAssertion(rdfs:comment :hasCollegeQualification "Q10_2"^^xsd:string)
+SubObjectPropertyOf(:hasCollegeQualification :hasQualification)
+ObjectPropertyDomain(:hasCollegeQualification DataHasValue(:hasHighestLevelEducationalQualifcationValue "College Qualification"))
+ObjectPropertyRange(:hasCollegeQualification :CollegeQualification)
+
+# Object Property: :hasConnectionFrom (:hasConnectionFrom)
+
+SubObjectPropertyOf(:hasConnectionFrom :hasPersonProperty)
+InverseObjectProperties(:hasConnectionFrom :hasConnectionTo)
+ObjectPropertyRange(:hasConnectionFrom :Person)
+
+# Object Property: :hasConnectionTo (:hasConnectionTo)
+
+SubObjectPropertyOf(:hasConnectionTo :hasPersonProperty)
+ObjectPropertyRange(:hasConnectionTo :Person)
+
+# Object Property: :hasDoctoralDegree (:hasDoctoralDegree)
+
+AnnotationAssertion(rdfs:comment :hasDoctoralDegree "Q10_6"^^xsd:string)
+SubObjectPropertyOf(:hasDoctoralDegree :hasQualification)
+ObjectPropertyDomain(:hasDoctoralDegree DataHasValue(:hasHighestLevelEducationalQualifcationValue "Doctoral Degree"))
+ObjectPropertyRange(:hasDoctoralDegree :DoctoralDegree)
+
+# Object Property: :hasElectricCentralHeating (:hasElectricCentralHeating)
+
+SubObjectPropertyOf(:hasElectricCentralHeating :hasHeating)
+ObjectPropertyDomain(:hasElectricCentralHeating DataHasValue(:hasElectricCentralHeatingValue "true"^^xsd:boolean))
+
+# Object Property: :hasGarage (:hasGarage)
+
+AnnotationAssertion(rdfs:comment :hasGarage "Q2_7"^^xsd:string)
+SubObjectPropertyOf(:hasGarage :hasRoom)
+ObjectPropertyDomain(:hasGarage DataSomeValuesFrom(:hasNumberOfGaragesValue xsd:nonNegativeInteger))
+ObjectPropertyRange(:hasGarage :Garage)
+
+# Object Property: :hasGasCentralHeating (:hasGasCentralHeating)
+
+SubObjectPropertyOf(:hasGasCentralHeating :hasHeating)
+ObjectPropertyDomain(:hasGasCentralHeating DataHasValue(:hasGasCentralHeatingValue "true"^^xsd:boolean))
+ObjectPropertyRange(:hasGasCentralHeating :GasHeating)
+
+# Object Property: :hasGroupMember (:hasGroupMember)
+
+SubObjectPropertyOf(:hasGroupMember :hasGroupOfPeopleProperty)
+AsymmetricObjectProperty(:hasGroupMember)
+IrreflexiveObjectProperty(:hasGroupMember)
+
+# Object Property: :hasGroupOfPeopleProperty (:hasGroupOfPeopleProperty)
+
+ObjectPropertyDomain(:hasGroupOfPeopleProperty :GroupOfPeople)
+ObjectPropertyRange(:hasGroupOfPeopleProperty :Person)
+
+# Object Property: :hasHeating (:hasHeating)
+
+SubObjectPropertyOf(:hasHeating :hasHouseholdProperty)
+
+# Object Property: :hasHighSchoolQualification (:hasHighSchoolQualification)
+
+SubObjectPropertyOf(:hasHighSchoolQualification :hasQualification)
+ObjectPropertyDomain(:hasHighSchoolQualification DataHasValue(:hasHighestLevelEducationalQualifcationValue "High School Qualification"))
+ObjectPropertyRange(:hasHighSchoolQualification :HighSchoolQualification)
+
+# Object Property: :hasHouseholdProperty (:hasHouseholdProperty)
+
+AnnotationAssertion(rdfs:comment :hasHouseholdProperty "Q7"^^xsd:string)
+ObjectPropertyDomain(:hasHouseholdProperty :Household)
+
+# Object Property: :hasKitchen (:hasKitchen)
+
+AnnotationAssertion(rdfs:comment :hasKitchen "Q2_2"^^xsd:string)
+SubObjectPropertyOf(:hasKitchen :hasRoom)
+ObjectPropertyDomain(:hasKitchen DataSomeValuesFrom(:hasNumberOfKitchensValue xsd:nonNegativeInteger))
+ObjectPropertyRange(:hasKitchen :Kitchen)
+
+# Object Property: :hasLivingRoom (:hasLivingRoom)
+
+AnnotationAssertion(rdfs:comment :hasLivingRoom "Q2_3"^^xsd:string)
+SubObjectPropertyOf(:hasLivingRoom :hasRoom)
+ObjectPropertyDomain(:hasLivingRoom DataSomeValuesFrom(:hasNumberOfLivingRoomsValue xsd:nonNegativeInteger))
+ObjectPropertyRange(:hasLivingRoom :LivingRoom)
+
+# Object Property: :hasNoCentralHeating (:hasNoCentralHeating)
+
+SubObjectPropertyOf(:hasNoCentralHeating :hasHeating)
+ObjectPropertyDomain(:hasNoCentralHeating DataHasValue(:hasNoCentralHeatingValue "true"^^xsd:boolean))
+ObjectPropertyRange(:hasNoCentralHeating :NoCentralHeating)
+
+# Object Property: :hasNoQualifications (:hasNoQualifications)
+
+AnnotationAssertion(rdfs:comment :hasNoQualifications "Q10_7"^^xsd:string)
+SubObjectPropertyOf(:hasNoQualifications :hasQualification)
+ObjectPropertyDomain(:hasNoQualifications DataHasValue(:hasHighestLevelEducationalQualifcationValue "No Qualifications"))
+ObjectPropertyRange(:hasNoQualifications :NoQualifications)
+
+# Object Property: :hasOilFiredCentralHeating (:hasOilFiredCentralHeating)
+
+SubObjectPropertyOf(:hasOilFiredCentralHeating :hasHeating)
+ObjectPropertyDomain(:hasOilFiredCentralHeating DataHasValue(:hasOilCentralHeatingValue "true"^^xsd:boolean))
+ObjectPropertyRange(:hasOilFiredCentralHeating :OilFiredHeating)
+
+# Object Property: :hasOtherQualification (:hasOtherQualification)
+
+AnnotationAssertion(rdfs:comment :hasOtherQualification "Q10_8"^^xsd:string)
+SubObjectPropertyOf(:hasOtherQualification :hasQualification)
+ObjectPropertyDomain(:hasOtherQualification DataHasValue(:hasHighestLevelEducationalQualifcationValue "Other"))
+ObjectPropertyRange(:hasOtherQualification :OtherQualification)
+
+# Object Property: :hasOtherTypeOfCentralHeating (:hasOtherTypeOfCentralHeating)
+
+SubObjectPropertyOf(:hasOtherTypeOfCentralHeating :hasHeating)
+ObjectPropertyDomain(:hasOtherTypeOfCentralHeating DataHasValue(:hasOtherCentralHeatingValue "true"^^xsd:boolean))
+ObjectPropertyRange(:hasOtherTypeOfCentralHeating :OtherTypeOfFuelForHeating)
+
+# Object Property: :hasPersonProperty (:hasPersonProperty)
+
+ObjectPropertyDomain(:hasPersonProperty :Person)
+ObjectPropertyRange(:hasPersonProperty ObjectUnionOf(:Household :Person :Qualification))
+
+# Object Property: :hasPostgraduateDiplomaOrDegree (:hasPostgraduateDiplomaOrDegree)
+
+AnnotationAssertion(rdfs:comment :hasPostgraduateDiplomaOrDegree "Q10_5"^^xsd:string)
+SubObjectPropertyOf(:hasPostgraduateDiplomaOrDegree :hasQualification)
+ObjectPropertyDomain(:hasPostgraduateDiplomaOrDegree DataHasValue(:hasHighestLevelEducationalQualifcationValue "Postgraduate Diploma/Degree"))
+ObjectPropertyRange(:hasPostgraduateDiplomaOrDegree :PostgraduateDiplomaOrDegree)
+
+# Object Property: :hasQualification (:hasQualification)
+
+SubObjectPropertyOf(:hasQualification :hasPersonProperty)
+ObjectPropertyRange(:hasQualification :Qualification)
+
+# Object Property: :hasRelationshipWith (:hasRelationshipWith)
+
+SubObjectPropertyOf(:hasRelationshipWith :hasPersonProperty)
+IrreflexiveObjectProperty(:hasRelationshipWith)
+ObjectPropertyRange(:hasRelationshipWith :Person)
+
+# Object Property: :hasResidentGroupOfPeople (:hasResidentGroupOfPeople)
+
+SubObjectPropertyOf(:hasResidentGroupOfPeople :hasHouseholdProperty)
+InverseObjectProperties(:hasResidentGroupOfPeople :isResidentGroupOfPeopleForHousehold)
+FunctionalObjectProperty(:hasResidentGroupOfPeople)
+AsymmetricObjectProperty(:hasResidentGroupOfPeople)
+IrreflexiveObjectProperty(:hasResidentGroupOfPeople)
+ObjectPropertyRange(:hasResidentGroupOfPeople :Residents)
+
+# Object Property: :hasRoom (:hasRoom)
+
+SubObjectPropertyOf(:hasRoom :hasHouseholdProperty)
+ObjectPropertyRange(:hasRoom :Room)
+
+# Object Property: :hasSex (:hasSex)
+
+SubObjectPropertyOf(:hasSex :hasPersonProperty)
+ObjectPropertyRange(:hasSex ObjectUnionOf(:Female :Male))
+
+# Object Property: :hasSolidFuelCentralHeating (:hasSolidFuelCentralHeating)
+
+SubObjectPropertyOf(:hasSolidFuelCentralHeating :hasHeating)
+ObjectPropertyDomain(:hasSolidFuelCentralHeating DataHasValue(:hasSolidFuelCentralHeatingValue "true"^^xsd:boolean))
+ObjectPropertyRange(:hasSolidFuelCentralHeating :SolidFuelHeating)
+
+# Object Property: :hasStudyOrOffice (:hasStudyOrOffice)
+
+AnnotationAssertion(rdfs:comment :hasStudyOrOffice "Q2_6"^^xsd:string)
+SubObjectPropertyOf(:hasStudyOrOffice :hasRoom)
+ObjectPropertyDomain(:hasStudyOrOffice DataSomeValuesFrom(:hasNumberOfStudiesOrOfficesValue xsd:nonNegativeInteger))
+ObjectPropertyRange(:hasStudyOrOffice :StudyOrOffice)
+
+# Object Property: :hasUniversityDegree (:hasUniversityDegree)
+
+AnnotationAssertion(rdfs:comment :hasUniversityDegree "Q10_4"^^xsd:string)
+SubObjectPropertyOf(:hasUniversityDegree :hasQualification)
+ObjectPropertyDomain(:hasUniversityDegree DataHasValue(:hasHighestLevelEducationalQualifcationValue "University Degree"))
+ObjectPropertyRange(:hasUniversityDegree :UniversityDegree)
+
+# Object Property: :hasUseOf (:hasUseOf)
+
+SubObjectPropertyOf(:hasUseOf :hasHouseholdProperty)
+ObjectPropertyRange(:hasUseOf :Transport)
+
+# Object Property: :hasUseOfCarOrVan (:hasUseOfCarOrVan)
+
+SubObjectPropertyOf(:hasUseOfCarOrVan :hasUseOf)
+ObjectPropertyRange(:hasUseOfCarOrVan :Transport)
+
+# Object Property: :hasUtilityRoom (:hasUtilityRoom)
+
+AnnotationAssertion(rdfs:comment :hasUtilityRoom "Q2_4"^^xsd:string)
+SubObjectPropertyOf(:hasUtilityRoom :hasRoom)
+ObjectPropertyDomain(:hasUtilityRoom DataSomeValuesFrom(:hasNumberOfUtilityRoomsValue xsd:nonNegativeInteger))
+ObjectPropertyRange(:hasUtilityRoom :UtilityRoom)
+
+# Object Property: :hasVocationalOrProfessionalQualification (:hasVocationalOrProfessionalQualification)
+
+SubObjectPropertyOf(:hasVocationalOrProfessionalQualification :hasQualification)
+ObjectPropertyDomain(:hasVocationalOrProfessionalQualification DataHasValue(:hasHighestLevelEducationalQualifcationValue "Vocational/Professional Qualification"))
+ObjectPropertyRange(:hasVocationalOrProfessionalQualification :VocationalOrProfessionalQualification)
+
+# Object Property: :isOccupiedRentFreeBy (:isOccupiedRentFreeBy)
+
+SubObjectPropertyOf(:isOccupiedRentFreeBy :isRentedBy)
+InverseObjectProperties(:isOccupiedRentFreeBy :paysNoRentFor)
+ObjectPropertyRange(:isOccupiedRentFreeBy :Person)
+
+# Object Property: :isOwnedButMortgagedBy (:isOwnedButMortgagedBy)
+
+SubObjectPropertyOf(:isOwnedButMortgagedBy :isOwnedBy)
+InverseObjectProperties(:isOwnedButMortgagedBy :ownerPayinMortgageOrLoan)
+ObjectPropertyRange(:isOwnedButMortgagedBy :Person)
+
+# Object Property: :isOwnedBy (:isOwnedBy)
+
+SubObjectPropertyOf(:isOwnedBy :isRentedOrOwnedBy)
+InverseObjectProperties(:isOwnedBy :isOwnerOf)
+ObjectPropertyRange(:isOwnedBy :Person)
+
+# Object Property: :isOwnedOutrightBy (:isOwnedOutrightBy)
+
+SubObjectPropertyOf(:isOwnedOutrightBy :isOwnedBy)
+InverseObjectProperties(:isOwnedOutrightBy :outrightOwner)
+ObjectPropertyRange(:isOwnedOutrightBy :Person)
+
+# Object Property: :isOwnerOf (:isOwnerOf)
+
+SubObjectPropertyOf(:isOwnerOf :hasPersonProperty)
+ObjectPropertyRange(:isOwnerOf :Household)
+
+# Object Property: :isRentedBy (:isRentedBy)
+
+SubObjectPropertyOf(:isRentedBy :isRentedOrOwnedBy)
+ObjectPropertyRange(:isRentedBy :Person)
+
+# Object Property: :isRentedFromAFriendOrRelativeOfAResidentBy (:isRentedFromAFriendOrRelativeOfAResidentBy)
+
+SubObjectPropertyOf(:isRentedFromAFriendOrRelativeOfAResidentBy :isRentedBy)
+InverseObjectProperties(:isRentedFromAFriendOrRelativeOfAResidentBy :paysRentToFriendOrRelativeOfAResidentFor)
+ObjectPropertyRange(:isRentedFromAFriendOrRelativeOfAResidentBy :Person)
+
+# Object Property: :isRentedFromCouncilOrLocalAuthorityBy (:isRentedFromCouncilOrLocalAuthorityBy)
+
+SubObjectPropertyOf(:isRentedFromCouncilOrLocalAuthorityBy :isRentedBy)
+InverseObjectProperties(:isRentedFromCouncilOrLocalAuthorityBy :paysRentToCouncilOrLocalAuthorityFor)
+ObjectPropertyRange(:isRentedFromCouncilOrLocalAuthorityBy :Person)
+
+# Object Property: :isRentedFromEmployerOfAResidentBy (:isRentedFromEmployerOfAResidentBy)
+
+SubObjectPropertyOf(:isRentedFromEmployerOfAResidentBy :isRentedBy)
+InverseObjectProperties(:isRentedFromEmployerOfAResidentBy :paysRentToEmpolyerOfAResidentFor)
+ObjectPropertyRange(:isRentedFromEmployerOfAResidentBy :Person)
+
+# Object Property: :isRentedFromHousingAssociationBy (:isRentedFromHousingAssociationBy)
+
+SubObjectPropertyOf(:isRentedFromHousingAssociationBy :isRentedBy)
+InverseObjectProperties(:isRentedFromHousingAssociationBy :paysRentToHousingAssociationFor)
+ObjectPropertyRange(:isRentedFromHousingAssociationBy :Person)
+
+# Object Property: :isRentedFromOtherBy (:isRentedFromOtherBy)
+
+SubObjectPropertyOf(:isRentedFromOtherBy :isRentedBy)
+InverseObjectProperties(:isRentedFromOtherBy :paysRentToOtherFor)
+ObjectPropertyRange(:isRentedFromOtherBy :Person)
+
+# Object Property: :isRentedFromPrivateLandlordBy (:isRentedFromPrivateLandlordBy)
+
+SubObjectPropertyOf(:isRentedFromPrivateLandlordBy :isRentedBy)
+InverseObjectProperties(:isRentedFromPrivateLandlordBy :paysRentToPrivateLandLordFor)
+ObjectPropertyRange(:isRentedFromPrivateLandlordBy :Person)
+
+# Object Property: :isRentedOrOwnedBy (:isRentedOrOwnedBy)
+
+SubObjectPropertyOf(:isRentedOrOwnedBy :hasHouseholdProperty)
+
+# Object Property: :isSharedOwnedBy (:isSharedOwnedBy)
+
+SubObjectPropertyOf(:isSharedOwnedBy :isOwnedBy)
+SubObjectPropertyOf(:isSharedOwnedBy :isRentedBy)
+InverseObjectProperties(:isSharedOwnedBy :sharesOwnership)
+ObjectPropertyRange(:isSharedOwnedBy :Person)
+
+# Object Property: :outrightOwner (:outrightOwner)
+
+SubObjectPropertyOf(:outrightOwner :isOwnerOf)
+ObjectPropertyDomain(:outrightOwner :Person)
+
+# Object Property: :ownerPayinMortgageOrLoan (:ownerPayinMortgageOrLoan)
+
+AnnotationAssertion(rdfs:comment :ownerPayinMortgageOrLoan "Q5"^^xsd:string)
+SubObjectPropertyOf(:ownerPayinMortgageOrLoan :isOwnerOf)
+ObjectPropertyDomain(:ownerPayinMortgageOrLoan :Person)
+
+# Object Property: :paysNoRentFor (:paysNoRentFor)
+
+SubObjectPropertyOf(:paysNoRentFor :paysRentFor)
+ObjectPropertyDomain(:paysNoRentFor DataHasValue(:hasOwnOrRentAccomodationValue "Lives here rent free"))
+
+# Object Property: :paysRentFor (:paysRentFor)
+
+SubObjectPropertyOf(:paysRentFor :hasPersonProperty)
+
+# Object Property: :paysRentToCouncilOrLocalAuthorityFor (:paysRentToCouncilOrLocalAuthorityFor)
+
+SubObjectPropertyOf(:paysRentToCouncilOrLocalAuthorityFor :paysRentFor)
+ObjectPropertyDomain(:paysRentToCouncilOrLocalAuthorityFor DataHasValue(:hasLandlordValue "Council (local authority)"))
+
+# Object Property: :paysRentToEmpolyerOfAResidentFor (:paysRentToEmpolyerOfAResidentFor)
+
+SubObjectPropertyOf(:paysRentToEmpolyerOfAResidentFor :paysRentFor)
+ObjectPropertyDomain(:paysRentToEmpolyerOfAResidentFor DataHasValue(:hasLandlordValue "Employer of a household member"))
+
+# Object Property: :paysRentToFriendOrRelativeOfAResidentFor (:paysRentToFriendOrRelativeOfAResidentFor)
+
+SubObjectPropertyOf(:paysRentToFriendOrRelativeOfAResidentFor :paysRentFor)
+ObjectPropertyDomain(:paysRentToFriendOrRelativeOfAResidentFor DataHasValue(:hasLandlordValue "Relative or friend of a household member"))
+
+# Object Property: :paysRentToHousingAssociationFor (:paysRentToHousingAssociationFor)
+
+SubObjectPropertyOf(:paysRentToHousingAssociationFor :paysRentFor)
+ObjectPropertyDomain(:paysRentToHousingAssociationFor DataHasValue(:hasLandlordValue "Housing association, housing co-operative, charitable trust, registered social landlord"))
+
+# Object Property: :paysRentToOtherFor (:paysRentToOtherFor)
+
+SubObjectPropertyOf(:paysRentToOtherFor :paysRentFor)
+ObjectPropertyDomain(:paysRentToOtherFor DataHasValue(:hasLandlordValue "Other"))
+
+# Object Property: :paysRentToPrivateLandLordFor (:paysRentToPrivateLandLordFor)
+
+SubObjectPropertyOf(:paysRentToPrivateLandLordFor :paysRentFor)
+ObjectPropertyDomain(:paysRentToPrivateLandLordFor DataHasValue(:hasLandlordValue "Private landlord or letting agency"))
+ObjectPropertyRange(:paysRentToPrivateLandLordFor :Household)
+
+# Object Property: :sharesOwnership (:sharesOwnership)
+
+SubObjectPropertyOf(:sharesOwnership :isOwnerOf)
+SubObjectPropertyOf(:sharesOwnership :paysRentFor)
+ObjectPropertyDomain(:sharesOwnership DataHasValue(:hasOwnOrRentAccomodationValue "Part owns and part rents (shared ownership)"))
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :amToldWhatToDoFrequently (:amToldWhatToDoFrequently)
+
+AnnotationAssertion(rdfs:comment :amToldWhatToDoFrequently "Q31_11"^^xsd:string)
+SubDataPropertyOf(:amToldWhatToDoFrequently :hasEmotionalResponseAttribute)
+
+# Data Property: :amountOfTimeSpentAtWork (:amountOfTimeSpentAtWork)
+
+AnnotationAssertion(rdfs:comment :amountOfTimeSpentAtWork "Q26_1"^^xsd:string)
+SubDataPropertyOf(:amountOfTimeSpentAtWork :hasSatisfactionAttribute)
+
+# Data Property: :amountOfTimeSpentOnLeisure (:amountOfTimeSpentOnLeisure)
+
+AnnotationAssertion(rdfs:comment :amountOfTimeSpentOnLeisure "Q26_2"^^xsd:string)
+SubDataPropertyOf(:amountOfTimeSpentOnLeisure :hasSatisfactionAttribute)
+
+# Data Property: :buyFruitAndVegGrownLocally (:buyFruitAndVegGrownLocally)
+
+AnnotationAssertion(rdfs:comment :buyFruitAndVegGrownLocally "Q37_6"^^xsd:string)
+SubDataPropertyOf(:buyFruitAndVegGrownLocally :hasEverydayBehaviourAttribute)
+
+# Data Property: :buyOrganicFoods (:buyOrganicFoods)
+
+AnnotationAssertion(rdfs:comment :buyOrganicFoods "Q37_5"^^xsd:string)
+SubDataPropertyOf(:buyOrganicFoods :hasEverydayBehaviourAttribute)
+
+# Data Property: :buysEcoFriendlyPoducts (:buysEcoFriendlyPoducts)
+
+AnnotationAssertion(rdfs:comment :buysEcoFriendlyPoducts "Q37_2"^^xsd:string)
+SubDataPropertyOf(:buysEcoFriendlyPoducts :hasEverydayBehaviourAttribute)
+
+# Data Property: :choosesFoodToBeEnvironmentallyFriendly (:choosesFoodToBeEnvironmentallyFriendly)
+
+AnnotationAssertion(rdfs:comment :choosesFoodToBeEnvironmentallyFriendly "Q37_1"^^xsd:string)
+SubDataPropertyOf(:choosesFoodToBeEnvironmentallyFriendly :hasEverydayBehaviourAttribute)
+
+# Data Property: :collectsAndRecylesUsedPaper (:collectsAndRecylesUsedPaper)
+
+AnnotationAssertion(rdfs:comment :collectsAndRecylesUsedPaper "Q37_4"^^xsd:string)
+SubDataPropertyOf(:collectsAndRecylesUsedPaper :hasEverydayBehaviourAttribute)
+
+# Data Property: :considersPeersAsFriends (:considersPeersAsFriends)
+
+AnnotationAssertion(rdfs:comment :considersPeersAsFriends "Q31_9"^^xsd:string)
+SubDataPropertyOf(:considersPeersAsFriends :hasEmotionalResponseAttribute)
+
+# Data Property: :doesHoursPerWeekOfUnpaidVoluntaryWork (:doesHoursPerWeekOfUnpaidVoluntaryWork)
+
+AnnotationAssertion(rdfs:comment :doesHoursPerWeekOfUnpaidVoluntaryWork "Q19b"^^xsd:string)
+SubDataPropertyOf(:doesHoursPerWeekOfUnpaidVoluntaryWork :hasWorkAttribute)
+DataPropertyDomain(:doesHoursPerWeekOfUnpaidVoluntaryWork DataHasValue(:doesUnpaidVoluntaryWork "true"^^xsd:boolean))
+DataPropertyRange(:doesHoursPerWeekOfUnpaidVoluntaryWork xsd:nonNegativeInteger)
+
+# Data Property: :doesUnpaidVoluntaryWork (:doesUnpaidVoluntaryWork)
+
+AnnotationAssertion(rdfs:comment :doesUnpaidVoluntaryWork "Q19"^^xsd:string)
+SubDataPropertyOf(:doesUnpaidVoluntaryWork :hasWorkAttribute)
+DataPropertyRange(:doesUnpaidVoluntaryWork xsd:boolean)
+
+# Data Property: :everythingDoneIsHurried (Everything I do is in a hurry)
+
+AnnotationAssertion(rdfs:comment :everythingDoneIsHurried "Q27_1"^^xsd:string)
+AnnotationAssertion(rdfs:label :everythingDoneIsHurried "Everything I do is in a hurry"^^xsd:string)
+SubDataPropertyOf(:everythingDoneIsHurried :hasLifestyleAttribute)
+
+# Data Property: :feelAbleToExpressSelf (:feelAbleToExpressSelf)
+
+AnnotationAssertion(rdfs:comment :feelAbleToExpressSelf "Q31_8"^^xsd:string)
+SubDataPropertyOf(:feelAbleToExpressSelf :hasEmotionalResponseAttribute)
+
+# Data Property: :feelCaredFor (:feelCaredFor)
+
+AnnotationAssertion(rdfs:comment :feelCaredFor "Q31_12"^^xsd:string)
+SubDataPropertyOf(:feelCaredFor :hasEmotionalResponseAttribute)
+
+# Data Property: :feelsLikeFreeToDecideMannerOfLifestyle (:feelsLikeFreeToDecideMannerOfLifestyle)
+
+AnnotationAssertion(rdfs:comment :feelsLikeFreeToDecideMannerOfLifestyle "Q31_1"^^xsd:string)
+SubDataPropertyOf(:feelsLikeFreeToDecideMannerOfLifestyle :hasEmotionalResponseAttribute)
+
+# Data Property: :feelsLikeNeverHasADayOff (:feelsLikeNeverHasADayOff)
+
+AnnotationAssertion(rdfs:comment :feelsLikeNeverHasADayOff "Q27_15"^^xsd:string)
+SubDataPropertyOf(:feelsLikeNeverHasADayOff :hasLifestyleAttribute)
+
+# Data Property: :feelsPressured (:feelsPressured)
+
+AnnotationAssertion(rdfs:comment :feelsPressured "Q32_4"^^xsd:string)
+SubDataPropertyOf(:feelsPressured :hasEmotionalResponseAttribute)
+
+# Data Property: :feelsThatQualityOfSleepIsGood (:feelsThatQualityOfSleepIsGood)
+
+AnnotationAssertion(rdfs:comment :feelsThatQualityOfSleepIsGood "Q27_13"^^xsd:string)
+SubDataPropertyOf(:feelsThatQualityOfSleepIsGood :hasLifestyleAttribute)
+
+# Data Property: :findsItHardToSleepAtNight (:findsItHardToSleepAtNight)
+
+AnnotationAssertion(rdfs:comment :findsItHardToSleepAtNight "Q27_12"^^xsd:string)
+SubDataPropertyOf(:findsItHardToSleepAtNight :hasLifestyleAttribute)
+
+# Data Property: :getsAlongWithOthers (:getsAlongWithOthers)
+
+AnnotationAssertion(rdfs:comment :getsAlongWithOthers "Q31_6"^^xsd:string)
+SubDataPropertyOf(:getsAlongWithOthers :hasEmotionalResponseAttribute)
+
+# Data Property: :gowsOwnFoodDesription (:gowsOwnFoodDesription)
+
+AnnotationAssertion(rdfs:comment :gowsOwnFoodDesription "Q42b"^^xsd:string)
+SubDataPropertyOf(:gowsOwnFoodDesription :growsOnFoodAttribute)
+DataPropertyDomain(:gowsOwnFoodDesription DataHasValue(:growsOwnFoodValue "true"^^xsd:boolean))
+DataPropertyRange(:gowsOwnFoodDesription xsd:string)
+
+# Data Property: :growsOnFoodAttribute (:growsOnFoodAttribute)
+
+SubDataPropertyOf(:growsOnFoodAttribute :hasHouseholdAttribute)
+
+# Data Property: :growsOwnFoodValue (:growsOwnFoodValue)
+
+AnnotationAssertion(rdfs:comment :growsOwnFoodValue "Q42"^^xsd:string)
+SubDataPropertyOf(:growsOwnFoodValue :growsOnFoodAttribute)
+DataPropertyRange(:growsOwnFoodValue xsd:boolean)
+
+# Data Property: :happyWithCommutingTime (:happyWithCommutingTime)
+
+AnnotationAssertion(rdfs:comment :happyWithCommutingTime "Q27_11"^^xsd:string)
+SubDataPropertyOf(:happyWithCommutingTime :hasLifestyleAttribute)
+
+# Data Property: :happyWithWorkLeisureBalance (:happyWithWorkLeisureBalance)
+
+AnnotationAssertion(rdfs:comment :happyWithWorkLeisureBalance "Q27_10"^^xsd:string)
+SubDataPropertyOf(:happyWithWorkLeisureBalance :hasLifestyleAttribute)
+
+# Data Property: :hasAcquiredTheImportantThingsInLife (:hasAcquiredTheImportantThingsInLife)
+
+AnnotationAssertion(rdfs:comment :hasAcquiredTheImportantThingsInLife "Q27_8"^^xsd:string)
+SubDataPropertyOf(:hasAcquiredTheImportantThingsInLife :hasLifestyleAttribute)
+
+# Data Property: :hasAgeForPerson2Value (:hasAgeForPerson2Value)
+
+AnnotationAssertion(rdfs:comment :hasAgeForPerson2Value "Q9_AGE_2"^^xsd:string)
+SubDataPropertyOf(:hasAgeForPerson2Value :hasRelationshipWithPerson2Attributes)
+DataPropertyDomain(:hasAgeForPerson2Value DataSomeValuesFrom(:hasRelationshipNameForPerson2Value xsd:string))
+DataPropertyRange(:hasAgeForPerson2Value xsd:nonNegativeInteger)
+
+# Data Property: :hasAgeForPerson3Value (:hasAgeForPerson3Value)
+
+AnnotationAssertion(rdfs:comment :hasAgeForPerson3Value "Q9_AGE_3"^^xsd:string)
+SubDataPropertyOf(:hasAgeForPerson3Value :hasRelationshipWithPerson3Attributes)
+DataPropertyDomain(:hasAgeForPerson3Value DataSomeValuesFrom(:hasRelationshipNameForPerson3Value xsd:string))
+DataPropertyRange(:hasAgeForPerson3Value xsd:nonNegativeInteger)
+
+# Data Property: :hasAgeForPerson4Value (:hasAgeForPerson4Value)
+
+AnnotationAssertion(rdfs:comment :hasAgeForPerson4Value "Q9_AGE_4"^^xsd:string)
+SubDataPropertyOf(:hasAgeForPerson4Value :hasRelationshipWithPerson4Attributes)
+DataPropertyDomain(:hasAgeForPerson4Value DataSomeValuesFrom(:hasRelationshipNameForPerson4Value xsd:string))
+DataPropertyRange(:hasAgeForPerson4Value xsd:nonNegativeInteger)
+
+# Data Property: :hasAgeForPerson5Value (:hasAgeForPerson5Value)
+
+AnnotationAssertion(rdfs:comment :hasAgeForPerson5Value "Q9_AGE_5"^^xsd:string)
+SubDataPropertyOf(:hasAgeForPerson5Value :hasRelationshipWithPerson5Attributes)
+DataPropertyDomain(:hasAgeForPerson5Value DataSomeValuesFrom(:hasRelationshipNameForPerson5Value xsd:string))
+DataPropertyRange(:hasAgeForPerson5Value xsd:nonNegativeInteger)
+
+# Data Property: :hasAgeForPerson6Value (:hasAgeForPerson6Value)
+
+AnnotationAssertion(rdfs:comment :hasAgeForPerson6Value "Q9_AGE_6"^^xsd:string)
+SubDataPropertyOf(:hasAgeForPerson6Value :hasRelationshipWithPerson6Attributes)
+DataPropertyDomain(:hasAgeForPerson6Value DataSomeValuesFrom(:hasRelationshipNameForPerson6Value xsd:string))
+DataPropertyRange(:hasAgeForPerson6Value xsd:nonNegativeInteger)
+
+# Data Property: :hasAgeValue (:hasAgeValue)
+
+AnnotationAssertion(rdfs:comment :hasAgeValue "Q9_AGE"^^xsd:string)
+AnnotationAssertion(rdfs:comment :hasAgeValue "Q9_AGE_1"^^xsd:string)
+SubDataPropertyOf(:hasAgeValue :hasPersonAttribute)
+DataPropertyDomain(:hasAgeValue :Person)
+DataPropertyRange(:hasAgeValue xsd:nonNegativeInteger)
+
+# Data Property: :hasAllMembersOfHouseholdEatSameMealCookedAtHomeValue (:hasAllMembersOfHouseholdEatSameMealCookedAtHomeValue)
+
+AnnotationAssertion(rdfs:comment :hasAllMembersOfHouseholdEatSameMealCookedAtHomeValue "Q44_4"^^xsd:string)
+SubDataPropertyOf(:hasAllMembersOfHouseholdEatSameMealCookedAtHomeValue :hasEatingAttribute)
+
+# Data Property: :hasAmountSpentOnEatingOutPerWeekValue (:hasAmountSpentOnEatingOutPerWeekValue)
+
+AnnotationAssertion(rdfs:comment :hasAmountSpentOnEatingOutPerWeekValue "Q45"^^xsd:string)
+SubDataPropertyOf(:hasAmountSpentOnEatingOutPerWeekValue :hasHouseholdAttribute)
+DataPropertyRange(:hasAmountSpentOnEatingOutPerWeekValue xsd:nonNegativeInteger)
+
+# Data Property: :hasAmountSpentOnFoodPerWeek (:hasAmountSpentOnFoodPerWeek)
+
+AnnotationAssertion(rdfs:comment :hasAmountSpentOnFoodPerWeek "Q40"^^xsd:string)
+SubDataPropertyOf(:hasAmountSpentOnFoodPerWeek :hasHouseholdAttribute)
+DataPropertyRange(:hasAmountSpentOnFoodPerWeek xsd:nonNegativeInteger)
+
+# Data Property: :hasAttitudeAttribute (:hasAttitudeAttribute)
+
+SubDataPropertyOf(:hasAttitudeAttribute :hasPersonAttribute)
+DataPropertyRange(:hasAttitudeAttribute DataOneOf("agree" "disagree" "neither agree nor disagree" "strongly agree" "strongly disagree"))
+
+# Data Property: :hasCentralHeatingAttribute (:hasCentralHeatingAttribute)
+
+SubDataPropertyOf(:hasCentralHeatingAttribute :hasHouseholdAttribute)
+
+# Data Property: :hasCookMealsFromScratchValue (:hasCookMealsFromScratchValue)
+
+AnnotationAssertion(rdfs:comment :hasCookMealsFromScratchValue "Q44_1"^^xsd:string)
+SubDataPropertyOf(:hasCookMealsFromScratchValue :hasEatingAttribute)
+
+# Data Property: :hasCurrentEmploymentStatusValue (:hasCurrentEmploymentStatusValue)
+
+AnnotationAssertion(rdfs:comment :hasCurrentEmploymentStatusValue "Q13"^^xsd:string)
+SubDataPropertyOf(:hasCurrentEmploymentStatusValue :hasWorkAttribute)
+DataPropertyRange(:hasCurrentEmploymentStatusValue DataOneOf("Long term sick or disabled" "Looking after home or family" "Other" "Retired" "Self-employed / freelance" "Student" "Training / Apprenticeship" "Unemployed" "Working as an employee"))
+
+# Data Property: :hasDietaryAttribute (:hasDietaryAttribute)
+
+SubDataPropertyOf(:hasDietaryAttribute :hasHouseholdAttribute)
+DataPropertyRange(:hasDietaryAttribute DataOneOf("a fair amount" "a lot" "a medium amount" "hardly any" "none"))
+
+# Data Property: :hasDwellingDescriptionValue (:hasDwellingDescriptionValue)
+
+AnnotationAssertion(rdfs:comment :hasDwellingDescriptionValue "Q3"^^xsd:string)
+SubDataPropertyOf(:hasDwellingDescriptionValue :hasHouseholdAttribute)
+DataPropertyRange(:hasDwellingDescriptionValue DataOneOf("Bungalow" "Flat / Maisonette / Apartment" "House"))
+
+# Data Property: :hasEatMainMealFromTakeAwayValue (:hasEatMainMealFromTakeAwayValue)
+
+AnnotationAssertion(rdfs:comment :hasEatMainMealFromTakeAwayValue "Q44_3"^^xsd:string)
+SubDataPropertyOf(:hasEatMainMealFromTakeAwayValue :hasEatingAttribute)
+
+# Data Property: :hasEatPreparedFoodsValue (:hasEatPreparedFoodsValue)
+
+AnnotationAssertion(rdfs:comment :hasEatPreparedFoodsValue "Q44_2"^^xsd:string)
+SubDataPropertyOf(:hasEatPreparedFoodsValue :hasEatingAttribute)
+
+# Data Property: :hasEatingAttribute (:hasEatingAttribute)
+
+SubDataPropertyOf(:hasEatingAttribute :hasHouseholdAttribute)
+DataPropertyRange(:hasEatingAttribute DataOneOf("1 - 2 days per week" "3 - 4 days per week" "5 - 7 days per week" "less than once per week" "never"))
+
+# Data Property: :hasEatingOfDiaryProductsValue (:hasEatingOfDiaryProductsValue)
+
+AnnotationAssertion(rdfs:comment :hasEatingOfDiaryProductsValue "Q46_3"^^xsd:string)
+SubDataPropertyOf(:hasEatingOfDiaryProductsValue :hasDietaryAttribute)
+
+# Data Property: :hasEatingOfFishValue (:hasEatingOfFishValue)
+
+AnnotationAssertion(rdfs:comment :hasEatingOfFishValue "Q46_4"^^xsd:string)
+SubDataPropertyOf(:hasEatingOfFishValue :hasDietaryAttribute)
+
+# Data Property: :hasEatingOfFruitValue (:hasEatingOfFruitValue)
+
+AnnotationAssertion(rdfs:comment :hasEatingOfFruitValue "Q43_6"^^xsd:string)
+SubDataPropertyOf(:hasEatingOfFruitValue :hasDietaryAttribute)
+
+# Data Property: :hasEatingOfRedMeatValue (:hasEatingOfRedMeatValue)
+
+AnnotationAssertion(rdfs:comment :hasEatingOfRedMeatValue "Q46_1"^^xsd:string)
+SubDataPropertyOf(:hasEatingOfRedMeatValue :hasDietaryAttribute)
+
+# Data Property: :hasEatingOfWhiteMeatValue (:hasEatingOfWhiteMeatValue)
+
+AnnotationAssertion(rdfs:comment :hasEatingOfWhiteMeatValue "Q46_2"^^xsd:string)
+SubDataPropertyOf(:hasEatingOfWhiteMeatValue :hasDietaryAttribute)
+
+# Data Property: :hasEatingofVegetablesValue (:hasEatingofVegetablesValue)
+
+AnnotationAssertion(rdfs:comment :hasEatingofVegetablesValue "Q46_5"^^xsd:string)
+SubDataPropertyOf(:hasEatingofVegetablesValue :hasDietaryAttribute)
+
+# Data Property: :hasElectricCentralHeatingValue (:hasElectricCentralHeatingValue)
+
+AnnotationAssertion(rdfs:comment :hasElectricCentralHeatingValue "Q4_3"^^xsd:string)
+SubDataPropertyOf(:hasElectricCentralHeatingValue :hasCentralHeatingAttribute)
+
+# Data Property: :hasEmotionalResponseAttribute (:hasEmotionalResponseAttribute)
+
+SubDataPropertyOf(:hasEmotionalResponseAttribute :hasPersonAttribute)
+DataPropertyRange(:hasEmotionalResponseAttribute DataOneOf("minimally not true" "near the truth" "not at all true" "not true" "somewhat true" "true" "very true"))
+
+# Data Property: :hasEverydayBehaviourAttribute (:hasEverydayBehaviourAttribute)
+
+SubDataPropertyOf(:hasEverydayBehaviourAttribute :hasPersonAttribute)
+DataPropertyRange(:hasEverydayBehaviourAttribute DataOneOf("always" "never" "occasionally" "often" "seldom"))
+
+# Data Property: :hasExcellentLifestyle (:hasExcellentLifestyle)
+
+SubDataPropertyOf(:hasExcellentLifestyle :hasLifestyleAttribute)
+
+# Data Property: :hasFeelingsOnTransportAttribute (:hasFeelingsOnTransportAttribute)
+
+SubDataPropertyOf(:hasFeelingsOnTransportAttribute :hasPersonAttribute)
+DataPropertyRange(:hasFeelingsOnTransportAttribute DataOneOf("dislike" "like" "neutral" "strongly dislike" "strongly like" "weakly dislike" "weakly like"))
+
+# Data Property: :hasFeelingsOnTransportByBike (:hasFeelingsOnTransportByBike)
+
+AnnotationAssertion(rdfs:comment :hasFeelingsOnTransportByBike "Q32_1"^^xsd:string)
+SubDataPropertyOf(:hasFeelingsOnTransportByBike :hasFeelingsOnTransportAttribute)
+
+# Data Property: :hasFeelingsOnTransportByBus (:hasFeelingsOnTransportByBus)
+
+AnnotationAssertion(rdfs:comment :hasFeelingsOnTransportByBus "Q34_4"^^xsd:string)
+SubDataPropertyOf(:hasFeelingsOnTransportByBus :hasFeelingsOnTransportAttribute)
+
+# Data Property: :hasFeelingsOnTransportByCar (:hasFeelingsOnTransportByCar)
+
+AnnotationAssertion(rdfs:comment :hasFeelingsOnTransportByCar "Q32_2"^^xsd:string)
+SubDataPropertyOf(:hasFeelingsOnTransportByCar :hasFeelingsOnTransportAttribute)
+
+# Data Property: :hasFeelingsOnTransportByTrain (:hasFeelingsOnTransportByTrain)
+
+AnnotationAssertion(rdfs:comment :hasFeelingsOnTransportByTrain "Q32_5"^^xsd:string)
+SubDataPropertyOf(:hasFeelingsOnTransportByTrain :hasFeelingsOnTransportAttribute)
+
+# Data Property: :hasFeelingsOnTransportByWalking (:hasFeelingsOnTransportByWalking)
+
+AnnotationAssertion(rdfs:comment :hasFeelingsOnTransportByWalking "Q32_3"^^xsd:string)
+SubDataPropertyOf(:hasFeelingsOnTransportByWalking :hasFeelingsOnTransportAttribute)
+
+# Data Property: :hasFlexiTime (:hasFlexiTime)
+
+SubDataPropertyOf(:hasFlexiTime :hasWorkArrangementsAvailable)
+
+# Data Property: :hasFlexiTimeAvailable (:hasFlexiTimeAvailable)
+
+AnnotationAssertion(rdfs:comment :hasFlexiTimeAvailable "Q20_1_4"^^xsd:string)
+SubDataPropertyOf(:hasFlexiTimeAvailable :hasFlexiTime)
+DataPropertyRange(:hasFlexiTimeAvailable xsd:boolean)
+
+# Data Property: :hasFullAndSpecificJobTitleValue (:hasFullAndSpecificJobTitleValue)
+
+AnnotationAssertion(rdfs:comment :hasFullAndSpecificJobTitleValue "Q16"^^xsd:string)
+SubDataPropertyOf(:hasFullAndSpecificJobTitleValue :hasWorkAttribute)
+DataPropertyDomain(:hasFullAndSpecificJobTitleValue ObjectUnionOf(DataHasValue(:hasCurrentEmploymentStatusValue "Self-Employed / freelance") DataHasValue(:hasCurrentEmploymentStatusValue "Training / Apprenticeship") DataHasValue(:hasCurrentEmploymentStatusValue "Working as an employee")))
+DataPropertyRange(:hasFullAndSpecificJobTitleValue xsd:string)
+
+# Data Property: :hasGasCentralHeatingValue (:hasGasCentralHeatingValue)
+
+AnnotationAssertion(rdfs:comment :hasGasCentralHeatingValue "Q4_2"^^xsd:string)
+SubDataPropertyOf(:hasGasCentralHeatingValue :hasCentralHeatingAttribute)
+
+# Data Property: :hasHighestLevelEducationalQualifcationAttribute (:hasHighestLevelEducationalQualifcationAttribute)
+
+SubDataPropertyOf(:hasHighestLevelEducationalQualifcationAttribute :hasPersonAttribute)
+
+# Data Property: :hasHighestLevelEducationalQualifcationNameValue (:hasHighestLevelEducationalQualifcationNameValue)
+
+AnnotationAssertion(rdfs:comment :hasHighestLevelEducationalQualifcationNameValue "Q10_8_TEXT"^^xsd:string)
+SubDataPropertyOf(:hasHighestLevelEducationalQualifcationNameValue :hasHighestLevelEducationalQualifcationAttribute)
+DataPropertyDomain(:hasHighestLevelEducationalQualifcationNameValue DataHasValue(:hasHighestLevelEducationalQualifcationValue "Other"))
+DataPropertyRange(:hasHighestLevelEducationalQualifcationNameValue xsd:string)
+
+# Data Property: :hasHighestLevelEducationalQualifcationValue (:hasHighestLevelEducationalQualifcationValue)
+
+AnnotationAssertion(rdfs:comment :hasHighestLevelEducationalQualifcationValue "Q10_1 High School Qualification
+Q10_2 College Qualification
+Q10_3 Vocational/Professional Qualification
+Q10_4 University Degree
+Q10_5 Postgraduate Diploma/Degree
+Q10_6 Doctoral Degree 
+Q10_7 No Qualifications
+Q10_8 Other (please specify)"^^xsd:string)
+SubDataPropertyOf(:hasHighestLevelEducationalQualifcationValue :hasHighestLevelEducationalQualifcationAttribute)
+DataPropertyRange(:hasHighestLevelEducationalQualifcationValue DataOneOf("College Qualification" "Doctoral Degree" "High School Qualification" "No Qualifications" "Other" "Postgraduate Diploma/Degree" "University Degree" "Vocational/Professional Qualification"))
+
+# Data Property: :hasHouseDescriptionValue (:hasHouseDescriptionValue)
+
+AnnotationAssertion(rdfs:comment :hasHouseDescriptionValue "Q3b"^^xsd:string)
+SubDataPropertyOf(:hasHouseDescriptionValue :hasHouseholdAttribute)
+DataPropertyDomain(:hasHouseDescriptionValue DataHasValue(:hasDwellingDescriptionValue "House"))
+DataPropertyRange(:hasHouseDescriptionValue DataOneOf("Detached" "Semi-detached" "Terraced"))
+
+# Data Property: :hasHouseholdAGarden (:hasHouseholdAGarden)
+
+AnnotationAssertion(rdfs:comment :hasHouseholdAGarden "Q8"^^xsd:string)
+SubDataPropertyOf(:hasHouseholdAGarden :hasHouseholdAttribute)
+DataPropertyDomain(:hasHouseholdAGarden :Household)
+DataPropertyRange(:hasHouseholdAGarden xsd:boolean)
+
+# Data Property: :hasHouseholdAttribute (:hasHouseholdAttribute)
+
+DataPropertyDomain(:hasHouseholdAttribute :Household)
+
+# Data Property: :hasIntentionToRemainInTheNorthEastOfScotlandValue (:hasIntentionToRemainInTheNorthEastOfScotlandValue)
+
+AnnotationAssertion(rdfs:comment :hasIntentionToRemainInTheNorthEastOfScotlandValue "Q12"^^xsd:string)
+SubDataPropertyOf(:hasIntentionToRemainInTheNorthEastOfScotlandValue :hasPersonAttribute)
+DataPropertyDomain(:hasIntentionToRemainInTheNorthEastOfScotlandValue :Person)
+DataPropertyRange(:hasIntentionToRemainInTheNorthEastOfScotlandValue DataOneOf("Don't know" "No" "Yes"))
+
+# Data Property: :hasJobSharing (:hasJobSharing)
+
+SubDataPropertyOf(:hasJobSharing :hasWorkArrangementsAvailable)
+
+# Data Property: :hasJobSharingAvailable (:hasJobSharingAvailable)
+
+AnnotationAssertion(rdfs:comment :hasJobSharingAvailable "Q20_1_3"^^xsd:string)
+SubDataPropertyOf(:hasJobSharingAvailable :hasJobSharing)
+DataPropertyRange(:hasJobSharingAvailable xsd:boolean)
+
+# Data Property: :hasLandlordValue (:hasLandlordValue)
+
+AnnotationAssertion(rdfs:comment :hasLandlordValue "Q5b"^^xsd:string)
+SubDataPropertyOf(:hasLandlordValue :hasOwnOrRentAccomodationAttribute)
+DataPropertyDomain(:hasLandlordValue ObjectUnionOf(DataHasValue(:hasOwnOrRentAccomodationValue "Lives here rent free") DataHasValue(:hasOwnOrRentAccomodationValue "Part owns and part rents (shared ownership)") DataHasValue(:hasOwnOrRentAccomodationValue "Rents (with or without housing benefit)")))
+DataPropertyRange(:hasLandlordValue DataOneOf("Council (local authority)" "Employer of a household member" "Housing association, housing co-operative, charitable trust, registered social landlord" "Other" "Private landlord or letting agency" "Relative or friend of a household member"))
+
+# Data Property: :hasLifestyleAttribute (:hasLifestyleAttribute)
+
+SubDataPropertyOf(:hasLifestyleAttribute :hasPersonAttribute)
+DataPropertyRange(:hasLifestyleAttribute DataOneOf("agree" "disagree" "neither agree nor disagree" "strongly agree" "strongly disagree"))
+
+# Data Property: :hasLivedInTheNorthEastOfScotlandNumberOfYearsValue (:hasLivedInTheNorthEastOfScotlandNumberOfYearsValue)
+
+AnnotationAssertion(rdfs:comment :hasLivedInTheNorthEastOfScotlandNumberOfYearsValue "Q11"^^xsd:string)
+SubDataPropertyOf(:hasLivedInTheNorthEastOfScotlandNumberOfYearsValue :hasPersonAttribute)
+DataPropertyDomain(:hasLivedInTheNorthEastOfScotlandNumberOfYearsValue :Person)
+DataPropertyRange(:hasLivedInTheNorthEastOfScotlandNumberOfYearsValue xsd:nonNegativeInteger)
+
+# Data Property: :hasMainWorkplaceAddress (:hasMainWorkplaceAddress)
+
+SubDataPropertyOf(:hasMainWorkplaceAddress :hasWorkAttribute)
+
+# Data Property: :hasMainWorkplaceAddressPostcodeValue (:hasMainWorkplaceAddressPostcodeValue)
+
+AnnotationAssertion(rdfs:comment :hasMainWorkplaceAddressPostcodeValue "Q18_pc"^^xsd:string)
+SubDataPropertyOf(:hasMainWorkplaceAddressPostcodeValue :hasMainWorkplaceAddress)
+DataPropertyDomain(:hasMainWorkplaceAddressPostcodeValue ObjectIntersectionOf(ObjectUnionOf(DataHasValue(:hasCurrentEmploymentStatusValue "Self-Employed / freelance") DataHasValue(:hasCurrentEmploymentStatusValue "Student") DataHasValue(:hasCurrentEmploymentStatusValue "Training / Apprenticeship") DataHasValue(:hasCurrentEmploymentStatusValue "Working as an employee")) ObjectComplementOf(DataSomeValuesFrom(:hasMainWorkplaceMultipleChoiceValue xsd:string))))
+DataPropertyRange(:hasMainWorkplaceAddressPostcodeValue DatatypeRestriction(xsd:string xsd:pattern "(GIR 0AA)|((([A-Z-[QVX]][0-9][0-9]?)|(([A-Z-[QVX]][A-Z-[IJZ]][0-9][0-9]?)|(([A-Z-[QVX]][0-9][A-HJKPSTUW])|([A-Z-[QVX]][A-Z-[IJZ]][0-9][ABEHMNPRVWXY])))) [0-9][A-Z-[CIKMOV]]{2})"))
+
+# Data Property: :hasMainWorkplaceAddressValue (:hasMainWorkplaceAddressValue)
+
+AnnotationAssertion(rdfs:comment :hasMainWorkplaceAddressValue "Q18"^^xsd:string)
+SubDataPropertyOf(:hasMainWorkplaceAddressValue :hasMainWorkplaceAddress)
+DataPropertyDomain(:hasMainWorkplaceAddressValue ObjectIntersectionOf(ObjectUnionOf(DataHasValue(:hasCurrentEmploymentStatusValue "Self-Employed / freelance") DataHasValue(:hasCurrentEmploymentStatusValue "Student") DataHasValue(:hasCurrentEmploymentStatusValue "Training / Apprenticeship") DataHasValue(:hasCurrentEmploymentStatusValue "Working as an employee")) ObjectComplementOf(DataSomeValuesFrom(:hasMainWorkplaceMultipleChoiceValue xsd:string))))
+DataPropertyRange(:hasMainWorkplaceAddressValue xsd:string)
+
+# Data Property: :hasMainWorkplaceMultipleChoiceValue (:hasMainWorkplaceMultipleChoiceValue)
+
+AnnotationAssertion(rdfs:comment :hasMainWorkplaceMultipleChoiceValue "Q18_OR"^^xsd:string)
+SubDataPropertyOf(:hasMainWorkplaceMultipleChoiceValue :hasMainWorkplaceAddress)
+DataPropertyDomain(:hasMainWorkplaceMultipleChoiceValue ObjectIntersectionOf(ObjectComplementOf(DataSomeValuesFrom(:hasMainWorkplaceAddressPostcodeValue xsd:string)) ObjectComplementOf(DataSomeValuesFrom(:hasMainWorkplaceAddressValue xsd:string))))
+DataPropertyRange(:hasMainWorkplaceMultipleChoiceValue DataOneOf("Mainly work at or from home" "No fixed workplace" "Offshore installation"))
+
+# Data Property: :hasMostCommonModeOfTransportToWorkAttribute (:hasMostCommonModeOfTransportToWorkAttribute)
+
+SubDataPropertyOf(:hasMostCommonModeOfTransportToWorkAttribute :hasPersonAttribute)
+
+# Data Property: :hasMostCommonModeOfTransportToWorkValue (:hasMostCommonModeOfTransportToWorkValue)
+
+AnnotationAssertion(rdfs:comment :hasMostCommonModeOfTransportToWorkValue "Q24"^^xsd:string)
+SubDataPropertyOf(:hasMostCommonModeOfTransportToWorkValue :hasMostCommonModeOfTransportToWorkAttribute)
+DataPropertyRange(:hasMostCommonModeOfTransportToWorkValue DataOneOf("Bus" "Car (driving alone)" "Car (sharing with someone in household" "Car (sharing with someone not in household" "Cycle" "Helicopter / Fly" "Other" "Taxi" "Train" "Walk (on foot)"))
+
+# Data Property: :hasNameOfOrganisationThatWorksForValue (:hasNameOfOrganisationThatWorksForValue)
+
+AnnotationAssertion(rdfs:comment :hasNameOfOrganisationThatWorksForValue "Q17"^^xsd:string)
+SubDataPropertyOf(:hasNameOfOrganisationThatWorksForValue :hasWorkAttribute)
+DataPropertyDomain(:hasNameOfOrganisationThatWorksForValue ObjectUnionOf(DataHasValue(:hasCurrentEmploymentStatusValue "Self-Employed / freelance") DataHasValue(:hasCurrentEmploymentStatusValue "Student") DataHasValue(:hasCurrentEmploymentStatusValue "Training / Apprenticeship") DataHasValue(:hasCurrentEmploymentStatusValue "Working as an employee")))
+DataPropertyRange(:hasNameOfOrganisationThatWorksForValue xsd:string)
+
+# Data Property: :hasNoCentralHeatingValue (:hasNoCentralHeatingValue)
+
+AnnotationAssertion(rdfs:comment :hasNoCentralHeatingValue "Q4_1"^^xsd:string)
+SubDataPropertyOf(:hasNoCentralHeatingValue :hasCentralHeatingAttribute)
+DataPropertyRange(:hasNoCentralHeatingValue xsd:boolean)
+
+# Data Property: :hasNoFlexibleWorkingArrangements (:hasNoFlexibleWorkingArrangements)
+
+SubDataPropertyOf(:hasNoFlexibleWorkingArrangements :hasWorkArrangementsAvailable)
+
+# Data Property: :hasNoFlexibleWorkingArrangementsAvailable (:hasNoFlexibleWorkingArrangementsAvailable)
+
+AnnotationAssertion(rdfs:comment :hasNoFlexibleWorkingArrangementsAvailable "Q20_1_9"^^xsd:string)
+SubDataPropertyOf(:hasNoFlexibleWorkingArrangementsAvailable :hasNoFlexibleWorkingArrangements)
+DataPropertyRange(:hasNoFlexibleWorkingArrangementsAvailable xsd:boolean)
+
+# Data Property: :hasNumberOfBathroomsOrToiletsValue (:hasNumberOfBathroomsOrToiletsValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfBathroomsOrToiletsValue "Q2_5"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfBathroomsOrToiletsValue :hasNumberOfRoomsAttribute)
+
+# Data Property: :hasNumberOfBedroomsValue (:hasNumberOfBedroomsValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfBedroomsValue "Q2_2"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfBedroomsValue :hasNumberOfRoomsAttribute)
+
+# Data Property: :hasNumberOfCarsAvailableToHouseholdAttribute (:hasNumberOfCarsAvailableToHouseholdAttribute)
+
+SubDataPropertyOf(:hasNumberOfCarsAvailableToHouseholdAttribute :hasHouseholdAttribute)
+
+# Data Property: :hasNumberOfCarsAvailableToHouseholdGreaterThanFourValue (:hasNumberOfCarsAvailableToHouseholdGreaterThanFourValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfCarsAvailableToHouseholdGreaterThanFourValue "Q6_TEXT"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfCarsAvailableToHouseholdGreaterThanFourValue :hasNumberOfCarsAvailableToHouseholdAttribute)
+DataPropertyDomain(:hasNumberOfCarsAvailableToHouseholdGreaterThanFourValue DataHasValue(:hasNumberOfCarsAvailableToHouseholdValue "4 or more"))
+DataPropertyRange(:hasNumberOfCarsAvailableToHouseholdGreaterThanFourValue DatatypeRestriction(xsd:positiveInteger xsd:minInclusive "4"^^xsd:positiveInteger))
+
+# Data Property: :hasNumberOfCarsAvailableToHouseholdValue (:hasNumberOfCarsAvailableToHouseholdValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfCarsAvailableToHouseholdValue "Q6"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfCarsAvailableToHouseholdValue :hasNumberOfCarsAvailableToHouseholdAttribute)
+DataPropertyRange(:hasNumberOfCarsAvailableToHouseholdValue DataOneOf("1" "2" "3" "4 or more" "None"))
+
+# Data Property: :hasNumberOfGaragesValue (:hasNumberOfGaragesValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfGaragesValue "Q2_7"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfGaragesValue :hasNumberOfRoomsAttribute)
+
+# Data Property: :hasNumberOfKitchensValue (:hasNumberOfKitchensValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfKitchensValue "Q2_1"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfKitchensValue :hasNumberOfRoomsAttribute)
+
+# Data Property: :hasNumberOfLivingRoomsValue (:hasNumberOfLivingRoomsValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfLivingRoomsValue "Q2_3"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfLivingRoomsValue :hasNumberOfRoomsAttribute)
+
+# Data Property: :hasNumberOfPeopleLivingInHouseholdValue (:hasNumberOfPeopleLivingInHouseholdValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfPeopleLivingInHouseholdValue "Q1"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfPeopleLivingInHouseholdValue :hasHouseholdAttribute)
+DataPropertyRange(:hasNumberOfPeopleLivingInHouseholdValue DataOneOf("1" "2" "3" "4" "5" "6 or more"))
+
+# Data Property: :hasNumberOfRoomsAttribute (:hasNumberOfRoomsAttribute)
+
+SubDataPropertyOf(:hasNumberOfRoomsAttribute :hasHouseholdAttribute)
+DataPropertyRange(:hasNumberOfRoomsAttribute xsd:nonNegativeInteger)
+
+# Data Property: :hasNumberOfStudiesOrOfficesValue (:hasNumberOfStudiesOrOfficesValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfStudiesOrOfficesValue "Q2_6"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfStudiesOrOfficesValue :hasNumberOfRoomsAttribute)
+
+# Data Property: :hasNumberOfTimesGoesShoppingPerWeekValue (:hasNumberOfTimesGoesShoppingPerWeekValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfTimesGoesShoppingPerWeekValue "Q39"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfTimesGoesShoppingPerWeekValue :hasPersonAttribute)
+DataPropertyRange(:hasNumberOfTimesGoesShoppingPerWeekValue DataOneOf("Five times" "Four times" "Less than once" "Once" "Seven or more times" "Six times" "Three times" "Twice"))
+
+# Data Property: :hasNumberOfUtilityRoomsValue (:hasNumberOfUtilityRoomsValue)
+
+AnnotationAssertion(rdfs:comment :hasNumberOfUtilityRoomsValue "Q2_4"^^xsd:string)
+SubDataPropertyOf(:hasNumberOfUtilityRoomsValue :hasNumberOfRoomsAttribute)
+
+# Data Property: :hasOfficeTypeValue (:hasOfficeTypeValue)
+
+AnnotationAssertion(rdfs:comment :hasOfficeTypeValue "Q22_office"^^xsd:string)
+SubDataPropertyOf(:hasOfficeTypeValue :hasPersonAttribute)
+DataPropertyDomain(:hasOfficeTypeValue DataHasValue(:hasWorkThatRequiresADeskValue "true"^^xsd:boolean))
+DataPropertyRange(:hasOfficeTypeValue DataOneOf("A dedicated workspace / home office" "Other" "Sitting on sofa / chair" "Working at kitchen/dining room table"))
+
+# Data Property: :hasOilCentralHeatingValue (:hasOilCentralHeatingValue)
+
+SubDataPropertyOf(:hasOilCentralHeatingValue :hasCentralHeatingAttribute)
+DataPropertyRange(:hasOilCentralHeatingValue xsd:boolean)
+
+# Data Property: :hasOtherCentralHeatingValue (:hasOtherCentralHeatingValue)
+
+AnnotationAssertion(rdfs:comment :hasOtherCentralHeatingValue "Q4_6"^^xsd:string)
+SubDataPropertyOf(:hasOtherCentralHeatingValue :hasCentralHeatingAttribute)
+DataPropertyRange(:hasOtherCentralHeatingValue xsd:boolean)
+
+# Data Property: :hasOtherFlexibleWorkingArrangments (:hasOtherFlexibleWorkingArrangments)
+
+SubDataPropertyOf(:hasOtherFlexibleWorkingArrangments :hasWorkArrangementsAvailable)
+
+# Data Property: :hasOtherFlexibleWorkingArrangmentsAvailable (:hasOtherFlexibleWorkingArrangmentsAvailable)
+
+AnnotationAssertion(rdfs:comment :hasOtherFlexibleWorkingArrangmentsAvailable "Q20_1_8"^^xsd:string)
+SubDataPropertyOf(:hasOtherFlexibleWorkingArrangmentsAvailable :hasOtherFlexibleWorkingArrangments)
+DataPropertyRange(:hasOtherFlexibleWorkingArrangmentsAvailable xsd:boolean)
+
+# Data Property: :hasOtherMostCommonModeOfTransportToWorkValue (:hasOtherMostCommonModeOfTransportToWorkValue)
+
+AnnotationAssertion(rdfs:comment :hasOtherMostCommonModeOfTransportToWorkValue "Q24_TEXT"^^xsd:string)
+SubDataPropertyOf(:hasOtherMostCommonModeOfTransportToWorkValue :hasMostCommonModeOfTransportToWorkAttribute)
+DataPropertyDomain(:hasOtherMostCommonModeOfTransportToWorkValue DataHasValue(:hasMostCommonModeOfTransportToWorkValue "Other"))
+DataPropertyRange(:hasOtherMostCommonModeOfTransportToWorkValue xsd:string)
+
+# Data Property: :hasOtherTravelTypeToShoppingValue (:hasOtherTravelTypeToShoppingValue)
+
+AnnotationAssertion(rdfs:comment :hasOtherTravelTypeToShoppingValue "Q41_TEXT"^^xsd:string)
+SubDataPropertyOf(:hasOtherTravelTypeToShoppingValue :hasTravelTypeToShoppingAttribute)
+DataPropertyDomain(:hasOtherTravelTypeToShoppingValue DataHasValue(:hasTravelTypeToShoppingValue "Other"))
+
+# Data Property: :hasOtherTypeOfCentralHeatingName (:hasOtherTypeOfCentralHeatingName)
+
+AnnotationAssertion(rdfs:comment :hasOtherTypeOfCentralHeatingName "Q4_6_TEXT"^^xsd:string)
+SubDataPropertyOf(:hasOtherTypeOfCentralHeatingName :hasCentralHeatingAttribute)
+DataPropertyDomain(:hasOtherTypeOfCentralHeatingName :Household)
+DataPropertyDomain(:hasOtherTypeOfCentralHeatingName DataHasValue(:hasOtherCentralHeatingValue "true"^^xsd:boolean))
+DataPropertyRange(:hasOtherTypeOfCentralHeatingName xsd:string)
+
+# Data Property: :hasOtherWorkingArrangementForPeriodicallyWorkingFromHomeValue (:hasOtherWorkingArrangementForPeriodicallyWorkingFromHomeValue)
+
+AnnotationAssertion(rdfs:comment :hasOtherWorkingArrangementForPeriodicallyWorkingFromHomeValue "Q23_TEXT"^^xsd:string)
+SubDataPropertyOf(:hasOtherWorkingArrangementForPeriodicallyWorkingFromHomeValue :hasPeriodicallyWorkedFromHomeAttribute)
+DataPropertyDomain(:hasOtherWorkingArrangementForPeriodicallyWorkingFromHomeValue DataHasValue(:hasWorkingArrangementForPeriodicallyWorkingFromHomeValue "Other"))
+
+# Data Property: :hasOwnDeskAtWorkValue (:hasOwnDeskAtWorkValue)
+
+AnnotationAssertion(rdfs:comment :hasOwnDeskAtWorkValue "Q22_desk"^^xsd:string)
+SubDataPropertyOf(:hasOwnDeskAtWorkValue :hasWorkDeskAttribute)
+DataPropertyDomain(:hasOwnDeskAtWorkValue DataHasValue(:hasWorkThatRequiresADeskValue "true"^^xsd:boolean))
+DataPropertyRange(:hasOwnDeskAtWorkValue DataOneOf("No - I use a hotdesk (not in a 'team zone')" "No - I use a hotdesk in a specific 'team-zone'" "Yes - and I share it with somebody else" "Yes - my desk is only used by me"))
+
+# Data Property: :hasOwnOrRentAccomodationAttribute (:hasOwnOrRentAccomodationAttribute)
+
+SubDataPropertyOf(:hasOwnOrRentAccomodationAttribute :hasPersonAttribute)
+
+# Data Property: :hasOwnOrRentAccomodationValue (:hasOwnOrRentAccomodationValue)
+
+AnnotationAssertion(rdfs:comment :hasOwnOrRentAccomodationValue "Q5"^^xsd:string)
+SubDataPropertyOf(:hasOwnOrRentAccomodationValue :hasOwnOrRentAccomodationAttribute)
+DataPropertyRange(:hasOwnOrRentAccomodationValue DataOneOf("Lives here rent free" "Owns outright" "Owns with a mortgage or loan" "Part owns and part rents (shared ownership)" "Rents (with or without housing benefit)"))
+
+# Data Property: :hasPartTimeWorking (:hasPartTimeWorking)
+
+SubDataPropertyOf(:hasPartTimeWorking :hasWorkArrangementsAvailable)
+
+# Data Property: :hasPartTimeWorkingAvailable (:hasPartTimeWorkingAvailable)
+
+AnnotationAssertion(rdfs:comment :hasPartTimeWorkingAvailable "Q20_1_1"^^xsd:string)
+SubDataPropertyOf(:hasPartTimeWorkingAvailable :hasPartTimeWorking)
+DataPropertyRange(:hasPartTimeWorkingAvailable xsd:boolean)
+
+# Data Property: :hasPeriodicallyWorkedFromHomeAttribute (:hasPeriodicallyWorkedFromHomeAttribute)
+
+SubDataPropertyOf(:hasPeriodicallyWorkedFromHomeAttribute :hasPersonAttribute)
+
+# Data Property: :hasPeriodicallyWorkedFromHomeValue (:hasPeriodicallyWorkedFromHomeValue)
+
+AnnotationAssertion(rdfs:comment :hasPeriodicallyWorkedFromHomeValue "Q23"^^xsd:string)
+SubDataPropertyOf(:hasPeriodicallyWorkedFromHomeValue :hasPeriodicallyWorkedFromHomeAttribute)
+DataPropertyRange(:hasPeriodicallyWorkedFromHomeValue xsd:boolean)
+
+# Data Property: :hasPersonAttribute (:hasPersonAttribute)
+
+DataPropertyDomain(:hasPersonAttribute :Person)
+
+# Data Property: :hasPositionOnPoliticalSpectrum (:hasPositionOnPoliticalSpectrum)
+
+AnnotationAssertion(rdfs:comment :hasPositionOnPoliticalSpectrum "Q33"^^xsd:string)
+SubDataPropertyOf(:hasPositionOnPoliticalSpectrum :hasPersonAttribute)
+DataPropertyRange(:hasPositionOnPoliticalSpectrum DataOneOf("Rather to the left" "centre" "left" "left of centre" "rather to the right" "right" "right of centre"))
+
+# Data Property: :hasPostcodeValue (:hasPostcodeValue)
+
+AnnotationAssertion(rdfs:comment :hasPostcodeValue "Postcode regex curtesy of: https://stackoverflow.com/questions/164979/uk-postcode-regex-comprehensive"^^xsd:string)
+AnnotationAssertion(rdfs:comment :hasPostcodeValue "Q7"^^xsd:string)
+SubDataPropertyOf(:hasPostcodeValue :hasHouseholdAttribute)
+DataPropertyRange(:hasPostcodeValue DatatypeRestriction(xsd:string xsd:pattern "(GIR 0AA)|((([A-Z-[QVX]][0-9][0-9]?)|(([A-Z-[QVX]][A-Z-[IJZ]][0-9][0-9]?)|(([A-Z-[QVX]][0-9][A-HJKPSTUW])|([A-Z-[QVX]][A-Z-[IJZ]][0-9][ABEHMNPRVWXY])))) [0-9][A-Z-[CIKMOV]]{2})"))
+
+# Data Property: :hasQuantifiedFlexibilityForWorkingArrangementValue (:hasQuantifiedFlexibilityForWorkingArrangementValue)
+
+AnnotationAssertion(rdfs:comment :hasQuantifiedFlexibilityForWorkingArrangementValue "Q21"^^xsd:string)
+AnnotationAssertion(rdfs:comment :hasQuantifiedFlexibilityForWorkingArrangementValue "This is a scale from 1 - 7 from \"No flexibility at all\" to \"A lot of flexibility\""^^xsd:string)
+SubDataPropertyOf(:hasQuantifiedFlexibilityForWorkingArrangementValue :hasWorkAttribute)
+DataPropertyRange(:hasQuantifiedFlexibilityForWorkingArrangementValue DatatypeRestriction(xsd:integer xsd:minInclusive "1"^^xsd:integer xsd:maxInclusive "7"^^xsd:integer))
+
+# Data Property: :hasRelationshipAttribute (:hasRelationshipAttribute)
+
+SubDataPropertyOf(:hasRelationshipAttribute :hasPersonAttribute)
+DataPropertyRange(:hasRelationshipAttribute xsd:string)
+
+# Data Property: :hasRelationshipNameForPerson2Value (:hasRelationshipNameForPerson2Value)
+
+AnnotationAssertion(rdfs:comment :hasRelationshipNameForPerson2Value "Q9_REL_2"^^xsd:string)
+SubDataPropertyOf(:hasRelationshipNameForPerson2Value :hasRelationshipWithPerson2Attributes)
+DataPropertyRange(:hasRelationshipNameForPerson2Value xsd:string)
+
+# Data Property: :hasRelationshipNameForPerson3Value (:hasRelationshipNameForPerson3Value)
+
+AnnotationAssertion(rdfs:comment :hasRelationshipNameForPerson3Value "Q9_REL_3"^^xsd:string)
+SubDataPropertyOf(:hasRelationshipNameForPerson3Value :hasRelationshipWithPerson3Attributes)
+DataPropertyRange(:hasRelationshipNameForPerson3Value xsd:string)
+
+# Data Property: :hasRelationshipNameForPerson4Value (:hasRelationshipNameForPerson4Value)
+
+AnnotationAssertion(rdfs:comment :hasRelationshipNameForPerson4Value "Q9_REL_4"^^xsd:string)
+SubDataPropertyOf(:hasRelationshipNameForPerson4Value :hasRelationshipWithPerson4Attributes)
+DataPropertyRange(:hasRelationshipNameForPerson4Value xsd:string)
+
+# Data Property: :hasRelationshipNameForPerson5Value (:hasRelationshipNameForPerson5Value)
+
+AnnotationAssertion(rdfs:comment :hasRelationshipNameForPerson5Value "Q9_REL_5"^^xsd:string)
+SubDataPropertyOf(:hasRelationshipNameForPerson5Value :hasRelationshipWithPerson5Attributes)
+DataPropertyRange(:hasRelationshipNameForPerson5Value xsd:string)
+
+# Data Property: :hasRelationshipNameForPerson6Value (:hasRelationshipNameForPerson6Value)
+
+AnnotationAssertion(rdfs:comment :hasRelationshipNameForPerson6Value "Q9_REL_6"^^xsd:string)
+SubDataPropertyOf(:hasRelationshipNameForPerson6Value :hasRelationshipWithPerson6Attributes)
+DataPropertyRange(:hasRelationshipNameForPerson6Value xsd:string)
+
+# Data Property: :hasRelationshipWithPerson2Attributes (:hasRelationshipWithPerson2Attributes)
+
+SubDataPropertyOf(:hasRelationshipWithPerson2Attributes :hasRelationshipAttribute)
+
+# Data Property: :hasRelationshipWithPerson3Attributes (:hasRelationshipWithPerson3Attributes)
+
+SubDataPropertyOf(:hasRelationshipWithPerson3Attributes :hasRelationshipAttribute)
+
+# Data Property: :hasRelationshipWithPerson4Attributes (:hasRelationshipWithPerson4Attributes)
+
+SubDataPropertyOf(:hasRelationshipWithPerson4Attributes :hasRelationshipAttribute)
+
+# Data Property: :hasRelationshipWithPerson5Attributes (:hasRelationshipWithPerson5Attributes)
+
+SubDataPropertyOf(:hasRelationshipWithPerson5Attributes :hasRelationshipAttribute)
+
+# Data Property: :hasRelationshipWithPerson6Attributes (:hasRelationshipWithPerson6Attributes)
+
+SubDataPropertyOf(:hasRelationshipWithPerson6Attributes :hasRelationshipAttribute)
+
+# Data Property: :hasSatisfactionAttribute (:hasSatisfactionAttribute)
+
+SubDataPropertyOf(:hasSatisfactionAttribute :hasPersonAttribute)
+DataPropertyRange(:hasSatisfactionAttribute DataOneOf(" Almost satisfied" "Almost not satisfied" "Completely satisfied" "Mildly not satisfied" "Mildly satisfied" "Neutral" "Not satisfied at all"))
+
+# Data Property: :hasSexForPerson2Value (:hasSexForPerson2Value)
+
+AnnotationAssertion(rdfs:comment :hasSexForPerson2Value "Q9_SEX_2"^^xsd:string)
+SubDataPropertyOf(:hasSexForPerson2Value :hasRelationshipWithPerson2Attributes)
+DataPropertyDomain(:hasSexForPerson2Value DataSomeValuesFrom(:hasRelationshipNameForPerson2Value xsd:string))
+DataPropertyRange(:hasSexForPerson2Value DataOneOf("female" "male"))
+
+# Data Property: :hasSexForPerson3Value (:hasSexForPerson3Value)
+
+AnnotationAssertion(rdfs:comment :hasSexForPerson3Value "Q9_SEX_3"^^xsd:string)
+SubDataPropertyOf(:hasSexForPerson3Value :hasRelationshipWithPerson3Attributes)
+DataPropertyDomain(:hasSexForPerson3Value DataSomeValuesFrom(:hasRelationshipNameForPerson3Value xsd:string))
+DataPropertyRange(:hasSexForPerson3Value DataOneOf("female" "male"))
+
+# Data Property: :hasSexForPerson4Value (:hasSexForPerson4Value)
+
+AnnotationAssertion(rdfs:comment :hasSexForPerson4Value "Q9_SEX_4"^^xsd:string)
+SubDataPropertyOf(:hasSexForPerson4Value :hasRelationshipWithPerson4Attributes)
+DataPropertyDomain(:hasSexForPerson4Value DataSomeValuesFrom(:hasRelationshipNameForPerson4Value xsd:string))
+DataPropertyRange(:hasSexForPerson4Value DataOneOf("female" "male"))
+
+# Data Property: :hasSexForPerson5Value (:hasSexForPerson5Value)
+
+AnnotationAssertion(rdfs:comment :hasSexForPerson5Value "Q9_SEX_5"^^xsd:string)
+SubDataPropertyOf(:hasSexForPerson5Value :hasRelationshipWithPerson5Attributes)
+DataPropertyDomain(:hasSexForPerson5Value DataSomeValuesFrom(:hasRelationshipNameForPerson5Value xsd:string))
+DataPropertyRange(:hasSexForPerson5Value DataOneOf("female" "male"))
+
+# Data Property: :hasSexForPerson6Value (:hasSexForPerson6Value)
+
+AnnotationAssertion(rdfs:comment :hasSexForPerson6Value "Q9_SEX_6"^^xsd:string)
+SubDataPropertyOf(:hasSexForPerson6Value :hasRelationshipWithPerson6Attributes)
+DataPropertyDomain(:hasSexForPerson6Value DataSomeValuesFrom(:hasRelationshipNameForPerson6Value xsd:string))
+DataPropertyRange(:hasSexForPerson6Value DataOneOf("female" "male"))
+
+# Data Property: :hasSexValue (:hasSexValue)
+
+AnnotationAssertion(rdfs:comment :hasSexValue "Q_SEX_1"^^xsd:string)
+SubDataPropertyOf(:hasSexValue :hasPersonAttribute)
+DataPropertyRange(:hasSexValue DataOneOf("female" "male"))
+
+# Data Property: :hasSolidFuelCentralHeatingValue (:hasSolidFuelCentralHeatingValue)
+
+AnnotationAssertion(rdfs:comment :hasSolidFuelCentralHeatingValue "Q4_5"^^xsd:string)
+SubDataPropertyOf(:hasSolidFuelCentralHeatingValue :hasCentralHeatingAttribute)
+DataPropertyRange(:hasSolidFuelCentralHeatingValue xsd:boolean)
+
+# Data Property: :hasTotalGrossIncomeValue (:hasTotalGrossIncomeValue)
+
+AnnotationAssertion(rdfs:comment :hasTotalGrossIncomeValue "Q25"^^xsd:string)
+SubDataPropertyOf(:hasTotalGrossIncomeValue :hasHouseholdAttribute)
+DataPropertyRange(:hasTotalGrossIncomeValue DataOneOf("More than £90,000" "under £10,000" "£10,000 - £19,9999" "£20,000 - £29,999" "£30,000 - £39,999" "£40,000 - £49,999" "£50,000 - £59,999" "£60,000 - £69,999" "£70,000 - £79,999" "£80,000 - £89,999"))
+
+# Data Property: :hasTravelTypeToShoppingAttribute (:hasTravelTypeToShoppingAttribute)
+
+SubDataPropertyOf(:hasTravelTypeToShoppingAttribute :hasPersonAttribute)
+
+# Data Property: :hasTravelTypeToShoppingValue (:hasTravelTypeToShoppingValue)
+
+AnnotationAssertion(rdfs:comment :hasTravelTypeToShoppingValue "Q41"^^xsd:string)
+SubDataPropertyOf(:hasTravelTypeToShoppingValue :hasTravelTypeToShoppingAttribute)
+DataPropertyRange(:hasTravelTypeToShoppingValue DataOneOf("Bus" "Car / Van" "None - I only shop online" "Other" "Taxi" "Walk or cycle"))
+
+# Data Property: :hasWorkArrangementsAvailable (:hasWorkArrangementsAvailable)
+
+SubDataPropertyOf(:hasWorkArrangementsAvailable :hasWorkAttribute)
+
+# Data Property: :hasWorkAttribute (:hasWorkAttribute)
+
+SubDataPropertyOf(:hasWorkAttribute :hasPersonAttribute)
+
+# Data Property: :hasWorkDeskAttribute (:hasWorkDeskAttribute)
+
+SubDataPropertyOf(:hasWorkDeskAttribute :hasPersonAttribute)
+
+# Data Property: :hasWorkThatRequiresADeskValue (:hasWorkThatRequiresADeskValue)
+
+AnnotationAssertion(rdfs:comment :hasWorkThatRequiresADeskValue "Q22"^^xsd:string)
+SubDataPropertyOf(:hasWorkThatRequiresADeskValue :hasWorkDeskAttribute)
+DataPropertyRange(:hasWorkThatRequiresADeskValue xsd:boolean)
+
+# Data Property: :hasWorkingACompressedWeek (:hasWorkingACompressedWeek)
+
+SubDataPropertyOf(:hasWorkingACompressedWeek :hasWorkArrangementsAvailable)
+
+# Data Property: :hasWorkingACompressedWeekAvailable (:hasWorkingACompressedWeekAvailable)
+
+AnnotationAssertion(rdfs:comment :hasWorkingACompressedWeekAvailable "Q20_1_5"^^xsd:string)
+SubDataPropertyOf(:hasWorkingACompressedWeekAvailable :hasWorkingACompressedWeek)
+DataPropertyRange(:hasWorkingACompressedWeekAvailable xsd:boolean)
+
+# Data Property: :hasWorkingAnnualisedHours (:hasWorkingAnnualisedHours)
+
+SubDataPropertyOf(:hasWorkingAnnualisedHours :hasWorkArrangementsAvailable)
+
+# Data Property: :hasWorkingAnnualisedHoursAvailable (:hasWorkingAnnualisedHoursAvailable)
+
+AnnotationAssertion(rdfs:comment :hasWorkingAnnualisedHoursAvailable "Q20_1_6"^^xsd:string)
+SubDataPropertyOf(:hasWorkingAnnualisedHoursAvailable :hasWorkingAnnualisedHours)
+DataPropertyRange(:hasWorkingAnnualisedHoursAvailable xsd:boolean)
+
+# Data Property: :hasWorkingArrangementForPeriodicallyWorkingFromHomeValue (:hasWorkingArrangementForPeriodicallyWorkingFromHomeValue)
+
+AnnotationAssertion(rdfs:comment :hasWorkingArrangementForPeriodicallyWorkingFromHomeValue "Q23_space"^^xsd:string)
+SubDataPropertyOf(:hasWorkingArrangementForPeriodicallyWorkingFromHomeValue :hasPeriodicallyWorkedFromHomeAttribute)
+DataPropertyDomain(:hasWorkingArrangementForPeriodicallyWorkingFromHomeValue DataHasValue(:hasPeriodicallyWorkedFromHomeValue "true"^^xsd:boolean))
+DataPropertyRange(:hasWorkingArrangementForPeriodicallyWorkingFromHomeValue DataOneOf("A dedicated workspace / home office" "Other" "Sitting on sofa / chair" "Working at kitchen/dining room table"))
+
+# Data Property: :hasWorkingFromHome (:hasWorkingFromHome)
+
+SubDataPropertyOf(:hasWorkingFromHome :hasWorkArrangementsAvailable)
+
+# Data Property: :hasWorkingFromHomeAvailable (:hasWorkingFromHomeAvailable)
+
+AnnotationAssertion(rdfs:comment :hasWorkingFromHomeAvailable "Q20_1_7"^^xsd:string)
+SubDataPropertyOf(:hasWorkingFromHomeAvailable :hasWorkingFromHome)
+DataPropertyRange(:hasWorkingFromHomeAvailable xsd:boolean)
+
+# Data Property: :hasWorkingTermTimeOnly (:hasWorkingTermTimeOnly)
+
+SubDataPropertyOf(:hasWorkingTermTimeOnly :hasWorkArrangementsAvailable)
+
+# Data Property: :hasWorkingTermTimeOnlyAvailable (:hasWorkingTermTimeOnlyAvailable)
+
+AnnotationAssertion(rdfs:comment :hasWorkingTermTimeOnlyAvailable "Q20_1_2"^^xsd:string)
+SubDataPropertyOf(:hasWorkingTermTimeOnlyAvailable :hasWorkingTermTimeOnly)
+DataPropertyRange(:hasWorkingTermTimeOnlyAvailable xsd:boolean)
+
+# Data Property: :haveAlmostIdealLifestyle (:haveAlmostIdealLifestyle)
+
+AnnotationAssertion(rdfs:comment :haveAlmostIdealLifestyle "Q27_5"^^xsd:string)
+SubDataPropertyOf(:haveAlmostIdealLifestyle :hasLifestyleAttribute)
+
+# Data Property: :haveLowSocialInterraction (:haveLowSocialInterraction)
+
+AnnotationAssertion(rdfs:comment :haveLowSocialInterraction "Q31_7"^^xsd:string)
+SubDataPropertyOf(:haveLowSocialInterraction :hasEmotionalResponseAttribute)
+
+# Data Property: :haveRecentlyAcquiredNewSkills (:haveRecentlyAcquiredNewSkills)
+
+AnnotationAssertion(rdfs:comment :haveRecentlyAcquiredNewSkills "Q31_10"^^xsd:string)
+SubDataPropertyOf(:haveRecentlyAcquiredNewSkills :hasEmotionalResponseAttribute)
+
+# Data Property: :howFarUsuallyTravelledToDoShoppingValue (:howFarUsuallyTravelledToDoShoppingValue)
+
+AnnotationAssertion(rdfs:comment :howFarUsuallyTravelledToDoShoppingValue "Q38"^^xsd:string)
+SubDataPropertyOf(:howFarUsuallyTravelledToDoShoppingValue :hasPersonAttribute)
+DataPropertyRange(:howFarUsuallyTravelledToDoShoppingValue DataOneOf("1 - 2 miles" "11 - 15 miles" "16 - 20 miles" "3 - 4 miles" "5 - 6 miles" "7 - 8 miles" "9 - 10 miles" "Up to 1 mile" "over 20 miles"))
+
+# Data Property: :ifLivedLifeAgainWouldChangeNothing (:ifLivedLifeAgainWouldChangeNothing)
+
+AnnotationAssertion(rdfs:comment :ifLivedLifeAgainWouldChangeNothing "Q27_9"^^xsd:string)
+SubDataPropertyOf(:ifLivedLifeAgainWouldChangeNothing :hasLifestyleAttribute)
+
+# Data Property: :inWinterKeepHouseWarmEnoughToWearTeeshirt (:inWinterKeepHouseWarmEnoughToWearTeeshirt)
+
+AnnotationAssertion(rdfs:comment :inWinterKeepHouseWarmEnoughToWearTeeshirt "Q37_8"^^xsd:string)
+SubDataPropertyOf(:inWinterKeepHouseWarmEnoughToWearTeeshirt :hasEverydayBehaviourAttribute)
+
+# Data Property: :isEasilyInterrupted (:isEasilyInterrupted)
+
+AnnotationAssertion(rdfs:comment :isEasilyInterrupted "Q30_3"^^xsd:string)
+SubDataPropertyOf(:isEasilyInterrupted :hasAttitudeAttribute)
+
+# Data Property: :isJobSharing (:isJobSharing)
+
+AnnotationAssertion(rdfs:comment :isJobSharing "Q20_2_3"^^xsd:string)
+SubDataPropertyOf(:isJobSharing :hasJobSharing)
+DataPropertyDomain(:isJobSharing DataHasValue(:hasJobSharingAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isJobSharing xsd:boolean)
+
+# Data Property: :isRushedForTime (I always seem to be rushed/pressed for time)
+
+AnnotationAssertion(rdfs:comment :isRushedForTime "Q27_2"^^xsd:string)
+AnnotationAssertion(rdfs:label :isRushedForTime "I always seem to be rushed/pressed for time"^^xsd:string)
+SubDataPropertyOf(:isRushedForTime :hasLifestyleAttribute)
+
+# Data Property: :isSatisfiedWithFinancialPositionOfHouseholdValue (:isSatisfiedWithFinancialPositionOfHouseholdValue)
+
+AnnotationAssertion(rdfs:comment :isSatisfiedWithFinancialPositionOfHouseholdValue "Q36"^^xsd:string)
+SubDataPropertyOf(:isSatisfiedWithFinancialPositionOfHouseholdValue :hasPersonAttribute)
+DataPropertyRange(:isSatisfiedWithFinancialPositionOfHouseholdValue DataOneOf("dissatisfied" "neutral" "satisfied" "very dissatisfied" "very satisfied"))
+
+# Data Property: :isSatisfiedWithLife (:isSatisfiedWithLife)
+
+AnnotationAssertion(rdfs:comment :isSatisfiedWithLife "Q27_7"^^xsd:string)
+SubDataPropertyOf(:isSatisfiedWithLife :hasLifestyleAttribute)
+
+# Data Property: :isUsingNoFlexibleWorkingArrangements (:isUsingNoFlexibleWorkingArrangements)
+
+AnnotationAssertion(rdfs:comment :isUsingNoFlexibleWorkingArrangements "Q20_2_9"^^xsd:string)
+SubDataPropertyOf(:isUsingNoFlexibleWorkingArrangements :hasNoFlexibleWorkingArrangements)
+DataPropertyDomain(:isUsingNoFlexibleWorkingArrangements DataHasValue(:hasNoFlexibleWorkingArrangementsAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isUsingNoFlexibleWorkingArrangements xsd:boolean)
+
+# Data Property: :isUsingOtherFlexibleWorkingArrangments (:isUsingOtherFlexibleWorkingArrangments)
+
+AnnotationAssertion(rdfs:comment :isUsingOtherFlexibleWorkingArrangments "Q20_2_8"^^xsd:string)
+SubDataPropertyOf(:isUsingOtherFlexibleWorkingArrangments :hasOtherFlexibleWorkingArrangments)
+DataPropertyDomain(:isUsingOtherFlexibleWorkingArrangments DataHasValue(:hasOtherFlexibleWorkingArrangmentsAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isUsingOtherFlexibleWorkingArrangments xsd:boolean)
+
+# Data Property: :isWorkingACompressedWeek (:isWorkingACompressedWeek)
+
+AnnotationAssertion(rdfs:comment :isWorkingACompressedWeek "Q20_2_5"^^xsd:string)
+SubDataPropertyOf(:isWorkingACompressedWeek :hasWorkingACompressedWeek)
+DataPropertyDomain(:isWorkingACompressedWeek DataHasValue(:hasWorkingACompressedWeekAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isWorkingACompressedWeek xsd:boolean)
+
+# Data Property: :isWorkingAnnualisedHours (:isWorkingAnnualisedHours)
+
+AnnotationAssertion(rdfs:comment :isWorkingAnnualisedHours "Q20_1_6"^^xsd:string)
+SubDataPropertyOf(:isWorkingAnnualisedHours :hasWorkingAnnualisedHours)
+DataPropertyDomain(:isWorkingAnnualisedHours DataHasValue(:hasWorkingAnnualisedHoursAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isWorkingAnnualisedHours xsd:boolean)
+
+# Data Property: :isWorkingFlexiTime (:isWorkingFlexiTime)
+
+AnnotationAssertion(rdfs:comment :isWorkingFlexiTime "Q20_2_4"^^xsd:string)
+SubDataPropertyOf(:isWorkingFlexiTime :hasFlexiTime)
+DataPropertyDomain(:isWorkingFlexiTime DataHasValue(:hasFlexiTimeAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isWorkingFlexiTime xsd:boolean)
+
+# Data Property: :isWorkingFromHome (:isWorkingFromHome)
+
+AnnotationAssertion(rdfs:comment :isWorkingFromHome "Q20_2_7"^^xsd:string)
+SubDataPropertyOf(:isWorkingFromHome :hasWorkingFromHome)
+DataPropertyDomain(:isWorkingFromHome DataHasValue(:hasWorkingFromHomeAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isWorkingFromHome xsd:boolean)
+
+# Data Property: :isWorkingPartTime (:isWorkingPartTime)
+
+AnnotationAssertion(rdfs:comment :isWorkingPartTime "Q20_2_1"^^xsd:string)
+SubDataPropertyOf(:isWorkingPartTime :hasPartTimeWorking)
+DataPropertyDomain(:isWorkingPartTime DataHasValue(:hasWorkArrangementsAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isWorkingPartTime xsd:boolean)
+
+# Data Property: :isWorkingTermTimeOnly (:isWorkingTermTimeOnly)
+
+AnnotationAssertion(rdfs:comment :isWorkingTermTimeOnly "Q20_2_2"^^xsd:string)
+SubDataPropertyOf(:isWorkingTermTimeOnly :hasWorkingTermTimeOnly)
+DataPropertyDomain(:isWorkingTermTimeOnly DataHasValue(:hasWorkingTermTimeOnlyAvailable "true"^^xsd:boolean))
+DataPropertyRange(:isWorkingTermTimeOnly xsd:boolean)
+
+# Data Property: :leaveTVOnStandbyOvernight (:leaveTVOnStandbyOvernight)
+
+AnnotationAssertion(rdfs:comment :leaveTVOnStandbyOvernight "Q37_11"^^xsd:string)
+SubDataPropertyOf(:leaveTVOnStandbyOvernight :hasEverydayBehaviourAttribute)
+
+# Data Property: :likesImmediatePeerGroup (:likesImmediatePeerGroup)
+
+AnnotationAssertion(rdfs:comment :likesImmediatePeerGroup "Q31_2"^^xsd:string)
+SubDataPropertyOf(:likesImmediatePeerGroup :hasEmotionalResponseAttribute)
+
+# Data Property: :neverHaveEnoughTime (:neverHaveEnoughTime)
+
+AnnotationAssertion(rdfs:comment :neverHaveEnoughTime "Q27_4"^^xsd:string)
+SubDataPropertyOf(:neverHaveEnoughTime :hasLifestyleAttribute)
+
+# Data Property: :oftenDoubtsCompetence (:oftenDoubtsCompetence)
+
+AnnotationAssertion(rdfs:comment :oftenDoubtsCompetence "Q31_3"^^xsd:string)
+SubDataPropertyOf(:oftenDoubtsCompetence :hasEmotionalResponseAttribute)
+
+# Data Property: :oftenWakesDuringNight (:oftenWakesDuringNight)
+
+AnnotationAssertion(rdfs:comment :oftenWakesDuringNight "Q27_14"^^xsd:string)
+SubDataPropertyOf(:oftenWakesDuringNight :hasLifestyleAttribute)
+
+# Data Property: :othersAreConsiderateOfMyself (:othersAreConsiderateOfMyself)
+
+AnnotationAssertion(rdfs:comment :othersAreConsiderateOfMyself "Q31_14"^^xsd:string)
+SubDataPropertyOf(:othersAreConsiderateOfMyself :hasEmotionalResponseAttribute)
+
+# Data Property: :paceOfLifeIsAboutRight (I feel that the pace of life is about right)
+
+AnnotationAssertion(rdfs:label :paceOfLifeIsAboutRight "I feel that the pace of life is about right"^^xsd:string)
+AnnotationAssertion(rdfs:label :paceOfLifeIsAboutRight "Q27_3"^^xsd:string)
+SubDataPropertyOf(:paceOfLifeIsAboutRight :hasLifestyleAttribute)
+
+# Data Property: :paysForCarWashingRegularly (:paysForCarWashingRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForCarWashingRegularly "Q35_Carwash"^^xsd:string)
+SubDataPropertyOf(:paysForCarWashingRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForChildcareRegularly (:paysForChildcareRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForChildcareRegularly "Q35_Childcare"^^xsd:string)
+SubDataPropertyOf(:paysForChildcareRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForCleaningRegularly (:paysForCleaningRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForCleaningRegularly "Q35_Clean"^^xsd:string)
+SubDataPropertyOf(:paysForCleaningRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForCookingOrCateringRegularly (:paysForCookingOrCateringRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForCookingOrCateringRegularly "Q35_Cook"^^xsd:string)
+SubDataPropertyOf(:paysForCookingOrCateringRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForDogWalkingRegularly (:paysForDogWalkingRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForDogWalkingRegularly "Q35_Dog"^^xsd:string)
+SubDataPropertyOf(:paysForDogWalkingRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForGardeningRegularly (:paysForGardeningRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForGardeningRegularly "Q35_Gardening"^^xsd:string)
+SubDataPropertyOf(:paysForGardeningRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForHomeImprovementRegularly (:paysForHomeImprovementRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForHomeImprovementRegularly "Q35_Improve"^^xsd:string)
+SubDataPropertyOf(:paysForHomeImprovementRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForHomeMaintenanceRegularly (:paysForHomeMaintenanceRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForHomeMaintenanceRegularly "Q35_Mainten"^^xsd:string)
+SubDataPropertyOf(:paysForHomeMaintenanceRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForLaundryOrIroningRegularly (:paysForLaundryOrIroningRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForLaundryOrIroningRegularly "Q35_Laundry"^^xsd:string)
+SubDataPropertyOf(:paysForLaundryOrIroningRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :paysForServiceRegularlyAttribute (:paysForServiceRegularlyAttribute)
+
+SubDataPropertyOf(:paysForServiceRegularlyAttribute :hasPersonAttribute)
+DataPropertyRange(:paysForServiceRegularlyAttribute xsd:boolean)
+
+# Data Property: :paysForWindowCleaningRegularly (:paysForWindowCleaningRegularly)
+
+AnnotationAssertion(rdfs:comment :paysForWindowCleaningRegularly "Q35_Window"^^xsd:string)
+SubDataPropertyOf(:paysForWindowCleaningRegularly :paysForServiceRegularlyAttribute)
+
+# Data Property: :peopleComplimentWork (:peopleComplimentWork)
+
+AnnotationAssertion(rdfs:comment :peopleComplimentWork "Q31_5"^^xsd:string)
+SubDataPropertyOf(:peopleComplimentWork :hasEmotionalResponseAttribute)
+
+# Data Property: :planMealsBeforeShopping (:planMealsBeforeShopping)
+
+AnnotationAssertion(rdfs:comment :planMealsBeforeShopping "Q37_9"^^xsd:string)
+SubDataPropertyOf(:planMealsBeforeShopping :hasEverydayBehaviourAttribute)
+
+# Data Property: :recycleEmptyGlassBottles (:recycleEmptyGlassBottles)
+
+AnnotationAssertion(rdfs:comment :recycleEmptyGlassBottles "Q37_7"^^xsd:string)
+SubDataPropertyOf(:recycleEmptyGlassBottles :hasEverydayBehaviourAttribute)
+
+# Data Property: :recycleGardenWaste (:recycleGardenWaste)
+
+AnnotationAssertion(rdfs:comment :recycleGardenWaste "Q37_10"^^xsd:string)
+SubDataPropertyOf(:recycleGardenWaste :hasEverydayBehaviourAttribute)
+
+# Data Property: :recyclesEmptyPlasticBottles (:recyclesEmptyPlasticBottles)
+
+AnnotationAssertion(rdfs:comment :recyclesEmptyPlasticBottles "Q37_3"^^xsd:string)
+SubDataPropertyOf(:recyclesEmptyPlasticBottles :hasEverydayBehaviourAttribute)
+
+# Data Property: :regularlyFeelHaveAchieved (:regularlyFeelHaveAchieved)
+
+AnnotationAssertion(rdfs:comment :regularlyFeelHaveAchieved "Q31_13"^^xsd:string)
+SubDataPropertyOf(:regularlyFeelHaveAchieved :hasEmotionalResponseAttribute)
+
+# Data Property: :snackUnawares (:snackUnawares)
+
+AnnotationAssertion(rdfs:comment :snackUnawares "Q37_15"^^xsd:string)
+SubDataPropertyOf(:snackUnawares :hasEverydayBehaviourAttribute)
+
+# Data Property: :sometimesHoldsTongue (:sometimesHoldsTongue)
+
+AnnotationAssertion(rdfs:comment :sometimesHoldsTongue "Q30_5"^^xsd:string)
+SubDataPropertyOf(:sometimesHoldsTongue :hasPersonAttribute)
+
+# Data Property: :supervisesAnyEmployees (:supervisesAnyEmployees)
+
+AnnotationAssertion(rdfs:comment :supervisesAnyEmployees "Q15"^^xsd:string)
+SubDataPropertyOf(:supervisesAnyEmployees :hasWorkAttribute)
+DataPropertyDomain(:supervisesAnyEmployees ObjectUnionOf(DataHasValue(:hasCurrentEmploymentStatusValue "Self-Employed / freelance") DataHasValue(:hasCurrentEmploymentStatusValue "Training / Apprenticeship") DataHasValue(:hasCurrentEmploymentStatusValue "Working as an employee")))
+DataPropertyRange(:supervisesAnyEmployees xsd:boolean)
+
+# Data Property: :switchOffLightsInUnusedRooms (:switchOffLightsInUnusedRooms)
+
+AnnotationAssertion(rdfs:comment :switchOffLightsInUnusedRooms "Q37_12"^^xsd:string)
+SubDataPropertyOf(:switchOffLightsInUnusedRooms :hasEverydayBehaviourAttribute)
+
+# Data Property: :thinksBetterToBeIndividualistic (:thinksBetterToBeIndividualistic)
+
+AnnotationAssertion(rdfs:comment :thinksBetterToBeIndividualistic "Q30_4"^^xsd:string)
+SubDataPropertyOf(:thinksBetterToBeIndividualistic :hasAttitudeAttribute)
+
+# Data Property: :thinksDeadlinesAreUseful (:thinksDeadlinesAreUseful)
+
+AnnotationAssertion(rdfs:comment :thinksDeadlinesAreUseful "Q30_2"^^xsd:string)
+SubDataPropertyOf(:thinksDeadlinesAreUseful :hasAttitudeAttribute)
+
+# Data Property: :thinksItIsOKToBeLateOccasionally (:thinksItIsOKToBeLateOccasionally)
+
+AnnotationAssertion(rdfs:comment :thinksItIsOKToBeLateOccasionally "Q30_1"^^xsd:string)
+SubDataPropertyOf(:thinksItIsOKToBeLateOccasionally :hasAttitudeAttribute)
+
+# Data Property: :useTumbleDryerToDryLaundry (:useTumbleDryerToDryLaundry)
+
+AnnotationAssertion(rdfs:comment :useTumbleDryerToDryLaundry "Q37_14"^^xsd:string)
+SubDataPropertyOf(:useTumbleDryerToDryLaundry :hasEverydayBehaviourAttribute)
+
+# Data Property: :whereWouldMostLikeToWorkInAberdeen (:whereWouldMostLikeToWorkInAberdeen)
+
+AnnotationAssertion(rdfs:comment :whereWouldMostLikeToWorkInAberdeen "Q29"^^xsd:string)
+SubDataPropertyOf(:whereWouldMostLikeToWorkInAberdeen :hasPersonAttribute)
+DataPropertyRange(:whereWouldMostLikeToWorkInAberdeen xsd:string)
+
+# Data Property: :whereWouldMostWantToLiveInAberdeen (:whereWouldMostWantToLiveInAberdeen)
+
+AnnotationAssertion(rdfs:comment :whereWouldMostWantToLiveInAberdeen "Q28"^^xsd:string)
+SubDataPropertyOf(:whereWouldMostWantToLiveInAberdeen :hasPersonAttribute)
+DataPropertyRange(:whereWouldMostWantToLiveInAberdeen xsd:string)
+
+# Data Property: :withHouseholdIncome (:withHouseholdIncome)
+
+AnnotationAssertion(rdfs:comment :withHouseholdIncome "Q26_5"^^xsd:string)
+SubDataPropertyOf(:withHouseholdIncome :hasSatisfactionAttribute)
+
+# Data Property: :withTheHouseYouLiveIn (:withTheHouseYouLiveIn)
+
+AnnotationAssertion(rdfs:comment :withTheHouseYouLiveIn "Q26_3"^^xsd:string)
+SubDataPropertyOf(:withTheHouseYouLiveIn :hasSatisfactionAttribute)
+
+# Data Property: :withYourNeighbourhood (:withYourNeighbourhood)
+
+AnnotationAssertion(rdfs:comment :withYourNeighbourhood "Q26_4"^^xsd:string)
+SubDataPropertyOf(:withYourNeighbourhood :hasSatisfactionAttribute)
+
+# Data Property: :worksNumberOfHoursAWeekValue (:worksNumberOfHoursAWeekValue)
+
+AnnotationAssertion(rdfs:comment :worksNumberOfHoursAWeekValue "Q14"^^xsd:string)
+SubDataPropertyOf(:worksNumberOfHoursAWeekValue :hasWorkAttribute)
+DataPropertyDomain(:worksNumberOfHoursAWeekValue ObjectUnionOf(DataHasValue(:hasCurrentEmploymentStatusValue "Self-Employed / freelance") DataHasValue(:hasCurrentEmploymentStatusValue "Training / Apprenticeship") DataHasValue(:hasCurrentEmploymentStatusValue "Working as an employee")))
+DataPropertyRange(:worksNumberOfHoursAWeekValue DataOneOf("15 or less" "16 - 20" "21 - 25" "26 - 30" "31 - 35" "36 - 40" "41 - 45" "45 or more"))
+
+# Data Property: :yourDistanceToWork (:yourDistanceToWork)
+
+AnnotationAssertion(rdfs:comment :yourDistanceToWork "Q26_7"^^xsd:string)
+SubDataPropertyOf(:yourDistanceToWork :hasSatisfactionAttribute)
+
+# Data Property: :yourNeighbours (:yourNeighbours)
+
+AnnotationAssertion(rdfs:comment :yourNeighbours "Q26_6"^^xsd:string)
+SubDataPropertyOf(:yourNeighbours :hasSatisfactionAttribute)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :BathroomOrToilet (:BathroomOrToilet)
+
+SubClassOf(:BathroomOrToilet :Room)
+
+# Class: :Bedroom (:Bedroom)
+
+SubClassOf(:Bedroom :Room)
+
+# Class: :Bungalow (:Bungalow)
+
+SubClassOf(:Bungalow :Household)
+SubClassOf(:Bungalow DataHasValue(:hasDwellingDescriptionValue "Bungalow"))
+
+# Class: :Car (:Car)
+
+SubClassOf(:Car :Transport)
+
+# Class: :CollegeQualification (:CollegeQualification)
+
+SubClassOf(:CollegeQualification :Qualification)
+DisjointClasses(:CollegeQualification :NoQualifications)
+DisjointClasses(:CollegeQualification :OtherQualification)
+
+# Class: :Detached (:Detached)
+
+AnnotationAssertion(rdfs:comment :Detached "Q3b"^^xsd:string)
+SubClassOf(:Detached :House)
+SubClassOf(:Detached DataHasValue(:hasHouseDescriptionValue "Detached"))
+
+# Class: :DoctoralDegree (:DoctoralDegree)
+
+SubClassOf(:DoctoralDegree :Qualification)
+DisjointClasses(:DoctoralDegree :NoQualifications)
+DisjointClasses(:DoctoralDegree :OtherQualification)
+
+# Class: :ElectricHeating (:ElectricHeating)
+
+SubClassOf(:ElectricHeating :HeatingSupply)
+
+# Class: :Female (:Female)
+
+SubClassOf(:Female :Person)
+DisjointClasses(:Female :Male)
+
+# Class: :FlatOrMaisonetteOrApartment (:FlatOrMaisonetteOrApartment)
+
+SubClassOf(:FlatOrMaisonetteOrApartment :Household)
+SubClassOf(:FlatOrMaisonetteOrApartment DataHasValue(:hasDwellingDescriptionValue "Flat / Maisonette / Apartment"))
+
+# Class: :Garage (:Garage)
+
+SubClassOf(:Garage :Room)
+
+# Class: :GasHeating (:GasHeating)
+
+SubClassOf(:GasHeating :HeatingSupply)
+
+# Class: :GroupOfPeopleConsistingOf6OrMorePeople (:GroupOfPeopleConsistingOf6OrMorePeople)
+
+SubClassOf(:GroupOfPeopleConsistingOf6OrMorePeople :GroupOfPeople)
+SubClassOf(:GroupOfPeopleConsistingOf6OrMorePeople ObjectMinCardinality(6 :hasGroupMember :Person))
+
+# Class: :GroupOfPeopleConsistingOfFivePeople (:GroupOfPeopleConsistingOfFivePeople)
+
+SubClassOf(:GroupOfPeopleConsistingOfFivePeople :GroupOfPeople)
+SubClassOf(:GroupOfPeopleConsistingOfFivePeople ObjectExactCardinality(5 :hasGroupMember :Person))
+
+# Class: :GroupOfPeopleConsistingOfFourPeople (:GroupOfPeopleConsistingOfFourPeople)
+
+SubClassOf(:GroupOfPeopleConsistingOfFourPeople :GroupOfPeople)
+SubClassOf(:GroupOfPeopleConsistingOfFourPeople ObjectExactCardinality(4 :hasGroupMember :Person))
+
+# Class: :GroupOfPeopleConsistingOfOnePerson (:GroupOfPeopleConsistingOfOnePerson)
+
+SubClassOf(:GroupOfPeopleConsistingOfOnePerson :GroupOfPeople)
+SubClassOf(:GroupOfPeopleConsistingOfOnePerson ObjectExactCardinality(1 :hasGroupMember :Person))
+
+# Class: :GroupOfPeopleConsistingOfThreePeople (:GroupOfPeopleConsistingOfThreePeople)
+
+SubClassOf(:GroupOfPeopleConsistingOfThreePeople :GroupOfPeople)
+SubClassOf(:GroupOfPeopleConsistingOfThreePeople ObjectExactCardinality(3 :hasGroupMember :Person))
+
+# Class: :GroupOfPeopleConsistingOfTwoPeople (:GroupOfPeopleConsistingOfTwoPeople)
+
+SubClassOf(:GroupOfPeopleConsistingOfTwoPeople :GroupOfPeople)
+SubClassOf(:GroupOfPeopleConsistingOfTwoPeople ObjectExactCardinality(2 :hasGroupMember :Person))
+
+# Class: :HeatingSupply (:HeatingSupply)
+
+SubClassOf(:HeatingSupply :Consumables)
+
+# Class: :HighSchoolQualification (:HighSchoolQualification)
+
+SubClassOf(:HighSchoolQualification :Qualification)
+DisjointClasses(:HighSchoolQualification :NoQualifications)
+DisjointClasses(:HighSchoolQualification :OtherQualification)
+
+# Class: :House (:House)
+
+SubClassOf(:House :Household)
+SubClassOf(:House DataHasValue(:hasDwellingDescriptionValue "House"))
+
+# Class: :HouseHoldRentedFromEmpoyerOfAResident (:HouseHoldRentedFromEmpoyerOfAResident)
+
+SubClassOf(:HouseHoldRentedFromEmpoyerOfAResident :HouseholdRented)
+DisjointClasses(:HouseHoldRentedFromEmpoyerOfAResident :HouseholdRentedFromOther)
+
+# Class: :HouseholdMortgaged (:HouseholdMortgaged)
+
+SubClassOf(:HouseholdMortgaged :HouseholdOwned)
+
+# Class: :HouseholdOccupiedRentFree (:HouseholdOccupiedRentFree)
+
+SubClassOf(:HouseholdOccupiedRentFree :HouseholdRented)
+DisjointClasses(:HouseholdOccupiedRentFree :HouseholdRentedFromOther)
+
+# Class: :HouseholdOwned (:HouseholdOwned)
+
+SubClassOf(:HouseholdOwned :Tenure)
+
+# Class: :HouseholdOwnedOutright (:HouseholdOwnedOutright)
+
+SubClassOf(:HouseholdOwnedOutright :HouseholdOwned)
+
+# Class: :HouseholdRented (:HouseholdRented)
+
+SubClassOf(:HouseholdRented :Tenure)
+
+# Class: :HouseholdRentedFromCouncilOrLocalAuthority (:HouseholdRentedFromCouncilOrLocalAuthority)
+
+SubClassOf(:HouseholdRentedFromCouncilOrLocalAuthority :HouseholdRented)
+DisjointClasses(:HouseholdRentedFromCouncilOrLocalAuthority :HouseholdRentedFromOther)
+
+# Class: :HouseholdRentedFromFriendOrRelativeOfAResident (:HouseholdRentedFromFriendOrRelativeOfAResident)
+
+SubClassOf(:HouseholdRentedFromFriendOrRelativeOfAResident :HouseholdRented)
+DisjointClasses(:HouseholdRentedFromFriendOrRelativeOfAResident :HouseholdRentedFromOther)
+
+# Class: :HouseholdRentedFromHousingAssociation (:HouseholdRentedFromHousingAssociation)
+
+SubClassOf(:HouseholdRentedFromHousingAssociation :HouseholdRented)
+DisjointClasses(:HouseholdRentedFromHousingAssociation :HouseholdRentedFromOther)
+
+# Class: :HouseholdRentedFromOther (:HouseholdRentedFromOther)
+
+SubClassOf(:HouseholdRentedFromOther :HouseholdRented)
+DisjointClasses(:HouseholdRentedFromOther :HouseholdRentedFromPrivateLandlord)
+DisjointClasses(:HouseholdRentedFromOther :HouseholdSharedOwnership)
+
+# Class: :HouseholdRentedFromPrivateLandlord (:HouseholdRentedFromPrivateLandlord)
+
+SubClassOf(:HouseholdRentedFromPrivateLandlord :HouseholdRented)
+
+# Class: :HouseholdSharedOwnership (:HouseholdSharedOwnership)
+
+SubClassOf(:HouseholdSharedOwnership :HouseholdOwned)
+SubClassOf(:HouseholdSharedOwnership :HouseholdRented)
+
+# Class: :Kitchen (:Kitchen)
+
+SubClassOf(:Kitchen :Room)
+
+# Class: :LivingRoom (:LivingRoom)
+
+SubClassOf(:LivingRoom :Room)
+
+# Class: :Male (:Male)
+
+SubClassOf(:Male :Person)
+
+# Class: :NoCentralHeating (:NoCentralHeating)
+
+SubClassOf(:NoCentralHeating :HeatingSupply)
+
+# Class: :NoQualifications (:NoQualifications)
+
+AnnotationAssertion(rdfs:comment :NoQualifications "Q10_3"^^xsd:string)
+SubClassOf(:NoQualifications :Qualification)
+DisjointClasses(:NoQualifications :OtherQualification)
+DisjointClasses(:NoQualifications :PostgraduateDiplomaOrDegree)
+DisjointClasses(:NoQualifications :UniversityDegree)
+DisjointClasses(:NoQualifications :VocationalOrProfessionalQualification)
+
+# Class: :OilFiredHeating (:OilFiredHeating)
+
+SubClassOf(:OilFiredHeating :HeatingSupply)
+
+# Class: :OtherQualification (:OtherQualification)
+
+SubClassOf(:OtherQualification :Qualification)
+DisjointClasses(:OtherQualification :PostgraduateDiplomaOrDegree)
+DisjointClasses(:OtherQualification :UniversityDegree)
+DisjointClasses(:OtherQualification :VocationalOrProfessionalQualification)
+
+# Class: :OtherTypeOfFuelForHeating (:OtherTypeOfFuelForHeating)
+
+SubClassOf(:OtherTypeOfFuelForHeating :HeatingSupply)
+
+# Class: :PostgraduateDiplomaOrDegree (:PostgraduateDiplomaOrDegree)
+
+SubClassOf(:PostgraduateDiplomaOrDegree :Qualification)
+
+# Class: :Residents (:Residents)
+
+SubClassOf(:Residents :GroupOfPeople)
+DisjointUnion(:Residents :ResidentsConsistingOf6OrMorePeople :ResidentsConsistingOfFivePeople :ResidentsConsistingOfFourPeople :ResidentsConsistingOfOnePerson :ResidentsConsistingOfThreePeople :ResidentsConsistingOfTwoPeople)
+
+# Class: :ResidentsConsistingOf6OrMorePeople (:ResidentsConsistingOf6OrMorePeople)
+
+SubClassOf(:ResidentsConsistingOf6OrMorePeople :GroupOfPeopleConsistingOf6OrMorePeople)
+SubClassOf(:ResidentsConsistingOf6OrMorePeople ObjectSomeValuesFrom(:isResidentGroupOfPeopleForHousehold :Household))
+
+# Class: :ResidentsConsistingOfFivePeople (:ResidentsConsistingOfFivePeople)
+
+SubClassOf(:ResidentsConsistingOfFivePeople :GroupOfPeopleConsistingOfFivePeople)
+SubClassOf(:ResidentsConsistingOfFivePeople ObjectSomeValuesFrom(:isResidentGroupOfPeopleForHousehold :Household))
+
+# Class: :ResidentsConsistingOfFourPeople (:ResidentsConsistingOfFourPeople)
+
+SubClassOf(:ResidentsConsistingOfFourPeople :GroupOfPeopleConsistingOfFourPeople)
+SubClassOf(:ResidentsConsistingOfFourPeople ObjectSomeValuesFrom(:isResidentGroupOfPeopleForHousehold :Household))
+
+# Class: :ResidentsConsistingOfOnePerson (:ResidentsConsistingOfOnePerson)
+
+SubClassOf(:ResidentsConsistingOfOnePerson :GroupOfPeopleConsistingOfOnePerson)
+SubClassOf(:ResidentsConsistingOfOnePerson ObjectSomeValuesFrom(:isResidentGroupOfPeopleForHousehold :Household))
+
+# Class: :ResidentsConsistingOfThreePeople (:ResidentsConsistingOfThreePeople)
+
+SubClassOf(:ResidentsConsistingOfThreePeople :GroupOfPeopleConsistingOfThreePeople)
+SubClassOf(:ResidentsConsistingOfThreePeople ObjectSomeValuesFrom(:isResidentGroupOfPeopleForHousehold :Household))
+
+# Class: :ResidentsConsistingOfTwoPeople (:ResidentsConsistingOfTwoPeople)
+
+SubClassOf(:ResidentsConsistingOfTwoPeople :GroupOfPeopleConsistingOfTwoPeople)
+SubClassOf(:ResidentsConsistingOfTwoPeople ObjectSomeValuesFrom(:isResidentGroupOfPeopleForHousehold :Household))
+
+# Class: :SemiDetached (:SemiDetached)
+
+AnnotationAssertion(rdfs:comment :SemiDetached "Q3b"^^xsd:string)
+SubClassOf(:SemiDetached :House)
+SubClassOf(:SemiDetached DataHasValue(:hasHouseDescriptionValue "Semi-detached"))
+
+# Class: :SolidFuelHeating (:SolidFuelHeating)
+
+SubClassOf(:SolidFuelHeating :HeatingSupply)
+
+# Class: :StudyOrOffice (:StudyOrOffice)
+
+SubClassOf(:StudyOrOffice :Room)
+
+# Class: :Tenure (:Tenure)
+
+SubClassOf(:Tenure :Household)
+
+# Class: :Terraced (:Terraced)
+
+AnnotationAssertion(rdfs:comment :Terraced "Q3b"^^xsd:string)
+SubClassOf(:Terraced :House)
+SubClassOf(:Terraced DataHasValue(:hasHouseDescriptionValue "Terraced"))
+
+# Class: :UniversityDegree (:UniversityDegree)
+
+SubClassOf(:UniversityDegree :Qualification)
+
+# Class: :UtilityRoom (:UtilityRoom)
+
+SubClassOf(:UtilityRoom :Room)
+
+# Class: :Van (:Van)
+
+SubClassOf(:Van :Transport)
+
+# Class: :VocationalOrProfessionalQualification (:VocationalOrProfessionalQualification)
+
+SubClassOf(:VocationalOrProfessionalQualification :Qualification)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+
+DisjointClasses(:ElectricHeating :GasHeating :NoCentralHeating :OilFiredHeating :OtherTypeOfFuelForHeating :SolidFuelHeating)
+)

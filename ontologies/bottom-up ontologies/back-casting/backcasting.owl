@@ -1,0 +1,304 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/backcasting>
+Annotation(rdfs:comment "2016-09-01"^^xsd:date)
+Annotation(rdfs:comment "This a TBOX ontology created for the Netherlands backcasting sessions."@en)
+Annotation(rdfs:isDefinedBy :author:DougSalt)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:Accountant))
+Declaration(Class(:Accountants))
+Declaration(Class(:Activity))
+Declaration(Class(:ActivityCultureOrBehaviour))
+Declaration(Class(:ActivityInstitutionalStructures))
+Declaration(Class(:ActivityTechnologyAndKnowledge))
+Declaration(Class(:Area))
+Declaration(Class(:Assumption))
+Declaration(Class(:Awareness))
+Declaration(Class(:Bank))
+Declaration(Class(:Business))
+Declaration(Class(:Change))
+Declaration(Class(:ChangeOfCultureAndBehaviour))
+Declaration(Class(:ChangeOfInstitutionalStructures))
+Declaration(Class(:ChangeOfTechnologyAndKnowledge))
+Declaration(Class(:Citizen))
+Declaration(Class(:Citizens))
+Declaration(Class(:Consumption))
+Declaration(Class(:Culture))
+Declaration(Class(:Economic))
+Declaration(Class(:EducationSystem))
+Declaration(Class(:EducationalInstitution))
+Declaration(Class(:Emotion))
+Declaration(Class(:Energy))
+Declaration(Class(:Facilitator))
+Declaration(Class(:FutureImage))
+Declaration(Class(:Government))
+Declaration(Class(:Innovation))
+Declaration(Class(:Interested))
+Declaration(Class(:Intuition))
+Declaration(Class(:KnowledgeInstitution))
+Declaration(Class(:Lifestyle))
+Declaration(Class(:LifestyleActivity))
+Declaration(Class(:LocalFirm))
+Declaration(Class(:LocalGovernment))
+Declaration(Class(:Negative))
+Declaration(Class(:Organization))
+Declaration(Class(:OrganizationAndDivisionOfRoles))
+Declaration(Class(:Participant))
+Declaration(Class(:Person))
+Declaration(Class(:Postive))
+Declaration(Class(:Question))
+Declaration(Class(:Resource))
+Declaration(Class(:Rural))
+Declaration(Class(:Stakeholder))
+Declaration(Class(:StatisticalAgency))
+Declaration(Class(:SustainableLifestyle))
+Declaration(Class(:Technological))
+Declaration(Class(:UnsustainableLifestyle))
+Declaration(Class(:Urban))
+Declaration(Class(:ValueSystem))
+Declaration(Class(:Vision))
+Declaration(Class(:Welfare))
+Declaration(Class(:Workshop))
+Declaration(ObjectProperty(:causedBy))
+Declaration(ObjectProperty(:hasAssumption))
+Declaration(ObjectProperty(:hasLifestyleActivity))
+Declaration(ObjectProperty(:hasOrganizationAndDivsionOfRoles))
+Declaration(ObjectProperty(:hasPart))
+Declaration(ObjectProperty(:hasPersonnel))
+Declaration(ObjectProperty(:interactsWith))
+Declaration(ObjectProperty(:interrogates))
+Declaration(ObjectProperty(:isAssociatedWithEmotion))
+Declaration(ObjectProperty(:occursAsAResultOf))
+Declaration(ObjectProperty(:partOf))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :causedBy (caused by)
+
+AnnotationAssertion(rdfs:label :causedBy "caused by"^^xsd:string)
+ObjectPropertyDomain(:causedBy :Change)
+
+# Object Property: :hasAssumption (has assumption)
+
+AnnotationAssertion(rdfs:label :hasAssumption "has assumption"^^xsd:string)
+ObjectPropertyRange(:hasAssumption :Assumption)
+
+# Object Property: :hasLifestyleActivity (has lifestyle activity)
+
+AnnotationAssertion(rdfs:label :hasLifestyleActivity "has lifestyle activity"^^xsd:string)
+ObjectPropertyDomain(:hasLifestyleActivity :Assumption)
+ObjectPropertyRange(:hasLifestyleActivity :LifestyleActivity)
+
+# Object Property: :hasOrganizationAndDivsionOfRoles (has organization and division of roles)
+
+AnnotationAssertion(rdfs:label :hasOrganizationAndDivsionOfRoles "has organization and division of roles"^^xsd:string)
+
+# Object Property: :hasPart (has part)
+
+AnnotationAssertion(rdfs:label :hasPart "has part"@en)
+InverseObjectProperties(:hasPart :partOf)
+
+# Object Property: :hasPersonnel (has personnel)
+
+AnnotationAssertion(rdfs:label :hasPersonnel "has personnel"^^xsd:string)
+ObjectPropertyDomain(:hasPersonnel :Organization)
+ObjectPropertyRange(:hasPersonnel :Person)
+
+# Object Property: :interactsWith (interacts with)
+
+AnnotationAssertion(rdfs:comment :interactsWith "This should be transitive as well. Unfortunately the Pellet reason cannot cope with transitivity."@en)
+AnnotationAssertion(rdfs:label :interactsWith "interacts with"^^xsd:string)
+SymmetricObjectProperty(:interactsWith)
+
+# Object Property: :interrogates (:interrogates)
+
+ObjectPropertyDomain(:interrogates :Question)
+
+# Object Property: :isAssociatedWithEmotion (is associated with the emotion)
+
+AnnotationAssertion(rdfs:label :isAssociatedWithEmotion "is associated with the emotion"^^xsd:string)
+ObjectPropertyRange(:isAssociatedWithEmotion :Emotion)
+
+# Object Property: :occursAsAResultOf (occurs as a result of)
+
+AnnotationAssertion(rdfs:label :occursAsAResultOf "occurs as a result of"^^xsd:string)
+ObjectPropertyDomain(:occursAsAResultOf :Change)
+ObjectPropertyRange(:occursAsAResultOf :Activity)
+
+# Object Property: :partOf (part of)
+
+AnnotationAssertion(rdfs:comment :partOf "This should be transitive and reflexive as well. Unfortunately the Pellet reason cannot cope with transitivity."@en)
+AnnotationAssertion(rdfs:label :partOf "part of"@en)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Accountant (:Accountant)
+
+SubClassOf(:Accountant :Person)
+
+# Class: :ActivityCultureOrBehaviour (Cultural or behavioural actitivity)
+
+AnnotationAssertion(rdfs:label :ActivityCultureOrBehaviour "Cultural or behavioural actitivity"^^xsd:string)
+SubClassOf(:ActivityCultureOrBehaviour :Activity)
+
+# Class: :ActivityInstitutionalStructures (Institutional structure activity)
+
+AnnotationAssertion(rdfs:label :ActivityInstitutionalStructures "Institutional structure activity"^^xsd:string)
+SubClassOf(:ActivityInstitutionalStructures :Activity)
+
+# Class: :ActivityTechnologyAndKnowledge (Technology and knowledge activity)
+
+AnnotationAssertion(rdfs:label :ActivityTechnologyAndKnowledge "Technology and knowledge activity"^^xsd:string)
+SubClassOf(:ActivityTechnologyAndKnowledge :Activity)
+
+# Class: :Bank (:Bank)
+
+SubClassOf(:Bank :Organization)
+
+# Class: :Business (:Business)
+
+SubClassOf(:Business :Organization)
+
+# Class: :Change (:Change)
+
+SubClassOf(:Change ObjectUnionOf(:Citizen :Organization ObjectSomeValuesFrom(:causedBy :Accountant)))
+SubClassOf(:Change ObjectSomeValuesFrom(:occursAsAResultOf :Activity))
+
+# Class: :ChangeOfCultureAndBehaviour (Change of culture and behaviour)
+
+AnnotationAssertion(rdfs:label :ChangeOfCultureAndBehaviour "Change of culture and behaviour"^^xsd:string)
+SubClassOf(:ChangeOfCultureAndBehaviour :Change)
+
+# Class: :ChangeOfInstitutionalStructures (Change of institutional structures)
+
+AnnotationAssertion(rdfs:label :ChangeOfInstitutionalStructures "Change of institutional structures"^^xsd:string)
+SubClassOf(:ChangeOfInstitutionalStructures :Change)
+
+# Class: :ChangeOfTechnologyAndKnowledge (Change of technology and knowledge)
+
+AnnotationAssertion(rdfs:label :ChangeOfTechnologyAndKnowledge "Change of technology and knowledge"^^xsd:string)
+SubClassOf(:ChangeOfTechnologyAndKnowledge :Change)
+
+# Class: :Citizen (:Citizen)
+
+SubClassOf(:Citizen :Person)
+
+# Class: :Economic (:Economic)
+
+SubClassOf(:Economic :Innovation)
+
+# Class: :EducationalInstitution (:EducationalInstitution)
+
+SubClassOf(:EducationalInstitution :Organization)
+
+# Class: :Energy (:Energy)
+
+SubClassOf(:Energy :Consumption)
+
+# Class: :Facilitator (:Facilitator)
+
+SubClassOf(:Facilitator :Person)
+
+# Class: :FutureImage (:FutureImage)
+
+EquivalentClasses(:FutureImage :Vision)
+
+# Class: :Government (:Government)
+
+SubClassOf(:Government :Organization)
+
+# Class: :Interested (:Interested)
+
+SubClassOf(:Interested :Emotion)
+
+# Class: :Intuition (:Intuition)
+
+SubClassOf(:Intuition :Emotion)
+
+# Class: :KnowledgeInstitution (:KnowledgeInstitution)
+
+SubClassOf(:KnowledgeInstitution :Organization)
+
+# Class: :LocalFirm (:LocalFirm)
+
+SubClassOf(:LocalFirm :Business)
+
+# Class: :LocalGovernment (:LocalGovernment)
+
+SubClassOf(:LocalGovernment :Organization)
+
+# Class: :Negative (:Negative)
+
+SubClassOf(:Negative :Emotion)
+
+# Class: :OrganizationAndDivisionOfRoles (Organization and division of roles)
+
+AnnotationAssertion(rdfs:label :OrganizationAndDivisionOfRoles "Organization and division of roles"^^xsd:string)
+
+# Class: :Participant (:Participant)
+
+SubClassOf(:Participant :Person)
+
+# Class: :Postive (:Postive)
+
+SubClassOf(:Postive :Emotion)
+
+# Class: :Rural (:Rural)
+
+SubClassOf(:Rural :Area)
+DisjointClasses(:Rural :Urban)
+
+# Class: :Stakeholder (:Stakeholder)
+
+SubClassOf(:Stakeholder :Person)
+
+# Class: :StatisticalAgency (:StatisticalAgency)
+
+SubClassOf(:StatisticalAgency :Organization)
+
+# Class: :SustainableLifestyle (:SustainableLifestyle)
+
+SubClassOf(:SustainableLifestyle :Lifestyle)
+DisjointClasses(:SustainableLifestyle :UnsustainableLifestyle)
+
+# Class: :Technological (:Technological)
+
+SubClassOf(:Technological :Innovation)
+
+# Class: :UnsustainableLifestyle (:UnsustainableLifestyle)
+
+SubClassOf(:UnsustainableLifestyle :Lifestyle)
+
+# Class: :Urban (:Urban)
+
+SubClassOf(:Urban :Area)
+
+# Class: :ValueSystem (:ValueSystem)
+
+SubClassOf(:ValueSystem :Innovation)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+
+)

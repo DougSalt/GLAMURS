@@ -1,0 +1,392 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/tipac#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(TiPaC:=<http://www.glamurs.eu/ontologies/TiPaC.owl#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/tipac>
+
+Declaration(Class(:Airport_labels))
+Declaration(Class(:Bicycles))
+Declaration(Class(:Cars))
+Declaration(Class(:Firms))
+Declaration(Class(:Junction_links))
+Declaration(Class(:Junctions))
+Declaration(Class(:Patch))
+Declaration(Class(:Persons))
+Declaration(Class(:Station_labels))
+Declaration(ObjectProperty(:_junction_links))
+Declaration(ObjectProperty(:colleagues))
+Declaration(ObjectProperty(:junction_links))
+Declaration(ObjectProperty(:junction_links_))
+Declaration(ObjectProperty(:location))
+Declaration(DataProperty(:a_cycle))
+Declaration(DataProperty(:a_road_data))
+Declaration(DataProperty(:a_walk))
+Declaration(DataProperty(:acceleration))
+Declaration(DataProperty(:actual_y_meter))
+Declaration(DataProperty(:address_data))
+Declaration(DataProperty(:ampm))
+Declaration(DataProperty(:arrive_at_work_minute))
+Declaration(DataProperty(:average_commute_time))
+Declaration(DataProperty(:awpr_data))
+Declaration(DataProperty(:awpr_route_))
+Declaration(DataProperty(:b_cycle))
+Declaration(DataProperty(:b_road_data))
+Declaration(DataProperty(:b_walk))
+Declaration(DataProperty(:bicycle_size))
+Declaration(DataProperty(:braking_distance))
+Declaration(DataProperty(:car_category))
+Declaration(DataProperty(:car_size))
+Declaration(DataProperty(:city_data))
+Declaration(DataProperty(:co2))
+Declaration(DataProperty(:co2_file))
+Declaration(DataProperty(:coast_line_data))
+Declaration(DataProperty(:commute_file_am))
+Declaration(DataProperty(:commute_file_pm))
+Declaration(DataProperty(:commute_time_to_home))
+Declaration(DataProperty(:commute_time_to_home_list))
+Declaration(DataProperty(:commute_time_to_work))
+Declaration(DataProperty(:commute_time_to_work_list))
+Declaration(DataProperty(:current_patch))
+Declaration(DataProperty(:current_ticks))
+Declaration(DataProperty(:cycle_lane_))
+Declaration(DataProperty(:day))
+Declaration(DataProperty(:deceleration))
+Declaration(DataProperty(:delta_speed))
+Declaration(DataProperty(:eight_fold))
+Declaration(DataProperty(:eight_fold_data))
+Declaration(DataProperty(:employer))
+Declaration(DataProperty(:epsilon))
+Declaration(DataProperty(:firm_size))
+Declaration(DataProperty(:flexi_time_range))
+Declaration(DataProperty(:flexi_time_start_at))
+Declaration(DataProperty(:has_waited_for_bicycle_))
+Declaration(DataProperty(:hour))
+Declaration(DataProperty(:hours_per_day))
+Declaration(DataProperty(:infinity))
+Declaration(DataProperty(:initial_pcolor))
+Declaration(DataProperty(:is_coast_patch_))
+Declaration(DataProperty(:is_junction_patch_))
+Declaration(DataProperty(:is_redundant_road_patch_))
+Declaration(DataProperty(:is_road_patch_))
+Declaration(DataProperty(:is_sea_patch_))
+Declaration(DataProperty(:is_trunk_road_patch_))
+Declaration(DataProperty(:is_urban_))
+Declaration(DataProperty(:is_walking_to_home_))
+Declaration(DataProperty(:is_walking_to_work_))
+Declaration(DataProperty(:latis_zone_data))
+Declaration(DataProperty(:leave_home_minute))
+Declaration(DataProperty(:leave_work_minute))
+Declaration(DataProperty(:live_junction_patches))
+Declaration(DataProperty(:live_patch))
+Declaration(DataProperty(:live_road_patch))
+Declaration(DataProperty(:make_movie_))
+Declaration(DataProperty(:map_to_home))
+Declaration(DataProperty(:map_to_work))
+Declaration(DataProperty(:max_speed))
+Declaration(DataProperty(:meters_per_mile))
+Declaration(DataProperty(:meters_per_patch))
+Declaration(DataProperty(:minor_road_data))
+Declaration(DataProperty(:minute))
+Declaration(DataProperty(:minutes_per_hour))
+Declaration(DataProperty(:movie_path))
+Declaration(DataProperty(:n_days))
+Declaration(DataProperty(:name))
+Declaration(DataProperty(:num_of_persons))
+Declaration(DataProperty(:oversample_urban))
+Declaration(DataProperty(:owner))
+Declaration(DataProperty(:p_update_route))
+Declaration(DataProperty(:path_total))
+Declaration(DataProperty(:person_size))
+Declaration(DataProperty(:postcode))
+Declaration(DataProperty(:pressure_threshold))
+Declaration(DataProperty(:road_patches))
+Declaration(DataProperty(:road_width))
+Declaration(DataProperty(:route_table))
+Declaration(DataProperty(:route_table_weight))
+Declaration(DataProperty(:route_to_this_junction))
+Declaration(DataProperty(:seconds_per_minute))
+Declaration(DataProperty(:speed))
+Declaration(DataProperty(:speed_cycle))
+Declaration(DataProperty(:speed_limit))
+Declaration(DataProperty(:speed_limit_a))
+Declaration(DataProperty(:speed_limit_a_trunk))
+Declaration(DataProperty(:speed_limit_b))
+Declaration(DataProperty(:speed_limit_minor))
+Declaration(DataProperty(:speed_limit_urban))
+Declaration(DataProperty(:speed_limit_urban_trunk))
+Declaration(DataProperty(:speed_min))
+Declaration(DataProperty(:speed_off_road))
+Declaration(DataProperty(:speed_walk))
+Declaration(DataProperty(:station_data))
+Declaration(DataProperty(:through_junction_))
+Declaration(DataProperty(:ticks_per_hour))
+Declaration(DataProperty(:time))
+Declaration(DataProperty(:time_between_patches_table))
+Declaration(DataProperty(:time_offroad_home))
+Declaration(DataProperty(:time_offroad_work))
+Declaration(DataProperty(:to_cycle_))
+Declaration(DataProperty(:to_walk_))
+Declaration(DataProperty(:transport_mode_file))
+Declaration(DataProperty(:update_route_))
+Declaration(DataProperty(:urban))
+Declaration(DataProperty(:urban_data))
+Declaration(DataProperty(:validation_file))
+Declaration(DataProperty(:vehicle))
+Declaration(DataProperty(:visited_junction_))
+Declaration(DataProperty(:weight_time))
+Declaration(DataProperty(:work_junction_patches))
+Declaration(DataProperty(:work_road_patch))
+Declaration(DataProperty(:working_day_hour))
+Declaration(DataProperty(:x))
+Declaration(DataProperty(:y))
+Declaration(DataProperty(:zero_to_sixty_seconds))
+Declaration(DataProperty(:zone))
+Declaration(DataProperty(:zone_list))
+############################
+#   Object Properties
+############################
+
+# Object Property: :_junction_links (:_junction_links)
+
+FunctionalObjectProperty(:_junction_links)
+ObjectPropertyDomain(:_junction_links :Junction_links)
+
+# Object Property: :colleagues (:colleagues)
+
+ObjectPropertyDomain(:colleagues :Persons)
+ObjectPropertyRange(:colleagues :Persons)
+
+# Object Property: :junction_links_ (:junction_links_)
+
+InverseFunctionalObjectProperty(:junction_links_)
+ObjectPropertyRange(:junction_links_ :Junction_links)
+
+# Object Property: :location (:location)
+
+FunctionalObjectProperty(:location)
+ObjectPropertyRange(:location :Patch)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :arrive_at_work_minute (:arrive_at_work_minute)
+
+DataPropertyDomain(:arrive_at_work_minute :Persons)
+
+# Data Property: :commute_time_to_home (:commute_time_to_home)
+
+DataPropertyDomain(:commute_time_to_home :Persons)
+
+# Data Property: :commute_time_to_home_list (:commute_time_to_home_list)
+
+DataPropertyDomain(:commute_time_to_home_list :Persons)
+
+# Data Property: :commute_time_to_work (:commute_time_to_work)
+
+DataPropertyDomain(:commute_time_to_work :Persons)
+
+# Data Property: :commute_time_to_work_list (:commute_time_to_work_list)
+
+DataPropertyDomain(:commute_time_to_work_list :Persons)
+
+# Data Property: :current_patch (:current_patch)
+
+DataPropertyDomain(:current_patch :Cars)
+
+# Data Property: :current_ticks (:current_ticks)
+
+DataPropertyDomain(:current_ticks :Cars)
+
+# Data Property: :delta_speed (:delta_speed)
+
+DataPropertyDomain(:delta_speed :Cars)
+
+# Data Property: :eight_fold (:eight_fold)
+
+DataPropertyDomain(:eight_fold :Patch)
+
+# Data Property: :employer (:employer)
+
+DataPropertyDomain(:employer :Persons)
+
+# Data Property: :has_waited_for_bicycle_ (:has_waited_for_bicycle_)
+
+DataPropertyDomain(:has_waited_for_bicycle_ :Cars)
+
+# Data Property: :initial_pcolor (:initial_pcolor)
+
+DataPropertyDomain(:initial_pcolor :Patch)
+
+# Data Property: :is_coast_patch_ (:is_coast_patch_)
+
+DataPropertyDomain(:is_coast_patch_ :Patch)
+
+# Data Property: :is_junction_patch_ (:is_junction_patch_)
+
+DataPropertyDomain(:is_junction_patch_ :Patch)
+
+# Data Property: :is_redundant_road_patch_ (:is_redundant_road_patch_)
+
+DataPropertyDomain(:is_redundant_road_patch_ :Patch)
+
+# Data Property: :is_road_patch_ (:is_road_patch_)
+
+DataPropertyDomain(:is_road_patch_ :Patch)
+
+# Data Property: :is_sea_patch_ (:is_sea_patch_)
+
+DataPropertyDomain(:is_sea_patch_ :Patch)
+
+# Data Property: :is_trunk_road_patch_ (:is_trunk_road_patch_)
+
+DataPropertyDomain(:is_trunk_road_patch_ :Patch)
+
+# Data Property: :is_urban_ (:is_urban_)
+
+DataPropertyDomain(:is_urban_ :Patch)
+
+# Data Property: :is_walking_to_home_ (:is_walking_to_home_)
+
+DataPropertyDomain(:is_walking_to_home_ :Persons)
+
+# Data Property: :is_walking_to_work_ (:is_walking_to_work_)
+
+DataPropertyDomain(:is_walking_to_work_ :Persons)
+
+# Data Property: :leave_home_minute (:leave_home_minute)
+
+DataPropertyDomain(:leave_home_minute :Persons)
+
+# Data Property: :leave_work_minute (:leave_work_minute)
+
+DataPropertyDomain(:leave_work_minute :Persons)
+
+# Data Property: :live_junction_patches (:live_junction_patches)
+
+DataPropertyDomain(:live_junction_patches :Persons)
+
+# Data Property: :live_patch (:live_patch)
+
+DataPropertyDomain(:live_patch :Persons)
+
+# Data Property: :live_road_patch (:live_road_patch)
+
+DataPropertyDomain(:live_road_patch :Persons)
+
+# Data Property: :map_to_home (:map_to_home)
+
+DataPropertyDomain(:map_to_home :Persons)
+
+# Data Property: :map_to_work (:map_to_work)
+
+DataPropertyDomain(:map_to_work :Persons)
+
+# Data Property: :name (:name)
+
+DataPropertyDomain(:name :Firms)
+
+# Data Property: :owner (:owner)
+
+DataPropertyDomain(:owner :Bicycles)
+DataPropertyDomain(:owner :Cars)
+
+# Data Property: :path_total (:path_total)
+
+DataPropertyDomain(:path_total :Junctions)
+
+# Data Property: :postcode (:postcode)
+
+DataPropertyDomain(:postcode :Firms)
+
+# Data Property: :road_patches (:road_patches)
+
+DataPropertyDomain(:road_patches :Junction_links)
+
+# Data Property: :route_table (:route_table)
+
+DataPropertyDomain(:route_table :Persons)
+
+# Data Property: :route_table_weight (:route_table_weight)
+
+DataPropertyDomain(:route_table_weight :Persons)
+
+# Data Property: :route_to_this_junction (:route_to_this_junction)
+
+DataPropertyDomain(:route_to_this_junction :Junctions)
+
+# Data Property: :speed (:speed)
+
+DataPropertyDomain(:speed :Cars)
+
+# Data Property: :speed_limit (:speed_limit)
+
+DataPropertyDomain(:speed_limit :Patch)
+
+# Data Property: :through_junction_ (:through_junction_)
+
+DataPropertyDomain(:through_junction_ :Persons)
+
+# Data Property: :time_between_patches_table (:time_between_patches_table)
+
+DataPropertyDomain(:time_between_patches_table :Persons)
+
+# Data Property: :time_offroad_home (:time_offroad_home)
+
+DataPropertyDomain(:time_offroad_home :Persons)
+
+# Data Property: :time_offroad_work (:time_offroad_work)
+
+DataPropertyDomain(:time_offroad_work :Persons)
+
+# Data Property: :to_cycle_ (:to_cycle_)
+
+DataPropertyDomain(:to_cycle_ :Persons)
+
+# Data Property: :to_walk_ (:to_walk_)
+
+DataPropertyDomain(:to_walk_ :Persons)
+
+# Data Property: :vehicle (:vehicle)
+
+DataPropertyDomain(:vehicle :Persons)
+
+# Data Property: :visited_junction_ (:visited_junction_)
+
+DataPropertyDomain(:visited_junction_ :Junctions)
+
+# Data Property: :weight_time (:weight_time)
+
+DataPropertyDomain(:weight_time :Persons)
+
+# Data Property: :work_junction_patches (:work_junction_patches)
+
+DataPropertyDomain(:work_junction_patches :Persons)
+
+# Data Property: :work_road_patch (:work_road_patch)
+
+DataPropertyDomain(:work_road_patch :Persons)
+
+# Data Property: :x (:x)
+
+DataPropertyRange(:x xsd:double)
+
+# Data Property: :y (:y)
+
+DataPropertyRange(:y xsd:double)
+
+# Data Property: :zone (:zone)
+
+DataPropertyDomain(:zone :Patch)
+
+
+
+
+SubObjectPropertyOf(ObjectPropertyChain(:junction_links_ :_junction_links) :junction_links)
+)

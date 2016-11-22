@@ -15,7 +15,6 @@
         <metadata:creator rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#author:DougSalt"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-26</rdfs:comment>
-        <metadata:ontologyShortName rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#star"/>
         <rdfs:comment xml:lang="en">This is the integration ontology which will map the star pattern for the overall ontology. This enforces (if you don&apos;t select the underlying basic vocabulary) the direction of any use of the integration vocabulary (if the reasoner is selected that validates domains and codomains).</rdfs:comment>
     </owl:Ontology>
     
@@ -218,6 +217,12 @@
     
 
 
+    <!-- http://www.glamurs.eu/ontologies/2016/KB/metadata#OntologyShortName -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/KB/metadata#OntologyShortName"/>
+    
+
+
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntology -->
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntology">
@@ -230,6 +235,14 @@
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpOntologyClass">
         <rdfs:label xml:lang="en">Bottom-up ontology class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpTerm -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#BottomUpTerm">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#Term"/>
     </owl:Class>
     
 
@@ -254,6 +267,14 @@
 
     <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownOntologyClass">
         <rdfs:label xml:lang="en">Top-down ontology class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownTerm -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#TopDownTerm">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/KB/metadata#Term"/>
     </owl:Class>
     
 

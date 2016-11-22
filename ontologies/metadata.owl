@@ -8,28 +8,22 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://www.glamurs.eu/ontologies/2016/KB/metadata>
 Annotation(:creator :author:DougSalt)
-Annotation(:ontologyShortName :metadata)
 Annotation(rdfs:comment "This is an ontology which will facilitate the conversion of classes into terms and give them an origin and type. It is envisaged that some kind of program will run on an ontology, convert the classes, data values and object values to individuals and categorise them, based on their origin and enity type and also point back to the class from which they were defined. This last is the annotation: \"describes\" and the ontology in which they were first defined is the annotation \"origin\"."@en)
 
-Declaration(Class(:BottomUpTerm))
 Declaration(Class(:MetaDatum))
 Declaration(Class(:OntologicalClass))
-Declaration(Class(:OntologicalDataValue))
+Declaration(Class(:OntologicalDataProperty))
 Declaration(Class(:OntologicalEntity))
-Declaration(Class(:OntologicalPropertyValue))
+Declaration(Class(:OntologicalObjectProperty))
 Declaration(Class(:OntologyCreator))
-Declaration(Class(:OntologyShortName))
 Declaration(Class(:Term))
-Declaration(Class(:TopDownTerm))
 Declaration(ObjectProperty(:isOntologicalEntity))
-Declaration(NamedIndividual(:metadata))
 Declaration(NamedIndividual(:author:DougSalt))
 Declaration(NamedIndividual(:ontology:class))
-Declaration(NamedIndividual(:ontology:dataValue))
-Declaration(NamedIndividual(:ontology:propertyValue))
+Declaration(NamedIndividual(:ontology:dataproperty))
+Declaration(NamedIndividual(:ontology:objectproperty))
 Declaration(AnnotationProperty(:creator))
 Declaration(AnnotationProperty(:describes))
-Declaration(AnnotationProperty(:ontologyShortName))
 Declaration(AnnotationProperty(:origin))
 ############################
 #   Annotation Properties
@@ -38,10 +32,6 @@ Declaration(AnnotationProperty(:origin))
 # Annotation Property: :creator (:creator)
 
 AnnotationPropertyRange(:creator :OntologyCreator)
-
-# Annotation Property: :ontologyShortName (:ontologyShortName)
-
-AnnotationPropertyRange(:ontologyShortName :OntologyShortName)
 
 
 ############################
@@ -59,52 +49,34 @@ ObjectPropertyRange(:isOntologicalEntity :OntologicalEntity)
 #   Classes
 ############################
 
-# Class: :BottomUpTerm (:BottomUpTerm)
-
-SubClassOf(:BottomUpTerm :Term)
-DisjointClasses(:BottomUpTerm :TopDownTerm)
-
 # Class: :OntologicalClass (:OntologicalClass)
 
 SubClassOf(:OntologicalClass :OntologicalEntity)
 
-# Class: :OntologicalDataValue (:OntologicalDataValue)
+# Class: :OntologicalDataProperty (:OntologicalDataProperty)
 
-SubClassOf(:OntologicalDataValue :OntologicalEntity)
+SubClassOf(:OntologicalDataProperty :OntologicalEntity)
 
 # Class: :OntologicalEntity (:OntologicalEntity)
 
 SubClassOf(:OntologicalEntity :MetaDatum)
 
-# Class: :OntologicalPropertyValue (:OntologicalPropertyValue)
+# Class: :OntologicalObjectProperty (:OntologicalObjectProperty)
 
-SubClassOf(:OntologicalPropertyValue :OntologicalEntity)
+SubClassOf(:OntologicalObjectProperty :OntologicalEntity)
 
 # Class: :OntologyCreator (:OntologyCreator)
 
 SubClassOf(:OntologyCreator :MetaDatum)
 
-# Class: :OntologyShortName (:OntologyShortName)
-
-SubClassOf(:OntologyShortName :MetaDatum)
-
 # Class: :Term (:Term)
 
 SubClassOf(:Term :MetaDatum)
-
-# Class: :TopDownTerm (:TopDownTerm)
-
-SubClassOf(:TopDownTerm :Term)
 
 
 ############################
 #   Named Individuals
 ############################
-
-# Individual: :metadata (Metadata)
-
-AnnotationAssertion(rdfs:label :metadata "Metadata"@en)
-ClassAssertion(:OntologyShortName :metadata)
 
 # Individual: :author:DougSalt (Doug Salt)
 
@@ -115,14 +87,13 @@ ClassAssertion(:OntologyCreator :author:DougSalt)
 
 ClassAssertion(:OntologicalClass :ontology:class)
 
-# Individual: :ontology:dataValue (:ontology:dataValue)
+# Individual: :ontology:dataproperty (:ontology:dataproperty)
 
-ClassAssertion(:OntologicalDataValue :ontology:dataValue)
+ClassAssertion(:OntologicalDataProperty :ontology:dataproperty)
 
-# Individual: :ontology:propertyValue (:ontology:propertyValue)
+# Individual: :ontology:objectproperty (:ontology:objectproperty)
 
-ClassAssertion(:OntologicalPropertyValue :ontology:propertyValue)
+ClassAssertion(:OntologicalObjectProperty :ontology:objectproperty)
 
 
-DisjointClasses(:OntologicalEntity :OntologyCreator :OntologyShortName)
 )

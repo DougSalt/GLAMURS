@@ -1,0 +1,187 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/integration/star#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+Prefix(swrla:=<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/KB/metadata#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/integration/star>
+Import(<http://www.glamurs.eu/ontologies/2016/KB/metadata>)
+Annotation(metadata:creator metadata:author:DougSalt)
+Annotation(rdfs:comment "2016-10-26"^^xsd:date)
+Annotation(rdfs:comment "This is the integration ontology which will map the star pattern for the overall ontology. This enforces (if you don't select the underlying basic vocabulary) the direction of any use of the integration vocabulary (if the reasoner is selected that validates domains and codomains)."@en)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(metadata:OntologyShortName))
+Declaration(Class(:BottomUpOntology))
+Declaration(Class(:BottomUpOntologyClass))
+Declaration(Class(:BottomUpTerm))
+Declaration(Class(:OntologyOrientation))
+Declaration(Class(:TopDownOntology))
+Declaration(Class(:TopDownOntologyClass))
+Declaration(Class(:TopDownTerm))
+Declaration(ObjectProperty(:gammaLogicallyRepresents))
+Declaration(ObjectProperty(:gammaMeasures))
+Declaration(ObjectProperty(:gammaNumericallyRepresents))
+Declaration(ObjectProperty(:gammaRepresents))
+Declaration(ObjectProperty(:gammaStronglyRepresents))
+Declaration(ObjectProperty(:gammaWeaklyRepresents))
+Declaration(ObjectProperty(:hasBottomDownOntologicalProperty))
+Declaration(ObjectProperty(:hasOntologicalOrientation))
+Declaration(ObjectProperty(:hasTopDownOntologicalProperty))
+Declaration(ObjectProperty(:isSemanticallyRelatedTo))
+Declaration(ObjectProperty(:sigmaLogicallyRepresents))
+Declaration(ObjectProperty(:sigmaMeasures))
+Declaration(ObjectProperty(:sigmaNumericallyRepresents))
+Declaration(ObjectProperty(:sigmaRepresents))
+Declaration(ObjectProperty(:sigmaStronglyRepresents))
+Declaration(ObjectProperty(:sigmaWeaklyRepresents))
+Declaration(DataProperty(:hasBottomUpOntologyDataProperty))
+Declaration(DataProperty(:hasTopDownOntologyDataProperty))
+Declaration(NamedIndividual(:star))
+Declaration(NamedIndividual(:bottomUp:ontology))
+Declaration(NamedIndividual(:topDown:ontology))
+Declaration(AnnotationProperty(swrla:isRuleEnabled))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :gammaLogicallyRepresents (:gammaLogicallyRepresents)
+
+SubObjectPropertyOf(:gammaLogicallyRepresents :gammaStronglyRepresents)
+
+# Object Property: :gammaMeasures (:gammaMeasures)
+
+SubObjectPropertyOf(:gammaMeasures :gammaNumericallyRepresents)
+
+# Object Property: :gammaNumericallyRepresents (:gammaNumericallyRepresents)
+
+SubObjectPropertyOf(:gammaNumericallyRepresents :gammaStronglyRepresents)
+
+# Object Property: :gammaRepresents (:gammaRepresents)
+
+ObjectPropertyDomain(:gammaRepresents :BottomUpOntologyClass)
+ObjectPropertyRange(:gammaRepresents :TopDownOntologyClass)
+
+# Object Property: :gammaStronglyRepresents (:gammaStronglyRepresents)
+
+SubObjectPropertyOf(:gammaStronglyRepresents :gammaRepresents)
+
+# Object Property: :gammaWeaklyRepresents (:gammaWeaklyRepresents)
+
+SubObjectPropertyOf(:gammaWeaklyRepresents :gammaRepresents)
+
+# Object Property: :hasBottomDownOntologicalProperty (:hasBottomDownOntologicalProperty)
+
+ObjectPropertyDomain(:hasBottomDownOntologicalProperty :BottomUpOntologyClass)
+
+# Object Property: :hasOntologicalOrientation (:hasOntologicalOrientation)
+
+ObjectPropertyDomain(:hasOntologicalOrientation metadata:Term)
+ObjectPropertyRange(:hasOntologicalOrientation :OntologyOrientation)
+
+# Object Property: :hasTopDownOntologicalProperty (:hasTopDownOntologicalProperty)
+
+ObjectPropertyDomain(:hasTopDownOntologicalProperty :TopDownOntologyClass)
+
+# Object Property: :isSemanticallyRelatedTo (:isSemanticallyRelatedTo)
+
+SymmetricObjectProperty(:isSemanticallyRelatedTo)
+
+# Object Property: :sigmaLogicallyRepresents (:sigmaLogicallyRepresents)
+
+SubObjectPropertyOf(:sigmaLogicallyRepresents :sigmaStronglyRepresents)
+
+# Object Property: :sigmaMeasures (:sigmaMeasures)
+
+SubObjectPropertyOf(:sigmaMeasures :sigmaNumericallyRepresents)
+
+# Object Property: :sigmaNumericallyRepresents (:sigmaNumericallyRepresents)
+
+SubObjectPropertyOf(:sigmaNumericallyRepresents :sigmaStronglyRepresents)
+
+# Object Property: :sigmaRepresents (:sigmaRepresents)
+
+ObjectPropertyDomain(:sigmaRepresents :BottomUpOntologyClass)
+ObjectPropertyRange(:sigmaRepresents :TopDownOntologyClass)
+
+# Object Property: :sigmaStronglyRepresents (:sigmaStronglyRepresents)
+
+SubObjectPropertyOf(:sigmaStronglyRepresents :sigmaRepresents)
+
+# Object Property: :sigmaWeaklyRepresents (:sigmaWeaklyRepresents)
+
+SubObjectPropertyOf(:sigmaWeaklyRepresents :sigmaRepresents)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasBottomUpOntologyDataProperty (:hasBottomUpOntologyDataProperty)
+
+DataPropertyDomain(:hasBottomUpOntologyDataProperty :BottomUpOntologyClass)
+
+# Data Property: :hasTopDownOntologyDataProperty (:hasTopDownOntologyDataProperty)
+
+DataPropertyDomain(:hasTopDownOntologyDataProperty :TopDownOntologyClass)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :BottomUpOntology (:BottomUpOntology)
+
+SubClassOf(:BottomUpOntology :OntologyOrientation)
+
+# Class: :BottomUpOntologyClass (Bottom-up ontology class)
+
+AnnotationAssertion(rdfs:label :BottomUpOntologyClass "Bottom-up ontology class"@en)
+
+# Class: :BottomUpTerm (:BottomUpTerm)
+
+SubClassOf(:BottomUpTerm metadata:Term)
+
+# Class: :OntologyOrientation (:OntologyOrientation)
+
+SubClassOf(:OntologyOrientation metadata:MetaDatum)
+
+# Class: :TopDownOntology (:TopDownOntology)
+
+SubClassOf(:TopDownOntology :OntologyOrientation)
+
+# Class: :TopDownOntologyClass (Top-down ontology class)
+
+AnnotationAssertion(rdfs:label :TopDownOntologyClass "Top-down ontology class"@en)
+
+# Class: :TopDownTerm (:TopDownTerm)
+
+SubClassOf(:TopDownTerm metadata:Term)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :star (:star)
+
+ClassAssertion(metadata:OntologyShortName :star)
+
+# Individual: :bottomUp:ontology (:bottomUp:ontology)
+
+ClassAssertion(:BottomUpOntology :bottomUp:ontology)
+
+# Individual: :topDown:ontology (:topDown:ontology)
+
+ClassAssertion(:TopDownOntology :topDown:ontology)
+
+
+)

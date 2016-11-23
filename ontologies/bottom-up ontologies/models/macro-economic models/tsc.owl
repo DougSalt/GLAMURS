@@ -1,0 +1,187 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/tsc#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/tsc>
+Annotation(rdfs:comment "2106-09-21"^^xsd:date)
+Annotation(rdfs:comment "Research question:
+
+Should the regulator use speed up or slow down the transition, i.e. implement a tax that rises or falls over time?"^^xsd:string)
+Annotation(rdfs:isDefinedBy :author:DougSalt)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:AFirm))
+Declaration(Class(:Agent))
+Declaration(Class(:Consumer))
+Declaration(Class(:Consumption))
+Declaration(Class(:Good))
+Declaration(Class(:Habit))
+Declaration(Class(:InfinitesimalConsumer))
+Declaration(Class(:InfinitesimalConsumption))
+Declaration(Class(:InfinitesimalGood))
+Declaration(Class(:InfinitesimalWeight))
+Declaration(Class(:InifinitesimalHabit))
+Declaration(Class(:Model))
+Declaration(Class(:ReboundEffect))
+Declaration(Class(:Regulator))
+Declaration(Class(:Tax))
+Declaration(Class(:Time))
+Declaration(Class(:Utility))
+Declaration(Class(:Variable))
+Declaration(Class(:Weight))
+Declaration(ObjectProperty(:hasConsumption))
+Declaration(ObjectProperty(:hasHabit))
+Declaration(ObjectProperty(:hasInfinitesimalConsumption))
+Declaration(ObjectProperty(:hasInfinitesimalHabit))
+Declaration(ObjectProperty(:hasInfinitesimalWeighting))
+Declaration(ObjectProperty(:hasUtility))
+Declaration(ObjectProperty(:infinitesimalConsumer))
+Declaration(ObjectProperty(:setsValueFor))
+Declaration(DataProperty(:hasEnglishLanguageValue))
+Declaration(DataProperty(:hasSymbolicFormValue))
+Declaration(DataProperty(:hasTaxValue))
+Declaration(DataProperty(:hasWeightOfGoodValue))
+Declaration(DataProperty(:w_i))
+Declaration(NamedIndividual(:HabitsAndStatusConsumptionModel))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasConsumption (:hasConsumption)
+
+ObjectPropertyDomain(:hasConsumption :Time)
+ObjectPropertyDomain(:hasConsumption ObjectSomeValuesFrom(:hasInfinitesimalConsumption :InfinitesimalConsumption))
+ObjectPropertyDomain(:hasConsumption ObjectSomeValuesFrom(:hasInfinitesimalWeighting :InfinitesimalWeight))
+ObjectPropertyRange(:hasConsumption :Consumption)
+
+# Object Property: :hasHabit (:hasHabit)
+
+ObjectPropertyDomain(:hasHabit :Consumer)
+ObjectPropertyDomain(:hasHabit :Time)
+ObjectPropertyDomain(:hasHabit ObjectSomeValuesFrom(:hasInfinitesimalHabit :InifinitesimalHabit))
+ObjectPropertyDomain(:hasHabit ObjectSomeValuesFrom(:hasInfinitesimalWeighting :InfinitesimalWeight))
+ObjectPropertyRange(:hasHabit :Habit)
+
+# Object Property: :hasInfinitesimalConsumption (:hasInfinitesimalConsumption)
+
+ObjectPropertyDomain(:hasInfinitesimalConsumption :Time)
+ObjectPropertyRange(:hasInfinitesimalConsumption :InfinitesimalConsumption)
+
+# Object Property: :hasInfinitesimalHabit (:hasInfinitesimalHabit)
+
+ObjectPropertyDomain(:hasInfinitesimalHabit :InfinitesimalConsumer)
+ObjectPropertyDomain(:hasInfinitesimalHabit ObjectSomeValuesFrom(:hasInfinitesimalConsumption :InfinitesimalConsumption))
+ObjectPropertyDomain(:hasInfinitesimalHabit ObjectSomeValuesFrom(:hasInfinitesimalHabit :InifinitesimalHabit))
+ObjectPropertyRange(:hasInfinitesimalHabit :InifinitesimalHabit)
+
+# Object Property: :hasInfinitesimalWeighting (:hasInfinitesimalWeighting)
+
+ObjectPropertyDomain(:hasInfinitesimalWeighting :InfinitesimalGood)
+ObjectPropertyDomain(:hasInfinitesimalWeighting :Time)
+ObjectPropertyDomain(:hasInfinitesimalWeighting ObjectSomeValuesFrom(:hasHabit :Habit))
+ObjectPropertyDomain(:hasInfinitesimalWeighting ObjectSomeValuesFrom(:hasInfinitesimalHabit :InifinitesimalHabit))
+ObjectPropertyRange(:hasInfinitesimalWeighting :InfinitesimalWeight)
+
+# Object Property: :hasUtility (:hasUtility)
+
+ObjectPropertyDomain(:hasUtility :Time)
+ObjectPropertyDomain(:hasUtility ObjectSomeValuesFrom(:hasConsumption :Consumption))
+ObjectPropertyDomain(:hasUtility ObjectSomeValuesFrom(:hasHabit :Habit))
+ObjectPropertyRange(:hasUtility :Utility)
+
+# Object Property: :setsValueFor (:setsValueFor)
+
+ObjectPropertyDomain(:setsValueFor :Regulator)
+ObjectPropertyRange(:setsValueFor :Tax)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasTaxValue (:hasTaxValue)
+
+DataPropertyDomain(:hasTaxValue :Tax)
+DataPropertyRange(:hasTaxValue DatatypeRestriction(xsd:decimal xsd:minInclusive "0"^^xsd:decimal))
+
+# Data Property: :hasWeightOfGoodValue (has weight of good)
+
+AnnotationAssertion(rdfs:label :hasWeightOfGoodValue "has weight of good")
+EquivalentDataProperties(:hasWeightOfGoodValue :w_i)
+SubDataPropertyOf(:hasWeightOfGoodValue :hasEnglishLanguageValue)
+
+# Data Property: :w_i (:w_i)
+
+SubDataPropertyOf(:w_i :hasSymbolicFormValue)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :AFirm (A Firm)
+
+AnnotationAssertion(rdfs:comment :AFirm "Produce the good
+Rationally anticipate the policy
+Change supply to maximize profits"^^xsd:string)
+AnnotationAssertion(rdfs:label :AFirm "A Firm")
+SubClassOf(:AFirm :Agent)
+
+# Class: :Consumer (:Consumer)
+
+AnnotationAssertion(rdfs:comment :Consumer "Have good-specific habits
+Myopic and slow in changing"^^xsd:string)
+SubClassOf(:Consumer :Agent)
+
+# Class: :InfinitesimalConsumer (:InfinitesimalConsumer)
+
+SubClassOf(:InfinitesimalConsumer :Consumer)
+
+# Class: :InfinitesimalConsumption (:InfinitesimalConsumption)
+
+SubClassOf(:InfinitesimalConsumption :Consumption)
+
+# Class: :InfinitesimalGood (:InfinitesimalGood)
+
+SubClassOf(:InfinitesimalGood :Good)
+
+# Class: :InfinitesimalWeight (:InfinitesimalWeight)
+
+SubClassOf(:InfinitesimalWeight :Weight)
+
+# Class: :InifinitesimalHabit (:InifinitesimalHabit)
+
+SubClassOf(:InifinitesimalHabit :Habit)
+
+# Class: :ReboundEffect (Rebound Effect)
+
+AnnotationAssertion(rdfs:comment :ReboundEffect "Even though the new technology allows to produce the same output with less energy, the equilibrium outcome is more use of energy"^^xsd:string)
+AnnotationAssertion(rdfs:label :ReboundEffect "Rebound Effect"^^xsd:string)
+
+# Class: :Regulator (:Regulator)
+
+AnnotationAssertion(rdfs:comment :Regulator "implements policy to curb excessive consumption of some good."^^xsd:string)
+SubClassOf(:Regulator :Agent)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :HabitsAndStatusConsumptionModel (Habit and Status Consumption Model)
+
+AnnotationAssertion(rdfs:label :HabitsAndStatusConsumptionModel "Habit and Status Consumption Model"@en)
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+
+)

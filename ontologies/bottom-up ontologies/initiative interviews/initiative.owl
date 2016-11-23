@@ -1,1384 +1,907 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#"
-     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative">
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-09</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.hutton.ac.uk/ds42723/ontologies/2016/9/7/GLAMURS/5/Initatives#author:DougSalt"/>
-    </owl:Ontology>
-    
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative>
+Annotation(rdfs:comment "2016-07-09"^^xsd:date)
+Annotation(rdfs:isDefinedBy :author:DougSalt)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:Adult))
+Declaration(Class(:Age))
+Declaration(Class(:AgeOfKids))
+Declaration(Class(:AimsOfTheIniative))
+Declaration(Class(:AspectOfCurrentGovernance))
+Declaration(Class(:AspectOfEngagementInInitiative))
+Declaration(Class(:AspectOfFutureOrBetterGovernance))
+Declaration(Class(:AspectOfGovernance))
+Declaration(Class(:AspectOfMembershipOfInitiative))
+Declaration(Class(:Attitude))
+Declaration(Class(:BadHabits))
+Declaration(Class(:BadPracticeInInitiative))
+Declaration(Class(:BarriersToMembershipOfInitiative))
+Declaration(Class(:BehaviourOrBehaviouralPattern))
+Declaration(Class(:BehaviouralDomain))
+Declaration(Class(:Belief))
+Declaration(Class(:BetterManagerialGovernance))
+Declaration(Class(:ChangeInPerceptionsOfGovernance))
+Declaration(Class(:Child))
+Declaration(Class(:ChildhoodEducation))
+Declaration(Class(:ChildhoodExperience))
+Declaration(Class(:CognitiveEffort))
+Declaration(Class(:Communication))
+Declaration(Class(:ConceptsOfSustainability))
+Declaration(Class(:ConceptualisationOfGovernance))
+Declaration(Class(:ConflictOrCopingBehaviour))
+Declaration(Class(:ConflictTrigger))
+Declaration(Class(:ConflictingMoralValue))
+Declaration(Class(:Consumption))
+Declaration(Class(:Copes))
+Declaration(Class(:CopingByAction))
+Declaration(Class(:CopingByNoConflict))
+Declaration(Class(:CopingByThinking))
+Declaration(Class(:CreationOfConflictDueToInitiative))
+Declaration(Class(:CurrentGovernance))
+Declaration(Class(:DisillusionWithGovernace))
+Declaration(Class(:Displeasure))
+Declaration(Class(:Education))
+Declaration(Class(:EducationOrExperience))
+Declaration(Class(:EffectOnBehaviourDueToInitiative))
+Declaration(Class(:EffectOnCopingWithConflictDueToInitiative))
+Declaration(Class(:EffectOnLifestyleDueToInitiative))
+Declaration(Class(:EmotionRelatedToAConflictOrDilemmaOrCoping))
+Declaration(Class(:EmotionalImpact))
+Declaration(Class(:Energy))
+Declaration(Class(:ExperienceOfPoliticalConditions))
+Declaration(Class(:ExternalHinderingFactor))
+Declaration(Class(:ExternalSupport))
+Declaration(Class(:ExternalSupportingFactor))
+Declaration(Class(:FamilyStatus))
+Declaration(Class(:Food))
+Declaration(Class(:FutureOrientation))
+Declaration(Class(:GoodPracticeInInitiative))
+Declaration(Class(:GovernanceOriginatingFromACommunity))
+Declaration(Class(:Habit))
+Declaration(Class(:HinderingFactor))
+Declaration(Class(:HinderingInfrastructure))
+Declaration(Class(:Housing))
+Declaration(Class(:Idea))
+Declaration(Class(:ImpactOnLifestyleDueToInitiative))
+Declaration(Class(:IncreaseOfConflictDueToInitiative))
+Declaration(Class(:Individual))
+Declaration(Class(:InformationAccessibility))
+Declaration(Class(:InformationAvailability))
+Declaration(Class(:Initiative))
+Declaration(Class(:InitiativeRelatedImpactOnWellBeing))
+Declaration(Class(:InsufficientMoney))
+Declaration(Class(:InsufficientTime))
+Declaration(Class(:InternalHinderingFactor))
+Declaration(Class(:InternalSupportingFactor))
+Declaration(Class(:Kid))
+Declaration(Class(:LackOfKnowledge))
+Declaration(Class(:LackOfPower))
+Declaration(Class(:LackOfSkill))
+Declaration(Class(:Laziness))
+Declaration(Class(:LifestyleSatisfactionImpact))
+Declaration(Class(:Measurement))
+Declaration(Class(:Mobility))
+Declaration(Class(:MoreEducation))
+Declaration(Class(:MoreInformation))
+Declaration(Class(:MoreRadicalGovernance))
+Declaration(Class(:Motivation))
+Declaration(Class(:MotivationToJoinInitiative))
+Declaration(Class(:MotivationToStayInvolvedWithIniative))
+Declaration(Class(:NegativeChangeOnWellBeing))
+Declaration(Class(:NoSupport))
+Declaration(Class(:ObstacleToJoiningTheInitiative))
+Declaration(Class(:ObstacleToRemainingWithInitiative))
+Declaration(Class(:Occupation))
+Declaration(Class(:OriginatingFromAnIndividual))
+Declaration(Class(:OverlyComplex))
+Declaration(Class(:PeriodOfTime))
+Declaration(Class(:Person))
+Declaration(Class(:PersonalAspect))
+Declaration(Class(:PersonalDevelopmentalImpact))
+Declaration(Class(:Pleasure))
+Declaration(Class(:PoliticalActitivity))
+Declaration(Class(:PoliticalEngagement))
+Declaration(Class(:PositiveChangeOnWellBeing))
+Declaration(Class(:PreviousPoliticalEngagement))
+Declaration(Class(:Pride))
+Declaration(Class(:ProfessionalKnowledge))
+Declaration(Class(:ReferenceToPoliticalBiography))
+Declaration(Class(:RelevantEducation))
+Declaration(Class(:RelevantExperience))
+Declaration(Class(:RelevantTraning))
+Declaration(Class(:ResdienceInRelationToWorkPlace))
+Declaration(Class(:RoleInInitative))
+Declaration(Class(:SocialAndPersonalBackground))
+Declaration(Class(:SocialImpact))
+Declaration(Class(:SocialPeerPressure))
+Declaration(Class(:SupportingFactor))
+Declaration(Class(:SupportingInfrastructure))
+Declaration(Class(:SustainableBehaviour))
+Declaration(Class(:TimeManagementIssue))
+Declaration(Class(:TimeRelatedBehaviour))
+Declaration(Class(:TimeScarcity))
+Declaration(Class(:TimeStress))
+Declaration(Class(:TimeUsedForTheInitative))
+Declaration(Class(:UnavailableLand))
+Declaration(Class(:UnitOfTime))
+Declaration(Class(:Value))
+Declaration(Class(:WellBeing))
+Declaration(ObjectProperty(:hasAssociatedBehaviourOrBehaviourPattern))
+Declaration(ObjectProperty(:hasAssociatedBehaviouralDomain))
+Declaration(ObjectProperty(:hasBarrierOrMotivationToMembership))
+Declaration(ObjectProperty(:hasBehaviourDomain))
+Declaration(ObjectProperty(:hasConceptsOfSustainability))
+Declaration(ObjectProperty(:hasCurrentGovernanceAspect))
+Declaration(ObjectProperty(:hasEducationOrExperience))
+Declaration(ObjectProperty(:hasEngagementInInitiativeAspect))
+Declaration(ObjectProperty(:hasFutureOrCurrentGovernanceAspect))
+Declaration(ObjectProperty(:hasHinderingFactor))
+Declaration(ObjectProperty(:hasImpactOnLifestyleAspect))
+Declaration(ObjectProperty(:hasInitiativeProperty))
+Declaration(ObjectProperty(:hasInitiativeRelatedImpactOnWellbeing))
+Declaration(ObjectProperty(:hasMembershipAspect))
+Declaration(ObjectProperty(:hasNegativeChangeOnWellbeing))
+Declaration(ObjectProperty(:hasPersonalAspect))
+Declaration(ObjectProperty(:hasPoliticalEngagement))
+Declaration(ObjectProperty(:hasPositiveChangeOnWellBeing))
+Declaration(ObjectProperty(:hasSocialAndPersonalBackground))
+Declaration(ObjectProperty(:hasSupportingFactor))
+Declaration(ObjectProperty(:hasTimeRelatedBehaviour))
+Declaration(ObjectProperty(:hasUnits))
+Declaration(ObjectProperty(:hasWellBeingProperty))
+Declaration(ObjectProperty(:isForPeriodOfTime))
+Declaration(ObjectProperty(:isMemberOfInitiative))
+Declaration(ObjectProperty(:mayHaveFutureGovernanceAspect))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasAssociatedBehaviourOrBehaviourPattern (has associated behaviour or behavioural pattern)
+
+AnnotationAssertion(rdfs:label :hasAssociatedBehaviourOrBehaviourPattern "has associated behaviour or behavioural pattern"^^xsd:string)
+SubObjectPropertyOf(:hasAssociatedBehaviourOrBehaviourPattern :hasInitiativeProperty)
+ObjectPropertyRange(:hasAssociatedBehaviourOrBehaviourPattern :BehaviourOrBehaviouralPattern)
+
+# Object Property: :hasAssociatedBehaviouralDomain (has associated behavioural impact on well-being)
+
+AnnotationAssertion(rdfs:label :hasAssociatedBehaviouralDomain "has associated behavioural impact on well-being"^^xsd:string)
+SubObjectPropertyOf(:hasAssociatedBehaviouralDomain :hasAssociatedBehaviourOrBehaviourPattern)
+ObjectPropertyRange(:hasAssociatedBehaviouralDomain :BehaviouralDomain)
+
+# Object Property: :hasBarrierOrMotivationToMembership (has barrier or motivation to membership)
+
+AnnotationAssertion(rdfs:label :hasBarrierOrMotivationToMembership "has barrier or motivation to membership"^^xsd:string)
+SubObjectPropertyOf(:hasBarrierOrMotivationToMembership :hasMembershipAspect)
+ObjectPropertyRange(:hasBarrierOrMotivationToMembership :BarriersToMembershipOfInitiative)
+
+# Object Property: :hasBehaviourDomain (has behaviour domain)
+
+AnnotationAssertion(rdfs:label :hasBehaviourDomain "has behaviour domain"^^xsd:string)
+ObjectPropertyRange(:hasBehaviourDomain :BehaviouralDomain)
+
+# Object Property: :hasConceptsOfSustainability (has concept of sustainability)
+
+AnnotationAssertion(rdfs:label :hasConceptsOfSustainability "has concept of sustainability"^^xsd:string)
+SubObjectPropertyOf(:hasConceptsOfSustainability :hasSocialAndPersonalBackground)
+ObjectPropertyRange(:hasConceptsOfSustainability :ConceptsOfSustainability)
+
+# Object Property: :hasCurrentGovernanceAspect (has current governance aspect)
+
+AnnotationAssertion(rdfs:label :hasCurrentGovernanceAspect "has current governance aspect"^^xsd:string)
+SubObjectPropertyOf(:hasCurrentGovernanceAspect :hasFutureOrCurrentGovernanceAspect)
+ObjectPropertyRange(:hasCurrentGovernanceAspect :AspectOfCurrentGovernance)
+
+# Object Property: :hasEducationOrExperience (has education or experience)
+
+AnnotationAssertion(rdfs:label :hasEducationOrExperience "has education or experience"^^xsd:string)
+SubObjectPropertyOf(:hasEducationOrExperience :hasSocialAndPersonalBackground)
+ObjectPropertyRange(:hasEducationOrExperience :EducationOrExperience)
+
+# Object Property: :hasEngagementInInitiativeAspect (has engagement in initiative aspect)
+
+AnnotationAssertion(rdfs:label :hasEngagementInInitiativeAspect "has engagement in initiative aspect"^^xsd:string)
+SubObjectPropertyOf(:hasEngagementInInitiativeAspect :hasMembershipAspect)
+ObjectPropertyRange(:hasEngagementInInitiativeAspect :AspectOfEngagementInInitiative)
+
+# Object Property: :hasFutureOrCurrentGovernanceAspect (has future or current governance aspect)
+
+AnnotationAssertion(rdfs:label :hasFutureOrCurrentGovernanceAspect "has future or current governance aspect"^^xsd:string)
+SubObjectPropertyOf(:hasFutureOrCurrentGovernanceAspect :hasInitiativeProperty)
+ObjectPropertyRange(:hasFutureOrCurrentGovernanceAspect :AspectOfGovernance)
+
+# Object Property: :hasHinderingFactor (has hindering factor)
 
+AnnotationAssertion(rdfs:label :hasHinderingFactor "has hindering factor"^^xsd:string)
+SubObjectPropertyOf(:hasHinderingFactor :hasAssociatedBehaviourOrBehaviourPattern)
+ObjectPropertyRange(:hasHinderingFactor :HinderingFactor)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+# Object Property: :hasImpactOnLifestyleAspect (has impact on lifestyle aspect)
 
-    
+AnnotationAssertion(rdfs:label :hasImpactOnLifestyleAspect "has impact on lifestyle aspect"^^xsd:string)
+SubObjectPropertyOf(:hasImpactOnLifestyleAspect :hasMembershipAspect)
+ObjectPropertyRange(:hasImpactOnLifestyleAspect :ImpactOnLifestyleDueToInitiative)
 
+# Object Property: :hasInitiativeProperty (has initiative property)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviourOrBehaviourPattern -->
+AnnotationAssertion(rdfs:label :hasInitiativeProperty "has initiative property"^^xsd:string)
+ObjectPropertyDomain(:hasInitiativeProperty :Initiative)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviourOrBehaviourPattern">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has associated behaviour or behavioural pattern</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Object Property: :hasInitiativeRelatedImpactOnWellbeing (has initiative related impact on well-being)
 
+AnnotationAssertion(rdfs:label :hasInitiativeRelatedImpactOnWellbeing "has initiative related impact on well-being"^^xsd:string)
+SubObjectPropertyOf(:hasInitiativeRelatedImpactOnWellbeing :hasWellBeingProperty)
+ObjectPropertyRange(:hasInitiativeRelatedImpactOnWellbeing :InitiativeRelatedImpactOnWellBeing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviouralDomain -->
+# Object Property: :hasMembershipAspect (has membership aspect)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviouralDomain">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviourOrBehaviourPattern"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has associated behavioural impact on well-being</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :hasMembershipAspect "has membership aspect"^^xsd:string)
+SubObjectPropertyOf(:hasMembershipAspect :hasInitiativeProperty)
+ObjectPropertyRange(:hasMembershipAspect :AspectOfMembershipOfInitiative)
 
+# Object Property: :hasNegativeChangeOnWellbeing (has negative change on well-being)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasBarrierOrMotivationToMembership -->
+AnnotationAssertion(rdfs:label :hasNegativeChangeOnWellbeing "has negative change on well-being"^^xsd:string)
+SubObjectPropertyOf(:hasNegativeChangeOnWellbeing :hasWellBeingProperty)
+ObjectPropertyRange(:hasNegativeChangeOnWellbeing :NegativeChangeOnWellBeing)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasBarrierOrMotivationToMembership">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasMembershipAspect"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BarriersToMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has barrier or motivation to membership</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Object Property: :hasPersonalAspect (has personal aspect)
 
+AnnotationAssertion(rdfs:label :hasPersonalAspect "has personal aspect"^^xsd:string)
+SubObjectPropertyOf(:hasPersonalAspect :hasSocialAndPersonalBackground)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasBehaviourDomain -->
+# Object Property: :hasPoliticalEngagement (has political engagement)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasBehaviourDomain">
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has behaviour domain</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :hasPoliticalEngagement "has political engagement"^^xsd:string)
+SubObjectPropertyOf(:hasPoliticalEngagement :hasSocialAndPersonalBackground)
+ObjectPropertyRange(:hasPoliticalEngagement :PoliticalEngagement)
 
+# Object Property: :hasPositiveChangeOnWellBeing (has positive change of well-being)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasConceptsOfSustainability -->
+AnnotationAssertion(rdfs:label :hasPositiveChangeOnWellBeing "has positive change of well-being"^^xsd:string)
+SubObjectPropertyOf(:hasPositiveChangeOnWellBeing :hasWellBeingProperty)
+ObjectPropertyRange(:hasPositiveChangeOnWellBeing :PositiveChangeOnWellBeing)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasConceptsOfSustainability">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSocialAndPersonalBackground"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConceptsOfSustainability"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has concept of sustainability</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Object Property: :hasSocialAndPersonalBackground (has social and personal background)
 
+AnnotationAssertion(rdfs:label :hasSocialAndPersonalBackground "has social and personal background"^^xsd:string)
+ObjectPropertyDomain(:hasSocialAndPersonalBackground :Person)
+ObjectPropertyRange(:hasSocialAndPersonalBackground :SocialAndPersonalBackground)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasCurrentGovernanceAspect -->
+# Object Property: :hasSupportingFactor (has supporting factor)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasCurrentGovernanceAspect">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasFutureOrCurrentGovernanceAspect"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfCurrentGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has current governance aspect</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :hasSupportingFactor "has supporting factor"^^xsd:string)
+SubObjectPropertyOf(:hasSupportingFactor :hasAssociatedBehaviourOrBehaviourPattern)
+ObjectPropertyRange(:hasSupportingFactor :SupportingFactor)
 
+# Object Property: :hasTimeRelatedBehaviour (has time related behaviour)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasEducationOrExperience -->
+AnnotationAssertion(rdfs:label :hasTimeRelatedBehaviour "has time related behaviour"^^xsd:string)
+SubObjectPropertyOf(:hasTimeRelatedBehaviour :hasAssociatedBehaviourOrBehaviourPattern)
+ObjectPropertyRange(:hasTimeRelatedBehaviour :TimeRelatedBehaviour)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasEducationOrExperience">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSocialAndPersonalBackground"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EducationOrExperience"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has education or experience</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Object Property: :hasUnits (has units)
 
+AnnotationAssertion(rdfs:label :hasUnits "has units"^^xsd:string)
+SubObjectPropertyOf(:hasUnits :isForPeriodOfTime)
+ObjectPropertyRange(:hasUnits :Measurement)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasEngagementInInitiativeAspect -->
+# Object Property: :hasWellBeingProperty (has well-being property)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasEngagementInInitiativeAspect">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasMembershipAspect"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfEngagementInInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has engagement in initiative aspect</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :hasWellBeingProperty "has well-being property"^^xsd:string)
+SubObjectPropertyOf(:hasWellBeingProperty :hasInitiativeProperty)
+ObjectPropertyRange(:hasWellBeingProperty :WellBeing)
 
+# Object Property: :isForPeriodOfTime (is for period of time)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasFutureOrCurrentGovernanceAspect -->
+AnnotationAssertion(rdfs:label :isForPeriodOfTime "is for period of time"^^xsd:string)
+ObjectPropertyRange(:isForPeriodOfTime :PeriodOfTime)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasFutureOrCurrentGovernanceAspect">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has future or current governance aspect</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Object Property: :isMemberOfInitiative (is a member of the initiative)
 
+AnnotationAssertion(rdfs:label :isMemberOfInitiative "is a member of the initiative"^^xsd:string)
+ObjectPropertyDomain(:isMemberOfInitiative :Person)
+ObjectPropertyRange(:isMemberOfInitiative :Initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasHinderingFactor -->
+# Object Property: :mayHaveFutureGovernanceAspect (may have future governance aspect)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasHinderingFactor">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviourOrBehaviourPattern"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#HinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has hindering factor</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :mayHaveFutureGovernanceAspect "may have future governance aspect"^^xsd:string)
+SubObjectPropertyOf(:mayHaveFutureGovernanceAspect :hasFutureOrCurrentGovernanceAspect)
+ObjectPropertyRange(:mayHaveFutureGovernanceAspect :AspectOfFutureOrBetterGovernance)
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasImpactOnLifestyleAspect -->
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasImpactOnLifestyleAspect">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasMembershipAspect"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has impact on lifestyle aspect</rdfs:label>
-    </owl:ObjectProperty>
-    
+############################
+#   Classes
+############################
 
+# Class: :Adult (:Adult)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeProperty -->
+SubClassOf(:Adult :Person)
+DisjointClasses(:Adult :Child)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeProperty">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Initiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has initiative property</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :Age (:Age)
 
+SubClassOf(:Age :PersonalAspect)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeRelatedImpactOnWellbeing -->
+# Class: :AgeOfKids (Age of kids)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeRelatedImpactOnWellbeing">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasWellBeingProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InitiativeRelatedImpactOnWellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has initiative related impact on well-being</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :AgeOfKids "Age of kids"^^xsd:string)
+SubClassOf(:AgeOfKids :PersonalAspect)
 
+# Class: :AimsOfTheIniative (Knowledge of aims of the iniative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasMembershipAspect -->
+AnnotationAssertion(rdfs:label :AimsOfTheIniative "Knowledge of aims of the iniative"^^xsd:string)
+SubClassOf(:AimsOfTheIniative :ConceptsOfSustainability)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasMembershipAspect">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has membership aspect</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :AspectOfCurrentGovernance (Aspect of current governance)
 
+AnnotationAssertion(rdfs:label :AspectOfCurrentGovernance "Aspect of current governance"^^xsd:string)
+SubClassOf(:AspectOfCurrentGovernance :AspectOfGovernance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasNegativeChangeOnWellbeing -->
+# Class: :AspectOfEngagementInInitiative (Engagement in the initiative aspect)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasNegativeChangeOnWellbeing">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasWellBeingProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#NegativeChangeOnWellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has negative change on well-being</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :AspectOfEngagementInInitiative "Engagement in the initiative aspect"^^xsd:string)
+SubClassOf(:AspectOfEngagementInInitiative :AspectOfMembershipOfInitiative)
 
+# Class: :AspectOfFutureOrBetterGovernance (Aspect of future or better governance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasPersonalAspect -->
+AnnotationAssertion(rdfs:label :AspectOfFutureOrBetterGovernance "Aspect of future or better governance"^^xsd:string)
+SubClassOf(:AspectOfFutureOrBetterGovernance :AspectOfGovernance)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasPersonalAspect">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSocialAndPersonalBackground"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has personal aspect</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :AspectOfGovernance (Aspect of governance)
 
+AnnotationAssertion(rdfs:label :AspectOfGovernance "Aspect of governance"^^xsd:string)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasPoliticalEngagement -->
+# Class: :AspectOfMembershipOfInitiative (Aspect of membership of the initiative)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasPoliticalEngagement">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSocialAndPersonalBackground"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalEngagement"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has political engagement</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :AspectOfMembershipOfInitiative "Aspect of membership of the initiative"^^xsd:string)
 
+# Class: :Attitude (:Attitude)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasPositiveChangeOnWellBeing -->
+SubClassOf(:Attitude :InternalSupportingFactor)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasPositiveChangeOnWellBeing">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasWellBeingProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PositiveChangeOnWellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has positive change of well-being</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :BadHabits (Bad habit)
 
+AnnotationAssertion(rdfs:label :BadHabits "Bad habit"^^xsd:string)
+SubClassOf(:BadHabits :ConflictTrigger)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSocialAndPersonalBackground -->
+# Class: :BadPracticeInInitiative (Bad practice in the initiative)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSocialAndPersonalBackground">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialAndPersonalBackground"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has social and personal background</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :BadPracticeInInitiative "Bad practice in the initiative"^^xsd:string)
+SubClassOf(:BadPracticeInInitiative :AspectOfEngagementInInitiative)
 
+# Class: :BarriersToMembershipOfInitiative (Motivation or barrier to membership of the initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSupportingFactor -->
+AnnotationAssertion(rdfs:label :BarriersToMembershipOfInitiative "Motivation or barrier to membership of the initiative"^^xsd:string)
+SubClassOf(:BarriersToMembershipOfInitiative :AspectOfMembershipOfInitiative)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasSupportingFactor">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviourOrBehaviourPattern"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has supporting factor</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :BehaviourOrBehaviouralPattern (Behaviour or behavioural pattern)
 
+AnnotationAssertion(rdfs:label :BehaviourOrBehaviouralPattern "Behaviour or behavioural pattern"^^xsd:string)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasTimeRelatedBehaviour -->
+# Class: :BehaviouralDomain (Behavioural domain)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasTimeRelatedBehaviour">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasAssociatedBehaviourOrBehaviourPattern"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeRelatedBehaviour"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has time related behaviour</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :BehaviouralDomain "Behavioural domain"^^xsd:string)
 
+# Class: :Belief (:Belief)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasUnits -->
+SubClassOf(:Belief :InternalSupportingFactor)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasUnits">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#isForPeriodOfTime"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has units</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :BetterManagerialGovernance (Better managerial governance)
 
+AnnotationAssertion(rdfs:label :BetterManagerialGovernance "Better managerial governance"^^xsd:string)
+SubClassOf(:BetterManagerialGovernance :AspectOfFutureOrBetterGovernance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasWellBeingProperty -->
+# Class: :ChangeInPerceptionsOfGovernance (Change in perceptions of governanace)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasWellBeingProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasInitiativeProperty"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#WellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has well-being property</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :ChangeInPerceptionsOfGovernance "Change in perceptions of governanace"^^xsd:string)
+SubClassOf(:ChangeInPerceptionsOfGovernance :AspectOfCurrentGovernance)
 
+# Class: :Child (:Child)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#isForPeriodOfTime -->
+EquivalentClasses(:Child :Kid)
+SubClassOf(:Child :Person)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#isForPeriodOfTime">
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PeriodOfTime"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is for period of time</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :ChildhoodEducation (Childhood education)
 
+AnnotationAssertion(rdfs:label :ChildhoodEducation "Childhood education"^^xsd:string)
+SubClassOf(:ChildhoodEducation :InternalSupportingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#isMemberOfInitiative -->
+# Class: :ChildhoodExperience (Childhood experience)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#isMemberOfInitiative">
-        <rdfs:domain rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Initiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is a member of the initiative</rdfs:label>
-    </owl:ObjectProperty>
-    
+AnnotationAssertion(rdfs:label :ChildhoodExperience "Childhood experience"^^xsd:string)
+SubClassOf(:ChildhoodExperience :InternalSupportingFactor)
 
+# Class: :CognitiveEffort (Cognitive effort)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#mayHaveFutureGovernanceAspect -->
+AnnotationAssertion(rdfs:label :CognitiveEffort "Cognitive effort"^^xsd:string)
+SubClassOf(:CognitiveEffort :ConflictTrigger)
 
-    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#mayHaveFutureGovernanceAspect">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#hasFutureOrCurrentGovernanceAspect"/>
-        <rdfs:range rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may have future governance aspect</rdfs:label>
-    </owl:ObjectProperty>
-    
+# Class: :Communication (:Communication)
 
+SubClassOf(:Communication :BehaviouralDomain)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+# Class: :ConceptsOfSustainability (Concepts of sustainability)
 
-    
+AnnotationAssertion(rdfs:label :ConceptsOfSustainability "Concepts of sustainability"^^xsd:string)
+SubClassOf(:ConceptsOfSustainability :SocialAndPersonalBackground)
 
+# Class: :ConceptualisationOfGovernance (Conceptualisation of governance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Adult -->
+AnnotationAssertion(rdfs:label :ConceptualisationOfGovernance "Conceptualisation of governance"^^xsd:string)
+SubClassOf(:ConceptualisationOfGovernance :AspectOfCurrentGovernance)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Adult">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
-        <owl:disjointWith rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Child"/>
-    </owl:Class>
-    
+# Class: :ConflictOrCopingBehaviour (Conflict or coping behaviour)
 
+AnnotationAssertion(rdfs:label :ConflictOrCopingBehaviour "Conflict or coping behaviour"^^xsd:string)
+SubClassOf(:ConflictOrCopingBehaviour :BehaviourOrBehaviouralPattern)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Age -->
+# Class: :ConflictTrigger (Conflict trigger)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Age">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalAspect"/>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :ConflictTrigger "Conflict trigger"^^xsd:string)
+SubClassOf(:ConflictTrigger :ConflictOrCopingBehaviour)
 
+# Class: :ConflictingMoralValue (Conflicting moral value)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AgeOfKids -->
+AnnotationAssertion(rdfs:label :ConflictingMoralValue "Conflicting moral value"^^xsd:string)
+SubClassOf(:ConflictingMoralValue :ConflictTrigger)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AgeOfKids">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalAspect"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age of kids</rdfs:label>
-    </owl:Class>
-    
+# Class: :Consumption (:Consumption)
 
+SubClassOf(:Consumption :BehaviouralDomain)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AimsOfTheIniative -->
+# Class: :Copes (:Copes)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AimsOfTheIniative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConceptsOfSustainability"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge of aims of the iniative</rdfs:label>
-    </owl:Class>
-    
+SubClassOf(:Copes :ConflictOrCopingBehaviour)
 
+# Class: :CopingByAction (Copes by action)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfCurrentGovernance -->
+AnnotationAssertion(rdfs:label :CopingByAction "Copes by action"^^xsd:string)
+SubClassOf(:CopingByAction :Copes)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfCurrentGovernance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of current governance</rdfs:label>
-    </owl:Class>
-    
+# Class: :CopingByNoConflict (Copes by no conflict)
 
+AnnotationAssertion(rdfs:label :CopingByNoConflict "Copes by no conflict"^^xsd:string)
+SubClassOf(:CopingByNoConflict :Copes)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfEngagementInInitiative -->
+# Class: :CopingByThinking (Copes by thinking)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfEngagementInInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engagement in the initiative aspect</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :CopingByThinking "Copes by thinking"^^xsd:string)
+SubClassOf(:CopingByThinking :Copes)
 
+# Class: :CreationOfConflictDueToInitiative (Conflict created due to initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance -->
+AnnotationAssertion(rdfs:label :CreationOfConflictDueToInitiative "Conflict created due to initiative"^^xsd:string)
+SubClassOf(:CreationOfConflictDueToInitiative :ImpactOnLifestyleDueToInitiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of future or better governance</rdfs:label>
-    </owl:Class>
-    
+# Class: :CurrentGovernance (Current governance)
 
+AnnotationAssertion(rdfs:label :CurrentGovernance "Current governance"^^xsd:string)
+SubClassOf(:CurrentGovernance :AspectOfCurrentGovernance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfGovernance -->
+# Class: :DisillusionWithGovernace (Disillusion with governance)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfGovernance">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of governance</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :DisillusionWithGovernace "Disillusion with governance"^^xsd:string)
+SubClassOf(:DisillusionWithGovernace :AspectOfCurrentGovernance)
 
+# Class: :Displeasure (:Displeasure)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfMembershipOfInitiative -->
+SubClassOf(:Displeasure :EmotionRelatedToAConflictOrDilemmaOrCoping)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfMembershipOfInitiative">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspect of membership of the initiative</rdfs:label>
-    </owl:Class>
-    
+# Class: :Education (:Education)
 
+SubClassOf(:Education :BehaviouralDomain)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Attitude -->
+# Class: :EducationOrExperience (Education or experience)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Attitude">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :EducationOrExperience "Education or experience"^^xsd:string)
+SubClassOf(:EducationOrExperience :SocialAndPersonalBackground)
 
+# Class: :EffectOnBehaviourDueToInitiative (Behavioural effect due to initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BadHabits -->
+AnnotationAssertion(rdfs:label :EffectOnBehaviourDueToInitiative "Behavioural effect due to initiative"^^xsd:string)
+SubClassOf(:EffectOnBehaviourDueToInitiative :ImpactOnLifestyleDueToInitiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BadHabits">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bad habit</rdfs:label>
-    </owl:Class>
-    
+# Class: :EffectOnCopingWithConflictDueToInitiative (A coping with conflict due to the initiative)
 
+AnnotationAssertion(rdfs:label :EffectOnCopingWithConflictDueToInitiative "A coping with conflict due to the initiative"^^xsd:string)
+SubClassOf(:EffectOnCopingWithConflictDueToInitiative :ImpactOnLifestyleDueToInitiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BadPracticeInInitiative -->
+# Class: :EffectOnLifestyleDueToInitiative (Lifestyle effect due to initiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BadPracticeInInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfEngagementInInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bad practice in the initiative</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :EffectOnLifestyleDueToInitiative "An increase in conflict due to the initative"^^xsd:string)
+AnnotationAssertion(rdfs:label :EffectOnLifestyleDueToInitiative "Lifestyle effect due to initiative"^^xsd:string)
+SubClassOf(:EffectOnLifestyleDueToInitiative :ImpactOnLifestyleDueToInitiative)
 
+# Class: :EmotionRelatedToAConflictOrDilemmaOrCoping (Emotion related to either conflict or coping)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BarriersToMembershipOfInitiative -->
+AnnotationAssertion(rdfs:label :EmotionRelatedToAConflictOrDilemmaOrCoping "Emotion related to either conflict or coping"^^xsd:string)
+SubClassOf(:EmotionRelatedToAConflictOrDilemmaOrCoping :ConflictOrCopingBehaviour)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BarriersToMembershipOfInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation or barrier to membership of the initiative</rdfs:label>
-    </owl:Class>
-    
+# Class: :EmotionalImpact (Emotional impact on well-being)
 
+AnnotationAssertion(rdfs:label :EmotionalImpact "Emotional impact on well-being"^^xsd:string)
+SubClassOf(:EmotionalImpact :InitiativeRelatedImpactOnWellBeing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern -->
+# Class: :Energy (:Energy)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behaviour or behavioural pattern</rdfs:label>
-    </owl:Class>
-    
+SubClassOf(:Energy :BehaviouralDomain)
 
+# Class: :ExperienceOfPoliticalConditions (Experience of political conditions in the past)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain -->
+AnnotationAssertion(rdfs:label :ExperienceOfPoliticalConditions "Experience of political conditions in the past"^^xsd:string)
+SubClassOf(:ExperienceOfPoliticalConditions :PoliticalEngagement)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural domain</rdfs:label>
-    </owl:Class>
-    
+# Class: :ExternalHinderingFactor (External hindering factor)
 
+AnnotationAssertion(rdfs:label :ExternalHinderingFactor "External hindering factor"^^xsd:string)
+SubClassOf(:ExternalHinderingFactor :HinderingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Belief -->
+# Class: :ExternalSupport (External support)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Belief">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :ExternalSupport "External support"^^xsd:string)
+SubClassOf(:ExternalSupport :ExternalSupportingFactor)
 
+# Class: :ExternalSupportingFactor (External supporting factor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BetterManagerialGovernance -->
+AnnotationAssertion(rdfs:label :ExternalSupportingFactor "External supporting factor"^^xsd:string)
+SubClassOf(:ExternalSupportingFactor :SupportingFactor)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BetterManagerialGovernance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Better managerial governance</rdfs:label>
-    </owl:Class>
-    
+# Class: :FamilyStatus (Family status)
 
+AnnotationAssertion(rdfs:label :FamilyStatus "Family status"^^xsd:string)
+SubClassOf(:FamilyStatus :PersonalAspect)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ChangeInPerceptionsOfGovernance -->
+# Class: :Food (:Food)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ChangeInPerceptionsOfGovernance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfCurrentGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change in perceptions of governanace</rdfs:label>
-    </owl:Class>
-    
+SubClassOf(:Food :BehaviouralDomain)
 
+# Class: :FutureOrientation (Future orientation)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Child -->
+AnnotationAssertion(rdfs:label :FutureOrientation "Future orientation"^^xsd:string)
+SubClassOf(:FutureOrientation :InternalSupportingFactor)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Child">
-        <owl:equivalentClass rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Kid"/>
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
-    </owl:Class>
-    
+# Class: :GoodPracticeInInitiative (Good practice in the initiative)
 
+AnnotationAssertion(rdfs:label :GoodPracticeInInitiative "Good practice in the initiative"^^xsd:string)
+SubClassOf(:GoodPracticeInInitiative :AspectOfEngagementInInitiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ChildhoodEducation -->
+# Class: :GovernanceOriginatingFromACommunity (Governance originating from a community)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ChildhoodEducation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Childhood education</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :GovernanceOriginatingFromACommunity "Governance originating from a community"^^xsd:string)
+SubClassOf(:GovernanceOriginatingFromACommunity :AspectOfFutureOrBetterGovernance)
 
+# Class: :Habit (:Habit)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ChildhoodExperience -->
+SubClassOf(:Habit :InternalSupportingFactor)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ChildhoodExperience">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Childhood experience</rdfs:label>
-    </owl:Class>
-    
+# Class: :HinderingFactor (Hindering factor)
 
+AnnotationAssertion(rdfs:label :HinderingFactor "Hindering factor"^^xsd:string)
+SubClassOf(:HinderingFactor :BehaviourOrBehaviouralPattern)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CognitiveEffort -->
+# Class: :HinderingInfrastructure (Hindering infrastructure)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CognitiveEffort">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive effort</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :HinderingInfrastructure "Hindering infrastructure"^^xsd:string)
+SubClassOf(:HinderingInfrastructure :InternalHinderingFactor)
 
+# Class: :Housing (:Housing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Communication -->
+SubClassOf(:Housing :BehaviouralDomain)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Communication">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-    </owl:Class>
-    
+# Class: :Idea (:Idea)
 
+SubClassOf(:Idea :InternalSupportingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConceptsOfSustainability -->
+# Class: :ImpactOnLifestyleDueToInitiative (An impact on lifestyle due to initiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConceptsOfSustainability">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialAndPersonalBackground"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concepts of sustainability</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :ImpactOnLifestyleDueToInitiative "An impact on lifestyle due to initiative"^^xsd:string)
+SubClassOf(:ImpactOnLifestyleDueToInitiative :AspectOfMembershipOfInitiative)
 
+# Class: :IncreaseOfConflictDueToInitiative (Increase in conflict due to the initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConceptualisationOfGovernance -->
+AnnotationAssertion(rdfs:label :IncreaseOfConflictDueToInitiative "Increase in conflict due to the initiative"^^xsd:string)
+SubClassOf(:IncreaseOfConflictDueToInitiative :ImpactOnLifestyleDueToInitiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConceptualisationOfGovernance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfCurrentGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptualisation of governance</rdfs:label>
-    </owl:Class>
-    
+# Class: :Individual (:Individual)
 
+EquivalentClasses(:Individual :Person)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictOrCopingBehaviour -->
+# Class: :InformationAccessibility (Information accessibility)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictOrCopingBehaviour">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict or coping behaviour</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :InformationAccessibility "Information accessibility"^^xsd:string)
+SubClassOf(:InformationAccessibility :ExternalSupportingFactor)
 
+# Class: :InformationAvailability (Information availability)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger -->
+AnnotationAssertion(rdfs:label :InformationAvailability "Information availability"^^xsd:string)
+SubClassOf(:InformationAvailability :ExternalSupportingFactor)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictOrCopingBehaviour"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict trigger</rdfs:label>
-    </owl:Class>
-    
+# Class: :InitiativeRelatedImpactOnWellBeing (Initiative-related impact on well-being)
 
+AnnotationAssertion(rdfs:label :InitiativeRelatedImpactOnWellBeing "Initiative-related impact on well-being"^^xsd:string)
+SubClassOf(:InitiativeRelatedImpactOnWellBeing :WellBeing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictingMoralValue -->
+# Class: :InsufficientMoney (Insufficient time)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictingMoralValue">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflicting moral value</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :InsufficientMoney "Insufficient time"^^xsd:string)
+SubClassOf(:InsufficientMoney :ConflictTrigger)
 
+# Class: :InsufficientTime (Insufficient time)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Consumption -->
+AnnotationAssertion(rdfs:label :InsufficientTime "Insufficient time"^^xsd:string)
+SubClassOf(:InsufficientTime :ConflictTrigger)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Consumption">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-    </owl:Class>
-    
+# Class: :InternalHinderingFactor (Internal hindering factor)
 
+AnnotationAssertion(rdfs:label :InternalHinderingFactor "Internal hindering factor"^^xsd:string)
+SubClassOf(:InternalHinderingFactor :HinderingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Copes -->
+# Class: :InternalSupportingFactor (Internal supporting factor)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Copes">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictOrCopingBehaviour"/>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :InternalSupportingFactor "Internal supporting factor"^^xsd:string)
+SubClassOf(:InternalSupportingFactor :SupportingFactor)
 
+# Class: :Kid (:Kid)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CopingByAction -->
+SubClassOf(:Kid :Person)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CopingByAction">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Copes"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copes by action</rdfs:label>
-    </owl:Class>
-    
+# Class: :LackOfKnowledge (Lack of knowledge)
 
+AnnotationAssertion(rdfs:label :LackOfKnowledge "Lack of knowledge"^^xsd:string)
+SubClassOf(:LackOfKnowledge :InternalHinderingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CopingByNoConflict -->
+# Class: :LackOfPower (Lack of power)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CopingByNoConflict">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Copes"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copes by no conflict</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :LackOfPower "Lack of power"^^xsd:string)
+SubClassOf(:LackOfPower :ConflictTrigger)
 
+# Class: :LackOfSkill (Lack of skill)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CopingByThinking -->
+AnnotationAssertion(rdfs:label :LackOfSkill "Lack of skill"^^xsd:string)
+SubClassOf(:LackOfSkill :InternalHinderingFactor)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CopingByThinking">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Copes"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copes by thinking</rdfs:label>
-    </owl:Class>
-    
+# Class: :Laziness (:Laziness)
 
+SubClassOf(:Laziness :ConflictTrigger)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CreationOfConflictDueToInitiative -->
+# Class: :LifestyleSatisfactionImpact (Lifestyle satisfaction impact on well-being)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CreationOfConflictDueToInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflict created due to initiative</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :LifestyleSatisfactionImpact "Lifestyle satisfaction impact on well-being"^^xsd:string)
+SubClassOf(:LifestyleSatisfactionImpact :InitiativeRelatedImpactOnWellBeing)
 
+# Class: :Mobility (:Mobility)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CurrentGovernance -->
+SubClassOf(:Mobility :BehaviouralDomain)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#CurrentGovernance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfCurrentGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Current governance</rdfs:label>
-    </owl:Class>
-    
+# Class: :MoreEducation (More information)
 
+AnnotationAssertion(rdfs:label :MoreEducation "More information"^^xsd:string)
+SubClassOf(:MoreEducation :AspectOfFutureOrBetterGovernance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#DisillusionWithGovernace -->
+# Class: :MoreInformation (More information)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#DisillusionWithGovernace">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfCurrentGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disillusion with governance</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :MoreInformation "More information"^^xsd:string)
+SubClassOf(:MoreInformation :AspectOfFutureOrBetterGovernance)
 
+# Class: :MoreRadicalGovernance (More radical governance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Displeasure -->
+AnnotationAssertion(rdfs:label :MoreRadicalGovernance "More radical governance"^^xsd:string)
+SubClassOf(:MoreRadicalGovernance :AspectOfFutureOrBetterGovernance)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Displeasure">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EmotionRelatedToAConflictOrDilemmaOrCoping"/>
-    </owl:Class>
-    
+# Class: :Motivation (:Motivation)
 
+SubClassOf(:Motivation :InternalSupportingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Education -->
+# Class: :MotivationToJoinInitiative (Motivation to join the initiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Education">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :MotivationToJoinInitiative "Motivation to join the initiative"^^xsd:string)
+SubClassOf(:MotivationToJoinInitiative :BarriersToMembershipOfInitiative)
 
+# Class: :MotivationToStayInvolvedWithIniative (Motivation to stay involved with the initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EducationOrExperience -->
+AnnotationAssertion(rdfs:label :MotivationToStayInvolvedWithIniative "Motivation to stay involved with the initiative"^^xsd:string)
+SubClassOf(:MotivationToStayInvolvedWithIniative :BarriersToMembershipOfInitiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EducationOrExperience">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialAndPersonalBackground"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education or experience</rdfs:label>
-    </owl:Class>
-    
+# Class: :NegativeChangeOnWellBeing (Negative change on well-being)
 
+AnnotationAssertion(rdfs:label :NegativeChangeOnWellBeing "Negative change on well-being"^^xsd:string)
+SubClassOf(:NegativeChangeOnWellBeing :WellBeing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EffectOnBehaviourDueToInitiative -->
+# Class: :NoSupport (No support)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EffectOnBehaviourDueToInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural effect due to initiative</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :NoSupport "No support"^^xsd:string)
+SubClassOf(:NoSupport :ExternalHinderingFactor)
 
+# Class: :ObstacleToJoiningTheInitiative (Obstacle to joining the initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EffectOnCopingWithConflictDueToInitiative -->
+AnnotationAssertion(rdfs:label :ObstacleToJoiningTheInitiative "Obstacle to joining the initiative"^^xsd:string)
+SubClassOf(:ObstacleToJoiningTheInitiative :BarriersToMembershipOfInitiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EffectOnCopingWithConflictDueToInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A coping with conflict due to the initiative</rdfs:label>
-    </owl:Class>
-    
+# Class: :ObstacleToRemainingWithInitiative (Obstacle to reamaining with the initiative)
 
+AnnotationAssertion(rdfs:label :ObstacleToRemainingWithInitiative "Obstacle to reamaining with the initiative"^^xsd:string)
+SubClassOf(:ObstacleToRemainingWithInitiative :BarriersToMembershipOfInitiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EffectOnLifestyleDueToInitiative -->
+# Class: :Occupation (:Occupation)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EffectOnLifestyleDueToInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An increase in conflict due to the initative</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifestyle effect due to initiative</rdfs:label>
-    </owl:Class>
-    
+SubClassOf(:Occupation :PersonalAspect)
 
+# Class: :OriginatingFromAnIndividual (:OriginatingFromAnIndividual)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EmotionRelatedToAConflictOrDilemmaOrCoping -->
+SubClassOf(:OriginatingFromAnIndividual :AspectOfFutureOrBetterGovernance)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EmotionRelatedToAConflictOrDilemmaOrCoping">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictOrCopingBehaviour"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emotion related to either conflict or coping</rdfs:label>
-    </owl:Class>
-    
+# Class: :OverlyComplex (Overly complex)
 
+AnnotationAssertion(rdfs:label :OverlyComplex "Overly complex"^^xsd:string)
+SubClassOf(:OverlyComplex :ExternalHinderingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EmotionalImpact -->
+# Class: :PeriodOfTime (:PeriodOfTime)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EmotionalImpact">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InitiativeRelatedImpactOnWellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emotional impact on well-being</rdfs:label>
-    </owl:Class>
-    
+SubClassOf(:PeriodOfTime :Measurement)
 
+# Class: :PersonalAspect (Personal Aspect)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Energy -->
+AnnotationAssertion(rdfs:label :PersonalAspect "Personal Aspect"^^xsd:string)
+SubClassOf(:PersonalAspect :SocialAndPersonalBackground)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Energy">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-    </owl:Class>
-    
+# Class: :PersonalDevelopmentalImpact (Personal development impact on well-being)
 
+AnnotationAssertion(rdfs:label :PersonalDevelopmentalImpact "Personal development impact on well-being"^^xsd:string)
+SubClassOf(:PersonalDevelopmentalImpact :InitiativeRelatedImpactOnWellBeing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExperienceOfPoliticalConditions -->
+# Class: :Pleasure (:Pleasure)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExperienceOfPoliticalConditions">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalEngagement"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experience of political conditions in the past</rdfs:label>
-    </owl:Class>
-    
+SubClassOf(:Pleasure :EmotionRelatedToAConflictOrDilemmaOrCoping)
 
+# Class: :PoliticalActitivity (Politcal Activity)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalHinderingFactor -->
+AnnotationAssertion(rdfs:label :PoliticalActitivity "Politcal Activity"^^xsd:string)
+SubClassOf(:PoliticalActitivity :BehaviouralDomain)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalHinderingFactor">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#HinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External hindering factor</rdfs:label>
-    </owl:Class>
-    
+# Class: :PoliticalEngagement (Political engagement)
 
+AnnotationAssertion(rdfs:label :PoliticalEngagement "Political engagement"^^xsd:string)
+SubClassOf(:PoliticalEngagement :SocialAndPersonalBackground)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupport -->
+# Class: :PositiveChangeOnWellBeing (Positive change on well-being)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupport">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External support</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :PositiveChangeOnWellBeing "Positive change on well-being"^^xsd:string)
+SubClassOf(:PositiveChangeOnWellBeing :WellBeing)
 
+# Class: :PreviousPoliticalEngagement (Previous political engagement)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupportingFactor -->
+AnnotationAssertion(rdfs:label :PreviousPoliticalEngagement "Previous political engagement"^^xsd:string)
+SubClassOf(:PreviousPoliticalEngagement :PoliticalEngagement)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupportingFactor">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External supporting factor</rdfs:label>
-    </owl:Class>
-    
+# Class: :Pride (:Pride)
 
+SubClassOf(:Pride :EmotionRelatedToAConflictOrDilemmaOrCoping)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#FamilyStatus -->
+# Class: :ProfessionalKnowledge (Professional knowledge)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#FamilyStatus">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalAspect"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family status</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :ProfessionalKnowledge "Professional knowledge"^^xsd:string)
+SubClassOf(:ProfessionalKnowledge :InternalSupportingFactor)
 
+# Class: :ReferenceToPoliticalBiography (Reference to a political biography)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Food -->
+AnnotationAssertion(rdfs:label :ReferenceToPoliticalBiography "Reference to a political biography"^^xsd:string)
+SubClassOf(:ReferenceToPoliticalBiography :PoliticalEngagement)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Food">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-    </owl:Class>
-    
+# Class: :RelevantEducation (Relevant education)
 
+AnnotationAssertion(rdfs:label :RelevantEducation "Relevant education"^^xsd:string)
+SubClassOf(:RelevantEducation :EducationOrExperience)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#FutureOrientation -->
+# Class: :RelevantExperience (Relevant experience)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#FutureOrientation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Future orientation</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :RelevantExperience "Relevant experience"^^xsd:string)
+SubClassOf(:RelevantExperience :EducationOrExperience)
 
+# Class: :RelevantTraning (Relevant training)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#GoodPracticeInInitiative -->
+AnnotationAssertion(rdfs:label :RelevantTraning "Relevant training"^^xsd:string)
+SubClassOf(:RelevantTraning :EducationOrExperience)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#GoodPracticeInInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfEngagementInInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Good practice in the initiative</rdfs:label>
-    </owl:Class>
-    
+# Class: :ResdienceInRelationToWorkPlace (Relation of residence to work place)
 
+AnnotationAssertion(rdfs:label :ResdienceInRelationToWorkPlace "Relation of residence to work place"^^xsd:string)
+SubClassOf(:ResdienceInRelationToWorkPlace :PersonalAspect)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#GovernanceOriginatingFromACommunity -->
+# Class: :RoleInInitative (Role in the initiative)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#GovernanceOriginatingFromACommunity">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Governance originating from a community</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :RoleInInitative "Role in the initiative"^^xsd:string)
+SubClassOf(:RoleInInitative :AspectOfEngagementInInitiative)
 
+# Class: :SocialAndPersonalBackground (Social and personal background)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Habit -->
+AnnotationAssertion(rdfs:label :SocialAndPersonalBackground "Social and personal background"^^xsd:string)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Habit">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-    </owl:Class>
-    
+# Class: :SocialImpact (Social impact on well-being)
 
+AnnotationAssertion(rdfs:label :SocialImpact "Social impact on well-being"^^xsd:string)
+SubClassOf(:SocialImpact :InitiativeRelatedImpactOnWellBeing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#HinderingFactor -->
+# Class: :SocialPeerPressure (Social peer pressure)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#HinderingFactor">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hindering factor</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :SocialPeerPressure "Social peer pressure"^^xsd:string)
+SubClassOf(:SocialPeerPressure :ConflictTrigger)
 
+# Class: :SupportingFactor (Supporting factor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#HinderingInfrastructure -->
+AnnotationAssertion(rdfs:label :SupportingFactor "Supporting factor"^^xsd:string)
+SubClassOf(:SupportingFactor :BehaviourOrBehaviouralPattern)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#HinderingInfrastructure">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalHinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hindering infrastructure</rdfs:label>
-    </owl:Class>
-    
+# Class: :SupportingInfrastructure (Supporting infrastructure)
 
+AnnotationAssertion(rdfs:label :SupportingInfrastructure "Supporting infrastructure"^^xsd:string)
+SubClassOf(:SupportingInfrastructure :ExternalSupportingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Housing -->
+# Class: :SustainableBehaviour (Sustainable behaviour)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Housing">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :SustainableBehaviour "Sustainable behaviour"^^xsd:string)
+SubClassOf(:SustainableBehaviour :BehaviourOrBehaviouralPattern)
 
+# Class: :TimeManagementIssue (Time management issue)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Idea -->
+AnnotationAssertion(rdfs:label :TimeManagementIssue "Time management issue"^^xsd:string)
+SubClassOf(:TimeManagementIssue :TimeRelatedBehaviour)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Idea">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-    </owl:Class>
-    
+# Class: :TimeRelatedBehaviour (Time related behaviour)
 
+AnnotationAssertion(rdfs:label :TimeRelatedBehaviour "Time related behaviour"^^xsd:string)
+SubClassOf(:TimeRelatedBehaviour :BehaviourOrBehaviouralPattern)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative -->
+# Class: :TimeScarcity (Time scarcity)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An impact on lifestyle due to initiative</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :TimeScarcity "Time scarcity"^^xsd:string)
+SubClassOf(:TimeScarcity :TimeRelatedBehaviour)
 
+# Class: :TimeStress (Time stress)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#IncreaseOfConflictDueToInitiative -->
+AnnotationAssertion(rdfs:label :TimeStress "Time stress"^^xsd:string)
+SubClassOf(:TimeStress :TimeRelatedBehaviour)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#IncreaseOfConflictDueToInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ImpactOnLifestyleDueToInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Increase in conflict due to the initiative</rdfs:label>
-    </owl:Class>
-    
+# Class: :TimeUsedForTheInitative (Time used for the initiative)
 
+AnnotationAssertion(rdfs:label :TimeUsedForTheInitative "Time used for the initiative"^^xsd:string)
+SubClassOf(:TimeUsedForTheInitative :AspectOfEngagementInInitiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Individual -->
+# Class: :UnavailableLand (Unavailable land)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Individual">
-        <owl:equivalentClass rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :UnavailableLand "Unavailable land"^^xsd:string)
+SubClassOf(:UnavailableLand :ExternalHinderingFactor)
 
+# Class: :UnitOfTime (:UnitOfTime)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InformationAccessibility -->
+SubClassOf(:UnitOfTime :PeriodOfTime)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InformationAccessibility">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information accessibility</rdfs:label>
-    </owl:Class>
-    
+# Class: :Value (:Value)
 
+SubClassOf(:Value :InternalSupportingFactor)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InformationAvailability -->
+# Class: :WellBeing (Well-being)
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InformationAvailability">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information availability</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(rdfs:label :WellBeing "Well-being"^^xsd:string)
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Initiative -->
+############################
+#   Named Individuals
+############################
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Initiative"/>
-    
+# Individual: :author:DougSalt (Doug Salt)
 
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InitiativeRelatedImpactOnWellBeing -->
 
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InitiativeRelatedImpactOnWellBeing">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#WellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initiative-related impact on well-being</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InsufficientMoney -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InsufficientMoney">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insufficient time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InsufficientTime -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InsufficientTime">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insufficient time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalHinderingFactor -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalHinderingFactor">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#HinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal hindering factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal supporting factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Kid -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Kid">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LackOfKnowledge -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LackOfKnowledge">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalHinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lack of knowledge</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LackOfPower -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LackOfPower">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lack of power</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LackOfSkill -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LackOfSkill">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalHinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lack of skill</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Laziness -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Laziness">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LifestyleSatisfactionImpact -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#LifestyleSatisfactionImpact">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InitiativeRelatedImpactOnWellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifestyle satisfaction impact on well-being</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Mobility -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Mobility">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MoreEducation -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MoreEducation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More information</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MoreInformation -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MoreInformation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More information</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MoreRadicalGovernance -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MoreRadicalGovernance">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More radical governance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Motivation -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Motivation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MotivationToJoinInitiative -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MotivationToJoinInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BarriersToMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation to join the initiative</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MotivationToStayInvolvedWithIniative -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#MotivationToStayInvolvedWithIniative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BarriersToMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motivation to stay involved with the initiative</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#NegativeChangeOnWellBeing -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#NegativeChangeOnWellBeing">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#WellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative change on well-being</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#NoSupport -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#NoSupport">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalHinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No support</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ObstacleToJoiningTheInitiative -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ObstacleToJoiningTheInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BarriersToMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obstacle to joining the initiative</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ObstacleToRemainingWithInitiative -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ObstacleToRemainingWithInitiative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BarriersToMembershipOfInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obstacle to reamaining with the initiative</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Occupation -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Occupation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalAspect"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#OriginatingFromAnIndividual -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#OriginatingFromAnIndividual">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfFutureOrBetterGovernance"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#OverlyComplex -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#OverlyComplex">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalHinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Overly complex</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PeriodOfTime -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PeriodOfTime">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Measurement"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Person"/>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalAspect -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalAspect">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialAndPersonalBackground"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Aspect</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalDevelopmentalImpact -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalDevelopmentalImpact">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InitiativeRelatedImpactOnWellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal development impact on well-being</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Pleasure -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Pleasure">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EmotionRelatedToAConflictOrDilemmaOrCoping"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalActitivity -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalActitivity">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviouralDomain"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Politcal Activity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalEngagement -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalEngagement">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialAndPersonalBackground"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political engagement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PositiveChangeOnWellBeing -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PositiveChangeOnWellBeing">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#WellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Positive change on well-being</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PreviousPoliticalEngagement -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PreviousPoliticalEngagement">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalEngagement"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Previous political engagement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Pride -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Pride">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EmotionRelatedToAConflictOrDilemmaOrCoping"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ProfessionalKnowledge -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ProfessionalKnowledge">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professional knowledge</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ReferenceToPoliticalBiography -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ReferenceToPoliticalBiography">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PoliticalEngagement"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference to a political biography</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RelevantEducation -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RelevantEducation">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EducationOrExperience"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant education</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RelevantExperience -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RelevantExperience">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EducationOrExperience"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant experience</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RelevantTraning -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RelevantTraning">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#EducationOrExperience"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relevant training</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ResdienceInRelationToWorkPlace -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ResdienceInRelationToWorkPlace">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PersonalAspect"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation of residence to work place</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RoleInInitative -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#RoleInInitative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfEngagementInInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role in the initiative</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialAndPersonalBackground -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialAndPersonalBackground">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social and personal background</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialImpact -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialImpact">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InitiativeRelatedImpactOnWellBeing"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social impact on well-being</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialPeerPressure -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SocialPeerPressure">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ConflictTrigger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social peer pressure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SupportingFactor -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SupportingFactor">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supporting factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SupportingInfrastructure -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SupportingInfrastructure">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalSupportingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supporting infrastructure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SustainableBehaviour -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#SustainableBehaviour">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sustainable behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeManagementIssue -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeManagementIssue">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeRelatedBehaviour"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time management issue</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeRelatedBehaviour -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeRelatedBehaviour">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#BehaviourOrBehaviouralPattern"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time related behaviour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeScarcity -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeScarcity">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeRelatedBehaviour"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time scarcity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeStress -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeStress">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeRelatedBehaviour"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stress</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeUsedForTheInitative -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#TimeUsedForTheInitative">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#AspectOfEngagementInInitiative"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time used for the initiative</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#UnavailableLand -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#UnavailableLand">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#ExternalHinderingFactor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unavailable land</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#UnitOfTime -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#UnitOfTime">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#PeriodOfTime"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Value -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#Value">
-        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#InternalSupportingFactor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#WellBeing -->
-
-    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#WellBeing">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Well-being</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#author:DougSalt -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#author:DougSalt">
-        <rdfs:label>Doug Salt</rdfs:label>
-    </owl:NamedIndividual>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
-
+)

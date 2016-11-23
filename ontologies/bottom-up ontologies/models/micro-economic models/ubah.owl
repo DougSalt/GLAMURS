@@ -1,0 +1,539 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/ubah#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/ubah>
+Annotation(rdfs:comment "2016-08-19"^^xsd:date)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:Agent))
+Declaration(Class(:AgentsFollowingSameNorm))
+Declaration(Class(:BasicModelType))
+Declaration(Class(:CollectionOfAgents))
+Declaration(Class(:CollectionOfAllAgents))
+Declaration(Class(:Consumer))
+Declaration(Class(:Consumption))
+Declaration(Class(:ConsumptionUtility))
+Declaration(Class(:CrowdingOutModelType))
+Declaration(Class(:EnvironmentalDamage))
+Declaration(Class(:Equilibrium))
+Declaration(Class(:EudonicWellBeing))
+Declaration(Class(:ExpectationsModelType))
+Declaration(Class(:Good))
+Declaration(Class(:GoodConsumption))
+Declaration(Class(:GreenLifestyle))
+Declaration(Class(:HarmfulGood))
+Declaration(Class(:IndividualConsumptionOfAGood))
+Declaration(Class(:Lifestyle))
+Declaration(Class(:ModelType))
+Declaration(Class(:Norm))
+Declaration(Class(:PerceivedEnvironmentalDamage))
+Declaration(Class(:PersonalNorm))
+Declaration(Class(:RedLifestyle))
+Declaration(Class(:SocialUtilityNorm))
+Declaration(Class(:SocialUtillity))
+Declaration(Class(:Supply))
+Declaration(Class(:TotalConsumptionOfAGood))
+Declaration(Class(:Utility))
+Declaration(Class(:UtilityOfAnAgent))
+Declaration(Class(:Variable))
+Declaration(Class(:VariableEudonicWellBeingModelType))
+Declaration(ObjectProperty(:agentFollowsNorm))
+Declaration(ObjectProperty(:agentHasUtility))
+Declaration(ObjectProperty(:followsPersonalNorm))
+Declaration(ObjectProperty(:hasConsumptionUtility))
+Declaration(ObjectProperty(:hasEudonicWellBeing))
+Declaration(ObjectProperty(:hasIndividualConsumptionOfAGood))
+Declaration(ObjectProperty(:hasLifestyleChoice))
+Declaration(ObjectProperty(:hasPart))
+Declaration(ObjectProperty(:hasPerceivedDamage))
+Declaration(ObjectProperty(:hasSocialUtility))
+Declaration(ObjectProperty(:hasSupply))
+Declaration(ObjectProperty(:hasTotalConsumptionForGood))
+Declaration(ObjectProperty(:isMediatedByNorm))
+Declaration(ObjectProperty(:isPartOf))
+Declaration(ObjectProperty(:isTotalConsumptionForGood))
+Declaration(DataProperty(:D_i))
+Declaration(DataProperty(:G_i))
+Declaration(DataProperty(:I_i))
+Declaration(DataProperty(:Q))
+Declaration(DataProperty(:S))
+Declaration(DataProperty(:U_i))
+Declaration(DataProperty(:W_i))
+Declaration(DataProperty(:beta))
+Declaration(DataProperty(:containsNumberOfAgents))
+Declaration(DataProperty(:delta_g))
+Declaration(DataProperty(:delta_r))
+Declaration(DataProperty(:hasConsumptionUtilityValue))
+Declaration(DataProperty(:hasEnglishLanguageValue))
+Declaration(DataProperty(:hasEudonicWellBeingValue))
+Declaration(DataProperty(:hasGoodDemandValue))
+Declaration(DataProperty(:hasGoodIndvidualConsumptionGreenNormValue))
+Declaration(DataProperty(:hasGoodIndvidualConsumptionRedNormValue))
+Declaration(DataProperty(:hasGoodIndvidualConsumptionValue))
+Declaration(DataProperty(:hasHomogeneityValue))
+Declaration(DataProperty(:hasPerceivedDamageValue))
+Declaration(DataProperty(:hasPerceivedDamageValueForGreenNorm))
+Declaration(DataProperty(:hasPerceivedDamageValueForRedNorm))
+Declaration(DataProperty(:hasPriceValue))
+Declaration(DataProperty(:hasProportionOfAgentsFollowingNormValue))
+Declaration(DataProperty(:hasSocialUtilityFromDescriptiveNormsValue))
+Declaration(DataProperty(:hasSupplyValue))
+Declaration(DataProperty(:hasSymbolicFormValue))
+Declaration(DataProperty(:hasUtilityOfAnAgentValue))
+Declaration(DataProperty(:p))
+Declaration(DataProperty(:q_g))
+Declaration(DataProperty(:q_i))
+Declaration(DataProperty(:q_r))
+Declaration(DataProperty(:x_i))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :agentFollowsNorm (follows norm)
+
+AnnotationAssertion(rdfs:label :agentFollowsNorm "follows norm"@en)
+FunctionalObjectProperty(:agentFollowsNorm)
+AsymmetricObjectProperty(:agentFollowsNorm)
+IrreflexiveObjectProperty(:agentFollowsNorm)
+ObjectPropertyDomain(:agentFollowsNorm :Consumer)
+ObjectPropertyRange(:agentFollowsNorm :Norm)
+
+# Object Property: :agentHasUtility (agent has utility)
+
+AnnotationAssertion(rdfs:label :agentHasUtility "agent has utility"@en)
+ObjectPropertyDomain(:agentHasUtility :ConsumptionUtility)
+ObjectPropertyDomain(:agentHasUtility :EudonicWellBeing)
+ObjectPropertyDomain(:agentHasUtility :IndividualConsumptionOfAGood)
+ObjectPropertyDomain(:agentHasUtility :PerceivedEnvironmentalDamage)
+ObjectPropertyDomain(:agentHasUtility :SocialUtillity)
+ObjectPropertyDomain(:agentHasUtility DataSomeValuesFrom(:hasPriceValue owl:real))
+ObjectPropertyRange(:agentHasUtility :UtilityOfAnAgent)
+
+# Object Property: :followsPersonalNorm (follows personal norm)
+
+AnnotationAssertion(rdfs:label :followsPersonalNorm "follows personal norm"@en)
+SubObjectPropertyOf(:followsPersonalNorm :agentFollowsNorm)
+ObjectPropertyDomain(:followsPersonalNorm :Consumer)
+ObjectPropertyRange(:followsPersonalNorm :PersonalNorm)
+
+# Object Property: :hasConsumptionUtility (has consumption utility)
+
+AnnotationAssertion(rdfs:label :hasConsumptionUtility "has consumption utility"@en)
+ObjectPropertyDomain(:hasConsumptionUtility :IndividualConsumptionOfAGood)
+ObjectPropertyRange(:hasConsumptionUtility :ConsumptionUtility)
+
+# Object Property: :hasEudonicWellBeing (has eudonic well being)
+
+AnnotationAssertion(rdfs:label :hasEudonicWellBeing "has eudonic well being"@en)
+ObjectPropertyDomain(:hasEudonicWellBeing :IndividualConsumptionOfAGood)
+ObjectPropertyRange(:hasEudonicWellBeing :EudonicWellBeing)
+
+# Object Property: :hasIndividualConsumptionOfAGood (has individual consumption of a good)
+
+AnnotationAssertion(rdfs:label :hasIndividualConsumptionOfAGood "has individual consumption of a good"@en)
+FunctionalObjectProperty(:hasIndividualConsumptionOfAGood)
+AsymmetricObjectProperty(:hasIndividualConsumptionOfAGood)
+IrreflexiveObjectProperty(:hasIndividualConsumptionOfAGood)
+ObjectPropertyDomain(:hasIndividualConsumptionOfAGood :Consumer)
+ObjectPropertyRange(:hasIndividualConsumptionOfAGood :Good)
+
+# Object Property: :hasLifestyleChoice (has lifestyle choice)
+
+AnnotationAssertion(rdfs:label :hasLifestyleChoice "has lifestyle choice"@en)
+ObjectPropertyDomain(:hasLifestyleChoice :Agent)
+ObjectPropertyRange(:hasLifestyleChoice :Lifestyle)
+
+# Object Property: :hasPart (has part)
+
+AnnotationAssertion(rdfs:label :hasPart "has part"@en)
+InverseObjectProperties(:hasPart :isPartOf)
+
+# Object Property: :hasPerceivedDamage (has perceived damage)
+
+AnnotationAssertion(rdfs:label :hasPerceivedDamage "has perceived damage"@en)
+ObjectPropertyDomain(:hasPerceivedDamage ObjectSomeValuesFrom(:isTotalConsumptionForGood :Good))
+ObjectPropertyRange(:hasPerceivedDamage :PerceivedEnvironmentalDamage)
+
+# Object Property: :hasSocialUtility (has social utility)
+
+AnnotationAssertion(rdfs:label :hasSocialUtility "has social utility"@en)
+ObjectPropertyDomain(:hasSocialUtility :CollectionOfAllAgents)
+ObjectPropertyRange(:hasSocialUtility :SocialUtillity)
+
+# Object Property: :hasSupply (has supply)
+
+AnnotationAssertion(rdfs:label :hasSupply "has supply"@en)
+ObjectPropertyDomain(:hasSupply :Good)
+ObjectPropertyRange(:hasSupply :Supply)
+
+# Object Property: :hasTotalConsumptionForGood (has total consumption for a good)
+
+AnnotationAssertion(rdfs:label :hasTotalConsumptionForGood "has total consumption for a good"@en)
+InverseObjectProperties(:hasTotalConsumptionForGood :isTotalConsumptionForGood)
+FunctionalObjectProperty(:hasTotalConsumptionForGood)
+AsymmetricObjectProperty(:hasTotalConsumptionForGood)
+IrreflexiveObjectProperty(:hasTotalConsumptionForGood)
+ObjectPropertyDomain(:hasTotalConsumptionForGood :Good)
+ObjectPropertyRange(:hasTotalConsumptionForGood :TotalConsumptionOfAGood)
+
+# Object Property: :isMediatedByNorm (is mediated by norm)
+
+AnnotationAssertion(rdfs:label :isMediatedByNorm "is mediated by norm"@en)
+ObjectPropertyDomain(:isMediatedByNorm ObjectUnionOf(:EudonicWellBeing :SocialUtillity))
+ObjectPropertyRange(:isMediatedByNorm :Norm)
+
+# Object Property: :isPartOf (is part of)
+
+AnnotationAssertion(rdfs:comment :isPartOf "Should be 
+
++transitive
++reflexive
++anti-symmetric
+
+Transitive breaks the Pellet reaonser, and reflexive messes with the domains and codamins in the integration ontology."@en)
+AnnotationAssertion(rdfs:label :isPartOf "is part of"@en)
+
+# Object Property: :isTotalConsumptionForGood (is the total consumption for a good)
+
+AnnotationAssertion(rdfs:label :isTotalConsumptionForGood "is the total consumption for a good"@en)
+FunctionalObjectProperty(:isTotalConsumptionForGood)
+AsymmetricObjectProperty(:isTotalConsumptionForGood)
+IrreflexiveObjectProperty(:isTotalConsumptionForGood)
+ObjectPropertyDomain(:isTotalConsumptionForGood :TotalConsumptionOfAGood)
+ObjectPropertyRange(:isTotalConsumptionForGood :Good)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :D_i (:D_i)
+
+AnnotationAssertion(rdfs:comment :D_i "D_i = D(Q) iff D'(Q) > 0 AND D''(Q) >= 0"^^xsd:string)
+EquivalentDataProperties(:D_i :hasPerceivedDamageValue)
+SubDataPropertyOf(:D_i :hasSymbolicFormValue)
+
+# Data Property: :G_i (:G_i)
+
+AnnotationAssertion(rdfs:comment :G_i "G_i = G(q_i)"^^xsd:string)
+EquivalentDataProperties(:G_i :hasEudonicWellBeingValue)
+SubDataPropertyOf(:G_i :hasSymbolicFormValue)
+
+# Data Property: :I_i (:I_i)
+
+EquivalentDataProperties(:I_i :hasSocialUtilityFromDescriptiveNormsValue)
+SubDataPropertyOf(:I_i :hasSymbolicFormValue)
+
+# Data Property: :Q (:Q)
+
+EquivalentDataProperties(:Q :hasGoodDemandValue)
+SubDataPropertyOf(:Q :hasSymbolicFormValue)
+FunctionalDataProperty(:Q)
+
+# Data Property: :S (:S)
+
+EquivalentDataProperties(:S :hasSupplyValue)
+SubDataPropertyOf(:S :hasSymbolicFormValue)
+
+# Data Property: :U_i (:U_i)
+
+AnnotationAssertion(rdfs:comment :U_i "U_i \\equiv U(q_i) iff U'(q_i) > 0 AND U''(q_i) <= 0"^^xsd:string)
+EquivalentDataProperties(:U_i :hasConsumptionUtilityValue)
+SubDataPropertyOf(:U_i :hasSymbolicFormValue)
+
+# Data Property: :W_i (:W_i)
+
+EquivalentDataProperties(:W_i :hasUtilityOfAnAgentValue)
+SubDataPropertyOf(:W_i :hasSymbolicFormValue)
+
+# Data Property: :beta (:beta)
+
+EquivalentDataProperties(:beta :hasHomogeneityValue)
+SubDataPropertyOf(:beta :hasSymbolicFormValue)
+
+# Data Property: :containsNumberOfAgents (contains number of agents)
+
+AnnotationAssertion(rdfs:label :containsNumberOfAgents "contains number of agents"@en)
+SubDataPropertyOf(:containsNumberOfAgents :hasEnglishLanguageValue)
+DataPropertyDomain(:containsNumberOfAgents :CollectionOfAgents)
+DataPropertyRange(:containsNumberOfAgents xsd:nonNegativeInteger)
+
+# Data Property: :delta_g (:delta_g)
+
+EquivalentDataProperties(:delta_g :hasPerceivedDamageValueForGreenNorm)
+SubDataPropertyOf(:delta_g :D_i)
+
+# Data Property: :delta_r (:delta_r)
+
+EquivalentDataProperties(:delta_r :hasPerceivedDamageValueForRedNorm)
+SubDataPropertyOf(:delta_r :D_i)
+
+# Data Property: :hasConsumptionUtilityValue (has consumption utility value)
+
+AnnotationAssertion(rdfs:label :hasConsumptionUtilityValue "has consumption utility value"@en)
+SubDataPropertyOf(:hasConsumptionUtilityValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasConsumptionUtilityValue :ConsumptionUtility)
+DataPropertyRange(:hasConsumptionUtilityValue owl:real)
+
+# Data Property: :hasEudonicWellBeingValue (has eudonic wellbeing value)
+
+AnnotationAssertion(rdfs:label :hasEudonicWellBeingValue "has eudonic wellbeing value"@en)
+SubDataPropertyOf(:hasEudonicWellBeingValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasEudonicWellBeingValue :EudonicWellBeing)
+DataPropertyRange(:hasEudonicWellBeingValue owl:real)
+
+# Data Property: :hasGoodDemandValue (has total demand for good value)
+
+AnnotationAssertion(rdfs:label :hasGoodDemandValue "has total demand for good value"@en)
+SubDataPropertyOf(:hasGoodDemandValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasGoodDemandValue :TotalConsumptionOfAGood)
+DataPropertyRange(:hasGoodDemandValue owl:real)
+
+# Data Property: :hasGoodIndvidualConsumptionGreenNormValue (has red consumption of an individual good value)
+
+AnnotationAssertion(rdfs:label :hasGoodIndvidualConsumptionGreenNormValue "has red consumption of an individual good value"@en)
+EquivalentDataProperties(:hasGoodIndvidualConsumptionGreenNormValue :q_r)
+SubDataPropertyOf(:hasGoodIndvidualConsumptionGreenNormValue :hasGoodIndvidualConsumptionValue)
+
+# Data Property: :hasGoodIndvidualConsumptionRedNormValue (has green consumption of an individual good value)
+
+AnnotationAssertion(rdfs:label :hasGoodIndvidualConsumptionRedNormValue "has green consumption of an individual good value"@en)
+EquivalentDataProperties(:hasGoodIndvidualConsumptionRedNormValue :q_g)
+SubDataPropertyOf(:hasGoodIndvidualConsumptionRedNormValue :hasGoodIndvidualConsumptionValue)
+
+# Data Property: :hasGoodIndvidualConsumptionValue (has consumption of an individual good value)
+
+AnnotationAssertion(rdfs:label :hasGoodIndvidualConsumptionValue "has consumption of an individual good value"@en)
+EquivalentDataProperties(:hasGoodIndvidualConsumptionValue :q_i)
+SubDataPropertyOf(:hasGoodIndvidualConsumptionValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasGoodIndvidualConsumptionValue :GoodConsumption)
+DataPropertyRange(:hasGoodIndvidualConsumptionValue owl:real)
+
+# Data Property: :hasHomogeneityValue (has homegeneity value)
+
+AnnotationAssertion(rdfs:label :hasHomogeneityValue "has homegeneity value"@en)
+SubDataPropertyOf(:hasHomogeneityValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasHomogeneityValue :CollectionOfAgents)
+DataPropertyRange(:hasHomogeneityValue owl:real)
+
+# Data Property: :hasPerceivedDamageValue (has perceived damage value)
+
+AnnotationAssertion(rdfs:label :hasPerceivedDamageValue "has perceived damage value"@en)
+SubDataPropertyOf(:hasPerceivedDamageValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasPerceivedDamageValue :PerceivedEnvironmentalDamage)
+DataPropertyRange(:hasPerceivedDamageValue owl:real)
+
+# Data Property: :hasPerceivedDamageValueForGreenNorm (has perceived damage value for green norm)
+
+AnnotationAssertion(rdfs:label :hasPerceivedDamageValueForGreenNorm "has perceived damage value for green norm"@en)
+SubDataPropertyOf(:hasPerceivedDamageValueForGreenNorm :hasPerceivedDamageValue)
+
+# Data Property: :hasPerceivedDamageValueForRedNorm (has perceived damage value for red norm)
+
+AnnotationAssertion(rdfs:label :hasPerceivedDamageValueForRedNorm "has perceived damage value for red norm"@en)
+SubDataPropertyOf(:hasPerceivedDamageValueForRedNorm :hasPerceivedDamageValue)
+
+# Data Property: :hasPriceValue (has price value)
+
+AnnotationAssertion(rdfs:label :hasPriceValue "has price value"@en)
+EquivalentDataProperties(:hasPriceValue :p)
+SubDataPropertyOf(:hasPriceValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasPriceValue :Good)
+DataPropertyRange(:hasPriceValue owl:real)
+
+# Data Property: :hasProportionOfAgentsFollowingNormValue (has proportion of agents following norm value)
+
+AnnotationAssertion(rdfs:label :hasProportionOfAgentsFollowingNormValue "has proportion of agents following norm value"@en)
+EquivalentDataProperties(:hasProportionOfAgentsFollowingNormValue :x_i)
+SubDataPropertyOf(:hasProportionOfAgentsFollowingNormValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasProportionOfAgentsFollowingNormValue :CollectionOfAgents)
+DataPropertyRange(:hasProportionOfAgentsFollowingNormValue owl:real)
+
+# Data Property: :hasSocialUtilityFromDescriptiveNormsValue (has social utility fom descriptive norms value)
+
+AnnotationAssertion(rdfs:label :hasSocialUtilityFromDescriptiveNormsValue "has social utility fom descriptive norms value"@en)
+SubDataPropertyOf(:hasSocialUtilityFromDescriptiveNormsValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasSocialUtilityFromDescriptiveNormsValue :SocialUtillity)
+DataPropertyRange(:hasSocialUtilityFromDescriptiveNormsValue owl:real)
+
+# Data Property: :hasSupplyValue (has supply value)
+
+AnnotationAssertion(rdfs:label :hasSupplyValue "has supply value"@en)
+SubDataPropertyOf(:hasSupplyValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasSupplyValue :Supply)
+DataPropertyRange(:hasSupplyValue owl:real)
+
+# Data Property: :hasUtilityOfAnAgentValue (has utility of an agent value)
+
+AnnotationAssertion(rdfs:comment :hasUtilityOfAnAgentValue "= U_i - pq_i - D_i + G_i + I_i
+where U_i is hasUtilityValue"^^xsd:string)
+AnnotationAssertion(rdfs:label :hasUtilityOfAnAgentValue "has utility of an agent value"@en)
+SubDataPropertyOf(:hasUtilityOfAnAgentValue :hasEnglishLanguageValue)
+DataPropertyDomain(:hasUtilityOfAnAgentValue :UtilityOfAnAgent)
+DataPropertyRange(:hasUtilityOfAnAgentValue owl:real)
+
+# Data Property: :p (:p)
+
+SubDataPropertyOf(:p :hasSymbolicFormValue)
+
+# Data Property: :q_g (:q_g)
+
+SubDataPropertyOf(:q_g :q_i)
+
+# Data Property: :q_i (:q_i)
+
+SubDataPropertyOf(:q_i :hasSymbolicFormValue)
+
+# Data Property: :q_r (:q_r)
+
+SubDataPropertyOf(:q_r :q_i)
+
+# Data Property: :x_i (:x_i)
+
+SubDataPropertyOf(:x_i :hasSymbolicFormValue)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :AgentsFollowingSameNorm (Agents following the same norm)
+
+AnnotationAssertion(rdfs:label :AgentsFollowingSameNorm "Agents following the same norm"@en)
+SubClassOf(:AgentsFollowingSameNorm :CollectionOfAgents)
+SubClassOf(:AgentsFollowingSameNorm ObjectSomeValuesFrom(:agentFollowsNorm :Norm))
+
+# Class: :BasicModelType (Basic)
+
+AnnotationAssertion(rdfs:label :BasicModelType "Basic"@en)
+SubClassOf(:BasicModelType :ModelType)
+
+# Class: :CollectionOfAgents (Collection of agents)
+
+AnnotationAssertion(rdfs:label :CollectionOfAgents "Collection of agents"@en)
+
+# Class: :CollectionOfAllAgents (Collection of all agents)
+
+AnnotationAssertion(rdfs:label :CollectionOfAllAgents "Collection of all agents"@en)
+SubClassOf(:CollectionOfAllAgents :CollectionOfAgents)
+
+# Class: :Consumer (:Consumer)
+
+SubClassOf(:Consumer :Agent)
+
+# Class: :ConsumptionUtility (Consumption utility)
+
+AnnotationAssertion(rdfs:label :ConsumptionUtility "Consumption utility"@en)
+SubClassOf(:ConsumptionUtility :Utility)
+
+# Class: :CrowdingOutModelType (Crowding out)
+
+AnnotationAssertion(rdfs:label :CrowdingOutModelType "Crowding out"@en)
+SubClassOf(:CrowdingOutModelType :ModelType)
+
+# Class: :EnvironmentalDamage (Environmental damage)
+
+AnnotationAssertion(rdfs:label :EnvironmentalDamage "Environmental damage"@en)
+
+# Class: :Equilibrium (:Equilibrium)
+
+AnnotationAssertion(rdfs:comment :Equilibrium "Is a state where two economic forces are balanced in the absence of external influences."^^xsd:string)
+
+# Class: :EudonicWellBeing (Eudonic well-being)
+
+AnnotationAssertion(rdfs:label :EudonicWellBeing "Eudonic well-being"@en)
+SubClassOf(:EudonicWellBeing ObjectSomeValuesFrom(:isMediatedByNorm :PersonalNorm))
+
+# Class: :ExpectationsModelType (Expectation)
+
+AnnotationAssertion(rdfs:label :ExpectationsModelType "Expectation"@en)
+SubClassOf(:ExpectationsModelType :ModelType)
+
+# Class: :GoodConsumption (Consumption of a good)
+
+AnnotationAssertion(rdfs:label :GoodConsumption "Consumption of a good"@en)
+SubClassOf(:GoodConsumption :Consumption)
+SubClassOf(:GoodConsumption ObjectSomeValuesFrom(:hasPart :IndividualConsumptionOfAGood))
+
+# Class: :GreenLifestyle (Green lifestyle)
+
+AnnotationAssertion(rdfs:label :GreenLifestyle "Green lifestyle"@en)
+SubClassOf(:GreenLifestyle :Lifestyle)
+DisjointClasses(:GreenLifestyle :RedLifestyle)
+
+# Class: :HarmfulGood (Harmful good)
+
+AnnotationAssertion(rdfs:label :HarmfulGood "Harmful good"@en)
+SubClassOf(:HarmfulGood :Good)
+
+# Class: :IndividualConsumptionOfAGood (Individual consumption of a good)
+
+AnnotationAssertion(rdfs:label :IndividualConsumptionOfAGood "Individual consumption of a good"@en)
+SubClassOf(:IndividualConsumptionOfAGood :GoodConsumption)
+
+# Class: :ModelType (Model type)
+
+AnnotationAssertion(rdfs:label :ModelType "Model type"@en)
+
+# Class: :PerceivedEnvironmentalDamage (Perceived environmental damage)
+
+AnnotationAssertion(rdfs:label :PerceivedEnvironmentalDamage "Perceived environmental damage"@en)
+SubClassOf(:PerceivedEnvironmentalDamage :EnvironmentalDamage)
+
+# Class: :PersonalNorm (Personal norm)
+
+AnnotationAssertion(rdfs:comment :PersonalNorm "pyschologic well-being or warm-glow"^^xsd:string)
+AnnotationAssertion(rdfs:label :PersonalNorm "Personal norm"@en)
+SubClassOf(:PersonalNorm :Norm)
+
+# Class: :RedLifestyle (Red lifestyle)
+
+AnnotationAssertion(rdfs:label :RedLifestyle "Red lifestyle"@en)
+SubClassOf(:RedLifestyle :Lifestyle)
+
+# Class: :SocialUtilityNorm (Social utility norm)
+
+AnnotationAssertion(rdfs:comment :SocialUtilityNorm "descriptive"^^xsd:string)
+AnnotationAssertion(rdfs:label :SocialUtilityNorm "Social utility norm"@en)
+SubClassOf(:SocialUtilityNorm :Norm)
+
+# Class: :SocialUtillity (Social utility)
+
+AnnotationAssertion(rdfs:label :SocialUtillity "Social utility"@en)
+SubClassOf(:SocialUtillity :Utility)
+SubClassOf(:SocialUtillity ObjectSomeValuesFrom(:isMediatedByNorm :SocialUtilityNorm))
+
+# Class: :TotalConsumptionOfAGood (Total consumption of a good)
+
+AnnotationAssertion(rdfs:label :TotalConsumptionOfAGood "Total consumption of a good"@en)
+SubClassOf(:TotalConsumptionOfAGood :GoodConsumption)
+
+# Class: :UtilityOfAnAgent (Utility of an agent)
+
+AnnotationAssertion(rdfs:label :UtilityOfAnAgent "Utility of an agent"@en)
+SubClassOf(:UtilityOfAnAgent :Utility)
+
+# Class: :VariableEudonicWellBeingModelType (Variable eudonic well being)
+
+AnnotationAssertion(rdfs:label :VariableEudonicWellBeingModelType "Variable eudonic well being"@en)
+SubClassOf(:VariableEudonicWellBeingModelType :ModelType)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+
+)

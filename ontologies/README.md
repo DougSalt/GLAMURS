@@ -8,7 +8,7 @@ The directory structure of this directory is the following:
 	- *models* - this is the directory containing the three differing kinds of models shown below.
 	    * agent-based models - There are several agent based models (ABM), but at the moment this only contains the ontology for the TiPaC ABM.
 	    * micro-economic models - This directory contains a single ontology for all four types of the University of Bath's micro-economic moodels.
-	    * macro-economic models - This directory contains two ontologies so far. These are two variations on the Tilburg University's macro-economic model.
+	    * macro-economic models - This directory contains a single ontology so far. This is the Tilburg University's macro-economic model.
 	- *regional surveys* - This is the directory containing the ontologies for the regional survey questionnaire to assess and evaluate people attitudes to changes to a sustainable lifestyle. There are different ontologies for differing parts of Europe and the sustainable targets being assessed were different.
 		* rest of Europe - This is the directory containing the ontology for the the regional survey questionnaire to assess and evaluate people's attitudes to changes to a sustainable lifestyle for European regions: Spain, Netherlands, Germany, Austria, Italy and Romania.
 		* Scotland - This is the directory containing the ontology for the the regional survey questionnaire to assess and evaluate people's attitudes to changes to a sustainable lifestyle for European region of Scotland.

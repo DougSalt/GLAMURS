@@ -1,0 +1,1228 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(basic:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert>
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>)
+Annotation(rdfs:comment "Note the conventions for this ontology are:
+
+The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
+
++ classes begin with an upper case letter
++ object properties begin with a lower case letter
++ data properties begin with a lower case letter and are suffixed with -value unless the data value is boolean.
++ data properties and object properties being with has unless another verb makes better sense.
++ individuals gerneally begin with a lowercase letter, unless it is a proper name
+
+Note these conventions relate to the underlying entity and not what is shown as its name in Protégé (which is normally the value of the label for whatever default the language is set to).
+
++ a label must be provided (usually with a language specification) and should be make sense in the language of choice
+
+Markdown will be used in all text."@en)
+Annotation(rdfs:comment "This  ontology is for what we have defined as expert vocabulary.  It is also sometimes referred to as the top-terms ontology. This is actually the combination of the top 200 word groups (terminology of 2 to 3 words) that have the highest combined familiarity and frequency. The familiarity in this case is defined using the corresponding property for that word in [WordNet](https://wordnet.princeton.edu/). The frequency is how often the word group was used in the GLAMURS corpus of documentation. Specifically all pdfs and word documents in the documentation repository of GLAMURS [here](https://documenta.udc.es/share/page/)
+
+All terms are defined as individuals initially and placed in the [Terminology](http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term) class.
+
+Each term that is defined will also have a seeAlso annotation which refers to the term individual from which the class, object property or data types was original defined in. 
+
+If there is no seeAlso or definedBy annotation, then the class, datatype or property was created by the author. However such \"unsupported\" definition is usually made explicity with the definedBy annotation and the author. Such axioms or definitions are usually for convenience and obvious logical connections or groupings. 
+
+Other than the caveats previously mentiioned, no additional attempt has been made to classify or link, the classes, datatypes or properties. The derived ontology  is purely the results gathered from the questionnaire at (http://surveys.hutton.ac.uk/index.php/559132?newtest=Y)."@en)
+Annotation(rdfs:isDefinedBy :author:DougSalt)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:Actor))
+Declaration(Class(:Agent))
+Declaration(Class(:BehaviourChange))
+Declaration(Class(:Business))
+Declaration(Class(:CapabilityApproach))
+Declaration(Class(:CaseStudy))
+Declaration(Class(:Consumption))
+Declaration(Class(:Country))
+Declaration(Class(:CriticalAnalysis))
+Declaration(Class(:Decision))
+Declaration(Class(:Disposal))
+Declaration(Class(:Distribution))
+Declaration(Class(:EconomicOutput))
+Declaration(Class(:EconomicSystem))
+Declaration(Class(:Economy))
+Declaration(Class(:Energy))
+Declaration(Class(:EnergyDemand))
+Declaration(Class(:EnergyProduction))
+Declaration(Class(:EnergySaving))
+Declaration(Class(:EnergyUse))
+Declaration(Class(:Environment))
+Declaration(Class(:EnvironmentalImpact))
+Declaration(Class(:ExceedsThreshold))
+Declaration(Class(:Experience))
+Declaration(Class(:ExternalInfluence))
+Declaration(Class(:ExtractionOfRawMatter))
+Declaration(Class(:FocusGroup))
+Declaration(Class(:Government))
+Declaration(Class(:GreenEconomy))
+Declaration(Class(:GreenGrowth))
+Declaration(Class(:Household))
+Declaration(Class(:Identity))
+Declaration(Class(:Individual))
+Declaration(Class(:Interaction))
+Declaration(Class(:KnowledgeAcquisition))
+Declaration(Class(:LandUse))
+Declaration(Class(:LifeCycle))
+Declaration(Class(:LifeSatisfaction))
+Declaration(Class(:Lifestyle))
+Declaration(Class(:LifestyleChange))
+Declaration(Class(:Manufacturing))
+Declaration(Class(:MaterialConsumption))
+Declaration(Class(:Mood))
+Declaration(Class(:NetworkAnalysis))
+Declaration(Class(:NormativePressure))
+Declaration(Class(:OutputDemand))
+Declaration(Class(:Place))
+Declaration(Class(:PostiveFeedback))
+Declaration(Class(:Product))
+Declaration(Class(:PublicGood))
+Declaration(Class(:ReboundEffect))
+Declaration(Class(:Region))
+Declaration(Class(:SelfPerception))
+Declaration(Class(:SelfReflection))
+Declaration(Class(:SocialIdentityTheory))
+Declaration(Class(:SocialNetwork))
+Declaration(Class(:SocialNorm))
+Declaration(Class(:Society))
+Declaration(Class(:Space))
+Declaration(Class(:Stakeholder))
+Declaration(Class(:SupplyChain))
+Declaration(Class(:Technology))
+Declaration(Class(:TimeManagement))
+Declaration(Class(:TimeUse))
+Declaration(Class(:Travel))
+Declaration(Class(:TravelBehaviour))
+Declaration(Class(:TravelMode))
+Declaration(Class(:Utilisation))
+Declaration(ObjectProperty(:caseStudyRegion))
+Declaration(ObjectProperty(:placeAttachment))
+Declaration(ObjectProperty(:placeIdentity))
+Declaration(ObjectProperty(:socialCapital))
+Declaration(ObjectProperty(:socialInfluence))
+Declaration(DataProperty(:collectiveActionProblem))
+Declaration(DataProperty(:economicGrowth))
+Declaration(DataProperty(:environmentalImpactAssessment))
+Declaration(DataProperty(:finalDemand))
+Declaration(DataProperty(:indirectEnergy))
+Declaration(DataProperty(:materialFootprint))
+Declaration(DataProperty(:openSpace))
+Declaration(DataProperty(:technologicalChange))
+Declaration(DataProperty(:timePressure))
+Declaration(DataProperty(:travelMode))
+Declaration(DataProperty(:waterFootprint))
+Declaration(NamedIndividual(:author:DougSalt))
+Declaration(NamedIndividual(:term:BehaviourChange))
+Declaration(NamedIndividual(:term:CapabilityApproach))
+Declaration(NamedIndividual(:term:caseStudyRegion))
+Declaration(NamedIndividual(:term:choiceModel))
+Declaration(NamedIndividual(:term:collectiveAction))
+Declaration(NamedIndividual(:term:criticalAnalysis))
+Declaration(NamedIndividual(:term:economicGrowth))
+Declaration(NamedIndividual(:term:EconomicSystem))
+Declaration(NamedIndividual(:term:EnergyDemand))
+Declaration(NamedIndividual(:term:EnergyProduction))
+Declaration(NamedIndividual(:term:EnergySaving))
+Declaration(NamedIndividual(:term:environmentalImpactAssessment))
+Declaration(NamedIndividual(:term:finalDemand))
+Declaration(NamedIndividual(:term:FocusGroup))
+Declaration(NamedIndividual(:term:GreenEconomy))
+Declaration(NamedIndividual(:term:GreenGrowth))
+Declaration(NamedIndividual(:term:indirectEnergy))
+Declaration(NamedIndividual(:term:LifeCycle))
+Declaration(NamedIndividual(:term:lifeSatistfaction))
+Declaration(NamedIndividual(:term:LifestyleChange))
+Declaration(NamedIndividual(:term:MaterialConsumption))
+Declaration(NamedIndividual(:term:materialFootprint))
+Declaration(NamedIndividual(:term:NetworkAnalysis))
+Declaration(NamedIndividual(:term:openSpace))
+Declaration(NamedIndividual(:term:placeAttachment))
+Declaration(NamedIndividual(:term:placeIdentity))
+Declaration(NamedIndividual(:term:PositiveFeedback))
+Declaration(NamedIndividual(:term:PublicGood))
+Declaration(NamedIndividual(:term:ReboundEffect))
+Declaration(NamedIndividual(:term:socialCapital))
+Declaration(NamedIndividual(:term:SocialIdentityTheory))
+Declaration(NamedIndividual(:term:socialInfluence))
+Declaration(NamedIndividual(:term:SocialNetwork))
+Declaration(NamedIndividual(:term:technologicalChange))
+Declaration(NamedIndividual(:term:TimeManagement))
+Declaration(NamedIndividual(:term:timePressure))
+Declaration(NamedIndividual(:term:TimeUse))
+Declaration(NamedIndividual(:term:TravelBehaviour))
+Declaration(NamedIndividual(:term:travelMode))
+Declaration(NamedIndividual(:term:waterFootprint))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :caseStudyRegion (Case study region)
+
+AnnotationAssertion(rdfs:isDefinedBy :caseStudyRegion top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :caseStudyRegion "Case study region"@en)
+AnnotationAssertion(rdfs:seeAlso :caseStudyRegion :term:caseStudyRegion)
+SubObjectPropertyOf(:caseStudyRegion top-down-common:hasSuggestedProperty)
+ObjectPropertyDomain(:caseStudyRegion :CaseStudy)
+ObjectPropertyRange(:caseStudyRegion :Region)
+
+# Object Property: :placeAttachment (Place attachment)
+
+AnnotationAssertion(rdfs:label :placeAttachment "Place attachment"@en)
+AnnotationAssertion(rdfs:seeAlso :placeAttachment :term:placeAttachment)
+SubObjectPropertyOf(:placeAttachment top-down-common:hasSuggestedProperty)
+ObjectPropertyDomain(:placeAttachment ObjectUnionOf(:Actor :Agent))
+ObjectPropertyRange(:placeAttachment :Place)
+
+# Object Property: :placeIdentity (Place identity)
+
+AnnotationAssertion(rdfs:label :placeIdentity "Place identity"@en)
+AnnotationAssertion(rdfs:seeAlso :placeIdentity :term:placeIdentity)
+SubObjectPropertyOf(:placeIdentity top-down-common:hasSuggestedProperty)
+ObjectPropertyDomain(:placeIdentity ObjectUnionOf(:Actor :Agent))
+ObjectPropertyRange(:placeIdentity :Place)
+
+# Object Property: :socialCapital (Social capital)
+
+AnnotationAssertion(rdfs:label :socialCapital "Social capital"@en)
+AnnotationAssertion(rdfs:seeAlso :socialCapital :term:socialCapital)
+SubObjectPropertyOf(:socialCapital top-down-common:hasSuggestedProperty)
+ObjectPropertyDomain(:socialCapital ObjectUnionOf(:Actor :Agent :Household :Stakeholder))
+ObjectPropertyRange(:socialCapital ObjectUnionOf(:Actor :Agent :Household :Stakeholder))
+
+# Object Property: :socialInfluence (Social network)
+
+AnnotationAssertion(rdfs:isDefinedBy :socialInfluence top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :socialInfluence "Social network"@en)
+AnnotationAssertion(rdfs:seeAlso :socialInfluence :term:socialInfluence)
+SubObjectPropertyOf(:socialInfluence top-down-common:hasSuggestedProperty)
+ObjectPropertyDomain(:socialInfluence ObjectUnionOf(:Individual :SocialNetwork))
+ObjectPropertyRange(:socialInfluence ObjectUnionOf(:Individual :SocialNetwork))
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :collectiveActionProblem (collective action problem)
+
+AnnotationAssertion(rdfs:label :collectiveActionProblem "collective action problem"@en)
+AnnotationAssertion(rdfs:seeAlso :collectiveActionProblem :term:collectiveAction)
+SubDataPropertyOf(:collectiveActionProblem top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:collectiveActionProblem :PublicGood)
+
+# Data Property: :economicGrowth (economic growth)
+
+AnnotationAssertion(rdfs:label :economicGrowth "economic growth"@en)
+AnnotationAssertion(rdfs:seeAlso :economicGrowth :term:economicGrowth)
+SubDataPropertyOf(:economicGrowth top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:economicGrowth :EconomicOutput)
+
+# Data Property: :environmentalImpactAssessment (environmental impact assessment)
+
+AnnotationAssertion(rdfs:label :environmentalImpactAssessment "environmental impact assessment"@en)
+AnnotationAssertion(rdfs:seeAlso :environmentalImpactAssessment :term:environmentalImpactAssessment)
+SubDataPropertyOf(:environmentalImpactAssessment top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:environmentalImpactAssessment :EnvironmentalImpact)
+
+# Data Property: :finalDemand (final demand)
+
+AnnotationAssertion(rdfs:label :finalDemand "final demand"@en)
+AnnotationAssertion(rdfs:seeAlso :finalDemand :term:finalDemand)
+SubDataPropertyOf(:finalDemand top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:finalDemand :OutputDemand)
+
+# Data Property: :indirectEnergy (indirect energy)
+
+AnnotationAssertion(rdfs:label :indirectEnergy "indirect energy"@en)
+AnnotationAssertion(rdfs:seeAlso :indirectEnergy :term:indirectEnergy)
+SubDataPropertyOf(:indirectEnergy top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:indirectEnergy :EnergyUse)
+DataPropertyDomain(:indirectEnergy ObjectUnionOf(:Consumption :Household :Product))
+
+# Data Property: :materialFootprint (material footprint)
+
+AnnotationAssertion(rdfs:label :materialFootprint "material footprint"@en)
+AnnotationAssertion(rdfs:seeAlso :materialFootprint :term:materialFootprint)
+SubDataPropertyOf(:materialFootprint top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:materialFootprint :EnvironmentalImpact)
+DataPropertyDomain(:materialFootprint ObjectUnionOf(:Business :Consumption :Country :Individual :Region :SupplyChain top-down-common:Process))
+
+# Data Property: :openSpace (open space)
+
+AnnotationAssertion(rdfs:label :openSpace "open space"@en)
+AnnotationAssertion(rdfs:seeAlso :openSpace :term:openSpace)
+SubDataPropertyOf(:openSpace top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:openSpace ObjectUnionOf(:LandUse :Space))
+
+# Data Property: :technologicalChange (technological change)
+
+AnnotationAssertion(rdfs:label :technologicalChange "technological change"@en)
+AnnotationAssertion(rdfs:seeAlso :technologicalChange :term:technologicalChange)
+SubDataPropertyOf(:technologicalChange top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:technologicalChange :Technology)
+DataPropertyRange(:technologicalChange DataUnionOf(xsd:string DataOneOf("large" "quick")))
+
+# Data Property: :timePressure (time pressure)
+
+AnnotationAssertion(rdfs:label :timePressure "time pressure"@en)
+AnnotationAssertion(rdfs:seeAlso :timePressure :term:timePressure)
+SubDataPropertyOf(:timePressure top-down-common:hasSuggestedAttribute)
+
+# Data Property: :travelMode (travel mode)
+
+AnnotationAssertion(rdfs:label :travelMode "travel mode"@en)
+AnnotationAssertion(rdfs:seeAlso :travelMode :term:travelMode)
+SubDataPropertyOf(:travelMode top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:travelMode :Travel)
+DataPropertyRange(:travelMode DataUnionOf(xsd:string DataOneOf("bicycle" "bus" "car" "plane" "train" "walk")))
+
+# Data Property: :waterFootprint (water footprint)
+
+AnnotationAssertion(rdfs:label :waterFootprint "water footprint"@en)
+AnnotationAssertion(rdfs:seeAlso :waterFootprint :term:waterFootprint)
+SubDataPropertyOf(:waterFootprint top-down-common:hasSuggestedAttribute)
+DataPropertyDomain(:waterFootprint :EnvironmentalImpact)
+DataPropertyDomain(:waterFootprint ObjectUnionOf(:Business :Country :Government :Individual :Product :SupplyChain))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Actor (Actor)
+
+AnnotationAssertion(rdfs:label :Actor "Actor"@en)
+AnnotationAssertion(rdfs:seeAlso :Actor :term:placeAttachment)
+AnnotationAssertion(rdfs:seeAlso :Actor :term:placeIdentity)
+AnnotationAssertion(rdfs:seeAlso :Actor :term:socialCapital)
+SubClassOf(:Actor top-down-common:SuggestedClass)
+
+# Class: :Agent (Agent)
+
+AnnotationAssertion(rdfs:label :Agent "Agent"@en)
+AnnotationAssertion(rdfs:seeAlso :Agent :term:placeAttachment)
+AnnotationAssertion(rdfs:seeAlso :Agent :term:placeIdentity)
+AnnotationAssertion(rdfs:seeAlso :Agent :term:socialCapital)
+SubClassOf(:Agent top-down-common:SuggestedClass)
+
+# Class: :BehaviourChange (Behaviour change)
+
+AnnotationAssertion(top-down-common:frequencyOfProcess :BehaviourChange "Always, more or less."@en)
+AnnotationAssertion(top-down-common:frequencyOfProcess :BehaviourChange "Depends on both external driving forces, and internal motivations."@en)
+AnnotationAssertion(top-down-common:frequencyOfProcess :BehaviourChange "From seconds to years."@en)
+AnnotationAssertion(top-down-common:periodOfProcess :BehaviourChange "A long-ish time -- months to years depending on the scale of change."@en)
+AnnotationAssertion(top-down-common:periodOfProcess :BehaviourChange "Infrequently."@en)
+AnnotationAssertion(top-down-common:periodOfProcess :BehaviourChange "It depends on the level of measurement (as the example text illustrates!).  I have assumed the term \"behaviour change\" to be meaningful at the individual level.  In terms of the length of the process, it very much depends on what behaviour is being examined.  Generally speaking, probably best to say that change takes \"days\", but the number of days is highly variable (and indeed may take years in some cases)."@en)
+AnnotationAssertion(rdfs:comment :BehaviourChange "Protégé for some reason does not like annotations of annotations (a bug). So if I try and annotate the annotations for this class with, say, attribution of instance, Protégé does random things like generating indivduals or just deleting stuff. This as you can imagine is somewhat annoying, so I have decide not to annotate the annotations to make my lfie easier.
+
+However just to note for the purpose of attribution, the period-of-occurrence: \"from seconds to years\" and the frequency-of-occurence: \"always, more or less\" is UFZ. The others are from JHI."@en)
+AnnotationAssertion(rdfs:label :BehaviourChange "Behaviour change"@en)
+AnnotationAssertion(rdfs:seeAlso :BehaviourChange :term:BehaviourChange)
+SubClassOf(:BehaviourChange top-down-common:Process)
+SubClassOf(Annotation(rdfs:comment "By the action of the indivdual or behvarioural consequences."@en) Annotation(rdfs:isDefinedBy top-down-common:JHI) Annotation(rdfs:isDefinedBy top-down-common:UFZ) :BehaviourChange ObjectSomeValuesFrom(basic:modifies :Environment))
+SubClassOf(Annotation(rdfs:comment "Feedback from individual back to itself in relation to other people in ones environment."@en) Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:modifies :Identity))
+SubClassOf(Annotation(rdfs:comment "Knowledge and beliefs."@en) Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:modifies :Individual))
+SubClassOf(Annotation(rdfs:comment "By the social perception of the person and her behaviour."@en) Annotation(rdfs:isDefinedBy top-down-common:UFZ) :BehaviourChange ObjectSomeValuesFrom(basic:modifies :SocialNorm))
+SubClassOf(Annotation(rdfs:comment "Norms."@en) Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:modifies :Society))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:requires :Decision))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:requires :ExceedsThreshold))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:UFZ) :BehaviourChange ObjectSomeValuesFrom(basic:requires :Experience))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:requires :ExternalInfluence))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:requires :Interaction))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:UFZ) :BehaviourChange ObjectSomeValuesFrom(basic:requires :KnowledgeAcquisition))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:JHI) :BehaviourChange ObjectSomeValuesFrom(basic:requires :NormativePressure))
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:UFZ) :BehaviourChange ObjectSomeValuesFrom(basic:requires :SelfReflection))
+
+# Class: :Business (Business)
+
+AnnotationAssertion(rdfs:label :Business "Business"@en)
+AnnotationAssertion(rdfs:seeAlso :Business :term:materialFootprint)
+AnnotationAssertion(rdfs:seeAlso :Business :term:waterFootprint)
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :Business :Actor)
+SubClassOf(:Business top-down-common:SuggestedClass)
+
+# Class: :CapabilityApproach (Capability approach)
+
+AnnotationAssertion(rdfs:label :CapabilityApproach "Capability approach"@en)
+AnnotationAssertion(rdfs:seeAlso :CapabilityApproach :term:CapabilityApproach)
+SubClassOf(:CapabilityApproach top-down-common:SuggestedClass)
+SubClassOf(:CapabilityApproach top-down-common:UndefinedEntityType)
+
+# Class: :CaseStudy (Case study)
+
+AnnotationAssertion(rdfs:isDefinedBy :CaseStudy top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :CaseStudy "Case study"@en)
+SubClassOf(:CaseStudy top-down-common:SuggestedClass)
+
+# Class: :Consumption (Consumption)
+
+AnnotationAssertion(rdfs:label :Consumption "Consumption"@en)
+AnnotationAssertion(rdfs:seeAlso :Consumption :term:materialFootprint)
+SubClassOf(:Consumption top-down-common:SuggestedClass)
+
+# Class: :Country (Country)
+
+AnnotationAssertion(rdfs:label :Country "Country"@en)
+AnnotationAssertion(rdfs:seeAlso :Country :term:materialFootprint)
+AnnotationAssertion(rdfs:seeAlso :Country :term:waterFootprint)
+SubClassOf(:Country top-down-common:SuggestedClass)
+
+# Class: :CriticalAnalysis (Critical analysis)
+
+AnnotationAssertion(rdfs:label :CriticalAnalysis "Critical analysis"@en)
+AnnotationAssertion(rdfs:seeAlso :CriticalAnalysis :term:criticalAnalysis)
+
+# Class: :Decision (Decision)
+
+AnnotationAssertion(rdfs:label :Decision "Decision"@en)
+SubClassOf(:Decision top-down-common:SuggestedProcess)
+
+# Class: :Disposal (Disposal)
+
+AnnotationAssertion(rdfs:label :Disposal "Disposal"@en)
+SubClassOf(:Disposal top-down-common:SuggestedProcess)
+
+# Class: :Distribution (Distribution)
+
+AnnotationAssertion(rdfs:label :Distribution "Distribution"@en)
+AnnotationAssertion(rdfs:seeAlso :Distribution :term:LifeCycle)
+SubClassOf(:Distribution top-down-common:SuggestedProcess)
+
+# Class: :EconomicOutput (Economic output)
+
+AnnotationAssertion(rdfs:label :EconomicOutput "Economic output"@en)
+SubClassOf(:EconomicOutput top-down-common:SuggestedClass)
+
+# Class: :EconomicSystem (Economic system)
+
+AnnotationAssertion(rdfs:isDefinedBy :EconomicSystem top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :EconomicSystem "Economic system"@en)
+AnnotationAssertion(rdfs:seeAlso :EconomicSystem :term:EconomicSystem)
+SubClassOf(:EconomicSystem top-down-common:SuggestedClass)
+SubClassOf(:EconomicSystem top-down-common:UndefinedEntityType)
+
+# Class: :Economy (Economy)
+
+AnnotationAssertion(rdfs:label :Economy "Economy"@en)
+AnnotationAssertion(rdfs:seeAlso :Economy :term:EconomicSystem)
+
+# Class: :Energy (Energy)
+
+AnnotationAssertion(rdfs:label :Energy "Energy"@en)
+
+# Class: :EnergyDemand (Energy demand)
+
+AnnotationAssertion(rdfs:isDefinedBy :EnergyDemand top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :EnergyDemand "Energy demand"@en)
+AnnotationAssertion(rdfs:seeAlso :EnergyDemand :term:EnergyDemand)
+SubClassOf(:EnergyDemand :Energy)
+SubClassOf(:EnergyDemand top-down-common:CommonSense)
+SubClassOf(:EnergyDemand top-down-common:SuggestedClass)
+SubClassOf(:EnergyDemand top-down-common:UndefinedEntityType)
+
+# Class: :EnergyProduction (Energy production)
+
+AnnotationAssertion(rdfs:isDefinedBy :EnergyProduction top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :EnergyProduction "Energy production"@en)
+AnnotationAssertion(rdfs:seeAlso :EnergyProduction :term:EnergyProduction)
+SubClassOf(:EnergyProduction :Energy)
+SubClassOf(:EnergyProduction top-down-common:CommonSense)
+SubClassOf(:EnergyProduction top-down-common:SuggestedClass)
+SubClassOf(:EnergyProduction top-down-common:UndefinedEntityType)
+
+# Class: :EnergySaving (Energy saving)
+
+AnnotationAssertion(rdfs:isDefinedBy :EnergySaving top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :EnergySaving "Energy saving"@en)
+AnnotationAssertion(rdfs:seeAlso :EnergySaving :term:EnergySaving)
+SubClassOf(:EnergySaving :Energy)
+SubClassOf(:EnergySaving top-down-common:CommonSense)
+SubClassOf(:EnergySaving top-down-common:SuggestedClass)
+SubClassOf(:EnergySaving top-down-common:UndefinedEntityType)
+
+# Class: :EnergyUse (Energy use)
+
+AnnotationAssertion(rdfs:label :EnergyUse "Energy use"@en)
+AnnotationAssertion(rdfs:seeAlso :EnergyUse :term:indirectEnergy)
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :EnergyUse :Energy)
+SubClassOf(:EnergyUse top-down-common:SuggestedClass)
+
+# Class: :Environment (Environment)
+
+AnnotationAssertion(rdfs:label :Environment "Environment"@en)
+AnnotationAssertion(rdfs:seeAlso :Environment :term:BehaviourChange)
+SubClassOf(:Environment top-down-common:SuggestedClass)
+
+# Class: :EnvironmentalImpact (Environmental impact)
+
+AnnotationAssertion(rdfs:label :EnvironmentalImpact "Environmental impact"@en)
+AnnotationAssertion(rdfs:seeAlso :EnvironmentalImpact :term:environmentalImpactAssessment)
+AnnotationAssertion(rdfs:seeAlso :EnvironmentalImpact :term:materialFootprint)
+AnnotationAssertion(rdfs:seeAlso :EnvironmentalImpact :term:waterFootprint)
+SubClassOf(:EnvironmentalImpact top-down-common:SuggestedClass)
+
+# Class: :ExceedsThreshold (:ExceedsThreshold)
+
+SubClassOf(:ExceedsThreshold top-down-common:SuggestedProcess)
+
+# Class: :Experience (:Experience)
+
+SubClassOf(:Experience top-down-common:SuggestedProcess)
+
+# Class: :ExternalInfluence (External influence)
+
+AnnotationAssertion(rdfs:label :ExternalInfluence "External influence"@en)
+AnnotationAssertion(rdfs:seeAlso :ExternalInfluence :term:BehaviourChange)
+SubClassOf(:ExternalInfluence top-down-common:SuggestedProcess)
+
+# Class: :ExtractionOfRawMatter (Extraction of raw matter)
+
+AnnotationAssertion(rdfs:label :ExtractionOfRawMatter "Extraction of raw matter"@en)
+AnnotationAssertion(rdfs:seeAlso :ExtractionOfRawMatter :term:LifeCycle)
+SubClassOf(:ExtractionOfRawMatter top-down-common:SuggestedProcess)
+
+# Class: :FocusGroup (Focus group)
+
+AnnotationAssertion(rdfs:label :FocusGroup "Focus group"@en)
+AnnotationAssertion(rdfs:seeAlso :FocusGroup :term:FocusGroup)
+
+# Class: :Government (Government)
+
+AnnotationAssertion(rdfs:label :Government "Government"@en)
+AnnotationAssertion(rdfs:seeAlso :Government :term:waterFootprint)
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :Government :Actor)
+SubClassOf(:Government top-down-common:SuggestedClass)
+
+# Class: :GreenEconomy (Green Economy)
+
+AnnotationAssertion(rdfs:isDefinedBy :GreenEconomy top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :GreenEconomy "Green Economy"@en)
+AnnotationAssertion(rdfs:seeAlso :GreenEconomy :term:GreenEconomy)
+SubClassOf(:GreenEconomy :Economy)
+SubClassOf(:GreenEconomy top-down-common:SuggestedClass)
+SubClassOf(:GreenEconomy top-down-common:UndefinedEntityType)
+
+# Class: :GreenGrowth (Green growth)
+
+AnnotationAssertion(top-down-common:frequencyOfProcess :GreenGrowth "Continually or sequentially"@en)
+AnnotationAssertion(top-down-common:periodOfProcess :GreenGrowth "(Most probably) years."@en)
+AnnotationAssertion(rdfs:label :GreenGrowth "Green growth"@en)
+AnnotationAssertion(rdfs:seeAlso :GreenGrowth :term:GreenGrowth)
+SubClassOf(:GreenGrowth top-down-common:Process)
+
+# Class: :Household (Household)
+
+AnnotationAssertion(rdfs:label :Household "Household"@en)
+AnnotationAssertion(rdfs:seeAlso :Household :term:indirectEnergy)
+AnnotationAssertion(rdfs:seeAlso :Household :term:socialCapital)
+SubClassOf(:Household top-down-common:SuggestedClass)
+
+# Class: :Identity (Identity)
+
+AnnotationAssertion(rdfs:label :Identity "Identity"@en)
+AnnotationAssertion(rdfs:seeAlso :Identity :term:BehaviourChange)
+SubClassOf(:Identity top-down-common:SuggestedClass)
+
+# Class: :Individual (Individual)
+
+AnnotationAssertion(rdfs:label :Individual "Individual"@en)
+AnnotationAssertion(rdfs:seeAlso :Individual :term:materialFootprint)
+AnnotationAssertion(rdfs:seeAlso :Individual :term:waterFootprint)
+SubClassOf(:Individual top-down-common:SuggestedClass)
+
+# Class: :Interaction (Interaction)
+
+AnnotationAssertion(rdfs:label :Interaction "Interaction"@en)
+AnnotationAssertion(rdfs:seeAlso :Interaction :term:BehaviourChange)
+SubClassOf(:Interaction top-down-common:SuggestedProcess)
+
+# Class: :KnowledgeAcquisition (:KnowledgeAcquisition)
+
+SubClassOf(:KnowledgeAcquisition top-down-common:SuggestedProcess)
+
+# Class: :LandUse (Land use)
+
+AnnotationAssertion(rdfs:label :LandUse "Land use"@en)
+AnnotationAssertion(rdfs:seeAlso :LandUse :term:openSpace)
+SubClassOf(:LandUse top-down-common:SuggestedClass)
+
+# Class: :LifeCycle (Life cycle)
+
+AnnotationAssertion(top-down-common:frequencyOfProcess :LifeCycle "Daily."@en)
+AnnotationAssertion(top-down-common:periodOfProcess :LifeCycle "From days to years."@en)
+AnnotationAssertion(rdfs:label :LifeCycle "Life cycle"@en)
+AnnotationAssertion(rdfs:seeAlso :LifeCycle :term:LifeCycle)
+SubClassOf(:LifeCycle top-down-common:Process)
+SubClassOf(:LifeCycle ObjectSomeValuesFrom(basic:requires :Disposal))
+SubClassOf(:LifeCycle ObjectSomeValuesFrom(basic:requires :Distribution))
+SubClassOf(:LifeCycle ObjectSomeValuesFrom(basic:requires :ExtractionOfRawMatter))
+SubClassOf(:LifeCycle ObjectSomeValuesFrom(basic:requires :Manufacturing))
+SubClassOf(:LifeCycle ObjectSomeValuesFrom(basic:requires :Utilisation))
+
+# Class: :LifeSatisfaction (Life satisfaction)
+
+AnnotationAssertion(rdfs:isDefinedBy :LifeSatisfaction top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :LifeSatisfaction "Life satisfaction"@en)
+AnnotationAssertion(rdfs:seeAlso :LifeSatisfaction :term:lifeSatistfaction)
+SubClassOf(:LifeSatisfaction top-down-common:SuggestedClass)
+SubClassOf(:LifeSatisfaction top-down-common:UndefinedEntityType)
+
+# Class: :Lifestyle (Lifestyle)
+
+AnnotationAssertion(rdfs:label :Lifestyle "Lifestyle"@en)
+AnnotationAssertion(rdfs:seeAlso :Lifestyle :term:TimeUse)
+SubClassOf(:Lifestyle top-down-common:SuggestedClass)
+
+# Class: :LifestyleChange (Lifestyle change)
+
+AnnotationAssertion(rdfs:label :LifestyleChange "Lifestyle change"@en)
+AnnotationAssertion(rdfs:seeAlso :LifestyleChange :term:LifestyleChange)
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :LifestyleChange top-down-common:Process)
+
+# Class: :Manufacturing (Manufacturing)
+
+AnnotationAssertion(rdfs:label :Manufacturing :term:LifeCycle)
+AnnotationAssertion(rdfs:label :Manufacturing "Manufacturing"@en)
+SubClassOf(:Manufacturing top-down-common:SuggestedProcess)
+
+# Class: :MaterialConsumption (Material consumption)
+
+AnnotationAssertion(rdfs:isDefinedBy :MaterialConsumption top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :MaterialConsumption "Material consumption"@en)
+AnnotationAssertion(rdfs:seeAlso :MaterialConsumption :term:MaterialConsumption)
+SubClassOf(:MaterialConsumption :Consumption)
+SubClassOf(:MaterialConsumption top-down-common:SuggestedClass)
+SubClassOf(:MaterialConsumption top-down-common:UndefinedEntityType)
+
+# Class: :Mood (Mood)
+
+AnnotationAssertion(rdfs:label :Mood "Mood"@en)
+AnnotationAssertion(rdfs:seeAlso :Mood :term:TimeManagement)
+SubClassOf(:Mood top-down-common:SuggestedClass)
+
+# Class: :NetworkAnalysis (Network analysis)
+
+AnnotationAssertion(rdfs:label :NetworkAnalysis "Network analysis"@en)
+AnnotationAssertion(rdfs:seeAlso :NetworkAnalysis :term:NetworkAnalysis)
+
+# Class: :NormativePressure (:NormativePressure)
+
+SubClassOf(:NormativePressure top-down-common:SuggestedProcess)
+
+# Class: :OutputDemand (Output demand)
+
+AnnotationAssertion(rdfs:label :OutputDemand "Output demand"@en)
+AnnotationAssertion(rdfs:seeAlso :OutputDemand :term:finalDemand)
+SubClassOf(:OutputDemand top-down-common:SuggestedClass)
+
+# Class: :Place (Place)
+
+AnnotationAssertion(rdfs:label :Place "Place"@en)
+AnnotationAssertion(rdfs:seeAlso :Place :term:placeAttachment)
+AnnotationAssertion(rdfs:seeAlso :Place :term:placeIdentity)
+SubClassOf(:Place top-down-common:SuggestedClass)
+
+# Class: :PostiveFeedback (Positive feedback)
+
+AnnotationAssertion(top-down-common:frequencyOfProcess :PostiveFeedback "It depends"@en)
+AnnotationAssertion(top-down-common:periodOfProcess :PostiveFeedback "Not sure how to answer this apart from \"it depends\"!"@en)
+AnnotationAssertion(rdfs:label :PostiveFeedback "Positive feedback"@en)
+AnnotationAssertion(rdfs:seeAlso :PostiveFeedback :term:PositiveFeedback)
+SubClassOf(:PostiveFeedback top-down-common:Process)
+
+# Class: :Product (Product)
+
+AnnotationAssertion(rdfs:label :Product "Product"@en)
+AnnotationAssertion(rdfs:seeAlso :Product :term:indirectEnergy)
+AnnotationAssertion(rdfs:seeAlso :Product :term:waterFootprint)
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :Product top-down-common:SuggestedClass)
+
+# Class: :PublicGood (Public good)
+
+AnnotationAssertion(rdfs:label :PublicGood "Public good"@en)
+AnnotationAssertion(rdfs:seeAlso :PublicGood :term:collectiveAction)
+AnnotationAssertion(rdfs:seeAlso :PublicGood :term:PublicGood)
+
+# Class: :ReboundEffect (Rebound effect)
+
+AnnotationAssertion(rdfs:label :ReboundEffect "Rebound effect"@en)
+AnnotationAssertion(rdfs:seeAlso :ReboundEffect :term:ReboundEffect)
+SubClassOf(:ReboundEffect top-down-common:Process)
+
+# Class: :Region (Region)
+
+AnnotationAssertion(rdfs:label :Region "Region"@en)
+AnnotationAssertion(rdfs:seeAlso :Region :term:materialFootprint)
+SubClassOf(Annotation(rdfs:isDefinedBy "Doug salt") :Region :Country)
+SubClassOf(:Region top-down-common:SuggestedClass)
+
+# Class: :SelfPerception (Self perception)
+
+AnnotationAssertion(rdfs:label :SelfPerception "Self perception"@en)
+AnnotationAssertion(rdfs:seeAlso :SelfPerception :term:BehaviourChange)
+SubClassOf(:SelfPerception top-down-common:SuggestedClass)
+
+# Class: :SelfReflection (:SelfReflection)
+
+SubClassOf(:SelfReflection top-down-common:SuggestedProcess)
+
+# Class: :SocialIdentityTheory (Social identity theory)
+
+AnnotationAssertion(rdfs:label :SocialIdentityTheory "Social identity theory"@en)
+AnnotationAssertion(rdfs:seeAlso :SocialIdentityTheory :term:SocialIdentityTheory)
+
+# Class: :SocialNetwork (Social network)
+
+AnnotationAssertion(rdfs:isDefinedBy :SocialNetwork top-down-common:author:dougSalt)
+AnnotationAssertion(rdfs:label :SocialNetwork "Social network"@en)
+AnnotationAssertion(rdfs:seeAlso :SocialNetwork :term:SocialNetwork)
+SubClassOf(:SocialNetwork top-down-common:SuggestedClass)
+SubClassOf(:SocialNetwork top-down-common:UndefinedEntityType)
+
+# Class: :SocialNorm (Social norm)
+
+AnnotationAssertion(rdfs:label :SocialNorm "Social norm"@en)
+AnnotationAssertion(rdfs:seeAlso :SocialNorm :term:BehaviourChange)
+SubClassOf(:SocialNorm top-down-common:SuggestedClass)
+
+# Class: :Society (Society)
+
+AnnotationAssertion(rdfs:label :Society "Society"@en)
+AnnotationAssertion(rdfs:seeAlso :Society :term:BehaviourChange)
+SubClassOf(:Society top-down-common:SuggestedClass)
+
+# Class: :Space (Space)
+
+AnnotationAssertion(rdfs:label :Space "Space"@en)
+AnnotationAssertion(rdfs:seeAlso :Space :term:openSpace)
+SubClassOf(:Space top-down-common:SuggestedClass)
+
+# Class: :Stakeholder (Stakeholder)
+
+AnnotationAssertion(rdfs:label :Stakeholder "Stakeholder"@en)
+AnnotationAssertion(rdfs:seeAlso :Stakeholder :term:socialCapital)
+SubClassOf(:Stakeholder top-down-common:SuggestedClass)
+
+# Class: :SupplyChain (Supply chain)
+
+AnnotationAssertion(rdfs:label :SupplyChain "Supply chain"@en)
+AnnotationAssertion(rdfs:seeAlso :SupplyChain :term:materialFootprint)
+AnnotationAssertion(rdfs:seeAlso :SupplyChain :term:waterFootprint)
+SubClassOf(:SupplyChain top-down-common:SuggestedClass)
+
+# Class: :Technology (Technology)
+
+AnnotationAssertion(rdfs:label :Technology "Technology"@en)
+AnnotationAssertion(rdfs:seeAlso :Technology :term:technologicalChange)
+SubClassOf(:Technology top-down-common:SuggestedClass)
+
+# Class: :TimeManagement (Time management)
+
+AnnotationAssertion(top-down-common:frequencyOfProcess :TimeManagement "Every day for some people, but for rubbish people like me, whenever a time-crisis hits!"@en)
+AnnotationAssertion(top-down-common:periodOfProcess :TimeManagement "Depends on the number of things being scheduled.  At the individual level, I would say minutes, but at a project level, it may takes days"@en)
+AnnotationAssertion(rdfs:label :TimeManagement "Time management"@en)
+AnnotationAssertion(rdfs:seeAlso :TimeManagement :term:TimeManagement)
+SubClassOf(:TimeManagement top-down-common:Process)
+SubClassOf(:TimeManagement ObjectSomeValuesFrom(basic:requires :Mood))
+SubClassOf(:TimeManagement ObjectSomeValuesFrom(basic:requires :TimeUse))
+
+# Class: :TimeUse (Originally defined by JHI as an attribute. However as the ontology author I believe this fits better as a process and thus a class.)
+
+AnnotationAssertion(rdfs:label :TimeUse "Originally defined by JHI as an attribute. However as the ontology author I believe this fits better as a process and thus a class."@en)
+AnnotationAssertion(rdfs:label :TimeUse "Time use"@en)
+AnnotationAssertion(rdfs:seeAlso :TimeUse :term:TimeUse)
+SubClassOf(:TimeUse top-down-common:SuggestedProcess)
+
+# Class: :Travel (Travel)
+
+AnnotationAssertion(rdfs:label :Travel "Travel"@en)
+AnnotationAssertion(rdfs:seeAlso :Travel :term:travelMode)
+SubClassOf(:Travel top-down-common:SuggestedClass)
+
+# Class: :TravelBehaviour (Travel behaviour)
+
+AnnotationAssertion(rdfs:label :TravelBehaviour "Travel behaviour"@en)
+AnnotationAssertion(rdfs:seeAlso :TravelBehaviour :term:TravelBehaviour)
+
+# Class: :TravelMode (Travel mode)
+
+AnnotationAssertion(rdfs:label :TravelMode "Travel mode"@en)
+AnnotationAssertion(rdfs:seeAlso :TravelMode :term:TravelBehaviour)
+SubClassOf(:TravelMode :Travel)
+SubClassOf(:TravelMode top-down-common:SuggestedClass)
+
+# Class: :Utilisation (Utilisation)
+
+AnnotationAssertion(rdfs:label :Utilisation "Utilisation"@en)
+AnnotationAssertion(rdfs:seeAlso :Utilisation :term:LifeCycle)
+SubClassOf(:Utilisation top-down-common:SuggestedProcess)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+# Individual: :term:BehaviourChange (Behaviour change)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:BehaviourChange top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:BehaviourChange "A persistent change in the pattern of behaviour of an agent or system."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:BehaviourChange "Behaviour change is a term that tends to be used to refer to the study of how individual behaviour do or may (or may not) change in a number of different domain areas - including e.g. health, environment, etc.."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:isDefinedBy :term:BehaviourChange top-down-common:discipline:agentBasedModelling)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:isDefinedBy :term:BehaviourChange top-down-common:discipline:artificialIntelligence)
+AnnotationAssertion(rdfs:label :term:BehaviourChange "Behaviour change"@en)
+ClassAssertion(top-down-common:Term :term:BehaviourChange)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:BehaviourChange top-down-common:discipline:psychology)
+
+# Individual: :term:CapabilityApproach (Capability approach)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:developmentStudies)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:economics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:governanceStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:CapabilityApproach "A capability approach is an analytical perspective that looks at people's freedoms (effective opportunities) to do something or be something."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:UFZ) rdfs:comment :term:CapabilityApproach "The CA was developed by the economist and philosopher Amartya Sen as a critique to standard welfare economics, but also with the aim of proposing an alternative method for descriptive,  prospective, and evaluative analyses. Within this framework, the ultimate goal of development is good human life, expressed through the enhancement of oneâ€™s capability set (Sen 1999). A good life thus goes beyond the notion of achieving specific functionings by including the freedom to achieve them."@en)
+AnnotationAssertion(rdfs:label :term:CapabilityApproach "Capability approach"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:CapabilityApproach)
+ClassAssertion(top-down-common:Term :term:CapabilityApproach)
+ClassAssertion(top-down-common:TerminatedQuestionnaire :term:CapabilityApproach)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:UFZ) top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:developmentStudies)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:UFZ) top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:economics)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:CapabilityApproach top-down-common:discipline:governanceStudies)
+
+# Individual: :term:caseStudyRegion (Case study region)
+
+AnnotationAssertion(rdfs:comment :term:caseStudyRegion "The regions in which the case studies took place. These were
+
+1. The region of Lazio (Italy)
+2. The region of Rotterdam-Delft-The Hague (Netherlands)
+3. The region of the Danube-Bohemian Forest (Austria)
+4. The region of Banat-Timis (Romania)
+5. The region of Central Germany (Germany)
+6. The region of Aberdeenshire (Scotland)
+7. The region of Galicia (Spain)"@en)
+AnnotationAssertion(rdfs:isDefinedBy :term:caseStudyRegion "Doug Salt")
+AnnotationAssertion(rdfs:isDefinedBy :term:caseStudyRegion "http://glamurs.eu/case-studies/"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label :term:caseStudyRegion "Case study region"@en)
+ClassAssertion(top-down-common:CommonSense :term:caseStudyRegion)
+ClassAssertion(top-down-common:MissingDefinitions :term:caseStudyRegion)
+ClassAssertion(top-down-common:Term :term:caseStudyRegion)
+
+# Individual: :term:choiceModel (Choice model)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:choiceModel top-down-common:discipline:economics)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:comment :term:choiceModel "A model that attempts to depict the decision making process of an individual or a group in a particular context."@en)
+AnnotationAssertion(rdfs:label :term:choiceModel "Choice model"@en)
+ClassAssertion(top-down-common:Term :term:choiceModel)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:choiceModel top-down-common:discipline:economics)
+
+# Individual: :term:collectiveAction (Collective action)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:collectiveAction top-down-common:discipline:economics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:collectiveAction top-down-common:discipline:sociology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:collectiveAction "term associated with management of public goods. a situation where everyone benefits from the action but the cost of making it is too high for an individual on its own to do it. the solution is collective action and sharing of the cost amongst individuals."@en)
+AnnotationAssertion(rdfs:label :term:collectiveAction "Collective action"@en)
+ClassAssertion(top-down-common:Term :term:collectiveAction)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:collectiveAction top-down-common:discipline:economics)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:collectiveAction top-down-common:discipline:sociology)
+
+# Individual: :term:criticalAnalysis (Critical analysis)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:criticalAnalysis top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:criticalAnalysis top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:criticalAnalysis top-down-common:discipline:governanceStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:criticalAnalysis "Critical analysis is here understood in a common sense way, expressing an analysis (here meant at a conceptual/theoretical level) characterised by a  sceptical stance, open to contestation and critical enquiry rather than (uncritical) affirmation."@en)
+AnnotationAssertion(rdfs:label :term:criticalAnalysis "Critical analysis"@en)
+ClassAssertion(top-down-common:Term :term:criticalAnalysis)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:criticalAnalysis top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:criticalAnalysis top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:criticalAnalysis top-down-common:discipline:governanceStudies)
+
+# Individual: :term:economicGrowth (Economic growth)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:economicGrowth top-down-common:discipline:economics)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:economicGrowth "The increase in the production potential of a given economy, typically reflected in the increase in gross domestic product (gdp), after adjusting for inflation."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:UBAH) rdfs:comment :term:economicGrowth "Economic growth means that the gross national product, which is the monetary value of all goods and services produced, increases from one year to the other. The value only comprises of goods and services which are traded in the market."@en)
+AnnotationAssertion(rdfs:label :term:economicGrowth "Economic growth"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:economicGrowth)
+ClassAssertion(top-down-common:Term :term:economicGrowth)
+ClassAssertion(top-down-common:TerminatedQuestionnaire :term:economicGrowth)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) Annotation(rdfs:isDefinedBy top-down-common:UBAH) top-down-common:partOfDiscipline :term:economicGrowth top-down-common:discipline:economics)
+
+# Individual: :term:EconomicSystem (Economic system)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:EconomicSystem top-down-common:discipline:economics)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:UBAH) rdfs:comment :term:EconomicSystem "A system describes a relation of objects. Economic system the most important objects which influence the economy."@en)
+AnnotationAssertion(rdfs:label :term:EconomicSystem "Economic system"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:EconomicSystem)
+ClassAssertion(top-down-common:Term :term:EconomicSystem)
+ClassAssertion(top-down-common:TerminatedQuestionnaire :term:EconomicSystem)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:UBAH) top-down-common:partOfDiscipline :term:EconomicSystem top-down-common:discipline:economics)
+
+# Individual: :term:EnergyDemand (Energy demand)
+
+AnnotationAssertion(rdfs:label :term:EnergyDemand "Energy demand"@en)
+ClassAssertion(top-down-common:CommonSense :term:EnergyDemand)
+ClassAssertion(top-down-common:MissingDefinitions :term:EnergyDemand)
+ClassAssertion(top-down-common:Term :term:EnergyDemand)
+
+# Individual: :term:EnergyProduction (Energy production)
+
+AnnotationAssertion(rdfs:label :term:EnergyProduction "Energy production"@en)
+ClassAssertion(top-down-common:CommonSense :term:EnergyProduction)
+ClassAssertion(top-down-common:MissingDefinitions :term:EnergyProduction)
+ClassAssertion(top-down-common:Term :term:EnergyProduction)
+
+# Individual: :term:EnergySaving (Energy saving)
+
+AnnotationAssertion(rdfs:label :term:EnergySaving "Energy saving"@en)
+ClassAssertion(top-down-common:CommonSense :term:EnergySaving)
+ClassAssertion(top-down-common:MissingDefinitions :term:EnergySaving)
+ClassAssertion(top-down-common:Term :term:EnergySaving)
+
+# Individual: :term:environmentalImpactAssessment (Environment impact assessment)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:biotechnology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:chemistry)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:economics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:engineering)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:industrialEcology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:comment :term:environmentalImpactAssessment "The quantification of the environmental resources consumed and the emissions caused by of a unit of analysis (e.g. a person over the course of a year , a product,  a process, policy, a country, etc.)."@en)
+AnnotationAssertion(rdfs:label :term:environmentalImpactAssessment "Environment impact assessment"@en)
+ClassAssertion(top-down-common:Term :term:environmentalImpactAssessment)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:biotechnology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:chemistry)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:economics)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:engineering)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:environmentalImpactAssessment top-down-common:discipline:industrialEcology)
+
+# Individual: :term:finalDemand (Final demand)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:finalDemand top-down-common:discipline:economics)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:finalDemand "Term used to designate the demand for goods/services by consumers as opposed to demand for output from one sector to another sector(i.e. intermediate demand)."@en)
+AnnotationAssertion(rdfs:label :term:finalDemand "Final demand"@en)
+ClassAssertion(top-down-common:Term :term:finalDemand)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:finalDemand top-down-common:discipline:economics)
+
+# Individual: :term:FocusGroup (Focus group)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:FocusGroup top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:FocusGroup top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:FocusGroup top-down-common:discipline:governanceStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:FocusGroup "Focus groups, or more precisely: focus group discussions, are a method for the collection of qualitative data. They are based on facilitated discussions within a group of people, where the participants engage in a debate with each other on a topic introduced by the facilitator."@en)
+AnnotationAssertion(rdfs:label :term:FocusGroup "Focus group"@en)
+ClassAssertion(top-down-common:Term :term:FocusGroup)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:FocusGroup top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:FocusGroup top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:FocusGroup top-down-common:discipline:governanceStudies)
+
+# Individual: :term:GreenEconomy (Green economy)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:GreenEconomy top-down-common:discipline:ecologicalEconomics)
+AnnotationAssertion(rdfs:isDefinedBy :term:GreenEconomy "The green economy is defined as an economy that aims at reducing environmental risks and ecological scarcities, and that aims for sustainable development without degrading the environment. It is closely related with ecological economics, but has a more politically applied focus. The 2011 UNEP Green Economy Report argues \"that to be green, an economy must not only be efficient, but also fair. Fairness implies recognising global and country level equity dimensions, particularly in assuring a just transition to an economy that is low-carbon, resource efficient, and socially inclusive"^^xsd:anyURI)
+AnnotationAssertion(rdfs:isDefinedBy :term:GreenEconomy "https://en.wikipedia.org/wiki/Green_economy")
+AnnotationAssertion(rdfs:label :term:GreenEconomy "Green economy")
+ClassAssertion(top-down-common:MissingDefinitions :term:GreenEconomy)
+ClassAssertion(top-down-common:Term :term:GreenEconomy)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Green_economy"^^xsd:anyURI) top-down-common:partOfDiscipline :term:GreenEconomy top-down-common:discipline:ecologicalEconomics)
+
+# Individual: :term:GreenGrowth (Green growth)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:foresight)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:innovationStudies)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:macroEconomics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:policy)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:sustainabilityTransitions)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:technologyStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) rdfs:comment :term:GreenGrowth "Green growth is a term to describe a path of economic growth that uses natural resources in a sustainable manner. It is used globally to provide an alternative concept to typical industrial economic growth. It assumes that our environmental impact can be reduced by sustainable innovation and green technologies"@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TSC) rdfs:comment :term:GreenGrowth "Green growth is defined by OECD as \"fostering economic growth and development, while ensuring that natural assets continue to provide the resources and environmental services on which our well-being relies.\" Compared to the conventional concept of economic growth, which is narrowly defined as the increase of an economy's capacity to produce goods and services, the concept of green growth in addition emphasizes the sustainability in natural resources and environmental services provision.  
+
+OECD (2016): What is green growth and how can it help deliver sustainable development? Retrieved June 30, 2016, from http://www.oecd.org/greengrowth/whatisgreengrowthandhowcanithelpdeliversustainabledevelopment.htm"@en)
+AnnotationAssertion(rdfs:label :term:GreenGrowth "Green growth"@en)
+ClassAssertion(top-down-common:Term :term:GreenGrowth)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:foresight)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:innovationStudies)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TSC) top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:macroEconomics)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:policy)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:sustainabilityTransitions)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:GreenGrowth top-down-common:discipline:technologyStudies)
+
+# Individual: :term:indirectEnergy (Indirect energy)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:biotechnology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:chemistry)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:economics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:engineering)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:industrialEcology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:comment :term:indirectEnergy "Energy embodied in the life cycle of a product or service excluding the use phase."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:comment :term:indirectEnergy "The amount of energy embodied in the production and distribution of products before they reach their final consumers"@en)
+AnnotationAssertion(rdfs:label :term:indirectEnergy "Indirect energy"@en)
+ClassAssertion(top-down-common:Term :term:indirectEnergy)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:biotechnology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:chemistry)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:economics)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:engineering)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:indirectEnergy top-down-common:discipline:industrialEcology)
+
+# Individual: :term:LifeCycle (Life cycle)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:biotechnology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:chemistry)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:economics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:engineering)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:industrialEcology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:comment :term:LifeCycle "All the stages of a product's life from cradle to grave (i.e., from raw material extraction through materials processing, manufacture, distribution, use, repair and maintenance, and disposal or recycling)."@en)
+AnnotationAssertion(rdfs:label :term:LifeCycle "Life cycle"@en)
+ClassAssertion(top-down-common:Term :term:LifeCycle)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:biotechnology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:chemistry)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:economics)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:engineering)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:LifeCycle top-down-common:discipline:industrialEcology)
+
+# Individual: :term:lifeSatistfaction (Life satisfaction)
+
+AnnotationAssertion(rdfs:isDefinedBy :term:lifeSatistfaction "Life satisfaction is the way persons evaluate their lives and how they feel about their directions and options for the future.[1] It is a measure of well-being and may be assessed in terms of mood, satisfaction with relations with others and with achieved goals, self-concepts, and self-perceived ability to cope with daily life. It is having a favorable attitude of one's life as a whole rather than an assessment of current feelings. Life satisfaction has been measured in relation to economic standing, amount of education, experiences, and residence, as well as many other topics")
+AnnotationAssertion(rdfs:isDefinedBy :term:lifeSatistfaction "https://en.wikipedia.org/wiki/Life_satisfaction"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label :term:lifeSatistfaction "Life satisfaction"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:lifeSatistfaction)
+ClassAssertion(top-down-common:Term :term:lifeSatistfaction)
+
+# Individual: :term:LifestyleChange (Lifestyle change)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:LifestyleChange top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:LifestyleChange "Related to 'behaviour change'.  The act of intentionally trying to change one's lifestyle"@en)
+AnnotationAssertion(rdfs:label :term:LifestyleChange "Lifestyle change"@en)
+ClassAssertion(top-down-common:Term :term:LifestyleChange)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:LifestyleChange top-down-common:discipline:psychology)
+
+# Individual: :term:MaterialConsumption (Material consumption)
+
+AnnotationAssertion(rdfs:label :term:MaterialConsumption "Material consumption"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:MaterialConsumption)
+ClassAssertion(top-down-common:Term :term:MaterialConsumption)
+
+# Individual: :term:materialFootprint (Material footprint)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:biotechnology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:chemistry)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:economics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:engineering)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:industrialEcology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:comment :term:materialFootprint "The full material requirements of an individual, process, country, etc. measured in weight (e.g. tons)"@en)
+AnnotationAssertion(rdfs:label :term:materialFootprint "Material footprint"@en)
+ClassAssertion(top-down-common:Term :term:materialFootprint)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:biotechnology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:chemistry)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:economics)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:engineering)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:materialFootprint top-down-common:discipline:industrialEcology)
+
+# Individual: :term:NetworkAnalysis (Network analysis)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:NetworkAnalysis top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:NetworkAnalysis top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:NetworkAnalysis top-down-common:discipline:governanceStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:NetworkAnalysis "Network analysis, here understood as social network analysis, is an investigation of social structures, social relationships and flows (eg of information),often using specific network- and graph-theoretical frameworks."@en)
+AnnotationAssertion(rdfs:label :term:NetworkAnalysis "Network analysis"@en)
+ClassAssertion(top-down-common:Term :term:NetworkAnalysis)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:NetworkAnalysis top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:NetworkAnalysis top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:NetworkAnalysis top-down-common:discipline:governanceStudies)
+
+# Individual: :term:openSpace (Open space)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:openSpace top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:openSpace "Something like \"a section of publicly accessible land with no buildings on it.\""@en)
+AnnotationAssertion(rdfs:label :term:openSpace "Open space"@en)
+ClassAssertion(top-down-common:Term :term:openSpace)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:openSpace top-down-common:discipline:psychology)
+
+# Individual: :term:placeAttachment (Place attachment)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:placeAttachment top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:placeAttachment top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:placeAttachment top-down-common:discipline:governanceStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:placeAttachment "An ongoing relationship (i.e. emotional attachment) between individuals, and a particular place."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:placeAttachment "Place attachment is an emotional bond between person and place."@en)
+AnnotationAssertion(rdfs:label :term:placeAttachment "Place attachment"@en)
+ClassAssertion(top-down-common:Term :term:placeAttachment)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:placeAttachment top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:placeAttachment top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:placeAttachment top-down-common:discipline:governanceStudies)
+
+# Individual: :term:placeIdentity (Place identity)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:placeIdentity top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:placeIdentity top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:placeIdentity top-down-common:discipline:governanceStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:placeIdentity "Place identity can be understood in two ways:
+
+1. As an identity ascribed by people to a place
+2. As those parts of a person's identity that are connected to a specific place. 
+
+The term is usually used in the latter sense."@en)
+AnnotationAssertion(rdfs:label :term:placeIdentity "Place identity"@en)
+ClassAssertion(top-down-common:Term :term:placeIdentity)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:placeIdentity top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:placeIdentity top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:placeIdentity top-down-common:discipline:governanceStudies)
+
+# Individual: :term:PositiveFeedback (Positive feeback)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:PositiveFeedback top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:PositiveFeedback "As it goes, the definition in the glossary is technically correct (if one sees the world as a collection of variables), but I think it could be generalized by saying that positive feedback is a response of a given system to a particular behaviour that encourages such a behaviour within that system to continue or grow."@en)
+AnnotationAssertion(rdfs:label :term:PositiveFeedback "Positive feeback"@en)
+ClassAssertion(top-down-common:Term :term:PositiveFeedback)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:PositiveFeedback top-down-common:discipline:psychology)
+
+# Individual: :term:PublicGood (Public good)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:PublicGood top-down-common:discipline:economics)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:PublicGood "A good with the following two properties: non-excludability and non-rivalrous consumption. Non-excludability means that individuals cannot be excluded from consuming the good once it is provided.  Non-rivalrous consumption means that one individual's consumption of the good does not reduce the availability of the good to other individuals. In reality there are varying degrees of 'public' goods."@en)
+AnnotationAssertion(rdfs:label :term:PublicGood "Public good"@en)
+ClassAssertion(top-down-common:Term :term:PublicGood)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:PublicGood top-down-common:discipline:economics)
+
+# Individual: :term:ReboundEffect (Rebound effect)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:ReboundEffect "I think in economics, the rebound effect refers to the process whereby technological improvements reduces the incentive to cut consumption (or something like that). The terms rebound is also used in psychology in relation to thought suppression (i.e. the act of suppression making it more likely that those thoughts will be more cognitively accessible, and therefore more likely to be recalled at higher frequency, etc..)"@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:ReboundEffect "In conservation and energy economics, the rebound effect (or take-back effect, RE) is the reduction in expected gains from new technologies that increase the efficiency of resource use, because of behavioral or other systemic responses. These responses usually tend to offset the beneficial effects of the new technology or other measures taken. While the literature on the rebound effect generally focuses on the effect of technological improvements on energy consumption, the theory can also be applied to the use of any natural resource or other input, such as labor. The rebound effect is generally expressed as a ratio of the lost benefit compared to the expected environmental benefit when holding consumption constant. (from Wikipedia)"@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:isDefinedBy :term:ReboundEffect top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:isDefinedBy :term:ReboundEffect top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:isDefinedBy :term:ReboundEffect top-down-common:discipline:governanceStudies)
+AnnotationAssertion(rdfs:label :term:ReboundEffect "Rebound effect"@en)
+ClassAssertion(top-down-common:Term :term:ReboundEffect)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:psychology)
+
+# Individual: :term:socialCapital (Social capital)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:socialCapital top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:socialCapital top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:socialCapital top-down-common:discipline:governanceStudies)
+AnnotationAssertion(rdfs:label :term:socialCapital "Social capital"@en)
+ClassAssertion(top-down-common:Term :term:socialCapital)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:socialCapital top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:socialCapital top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:socialCapital top-down-common:discipline:governanceStudies)
+
+# Individual: :term:SocialIdentityTheory (Social identity theory)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:SocialIdentityTheory top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:SocialIdentityTheory top-down-common:discipline:environmentalSociology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:SocialIdentityTheory top-down-common:discipline:governanceStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:SocialIdentityTheory "A social identity is the portion of an individual's self-concept derived from perceived membership in a relevant social group.Social identity theory is best described as a theory that predicts certain intergroup behaviours on the basis of perceived group status differences, the perceived legitimacy and stability of those status differences, and the perceived ability to move from one group to another.[3][5] This contrasts with occasions where the term \"social identity theory\" is used to refer to general theorizing about human social selves. (From Wikipedia)"@en)
+AnnotationAssertion(rdfs:label :term:SocialIdentityTheory "Social identity theory"@en)
+ClassAssertion(top-down-common:Term :term:SocialIdentityTheory)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:SocialIdentityTheory top-down-common:discipline:environmentalPsychology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:SocialIdentityTheory top-down-common:discipline:environmentalSociology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:SocialIdentityTheory top-down-common:discipline:governanceStudies)
+
+# Individual: :term:socialInfluence (Social influence)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:socialInfluence top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:socialInfluence "The influence of one person or groups behavior or opinions on another persons behaviour or opinions."@en)
+AnnotationAssertion(rdfs:label :term:socialInfluence "Social influence"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:socialInfluence)
+ClassAssertion(top-down-common:Term :term:socialInfluence)
+ClassAssertion(top-down-common:TerminatedQuestionnaire :term:socialInfluence)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:socialInfluence top-down-common:discipline:psychology)
+
+# Individual: :term:SocialNetwork (Social network)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:SocialNetwork top-down-common:discipline:sociology)
+AnnotationAssertion(rdfs:isDefinedBy :term:SocialNetwork "A social network is a social structure made up of a set of social actors (such as individuals or organizations), sets of dyadic ties, and other social interactions between actors. The social network perspective provides a set of methods for analyzing the structure of whole social entities as well as a variety of theories explaining the patterns observed in these structures. The study of these structures uses social network analysis to identify local and global patterns, locate influential entities, and examine network dynamics."@en)
+AnnotationAssertion(rdfs:isDefinedBy :term:SocialNetwork "https://en.wikipedia.org/wiki/Social_network"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label :term:SocialNetwork "Social network"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:SocialNetwork)
+ClassAssertion(top-down-common:Term :term:SocialNetwork)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Social_network"^^xsd:anyURI) top-down-common:partOfDiscipline :term:SocialNetwork top-down-common:discipline:sociology)
+
+# Individual: :term:technologicalChange (Technological change)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:foresight)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:innovationStudies)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:technologyStudies)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:transitionManagement)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) rdfs:comment :term:technologicalChange "Technological change is any change in technology. In economics it is seen as the outcome of processes of invention, innovation, commercialisation and diffusion. In backcasting technological changes are those changes involving technology and knowledge that are needed to bring about an envisaged desirable future vision"@en)
+AnnotationAssertion(rdfs:label :term:technologicalChange "Technological change"@en)
+ClassAssertion(top-down-common:Term :term:technologicalChange)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:foresight)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:innovationStudies)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:technologyStudies)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:technologicalChange top-down-common:discipline:transitionManagement)
+
+# Individual: :term:TimeManagement (Time management)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:TimeManagement top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:TimeManagement "The process of deciding how to schedule activities over a set period of time. Time management is often used as a term to indicate a particular style of management - i.e. it is the stuff of popular business psychology airport books!"@en)
+AnnotationAssertion(rdfs:label :term:TimeManagement "Time management"@en)
+ClassAssertion(top-down-common:Term :term:TimeManagement)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:TimeManagement top-down-common:discipline:psychology)
+
+# Individual: :term:timePressure (Time pressure)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:timePressure top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:timePressure "In the glossary, the term is given for \"perceived time pressure\", where is is described as a 'stress reaction'.  Personally, I prefer the approach of Gärling et al, who distinguish time-pressure from time-stress.  Time pressure in this view is essentially the same as \"perceived time scarcity\" as defined in the glossary (i.e. a perception of there being a mismatch between time available and time required for a number of things that one desires to do).  Time stress, on the other hand is the the negative outcome associated with experiencing too much time pressure."@en)
+AnnotationAssertion(rdfs:label :term:timePressure "Time pressure"@en)
+ClassAssertion(top-down-common:Term :term:timePressure)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:timePressure top-down-common:discipline:psychology)
+
+# Individual: :term:TimeUse (Time use)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:TimeUse top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:TimeUse "As the phrase suggests, time use is quite simply the way in which time is used.  In sociological studies of time use, the unit of analysis tends to by an individual person, and the focus tends to be on the temporal patterning of everyday behaviour. Differences in sociodemographics are often studied in this domain, as are event-sequences."@en)
+AnnotationAssertion(rdfs:label :term:TimeUse "Time use"@en)
+ClassAssertion(top-down-common:Term :term:TimeUse)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:TimeUse top-down-common:discipline:psychology)
+
+# Individual: :term:TravelBehaviour (Travel behaviour)
+
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:TravelBehaviour top-down-common:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:TravelBehaviour top-down-common:discipline:transportStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:TravelBehaviour "individual's choices relating to travel, including destination, purpose, distance, mode of travel, time of departure/arrival, frequency of travel, route choice, etc."@en)
+AnnotationAssertion(rdfs:label :term:TravelBehaviour "Travel behaviour"@en)
+ClassAssertion(top-down-common:Term :term:TravelBehaviour)
+
+# Individual: :term:travelMode (Travel mode)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:travelMode :term:TravelBehaviour)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:travelMode "This refers to the mode of transport used by individuals to go from a place of origin to a place of destination and can have different purposes (e.g. travel to work, travel to school, shopping, business, etc.)."@en)
+AnnotationAssertion(rdfs:label :term:travelMode "Travel mode"@en)
+ClassAssertion(top-down-common:Term :term:travelMode)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) top-down-common:partOfDiscipline :term:travelMode :term:TravelBehaviour)
+
+# Individual: :term:waterFootprint (Water footprint)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:waterFootprint top-down-common:discipline:biotechnology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:waterFootprint top-down-common:discipline:engineering)
+AnnotationAssertion(rdfs:comment :term:waterFootprint "The water footprint is a measure of humanityâ€™s appropriation of fresh water in volumes of water consumed and/or polluted."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:isDefinedBy :term:waterFootprint top-down-common:discipline:chemistry)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:isDefinedBy :term:waterFootprint top-down-common:discipline:economics)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:isDefinedBy :term:waterFootprint top-down-common:discipline:industrialEcology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) rdfs:label :term:waterFootprint "Water footprint"@en)
+ClassAssertion(top-down-common:Term :term:waterFootprint)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:waterFootprint top-down-common:discipline:biotechnology)
+ObjectPropertyAssertion(Annotation(rdfs:isDefinedBy top-down-common:NTNU) top-down-common:partOfDiscipline :term:waterFootprint top-down-common:discipline:engineering)
+
+
+)

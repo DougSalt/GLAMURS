@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#"
      xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common"
-     xmlns:vocabulary="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#"
+     xmlns:vocabulary="http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common">
-        <owl:imports rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary"/>
+        <owl:imports rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic"/>
         <rdfs:comment xml:lang="en">This ontology is the common basis for four parts of the top-down ontology used in GLAMURS.
 
 These ontologies are:
@@ -92,7 +92,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#disciplineHasSpecialization -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#disciplineHasSpecialization">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic#hasPart"/>
         <owl:inverseOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#partOfDiscipline"/>
         <rdfs:label xml:lang="en">discipline has specialization</rdfs:label>
     </owl:ObjectProperty>
@@ -237,7 +237,7 @@ Markdown will be used in all text.</rdfs:comment>
     <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#partOfDiscipline -->
 
     <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#partOfDiscipline">
-        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic#partOf"/>
     </owl:ObjectProperty>
     
 

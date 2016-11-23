@@ -1,0 +1,1093 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(basic:=<http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic#>)
+Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>
+Import(<http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic>)
+Annotation(rdfs:comment "Note the conventions for this ontology are:
+
+The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
+ 
++ classes begin with an upper case letter
++ object properties begin with a lower case letter
++ data properties begin with a lower case letter and are suffixed with -value unless the data value is boolean.
++ data properties and object properties being with has unless another verb makes better sense.
++ individuals gerneally begin with a lowercase letter, unless it is a proper name
+
+Note these conventions relate to the underlying entity and not what is shown as its name in Protégé (which is normally the value of the label for whatever default the language is set to).
+
++ a label must be provided (usually with a language specification) and should be make sense in the language of choice
+
+Markdown will be used in all text."@en)
+Annotation(rdfs:comment "This ontology is the common basis for four parts of the top-down ontology used in GLAMURS.
+
+These ontologies are:
+
+1. The ontology built from the questionnaire, before we did some text analysis, generally referred to as the questionnaire ontology.
+2. The ontology created from word groups of two or more harvested for frequency vs high familarity. This ontology is generally 
+     referred to as the top-terms or vocabulary ontology.
+3. The glossary built from the ontology. This will only use terms that have been shown to be in use by the text analysis. This is
+    generally referred to as the glossary ontology.
+4. Single words and word groups of two or more that are not nonsense and are not common-sense. This ontology is known as the 
+    high-frequency ontology."@en)
+Annotation(owl:versionInfo "1.0"^^xsd:string)
+
+Declaration(Class(top-down-common:AgentBasedModelling))
+Declaration(Class(top-down-common:AgreeWithGlossary))
+Declaration(Class(top-down-common:Anthropology))
+Declaration(Class(top-down-common:Architecture))
+Declaration(Class(top-down-common:ArtificialIntelligence))
+Declaration(Class(top-down-common:BehaviouralScience))
+Declaration(Class(top-down-common:Biology))
+Declaration(Class(top-down-common:Biotechnology))
+Declaration(Class(top-down-common:Business))
+Declaration(Class(top-down-common:Chemistry))
+Declaration(Class(top-down-common:CommonSense))
+Declaration(Class(top-down-common:DevelopmentStudies))
+Declaration(Class(top-down-common:DisagreeWithGlossary))
+Declaration(Class(top-down-common:Discipline))
+Declaration(Class(top-down-common:EcologicalEconomics))
+Declaration(Class(top-down-common:Economics))
+Declaration(Class(top-down-common:Energy))
+Declaration(Class(top-down-common:Engineering))
+Declaration(Class(top-down-common:EnvironmentalPsychology))
+Declaration(Class(top-down-common:EnvironmentalScience))
+Declaration(Class(top-down-common:EnvironmentalSociology))
+Declaration(Class(top-down-common:Ethics))
+Declaration(Class(top-down-common:Foresight))
+Declaration(Class(top-down-common:Glossary))
+Declaration(Class(top-down-common:GovernanceStudies))
+Declaration(Class(top-down-common:HappinessResearch))
+Declaration(Class(top-down-common:IndustrialEcology))
+Declaration(Class(top-down-common:InnovationStudies))
+Declaration(Class(top-down-common:Institution))
+Declaration(Class(top-down-common:MacroEconomics))
+Declaration(Class(top-down-common:MicroEconomics))
+Declaration(Class(top-down-common:MissingDefinitions))
+Declaration(Class(top-down-common:OrganizationalPsychology))
+Declaration(Class(top-down-common:Philosophy))
+Declaration(Class(top-down-common:Policy))
+Declaration(Class(top-down-common:Process))
+Declaration(Class(top-down-common:Psychology))
+Declaration(Class(top-down-common:PsychologyOfLearning))
+Declaration(Class(top-down-common:PublicAdministration))
+Declaration(Class(top-down-common:QualityOfLifeResearch))
+Declaration(Class(top-down-common:SocialPsychology))
+Declaration(Class(top-down-common:SocialSimulation))
+Declaration(Class(top-down-common:Sociology))
+Declaration(Class(top-down-common:Statistics))
+Declaration(Class(top-down-common:SuggestedClass))
+Declaration(Class(top-down-common:SuggestedProcess))
+Declaration(Class(top-down-common:SustainabilityScience))
+Declaration(Class(top-down-common:SustainabilityTransitions))
+Declaration(Class(top-down-common:SustainableDevelopment))
+Declaration(Class(top-down-common:TechnologyStudies))
+Declaration(Class(top-down-common:Term))
+Declaration(Class(top-down-common:TerminatedQuestionnaire))
+Declaration(Class(top-down-common:TransformationScience))
+Declaration(Class(top-down-common:TransitionManagement))
+Declaration(Class(top-down-common:TransportStudies))
+Declaration(Class(top-down-common:UndefinedEntityType))
+Declaration(ObjectProperty(top-down-common:disciplineHasSpecialization))
+Declaration(ObjectProperty(top-down-common:hasProperty))
+Declaration(ObjectProperty(top-down-common:hasSuggestedProperty))
+Declaration(ObjectProperty(top-down-common:isCommonSense))
+Declaration(ObjectProperty(top-down-common:isPropertyOf))
+Declaration(ObjectProperty(top-down-common:partOfAgenBasedModelling))
+Declaration(ObjectProperty(top-down-common:partOfAnthropology))
+Declaration(ObjectProperty(top-down-common:partOfArchitecture))
+Declaration(ObjectProperty(top-down-common:partOfArtificialIntelligence))
+Declaration(ObjectProperty(top-down-common:partOfBehaviouralScience))
+Declaration(ObjectProperty(top-down-common:partOfBiology))
+Declaration(ObjectProperty(top-down-common:partOfBiotechnology))
+Declaration(ObjectProperty(top-down-common:partOfBusiness))
+Declaration(ObjectProperty(top-down-common:partOfChemistry))
+Declaration(ObjectProperty(top-down-common:partOfDevelopmentStudies))
+Declaration(ObjectProperty(top-down-common:partOfDiscipline))
+Declaration(ObjectProperty(top-down-common:partOfEcologicalEconomics))
+Declaration(ObjectProperty(top-down-common:partOfEconomics))
+Declaration(ObjectProperty(top-down-common:partOfEnergy))
+Declaration(ObjectProperty(top-down-common:partOfEngineering))
+Declaration(ObjectProperty(top-down-common:partOfEnvironmentalPsychology))
+Declaration(ObjectProperty(top-down-common:partOfEnvironmentalScience))
+Declaration(ObjectProperty(top-down-common:partOfEnvironmentalSociology))
+Declaration(ObjectProperty(top-down-common:partOfEthics))
+Declaration(ObjectProperty(top-down-common:partOfForesight))
+Declaration(ObjectProperty(top-down-common:partOfGovernanceStudies))
+Declaration(ObjectProperty(top-down-common:partOfHappinessResearch))
+Declaration(ObjectProperty(top-down-common:partOfIndustrialEcology))
+Declaration(ObjectProperty(top-down-common:partOfInnovationStudies))
+Declaration(ObjectProperty(top-down-common:partOfMacroEconomics))
+Declaration(ObjectProperty(top-down-common:partOfMicroEconomics))
+Declaration(ObjectProperty(top-down-common:partOfOrganizationalPsychology))
+Declaration(ObjectProperty(top-down-common:partOfPhilosophy))
+Declaration(ObjectProperty(top-down-common:partOfPolicy))
+Declaration(ObjectProperty(top-down-common:partOfPsychology))
+Declaration(ObjectProperty(top-down-common:partOfPsychologyOfLearning))
+Declaration(ObjectProperty(top-down-common:partOfPublicAdministration))
+Declaration(ObjectProperty(top-down-common:partOfQualityOfLifeResearch))
+Declaration(ObjectProperty(top-down-common:partOfSocialPsychology))
+Declaration(ObjectProperty(top-down-common:partOfSocialSimulation))
+Declaration(ObjectProperty(top-down-common:partOfSociology))
+Declaration(ObjectProperty(top-down-common:partOfStatistics))
+Declaration(ObjectProperty(top-down-common:partOfSustainabilityDevelopment))
+Declaration(ObjectProperty(top-down-common:partOfSustainabilityScience))
+Declaration(ObjectProperty(top-down-common:partOfSustainableTransitions))
+Declaration(ObjectProperty(top-down-common:partOfTransformationScience))
+Declaration(ObjectProperty(top-down-common:partOfTransitionManagement))
+Declaration(ObjectProperty(top-down-common:partOfTransportStudies))
+Declaration(DataProperty(top-down-common:hasSuggestedAttribute))
+Declaration(NamedIndividual(top-down-common:JHI))
+Declaration(NamedIndividual(top-down-common:NTNU))
+Declaration(NamedIndividual(top-down-common:OVGU))
+Declaration(NamedIndividual(top-down-common:SERI))
+Declaration(NamedIndividual(top-down-common:TSC))
+Declaration(NamedIndividual(top-down-common:TUD))
+Declaration(NamedIndividual(top-down-common:UBAH))
+Declaration(NamedIndividual(top-down-common:UDC))
+Declaration(NamedIndividual(top-down-common:UFZ))
+Declaration(NamedIndividual(top-down-common:UNIROMA3))
+Declaration(NamedIndividual(top-down-common:UVT))
+Declaration(NamedIndividual(top-down-common:author:DougSalt))
+Declaration(NamedIndividual(top-down-common:discipline:agentBasedModelling))
+Declaration(NamedIndividual(top-down-common:discipline:anthropology))
+Declaration(NamedIndividual(top-down-common:discipline:architecture))
+Declaration(NamedIndividual(top-down-common:discipline:artificialIntelligence))
+Declaration(NamedIndividual(top-down-common:discipline:behaviouralScience))
+Declaration(NamedIndividual(top-down-common:discipline:biology))
+Declaration(NamedIndividual(top-down-common:discipline:biotechnology))
+Declaration(NamedIndividual(top-down-common:discipline:chemistry))
+Declaration(NamedIndividual(top-down-common:discipline:developmentStudies))
+Declaration(NamedIndividual(top-down-common:discipline:ecologicalEconomics))
+Declaration(NamedIndividual(top-down-common:discipline:economics))
+Declaration(NamedIndividual(top-down-common:discipline:energy))
+Declaration(NamedIndividual(top-down-common:discipline:engineering))
+Declaration(NamedIndividual(top-down-common:discipline:environmentalPsychology))
+Declaration(NamedIndividual(top-down-common:discipline:environmentalScience))
+Declaration(NamedIndividual(top-down-common:discipline:environmentalSociology))
+Declaration(NamedIndividual(top-down-common:discipline:ethics))
+Declaration(NamedIndividual(top-down-common:discipline:foresight))
+Declaration(NamedIndividual(top-down-common:discipline:governanceStudies))
+Declaration(NamedIndividual(top-down-common:discipline:happinessResearch))
+Declaration(NamedIndividual(top-down-common:discipline:industrialEcology))
+Declaration(NamedIndividual(top-down-common:discipline:innovationStudies))
+Declaration(NamedIndividual(top-down-common:discipline:macroEconomics))
+Declaration(NamedIndividual(top-down-common:discipline:microEconomics))
+Declaration(NamedIndividual(top-down-common:discipline:organizationalPsychology))
+Declaration(NamedIndividual(top-down-common:discipline:philosophy))
+Declaration(NamedIndividual(top-down-common:discipline:policy))
+Declaration(NamedIndividual(top-down-common:discipline:psychology))
+Declaration(NamedIndividual(top-down-common:discipline:publicAdministration))
+Declaration(NamedIndividual(top-down-common:discipline:pyschologyOfLearning))
+Declaration(NamedIndividual(top-down-common:discipline:qualityOfLifeResearch))
+Declaration(NamedIndividual(top-down-common:discipline:socialPsychology))
+Declaration(NamedIndividual(top-down-common:discipline:socialSimulation))
+Declaration(NamedIndividual(top-down-common:discipline:sociology))
+Declaration(NamedIndividual(top-down-common:discipline:statistics))
+Declaration(NamedIndividual(top-down-common:discipline:sustainabilityScience))
+Declaration(NamedIndividual(top-down-common:discipline:sustainabilityTransitions))
+Declaration(NamedIndividual(top-down-common:discipline:sustainableDevelopment))
+Declaration(NamedIndividual(top-down-common:discipline:technologyStudies))
+Declaration(NamedIndividual(top-down-common:discipline:transformationScience))
+Declaration(NamedIndividual(top-down-common:discipline:transitionManagement))
+Declaration(NamedIndividual(top-down-common:discipline:transportStudies))
+Declaration(NamedIndividual(top-down-common:term:business))
+Declaration(AnnotationProperty(top-down-common:frequencyOfProcess))
+Declaration(AnnotationProperty(top-down-common:partOfDiscipline))
+Declaration(AnnotationProperty(top-down-common:periodOfProcess))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: top-down-common:frequencyOfProcess (frequency of process)
+
+AnnotationAssertion(rdfs:label top-down-common:frequencyOfProcess "frequency of process"@en)
+AnnotationPropertyDomain(top-down-common:frequencyOfProcess top-down-common:Process)
+
+# Annotation Property: top-down-common:partOfDiscipline (part of discipline)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfDiscipline "part of discipline"@en)
+AnnotationPropertyRange(top-down-common:partOfDiscipline top-down-common:Discipline)
+
+# Annotation Property: top-down-common:periodOfProcess (period of process)
+
+AnnotationAssertion(rdfs:label top-down-common:periodOfProcess "period of process"@en)
+AnnotationPropertyDomain(top-down-common:periodOfProcess top-down-common:Process)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: top-down-common:disciplineHasSpecialization (discipline has specialization)
+
+AnnotationAssertion(rdfs:label top-down-common:disciplineHasSpecialization "discipline has specialization"@en)
+SubObjectPropertyOf(top-down-common:disciplineHasSpecialization basic:hasPart)
+InverseObjectProperties(top-down-common:disciplineHasSpecialization top-down-common:partOfDiscipline)
+
+# Object Property: top-down-common:hasProperty (has property)
+
+AnnotationAssertion(rdfs:label top-down-common:hasProperty "has property"@en)
+InverseObjectProperties(top-down-common:hasProperty top-down-common:hasProperty)
+InverseObjectProperties(top-down-common:hasProperty top-down-common:isPropertyOf)
+
+# Object Property: top-down-common:hasSuggestedProperty (has suggested property)
+
+AnnotationAssertion(rdfs:label top-down-common:hasSuggestedProperty "has suggested property"@en)
+
+# Object Property: top-down-common:isCommonSense (is common sense)
+
+AnnotationAssertion(rdfs:label top-down-common:isCommonSense "is common sense"@en)
+ObjectPropertyRange(top-down-common:isCommonSense top-down-common:CommonSense)
+
+# Object Property: top-down-common:isPropertyOf (is property of)
+
+AnnotationAssertion(rdfs:label top-down-common:isPropertyOf "is property of"@en)
+
+# Object Property: top-down-common:partOfAgenBasedModelling (part of agent-based modelling)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfAgenBasedModelling "part of agent-based modelling"@en)
+SubObjectPropertyOf(top-down-common:partOfAgenBasedModelling top-down-common:partOfDiscipline)
+ObjectPropertyDomain(top-down-common:partOfAgenBasedModelling top-down-common:AgentBasedModelling)
+
+# Object Property: top-down-common:partOfAnthropology (part of anthropology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfAnthropology "part of anthropology"@en)
+SubObjectPropertyOf(top-down-common:partOfAnthropology top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfAnthropology top-down-common:Anthropology)
+
+# Object Property: top-down-common:partOfArchitecture (part of architecture)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfArchitecture "part of architecture"@en)
+SubObjectPropertyOf(top-down-common:partOfArchitecture top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfArchitecture top-down-common:Architecture)
+
+# Object Property: top-down-common:partOfArtificialIntelligence (part of artificial intelligence)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfArtificialIntelligence "part of artificial intelligence"@en)
+SubObjectPropertyOf(top-down-common:partOfArtificialIntelligence top-down-common:partOfDiscipline)
+ObjectPropertyDomain(top-down-common:partOfArtificialIntelligence top-down-common:ArtificialIntelligence)
+
+# Object Property: top-down-common:partOfBehaviouralScience (part of behavioural science)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfBehaviouralScience "part of behavioural science"@en)
+SubObjectPropertyOf(top-down-common:partOfBehaviouralScience top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfBehaviouralScience top-down-common:BehaviouralScience)
+
+# Object Property: top-down-common:partOfBiology (part of biology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfBiology "part of biology"@en)
+SubObjectPropertyOf(top-down-common:partOfBiology top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfBiology top-down-common:Biology)
+
+# Object Property: top-down-common:partOfBiotechnology (part of biotechnology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfBiotechnology "part of biotechnology"@en)
+SubObjectPropertyOf(top-down-common:partOfBiotechnology top-down-common:partOfDiscipline)
+ObjectPropertyDomain(top-down-common:partOfBiotechnology top-down-common:Biotechnology)
+
+# Object Property: top-down-common:partOfBusiness (part of business)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfBusiness "part of business"@en)
+SubObjectPropertyOf(top-down-common:partOfBusiness top-down-common:partOfDiscipline)
+ObjectPropertyDomain(top-down-common:partOfBusiness top-down-common:Business)
+
+# Object Property: top-down-common:partOfChemistry (part of chemistry)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfChemistry "part of chemistry"@en)
+SubObjectPropertyOf(top-down-common:partOfChemistry top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfChemistry top-down-common:Chemistry)
+
+# Object Property: top-down-common:partOfDevelopmentStudies (part of development studies)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfDevelopmentStudies "part of development studies"@en)
+SubObjectPropertyOf(top-down-common:partOfDevelopmentStudies top-down-common:partOfDiscipline)
+ObjectPropertyDomain(top-down-common:partOfDevelopmentStudies top-down-common:DevelopmentStudies)
+
+# Object Property: top-down-common:partOfDiscipline (part of discipline)
+
+SubObjectPropertyOf(top-down-common:partOfDiscipline basic:partOf)
+
+# Object Property: top-down-common:partOfEcologicalEconomics (part of ecological economics)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEcologicalEconomics "part of ecological economics"@en)
+SubObjectPropertyOf(top-down-common:partOfEcologicalEconomics top-down-common:partOfEconomics)
+ObjectPropertyRange(top-down-common:partOfEcologicalEconomics top-down-common:EcologicalEconomics)
+
+# Object Property: top-down-common:partOfEconomics (part of economics)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEconomics "part of economics"@en)
+SubObjectPropertyOf(top-down-common:partOfEconomics top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfEconomics top-down-common:Economics)
+
+# Object Property: top-down-common:partOfEnergy (part of energy)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEnergy "part of energy"@en)
+SubObjectPropertyOf(top-down-common:partOfEnergy top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfEnergy top-down-common:Energy)
+
+# Object Property: top-down-common:partOfEngineering (part of engineering)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEngineering "part of engineering"@en)
+SubObjectPropertyOf(top-down-common:partOfEngineering top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfEngineering top-down-common:Engineering)
+
+# Object Property: top-down-common:partOfEnvironmentalPsychology (part of environmental pyschology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEnvironmentalPsychology "part of environmental pyschology"@en)
+SubObjectPropertyOf(top-down-common:partOfEnvironmentalPsychology top-down-common:partOfPsychology)
+ObjectPropertyRange(top-down-common:partOfEnvironmentalPsychology top-down-common:EnvironmentalPsychology)
+
+# Object Property: top-down-common:partOfEnvironmentalScience (part of environmental science)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEnvironmentalScience "part of environmental science"@en)
+SubObjectPropertyOf(top-down-common:partOfEnvironmentalScience top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfEnvironmentalScience top-down-common:EnvironmentalScience)
+
+# Object Property: top-down-common:partOfEnvironmentalSociology (part of environmental sociology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEnvironmentalSociology "part of environmental sociology"@en)
+SubObjectPropertyOf(top-down-common:partOfEnvironmentalSociology top-down-common:partOfSociology)
+ObjectPropertyRange(top-down-common:partOfEnvironmentalSociology top-down-common:EnvironmentalSociology)
+
+# Object Property: top-down-common:partOfEthics (part of ethics)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfEthics "part of ethics"@en)
+SubObjectPropertyOf(top-down-common:partOfEthics top-down-common:partOfDiscipline)
+ObjectPropertyDomain(top-down-common:partOfEthics top-down-common:Ethics)
+
+# Object Property: top-down-common:partOfForesight (part of foresight)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfForesight "part of foresight"@en)
+SubObjectPropertyOf(top-down-common:partOfForesight top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfForesight top-down-common:Foresight)
+
+# Object Property: top-down-common:partOfGovernanceStudies (part of governance studies)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfGovernanceStudies "part of governance studies"@en)
+SubObjectPropertyOf(top-down-common:partOfGovernanceStudies top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfGovernanceStudies top-down-common:GovernanceStudies)
+
+# Object Property: top-down-common:partOfHappinessResearch (part of happiness research)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfHappinessResearch "part of happiness research"@en)
+SubObjectPropertyOf(top-down-common:partOfHappinessResearch top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfHappinessResearch top-down-common:HappinessResearch)
+
+# Object Property: top-down-common:partOfIndustrialEcology (part of industrial ecology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfIndustrialEcology "part of industrial ecology"@en)
+SubObjectPropertyOf(top-down-common:partOfIndustrialEcology top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfIndustrialEcology top-down-common:IndustrialEcology)
+
+# Object Property: top-down-common:partOfInnovationStudies (part of innovation studies)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfInnovationStudies "part of innovation studies"@en)
+SubObjectPropertyOf(top-down-common:partOfInnovationStudies top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfInnovationStudies top-down-common:InnovationStudies)
+
+# Object Property: top-down-common:partOfMacroEconomics (part of macro-economics)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfMacroEconomics "part of macro-economics"@en)
+SubObjectPropertyOf(top-down-common:partOfMacroEconomics top-down-common:partOfEconomics)
+ObjectPropertyRange(top-down-common:partOfMacroEconomics top-down-common:MacroEconomics)
+
+# Object Property: top-down-common:partOfMicroEconomics (part of micro-economics)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfMicroEconomics "part of micro-economics"@en)
+SubObjectPropertyOf(top-down-common:partOfMicroEconomics top-down-common:partOfEconomics)
+ObjectPropertyRange(top-down-common:partOfMicroEconomics top-down-common:MicroEconomics)
+
+# Object Property: top-down-common:partOfOrganizationalPsychology (part of organizational psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfOrganizationalPsychology "part of organizational psychology"@en)
+SubObjectPropertyOf(top-down-common:partOfOrganizationalPsychology top-down-common:partOfPsychology)
+ObjectPropertyRange(top-down-common:partOfOrganizationalPsychology top-down-common:OrganizationalPsychology)
+
+# Object Property: top-down-common:partOfPhilosophy (part of philosophy)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfPhilosophy "part of philosophy"@en)
+SubObjectPropertyOf(top-down-common:partOfPhilosophy top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfPhilosophy top-down-common:Philosophy)
+
+# Object Property: top-down-common:partOfPolicy (part of policy)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfPolicy "part of policy"@en)
+SubObjectPropertyOf(top-down-common:partOfPolicy top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfPolicy top-down-common:Policy)
+
+# Object Property: top-down-common:partOfPsychology (part of pyschology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfPsychology "part of pyschology"@en)
+SubObjectPropertyOf(top-down-common:partOfPsychology top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfPsychology top-down-common:Psychology)
+
+# Object Property: top-down-common:partOfPsychologyOfLearning (part of psychology of learning)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfPsychologyOfLearning "part of psychology of learning"@en)
+SubObjectPropertyOf(top-down-common:partOfPsychologyOfLearning top-down-common:partOfPsychology)
+ObjectPropertyRange(top-down-common:partOfPsychologyOfLearning top-down-common:PsychologyOfLearning)
+
+# Object Property: top-down-common:partOfPublicAdministration (part of public adminstration)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfPublicAdministration "part of public adminstration"@en)
+SubObjectPropertyOf(top-down-common:partOfPublicAdministration top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfPublicAdministration top-down-common:PublicAdministration)
+
+# Object Property: top-down-common:partOfQualityOfLifeResearch (part of quality of life research)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfQualityOfLifeResearch "part of quality of life research"@en)
+SubObjectPropertyOf(top-down-common:partOfQualityOfLifeResearch top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfQualityOfLifeResearch top-down-common:QualityOfLifeResearch)
+
+# Object Property: top-down-common:partOfSocialPsychology (part of social psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfSocialPsychology "part of social psychology"@en)
+SubObjectPropertyOf(top-down-common:partOfSocialPsychology top-down-common:partOfPsychology)
+ObjectPropertyRange(top-down-common:partOfSocialPsychology top-down-common:SocialPsychology)
+
+# Object Property: top-down-common:partOfSocialSimulation (part of social simulation)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfSocialSimulation "part of social simulation"@en)
+SubObjectPropertyOf(top-down-common:partOfSocialSimulation top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfSocialSimulation top-down-common:SocialSimulation)
+
+# Object Property: top-down-common:partOfSociology (part of sociology)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfSociology "part of sociology"@en)
+SubObjectPropertyOf(top-down-common:partOfSociology top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfSociology top-down-common:Sociology)
+
+# Object Property: top-down-common:partOfStatistics (part of statistics)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfStatistics "part of statistics"@en)
+SubObjectPropertyOf(top-down-common:partOfStatistics top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfStatistics top-down-common:Statistics)
+
+# Object Property: top-down-common:partOfSustainabilityDevelopment (part of sustainability development)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfSustainabilityDevelopment "part of sustainability development"@en)
+SubObjectPropertyOf(top-down-common:partOfSustainabilityDevelopment top-down-common:partOfSustainabilityScience)
+ObjectPropertyRange(top-down-common:partOfSustainabilityDevelopment top-down-common:SustainableDevelopment)
+
+# Object Property: top-down-common:partOfSustainabilityScience (part of sustainability science)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfSustainabilityScience "part of sustainability science"@en)
+SubObjectPropertyOf(top-down-common:partOfSustainabilityScience top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfSustainabilityScience top-down-common:SustainabilityScience)
+
+# Object Property: top-down-common:partOfSustainableTransitions (part of sustainability transitions)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfSustainableTransitions "part of sustainability transitions"@en)
+SubObjectPropertyOf(top-down-common:partOfSustainableTransitions top-down-common:partOfSustainabilityScience)
+ObjectPropertyRange(top-down-common:partOfSustainableTransitions top-down-common:SustainabilityTransitions)
+
+# Object Property: top-down-common:partOfTransformationScience (part of transformation science)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfTransformationScience "part of transformation science"@en)
+SubObjectPropertyOf(top-down-common:partOfTransformationScience top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfTransformationScience top-down-common:TransformationScience)
+
+# Object Property: top-down-common:partOfTransitionManagement (part of transistion management)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfTransitionManagement "part of transistion management"@en)
+SubObjectPropertyOf(top-down-common:partOfTransitionManagement top-down-common:partOfDiscipline)
+ObjectPropertyRange(top-down-common:partOfTransitionManagement top-down-common:TransitionManagement)
+
+# Object Property: top-down-common:partOfTransportStudies (part of transport studies)
+
+AnnotationAssertion(rdfs:label top-down-common:partOfTransportStudies "part of transport studies"@en)
+SubObjectPropertyOf(top-down-common:partOfTransportStudies top-down-common:partOfDiscipline)
+ObjectPropertyDomain(top-down-common:partOfTransportStudies top-down-common:TransportStudies)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: top-down-common:hasSuggestedAttribute (has suggested attribute)
+
+AnnotationAssertion(rdfs:label top-down-common:hasSuggestedAttribute "has suggested attribute"@en)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: top-down-common:AgentBasedModelling (Agent-based modelling)
+
+AnnotationAssertion(rdfs:label top-down-common:AgentBasedModelling "Agent-based modelling"@en)
+SubClassOf(top-down-common:AgentBasedModelling top-down-common:Discipline)
+
+# Class: top-down-common:AgreeWithGlossary (Agree with glossary)
+
+AnnotationAssertion(rdfs:label top-down-common:AgreeWithGlossary "Agree with glossary"@en)
+SubClassOf(top-down-common:AgreeWithGlossary top-down-common:Glossary)
+
+# Class: top-down-common:Anthropology (top-down-common:Anthropology)
+
+SubClassOf(top-down-common:Anthropology top-down-common:Discipline)
+
+# Class: top-down-common:Architecture (Architecture)
+
+AnnotationAssertion(rdfs:label top-down-common:Architecture "Architecture"@en)
+SubClassOf(top-down-common:Architecture top-down-common:Discipline)
+
+# Class: top-down-common:ArtificialIntelligence (Artificial intelligence)
+
+AnnotationAssertion(rdfs:label top-down-common:ArtificialIntelligence "Artificial intelligence"@en)
+SubClassOf(top-down-common:ArtificialIntelligence top-down-common:Discipline)
+
+# Class: top-down-common:BehaviouralScience (Behavioural science)
+
+AnnotationAssertion(rdfs:label top-down-common:BehaviouralScience "Behavioural science"@en)
+SubClassOf(top-down-common:BehaviouralScience top-down-common:Discipline)
+
+# Class: top-down-common:Biology (Biology)
+
+AnnotationAssertion(rdfs:label top-down-common:Biology "Biology"@en)
+SubClassOf(top-down-common:Biology top-down-common:Discipline)
+
+# Class: top-down-common:Biotechnology (Biotechnology)
+
+AnnotationAssertion(rdfs:label top-down-common:Biotechnology "Biotechnology"@en)
+SubClassOf(top-down-common:Biotechnology top-down-common:Discipline)
+
+# Class: top-down-common:Business (Business)
+
+AnnotationAssertion(rdfs:label top-down-common:Business "Business"@en)
+SubClassOf(top-down-common:Business top-down-common:Discipline)
+
+# Class: top-down-common:Chemistry (Chemistry)
+
+AnnotationAssertion(rdfs:label top-down-common:Chemistry "Chemistry"@en)
+SubClassOf(top-down-common:Chemistry top-down-common:Discipline)
+
+# Class: top-down-common:CommonSense (Common sense)
+
+AnnotationAssertion(rdfs:comment top-down-common:CommonSense "This is a metadata class.
+
+These are terms that are considered not to need defining and should be obvious in their context"@en)
+AnnotationAssertion(rdfs:label top-down-common:CommonSense "Common sense"@en)
+
+# Class: top-down-common:DevelopmentStudies (Development studies)
+
+AnnotationAssertion(rdfs:label top-down-common:DevelopmentStudies "Development studies"@en)
+SubClassOf(top-down-common:DevelopmentStudies top-down-common:Discipline)
+
+# Class: top-down-common:DisagreeWithGlossary (Disagree with glossary)
+
+AnnotationAssertion(rdfs:label top-down-common:DisagreeWithGlossary "Disagree with glossary"@en)
+SubClassOf(top-down-common:DisagreeWithGlossary top-down-common:Glossary)
+
+# Class: top-down-common:Discipline (Discipline)
+
+AnnotationAssertion(rdfs:label top-down-common:Discipline "Discipline"@en)
+
+# Class: top-down-common:EcologicalEconomics (Ecological economics)
+
+AnnotationAssertion(rdfs:label top-down-common:EcologicalEconomics "Ecological economics"@en)
+SubClassOf(top-down-common:EcologicalEconomics top-down-common:Economics)
+
+# Class: top-down-common:Economics (Economics)
+
+AnnotationAssertion(rdfs:label top-down-common:Economics "Economics"@en)
+SubClassOf(top-down-common:Economics top-down-common:Discipline)
+
+# Class: top-down-common:Energy (Energy)
+
+AnnotationAssertion(rdfs:label top-down-common:Energy "Energy"@en)
+SubClassOf(top-down-common:Energy top-down-common:Discipline)
+
+# Class: top-down-common:Engineering (Engineering)
+
+AnnotationAssertion(rdfs:label top-down-common:Engineering "Engineering"@en)
+SubClassOf(top-down-common:Engineering top-down-common:Discipline)
+
+# Class: top-down-common:EnvironmentalPsychology (Environmental psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:EnvironmentalPsychology "Environmental psychology"@en)
+SubClassOf(top-down-common:EnvironmentalPsychology top-down-common:Psychology)
+
+# Class: top-down-common:EnvironmentalScience (Environmental science)
+
+AnnotationAssertion(rdfs:label top-down-common:EnvironmentalScience "Environmental science"@en)
+SubClassOf(top-down-common:EnvironmentalScience top-down-common:Discipline)
+
+# Class: top-down-common:EnvironmentalSociology (Environmental sociology)
+
+AnnotationAssertion(rdfs:label top-down-common:EnvironmentalSociology "Environmental sociology"@en)
+SubClassOf(top-down-common:EnvironmentalSociology top-down-common:Sociology)
+
+# Class: top-down-common:Ethics (Ethics)
+
+AnnotationAssertion(rdfs:label top-down-common:Ethics "Ethics"@en)
+SubClassOf(top-down-common:Ethics top-down-common:Discipline)
+
+# Class: top-down-common:Foresight (Foresight)
+
+AnnotationAssertion(rdfs:label top-down-common:Foresight "Foresight"@en)
+SubClassOf(top-down-common:Foresight top-down-common:Discipline)
+
+# Class: top-down-common:Glossary (top-down-common:Glossary)
+
+AnnotationAssertion(rdfs:comment top-down-common:Glossary "This is a metadata class.
+
+These are terms that are in the GLAMURS glossary"@en)
+
+# Class: top-down-common:GovernanceStudies (Governance studies)
+
+AnnotationAssertion(rdfs:label top-down-common:GovernanceStudies "Governance studies"@en)
+SubClassOf(top-down-common:GovernanceStudies top-down-common:Discipline)
+
+# Class: top-down-common:HappinessResearch (Happiness research)
+
+AnnotationAssertion(rdfs:label top-down-common:HappinessResearch "Happiness research"@en)
+SubClassOf(top-down-common:HappinessResearch top-down-common:Discipline)
+
+# Class: top-down-common:IndustrialEcology (Industrial ecology)
+
+AnnotationAssertion(rdfs:label top-down-common:IndustrialEcology "Industrial ecology"@en)
+SubClassOf(top-down-common:IndustrialEcology top-down-common:Discipline)
+
+# Class: top-down-common:InnovationStudies (Innovation studies)
+
+AnnotationAssertion(rdfs:label top-down-common:InnovationStudies "Innovation studies"@en)
+SubClassOf(top-down-common:InnovationStudies top-down-common:Discipline)
+
+# Class: top-down-common:Institution (Institution)
+
+AnnotationAssertion(rdfs:comment top-down-common:Institution "Institutions involved in the GLAMURS project."@en)
+AnnotationAssertion(rdfs:label top-down-common:Institution "Institution"@en)
+
+# Class: top-down-common:MacroEconomics (Macro-economics)
+
+AnnotationAssertion(rdfs:label top-down-common:MacroEconomics "Macro-economics"@en)
+SubClassOf(top-down-common:MacroEconomics top-down-common:Economics)
+
+# Class: top-down-common:MicroEconomics (Micro-economics)
+
+AnnotationAssertion(rdfs:label top-down-common:MicroEconomics "Micro-economics"@en)
+SubClassOf(top-down-common:MicroEconomics top-down-common:Economics)
+
+# Class: top-down-common:MissingDefinitions (Missing definitions)
+
+AnnotationAssertion(rdfs:comment top-down-common:MissingDefinitions "Those terms missing definitions for whatever reason"@en)
+AnnotationAssertion(rdfs:label top-down-common:MissingDefinitions "Missing definitions"@en)
+SubClassOf(top-down-common:MissingDefinitions top-down-common:Term)
+
+# Class: top-down-common:OrganizationalPsychology (Organizational psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:OrganizationalPsychology "Organizational psychology"@en)
+SubClassOf(top-down-common:OrganizationalPsychology top-down-common:Psychology)
+
+# Class: top-down-common:Philosophy (Philosophy)
+
+AnnotationAssertion(rdfs:label top-down-common:Philosophy "Philosophy"@en)
+SubClassOf(top-down-common:Philosophy top-down-common:Discipline)
+
+# Class: top-down-common:Policy (Policy)
+
+AnnotationAssertion(rdfs:label top-down-common:Policy "Policy"@en)
+SubClassOf(top-down-common:Policy top-down-common:Discipline)
+
+# Class: top-down-common:Process (Process)
+
+AnnotationAssertion(rdfs:label top-down-common:Process "Process"@en)
+
+# Class: top-down-common:Psychology (Psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:Psychology "Psychology"@en)
+SubClassOf(top-down-common:Psychology top-down-common:Discipline)
+
+# Class: top-down-common:PsychologyOfLearning (Psychology of learning)
+
+AnnotationAssertion(rdfs:label top-down-common:PsychologyOfLearning "Psychology of learning"@en)
+SubClassOf(top-down-common:PsychologyOfLearning top-down-common:Psychology)
+
+# Class: top-down-common:PublicAdministration (Public adminstration)
+
+AnnotationAssertion(rdfs:label top-down-common:PublicAdministration "Public adminstration"@en)
+SubClassOf(top-down-common:PublicAdministration top-down-common:Discipline)
+
+# Class: top-down-common:QualityOfLifeResearch (Quality of life research)
+
+AnnotationAssertion(rdfs:label top-down-common:QualityOfLifeResearch "Quality of life research"@en)
+SubClassOf(top-down-common:QualityOfLifeResearch top-down-common:Discipline)
+
+# Class: top-down-common:SocialPsychology (Social psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:SocialPsychology "Social psychology"@en)
+SubClassOf(top-down-common:SocialPsychology top-down-common:Psychology)
+
+# Class: top-down-common:SocialSimulation (Social simulation)
+
+AnnotationAssertion(rdfs:label top-down-common:SocialSimulation "Social simulation"@en)
+SubClassOf(top-down-common:SocialSimulation top-down-common:Discipline)
+
+# Class: top-down-common:Sociology (Sociology)
+
+AnnotationAssertion(rdfs:label top-down-common:Sociology "Sociology"@en)
+SubClassOf(top-down-common:Sociology top-down-common:Discipline)
+
+# Class: top-down-common:Statistics (Statistics)
+
+AnnotationAssertion(rdfs:label top-down-common:Statistics "Statistics"@en)
+SubClassOf(top-down-common:Statistics top-down-common:Discipline)
+
+# Class: top-down-common:SuggestedClass (Suggested class)
+
+AnnotationAssertion(rdfs:comment top-down-common:SuggestedClass "This is a metadata class.
+
+These are classes that are defined or suggested by the responses found in the questionnaire data."@en)
+AnnotationAssertion(rdfs:label top-down-common:SuggestedClass "Suggested class"@en)
+
+# Class: top-down-common:SuggestedProcess (Suggested process)
+
+AnnotationAssertion(rdfs:comment top-down-common:SuggestedProcess "This is a metadata class.
+
+This is a class suggested by the responses to the questionnaire data"@en)
+AnnotationAssertion(rdfs:label top-down-common:SuggestedProcess "Suggested process"@en)
+SubClassOf(top-down-common:SuggestedProcess top-down-common:Process)
+
+# Class: top-down-common:SustainabilityScience (Sustainability science)
+
+AnnotationAssertion(rdfs:label top-down-common:SustainabilityScience "Sustainability science"@en)
+SubClassOf(top-down-common:SustainabilityScience top-down-common:Discipline)
+
+# Class: top-down-common:SustainabilityTransitions (Sustainability transitions)
+
+AnnotationAssertion(rdfs:label top-down-common:SustainabilityTransitions "Sustainability transitions"@en)
+SubClassOf(top-down-common:SustainabilityTransitions top-down-common:SustainabilityScience)
+
+# Class: top-down-common:SustainableDevelopment (Sustainability development)
+
+AnnotationAssertion(rdfs:label top-down-common:SustainableDevelopment "Sustainability development"@en)
+SubClassOf(top-down-common:SustainableDevelopment top-down-common:SustainabilityScience)
+
+# Class: top-down-common:TechnologyStudies (Technolgy studies)
+
+AnnotationAssertion(rdfs:label top-down-common:TechnologyStudies "Technolgy studies"@en)
+SubClassOf(top-down-common:TechnologyStudies top-down-common:Discipline)
+
+# Class: top-down-common:Term (Term)
+
+AnnotationAssertion(rdfs:comment top-down-common:Term "A term that requires definition."@en)
+AnnotationAssertion(rdfs:label top-down-common:Term "Term"@en)
+
+# Class: top-down-common:TerminatedQuestionnaire (Terminated questionnaire)
+
+AnnotationAssertion(rdfs:comment top-down-common:TerminatedQuestionnaire "Those terms with no definitions because the questionnaire was terminated before providing class, property or attribute definitions"@en)
+AnnotationAssertion(rdfs:label top-down-common:TerminatedQuestionnaire "Terminated questionnaire"@en)
+SubClassOf(top-down-common:TerminatedQuestionnaire top-down-common:MissingDefinitions)
+
+# Class: top-down-common:TransformationScience (Transformation science)
+
+AnnotationAssertion(rdfs:label top-down-common:TransformationScience "Transformation science"@en)
+SubClassOf(top-down-common:TransformationScience top-down-common:Discipline)
+
+# Class: top-down-common:TransitionManagement (Transition management)
+
+AnnotationAssertion(rdfs:label top-down-common:TransitionManagement "Transition management"@en)
+SubClassOf(top-down-common:TransitionManagement top-down-common:Discipline)
+
+# Class: top-down-common:TransportStudies (Transport studies)
+
+AnnotationAssertion(rdfs:label top-down-common:TransportStudies "Transport studies"@en)
+SubClassOf(top-down-common:TransportStudies top-down-common:Discipline)
+
+# Class: top-down-common:UndefinedEntityType (Undefined entity type)
+
+AnnotationAssertion(rdfs:comment top-down-common:UndefinedEntityType "This is a metadata class.
+
+These are terms that are not defined in the questionnaire responses. This can be for two reasons: either the questionnaire was not completed for that particular term, or the respondent has chosen not to define that term and terminated the questionnaire."@en)
+AnnotationAssertion(rdfs:label top-down-common:UndefinedEntityType "Undefined entity type"@en)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: top-down-common:JHI (top-down-common:JHI)
+
+AnnotationAssertion(rdfs:comment top-down-common:JHI "James Hutton Institute")
+ClassAssertion(top-down-common:Institution top-down-common:JHI)
+
+# Individual: top-down-common:NTNU (top-down-common:NTNU)
+
+AnnotationAssertion(rdfs:comment top-down-common:NTNU "Norges teknisk-naturvitenskapelige universitet")
+ClassAssertion(top-down-common:Institution top-down-common:NTNU)
+
+# Individual: top-down-common:OVGU (top-down-common:OVGU)
+
+AnnotationAssertion(rdfs:comment top-down-common:OVGU "Die Otto-von-Guericke-Universität Magdeburg")
+ClassAssertion(top-down-common:Institution top-down-common:OVGU)
+
+# Individual: top-down-common:SERI (top-down-common:SERI)
+
+AnnotationAssertion(rdfs:comment top-down-common:SERI "Sustainable Europe Research Institute")
+ClassAssertion(top-down-common:Institution top-down-common:SERI)
+
+# Individual: top-down-common:TSC (top-down-common:TSC)
+
+AnnotationAssertion(rdfs:comment top-down-common:TSC "Tilburg University - Tilburg Sustainability Center")
+ClassAssertion(top-down-common:Institution top-down-common:TSC)
+
+# Individual: top-down-common:TUD (top-down-common:TUD)
+
+AnnotationAssertion(rdfs:comment top-down-common:TUD "Delft University of Technology")
+ClassAssertion(top-down-common:Institution top-down-common:TUD)
+
+# Individual: top-down-common:UBAH (top-down-common:UBAH)
+
+AnnotationAssertion(rdfs:comment top-down-common:UBAH "University of Bath")
+ClassAssertion(top-down-common:Institution top-down-common:UBAH)
+
+# Individual: top-down-common:UDC (top-down-common:UDC)
+
+AnnotationAssertion(rdfs:comment top-down-common:UDC "Universidade da Coruña")
+ClassAssertion(top-down-common:Institution top-down-common:UDC)
+
+# Individual: top-down-common:UFZ (top-down-common:UFZ)
+
+AnnotationAssertion(rdfs:comment top-down-common:UFZ "Helmholtz-Centre for Environmental Research")
+ClassAssertion(top-down-common:Institution top-down-common:UFZ)
+
+# Individual: top-down-common:UNIROMA3 (top-down-common:UNIROMA3)
+
+AnnotationAssertion(rdfs:comment top-down-common:UNIROMA3 "Roma Tre University")
+ClassAssertion(top-down-common:Institution top-down-common:UNIROMA3)
+
+# Individual: top-down-common:UVT (top-down-common:UVT)
+
+AnnotationAssertion(rdfs:comment top-down-common:UVT "Univrsiteit van Tilburg")
+ClassAssertion(top-down-common:Institution top-down-common:UVT)
+
+# Individual: top-down-common:author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label top-down-common:author:DougSalt "Doug Salt")
+
+# Individual: top-down-common:discipline:agentBasedModelling (Agent-based modelling)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:agentBasedModelling "Agent-based modelling"@en)
+ClassAssertion(top-down-common:AgentBasedModelling top-down-common:discipline:agentBasedModelling)
+
+# Individual: top-down-common:discipline:anthropology (Anthropology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:anthropology "Anthropology"@en)
+ClassAssertion(top-down-common:Anthropology top-down-common:discipline:anthropology)
+
+# Individual: top-down-common:discipline:architecture (Architecture)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:architecture "Architecture"@en)
+ClassAssertion(top-down-common:Architecture top-down-common:discipline:architecture)
+
+# Individual: top-down-common:discipline:artificialIntelligence (Artificial intelligence)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:artificialIntelligence "Artificial intelligence"@en)
+ClassAssertion(top-down-common:ArtificialIntelligence top-down-common:discipline:artificialIntelligence)
+
+# Individual: top-down-common:discipline:behaviouralScience (Behavioural science)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:behaviouralScience "Behavioural science"@en)
+ClassAssertion(top-down-common:BehaviouralScience top-down-common:discipline:behaviouralScience)
+
+# Individual: top-down-common:discipline:biology (Biology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:biology "Biology"@en)
+ClassAssertion(top-down-common:Biology top-down-common:discipline:biology)
+
+# Individual: top-down-common:discipline:biotechnology (Biotechnology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:biotechnology "Biotechnology"@en)
+ClassAssertion(top-down-common:Biotechnology top-down-common:discipline:biotechnology)
+
+# Individual: top-down-common:discipline:chemistry (Chemistry)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:chemistry "Chemistry"@en)
+ClassAssertion(top-down-common:Chemistry top-down-common:discipline:chemistry)
+
+# Individual: top-down-common:discipline:developmentStudies (Development studies)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:developmentStudies "Development studies"@en)
+ClassAssertion(top-down-common:DevelopmentStudies top-down-common:discipline:developmentStudies)
+
+# Individual: top-down-common:discipline:ecologicalEconomics (Ecological economics)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:ecologicalEconomics "Ecological economics"@en)
+ClassAssertion(top-down-common:EcologicalEconomics top-down-common:discipline:ecologicalEconomics)
+
+# Individual: top-down-common:discipline:economics (Economics)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:economics "Economics"@en)
+ClassAssertion(top-down-common:Economics top-down-common:discipline:economics)
+
+# Individual: top-down-common:discipline:energy (Energy)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:energy "Energy"@en)
+ClassAssertion(top-down-common:Energy top-down-common:discipline:energy)
+
+# Individual: top-down-common:discipline:engineering (Engineering)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:engineering "Engineering"@en)
+ClassAssertion(top-down-common:Engineering top-down-common:discipline:engineering)
+
+# Individual: top-down-common:discipline:environmentalPsychology (Enviromental pyschology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:environmentalPsychology "Enviromental pyschology"@en)
+ClassAssertion(top-down-common:EnvironmentalPsychology top-down-common:discipline:environmentalPsychology)
+
+# Individual: top-down-common:discipline:environmentalScience (Environmental science)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:environmentalScience "Environmental science"@en)
+ClassAssertion(top-down-common:EnvironmentalScience top-down-common:discipline:environmentalScience)
+
+# Individual: top-down-common:discipline:environmentalSociology (Environmental sociology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:environmentalSociology "Environmental sociology"@en)
+ClassAssertion(top-down-common:EnvironmentalSociology top-down-common:discipline:environmentalSociology)
+
+# Individual: top-down-common:discipline:ethics (Ethics)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:ethics "Ethics"@en)
+ClassAssertion(top-down-common:Ethics top-down-common:discipline:ethics)
+
+# Individual: top-down-common:discipline:foresight (Foresight)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:foresight "Foresight"@en)
+ClassAssertion(top-down-common:Foresight top-down-common:discipline:foresight)
+
+# Individual: top-down-common:discipline:governanceStudies (Governance studies)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:governanceStudies "Governance studies"@en)
+ClassAssertion(top-down-common:GovernanceStudies top-down-common:discipline:governanceStudies)
+
+# Individual: top-down-common:discipline:happinessResearch (Happiness research)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:happinessResearch "Happiness research"@en)
+ClassAssertion(top-down-common:HappinessResearch top-down-common:discipline:happinessResearch)
+
+# Individual: top-down-common:discipline:industrialEcology (Industrial ecology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:industrialEcology "Industrial ecology"@en)
+ClassAssertion(top-down-common:IndustrialEcology top-down-common:discipline:industrialEcology)
+
+# Individual: top-down-common:discipline:innovationStudies (Innovation studies)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:innovationStudies "Innovation studies"@en)
+ClassAssertion(top-down-common:InnovationStudies top-down-common:discipline:innovationStudies)
+
+# Individual: top-down-common:discipline:macroEconomics (Macro-economics)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:macroEconomics "Macro-economics"@en)
+ClassAssertion(top-down-common:MacroEconomics top-down-common:discipline:macroEconomics)
+
+# Individual: top-down-common:discipline:microEconomics (Micro-economics)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:microEconomics "Micro-economics"@en)
+ClassAssertion(top-down-common:MicroEconomics top-down-common:discipline:microEconomics)
+
+# Individual: top-down-common:discipline:organizationalPsychology (Organizational psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:organizationalPsychology "Organizational psychology"@en)
+ClassAssertion(top-down-common:OrganizationalPsychology top-down-common:discipline:organizationalPsychology)
+
+# Individual: top-down-common:discipline:philosophy (Philosophy)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:philosophy "Philosophy"@en)
+ClassAssertion(top-down-common:Philosophy top-down-common:discipline:philosophy)
+
+# Individual: top-down-common:discipline:policy (Policy)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:policy "Policy"@en)
+ClassAssertion(top-down-common:Policy top-down-common:discipline:policy)
+
+# Individual: top-down-common:discipline:psychology (Psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:psychology "Psychology"@en)
+ClassAssertion(top-down-common:Psychology top-down-common:discipline:psychology)
+
+# Individual: top-down-common:discipline:publicAdministration (Public administration)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:publicAdministration "Public administration"@en)
+ClassAssertion(top-down-common:PublicAdministration top-down-common:discipline:publicAdministration)
+
+# Individual: top-down-common:discipline:pyschologyOfLearning (Psychology of learning)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:pyschologyOfLearning "Psychology of learning"@en)
+ClassAssertion(top-down-common:PsychologyOfLearning top-down-common:discipline:pyschologyOfLearning)
+
+# Individual: top-down-common:discipline:qualityOfLifeResearch (Quality of life research)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:qualityOfLifeResearch "Quality of life research"@en)
+ClassAssertion(top-down-common:QualityOfLifeResearch top-down-common:discipline:qualityOfLifeResearch)
+
+# Individual: top-down-common:discipline:socialPsychology (Social psychology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:socialPsychology "Social psychology"@en)
+ClassAssertion(top-down-common:SocialPsychology top-down-common:discipline:socialPsychology)
+
+# Individual: top-down-common:discipline:socialSimulation (Social simulation)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:socialSimulation "Social simulation"@en)
+ClassAssertion(top-down-common:SocialSimulation top-down-common:discipline:socialSimulation)
+
+# Individual: top-down-common:discipline:sociology (Sociology)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:sociology "Sociology"@en)
+ClassAssertion(top-down-common:Sociology top-down-common:discipline:sociology)
+
+# Individual: top-down-common:discipline:statistics (Statistics)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:statistics "Statistics"@en)
+ClassAssertion(top-down-common:Statistics top-down-common:discipline:statistics)
+
+# Individual: top-down-common:discipline:sustainabilityScience (Sustainability science)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:sustainabilityScience "Sustainability science"@en)
+ClassAssertion(top-down-common:SustainabilityScience top-down-common:discipline:sustainabilityScience)
+
+# Individual: top-down-common:discipline:sustainabilityTransitions (Sustainability transitions)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:sustainabilityTransitions "Sustainability transitions"@en)
+ClassAssertion(top-down-common:SustainabilityTransitions top-down-common:discipline:sustainabilityTransitions)
+
+# Individual: top-down-common:discipline:sustainableDevelopment (Sustainable development)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:sustainableDevelopment "Sustainable development"@en)
+ClassAssertion(top-down-common:SustainableDevelopment top-down-common:discipline:sustainableDevelopment)
+
+# Individual: top-down-common:discipline:technologyStudies (Technology studies)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:technologyStudies "Technology studies"@en)
+ClassAssertion(top-down-common:TechnologyStudies top-down-common:discipline:technologyStudies)
+
+# Individual: top-down-common:discipline:transformationScience (Transformation science)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:transformationScience "Transformation science"@en)
+ClassAssertion(top-down-common:TransformationScience top-down-common:discipline:transformationScience)
+
+# Individual: top-down-common:discipline:transitionManagement (Transition management)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:transitionManagement "Transition management"@en)
+ClassAssertion(top-down-common:TransitionManagement top-down-common:discipline:transitionManagement)
+
+# Individual: top-down-common:discipline:transportStudies (Transport studies)
+
+AnnotationAssertion(rdfs:label top-down-common:discipline:transportStudies "Transport studies"@en)
+ClassAssertion(top-down-common:TransportStudies top-down-common:discipline:transportStudies)
+
+# Individual: top-down-common:term:business (Business)
+
+AnnotationAssertion(rdfs:label top-down-common:term:business "Business"@en)
+ClassAssertion(top-down-common:Business top-down-common:term:business)
+
+
+)

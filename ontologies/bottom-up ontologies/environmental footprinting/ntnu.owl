@@ -1,0 +1,833 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/ntnu#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(NTNU:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/NTNU#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/ntnu>
+Annotation(rdfs:comment "2016-08-12"^^xsd:date)
+Annotation(rdfs:comment "This  version of the NTNU ontology and is based on the schema for the attached IRI"^^xsd:string)
+Annotation(rdfs:comment "file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/schemata%20ontology.xlsx"^^xsd:anyURI)
+Annotation(rdfs:isDefinedBy NTNU:author:DougSalt)
+Annotation(rdfs:isDefinedBy "This is an ontology describing the types used to describe footprinting as shown in the referenced IRIs.
+
+This is essentially environmental footprinting on a country by country basis."@en)
+Annotation(rdfs:isDefinedBy "file:///m:/GLAMURS/WP2/bottom-up%ontology/NTNU/Expenditure%20by%20consumption%20cat%20ontology.xlsx"^^xsd:anyURI)
+Annotation(owl:versionInfo "2.0"^^xsd:decimal)
+
+Declaration(Class(:Australia))
+Declaration(Class(:Austria))
+Declaration(Class(:Belgium))
+Declaration(Class(:Brazil))
+Declaration(Class(:Bulgaria))
+Declaration(Class(:Canada))
+Declaration(Class(:China))
+Declaration(Class(:Country))
+Declaration(Class(:CountryAbbreviation))
+Declaration(Class(:Cyprus))
+Declaration(Class(:CzechRepublic))
+Declaration(Class(:Denmark))
+Declaration(Class(:EUMember))
+Declaration(Class(:Estonia))
+Declaration(Class(:Expenditure))
+Declaration(Class(:ExpenditureForClothing))
+Declaration(Class(:ExpenditureForConstruction))
+Declaration(Class(:ExpenditureForConsumables))
+Declaration(Class(:ExpenditureForFood))
+Declaration(Class(:ExpenditureForManufacturedProducts))
+Declaration(Class(:ExpenditureForMobility))
+Declaration(Class(:ExpenditureForServices))
+Declaration(Class(:ExpenditureForShelter))
+Declaration(Class(:ExpenditureForTrade))
+Declaration(Class(:Finland))
+Declaration(Class(:Footprint))
+Declaration(Class(:FootprintPerCapita))
+Declaration(Class(:France))
+Declaration(Class(:GWP100))
+Declaration(Class(:Germany))
+Declaration(Class(:Gram))
+Declaration(Class(:Greece))
+Declaration(Class(:GreenHouseGasEmissions))
+Declaration(Class(:GreenHouseGases))
+Declaration(Class(:GreenHouseGasesPerCapita))
+Declaration(Class(:Hungary))
+Declaration(Class(:India))
+Declaration(Class(:Indonesia))
+Declaration(Class(:Ireland))
+Declaration(Class(:Italy))
+Declaration(Class(:Japan))
+Declaration(Class(:KgOfC02Equivalent))
+Declaration(Class(:Kilogramme))
+Declaration(Class(:Kilometre))
+Declaration(Class(:Kilotonne))
+Declaration(Class(:Land))
+Declaration(Class(:LandPerCapita))
+Declaration(Class(:Latvia))
+Declaration(Class(:Length))
+Declaration(Class(:Lithuania))
+Declaration(Class(:Luxembourg))
+Declaration(Class(:Malta))
+Declaration(Class(:Mass))
+Declaration(Class(:MaterialFootprint))
+Declaration(Class(:Metres))
+Declaration(Class(:Mexico))
+Declaration(Class(:MilimetresCubed))
+Declaration(Class(:Millilitres))
+Declaration(Class(:Millimetres))
+Declaration(Class(:MonetaryUnit))
+Declaration(Class(:MultipleUnitsOfFundamentalMagnitude))
+Declaration(Class(:Netherlands))
+Declaration(Class(:Norway))
+Declaration(Class(:Poland))
+Declaration(Class(:Portugal))
+Declaration(Class(:Romania))
+Declaration(Class(:Russia))
+Declaration(Class(:Slovakia))
+Declaration(Class(:Slovenia))
+Declaration(Class(:SouthAfrica))
+Declaration(Class(:SouthKorea))
+Declaration(Class(:Spain))
+Declaration(Class(:Sweden))
+Declaration(Class(:Switzerland))
+Declaration(Class(:Taiwan))
+Declaration(Class(:TimePeriod))
+Declaration(Class(:Tonne))
+Declaration(Class(:Turkey))
+Declaration(Class(:UnitOfMeasurement))
+Declaration(Class(:UnitedKingdom))
+Declaration(Class(:UnitedStates))
+Declaration(Class(:UnitsOfFundamentalMagnitude))
+Declaration(Class(:Volume))
+Declaration(Class(:WaterFootprint))
+Declaration(Class(:Years))
+Declaration(Class(:euro1000000))
+Declaration(ObjectProperty(:FootprintPerPersonIsAMeasurePer))
+Declaration(ObjectProperty(:GWP100PerCapitaIsMeasuredIn))
+Declaration(ObjectProperty(:GWP100PerPersonIsAMeasurePer))
+Declaration(ObjectProperty(:expenditureForClothingIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForConstructionIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForConsumablesIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForFoodIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForManufacturedProductsIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForMobilityIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForServicesIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForShelterIsMeasuredIn))
+Declaration(ObjectProperty(:expenditureForTradeIsMeasuredIn))
+Declaration(ObjectProperty(:footprintPerCapitaIsMeasuredIn))
+Declaration(ObjectProperty(:hasCountryAbbreviation))
+Declaration(ObjectProperty(:hasCountryProperty))
+Declaration(ObjectProperty(:hasDimension))
+Declaration(ObjectProperty(:hasDimensionForKgOfC02Equivalent))
+Declaration(ObjectProperty(:hasDimensionForMillimetresCubed))
+Declaration(ObjectProperty(:hasDimensionForSquareKilometre))
+Declaration(ObjectProperty(:hasExpenditureForClothing))
+Declaration(ObjectProperty(:hasExpenditureForConstruction))
+Declaration(ObjectProperty(:hasExpenditureForConsumables))
+Declaration(ObjectProperty(:hasExpenditureForFood))
+Declaration(ObjectProperty(:hasExpenditureForManufacturedProducts))
+Declaration(ObjectProperty(:hasExpenditureForMobility))
+Declaration(ObjectProperty(:hasExpenditureForServices))
+Declaration(ObjectProperty(:hasExpenditureForShelter))
+Declaration(ObjectProperty(:hasExpenditureForTrade))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForClothing))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForConstruction))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForConsumables))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForFood))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForManufacturedProducts))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForMobility))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForServices))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForShelter))
+Declaration(ObjectProperty(:hasTimePeriodForExpenditureForTrade))
+Declaration(ObjectProperty(:isAMeasureOf))
+Declaration(ObjectProperty(:isAMeasurePer))
+Declaration(ObjectProperty(:isMeasuredIn))
+Declaration(ObjectProperty(:isMultipleUnitsOf))
+Declaration(ObjectProperty(:materialFootprintPerCapitaIsMeasuredIn))
+Declaration(ObjectProperty(:totalLandAreaPerCapitaIsMeasuredIn))
+Declaration(ObjectProperty(:waterFootprintPerCapitaIsMeasuredIn))
+Declaration(DataProperty(:isNumberOfOtherUnitsOfMeasure))
+Declaration(DataProperty(:isOfFundamentalMagnitude))
+Declaration(NamedIndividual(:aSingleYear))
+Declaration(NamedIndividual(:carbonDioxide))
+Declaration(NamedIndividual(:gram))
+Declaration(NamedIndividual(:kilogramOfCarbonDioxide))
+Declaration(NamedIndividual(:kilogramme))
+Declaration(NamedIndividual(:kilometre))
+Declaration(NamedIndividual(:kilotonne))
+Declaration(NamedIndividual(:kilotonneOfMaterial))
+Declaration(NamedIndividual(:metre))
+Declaration(NamedIndividual(:milimetrecubedOfWater))
+Declaration(NamedIndividual(:millimetre))
+Declaration(NamedIndividual(:notionalIndividual))
+Declaration(NamedIndividual(:squareKilometre))
+Declaration(NamedIndividual(:tonne))
+Declaration(NamedIndividual(:author:DougSalt))
+Declaration(NamedIndividual(:euro1,000,000))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :FootprintPerPersonIsAMeasurePer (:FootprintPerPersonIsAMeasurePer)
+
+SubObjectPropertyOf(:FootprintPerPersonIsAMeasurePer :isAMeasurePer)
+ObjectPropertyDomain(:FootprintPerPersonIsAMeasurePer :FootprintPerCapita)
+
+# Object Property: :GWP100PerCapitaIsMeasuredIn (:GWP100PerCapitaIsMeasuredIn)
+
+SubObjectPropertyOf(:GWP100PerCapitaIsMeasuredIn :isMeasuredIn)
+ObjectPropertyDomain(:GWP100PerCapitaIsMeasuredIn :GWP100)
+ObjectPropertyDomain(:GWP100PerCapitaIsMeasuredIn :GreenHouseGasesPerCapita)
+ObjectPropertyRange(:GWP100PerCapitaIsMeasuredIn :KgOfC02Equivalent)
+
+# Object Property: :GWP100PerPersonIsAMeasurePer (:GWP100PerPersonIsAMeasurePer)
+
+SubObjectPropertyOf(:GWP100PerPersonIsAMeasurePer :isAMeasurePer)
+ObjectPropertyDomain(:GWP100PerPersonIsAMeasurePer :GreenHouseGasesPerCapita)
+
+# Object Property: :expenditureForClothingIsMeasuredIn (:expenditureForClothingIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForClothingIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForClothingIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForConstructionIsMeasuredIn (:expenditureForConstructionIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForConstructionIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForConstructionIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForConsumablesIsMeasuredIn (:expenditureForConsumablesIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForConsumablesIsMeasuredIn :isMeasuredIn)
+ObjectPropertyDomain(:expenditureForConsumablesIsMeasuredIn :ExpenditureForConsumables)
+ObjectPropertyRange(:expenditureForConsumablesIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForFoodIsMeasuredIn (:expenditureForFoodIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForFoodIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForFoodIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForManufacturedProductsIsMeasuredIn (:expenditureForManufacturedProductsIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForManufacturedProductsIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForManufacturedProductsIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForMobilityIsMeasuredIn (:expenditureForMobilityIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForMobilityIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForMobilityIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForServicesIsMeasuredIn (:expenditureForServicesIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForServicesIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForServicesIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForShelterIsMeasuredIn (:expenditureForShelterIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForShelterIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForShelterIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :expenditureForTradeIsMeasuredIn (:expenditureForTradeIsMeasuredIn)
+
+SubObjectPropertyOf(:expenditureForTradeIsMeasuredIn :expenditureForConsumablesIsMeasuredIn)
+ObjectPropertyRange(:expenditureForTradeIsMeasuredIn :MonetaryUnit)
+
+# Object Property: :footprintPerCapitaIsMeasuredIn (:footprintPerCapitaIsMeasuredIn)
+
+SubObjectPropertyOf(:footprintPerCapitaIsMeasuredIn :isMeasuredIn)
+ObjectPropertyDomain(:footprintPerCapitaIsMeasuredIn :FootprintPerCapita)
+
+# Object Property: :hasCountryAbbreviation (:hasCountryAbbreviation)
+
+SubObjectPropertyOf(:hasCountryAbbreviation :hasCountryProperty)
+FunctionalObjectProperty(:hasCountryAbbreviation)
+InverseFunctionalObjectProperty(:hasCountryAbbreviation)
+AsymmetricObjectProperty(:hasCountryAbbreviation)
+IrreflexiveObjectProperty(:hasCountryAbbreviation)
+ObjectPropertyDomain(:hasCountryAbbreviation :Country)
+ObjectPropertyRange(:hasCountryAbbreviation :CountryAbbreviation)
+
+# Object Property: :hasCountryProperty (:hasCountryProperty)
+
+ObjectPropertyDomain(:hasCountryProperty :Country)
+
+# Object Property: :hasDimensionForKgOfC02Equivalent (:hasDimensionForKgOfC02Equivalent)
+
+SubObjectPropertyOf(:hasDimensionForKgOfC02Equivalent :hasDimension)
+ObjectPropertyDomain(:hasDimensionForKgOfC02Equivalent :KgOfC02Equivalent)
+ObjectPropertyRange(:hasDimensionForKgOfC02Equivalent :Kilotonne)
+
+# Object Property: :hasDimensionForMillimetresCubed (:hasDimensionForMillimetresCubed)
+
+SubObjectPropertyOf(:hasDimensionForMillimetresCubed :hasDimension)
+ObjectPropertyDomain(:hasDimensionForMillimetresCubed :MilimetresCubed)
+ObjectPropertyRange(:hasDimensionForMillimetresCubed :Millimetres)
+
+# Object Property: :hasDimensionForSquareKilometre (:hasDimensionForSquareKilometre)
+
+SubObjectPropertyOf(:hasDimensionForSquareKilometre :hasDimension)
+ObjectPropertyRange(:hasDimensionForSquareKilometre :Kilometre)
+
+# Object Property: :hasExpenditureForClothing (:hasExpenditureForClothing)
+
+SubObjectPropertyOf(:hasExpenditureForClothing :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForClothing :Country)
+ObjectPropertyRange(:hasExpenditureForClothing :ExpenditureForClothing)
+
+# Object Property: :hasExpenditureForConstruction (:hasExpenditureForConstruction)
+
+SubObjectPropertyOf(:hasExpenditureForConstruction :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForConstruction :Country)
+ObjectPropertyRange(:hasExpenditureForConstruction :ExpenditureForConstruction)
+
+# Object Property: :hasExpenditureForConsumables (:hasExpenditureForConsumables)
+
+SubObjectPropertyOf(:hasExpenditureForConsumables :hasCountryProperty)
+ObjectPropertyDomain(:hasExpenditureForConsumables :Country)
+ObjectPropertyRange(:hasExpenditureForConsumables :ExpenditureForConsumables)
+
+# Object Property: :hasExpenditureForFood (:hasExpenditureForFood)
+
+SubObjectPropertyOf(:hasExpenditureForFood :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForFood :Country)
+ObjectPropertyRange(:hasExpenditureForFood :ExpenditureForFood)
+
+# Object Property: :hasExpenditureForManufacturedProducts (:hasExpenditureForManufacturedProducts)
+
+SubObjectPropertyOf(:hasExpenditureForManufacturedProducts :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForManufacturedProducts :Country)
+ObjectPropertyRange(:hasExpenditureForManufacturedProducts :ExpenditureForManufacturedProducts)
+
+# Object Property: :hasExpenditureForMobility (:hasExpenditureForMobility)
+
+SubObjectPropertyOf(:hasExpenditureForMobility :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForMobility :Country)
+ObjectPropertyRange(:hasExpenditureForMobility :ExpenditureForMobility)
+
+# Object Property: :hasExpenditureForServices (:hasExpenditureForServices)
+
+SubObjectPropertyOf(:hasExpenditureForServices :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForServices :Country)
+ObjectPropertyRange(:hasExpenditureForServices :ExpenditureForServices)
+
+# Object Property: :hasExpenditureForShelter (:hasExpenditureForShelter)
+
+SubObjectPropertyOf(:hasExpenditureForShelter :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForShelter :Country)
+ObjectPropertyRange(:hasExpenditureForShelter :ExpenditureForShelter)
+
+# Object Property: :hasExpenditureForTrade (:hasExpenditureForTrade)
+
+SubObjectPropertyOf(:hasExpenditureForTrade :hasExpenditureForConsumables)
+ObjectPropertyDomain(:hasExpenditureForTrade :Country)
+ObjectPropertyRange(:hasExpenditureForTrade :ExpenditureForTrade)
+
+# Object Property: :hasTimePeriodForExpenditureForClothing (:hasTimePeriodForExpenditureForClothing)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForClothing :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForClothing :ExpenditureForClothing)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForClothing :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForConstruction (:hasTimePeriodForExpenditureForConstruction)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForConstruction :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForConstruction :ExpenditureForConstruction)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForConstruction :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForConsumables (:hasTimePeriodForExpenditureForConsumables)
+
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForConsumables :ExpenditureForConsumables)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForConsumables :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForFood (:hasTimePeriodForExpenditureForFood)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForFood :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForFood :ExpenditureForFood)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForFood :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForManufacturedProducts (:hasTimePeriodForExpenditureForManufacturedProducts)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForManufacturedProducts :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForManufacturedProducts :ExpenditureForManufacturedProducts)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForManufacturedProducts :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForMobility (:hasTimePeriodForExpenditureForMobility)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForMobility :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForMobility :ExpenditureForMobility)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForMobility :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForServices (:hasTimePeriodForExpenditureForServices)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForServices :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForServices :ExpenditureForServices)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForServices :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForShelter (:hasTimePeriodForExpenditureForShelter)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForShelter :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForShelter :ExpenditureForShelter)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForShelter :TimePeriod)
+
+# Object Property: :hasTimePeriodForExpenditureForTrade (:hasTimePeriodForExpenditureForTrade)
+
+SubObjectPropertyOf(:hasTimePeriodForExpenditureForTrade :hasTimePeriodForExpenditureForConsumables)
+ObjectPropertyDomain(:hasTimePeriodForExpenditureForTrade :ExpenditureForTrade)
+ObjectPropertyRange(:hasTimePeriodForExpenditureForTrade :TimePeriod)
+
+# Object Property: :isAMeasureOf (:isAMeasureOf)
+
+ObjectPropertyDomain(:isAMeasureOf :UnitOfMeasurement)
+
+# Object Property: :isMultipleUnitsOf (:isMultipleUnitsOf)
+
+ObjectPropertyDomain(:isMultipleUnitsOf :UnitOfMeasurement)
+ObjectPropertyDomain(:isMultipleUnitsOf DataHasValue(:isOfFundamentalMagnitude "false"^^xsd:boolean))
+ObjectPropertyRange(:isMultipleUnitsOf :UnitOfMeasurement)
+
+# Object Property: :materialFootprintPerCapitaIsMeasuredIn (:materialFootprintPerCapitaIsMeasuredIn)
+
+SubObjectPropertyOf(:materialFootprintPerCapitaIsMeasuredIn :footprintPerCapitaIsMeasuredIn)
+ObjectPropertyDomain(:materialFootprintPerCapitaIsMeasuredIn :FootprintPerCapita)
+ObjectPropertyDomain(:materialFootprintPerCapitaIsMeasuredIn :MaterialFootprint)
+ObjectPropertyRange(:materialFootprintPerCapitaIsMeasuredIn :Kilotonne)
+
+# Object Property: :totalLandAreaPerCapitaIsMeasuredIn (:totalLandAreaPerCapitaIsMeasuredIn)
+
+SubObjectPropertyOf(:totalLandAreaPerCapitaIsMeasuredIn :isMeasuredIn)
+ObjectPropertyDomain(:totalLandAreaPerCapitaIsMeasuredIn :LandPerCapita)
+
+# Object Property: :waterFootprintPerCapitaIsMeasuredIn (:waterFootprintPerCapitaIsMeasuredIn)
+
+SubObjectPropertyOf(:waterFootprintPerCapitaIsMeasuredIn :footprintPerCapitaIsMeasuredIn)
+ObjectPropertyDomain(:waterFootprintPerCapitaIsMeasuredIn :FootprintPerCapita)
+ObjectPropertyDomain(:waterFootprintPerCapitaIsMeasuredIn :WaterFootprint)
+ObjectPropertyRange(:waterFootprintPerCapitaIsMeasuredIn :MilimetresCubed)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :isNumberOfOtherUnitsOfMeasure (:isNumberOfOtherUnitsOfMeasure)
+
+DataPropertyDomain(:isNumberOfOtherUnitsOfMeasure :UnitOfMeasurement)
+DataPropertyRange(:isNumberOfOtherUnitsOfMeasure DataUnionOf(xsd:positiveInteger owl:rational))
+
+# Data Property: :isOfFundamentalMagnitude (:isOfFundamentalMagnitude)
+
+DataPropertyDomain(:isOfFundamentalMagnitude :UnitOfMeasurement)
+DataPropertyRange(:isOfFundamentalMagnitude xsd:boolean)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Australia (:Australia)
+
+SubClassOf(:Australia :Country)
+
+# Class: :Austria (:Austria)
+
+SubClassOf(:Austria :EUMember)
+
+# Class: :Belgium (:Belgium)
+
+SubClassOf(:Belgium :EUMember)
+
+# Class: :Brazil (:Brazil)
+
+SubClassOf(:Brazil :Country)
+
+# Class: :Bulgaria (:Bulgaria)
+
+SubClassOf(:Bulgaria :EUMember)
+
+# Class: :Canada (:Canada)
+
+SubClassOf(:Canada :Country)
+
+# Class: :China (:China)
+
+SubClassOf(:China :Country)
+
+# Class: :Cyprus (:Cyprus)
+
+SubClassOf(:Cyprus :EUMember)
+
+# Class: :CzechRepublic (:CzechRepublic)
+
+SubClassOf(:CzechRepublic :EUMember)
+
+# Class: :Denmark (:Denmark)
+
+SubClassOf(:Denmark :EUMember)
+
+# Class: :EUMember (:EUMember)
+
+SubClassOf(:EUMember :Country)
+
+# Class: :Estonia (:Estonia)
+
+SubClassOf(:Estonia :EUMember)
+
+# Class: :ExpenditureForClothing (:ExpenditureForClothing)
+
+SubClassOf(:ExpenditureForClothing :ExpenditureForConsumables)
+
+# Class: :ExpenditureForConstruction (:ExpenditureForConstruction)
+
+SubClassOf(:ExpenditureForConstruction :ExpenditureForConsumables)
+
+# Class: :ExpenditureForConsumables (:ExpenditureForConsumables)
+
+SubClassOf(:ExpenditureForConsumables :Expenditure)
+
+# Class: :ExpenditureForFood (:ExpenditureForFood)
+
+SubClassOf(:ExpenditureForFood :ExpenditureForConsumables)
+
+# Class: :ExpenditureForManufacturedProducts (:ExpenditureForManufacturedProducts)
+
+SubClassOf(:ExpenditureForManufacturedProducts :ExpenditureForConsumables)
+
+# Class: :ExpenditureForMobility (:ExpenditureForMobility)
+
+SubClassOf(:ExpenditureForMobility :ExpenditureForConsumables)
+
+# Class: :ExpenditureForServices (:ExpenditureForServices)
+
+SubClassOf(:ExpenditureForServices :ExpenditureForConsumables)
+
+# Class: :ExpenditureForShelter (:ExpenditureForShelter)
+
+SubClassOf(:ExpenditureForShelter :ExpenditureForConsumables)
+
+# Class: :ExpenditureForTrade (:ExpenditureForTrade)
+
+SubClassOf(:ExpenditureForTrade :ExpenditureForConsumables)
+
+# Class: :Finland (:Finland)
+
+SubClassOf(:Finland :EUMember)
+
+# Class: :FootprintPerCapita (:FootprintPerCapita)
+
+SubClassOf(:FootprintPerCapita :Footprint)
+
+# Class: :France (:France)
+
+SubClassOf(:France :EUMember)
+
+# Class: :GWP100 (:GWP100)
+
+SubClassOf(:GWP100 :GreenHouseGasEmissions)
+
+# Class: :Germany (:Germany)
+
+SubClassOf(:Germany :EUMember)
+
+# Class: :Gram (:Gram)
+
+SubClassOf(:Gram :Mass)
+
+# Class: :Greece (:Greece)
+
+SubClassOf(:Greece :EUMember)
+
+# Class: :GreenHouseGasesPerCapita (:GreenHouseGasesPerCapita)
+
+SubClassOf(:GreenHouseGasesPerCapita :GreenHouseGasEmissions)
+
+# Class: :Hungary (:Hungary)
+
+SubClassOf(:Hungary :EUMember)
+
+# Class: :India (:India)
+
+SubClassOf(:India :Country)
+
+# Class: :Indonesia (:Indonesia)
+
+SubClassOf(:Indonesia :Country)
+
+# Class: :Ireland (:Ireland)
+
+SubClassOf(:Ireland :EUMember)
+
+# Class: :Italy (:Italy)
+
+SubClassOf(:Italy :EUMember)
+
+# Class: :Japan (:Japan)
+
+SubClassOf(:Japan :Country)
+
+# Class: :KgOfC02Equivalent (:KgOfC02Equivalent)
+
+SubClassOf(:KgOfC02Equivalent :UnitOfMeasurement)
+
+# Class: :Kilogramme (:Kilogramme)
+
+SubClassOf(:Kilogramme :Mass)
+
+# Class: :Kilometre (:Kilometre)
+
+SubClassOf(:Kilometre :Length)
+
+# Class: :Kilotonne (:Kilotonne)
+
+SubClassOf(:Kilotonne :Mass)
+
+# Class: :LandPerCapita (:LandPerCapita)
+
+SubClassOf(:LandPerCapita :Land)
+
+# Class: :Latvia (:Latvia)
+
+SubClassOf(:Latvia :EUMember)
+
+# Class: :Length (:Length)
+
+SubClassOf(:Length :UnitOfMeasurement)
+
+# Class: :Lithuania (:Lithuania)
+
+SubClassOf(:Lithuania :EUMember)
+
+# Class: :Luxembourg (:Luxembourg)
+
+SubClassOf(:Luxembourg :EUMember)
+
+# Class: :Malta (:Malta)
+
+SubClassOf(:Malta :EUMember)
+
+# Class: :Mass (:Mass)
+
+SubClassOf(:Mass :UnitOfMeasurement)
+
+# Class: :MaterialFootprint (:MaterialFootprint)
+
+SubClassOf(:MaterialFootprint :Footprint)
+
+# Class: :Metres (:Metres)
+
+SubClassOf(:Metres :Length)
+
+# Class: :Mexico (:Mexico)
+
+SubClassOf(:Mexico :Country)
+
+# Class: :MilimetresCubed (:MilimetresCubed)
+
+EquivalentClasses(:MilimetresCubed :Millilitres)
+SubClassOf(:MilimetresCubed :Volume)
+
+# Class: :Millilitres (:Millilitres)
+
+SubClassOf(:Millilitres :Volume)
+
+# Class: :Millimetres (:Millimetres)
+
+SubClassOf(:Millimetres :Length)
+
+# Class: :MonetaryUnit (:MonetaryUnit)
+
+SubClassOf(:MonetaryUnit :UnitOfMeasurement)
+
+# Class: :MultipleUnitsOfFundamentalMagnitude (:MultipleUnitsOfFundamentalMagnitude)
+
+SubClassOf(:MultipleUnitsOfFundamentalMagnitude :UnitOfMeasurement)
+SubClassOf(:MultipleUnitsOfFundamentalMagnitude DataHasValue(:isOfFundamentalMagnitude "false"^^xsd:boolean))
+
+# Class: :Netherlands (:Netherlands)
+
+SubClassOf(:Netherlands :EUMember)
+
+# Class: :Norway (:Norway)
+
+SubClassOf(:Norway :Country)
+
+# Class: :Poland (:Poland)
+
+SubClassOf(:Poland :EUMember)
+
+# Class: :Portugal (:Portugal)
+
+SubClassOf(:Portugal :EUMember)
+
+# Class: :Romania (:Romania)
+
+SubClassOf(:Romania :EUMember)
+
+# Class: :Russia (:Russia)
+
+SubClassOf(:Russia :Country)
+
+# Class: :Slovakia (:Slovakia)
+
+SubClassOf(:Slovakia :EUMember)
+
+# Class: :Slovenia (:Slovenia)
+
+SubClassOf(:Slovenia :EUMember)
+
+# Class: :SouthAfrica (:SouthAfrica)
+
+SubClassOf(:SouthAfrica :Country)
+
+# Class: :SouthKorea (:SouthKorea)
+
+SubClassOf(:SouthKorea :Country)
+
+# Class: :Spain (:Spain)
+
+SubClassOf(:Spain :EUMember)
+
+# Class: :Sweden (:Sweden)
+
+SubClassOf(:Sweden :EUMember)
+
+# Class: :Switzerland (:Switzerland)
+
+SubClassOf(:Switzerland :Country)
+
+# Class: :Taiwan (:Taiwan)
+
+SubClassOf(:Taiwan :Country)
+
+# Class: :TimePeriod (:TimePeriod)
+
+SubClassOf(:TimePeriod :UnitOfMeasurement)
+
+# Class: :Tonne (:Tonne)
+
+SubClassOf(:Tonne :Mass)
+
+# Class: :Turkey (:Turkey)
+
+SubClassOf(:Turkey :Country)
+
+# Class: :UnitedKingdom (:UnitedKingdom)
+
+SubClassOf(:UnitedKingdom :EUMember)
+
+# Class: :UnitedStates (:UnitedStates)
+
+SubClassOf(:UnitedStates :Country)
+
+# Class: :UnitsOfFundamentalMagnitude (:UnitsOfFundamentalMagnitude)
+
+SubClassOf(:UnitsOfFundamentalMagnitude :UnitOfMeasurement)
+SubClassOf(:UnitsOfFundamentalMagnitude DataHasValue(:isOfFundamentalMagnitude "true"^^xsd:boolean))
+
+# Class: :Volume (:Volume)
+
+SubClassOf(:Volume :UnitOfMeasurement)
+
+# Class: :WaterFootprint (:WaterFootprint)
+
+SubClassOf(:WaterFootprint :Footprint)
+
+# Class: :Years (:Years)
+
+SubClassOf(:Years :TimePeriod)
+
+# Class: :euro1000000 (:euro1000000)
+
+SubClassOf(:euro1000000 :MonetaryUnit)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :aSingleYear (:aSingleYear)
+
+ClassAssertion(:Years :aSingleYear)
+
+# Individual: :carbonDioxide (:carbonDioxide)
+
+ClassAssertion(:GreenHouseGases :carbonDioxide)
+
+# Individual: :gram (:gram)
+
+ClassAssertion(:Gram :gram)
+DataPropertyAssertion(:isOfFundamentalMagnitude :gram "true"^^xsd:boolean)
+
+# Individual: :kilogramOfCarbonDioxide (:kilogramOfCarbonDioxide)
+
+ClassAssertion(:KgOfC02Equivalent :kilogramOfCarbonDioxide)
+ClassAssertion(:Kilogramme :kilogramOfCarbonDioxide)
+ObjectPropertyAssertion(:isAMeasureOf :kilogramOfCarbonDioxide :carbonDioxide)
+
+# Individual: :kilogramme (:kilogramme)
+
+ClassAssertion(:Kilogramme :kilogramme)
+ObjectPropertyAssertion(:isMultipleUnitsOf :kilogramme :gram)
+DataPropertyAssertion(:isNumberOfOtherUnitsOfMeasure :kilogramme "1000"^^xsd:integer)
+DataPropertyAssertion(:isOfFundamentalMagnitude :kilogramme "false"^^xsd:boolean)
+
+# Individual: :kilometre (:kilometre)
+
+ClassAssertion(:Kilometre :kilometre)
+ObjectPropertyAssertion(:isMultipleUnitsOf :kilometre :metre)
+DataPropertyAssertion(:isNumberOfOtherUnitsOfMeasure :kilometre "1000"^^xsd:integer)
+DataPropertyAssertion(:isOfFundamentalMagnitude :kilometre "false"^^xsd:boolean)
+
+# Individual: :kilotonne (:kilotonne)
+
+ClassAssertion(:Kilotonne :kilotonne)
+ObjectPropertyAssertion(:isMultipleUnitsOf :kilotonne :tonne)
+DataPropertyAssertion(:isNumberOfOtherUnitsOfMeasure :kilotonne "1000"^^xsd:integer)
+DataPropertyAssertion(:isOfFundamentalMagnitude :kilotonne "false"^^xsd:boolean)
+
+# Individual: :kilotonneOfMaterial (:kilotonneOfMaterial)
+
+ClassAssertion(:Kilotonne :kilotonneOfMaterial)
+
+# Individual: :metre (:metre)
+
+ClassAssertion(:Metres :metre)
+DataPropertyAssertion(:isOfFundamentalMagnitude :metre "true"^^xsd:boolean)
+
+# Individual: :milimetrecubedOfWater (:milimetrecubedOfWater)
+
+ClassAssertion(:Millilitres :milimetrecubedOfWater)
+
+# Individual: :millimetre (:millimetre)
+
+ClassAssertion(:Millimetres :millimetre)
+ObjectPropertyAssertion(:isMultipleUnitsOf :millimetre :metre)
+DataPropertyAssertion(:isNumberOfOtherUnitsOfMeasure :millimetre "1 / 1000"^^owl:rational)
+DataPropertyAssertion(:isOfFundamentalMagnitude :millimetre "false"^^xsd:boolean)
+
+# Individual: :squareKilometre (:squareKilometre)
+
+DataPropertyAssertion(:isOfFundamentalMagnitude :squareKilometre "false"^^xsd:boolean)
+
+# Individual: :tonne (:tonne)
+
+ClassAssertion(:Tonne :tonne)
+ObjectPropertyAssertion(:isMultipleUnitsOf :tonne :kilogramme)
+DataPropertyAssertion(:isNumberOfOtherUnitsOfMeasure :tonne "1000"^^xsd:integer)
+DataPropertyAssertion(:isOfFundamentalMagnitude :tonne "false"^^xsd:boolean)
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+# Individual: :euro1,000,000 (:euro1,000,000)
+
+ClassAssertion(:euro1000000 :euro1,000,000)
+
+
+DisjointClasses(:Australia :Brazil :Canada :China :EUMember :India :Indonesia :Japan :Mexico :Norway :Russia :SouthAfrica :SouthKorea :Switzerland :Taiwan :Turkey :UnitedStates)
+DisjointClasses(:Austria :Belgium :Bulgaria :Cyprus :CzechRepublic :Denmark :Estonia :Finland :France :Germany :Greece :Hungary :Ireland :Italy :Latvia :Lithuania :Luxembourg :Malta :Netherlands :Poland :Portugal :Romania :Slovakia :Slovenia :Spain :Sweden :UnitedKingdom)
+DisjointClasses(:ExpenditureForClothing :ExpenditureForConstruction :ExpenditureForFood :ExpenditureForManufacturedProducts :ExpenditureForMobility :ExpenditureForServices :ExpenditureForShelter :ExpenditureForTrade)
+)

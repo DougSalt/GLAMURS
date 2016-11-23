@@ -1,0 +1,415 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-expert#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/KB/metadata#>)
+Prefix(expert:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-expert>
+Import(<http://www.glamurs.eu/ontologies/2016/KB/metadata>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert>)
+Annotation(metadata:creator metadata:author:DougSalt)
+
+AnnotationAssertion(metadata:describes expert:term:environmentalImpactAssessment expert:environmentalImpactAssessment)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:environmentalImpactAssessment metadata:ontology:dataproperty)
+
+Declaration(NamedIndividual(:termDecision))
+AnnotationAssertion(metadata:describes :term:Decision expert:Decision)
+ClassAssertion(metadata:Term :term:Decision)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Decision metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Decision :term:Decision)
+
+Declaration(NamedIndividual(:termSupplyChain))
+AnnotationAssertion(metadata:describes :term:SupplyChain expert:SupplyChain)
+ClassAssertion(metadata:Term :term:SupplyChain)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:SupplyChain metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SupplyChain :term:SupplyChain)
+
+AnnotationAssertion(metadata:describes expert:term:LifeCycle expert:LifeCycle)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:LifeCycle metadata:ontology:class)
+
+Declaration(NamedIndividual(:termHousehold))
+AnnotationAssertion(metadata:describes :term:Household expert:Household)
+ClassAssertion(metadata:Term :term:Household)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Household metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Household :term:Household)
+
+AnnotationAssertion(metadata:describes expert:term:socialCapital expert:socialCapital)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:socialCapital metadata:ontology:objectproperty)
+
+AnnotationAssertion(metadata:describes expert:term:caseStudyRegion expert:caseStudyRegion)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:caseStudyRegion metadata:ontology:objectproperty)
+
+AnnotationAssertion(metadata:describes expert:term:placeIdentity expert:placeIdentity)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:placeIdentity metadata:ontology:objectproperty)
+
+Declaration(NamedIndividual(:termDisposal))
+AnnotationAssertion(metadata:describes :term:Disposal expert:Disposal)
+ClassAssertion(metadata:Term :term:Disposal)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Disposal metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Disposal :term:Disposal)
+
+AnnotationAssertion(metadata:describes expert:term:GreenGrowth expert:GreenGrowth)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:GreenGrowth metadata:ontology:class)
+
+AnnotationAssertion(metadata:describes expert:term:MaterialConsumption expert:MaterialConsumption)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:MaterialConsumption metadata:ontology:class)
+
+Declaration(NamedIndividual(:termBusiness))
+AnnotationAssertion(metadata:describes :term:Business expert:Business)
+ClassAssertion(metadata:Term :term:Business)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Business metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Business :term:Business)
+
+AnnotationAssertion(metadata:describes expert:term:materialFootprint expert:materialFootprint)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:materialFootprint metadata:ontology:dataproperty)
+
+AnnotationAssertion(metadata:describes expert:term:NetworkAnalysis expert:NetworkAnalysis)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:NetworkAnalysis metadata:ontology:class)
+
+Declaration(NamedIndividual(:termExperience))
+AnnotationAssertion(metadata:describes :term:Experience expert:Experience)
+ClassAssertion(metadata:Term :term:Experience)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Experience metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Experience :term:Experience)
+
+Declaration(NamedIndividual(:termActor))
+AnnotationAssertion(metadata:describes :term:Actor expert:Actor)
+ClassAssertion(metadata:Term :term:Actor)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Actor metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Actor :term:Actor)
+
+Declaration(NamedIndividual(:termSociety))
+AnnotationAssertion(metadata:describes :term:Society expert:Society)
+ClassAssertion(metadata:Term :term:Society)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Society metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Society :term:Society)
+
+Declaration(NamedIndividual(:termRegion))
+AnnotationAssertion(metadata:describes :term:Region expert:Region)
+ClassAssertion(metadata:Term :term:Region)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Region metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Region :term:Region)
+
+Declaration(NamedIndividual(:termGovernment))
+AnnotationAssertion(metadata:describes :term:Government expert:Government)
+ClassAssertion(metadata:Term :term:Government)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Government metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Government :term:Government)
+
+Declaration(NamedIndividual(:termEconomy))
+AnnotationAssertion(metadata:describes :term:Economy expert:Economy)
+ClassAssertion(metadata:Term :term:Economy)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Economy metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Economy :term:Economy)
+
+Declaration(NamedIndividual(:termCriticalAnalysis))
+AnnotationAssertion(metadata:describes :term:CriticalAnalysis expert:CriticalAnalysis)
+ClassAssertion(metadata:Term :term:CriticalAnalysis)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:CriticalAnalysis metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:CriticalAnalysis :term:CriticalAnalysis)
+
+Declaration(NamedIndividual(:termCaseStudy))
+AnnotationAssertion(metadata:describes :term:CaseStudy expert:CaseStudy)
+ClassAssertion(metadata:Term :term:CaseStudy)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:CaseStudy metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:CaseStudy :term:CaseStudy)
+
+Declaration(NamedIndividual(:termAgent))
+AnnotationAssertion(metadata:describes :term:Agent expert:Agent)
+ClassAssertion(metadata:Term :term:Agent)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Agent metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Agent :term:Agent)
+
+Declaration(NamedIndividual(:termLifestyle))
+AnnotationAssertion(metadata:describes :term:Lifestyle expert:Lifestyle)
+ClassAssertion(metadata:Term :term:Lifestyle)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Lifestyle metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Lifestyle :term:Lifestyle)
+
+AnnotationAssertion(metadata:describes expert:term:EnergySaving expert:EnergySaving)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:EnergySaving metadata:ontology:class)
+
+Declaration(NamedIndividual(:termcollectiveActionProblem))
+AnnotationAssertion(metadata:describes :term:collectiveActionProblem expert:collectiveActionProblem)
+ClassAssertion(metadata:Term :term:collectiveActionProblem)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:collectiveActionProblem metadata:ontology:dataproperty)
+AnnotationAssertion(rdfs:seeAlso expert:collectiveActionProblem :term:collectiveActionProblem)
+
+Declaration(NamedIndividual(:termExternalInfluence))
+AnnotationAssertion(metadata:describes :term:ExternalInfluence expert:ExternalInfluence)
+ClassAssertion(metadata:Term :term:ExternalInfluence)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:ExternalInfluence metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:ExternalInfluence :term:ExternalInfluence)
+
+Declaration(NamedIndividual(:termMood))
+AnnotationAssertion(metadata:describes :term:Mood expert:Mood)
+ClassAssertion(metadata:Term :term:Mood)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Mood metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Mood :term:Mood)
+
+AnnotationAssertion(metadata:describes expert:term:finalDemand expert:finalDemand)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:finalDemand metadata:ontology:dataproperty)
+
+AnnotationAssertion(metadata:describes expert:term:ReboundEffect expert:ReboundEffect)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:ReboundEffect metadata:ontology:class)
+
+AnnotationAssertion(metadata:describes expert:term:TravelBehaviour expert:TravelBehaviour)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:TravelBehaviour metadata:ontology:class)
+
+Declaration(NamedIndividual(:termSpace))
+AnnotationAssertion(metadata:describes :term:Space expert:Space)
+ClassAssertion(metadata:Term :term:Space)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Space metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Space :term:Space)
+
+Declaration(NamedIndividual(:termKnowledgeAcquisition))
+AnnotationAssertion(metadata:describes :term:KnowledgeAcquisition expert:KnowledgeAcquisition)
+ClassAssertion(metadata:Term :term:KnowledgeAcquisition)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:KnowledgeAcquisition metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:KnowledgeAcquisition :term:KnowledgeAcquisition)
+
+AnnotationAssertion(metadata:describes expert:term:TimeUse expert:TimeUse)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:TimeUse metadata:ontology:class)
+
+Declaration(NamedIndividual(:termPostiveFeedback))
+AnnotationAssertion(metadata:describes :term:PostiveFeedback expert:PostiveFeedback)
+ClassAssertion(metadata:Term :term:PostiveFeedback)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:PostiveFeedback metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:PostiveFeedback :term:PostiveFeedback)
+
+Declaration(NamedIndividual(:termTravel))
+AnnotationAssertion(metadata:describes :term:Travel expert:Travel)
+ClassAssertion(metadata:Term :term:Travel)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Travel metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Travel :term:Travel)
+
+AnnotationAssertion(metadata:describes expert:term:travelMode expert:travelMode)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:travelMode metadata:ontology:dataproperty)
+
+AnnotationAssertion(metadata:describes expert:term:EnergyProduction expert:EnergyProduction)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:EnergyProduction metadata:ontology:class)
+
+Declaration(NamedIndividual(:termIdentity))
+AnnotationAssertion(metadata:describes :term:Identity expert:Identity)
+ClassAssertion(metadata:Term :term:Identity)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Identity metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Identity :term:Identity)
+
+Declaration(NamedIndividual(:termUtilisation))
+AnnotationAssertion(metadata:describes :term:Utilisation expert:Utilisation)
+ClassAssertion(metadata:Term :term:Utilisation)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Utilisation metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Utilisation :term:Utilisation)
+
+AnnotationAssertion(metadata:describes expert:term:CapabilityApproach expert:CapabilityApproach)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:CapabilityApproach metadata:ontology:class)
+
+AnnotationAssertion(metadata:describes expert:term:BehaviourChange expert:BehaviourChange)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:BehaviourChange metadata:ontology:class)
+
+Declaration(NamedIndividual(:termEnvironment))
+AnnotationAssertion(metadata:describes :term:Environment expert:Environment)
+ClassAssertion(metadata:Term :term:Environment)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Environment metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Environment :term:Environment)
+
+AnnotationAssertion(metadata:describes expert:term:TimeManagement expert:TimeManagement)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:TimeManagement metadata:ontology:class)
+
+Declaration(NamedIndividual(:termExceedsThreshold))
+AnnotationAssertion(metadata:describes :term:ExceedsThreshold expert:ExceedsThreshold)
+ClassAssertion(metadata:Term :term:ExceedsThreshold)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:ExceedsThreshold metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:ExceedsThreshold :term:ExceedsThreshold)
+
+Declaration(NamedIndividual(:termOutputDemand))
+AnnotationAssertion(metadata:describes :term:OutputDemand expert:OutputDemand)
+ClassAssertion(metadata:Term :term:OutputDemand)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:OutputDemand metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:OutputDemand :term:OutputDemand)
+
+Declaration(NamedIndividual(:termExtractionOfRawMatter))
+AnnotationAssertion(metadata:describes :term:ExtractionOfRawMatter expert:ExtractionOfRawMatter)
+ClassAssertion(metadata:Term :term:ExtractionOfRawMatter)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:ExtractionOfRawMatter metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:ExtractionOfRawMatter :term:ExtractionOfRawMatter)
+
+Declaration(NamedIndividual(:termConsumption))
+AnnotationAssertion(metadata:describes :term:Consumption expert:Consumption)
+ClassAssertion(metadata:Term :term:Consumption)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Consumption metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Consumption :term:Consumption)
+
+Declaration(NamedIndividual(:termEnvironmentalImpact))
+AnnotationAssertion(metadata:describes :term:EnvironmentalImpact expert:EnvironmentalImpact)
+ClassAssertion(metadata:Term :term:EnvironmentalImpact)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:EnvironmentalImpact metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:EnvironmentalImpact :term:EnvironmentalImpact)
+
+Declaration(NamedIndividual(:termInteraction))
+AnnotationAssertion(metadata:describes :term:Interaction expert:Interaction)
+ClassAssertion(metadata:Term :term:Interaction)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Interaction metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Interaction :term:Interaction)
+
+AnnotationAssertion(metadata:describes expert:term:SocialNetwork expert:SocialNetwork)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:SocialNetwork metadata:ontology:class)
+
+Declaration(NamedIndividual(:termSelfReflection))
+AnnotationAssertion(metadata:describes :term:SelfReflection expert:SelfReflection)
+ClassAssertion(metadata:Term :term:SelfReflection)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:SelfReflection metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SelfReflection :term:SelfReflection)
+
+AnnotationAssertion(metadata:describes expert:term:economicGrowth expert:economicGrowth)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:economicGrowth metadata:ontology:dataproperty)
+
+AnnotationAssertion(metadata:describes expert:term:PublicGood expert:PublicGood)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:PublicGood metadata:ontology:class)
+
+Declaration(NamedIndividual(:termEnergyUse))
+AnnotationAssertion(metadata:describes :term:EnergyUse expert:EnergyUse)
+ClassAssertion(metadata:Term :term:EnergyUse)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:EnergyUse metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:EnergyUse :term:EnergyUse)
+
+AnnotationAssertion(metadata:describes expert:term:openSpace expert:openSpace)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:openSpace metadata:ontology:dataproperty)
+
+AnnotationAssertion(metadata:describes expert:term:GreenEconomy expert:GreenEconomy)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:GreenEconomy metadata:ontology:class)
+
+AnnotationAssertion(metadata:describes expert:term:SocialIdentityTheory expert:SocialIdentityTheory)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:SocialIdentityTheory metadata:ontology:class)
+
+AnnotationAssertion(metadata:describes expert:term:EconomicSystem expert:EconomicSystem)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:EconomicSystem metadata:ontology:class)
+
+AnnotationAssertion(metadata:describes expert:term:placeAttachment expert:placeAttachment)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:placeAttachment metadata:ontology:objectproperty)
+
+Declaration(NamedIndividual(:termEconomicOutput))
+AnnotationAssertion(metadata:describes :term:EconomicOutput expert:EconomicOutput)
+ClassAssertion(metadata:Term :term:EconomicOutput)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:EconomicOutput metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:EconomicOutput :term:EconomicOutput)
+
+Declaration(NamedIndividual(:termSelfPerception))
+AnnotationAssertion(metadata:describes :term:SelfPerception expert:SelfPerception)
+ClassAssertion(metadata:Term :term:SelfPerception)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:SelfPerception metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SelfPerception :term:SelfPerception)
+
+Declaration(NamedIndividual(:termEnergy))
+AnnotationAssertion(metadata:describes :term:Energy expert:Energy)
+ClassAssertion(metadata:Term :term:Energy)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Energy metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Energy :term:Energy)
+
+Declaration(NamedIndividual(:termCountry))
+AnnotationAssertion(metadata:describes :term:Country expert:Country)
+ClassAssertion(metadata:Term :term:Country)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Country metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Country :term:Country)
+
+AnnotationAssertion(metadata:describes expert:term:indirectEnergy expert:indirectEnergy)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:indirectEnergy metadata:ontology:dataproperty)
+
+Declaration(NamedIndividual(:termSocialNorm))
+AnnotationAssertion(metadata:describes :term:SocialNorm expert:SocialNorm)
+ClassAssertion(metadata:Term :term:SocialNorm)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:SocialNorm metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SocialNorm :term:SocialNorm)
+
+Declaration(NamedIndividual(:termManufacturing))
+AnnotationAssertion(metadata:describes :term:Manufacturing expert:Manufacturing)
+ClassAssertion(metadata:Term :term:Manufacturing)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Manufacturing metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Manufacturing :term:Manufacturing)
+
+Declaration(NamedIndividual(:termNormativePressure))
+AnnotationAssertion(metadata:describes :term:NormativePressure expert:NormativePressure)
+ClassAssertion(metadata:Term :term:NormativePressure)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:NormativePressure metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:NormativePressure :term:NormativePressure)
+
+AnnotationAssertion(metadata:describes expert:term:socialInfluence expert:socialInfluence)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:socialInfluence metadata:ontology:objectproperty)
+
+AnnotationAssertion(metadata:describes expert:term:waterFootprint expert:waterFootprint)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:waterFootprint metadata:ontology:dataproperty)
+
+AnnotationAssertion(metadata:describes expert:term:EnergyDemand expert:EnergyDemand)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:EnergyDemand metadata:ontology:class)
+
+Declaration(NamedIndividual(:termDistribution))
+AnnotationAssertion(metadata:describes :term:Distribution expert:Distribution)
+ClassAssertion(metadata:Term :term:Distribution)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Distribution metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Distribution :term:Distribution)
+
+Declaration(NamedIndividual(:termIndividual))
+AnnotationAssertion(metadata:describes :term:Individual expert:Individual)
+ClassAssertion(metadata:Term :term:Individual)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Individual metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Individual :term:Individual)
+
+AnnotationAssertion(metadata:describes expert:term:technologicalChange expert:technologicalChange)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:technologicalChange metadata:ontology:dataproperty)
+
+AnnotationAssertion(metadata:describes expert:term:LifestyleChange expert:LifestyleChange)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:LifestyleChange metadata:ontology:class)
+
+Declaration(NamedIndividual(:termProduct))
+AnnotationAssertion(metadata:describes :term:Product expert:Product)
+ClassAssertion(metadata:Term :term:Product)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Product metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Product :term:Product)
+
+AnnotationAssertion(metadata:describes expert:term:timePressure expert:timePressure)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:timePressure metadata:ontology:dataproperty)
+
+Declaration(NamedIndividual(:termStakeholder))
+AnnotationAssertion(metadata:describes :term:Stakeholder expert:Stakeholder)
+ClassAssertion(metadata:Term :term:Stakeholder)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Stakeholder metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Stakeholder :term:Stakeholder)
+
+Declaration(NamedIndividual(:termTravelMode))
+AnnotationAssertion(metadata:describes :term:TravelMode expert:TravelMode)
+ClassAssertion(metadata:Term :term:TravelMode)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:TravelMode metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:TravelMode :term:TravelMode)
+
+AnnotationAssertion(metadata:describes expert:term:FocusGroup expert:FocusGroup)
+ObjectPropertyAssertion(metadata:isOntologicalEntity expert:term:FocusGroup metadata:ontology:class)
+
+Declaration(NamedIndividual(:termLandUse))
+AnnotationAssertion(metadata:describes :term:LandUse expert:LandUse)
+ClassAssertion(metadata:Term :term:LandUse)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:LandUse metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:LandUse :term:LandUse)
+
+Declaration(NamedIndividual(:termTechnology))
+AnnotationAssertion(metadata:describes :term:Technology expert:Technology)
+ClassAssertion(metadata:Term :term:Technology)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Technology metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Technology :term:Technology)
+
+Declaration(NamedIndividual(:termPlace))
+AnnotationAssertion(metadata:describes :term:Place expert:Place)
+ClassAssertion(metadata:Term :term:Place)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Place metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Place :term:Place)
+
+Declaration(NamedIndividual(:termLifeSatisfaction))
+AnnotationAssertion(metadata:describes :term:LifeSatisfaction expert:LifeSatisfaction)
+ClassAssertion(metadata:Term :term:LifeSatisfaction)
+ObjectPropertyAssertion(metadata:isOntologicalEntity :term:LifeSatisfaction metadata:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:LifeSatisfaction :term:LifeSatisfaction)
+
+)

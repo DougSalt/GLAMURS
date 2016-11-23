@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1479747295446" name="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/models/economic-macro-models/TSC" uri="TSC-TBOX.owl"/>
-    </group>
-</catalog>

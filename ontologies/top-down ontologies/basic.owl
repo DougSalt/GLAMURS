@@ -1,0 +1,109 @@
+Prefix(:=<http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic>
+Annotation(rdfs:comment "2016-10-26"^^xsd:date)
+Annotation(rdfs:comment "This is one of serveral ontologies which will link all the ontologies in GLAMURS together, primarily in a star pattern through the top-down ontology. 
+
+This ontology will provide the vocabulary to link. Thus, this ontology will only consist of relationships and nothing else."@en)
+Annotation(rdfs:isDefinedBy <http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt>)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(ObjectProperty(:creates))
+Declaration(ObjectProperty(:hasPart))
+Declaration(ObjectProperty(:hasProperty))
+Declaration(ObjectProperty(:isModifedBy))
+Declaration(ObjectProperty(:isPropertyOf))
+Declaration(ObjectProperty(:isRequiredBy))
+Declaration(ObjectProperty(:isUsedBy))
+Declaration(ObjectProperty(:modifies))
+Declaration(ObjectProperty(:partOf))
+Declaration(ObjectProperty(:requires))
+Declaration(ObjectProperty(:uses))
+Declaration(ObjectProperty(:wasCreatedBy))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :creates (:creates)
+
+SubObjectPropertyOf(:creates :uses)
+InverseObjectProperties(:creates :wasCreatedBy)
+
+# Object Property: :hasPart (has part)
+
+AnnotationAssertion(rdfs:label :hasPart "has part"@en)
+InverseObjectProperties(:hasPart :partOf)
+
+# Object Property: :hasProperty (has property)
+
+AnnotationAssertion(rdfs:label :hasProperty "has property"@en)
+InverseObjectProperties(:hasProperty :isPropertyOf)
+
+# Object Property: :isModifedBy (is modified by)
+
+AnnotationAssertion(rdfs:label :isModifedBy "is modified by"@en)
+InverseObjectProperties(:isModifedBy :modifies)
+
+# Object Property: :isPropertyOf (is property of)
+
+AnnotationAssertion(rdfs:label :isPropertyOf "is property of"@en)
+
+# Object Property: :isRequiredBy (is required by)
+
+AnnotationAssertion(rdfs:label :isRequiredBy "is required by"@en)
+SubObjectPropertyOf(:isRequiredBy :isUsedBy)
+
+# Object Property: :isUsedBy (is used by)
+
+AnnotationAssertion(rdfs:label :isUsedBy "is used by"@en)
+InverseObjectProperties(:isUsedBy :uses)
+
+# Object Property: :modifies (modifies)
+
+AnnotationAssertion(rdfs:label :modifies "modifies"@en)
+
+# Object Property: :partOf (part of)
+
+AnnotationAssertion(rdfs:comment :partOf "Should be 
+
++transitive
++reflexive
++anti-symmetric
+
+Transitive breaks the Pellet reaonser, and reflexive messes with the domains and codamins in the integration ontology."@en)
+AnnotationAssertion(rdfs:label :partOf "part of"@en)
+
+# Object Property: :requires (requires)
+
+AnnotationAssertion(rdfs:label :requires "requires"@en)
+SubObjectPropertyOf(:requires :uses)
+
+# Object Property: :uses (uses)
+
+AnnotationAssertion(rdfs:label :uses "uses"@en)
+
+# Object Property: :wasCreatedBy (was created by)
+
+AnnotationAssertion(rdfs:label :wasCreatedBy "was created by"@en)
+SubObjectPropertyOf(:wasCreatedBy :isUsedBy)
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+
+)

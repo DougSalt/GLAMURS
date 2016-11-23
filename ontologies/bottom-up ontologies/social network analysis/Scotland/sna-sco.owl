@@ -1,0 +1,600 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-sco#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-sco>
+Annotation(rdfs:comment "2016-10-09"^^xsd:date)
+Annotation(rdfs:isDefinedBy <http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-Sco#author:DougSalt>)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:AberdeenshireCouncil))
+Declaration(Class(:Actor))
+Declaration(Class(:Artefact))
+Declaration(Class(:Bduget))
+Declaration(Class(:BlockGrant))
+Declaration(Class(:BritishTelecomm))
+Declaration(Class(:ChildrenAndFamiliesAct))
+Declaration(Class(:CouncilArea))
+Declaration(Class(:CouncilTax))
+Declaration(Class(:Councillors))
+Declaration(Class(:Desk))
+Declaration(Class(:EmploymentAct))
+Declaration(Class(:EquallityAct))
+Declaration(Class(:EssentialService))
+Declaration(Class(:FacilitiesTeam))
+Declaration(Class(:FixedHours))
+Declaration(Class(:FixedWorking))
+Declaration(Class(:FlexibleWorking))
+Declaration(Class(:FlexibleWorkingRegulations))
+Declaration(Class(:Grant))
+Declaration(Class(:HRTeam))
+Declaration(Class(:Home))
+Declaration(Class(:HomeICTInfrastructure))
+Declaration(Class(:HoursWorked))
+Declaration(Class(:ITTeam))
+Declaration(Class(:Income))
+Declaration(Class(:IncomeTax))
+Declaration(Class(:Legislation))
+Declaration(Class(:MobileWorking))
+Declaration(Class(:OfficeBuillding))
+Declaration(Class(:Public))
+Declaration(Class(:SeniorManagement))
+Declaration(Class(:Service))
+Declaration(Class(:SocttishGovernment))
+Declaration(Class(:Staff))
+Declaration(Class(:Team))
+Declaration(Class(:TeamLeader))
+Declaration(Class(:TradesUnion))
+Declaration(Class(:UKGovernment))
+Declaration(Class(:Ward))
+Declaration(Class(:WorkSmartTeam))
+Declaration(Class(:WorkingProfile))
+Declaration(Class(:WorkplaceICTInfrastructure))
+Declaration(Class(:Worksmart))
+Declaration(Class(:Zone))
+Declaration(ObjectProperty(:acceptOrRefuse))
+Declaration(ObjectProperty(:accompany))
+Declaration(ObjectProperty(:administer))
+Declaration(ObjectProperty(:administrates))
+Declaration(ObjectProperty(:advise))
+Declaration(ObjectProperty(:advised))
+Declaration(ObjectProperty(:appeal))
+Declaration(ObjectProperty(:apply))
+Declaration(ObjectProperty(:assign))
+Declaration(ObjectProperty(:assigned))
+Declaration(ObjectProperty(:constituency))
+Declaration(ObjectProperty(:constrains))
+Declaration(ObjectProperty(:decides))
+Declaration(ObjectProperty(:determines))
+Declaration(ObjectProperty(:devolvesActivities))
+Declaration(ObjectProperty(:discuss))
+Declaration(ObjectProperty(:elect))
+Declaration(ObjectProperty(:employ))
+Declaration(ObjectProperty(:ensureCompliance))
+Declaration(ObjectProperty(:hasICTInfrastructure))
+Declaration(ObjectProperty(:implementPolicyOf))
+Declaration(ObjectProperty(:instruct))
+Declaration(ObjectProperty(:live))
+Declaration(ObjectProperty(:location))
+Declaration(ObjectProperty(:manage))
+Declaration(ObjectProperty(:manageSale))
+Declaration(ObjectProperty(:memberOf))
+Declaration(ObjectProperty(:monitor))
+Declaration(ObjectProperty(:notify))
+Declaration(ObjectProperty(:overseeAssignment))
+Declaration(ObjectProperty(:part))
+Declaration(ObjectProperty(:pays))
+Declaration(ObjectProperty(:provide))
+Declaration(ObjectProperty(:providedTo))
+Declaration(ObjectProperty(:receives))
+Declaration(ObjectProperty(:reportTo))
+Declaration(ObjectProperty(:run))
+Declaration(ObjectProperty(:sell))
+Declaration(ObjectProperty(:sets))
+Declaration(ObjectProperty(:spend))
+Declaration(ObjectProperty(:time))
+Declaration(ObjectProperty(:work))
+Declaration(ObjectProperty(:workAt))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :acceptOrRefuse (accept or refuse)
+
+AnnotationAssertion(rdfs:label :acceptOrRefuse "accept or refuse"@en)
+ObjectPropertyDomain(:acceptOrRefuse :TeamLeader)
+ObjectPropertyRange(:acceptOrRefuse :WorkSmartTeam)
+
+# Object Property: :accompany (accompany)
+
+AnnotationAssertion(rdfs:label :accompany "accompany"@en)
+ObjectPropertyDomain(:accompany :TradesUnion)
+ObjectPropertyRange(:accompany :Staff)
+
+# Object Property: :administer (administer)
+
+AnnotationAssertion(rdfs:label :administer "administer"@en)
+ObjectPropertyDomain(:administer ObjectUnionOf(:FacilitiesTeam :ITTeam))
+ObjectPropertyRange(:administer ObjectUnionOf(:OfficeBuillding :WorkplaceICTInfrastructure))
+
+# Object Property: :administrates (administrates)
+
+AnnotationAssertion(rdfs:label :administrates "administrates"@en)
+ObjectPropertyDomain(:administrates :AberdeenshireCouncil)
+ObjectPropertyRange(:administrates :CouncilArea)
+
+# Object Property: :advise (advise)
+
+AnnotationAssertion(rdfs:label :advise "advise"@en)
+ObjectPropertyDomain(:advise :HRTeam)
+ObjectPropertyRange(:advise :SeniorManagement)
+
+# Object Property: :advised (advised)
+
+AnnotationAssertion(rdfs:label :advised "advised"@en)
+ObjectPropertyDomain(:advised :BritishTelecomm)
+ObjectPropertyRange(:advised :SeniorManagement)
+
+# Object Property: :appeal (appeal)
+
+AnnotationAssertion(rdfs:label :appeal "appeal"@en)
+ObjectPropertyDomain(:appeal :Staff)
+ObjectPropertyRange(:appeal :WorkSmartTeam)
+
+# Object Property: :apply (apply)
+
+AnnotationAssertion(rdfs:label :apply "apply"@en)
+ObjectPropertyDomain(:apply :Staff)
+ObjectPropertyRange(:apply :WorkSmartTeam)
+
+# Object Property: :assign (assign)
+
+AnnotationAssertion(rdfs:label :assign "assign"@en)
+ObjectPropertyDomain(:assign :Councillors)
+ObjectPropertyRange(:assign :Bduget)
+
+# Object Property: :assigned (assigned)
+
+AnnotationAssertion(rdfs:label :assigned "assigned"@en)
+ObjectPropertyDomain(:assigned :Staff)
+ObjectPropertyRange(:assigned :WorkingProfile)
+
+# Object Property: :constituency (constituency)
+
+AnnotationAssertion(rdfs:label :constituency "constituency"@en)
+ObjectPropertyDomain(:constituency :Councillors)
+ObjectPropertyRange(:constituency :Ward)
+
+# Object Property: :constrains (constrains)
+
+AnnotationAssertion(rdfs:label :constrains "constrains"@en)
+ObjectPropertyDomain(:constrains :UKGovernment)
+ObjectPropertyRange(:constrains :CouncilTax)
+
+# Object Property: :decides (decides)
+
+AnnotationAssertion(rdfs:label :decides "decides"@en)
+ObjectPropertyDomain(:decides ObjectUnionOf(:SocttishGovernment :UKGovernment))
+ObjectPropertyRange(:decides :EssentialService)
+
+# Object Property: :determines (determines)
+
+AnnotationAssertion(rdfs:label :determines "determines"@en)
+ObjectPropertyDomain(:determines :Income)
+ObjectPropertyRange(:determines :Bduget)
+
+# Object Property: :devolvesActivities (devolves activities)
+
+AnnotationAssertion(rdfs:label :devolvesActivities "devolves activities"@en)
+ObjectPropertyDomain(:devolvesActivities :UKGovernment)
+ObjectPropertyRange(:devolvesActivities :SocttishGovernment)
+
+# Object Property: :discuss (discuss)
+
+AnnotationAssertion(rdfs:label :discuss "discuss"@en)
+ObjectPropertyDomain(:discuss :TeamLeader)
+ObjectPropertyRange(:discuss :Staff)
+
+# Object Property: :elect (elect)
+
+AnnotationAssertion(rdfs:label :elect "elect"@en)
+ObjectPropertyDomain(:elect :Public)
+ObjectPropertyRange(:elect :Councillors)
+
+# Object Property: :employ (employ)
+
+AnnotationAssertion(rdfs:label :employ "employ"@en)
+ObjectPropertyDomain(:employ :AberdeenshireCouncil)
+ObjectPropertyRange(:employ :Staff)
+
+# Object Property: :ensureCompliance (ensure compliance)
+
+AnnotationAssertion(rdfs:label :ensureCompliance "ensure compliance"@en)
+ObjectPropertyDomain(:ensureCompliance :HRTeam)
+ObjectPropertyRange(:ensureCompliance :Legislation)
+
+# Object Property: :hasICTInfrastructure (has ICT infrastructure)
+
+AnnotationAssertion(rdfs:label :hasICTInfrastructure "has ICT infrastructure"@en)
+ObjectPropertyDomain(:hasICTInfrastructure ObjectUnionOf(:Home :OfficeBuillding))
+ObjectPropertyRange(:hasICTInfrastructure ObjectUnionOf(:HomeICTInfrastructure :WorkplaceICTInfrastructure))
+
+# Object Property: :implementPolicyOf (implement policy of)
+
+AnnotationAssertion(rdfs:label :implementPolicyOf "implement policy of"@en)
+ObjectPropertyDomain(:implementPolicyOf :SeniorManagement)
+ObjectPropertyRange(:implementPolicyOf :Councillors)
+
+# Object Property: :instruct (instruct)
+
+AnnotationAssertion(rdfs:label :instruct "instruct"@en)
+ObjectPropertyDomain(:instruct :SeniorManagement)
+ObjectPropertyRange(:instruct :TeamLeader)
+
+# Object Property: :live (live)
+
+AnnotationAssertion(rdfs:label :live "live"@en)
+ObjectPropertyDomain(:live :Staff)
+ObjectPropertyRange(:live :Home)
+
+# Object Property: :location (location)
+
+AnnotationAssertion(rdfs:label :location "location"@en)
+ObjectPropertyDomain(:location ObjectUnionOf(:Desk :Home :HoursWorked :Staff :Zone))
+ObjectPropertyRange(:location ObjectUnionOf(:Home :OfficeBuillding :Ward :Zone))
+
+# Object Property: :manage (manage)
+
+AnnotationAssertion(rdfs:label :manage "manage"@en)
+ObjectPropertyDomain(:manage :TeamLeader)
+ObjectPropertyRange(:manage :Team)
+
+# Object Property: :manageSale (manage sale)
+
+AnnotationAssertion(rdfs:label :manageSale "manage sale"@en)
+ObjectPropertyDomain(:manageSale :FacilitiesTeam)
+ObjectPropertyRange(:manageSale :OfficeBuillding)
+
+# Object Property: :memberOf (member of)
+
+AnnotationAssertion(rdfs:label :memberOf "member of"@en)
+ObjectPropertyDomain(:memberOf :Staff)
+ObjectPropertyRange(:memberOf :Team)
+
+# Object Property: :monitor (monitors)
+
+AnnotationAssertion(rdfs:label :monitor "monitors"@en)
+ObjectPropertyDomain(:monitor :WorkSmartTeam)
+ObjectPropertyRange(:monitor :WorkingProfile)
+
+# Object Property: :notify (notify)
+
+AnnotationAssertion(rdfs:label :notify "notify"@en)
+ObjectPropertyDomain(:notify :WorkSmartTeam)
+ObjectPropertyRange(:notify :TeamLeader)
+
+# Object Property: :overseeAssignment (oversee assignment)
+
+AnnotationAssertion(rdfs:label :overseeAssignment "oversee assignment"@en)
+ObjectPropertyDomain(:overseeAssignment :HRTeam)
+ObjectPropertyRange(:overseeAssignment :WorkingProfile)
+
+# Object Property: :part (part)
+
+AnnotationAssertion(rdfs:label :part "part"@en)
+ObjectPropertyDomain(:part ObjectUnionOf(:CouncilTax :Grant))
+ObjectPropertyRange(:part :Income)
+
+# Object Property: :pays (pays)
+
+AnnotationAssertion(rdfs:label :pays "pays"@en)
+ObjectPropertyDomain(:pays ObjectUnionOf(:Public :SocttishGovernment :UKGovernment))
+ObjectPropertyRange(:pays ObjectUnionOf(:BlockGrant :CouncilTax :Grant :IncomeTax))
+
+# Object Property: :provide (provide)
+
+AnnotationAssertion(rdfs:label :provide "provide"@en)
+ObjectPropertyDomain(:provide ObjectUnionOf(:BritishTelecomm :Team))
+ObjectPropertyRange(:provide ObjectUnionOf(:HomeICTInfrastructure :Service))
+
+# Object Property: :providedTo (provided to)
+
+AnnotationAssertion(rdfs:label :providedTo "provided to"@en)
+ObjectPropertyDomain(:providedTo :Service)
+ObjectPropertyRange(:providedTo :Public)
+
+# Object Property: :receives (receives)
+
+AnnotationAssertion(rdfs:label :receives "receives"@en)
+ObjectPropertyDomain(:receives ObjectUnionOf(:BlockGrant :Grant :IncomeTax))
+ObjectPropertyRange(:receives ObjectUnionOf(:AberdeenshireCouncil :SocttishGovernment :UKGovernment))
+
+# Object Property: :reportTo (report to)
+
+AnnotationAssertion(rdfs:label :reportTo "report to"@en)
+ObjectPropertyDomain(:reportTo :TeamLeader)
+ObjectPropertyRange(:reportTo :SeniorManagement)
+
+# Object Property: :run (run)
+
+AnnotationAssertion(rdfs:label :run "run"@en)
+ObjectPropertyDomain(:run :SeniorManagement)
+ObjectPropertyRange(:run :AberdeenshireCouncil)
+
+# Object Property: :sell (sell)
+
+AnnotationAssertion(rdfs:label :sell "sell"@en)
+ObjectPropertyDomain(:sell :AberdeenshireCouncil)
+ObjectPropertyRange(:sell :OfficeBuillding)
+
+# Object Property: :sets (sets)
+
+AnnotationAssertion(rdfs:label :sets "sets"@en)
+ObjectPropertyDomain(:sets :AberdeenshireCouncil)
+ObjectPropertyRange(:sets :CouncilTax)
+
+# Object Property: :spend (spend)
+
+AnnotationAssertion(rdfs:label :spend "spend"@en)
+ObjectPropertyDomain(:spend :Team)
+ObjectPropertyRange(:spend :Bduget)
+
+# Object Property: :time (time)
+
+AnnotationAssertion(rdfs:label :time "time"@en)
+ObjectPropertyDomain(:time :Staff)
+ObjectPropertyRange(:time :HoursWorked)
+
+# Object Property: :work (work)
+
+AnnotationAssertion(rdfs:label :work "work"@en)
+ObjectPropertyDomain(:work :Staff)
+ObjectPropertyRange(:work :Home)
+
+# Object Property: :workAt (work at)
+
+AnnotationAssertion(rdfs:label :workAt "work at"@en)
+ObjectPropertyDomain(:workAt :Staff)
+ObjectPropertyRange(:workAt :Desk)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :AberdeenshireCouncil (Aberdeenshire Council)
+
+AnnotationAssertion(rdfs:label :AberdeenshireCouncil "Aberdeenshire Council"@en)
+SubClassOf(:AberdeenshireCouncil :Actor)
+
+# Class: :Artefact (Artefact)
+
+AnnotationAssertion(rdfs:label :Artefact "Artefact"@en)
+
+# Class: :Bduget (Budget)
+
+AnnotationAssertion(rdfs:label :Bduget "Budget"@en)
+SubClassOf(:Bduget :Artefact)
+
+# Class: :BlockGrant (Block Grant)
+
+AnnotationAssertion(rdfs:label :BlockGrant "Block Grant"@en)
+SubClassOf(:BlockGrant :Artefact)
+
+# Class: :BritishTelecomm (British Telecomm)
+
+AnnotationAssertion(rdfs:label :BritishTelecomm "British Telecomm"@en)
+SubClassOf(:BritishTelecomm :Actor)
+
+# Class: :ChildrenAndFamiliesAct (Children and Families Act 2014)
+
+AnnotationAssertion(rdfs:label :ChildrenAndFamiliesAct "Children and Families Act 2014"@en)
+SubClassOf(:ChildrenAndFamiliesAct :Legislation)
+
+# Class: :CouncilArea (Council Area)
+
+AnnotationAssertion(rdfs:label :CouncilArea "Council Area"@en)
+SubClassOf(:CouncilArea :Artefact)
+
+# Class: :CouncilTax (Council Tax)
+
+AnnotationAssertion(rdfs:label :CouncilTax "Council Tax"@en)
+SubClassOf(:CouncilTax :Artefact)
+
+# Class: :Councillors (Councillors)
+
+AnnotationAssertion(rdfs:label :Councillors "Councillors"@en)
+SubClassOf(:Councillors :Actor)
+
+# Class: :Desk (Desk)
+
+AnnotationAssertion(rdfs:label :Desk "Desk"@en)
+SubClassOf(:Desk :Artefact)
+
+# Class: :EmploymentAct (Employment Rights Act 1996)
+
+AnnotationAssertion(rdfs:label :EmploymentAct "Employment Rights Act 1996"@en)
+SubClassOf(:EmploymentAct :Legislation)
+
+# Class: :EquallityAct (Equality Act 2010)
+
+AnnotationAssertion(rdfs:label :EquallityAct "Equality Act 2010"@en)
+SubClassOf(:EquallityAct :Legislation)
+
+# Class: :EssentialService (Essential Service)
+
+AnnotationAssertion(rdfs:label :EssentialService "Essential Service"@en)
+SubClassOf(:EssentialService :Service)
+
+# Class: :FacilitiesTeam (Facilities Team)
+
+AnnotationAssertion(rdfs:label :FacilitiesTeam "Facilities Team"@en)
+SubClassOf(:FacilitiesTeam :Team)
+
+# Class: :FixedHours (Fixed Hours)
+
+AnnotationAssertion(rdfs:label :FixedHours "Fixed Hours"@en)
+SubClassOf(:FixedHours :WorkingProfile)
+
+# Class: :FixedWorking (Fixed Working)
+
+AnnotationAssertion(rdfs:label :FixedWorking "Fixed Working"@en)
+SubClassOf(:FixedWorking :WorkingProfile)
+
+# Class: :FlexibleWorking (Flexible Working)
+
+AnnotationAssertion(rdfs:label :FlexibleWorking "Flexible Working"@en)
+SubClassOf(:FlexibleWorking :WorkingProfile)
+
+# Class: :FlexibleWorkingRegulations (Flexible Working Regulatioins 2002)
+
+AnnotationAssertion(rdfs:label :FlexibleWorkingRegulations "Flexible Working Regulatioins 2002"@en)
+SubClassOf(:FlexibleWorkingRegulations :Legislation)
+
+# Class: :Grant (Grant)
+
+AnnotationAssertion(rdfs:label :Grant "Grant"@en)
+SubClassOf(:Grant :Artefact)
+
+# Class: :HRTeam (HR Team)
+
+AnnotationAssertion(rdfs:label :HRTeam "HR Team"@en)
+SubClassOf(:HRTeam :Team)
+
+# Class: :Home (Home)
+
+AnnotationAssertion(rdfs:label :Home "Home"@en)
+SubClassOf(:Home :Artefact)
+
+# Class: :HomeICTInfrastructure (Home ICT Infrastructure)
+
+AnnotationAssertion(rdfs:label :HomeICTInfrastructure "Home ICT Infrastructure"@en)
+SubClassOf(:HomeICTInfrastructure :Artefact)
+
+# Class: :HoursWorked (Hours Worked)
+
+AnnotationAssertion(rdfs:label :HoursWorked "Hours Worked"@en)
+SubClassOf(:HoursWorked :Artefact)
+
+# Class: :ITTeam (IT Team)
+
+AnnotationAssertion(rdfs:label :ITTeam "IT Team"@en)
+SubClassOf(:ITTeam :Team)
+
+# Class: :Income (Income)
+
+AnnotationAssertion(rdfs:label :Income "Income"@en)
+SubClassOf(:Income :Artefact)
+
+# Class: :IncomeTax (Income Tax)
+
+AnnotationAssertion(rdfs:label :IncomeTax "Income Tax"@en)
+SubClassOf(:IncomeTax :Artefact)
+
+# Class: :Legislation (Legislation)
+
+AnnotationAssertion(rdfs:label :Legislation "Legislation"@en)
+SubClassOf(:Legislation :Artefact)
+
+# Class: :MobileWorking (Mobile Working)
+
+AnnotationAssertion(rdfs:label :MobileWorking "Mobile Working"@en)
+SubClassOf(:MobileWorking :WorkingProfile)
+
+# Class: :OfficeBuillding (Office Building)
+
+AnnotationAssertion(rdfs:label :OfficeBuillding "Office Building"@en)
+SubClassOf(:OfficeBuillding :Artefact)
+
+# Class: :Public (:Public)
+
+AnnotationAssertion(rdfs:comment :Public "Public")
+SubClassOf(:Public :Actor)
+
+# Class: :SeniorManagement (Senior Management)
+
+AnnotationAssertion(rdfs:label :SeniorManagement "Senior Management"@en)
+SubClassOf(:SeniorManagement :Actor)
+
+# Class: :Service (Service)
+
+AnnotationAssertion(rdfs:label :Service "Service"@en)
+SubClassOf(:Service :Artefact)
+
+# Class: :SocttishGovernment (Scottish Government)
+
+AnnotationAssertion(rdfs:label :SocttishGovernment "Scottish Government"@en)
+SubClassOf(:SocttishGovernment :Actor)
+
+# Class: :Staff (Staff)
+
+AnnotationAssertion(rdfs:label :Staff "Staff"@en)
+SubClassOf(:Staff :Actor)
+
+# Class: :Team (Team)
+
+AnnotationAssertion(rdfs:label :Team "Team"@en)
+SubClassOf(:Team :Actor)
+
+# Class: :TeamLeader (Team Leader)
+
+AnnotationAssertion(rdfs:label :TeamLeader "Team Leader"@en)
+SubClassOf(:TeamLeader :Actor)
+
+# Class: :TradesUnion (Trades Union)
+
+AnnotationAssertion(rdfs:label :TradesUnion "Trades Union"@en)
+SubClassOf(:TradesUnion :Actor)
+
+# Class: :UKGovernment (UK Government)
+
+AnnotationAssertion(rdfs:label :UKGovernment "UK Government"@en)
+SubClassOf(:UKGovernment :Actor)
+
+# Class: :Ward (Ward)
+
+AnnotationAssertion(rdfs:label :Ward "Ward"@en)
+SubClassOf(:Ward :Artefact)
+
+# Class: :WorkSmartTeam (Worksmart Team)
+
+AnnotationAssertion(rdfs:label :WorkSmartTeam "Worksmart Team"@en)
+SubClassOf(:WorkSmartTeam :Team)
+
+# Class: :WorkingProfile (Working Profile)
+
+AnnotationAssertion(rdfs:label :WorkingProfile "Working Profile"@en)
+SubClassOf(:WorkingProfile :Artefact)
+
+# Class: :WorkplaceICTInfrastructure (Workplace ICT  Infrastructure)
+
+AnnotationAssertion(rdfs:label :WorkplaceICTInfrastructure "Workplace ICT  Infrastructure"@en)
+SubClassOf(:WorkplaceICTInfrastructure :Artefact)
+
+# Class: :Worksmart (:Worksmart)
+
+SubClassOf(:Worksmart :Artefact)
+
+# Class: :Zone (Zone)
+
+AnnotationAssertion(rdfs:label :Zone "Zone"@en)
+SubClassOf(:Zone :Artefact)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+
+)

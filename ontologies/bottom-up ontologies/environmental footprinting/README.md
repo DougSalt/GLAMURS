@@ -1,0 +1,6 @@
+This directory contains the back-casting ontologies for environmental footprinting produced by NTNU:
+
++ [README.md](README.md) - this file.
++ [ntnu.owl](ntnu.owl) - this is the original ontology produced by reading using the headings in the two spreadsheets detailing the data provided by NTNU.
++ [term-tbox.owl](ntnu-tbox.owl) - this is the same as [ntnu.owl](ntnu.owl), except each of the classes, object properties and data properties have been converted into term individuals and classified as either a class, and object property or data value. This is for the purpose of reasoning over connections between ontolgies in a later part of the process. 
++ [kb-ntnu.owl](kb-ntnu.owl) - this is [term-tbox.owl](term-tbox.owl) with the data inserted provided in the two spreadsheets provided by NTNU mentioned above. Note this is slightly different from the contents of the leaf directories in the [bottom-up ontologies](../../bottom-up ontologies) tree in that the terminology ontology was produced before including the ABOX information from NTNU. In older versions this step was missing.

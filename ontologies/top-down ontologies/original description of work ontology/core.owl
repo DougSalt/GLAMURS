@@ -1,0 +1,232 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/core#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/core>
+<http://www.glamurs.eu/ontologies/GLAMURScore.owl/1.0.0>
+Annotation(rdfs:comment "This ontology is the 'core' ontology of GLAMURS, which is intended to act as the 'glue' holding all the concepts in GLAMURS. It is centred around the entities in the GLAMURS WP2 integration research question: \"How the project has provided a context in which citizens, policymakers, stakeholders and researchers come to know what needs to be done to transform their ways of life and ways of thinking such that they are socially, individually, environmentally and economically sustainable.\""^^xsd:string)
+
+Declaration(Class(:Actor))
+Declaration(Class(:CaseStudy))
+Declaration(Class(:Citizen))
+Declaration(Class(:ConsumptionOfMaterialGoods))
+Declaration(Class(:Context))
+Declaration(Class(:Cooperative))
+Declaration(Class(:EconomicSustainability))
+Declaration(Class(:Ecovillage))
+Declaration(Class(:EnergyUseInHomes))
+Declaration(Class(:EnvironmentalSustainability))
+Declaration(Class(:FlexibleWorking))
+Declaration(Class(:Food))
+Declaration(Class(:Geography))
+Declaration(Class(:Home))
+Declaration(Class(:IndividualSustainability))
+Declaration(Class(:Knowledge))
+Declaration(Class(:Lifestyle))
+Declaration(Class(:LifestyleDomain))
+Declaration(Class(:Nation))
+Declaration(Class(:Policymaker))
+Declaration(Class(:Project))
+Declaration(Class(:Region))
+Declaration(Class(:Researcher))
+Declaration(Class(:SocialSustainability))
+Declaration(Class(:Stakeholder))
+Declaration(Class(:StatusOfHomes))
+Declaration(Class(:Sustainability))
+Declaration(Class(:Thinking))
+Declaration(Class(:Transformation))
+Declaration(Class(:TransformedThing))
+Declaration(Class(:Transport))
+Declaration(Class(:WorkLifeBalance))
+Declaration(Class(:Workplace))
+Declaration(ObjectProperty(:hasContext))
+Declaration(ObjectProperty(:hasGeography))
+Declaration(ObjectProperty(:hasKnowledge))
+Declaration(ObjectProperty(:hasLifestyle))
+Declaration(ObjectProperty(:hasLifestyleDomain))
+Declaration(ObjectProperty(:hasSustainability))
+Declaration(ObjectProperty(:hasThinking))
+Declaration(ObjectProperty(:transformation))
+Declaration(ObjectProperty(:transformationFrom))
+Declaration(ObjectProperty(:transformationTo))
+Declaration(ObjectProperty(:usesKnowledge))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasContext (:hasContext)
+
+ObjectPropertyDomain(:hasContext :Actor)
+ObjectPropertyRange(:hasContext :Context)
+
+# Object Property: :hasGeography (:hasGeography)
+
+ObjectPropertyDomain(:hasGeography :CaseStudy)
+ObjectPropertyRange(:hasGeography :Geography)
+
+# Object Property: :hasKnowledge (:hasKnowledge)
+
+ObjectPropertyDomain(:hasKnowledge :Actor)
+ObjectPropertyRange(:hasKnowledge :Knowledge)
+
+# Object Property: :hasLifestyle (:hasLifestyle)
+
+ObjectPropertyDomain(:hasLifestyle :Actor)
+ObjectPropertyRange(:hasLifestyle :Lifestyle)
+
+# Object Property: :hasLifestyleDomain (:hasLifestyleDomain)
+
+ObjectPropertyDomain(:hasLifestyleDomain :Lifestyle)
+ObjectPropertyRange(:hasLifestyleDomain :LifestyleDomain)
+
+# Object Property: :hasSustainability (:hasSustainability)
+
+ObjectPropertyDomain(:hasSustainability :TransformedThing)
+ObjectPropertyRange(:hasSustainability :Sustainability)
+
+# Object Property: :hasThinking (:hasThinking)
+
+ObjectPropertyDomain(:hasThinking :Actor)
+ObjectPropertyRange(:hasThinking :Thinking)
+
+# Object Property: :transformationFrom (:transformationFrom)
+
+ObjectPropertyDomain(:transformationFrom :TransformedThing)
+ObjectPropertyRange(:transformationFrom :Transformation)
+
+# Object Property: :transformationTo (:transformationTo)
+
+ObjectPropertyDomain(:transformationTo :Transformation)
+ObjectPropertyRange(:transformationTo :TransformedThing)
+
+# Object Property: :usesKnowledge (:usesKnowledge)
+
+ObjectPropertyDomain(:usesKnowledge :Thinking)
+ObjectPropertyRange(:usesKnowledge :Knowledge)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Actor (:Actor)
+
+AnnotationAssertion(rdfs:comment :Actor "An actor (not a thespian or a concept from Actor Network Theory) is a person or a group of people.")
+
+# Class: :CaseStudy (:CaseStudy)
+
+SubClassOf(:CaseStudy :Context)
+
+# Class: :Citizen (:Citizen)
+
+SubClassOf(:Citizen :Actor)
+
+# Class: :ConsumptionOfMaterialGoods (:ConsumptionOfMaterialGoods)
+
+SubClassOf(:ConsumptionOfMaterialGoods :LifestyleDomain)
+
+# Class: :Cooperative (:Cooperative)
+
+SubClassOf(:Cooperative :CaseStudy)
+
+# Class: :EconomicSustainability (:EconomicSustainability)
+
+SubClassOf(:EconomicSustainability :Sustainability)
+
+# Class: :Ecovillage (:Ecovillage)
+
+SubClassOf(:Ecovillage :CaseStudy)
+
+# Class: :EnergyUseInHomes (:EnergyUseInHomes)
+
+SubClassOf(:EnergyUseInHomes :LifestyleDomain)
+
+# Class: :EnvironmentalSustainability (:EnvironmentalSustainability)
+
+SubClassOf(:EnvironmentalSustainability :Sustainability)
+
+# Class: :FlexibleWorking (:FlexibleWorking)
+
+SubClassOf(:FlexibleWorking :Transformation)
+
+# Class: :Food (:Food)
+
+SubClassOf(:Food :LifestyleDomain)
+
+# Class: :Geography (:Geography)
+
+SubClassOf(:Geography :Context)
+
+# Class: :Home (:Home)
+
+SubClassOf(:Home :CaseStudy)
+
+# Class: :IndividualSustainability (:IndividualSustainability)
+
+SubClassOf(:IndividualSustainability :Sustainability)
+
+# Class: :Knowledge (:Knowledge)
+
+SubClassOf(:Knowledge :TransformedThing)
+
+# Class: :Lifestyle (:Lifestyle)
+
+SubClassOf(:Lifestyle :TransformedThing)
+
+# Class: :Nation (:Nation)
+
+SubClassOf(:Nation :Geography)
+
+# Class: :Policymaker (:Policymaker)
+
+SubClassOf(:Policymaker :Actor)
+
+# Class: :Project (:Project)
+
+SubClassOf(:Project :Context)
+
+# Class: :Region (:Region)
+
+SubClassOf(:Region :Geography)
+
+# Class: :Researcher (:Researcher)
+
+SubClassOf(:Researcher :Actor)
+
+# Class: :SocialSustainability (:SocialSustainability)
+
+SubClassOf(:SocialSustainability :Sustainability)
+
+# Class: :Stakeholder (:Stakeholder)
+
+SubClassOf(:Stakeholder :Actor)
+
+# Class: :StatusOfHomes (:StatusOfHomes)
+
+SubClassOf(:StatusOfHomes :LifestyleDomain)
+
+# Class: :Thinking (:Thinking)
+
+SubClassOf(:Thinking :TransformedThing)
+
+# Class: :Transport (:Transport)
+
+SubClassOf(:Transport :LifestyleDomain)
+
+# Class: :WorkLifeBalance (:WorkLifeBalance)
+
+SubClassOf(:WorkLifeBalance :LifestyleDomain)
+
+# Class: :Workplace (:Workplace)
+
+SubClassOf(:Workplace :CaseStudy)
+
+
+SubObjectPropertyOf(ObjectPropertyChain(:transformationFrom :transformationTo) :transformation)
+)

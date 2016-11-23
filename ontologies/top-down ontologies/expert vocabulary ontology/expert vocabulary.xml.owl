@@ -13,7 +13,7 @@
         <rdfs:comment xml:lang="en">Note the conventions for this ontology are:
 
 The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
- 
+
 + classes begin with an upper case letter
 + object properties begin with a lower case letter
 + data properties begin with a lower case letter and are suffixed with -value unless the data value is boolean.

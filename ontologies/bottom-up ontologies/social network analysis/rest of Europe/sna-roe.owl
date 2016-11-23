@@ -1,0 +1,126 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe>
+Annotation(rdfs:comment "2016-09-14"^^xsd:date)
+Annotation(rdfs:comment "This ontology will act as the base ontology for Social Network Analysis for the following regions.
+
+Romania
+Spain
+Austria
+Germany
+Italy
+Netherlands"^^xsd:string)
+Annotation(rdfs:isDefinedBy <http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#author:DougSalt>)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(:Actor))
+Declaration(Class(:Citizenry))
+Declaration(Class(:CompanyOrEconomicNetwork))
+Declaration(Class(:Consumer))
+Declaration(Class(:EducationOrResearchOrConsulting))
+Declaration(Class(:Governance))
+Declaration(Class(:Initiative))
+Declaration(Class(:Media))
+Declaration(Class(:RegionalDevelopmentInitiative))
+Declaration(Class(:SocialCulturalInitiative))
+Declaration(Class(:SpatialElement))
+Declaration(Class(:SustainabilityInitiative))
+Declaration(ObjectProperty(:informationFlow))
+Declaration(ObjectProperty(:negativeFlow))
+Declaration(ObjectProperty(:relationship))
+Declaration(ObjectProperty(:supportFlow))
+Declaration(NamedIndividual(:author:DougSalt))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :informationFlow (:informationFlow)
+
+IrreflexiveObjectProperty(:informationFlow)
+
+# Object Property: :negativeFlow (:negativeFlow)
+
+IrreflexiveObjectProperty(:negativeFlow)
+
+# Object Property: :relationship (:relationship)
+
+SymmetricObjectProperty(:relationship)
+
+# Object Property: :supportFlow (:supportFlow)
+
+IrreflexiveObjectProperty(:supportFlow)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Citizenry (:Citizenry)
+
+SubClassOf(:Citizenry :Actor)
+
+# Class: :CompanyOrEconomicNetwork (Company or economic network)
+
+AnnotationAssertion(rdfs:label :CompanyOrEconomicNetwork "Company or economic network"^^xsd:string)
+SubClassOf(:CompanyOrEconomicNetwork :Actor)
+
+# Class: :Consumer (:Consumer)
+
+SubClassOf(:Consumer :Actor)
+
+# Class: :EducationOrResearchOrConsulting (Education, research or consulting)
+
+AnnotationAssertion(rdfs:label :EducationOrResearchOrConsulting "Education, research or consulting"^^xsd:string)
+SubClassOf(:EducationOrResearchOrConsulting :Actor)
+
+# Class: :Governance (:Governance)
+
+SubClassOf(:Governance :Actor)
+
+# Class: :Initiative (:Initiative)
+
+SubClassOf(:Initiative :Actor)
+
+# Class: :Media (:Media)
+
+SubClassOf(:Media :Actor)
+
+# Class: :RegionalDevelopmentInitiative (Regional development initiative)
+
+AnnotationAssertion(rdfs:label :RegionalDevelopmentInitiative "Regional development initiative"^^xsd:string)
+SubClassOf(:RegionalDevelopmentInitiative :Initiative)
+
+# Class: :SocialCulturalInitiative (Social-cultural initiative)
+
+AnnotationAssertion(rdfs:label :SocialCulturalInitiative "Social-cultural initiative"^^xsd:string)
+SubClassOf(:SocialCulturalInitiative :Initiative)
+
+# Class: :SpatialElement (Spatial element)
+
+AnnotationAssertion(rdfs:label :SpatialElement "Spatial element"^^xsd:string)
+SubClassOf(:SpatialElement :Actor)
+
+# Class: :SustainabilityInitiative (Sustainability initiative)
+
+AnnotationAssertion(rdfs:label :SustainabilityInitiative "Sustainability initiative"^^xsd:string)
+SubClassOf(:SustainabilityInitiative :Initiative)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+
+)

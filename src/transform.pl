@@ -35,15 +35,16 @@ my $metadata_ontology;
 my $output;
 my $ontology_short_name;
 my $top_down_ontology;
+my $extant_individuals;
 my ($help,$reportVersion, $verbose);
 
-my $usage = "Usage: $0 -oiqsuwHIRV --interactive --output-to --initial-values --help --restore-walk --save-walk --update --verbose --version --word-groups doc_dir";
+my $usage = "Usage: $0 -mosHDTV --metadata-ontology --output-to --ontology-short-name --help --top-down-ontology --help --verbose --version";
 
 die $usage unless
     GetOptions(
                "metadata-ontology|m:s" => \$metadata_ontology,
                "output-to|o:s" => \$output,
-               "ontology-short-name|n:s" => \$ontology_short_name,
+               "ontology-short-name|s:s" => \$ontology_short_name,
                "top-down-ontology|T" => \$top_down_ontology,
                "help|H" => \$help,
                "verbose|D" => \$verbose,
@@ -79,18 +80,36 @@ else {
         $OUTPUT = *STDOUT;
 }
 
+my ($ontology, $new_ontology);
+my %entities;
+my %extant;
+
 while (my $record = <$INPUT>) {
         if ($record =~  /^Ontology\(<(http:\/\/www\.glamurs\.eu\/ontolog(y|ies)\/2016\/(TBOX|ABOX)\/(.*)\/(.*))>/) {
-                my $ontology = $1;
+                $ontology = $1;
                 warn "Ontology type is $4, whereas parameters says $orientation"
                         if ($4 ne $orientation) ;
                 $ontology_short_name = $5 unless defined $ontology_short_name;
-                my $new_ontology = $ontology;
+                $new_ontology = $ontology;
                 $new_ontology  =~ s/(TBOX|ABOX)/KB/;
                 $new_ontology  =~ s/$ontology_short_name/kb-$ontology_short_name/;
                 #print "Ontology = $ontology\n";
                 #print "My short name = $ontology_short_name\n";
-                my $TOP = << "START";
+        }
+        elsif ($record =~ /Declaration\((Class|DataProperty|ObjectProperty)\(\:(.*)\)\)/) {
+                my $entity_type = lc($1);
+                next if $entity_type =~ /^owl\:/;
+                my $entity = $2;
+                next if $entity =~ /^owl\:/;
+				$entities{$entity} = $entity_type;
+        }
+	    elsif ($record =~ /Declaration\(NamedIndividual\(\:term\:(.*)\)\)/) {
+	    		$extant{$1} = 1;
+	    }
+
+}
+
+my $TOP = << "START";
 Prefix(:=<$new_ontology#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -107,21 +126,23 @@ Import(<$ontology>)
 Annotation(metadata:creator metadata:author:DougSalt)
 
 START
-                print $OUTPUT $TOP;
-        }
-        elsif ($record =~ /Declaration\((Class|DataProperty|ObjectProperty)\((.*)\)\)/) {
-                my $entity_type = lc($1);
-                my $entity = $2;
-                print $OUTPUT "Declaration(NamedIndividual(:term$entity))\n";
-                print $OUTPUT "AnnotationAssertion(metadata:describes :term$entity $ontology_short_name$entity)\n";
-                print $OUTPUT "ClassAssertion(metadata:Term :term$entity)\n";
-                print $OUTPUT "ObjectPropertyAssertion(metadata:isOntologicalEntity :term$entity metadata:ontology:$entity_type)\n";
-                print $OUTPUT "AnnotationAssertion(rdfs:seeAlso $ontology_short_name$entity :term$entity)\n\n";
-        }
 
+print $OUTPUT $TOP;
+for my $entity (keys %entities) {
+				my $entity_type = $entities{$entity};
+                if ($extant{$entity}) {
+                	print $OUTPUT "AnnotationAssertion(metadata:describes $ontology_short_name:term:$entity $ontology_short_name:$entity)\n";
+                	print $OUTPUT "ObjectPropertyAssertion(metadata:isOntologicalEntity $ontology_short_name:term:$entity metadata:ontology:$entity_type)\n";
+                } else { 
+                	print $OUTPUT "Declaration(NamedIndividual(:term$entity))\n";
+                	print $OUTPUT "AnnotationAssertion(metadata:describes :term:$entity $ontology_short_name:$entity)\n";
+                	print $OUTPUT "ClassAssertion(metadata:Term :term:$entity)\n";
+                	print $OUTPUT "ObjectPropertyAssertion(metadata:isOntologicalEntity :term:$entity metadata:ontology:$entity_type)\n";
+                	print $OUTPUT "AnnotationAssertion(rdfs:seeAlso $ontology_short_name:$entity :term:$entity)\n";
+                }
+                print $OUTPUT "\n";
 
 }
-
 print $OUTPUT ")\n";
 
 close $OUTPUT;

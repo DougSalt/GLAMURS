@@ -17,7 +17,6 @@ Annotation(rdfs:comment "2016-10-26"^^xsd:date)
 Annotation(rdfs:comment "This is the integration ontology which will map the star pattern for the overall ontology. This enforces (if you don't select the underlying basic vocabulary) the direction of any use of the integration vocabulary (if the reasoner is selected that validates domains and codomains)."@en)
 Annotation(owl:versionInfo "1.0"^^xsd:decimal)
 
-Declaration(Class(metadata:OntologyShortName))
 Declaration(Class(:BottomUpOntology))
 Declaration(Class(:BottomUpOntologyClass))
 Declaration(Class(:BottomUpTerm))
@@ -31,9 +30,9 @@ Declaration(ObjectProperty(:gammaNumericallyRepresents))
 Declaration(ObjectProperty(:gammaRepresents))
 Declaration(ObjectProperty(:gammaStronglyRepresents))
 Declaration(ObjectProperty(:gammaWeaklyRepresents))
-Declaration(ObjectProperty(:hasBottomDownOntologicalProperty))
+Declaration(ObjectProperty(:hasBottomUpOntologyProperty))
 Declaration(ObjectProperty(:hasOntologicalOrientation))
-Declaration(ObjectProperty(:hasTopDownOntologicalProperty))
+Declaration(ObjectProperty(:hasTopDownOntologyProperty))
 Declaration(ObjectProperty(:isSemanticallyRelatedTo))
 Declaration(ObjectProperty(:sigmaLogicallyRepresents))
 Declaration(ObjectProperty(:sigmaMeasures))
@@ -43,7 +42,6 @@ Declaration(ObjectProperty(:sigmaStronglyRepresents))
 Declaration(ObjectProperty(:sigmaWeaklyRepresents))
 Declaration(DataProperty(:hasBottomUpOntologyDataProperty))
 Declaration(DataProperty(:hasTopDownOntologyDataProperty))
-Declaration(NamedIndividual(:star))
 Declaration(NamedIndividual(:bottomUp:ontology))
 Declaration(NamedIndividual(:topDown:ontology))
 Declaration(AnnotationProperty(swrla:isRuleEnabled))
@@ -52,71 +50,87 @@ Declaration(AnnotationProperty(swrla:isRuleEnabled))
 #   Object Properties
 ############################
 
-# Object Property: :gammaLogicallyRepresents (:gammaLogicallyRepresents)
+# Object Property: :gammaLogicallyRepresents (γ-logically-represents)
 
+AnnotationAssertion(rdfs:label :gammaLogicallyRepresents "γ-logically-represents"@en)
 SubObjectPropertyOf(:gammaLogicallyRepresents :gammaStronglyRepresents)
 
-# Object Property: :gammaMeasures (:gammaMeasures)
+# Object Property: :gammaMeasures (γ-measures)
 
+AnnotationAssertion(rdfs:label :gammaMeasures "γ-measures"@en)
 SubObjectPropertyOf(:gammaMeasures :gammaNumericallyRepresents)
 
-# Object Property: :gammaNumericallyRepresents (:gammaNumericallyRepresents)
+# Object Property: :gammaNumericallyRepresents (γ-numerically-represents)
 
+AnnotationAssertion(rdfs:label :gammaNumericallyRepresents "γ-numerically-represents"@en)
 SubObjectPropertyOf(:gammaNumericallyRepresents :gammaStronglyRepresents)
 
-# Object Property: :gammaRepresents (:gammaRepresents)
+# Object Property: :gammaRepresents (γ-represents)
 
+AnnotationAssertion(rdfs:label :gammaRepresents "γ-represents"@en)
 ObjectPropertyDomain(:gammaRepresents :BottomUpOntologyClass)
 ObjectPropertyRange(:gammaRepresents :TopDownOntologyClass)
 
-# Object Property: :gammaStronglyRepresents (:gammaStronglyRepresents)
+# Object Property: :gammaStronglyRepresents (γ-strongly-represents)
 
+AnnotationAssertion(rdfs:label :gammaStronglyRepresents "γ-strongly-represents"@en)
 SubObjectPropertyOf(:gammaStronglyRepresents :gammaRepresents)
 
-# Object Property: :gammaWeaklyRepresents (:gammaWeaklyRepresents)
+# Object Property: :gammaWeaklyRepresents (γ-weakly-represents)
 
+AnnotationAssertion(rdfs:label :gammaWeaklyRepresents "γ-weakly-represents"@en)
 SubObjectPropertyOf(:gammaWeaklyRepresents :gammaRepresents)
 
-# Object Property: :hasBottomDownOntologicalProperty (:hasBottomDownOntologicalProperty)
+# Object Property: :hasBottomUpOntologyProperty (has bottom-up ontology property)
 
-ObjectPropertyDomain(:hasBottomDownOntologicalProperty :BottomUpOntologyClass)
+AnnotationAssertion(rdfs:label :hasBottomUpOntologyProperty "has bottom-up ontology property"@en)
+ObjectPropertyDomain(:hasBottomUpOntologyProperty :BottomUpOntologyClass)
 
-# Object Property: :hasOntologicalOrientation (:hasOntologicalOrientation)
+# Object Property: :hasOntologicalOrientation (has ontological property)
 
+AnnotationAssertion(rdfs:label :hasOntologicalOrientation "has ontological property"@en)
 ObjectPropertyDomain(:hasOntologicalOrientation metadata:Term)
 ObjectPropertyRange(:hasOntologicalOrientation :OntologyOrientation)
 
-# Object Property: :hasTopDownOntologicalProperty (:hasTopDownOntologicalProperty)
+# Object Property: :hasTopDownOntologyProperty (has top-down ontology property)
 
-ObjectPropertyDomain(:hasTopDownOntologicalProperty :TopDownOntologyClass)
+AnnotationAssertion(rdfs:label :hasTopDownOntologyProperty "has top-down ontology property"@en)
+ObjectPropertyDomain(:hasTopDownOntologyProperty :TopDownOntologyClass)
 
-# Object Property: :isSemanticallyRelatedTo (:isSemanticallyRelatedTo)
+# Object Property: :isSemanticallyRelatedTo (is semantically related to)
 
+AnnotationAssertion(rdfs:label :isSemanticallyRelatedTo "is semantically related to"@en)
 SymmetricObjectProperty(:isSemanticallyRelatedTo)
 
-# Object Property: :sigmaLogicallyRepresents (:sigmaLogicallyRepresents)
+# Object Property: :sigmaLogicallyRepresents (σ-logically-represents)
 
+AnnotationAssertion(rdfs:label :sigmaLogicallyRepresents "σ-logically-represents"@en)
 SubObjectPropertyOf(:sigmaLogicallyRepresents :sigmaStronglyRepresents)
 
-# Object Property: :sigmaMeasures (:sigmaMeasures)
+# Object Property: :sigmaMeasures (σ-measures)
 
+AnnotationAssertion(rdfs:label :sigmaMeasures "σ-measures"@en)
 SubObjectPropertyOf(:sigmaMeasures :sigmaNumericallyRepresents)
 
-# Object Property: :sigmaNumericallyRepresents (:sigmaNumericallyRepresents)
+# Object Property: :sigmaNumericallyRepresents (σ-numerically-represents)
 
+AnnotationAssertion(rdfs:label :sigmaNumericallyRepresents "σ-numerically-represents"@en)
 SubObjectPropertyOf(:sigmaNumericallyRepresents :sigmaStronglyRepresents)
 
-# Object Property: :sigmaRepresents (:sigmaRepresents)
+# Object Property: :sigmaRepresents (σ-represents)
 
+AnnotationAssertion(rdfs:label :sigmaRepresents "σ-represents"@en)
 ObjectPropertyDomain(:sigmaRepresents :BottomUpOntologyClass)
 ObjectPropertyRange(:sigmaRepresents :TopDownOntologyClass)
 
-# Object Property: :sigmaStronglyRepresents (:sigmaStronglyRepresents)
+# Object Property: :sigmaStronglyRepresents (σ-strongly-represents)
 
+AnnotationAssertion(rdfs:label :sigmaStronglyRepresents "σ-strongly-represents"@en)
 SubObjectPropertyOf(:sigmaStronglyRepresents :sigmaRepresents)
 
-# Object Property: :sigmaWeaklyRepresents (:sigmaWeaklyRepresents)
+# Object Property: :sigmaWeaklyRepresents (σ-weakly-represents)
 
+AnnotationAssertion(rdfs:label :sigmaWeaklyRepresents "σ-weakly-represents"@en)
 SubObjectPropertyOf(:sigmaWeaklyRepresents :sigmaRepresents)
 
 
@@ -124,12 +138,14 @@ SubObjectPropertyOf(:sigmaWeaklyRepresents :sigmaRepresents)
 #   Data Properties
 ############################
 
-# Data Property: :hasBottomUpOntologyDataProperty (:hasBottomUpOntologyDataProperty)
+# Data Property: :hasBottomUpOntologyDataProperty (has bottom-up ontology data property)
 
+AnnotationAssertion(rdfs:label :hasBottomUpOntologyDataProperty "has bottom-up ontology data property"@en)
 DataPropertyDomain(:hasBottomUpOntologyDataProperty :BottomUpOntologyClass)
 
-# Data Property: :hasTopDownOntologyDataProperty (:hasTopDownOntologyDataProperty)
+# Data Property: :hasTopDownOntologyDataProperty (has top-down ontology data property)
 
+AnnotationAssertion(rdfs:label :hasTopDownOntologyDataProperty "has top-down ontology data property"@en)
 DataPropertyDomain(:hasTopDownOntologyDataProperty :TopDownOntologyClass)
 
 
@@ -170,10 +186,6 @@ SubClassOf(:TopDownTerm metadata:Term)
 ############################
 #   Named Individuals
 ############################
-
-# Individual: :star (:star)
-
-ClassAssertion(metadata:OntologyShortName :star)
 
 # Individual: :bottomUp:ontology (:bottomUp:ontology)
 

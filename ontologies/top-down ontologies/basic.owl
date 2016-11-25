@@ -1,4 +1,4 @@
-Prefix(:=<http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic#>)
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,12 +6,12 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://www.glamurs.eu/ontology/2016/TBOX/top-down/basic>
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic>
 Annotation(rdfs:comment "2016-10-26"^^xsd:date)
 Annotation(rdfs:comment "This is one of serveral ontologies which will link all the ontologies in GLAMURS together, primarily in a star pattern through the top-down ontology. 
 
 This ontology will provide the vocabulary to link. Thus, this ontology will only consist of relationships and nothing else."@en)
-Annotation(rdfs:isDefinedBy <http://www.glamurs.eu/ontology/2016/TBOX/vocabulary#author:DougSalt>)
+Annotation(rdfs:isDefinedBy :author:DougSalt)
 Annotation(owl:versionInfo "1.0"^^xsd:decimal)
 
 Declaration(ObjectProperty(:creates))

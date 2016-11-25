@@ -1,4 +1,4 @@
-Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative#>)
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initiative#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initative>
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/initiative>
 Annotation(rdfs:comment "2016-07-09"^^xsd:date)
 Annotation(rdfs:isDefinedBy :author:DougSalt)
 Annotation(owl:versionInfo "1.0"^^xsd:decimal)
@@ -118,7 +118,7 @@ Declaration(Class(:RelevantEducation))
 Declaration(Class(:RelevantExperience))
 Declaration(Class(:RelevantTraning))
 Declaration(Class(:ResdienceInRelationToWorkPlace))
-Declaration(Class(:RoleInInitative))
+Declaration(Class(:RoleIninitiative))
 Declaration(Class(:SocialAndPersonalBackground))
 Declaration(Class(:SocialImpact))
 Declaration(Class(:SocialPeerPressure))
@@ -129,7 +129,7 @@ Declaration(Class(:TimeManagementIssue))
 Declaration(Class(:TimeRelatedBehaviour))
 Declaration(Class(:TimeScarcity))
 Declaration(Class(:TimeStress))
-Declaration(Class(:TimeUsedForTheInitative))
+Declaration(Class(:TimeUsedForTheinitiative))
 Declaration(Class(:UnavailableLand))
 Declaration(Class(:UnitOfTime))
 Declaration(Class(:Value))
@@ -519,7 +519,7 @@ SubClassOf(:EffectOnCopingWithConflictDueToInitiative :ImpactOnLifestyleDueToIni
 
 # Class: :EffectOnLifestyleDueToInitiative (Lifestyle effect due to initiative)
 
-AnnotationAssertion(rdfs:label :EffectOnLifestyleDueToInitiative "An increase in conflict due to the initative"^^xsd:string)
+AnnotationAssertion(rdfs:label :EffectOnLifestyleDueToInitiative "An increase in conflict due to the initiative"^^xsd:string)
 AnnotationAssertion(rdfs:label :EffectOnLifestyleDueToInitiative "Lifestyle effect due to initiative"^^xsd:string)
 SubClassOf(:EffectOnLifestyleDueToInitiative :ImpactOnLifestyleDueToInitiative)
 
@@ -818,10 +818,10 @@ SubClassOf(:RelevantTraning :EducationOrExperience)
 AnnotationAssertion(rdfs:label :ResdienceInRelationToWorkPlace "Relation of residence to work place"^^xsd:string)
 SubClassOf(:ResdienceInRelationToWorkPlace :PersonalAspect)
 
-# Class: :RoleInInitative (Role in the initiative)
+# Class: :RoleIninitiative (Role in the initiative)
 
-AnnotationAssertion(rdfs:label :RoleInInitative "Role in the initiative"^^xsd:string)
-SubClassOf(:RoleInInitative :AspectOfEngagementInInitiative)
+AnnotationAssertion(rdfs:label :RoleIninitiative "Role in the initiative"^^xsd:string)
+SubClassOf(:RoleIninitiative :AspectOfEngagementInInitiative)
 
 # Class: :SocialAndPersonalBackground (Social and personal background)
 
@@ -872,10 +872,10 @@ SubClassOf(:TimeScarcity :TimeRelatedBehaviour)
 AnnotationAssertion(rdfs:label :TimeStress "Time stress"^^xsd:string)
 SubClassOf(:TimeStress :TimeRelatedBehaviour)
 
-# Class: :TimeUsedForTheInitative (Time used for the initiative)
+# Class: :TimeUsedForTheinitiative (Time used for the initiative)
 
-AnnotationAssertion(rdfs:label :TimeUsedForTheInitative "Time used for the initiative"^^xsd:string)
-SubClassOf(:TimeUsedForTheInitative :AspectOfEngagementInInitiative)
+AnnotationAssertion(rdfs:label :TimeUsedForTheinitiative "Time used for the initiative"^^xsd:string)
+SubClassOf(:TimeUsedForTheinitiative :AspectOfEngagementInInitiative)
 
 # Class: :UnavailableLand (Unavailable land)
 

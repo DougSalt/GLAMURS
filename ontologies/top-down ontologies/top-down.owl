@@ -1,0 +1,390 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(basic:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic#>)
+Prefix(expert:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert#>)
+Prefix(glamurs:=<http://www.glamurs.eu/ontologies/glamurs-WS20140131.owl#>)
+Prefix(core:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/core#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/KB/metadata#>)
+Prefix(questionnaire:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#>)
+Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(kb-core:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-core#>)
+Prefix(kb-expert:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-expert#>)
+Prefix(kb-questionnaire:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-questionnaire#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down>
+Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-expert>)
+Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-core>)
+Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-questionnaire>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic>)
+
+Annotation(rdfs:comment "Note the conventions for this ontology are:
+
+The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
+ 
++ classes begin with an upper case letter
++ object properties begin with a lower case letter
++ data properties begin with a lower case letter and are suffixed with -value unless the data value is boolean.
++ data properties and object properties being with has unless another verb makes better sense.
++ individuals generally begin with a lowercase letter, unless it is a proper name
+
+Note these conventions relate to the underlying entity and not what is shown as its name in ProtÃ©gÃ© (which is normally the value of the label for whatever default the language is set to).
+
++ a label must be provided (usually with a language specification) and should be make sense in the language of choice
+
+Markdown will be used in all text."@en)
+Annotation(rdfs:comment "This takes the original ontology from the description of work and combines with several other top down ontologies. In particular:
+
++ The expert terms ontology.
++ The on-line questionnaire ontology"@en)
+Annotation(rdfs:isDefinedBy :author:DougSalt)
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(NamedIndividual(:author:DougSalt))
+Declaration(NamedIndividual(basic:author:DougSalt))
+Declaration(AnnotationProperty(questionnaire:environmentalOrSustainabilityConcern))
+
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: questionnaire:environmentalOrSustainabilityConcern (environmental concern or sustainability concern)
+
+AnnotationPropertyDomain(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:environmentalOrSustainabilityConcern questionnaire:Person)
+
+
+############################
+#   Classes
+############################
+
+# Class: core:Actor (core:Actor)
+
+EquivalentClasses(core:Actor expert:Actor)
+EquivalentClasses(core:Actor questionnaire:Actor)
+SubClassOf(core:Actor ObjectSomeValuesFrom(basic:uses questionnaire:Interaction))
+
+# Class: core:EconomicSustainability (core:EconomicSustainability)
+
+SubClassOf(core:EconomicSustainability ObjectSomeValuesFrom(top-down-common:isPropertyOf questionnaire:Economy))
+
+# Class: core:EnergyUseInHomes (core:EnergyUseInHomes)
+
+SubClassOf(core:EnergyUseInHomes expert:EnergyUse)
+
+# Class: core:EnvironmentalSustainability (core:EnvironmentalSustainability)
+
+SubClassOf(core:EnvironmentalSustainability ObjectSomeValuesFrom(top-down-common:isPropertyOf expert:Environment))
+
+# Class: core:Food (core:Food)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Food ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Person))
+
+# Class: core:IndividualSustainability (core:IndividualSustainability)
+
+SubClassOf(core:IndividualSustainability ObjectSomeValuesFrom(top-down-common:isPropertyOf questionnaire:Person))
+
+# Class: core:Knowledge (core:Knowledge)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Knowledge ObjectSomeValuesFrom(basic:isModifedBy expert:KnowledgeAcquisition))
+
+# Class: core:LifestyleDomain (core:LifestyleDomain)
+
+SubClassOf(core:LifestyleDomain ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Actor))
+
+# Class: core:Nation (core:Nation)
+
+SubClassOf(core:Nation expert:Place)
+
+# Class: core:Policymaker (core:Policymaker)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Policymaker questionnaire:Person)
+
+# Class: core:Project (core:Project)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) core:Project ObjectSomeValuesFrom(basic:uses core:Researcher))
+
+# Class: core:Region (core:Region)
+
+EquivalentClasses(core:Region expert:Region)
+SubClassOf(core:Region expert:Place)
+
+# Class: core:Researcher (core:Researcher)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Researcher questionnaire:Person)
+
+# Class: core:Thinking (core:Thinking)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Thinking top-down-common:Process)
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Thinking ObjectUnionOf(ObjectSomeValuesFrom(basic:isModifedBy expert:KnowledgeAcquisition) ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Experience) ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Theory)))
+
+# Class: core:Transformation (core:Transformation)
+
+EquivalentClasses(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Transformation questionnaire:Transition)
+
+# Class: core:Transport (core:Transport)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Transport ObjectSomeValuesFrom(basic:isUsedBy expert:Travel))
+
+# Class: :Satisfaction (:Satisfaction)
+
+AnnotationAssertion(rdfs:isDefinedBy :Satisfaction :author:DougSalt)
+SubClassOf(:Satisfaction top-down-common:SuggestedClass)
+
+# Class: expert:Actor (Actor)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Actor ObjectSomeValuesFrom(basic:partOf core:Project))
+
+# Class: expert:BehaviourChange (Behaviour change)
+
+SubClassOf(expert:BehaviourChange ObjectSomeValuesFrom(basic:partOf expert:LifestyleChange))
+
+# Class: expert:CapabilityApproach (Capability approach)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:CapabilityApproach questionnaire:Theory)
+
+# Class: expert:Country (Country)
+
+SubClassOf(expert:Country questionnaire:Agent)
+
+# Class: expert:CriticalAnalysis (Critical analysis)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:CriticalAnalysis core:Thinking)
+
+# Class: expert:Decision (Decision)
+
+EquivalentClasses(expert:Decision questionnaire:DecisionMaking)
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:Decision ObjectSomeValuesFrom(basic:wasCreatedBy questionnaire:Individual))
+
+# Class: expert:EconomicOutput (Economic output)
+
+SubClassOf(expert:EconomicOutput ObjectSomeValuesFrom(basic:requires questionnaire:Economy))
+
+# Class: expert:Economy (Economy)
+
+SubClassOf(expert:Economy ObjectSomeValuesFrom(basic:uses expert:EconomicSystem))
+
+# Class: expert:Energy (Energy)
+
+SubClassOf(expert:Energy ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Actor))
+
+# Class: expert:Environment (Environment)
+
+SubClassOf(expert:Environment ObjectSomeValuesFrom(basic:hasPart questionnaire:Ecosystem))
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Environment ObjectSomeValuesFrom(basic:isModifedBy expert:EnvironmentalImpact))
+
+# Class: expert:Experience (expert:Experience)
+
+EquivalentClasses(expert:Experience questionnaire:Experience)
+SubClassOf(expert:Experience ObjectSomeValuesFrom(basic:creates core:Knowledge))
+
+# Class: expert:FocusGroup (Focus group)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:FocusGroup questionnaire:Collective)
+
+# Class: expert:Government (Government)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:Government expert:Actor)
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Government ObjectSomeValuesFrom(basic:hasPart questionnaire:Governance))
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Government ObjectSomeValuesFrom(basic:partOf expert:Country))
+
+# Class: expert:GreenGrowth (Green growth)
+
+SubClassOf(expert:GreenGrowth ObjectSomeValuesFrom(basic:partOf expert:EconomicSystem))
+
+# Class: expert:Interaction (Interaction)
+
+SubClassOf(expert:Interaction ObjectSomeValuesFrom(basic:creates questionnaire:Experience))
+
+# Class: expert:KnowledgeAcquisition (expert:KnowledgeAcquisition)
+
+SubClassOf(expert:KnowledgeAcquisition ObjectSomeValuesFrom(basic:modifies core:Knowledge))
+
+# Class: expert:LifeSatisfaction (Life satisfaction)
+
+SubClassOf(expert:LifeSatisfaction :Satisfaction)
+
+# Class: expert:LifestyleChange (Lifestyle change)
+
+SubClassOf(expert:LifestyleChange ObjectSomeValuesFrom(basic:modifies core:LifestyleDomain))
+
+# Class: expert:Mood (Mood)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Mood ObjectSomeValuesFrom(basic:isModifedBy core:WorkLifeBalance))
+
+# Class: expert:NetworkAnalysis (Network analysis)
+
+SubClassOf(expert:NetworkAnalysis ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Theory))
+
+# Class: expert:Place (Place)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Place core:Geography)
+
+# Class: expert:PostiveFeedback (Positive feedback)
+
+SubClassOf(expert:PostiveFeedback questionnaire:Feedback)
+
+# Class: expert:Product (Product)
+
+SubClassOf(expert:Product ObjectSomeValuesFrom(basic:uses expert:SupplyChain))
+
+# Class: expert:PublicGood (Public good)
+
+SubClassOf(expert:PublicGood ObjectSomeValuesFrom(basic:isModifedBy top-down-common:Policy))
+
+# Class: expert:ReboundEffect (Rebound effect)
+
+EquivalentClasses(expert:ReboundEffect questionnaire:ReboundEffect)
+
+# Class: expert:SelfReflection (expert:SelfReflection)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:SelfReflection core:Thinking)
+
+# Class: expert:SocialIdentityTheory (Social identity theory)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:SocialIdentityTheory questionnaire:Theory)
+
+# Class: expert:SocialNetwork (Social network)
+
+SubClassOf(expert:SocialNetwork expert:SocialNetwork)
+SubClassOf(expert:SocialNetwork questionnaire:Network)
+SubClassOf(expert:SocialNetwork ObjectSomeValuesFrom(top-down-common:hasProperty core:SocialSustainability))
+
+# Class: expert:Society (Society)
+
+SubClassOf(expert:Society ObjectSomeValuesFrom(basic:modifies core:SocialSustainability))
+
+# Class: expert:Space (Space)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:Space core:Geography)
+
+# Class: expert:Stakeholder (Stakeholder)
+
+SubClassOf(expert:Stakeholder core:Actor)
+
+# Class: expert:TravelBehaviour (Travel behaviour)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:TravelBehaviour questionnaire:Behaviour)
+
+# Class: questionnaire:Behaviour (Behaviour)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(basic:isModifedBy core:Knowledge))
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(basic:isModifedBy core:Thinking))
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(basic:isModifedBy expert:BehaviourChange))
+
+# Class: questionnaire:BehaviouralPotential (Behavioural potential)
+
+SubClassOf(questionnaire:BehaviouralPotential ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Learning))
+
+# Class: questionnaire:CollectiveThinking (Collective thinking)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:CollectiveThinking core:Thinking)
+
+# Class: questionnaire:Commuter (Commuter)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Commuter questionnaire:Person)
+
+# Class: questionnaire:Construct (Construct)
+
+SubClassOf(questionnaire:Construct ObjectSomeValuesFrom(basic:partOf questionnaire:Theory))
+
+# Class: questionnaire:CriticalMass (Critical mass)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:CriticalMass ObjectSomeValuesFrom(basic:partOf questionnaire:Theory))
+
+# Class: questionnaire:Degrowth (Degrowth)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Degrowth expert:GreenGrowth)
+
+# Class: questionnaire:Ecosystem (Ecosystem)
+
+SubClassOf(questionnaire:Ecosystem ObjectSomeValuesFrom(basic:modifies expert:Environment))
+SubClassOf(questionnaire:Ecosystem ObjectSomeValuesFrom(basic:requires expert:Environment))
+
+# Class: questionnaire:Footprint (Footprint)
+
+SubClassOf(questionnaire:Footprint ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Agent))
+
+# Class: questionnaire:GrassrootsMovement (Grassroots movement)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:GrassrootsMovement questionnaire:Collective)
+
+# Class: questionnaire:InformationProcessing (Information processing)
+
+SubClassOf(questionnaire:InformationProcessing ObjectSomeValuesFrom(basic:uses questionnaire:Information))
+
+# Class: questionnaire:Item (Item)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Item ObjectSomeValuesFrom(basic:partOf questionnaire:Theory))
+
+# Class: questionnaire:Learning (Learning)
+
+SubClassOf(questionnaire:Learning ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Attention))
+
+# Class: questionnaire:Model (Model)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Model ObjectSomeValuesFrom(basic:isModifedBy questionnaire:ModelAccuracy))
+
+# Class: questionnaire:PathAnalysis (Path analysis)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:PathAnalysis questionnaire:Theory)
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:PathAnalysis ObjectSomeValuesFrom(basic:hasPart questionnaire:PathCoefficient))
+
+# Class: questionnaire:Person (questionnaire:Person)
+
+SubClassOf(questionnaire:Person ObjectSomeValuesFrom(basic:hasProperty :Satisfaction))
+
+# Class: questionnaire:Policy (questionnaire:Policy)
+
+SubClassOf(questionnaire:Policy ObjectSomeValuesFrom(basic:isModifedBy core:Policymaker))
+
+# Class: questionnaire:SelfPerception (Self perception)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:SelfPerception core:Knowledge)
+
+# Class: questionnaire:SpillOver (Spill-over)
+
+SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:SpillOver questionnaire:Theory)
+
+# Class: questionnaire:Theory (Theory)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Theory ObjectUnionOf(ObjectSomeValuesFrom(top-down-common:isPropertyOf core:Transformation) ObjectSomeValuesFrom(basic:isUsedBy core:Researcher)))
+
+# Class: questionnaire:Vision (Vision)
+
+SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Vision core:Thinking)
+
+# Class: top-down-common:Institution (Institution)
+
+SubClassOf(top-down-common:Institution expert:Actor)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
+
+# Individual: basic:author:DougSalt (Doug Salt)
+
+AnnotationAssertion(rdfs:label basic:author:DougSalt "Doug Salt")
+
+
+AnnotationAssertion(rdfs:label core:hasContext "has context"@en)
+AnnotationAssertion(rdfs:label core:hasGeography "has geography"@en)
+AnnotationAssertion(rdfs:label core:hasKnowledge "has knowledge"@en)
+AnnotationAssertion(rdfs:label core:hasLifestyle "has lifestyle"@en)
+AnnotationAssertion(rdfs:label core:hasLifestyleDomain "has lifestyle domain"@en)
+AnnotationAssertion(rdfs:label core:hasSustainability "has sustainability"@en)
+AnnotationAssertion(rdfs:label core:hasThinking "has thinking"@en)
+AnnotationAssertion(rdfs:label core:transformation "transformation"@en)
+AnnotationAssertion(rdfs:label core:transformationFrom "transformation from"@en)
+AnnotationAssertion(rdfs:label core:transformationTo "transformation to"@en)
+AnnotationAssertion(rdfs:label core:usesKnowledge "uses knowledge"@en)
+AnnotationAssertion(rdfs:comment expert:SelfPerception "??")
+)

@@ -29,17 +29,27 @@ Declaration(AnnotationProperty(:origin))
 #   Annotation Properties
 ############################
 
-# Annotation Property: :creator (:creator)
+# Annotation Property: :creator (creator)
 
+AnnotationAssertion(rdfs:label :creator "creator"@en)
 AnnotationPropertyRange(:creator :OntologyCreator)
+
+# Annotation Property: :describes (describes)
+
+AnnotationAssertion(rdfs:label :describes "describes"@en)
+
+# Annotation Property: :origin (origin)
+
+AnnotationAssertion(rdfs:label :origin "origin"@en)
 
 
 ############################
 #   Object Properties
 ############################
 
-# Object Property: :isOntologicalEntity (:isOntologicalEntity)
+# Object Property: :isOntologicalEntity (is ontological entity)
 
+AnnotationAssertion(rdfs:label :isOntologicalEntity "is ontological entity"@en)
 ObjectPropertyDomain(:isOntologicalEntity :Term)
 ObjectPropertyRange(:isOntologicalEntity :OntologicalEntity)
 
@@ -49,6 +59,10 @@ ObjectPropertyRange(:isOntologicalEntity :OntologicalEntity)
 #   Classes
 ############################
 
+# Class: :MetaDatum (Metadatum)
+
+AnnotationAssertion(rdfs:label :MetaDatum "Metadatum"@en)
+
 # Class: :OntologicalClass (:OntologicalClass)
 
 SubClassOf(:OntologicalClass :OntologicalEntity)
@@ -57,20 +71,23 @@ SubClassOf(:OntologicalClass :OntologicalEntity)
 
 SubClassOf(:OntologicalDataProperty :OntologicalEntity)
 
-# Class: :OntologicalEntity (:OntologicalEntity)
+# Class: :OntologicalEntity (Ontological entity)
 
+AnnotationAssertion(rdfs:label :OntologicalEntity "Ontological entity"@en)
 SubClassOf(:OntologicalEntity :MetaDatum)
 
 # Class: :OntologicalObjectProperty (:OntologicalObjectProperty)
 
 SubClassOf(:OntologicalObjectProperty :OntologicalEntity)
 
-# Class: :OntologyCreator (:OntologyCreator)
+# Class: :OntologyCreator (Ontology creator)
 
+AnnotationAssertion(rdfs:label :OntologyCreator "Ontology creator"@en)
 SubClassOf(:OntologyCreator :MetaDatum)
 
-# Class: :Term (:Term)
+# Class: :Term (Term)
 
+AnnotationAssertion(rdfs:label :Term "Term"@en)
 SubClassOf(:Term :MetaDatum)
 
 

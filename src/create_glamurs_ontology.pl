@@ -116,6 +116,8 @@ print $OUTPUT "\n";
 print $OUTPUT "Ontology(<$ontology>\n";
 print $OUTPUT "Import(<http://www.glamurs.eu/ontologies/2016/TBOX/integration/star>)\n";
 
+my %individual;
+
 for my $doc (@ARGV) {
 	
 	open my $INPUT, "<", $doc
@@ -183,7 +185,10 @@ for my $doc (@ARGV) {
 			my $modded_prefix = $prefix;
  		    $modded_prefix =~ s/^/kb-/ if $modded_prefix !~ /^:/;
 			print $OUTPUT "Sub$ontology_type" . "Of($prefix:$term :" . $type->{$prefix}->{$ontology_type} . ")\n";			
-			print $OUTPUT "ObjectPropertyAssertion(star:hasOntologicalOrientation $modded_prefix:term:$term star:" . lcfirst($orientation) . ")\n"
+			# The if on the next statement is because unlike all the other component ontologies the expert and questionnaire ontologies have 
+			# already defined their terms (along with a lot of other meta data not available to the other kb-* ontologies).
+			# I do not like this hard coding, but I cannot currently think of a better way of doing this.
+			print $OUTPUT "ObjectPropertyAssertion(star:hasOntologicalOrientation $modded_prefix:term:$term star:" . lcfirst($orientation) . ":ontology)\n"
 				if $prefix ne "questionnaire" && $prefix ne "expert";			
 			print $OUTPUT "\n";
 		}			
@@ -192,8 +197,16 @@ for my $doc (@ARGV) {
 			print $OUTPUT "ClassAssertion(star:" . $orientation . "Term $prefix:term:$term)\n";
 			print $OUTPUT "ObjectPropertyAssertion(star:hasOntologicalOrientation $prefix:term:$term star:" . 
 				lcfirst($orientation) . ":ontology)\n";			
+			print $OUTPUT "\n";
+			$individual{"$prefix:term:$term"} = 1;			
+		}
+		elsif ( $record =~ /Declaration\(NamedIndividual\(\:(.*)\)\)/ ) {
+			my $term = $1;
+			print $OUTPUT "ClassAssertion(star:" . $orientation . "Term $prefix:$term)\n";
+			print $OUTPUT "ObjectPropertyAssertion(star:hasOntologicalOrientation $prefix:$term star:" . 
+				lcfirst($orientation) . ":ontology)\n";			
 			print $OUTPUT "\n";			
-
+			$individual{"$prefix:$term"} = 1;			
 		}
 	}
 	
@@ -223,10 +236,27 @@ if (@process_files > 0) {
 					my $range = $5;
 					my $relationship = $3;
 					my $domain = $2;
-					$range =~ s/:/:term:/;
-					$domain =~ s/:/:term:/;
-					$range =~ s/^/kb-/ unless $range =~ /^:/;
-					$domain =~ s/^/kb-/ unless $domain =~ /^:/;
+										
+					unless (defined $individual{$domain}) {
+						$domain =~ s/:/:term:/;
+						unless (defined $individual{$domain}) {
+							$domain =~ s/^/kb-/
+						}
+					}
+						
+					unless (defined $individual{$range}) {
+						$range =~ s/:/:term:/;
+						unless (defined $individual{$range}) {
+							$range =~ s/^/kb-/
+						}
+					}
+					#$range =~ s/:/:term:/;
+					#$domain =~ s/:/:term:/;
+					# The if on the next two statements is because unlike all the other component ontologies the expert and questionnaire ontologies have 
+					# already defined their terms (along with a lot of other meta data not available to the other kb-* ontologies).
+					# I do not like this hard coding, but I cannot currently think of a better way of doing this.
+					#$domain =~ s/^/kb-/ unless $domain =~ /^:/ or $domain =~ /^expert:/ or $domain =~ /^questionnaire:/;
+					#$range =~ s/^/kb-/ unless $range =~ /^:/ or $range =~ /^expert:/ or $range =~ /^questionnaire:/;
 					print "ObjectPropertyAssertion(star:$relationship $domain $range)\n";
 					print $OUTPUT "ObjectPropertyAssertion(star:$relationship $domain $range)\n";
 				}

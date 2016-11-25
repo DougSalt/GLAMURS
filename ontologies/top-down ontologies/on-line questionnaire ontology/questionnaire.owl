@@ -117,6 +117,7 @@ Declaration(Class(:Transition))
 Declaration(Class(:Unemployment))
 Declaration(Class(:Vision))
 Declaration(Class(:VoluntarySimplicity))
+Declaration(Class(:WellBeing))
 Declaration(Class(:Will))
 Declaration(Class(:WillOfInitiativeOrganizers))
 Declaration(Class(:Worker))
@@ -145,7 +146,9 @@ Declaration(NamedIndividual(:term:AdaptiveBelief))
 Declaration(NamedIndividual(:term:Agent))
 Declaration(NamedIndividual(:term:BackCasting))
 Declaration(NamedIndividual(:term:Behaviour))
+Declaration(NamedIndividual(:term:CircularEconomy))
 Declaration(NamedIndividual(:term:Commuter))
+Declaration(NamedIndividual(:term:Construct))
 Declaration(NamedIndividual(:term:CriticalMass))
 Declaration(NamedIndividual(:term:Degrowth))
 Declaration(NamedIndividual(:term:Governance))
@@ -158,7 +161,9 @@ Declaration(NamedIndividual(:term:Lifestyle))
 Declaration(NamedIndividual(:term:Model))
 Declaration(NamedIndividual(:term:PathAnalysis))
 Declaration(NamedIndividual(:term:PathCoefficient))
+Declaration(NamedIndividual(:term:PersonalUncertainty))
 Declaration(NamedIndividual(:term:Policy))
+Declaration(NamedIndividual(:term:ReboundEffect))
 Declaration(NamedIndividual(:term:Risk))
 Declaration(NamedIndividual(:term:SpillOver))
 Declaration(NamedIndividual(:term:TiPaC))
@@ -168,15 +173,11 @@ Declaration(NamedIndividual(:term:Vision))
 Declaration(NamedIndividual(:term:VoluntarySimplicity))
 Declaration(NamedIndividual(:term:altruism))
 Declaration(NamedIndividual(:term:attitude))
-Declaration(NamedIndividual(:term:CircularEconomy))
-Declaration(NamedIndividual(:term:Construct))
 Declaration(NamedIndividual(:term:environmentalFootprint))
 Declaration(NamedIndividual(:term:environmentalOrSustainabilityConcern))
 Declaration(NamedIndividual(:term:futureVision))
 Declaration(NamedIndividual(:term:greenLifestyle))
-Declaration(NamedIndividual(:term:PersonalUncertainty))
 Declaration(NamedIndividual(:term:psychologicalWellBeing))
-Declaration(NamedIndividual(:term:ReboundEffect))
 Declaration(NamedIndividual(:term:scenario))
 Declaration(NamedIndividual(:term:simulates))
 Declaration(NamedIndividual(:term:socialPractice))
@@ -184,6 +185,8 @@ Declaration(NamedIndividual(:term:sufficiency))
 Declaration(NamedIndividual(:term:upscaling))
 Declaration(NamedIndividual(:term:valueActionGap))
 Declaration(NamedIndividual(:term:wellBeing))
+Declaration(AnnotationProperty(owl:minCardinality))
+Declaration(AnnotationProperty(owl:minQualifiedCardinality))
 
 ############################
 #   Object Properties
@@ -222,6 +225,8 @@ ObjectPropertyDomain(:organizes :Person)
 AnnotationAssertion(rdfs:label :psychologicalWellBeing "pychological well-being"@en)
 AnnotationAssertion(rdfs:seeAlso :psychologicalWellBeing :term:psychologicalWellBeing)
 SubObjectPropertyOf(:psychologicalWellBeing top-down-common:hasSuggestedProperty)
+ObjectPropertyDomain(:psychologicalWellBeing :Person)
+ObjectPropertyRange(:psychologicalWellBeing :WellBeing)
 
 # Object Property: :simulates (simulates)
 
@@ -513,8 +518,8 @@ SubClassOf(:Ecocide top-down-common:SuggestedProcess)
 # Class: :Economy (Economy)
 
 AnnotationAssertion(rdfs:label :Economy "Economy"@en)
-AnnotationAssertion(rdfs:seeAlso :Economy :term:Transition)
 AnnotationAssertion(rdfs:seeAlso :Economy :term:CircularEconomy)
+AnnotationAssertion(rdfs:seeAlso :Economy :term:Transition)
 SubClassOf(:Economy top-down-common:SuggestedClass)
 
 # Class: :Ecosystem (Ecosystem)
@@ -884,6 +889,10 @@ AnnotationAssertion(rdfs:label :VoluntarySimplicity "Voluntary simplicity"@en)
 AnnotationAssertion(rdfs:seeAlso :VoluntarySimplicity :term:VoluntarySimplicity)
 SubClassOf(:VoluntarySimplicity top-down-common:Process)
 
+# Class: :WellBeing (:WellBeing)
+
+SubClassOf(:WellBeing top-down-common:SuggestedClass)
+
 # Class: :Will (Will)
 
 AnnotationAssertion(rdfs:label :Will "Will"@en)
@@ -947,12 +956,30 @@ AnnotationAssertion(rdfs:isDefinedBy :term:Behaviour top-down-common:UNIROMA3)
 AnnotationAssertion(rdfs:label :term:Behaviour "Behaviour"@en)
 ClassAssertion(top-down-common:Term :term:Behaviour)
 
+# Individual: :term:CircularEconomy (Circular economy)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:discipline:economics)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:discipline:industrialEcology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:term:business)
+AnnotationAssertion(rdfs:comment :term:CircularEconomy "A Circular Economy is an economic and industrial system where material loops are closed and value creation is aimed for at every chain in the system."@en)
+AnnotationAssertion(rdfs:isDefinedBy :term:CircularEconomy top-down-common:TUD)
+AnnotationAssertion(rdfs:label :term:CircularEconomy "Circular economy"@en)
+ClassAssertion(top-down-common:Term :term:CircularEconomy)
+
 # Individual: :term:Commuter (Commuter)
 
 AnnotationAssertion(rdfs:comment :term:Commuter "A commuter is someone who lives 'sufficiently far' from work that they generally use a form of transport other than walking to get there and back.")
 AnnotationAssertion(rdfs:isDefinedBy :term:Commuter top-down-common:JHI)
 AnnotationAssertion(rdfs:label :term:Commuter "Commuter"@en)
 ClassAssertion(top-down-common:Term :term:Commuter)
+
+# Individual: :term:Construct (Construct)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:Construct top-down-common:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:Construct top-down-common:OVGU)
+AnnotationAssertion(rdfs:isDefinedBy :term:Construct top-down-common:UFZ)
+AnnotationAssertion(rdfs:label :term:Construct "Construct"@en)
+ClassAssertion(top-down-common:Term :term:Construct)
 
 # Individual: :term:CriticalMass (Critical mass)
 
@@ -1066,6 +1093,15 @@ AnnotationAssertion(rdfs:label :term:PathCoefficient "Path coefficient"@en)
 ClassAssertion(top-down-common:Term :term:PathCoefficient)
 ClassAssertion(top-down-common:TerminatedQuestionnaire :term:PathCoefficient)
 
+# Individual: :term:PersonalUncertainty (Personal uncertainty)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:PersonalUncertainty top-down-common:discipline:socialPsychology)
+AnnotationAssertion(rdfs:comment :term:PersonalUncertainty "Uncertainty about  the  future  is a ubiquitous human  predicament. Because our  lives involve  endless decisions and  choices, we  need  an appreciable degree  of  subjective certainty to move forward. UMM Uncertainty Management Model  (Van  den Bos, 2009; Van  den Bos & Lind,  2002)  focuses on how  people manage feelings  of personal uncertainty by defending their worldview and cognitively manipulating their perceptions of social justice. An underlying assumption of UMM is that people are \"existential meaning makers\" and that personal uncertainty, defined as a \"subjective sense of doubt or instability in self-views, worldviews, or the inter-relation  between the two\"  (Van  den Bos, 2009, p. 198), constitutes an important threat to the meaning  of existence and is therefore experienced as a highly aversive emotional state. Research based on the UMM has shown that  uncertainty salience  intensifies people's negative  reactions to other  people or to events that  violate  their  cultural  worldview (Van  den  Bos,  van Ameijde, & van Gorp,2006)"@en)
+AnnotationAssertion(rdfs:isDefinedBy :term:PersonalUncertainty top-down-common:UNIROMA3)
+AnnotationAssertion(rdfs:label :term:PersonalUncertainty "Personal uncertainty"@en)
+ClassAssertion(top-down-common:MissingDefinitions :term:PersonalUncertainty)
+ClassAssertion(top-down-common:TerminatedQuestionnaire :term:PersonalUncertainty)
+
 # Individual: :term:Policy (Policy)
 
 AnnotationAssertion(top-down-common:partOfDiscipline :term:Policy top-down-common:discipline:ethics)
@@ -1076,6 +1112,18 @@ AnnotationAssertion(rdfs:isDefinedBy :term:Policy top-down-common:TUD)
 AnnotationAssertion(rdfs:isDefinedBy :term:Policy "Policy entails the plans, choices and actions of one or more administrative agencies that are oriented towards the management of a certain societal development."@en)
 AnnotationAssertion(rdfs:label :term:Policy "Policy"@en)
 ClassAssertion(top-down-common:Term :term:Policy)
+
+# Individual: :term:ReboundEffect (Rebound effect)
+
+AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:biology)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:energy)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:engineering)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:environmentalScience)
+AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:industrialEcology)
+AnnotationAssertion(rdfs:comment :term:ReboundEffect "is the reduction in expected gains from new technologies that increase the efficiency of resource use, because of behavioral or other systemic responses"@en)
+AnnotationAssertion(rdfs:isDefinedBy :term:ReboundEffect top-down-common:NTNU)
+AnnotationAssertion(rdfs:label :term:ReboundEffect "Rebound effect"@en)
+ClassAssertion(top-down-common:Term :term:ReboundEffect)
 
 # Individual: :term:Risk (Risk)
 
@@ -1154,24 +1202,6 @@ AnnotationAssertion(rdfs:isDefinedBy :term:attitude top-down-common:UNIROMA3)
 AnnotationAssertion(rdfs:label :term:attitude "Attitude"@en)
 ClassAssertion(top-down-common:Term :term:attitude)
 
-# Individual: :term:CircularEconomy (Circular economy)
-
-AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:discipline:economics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:discipline:industrialEcology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:term:business)
-AnnotationAssertion(rdfs:comment :term:CircularEconomy "A Circular Economy is an economic and industrial system where material loops are closed and value creation is aimed for at every chain in the system."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:CircularEconomy top-down-common:TUD)
-AnnotationAssertion(rdfs:label :term:CircularEconomy "Circular economy"@en)
-ClassAssertion(top-down-common:Term :term:CircularEconomy)
-
-# Individual: :term:Construct (Construct)
-
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Construct top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:Construct top-down-common:OVGU)
-AnnotationAssertion(rdfs:isDefinedBy :term:Construct top-down-common:UFZ)
-AnnotationAssertion(rdfs:label :term:Construct "Construct"@en)
-ClassAssertion(top-down-common:Term :term:Construct)
-
 # Individual: :term:environmentalFootprint (Environmental footprint)
 
 AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalFootprint top-down-common:discipline:economics)
@@ -1205,15 +1235,6 @@ AnnotationAssertion(rdfs:isDefinedBy :term:greenLifestyle top-down-common:JHI)
 AnnotationAssertion(rdfs:label :term:greenLifestyle "Green lifestyle"@en)
 ClassAssertion(top-down-common:Term :term:greenLifestyle)
 
-# Individual: :term:PersonalUncertainty (Personal uncertainty)
-
-AnnotationAssertion(top-down-common:partOfDiscipline :term:PersonalUncertainty top-down-common:discipline:socialPsychology)
-AnnotationAssertion(rdfs:comment :term:PersonalUncertainty "Uncertainty about  the  future  is a ubiquitous human  predicament. Because our  lives involve  endless decisions and  choices, we  need  an appreciable degree  of  subjective certainty to move forward. UMM Uncertainty Management Model  (Van  den Bos, 2009; Van  den Bos & Lind,  2002)  focuses on how  people manage feelings  of personal uncertainty by defending their worldview and cognitively manipulating their perceptions of social justice. An underlying assumption of UMM is that people are \"existential meaning makers\" and that personal uncertainty, defined as a \"subjective sense of doubt or instability in self-views, worldviews, or the inter-relation  between the two\"  (Van  den Bos, 2009, p. 198), constitutes an important threat to the meaning  of existence and is therefore experienced as a highly aversive emotional state. Research based on the UMM has shown that  uncertainty salience  intensifies people's negative  reactions to other  people or to events that  violate  their  cultural  worldview (Van  den  Bos,  van Ameijde, & van Gorp,2006)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:PersonalUncertainty top-down-common:UNIROMA3)
-AnnotationAssertion(rdfs:label :term:PersonalUncertainty "Personal uncertainty"@en)
-ClassAssertion(top-down-common:MissingDefinitions :term:PersonalUncertainty)
-ClassAssertion(top-down-common:TerminatedQuestionnaire :term:PersonalUncertainty)
-
 # Individual: :term:psychologicalWellBeing (Psychological well-being)
 
 AnnotationAssertion(top-down-common:partOfDiscipline :term:psychologicalWellBeing top-down-common:discipline:behaviouralScience)
@@ -1222,18 +1243,6 @@ AnnotationAssertion(rdfs:isDefinedBy :term:psychologicalWellBeing top-down-commo
 AnnotationAssertion(rdfs:label :term:psychologicalWellBeing "Psychological well-being"@en)
 ClassAssertion(top-down-common:Term :term:psychologicalWellBeing)
 SameIndividual(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :term:psychologicalWellBeing :term:wellBeing)
-
-# Individual: :term:ReboundEffect (Rebound effect)
-
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:biology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:energy)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:engineering)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:environmentalScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:industrialEcology)
-AnnotationAssertion(rdfs:comment :term:ReboundEffect "is the reduction in expected gains from new technologies that increase the efficiency of resource use, because of behavioral or other systemic responses"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:ReboundEffect top-down-common:NTNU)
-AnnotationAssertion(rdfs:label :term:ReboundEffect "Rebound effect"@en)
-ClassAssertion(top-down-common:Term :term:ReboundEffect)
 
 # Individual: :term:scenario (Scenario)
 

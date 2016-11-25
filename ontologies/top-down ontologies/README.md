@@ -14,3 +14,5 @@ The remaining parts are additional directories each containing an ontology as de
 + *glossary* - This directory contains an ontology listing all the terms in the initial glossary for the project that were actually used within the project. By this it is meant that some terms in the directory were not actually used through the project. This was measured by determining the frequency of the use of a given term, and if it is below a specified number then it is deemed not to be part of the project's ontology.
 + *high frequency terms* - These are the highest frequency single word terms and term of two or three words most used in the project, but not defined elsewhere. These probably represent the actual top-down ontology of the project. 
 + *on-line questionnaire* - This contains the ontology for all the responses to the on-line questionnaire not covered by the other categories listed in the top-down ontology directories. That is all the responses gathered before any directed attempt was made to obtain terminology specifically for the expert vocabulary ontology and the high frequency terms ontology. 
+
+

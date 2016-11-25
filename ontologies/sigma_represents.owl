@@ -1,0 +1,3 @@
+ObjectPropertyAssertion(star:sigmaMeasures kb-initiative:term:LifestyleSatisfactionImpact kb-expert:term:LifeSatisfaction)
+ObjectPropertyAssertion(star:sigmaRepresents kb-tsc:term:Utility kb-expert:term:LifeSatisfaction)
+ObjectPropertyAssertion(star:sigmaNumericallyRepresents kb-ubah:term:Utility kb-expert:term:LifeSatisfaction)

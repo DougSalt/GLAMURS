@@ -1,0 +1,15 @@
+# New Classes
+
+Declaration(Class(:RestOfEurope))
+Declaration(Class(:Scotland))
+Declaration(Class(:UnitedKingdom))
+
+SubClassOf(:Scotland :UnitedKingdom)
+SubClassOf(:RestOfEurope core:Region)
+SubClassOf(:UnitedKingdom core:Nation)
+
+Declaration(Class(:UkhlsOntologyHouseholdClass))
+Declaration(Class(:UkhlsOntologyPersonClass))
+
+SubClassOf(:UkhlsOntologyHouseholdClass :UkhlsOntologyClass)
+SubClassOf(:UkhlsOntologyPersonClass :UkhlsOntologyClass)

@@ -13,7 +13,7 @@ Import(<http://www.glamurs.eu/ontologies/2016/KB/metadata>)
 Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down>)
 Annotation(metadata:creator metadata:author:DougSalt)
 
-Declaration(NamedIndividual(:termSatisfaction))
+Declaration(NamedIndividual(:term:Satisfaction))
 AnnotationAssertion(metadata:describes :term:Satisfaction top-down:Satisfaction)
 ClassAssertion(metadata:Term :term:Satisfaction)
 ObjectPropertyAssertion(metadata:isOntologicalEntity :term:Satisfaction metadata:ontology:class)

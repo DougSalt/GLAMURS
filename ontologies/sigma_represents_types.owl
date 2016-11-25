@@ -1,49 +1,3 @@
-# New Classes
-
-Declaration(Class(:RestOfEurope))
-Declaration(Class(:Scotland))
-Declaration(Class(:UnitedKingdom))
-
-Declaration(Class(:UkhlsOntologyHouseholdClass))
-Declaration(Class(:UkhlsOntologyPersonClass))
-
-
-SubClassOf(:Scotland :UnitedKingdom)
-SubClassOf(:RestOfEurope core:Region)
-SubClassOf(:UnitedKingdom core:Nation)
-
-SubClassOf(:UkhlsOntologyHouseholdClass :UkhlsOntologyClass)
-SubClassOf(:UkhlsOntologyPersonClass :UkhlsOntologyClass)
-
-# gamma-represents
-
-SubClassOf(:BackcastingOntologyClass ObjectSomeValuesFrom(star:gammaRepresents questionnaire:Vision))
-SubClassOf(:BackcastingOntologyClass ObjectSomeValuesFrom(star:gammaRepresents core:Transformation))
-SubClassOf(:NtnuOntologyClass ObjectSomeValuesFrom(star:gammaNumericallyRepresents core:Nation))
-SubClassOf(:InitiativeOntologyClass ObjectSomeValuesFrom(star:gammaRepresents questionnaire:InitiativeOrganizer))
-SubClassOf(:TipacOntologyClass ObjectSomeValuesFrom(star:gammaStronglyRepresents questionnaire:Model))
-SubClassOf(:TscOntologyClass ObjectSomeValuesFrom(star:gammaStronglyRepresents questionnaire:Model))
-SubClassOf(:UbahOntologyClass ObjectSomeValuesFrom(star:gammaStronglyRepresents questionnaire:Model))
-SubClassOf(:RegionalRoeOntologyClass ObjectSomeValuesFrom(star:gammaRepresents :RestOfEurope))
-SubClassOf(:RegionalScoOntologyClass ObjectSomeValuesFrom(star:gammaRepresents :Scotland))
-SubClassOf(:RegionalScoOntologyClass ObjectSomeValuesFrom(star:gammaRepresents core:Citizen))
-SubClassOf(:RegionalScoOntologyClass ObjectSomeValuesFrom(star:gammaRepresents core:Region))
-SubClassOf(:RegionalRoeOntologyClass ObjectSomeValuesFrom(star:gammaRepresents core:Citizen))
-SubClassOf(:RegionalRoeOntologyClass ObjectSomeValuesFrom(star:gammaRepresents core:Region))
-SubClassOf(:SnaScoOntologyClass ObjectSomeValuesFrom(star:gammaRepresents :Scotland))
-SubClassOf(:SnaRoeOntologyClass ObjectSomeValuesFrom(star:gammaRepresents :RestOfEurope))
-SubClassOf(:SnaScoOntologyClass ObjectSomeValuesFrom(star:gammaRepresents expert:SocialNetwork))
-SubClassOf(:SnaRoeOntologyClass ObjectSomeValuesFrom(star:gammaRepresents expert:SocialNetwork))
-SubClassOf(:UkhlsOntologyClass ObjectSomeValuesFrom(star:gammaRepresents :UnitedKingdom))
-SubClassOf(:UkhlsOntologyHouseholdClass ObjectSomeValuesFrom(star:gammaRepresents core:Home))
-SubClassOf(:UkhlsOntologyPersonClass ObjectSomeValuesFrom(star:gammaRepresents core:Citizen))
-SubClassOf(initiative:LifestyleSatisfactionImpact ObjectSomeValuesFrom(star:gammaMeasures expert:LifeSatisfaction))
-SubClassOf(tsc:Consumption ObjectSomeValuesFrom(star:gammaStronglyRepresents questionnaire:Consumption))
-SubClassOf(ubah:Lifestyle ObjectSomeValuesFrom(star:gammaStronglyRepresents core:Lifestyle))
-
-# sigma-represents
-
-SubClassOf(:InitiativeOntologyClass ObjectSomeValuesFrom(star:sigmaRepresents core:CaseStudy))
 SubClassOf(ntnu:Country ObjectSomeValuesFrom(star:sigmaStronglyRepresents core:Nation))
 SubClassOf(ntnu:Footprint ObjectSomeValuesFrom(star:sigmaStronglyRepresents questionnaire:Footprint))
 SubClassOf(ntnu:Land ObjectSomeValuesFrom(star:sigmaRepresents core:Geography))
@@ -118,9 +72,5 @@ SubClassOf(initiative:WellBeing ObjectSomeValuesFrom(star:sigmaWeaklyRepresents 
 SubClassOf(regional-roe:WellBeing ObjectSomeValuesFrom(star:sigmaWeaklyRepresents questionnaire:QualityOfLife))
 SubClassOf(initiative:WellBeing ObjectSomeValuesFrom(star:sigmaWeaklyRepresents questionnaire:WellBeing))
 SubClassOf(regional-roe:WellBeing ObjectSomeValuesFrom(star:sigmaWeaklyRepresents questionnaire:WellBeing))
-
-ObjectPropertyAssertion(star:sigmaMeasures kb-initiative:term:LifeSatisfactionImpact kb-expert:term:LifeSatistfaction)
-ObjectPropertyAssertion(star:sigmaRepresents kb-tsc:term:Utility kb-expert:term:LifeSatistfaction)
-ObjectPropertyAssertion(star:sigmaNumericallyRepresents kb-ubah:term:Utility kb-expert:term:LifeSatistfaction)
 
 

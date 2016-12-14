@@ -34,7 +34,7 @@ Declaration(NamedIndividual(:author:DougSalt))
 
 # Object Property: :creates (:creates)
 
-SubObjectPropertyOf(:creates :uses)
+SubObjectPropertyOf(:creates :modifies)
 InverseObjectProperties(:creates :wasCreatedBy)
 
 # Object Property: :hasPart (has part)
@@ -93,7 +93,7 @@ AnnotationAssertion(rdfs:label :uses "uses"@en)
 # Object Property: :wasCreatedBy (was created by)
 
 AnnotationAssertion(rdfs:label :wasCreatedBy "was created by"@en)
-SubObjectPropertyOf(:wasCreatedBy :isUsedBy)
+SubObjectPropertyOf(:wasCreatedBy :isModifedBy)
 
 
 

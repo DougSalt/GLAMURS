@@ -185,8 +185,6 @@ Declaration(NamedIndividual(:term:sufficiency))
 Declaration(NamedIndividual(:term:upscaling))
 Declaration(NamedIndividual(:term:valueActionGap))
 Declaration(NamedIndividual(:term:wellBeing))
-Declaration(AnnotationProperty(owl:minCardinality))
-Declaration(AnnotationProperty(owl:minQualifiedCardinality))
 
 ############################
 #   Object Properties
@@ -219,6 +217,7 @@ ObjectPropertyRange(:hasBehaviour :Behaviour)
 
 AnnotationAssertion(rdfs:comment :organizes :term:BackCasting)
 ObjectPropertyDomain(:organizes :Person)
+SubObjectPropertyOf(:organizes top-down-common:hasSuggestedProperty)
 
 # Object Property: :psychologicalWellBeing (pychological well-being)
 
@@ -987,7 +986,7 @@ AnnotationAssertion(top-down-common:partOfDiscipline :term:CriticalMass top-down
 AnnotationAssertion(rdfs:comment :term:CriticalMass "\"Critical mass, a concept borrowed from nuclear physics and referring to the quantity necessary for starting a chain reaction in its original use, is used in common language to refer to the amount needed for having significant effects. In collective actions and social movements, the term is often used metaphorically to refer to the idea that some threshold of participants or action has to be crossed before a social movement 'explodes' into being\" (Oliver, Marwell and Teixeira, 1985). 
 
 Reference: Oliver, P. E., Marwell, G., & Teixeira, R. (1985). A theory of the critical mass: Interdependence, group heterogenity, and the production of collective action. American Journal of Sociology"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:CriticalMass :TSC)
+AnnotationAssertion(rdfs:isDefinedBy :term:CriticalMass top-down-common:TSC)
 AnnotationAssertion(rdfs:label :term:CriticalMass "Critical mass"@en)
 ClassAssertion(top-down-common:Term :term:CriticalMass)
 
@@ -1318,6 +1317,4 @@ AnnotationAssertion(rdfs:label :term:wellBeing "Well-being"@en)
 ClassAssertion(top-down-common:Term :term:wellBeing)
 
 
-AnnotationAssertion(owl:minQualifiedCardinality _:genid3 "1"^^xsd:nonNegativeInteger)
-AnnotationAssertion(owl:minCardinality _:genid4 "1"^^xsd:nonNegativeInteger)
 )

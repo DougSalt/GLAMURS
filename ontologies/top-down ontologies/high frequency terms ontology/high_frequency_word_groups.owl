@@ -1,1902 +1,1260 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#"
-     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:top-down-common=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups">
-        <owl:imports rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <rdfs:isDefinedBy>Doug Salt</rdfs:isDefinedBy>
-    </owl:Ontology>
-    
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups>
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>)
+Annotation(rdfs:isDefinedBy "Doug Salt")
+Annotation(owl:versionInfo "1.0"^^xsd:decimal)
+
+Declaration(Class(top-down-common:Term))
+Declaration(NamedIndividual(:term:agentBasedModelling))
+Declaration(NamedIndividual(:term:anInitiative))
+Declaration(NamedIndividual(:term:appliedSocialPsychology))
+Declaration(NamedIndividual(:term:averageHousehold))
+Declaration(NamedIndividual(:term:averagePersonnelCosts))
+Declaration(NamedIndividual(:term:basicPsychologicalNeeds))
+Declaration(NamedIndividual(:term:behavioralChange))
+Declaration(NamedIndividual(:term:behaviouralControl))
+Declaration(NamedIndividual(:term:boundedRationality))
+Declaration(NamedIndividual(:term:carbonFootprint))
+Declaration(NamedIndividual(:term:changeInSustainability))
+Declaration(NamedIndividual(:term:civilSociety))
+Declaration(NamedIndividual(:term:cleanTechnology))
+Declaration(NamedIndividual(:term:cleanerProduction))
+Declaration(NamedIndividual(:term:climateChange))
+Declaration(NamedIndividual(:term:climatePolicy))
+Declaration(NamedIndividual(:term:clusterAnalysis))
+Declaration(NamedIndividual(:term:codingFramework))
+Declaration(NamedIndividual(:term:cognitiveDissonance))
+Declaration(NamedIndividual(:term:collaborativeConsumption))
+Declaration(NamedIndividual(:term:collectiveInterest))
+Declaration(NamedIndividual(:term:communityArena))
+Declaration(NamedIndividual(:term:comparativeAnalysis))
+Declaration(NamedIndividual(:term:conceptualFramework))
+Declaration(NamedIndividual(:term:consensualValidation))
+Declaration(NamedIndividual(:term:consortiumAgreement))
+Declaration(NamedIndividual(:term:consumerBehavior))
+Declaration(NamedIndividual(:term:consumerExpenditure))
+Declaration(NamedIndividual(:term:consumptionExpenditure))
+Declaration(NamedIndividual(:term:currentConsumption))
+Declaration(NamedIndividual(:term:dcModel))
+Declaration(NamedIndividual(:term:directCosts))
+Declaration(NamedIndividual(:term:directEnergy))
+Declaration(NamedIndividual(:term:discreteChoice))
+Declaration(NamedIndividual(:term:discreteChoiceModel))
+Declaration(NamedIndividual(:term:disseminationStrategy))
+Declaration(NamedIndividual(:term:ecologicalEconomics))
+Declaration(NamedIndividual(:term:ecologicalFootprint))
+Declaration(NamedIndividual(:term:ecologicallySustainable))
+Declaration(NamedIndividual(:term:economicBehavior))
+Declaration(NamedIndividual(:term:economicCrisis))
+Declaration(NamedIndividual(:term:egoDepletion))
+Declaration(NamedIndividual(:term:empiricalResearch))
+Declaration(NamedIndividual(:term:energyConservation))
+Declaration(NamedIndividual(:term:energyEfficiency))
+Declaration(NamedIndividual(:term:energyEfficient))
+Declaration(NamedIndividual(:term:energyIntensity))
+Declaration(NamedIndividual(:term:energyModel))
+Declaration(NamedIndividual(:term:energyPolicy))
+Declaration(NamedIndividual(:term:energyRequirement))
+Declaration(NamedIndividual(:term:energySaving))
+Declaration(NamedIndividual(:term:environmentalActivism))
+Declaration(NamedIndividual(:term:environmentalAssessment))
+Declaration(NamedIndividual(:term:environmentalBehaviour))
+Declaration(NamedIndividual(:term:environmentalConcern))
+Declaration(NamedIndividual(:term:environmentalDamage))
+Declaration(NamedIndividual(:term:environmentalEconomics))
+Declaration(NamedIndividual(:term:environmentalEducation))
+Declaration(NamedIndividual(:term:environmentalEffects))
+Declaration(NamedIndividual(:term:environmentalFootprint))
+Declaration(NamedIndividual(:term:environmentalImpact))
+Declaration(NamedIndividual(:term:environmentalPerformance))
+Declaration(NamedIndividual(:term:environmentalPolicy))
+Declaration(NamedIndividual(:term:environmentalPsychology))
+Declaration(NamedIndividual(:term:environmentalQuality))
+Declaration(NamedIndividual(:term:environmentalSustainability))
+Declaration(NamedIndividual(:term:environmentalValues))
+Declaration(NamedIndividual(:term:environmentallyFriendly))
+Declaration(NamedIndividual(:term:environmentallyRelevant))
+Declaration(NamedIndividual(:term:environmentallyRelevantBehavior))
+Declaration(NamedIndividual(:term:environmentallyResponsible))
+Declaration(NamedIndividual(:term:fairTrade))
+Declaration(NamedIndividual(:term:finalConsumption))
+Declaration(NamedIndividual(:term:footprintCalculator))
+Declaration(NamedIndividual(:term:frameworkProgramme))
+Declaration(NamedIndividual(:term:gameTheory))
+Declaration(NamedIndividual(:term:globalClimate))
+Declaration(NamedIndividual(:term:globalEnvironmentalChange))
+Declaration(NamedIndividual(:term:goodLife))
+Declaration(NamedIndividual(:term:governanceApproach))
+Declaration(NamedIndividual(:term:greenEconomy))
+Declaration(NamedIndividual(:term:greenEconomyGrant))
+Declaration(NamedIndividual(:term:greenhouseGas))
+Declaration(NamedIndividual(:term:groupIdentification))
+Declaration(NamedIndividual(:term:healthyFood))
+Declaration(NamedIndividual(:term:householdCarbon))
+Declaration(NamedIndividual(:term:householdCarbonFootprint))
+Declaration(NamedIndividual(:term:householdConsumption))
+Declaration(NamedIndividual(:term:householdEnergy))
+Declaration(NamedIndividual(:term:householdEnergyUse))
+Declaration(NamedIndividual(:term:householdExpenditure))
+Declaration(NamedIndividual(:term:householdIncome))
+Declaration(NamedIndividual(:term:householdProduction))
+Declaration(NamedIndividual(:term:humanDecision))
+Declaration(NamedIndividual(:term:humanDevelopment))
+Declaration(NamedIndividual(:term:humanEcology))
+Declaration(NamedIndividual(:term:humanNeeds))
+Declaration(NamedIndividual(:term:identityTheory))
+Declaration(NamedIndividual(:term:indirectCost))
+Declaration(NamedIndividual(:term:indirectCosts))
+Declaration(NamedIndividual(:term:indirectEffects))
+Declaration(NamedIndividual(:term:indirectEnergy))
+Declaration(NamedIndividual(:term:industrialEcology))
+Declaration(NamedIndividual(:term:initialOntology))
+Declaration(NamedIndividual(:term:initiativeLevel))
+Declaration(NamedIndividual(:term:initiativeSurvey))
+Declaration(NamedIndividual(:term:intelligentCooking))
+Declaration(NamedIndividual(:term:intentionalCommunity))
+Declaration(NamedIndividual(:term:landFootprint))
+Declaration(NamedIndividual(:term:legalEntity))
+Declaration(NamedIndividual(:term:lessSustainable))
+Declaration(NamedIndividual(:term:lifestyleChange))
+Declaration(NamedIndividual(:term:lifestyleSatisfaction))
+Declaration(NamedIndividual(:term:lowCarbon))
+Declaration(NamedIndividual(:term:microeconomicModel))
+Declaration(NamedIndividual(:term:mindfulnessMeditation))
+Declaration(NamedIndividual(:term:modelRegion))
+Declaration(NamedIndividual(:term:moralNorm))
+Declaration(NamedIndividual(:term:motivatingSustainableConsumption))
+Declaration(NamedIndividual(:term:naturalResource))
+Declaration(NamedIndividual(:term:networkData))
+Declaration(NamedIndividual(:term:normActivation))
+Declaration(NamedIndividual(:term:opposingSubgroup))
+Declaration(NamedIndividual(:term:organicFarming))
+Declaration(NamedIndividual(:term:organicFood))
+Declaration(NamedIndividual(:term:participatoryVision))
+Declaration(NamedIndividual(:term:perceivedBehaviouralControl))
+Declaration(NamedIndividual(:term:policyLandscape))
+Declaration(NamedIndividual(:term:pressureCooker))
+Declaration(NamedIndividual(:term:productiveHours))
+Declaration(NamedIndividual(:term:prospectTheory))
+Declaration(NamedIndividual(:term:publicPolicy))
+Declaration(NamedIndividual(:term:publicSector))
+Declaration(NamedIndividual(:term:purposeInLife))
+Declaration(NamedIndividual(:term:qualitativeAnalysis))
+Declaration(NamedIndividual(:term:quantitativeSurvey))
+Declaration(NamedIndividual(:term:reboundEffect))
+Declaration(NamedIndividual(:term:reboundEffects))
+Declaration(NamedIndividual(:term:reflexiveGovernance))
+Declaration(NamedIndividual(:term:regionalSustainability))
+Declaration(NamedIndividual(:term:renewableEnergy))
+Declaration(NamedIndividual(:term:resourceEconomics))
+Declaration(NamedIndividual(:term:responsibleConsumption))
+Declaration(NamedIndividual(:term:sampleSize))
+Declaration(NamedIndividual(:term:scenarioDevelopment))
+Declaration(NamedIndividual(:term:seventhFrameworkProgramme))
+Declaration(NamedIndividual(:term:simplicityLifestyle))
+Declaration(NamedIndividual(:term:socialChange))
+Declaration(NamedIndividual(:term:socialCohesion))
+Declaration(NamedIndividual(:term:socialContext))
+Declaration(NamedIndividual(:term:socialDilemma))
+Declaration(NamedIndividual(:term:socialEconomy))
+Declaration(NamedIndividual(:term:socialIdentity))
+Declaration(NamedIndividual(:term:socialInnovation))
+Declaration(NamedIndividual(:term:socialLearning))
+Declaration(NamedIndividual(:term:socialMarketing))
+Declaration(NamedIndividual(:term:socialNetwork))
+Declaration(NamedIndividual(:term:socialNorm))
+Declaration(NamedIndividual(:term:socialPsychology))
+Declaration(NamedIndividual(:term:socialRelations))
+Declaration(NamedIndividual(:term:socialResponsibility))
+Declaration(NamedIndividual(:term:socialStatus))
+Declaration(NamedIndividual(:term:socialStructure))
+Declaration(NamedIndividual(:term:socialSupport))
+Declaration(NamedIndividual(:term:stakeholderAnalysis))
+Declaration(NamedIndividual(:term:structuralEquivalence))
+Declaration(NamedIndividual(:term:studyExchange))
+Declaration(NamedIndividual(:term:subjectiveWellbeing))
+Declaration(NamedIndividual(:term:summaryReport))
+Declaration(NamedIndividual(:term:supplyChain))
+Declaration(NamedIndividual(:term:sustainabilityInitiative))
+Declaration(NamedIndividual(:term:sustainabilityTransition))
+Declaration(NamedIndividual(:term:sustainableBehavior))
+Declaration(NamedIndividual(:term:sustainableBehaviour))
+Declaration(NamedIndividual(:term:sustainableConsumption))
+Declaration(NamedIndividual(:term:sustainableDevelopment))
+Declaration(NamedIndividual(:term:sustainableEnergy))
+Declaration(NamedIndividual(:term:sustainableEurope))
+Declaration(NamedIndividual(:term:sustainableFood))
+Declaration(NamedIndividual(:term:sustainableFoodConsumption))
+Declaration(NamedIndividual(:term:sustainableFuture))
+Declaration(NamedIndividual(:term:sustainableHousehold))
+Declaration(NamedIndividual(:term:sustainableLifestyle))
+Declaration(NamedIndividual(:term:sustainableLiving))
+Declaration(NamedIndividual(:term:sustainableMobility))
+Declaration(NamedIndividual(:term:sustainableSociety))
+Declaration(NamedIndividual(:term:systemChange))
+Declaration(NamedIndividual(:term:systemInnovation))
+Declaration(NamedIndividual(:term:technologicalChange))
+Declaration(NamedIndividual(:term:technologicalForecasting))
+Declaration(NamedIndividual(:term:technologicalProgress))
+Declaration(NamedIndividual(:term:technologyAnalysis))
+Declaration(NamedIndividual(:term:timeAffluence))
+Declaration(NamedIndividual(:term:timeScarcity))
+Declaration(NamedIndividual(:term:timeSeries))
+Declaration(NamedIndividual(:term:timeUseSurvey))
+Declaration(NamedIndividual(:term:totalEnergy))
+Declaration(NamedIndividual(:term:transitionManagement))
+Declaration(NamedIndividual(:term:urbanAgriculture))
+Declaration(NamedIndividual(:term:urbanArea))
+Declaration(NamedIndividual(:term:urbanPlanning))
+Declaration(NamedIndividual(:term:utilityFunction))
+Declaration(NamedIndividual(:term:visionDevelopment))
+Declaration(NamedIndividual(:term:voluntarySimplicity))
+Declaration(NamedIndividual(:term:voluntarySimplicityLifestyle))
+Declaration(NamedIndividual(:term:waterUsage))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :term:agentBasedModelling (Agent BasedModelling)
+
+AnnotationAssertion(rdfs:label :term:agentBasedModelling "Agent BasedModelling"@en)
+ClassAssertion(top-down-common:Term :term:agentBasedModelling)
+
+# Individual: :term:anInitiative (An Initiative)
+
+AnnotationAssertion(rdfs:label :term:anInitiative "An Initiative"@en)
+ClassAssertion(top-down-common:Term :term:anInitiative)
+
+# Individual: :term:appliedSocialPsychology (Applied SocialPsychology)
+
+AnnotationAssertion(rdfs:label :term:appliedSocialPsychology "Applied SocialPsychology"@en)
+ClassAssertion(top-down-common:Term :term:appliedSocialPsychology)
+
+# Individual: :term:averageHousehold (Average Household)
+
+AnnotationAssertion(rdfs:label :term:averageHousehold "Average Household"@en)
+ClassAssertion(top-down-common:Term :term:averageHousehold)
+
+# Individual: :term:averagePersonnelCosts (Average PersonnelCosts)
+
+AnnotationAssertion(rdfs:label :term:averagePersonnelCosts "Average PersonnelCosts"@en)
+ClassAssertion(top-down-common:Term :term:averagePersonnelCosts)
+
+# Individual: :term:basicPsychologicalNeeds (Basic Psychological Needs)
+
+AnnotationAssertion(rdfs:label :term:basicPsychologicalNeeds "Basic Psychological Needs"@en)
+ClassAssertion(top-down-common:Term :term:basicPsychologicalNeeds)
+
+# Individual: :term:behavioralChange (Behavioral Change)
+
+AnnotationAssertion(rdfs:label :term:behavioralChange "Behavioral Change"@en)
+ClassAssertion(top-down-common:Term :term:behavioralChange)
+
+# Individual: :term:behaviouralControl (Behavioural Control)
+
+AnnotationAssertion(rdfs:label :term:behaviouralControl "Behavioural Control"@en)
+ClassAssertion(top-down-common:Term :term:behaviouralControl)
+
+# Individual: :term:boundedRationality (Bounded Rationality)
+
+AnnotationAssertion(rdfs:label :term:boundedRationality "Bounded Rationality"@en)
+ClassAssertion(top-down-common:Term :term:boundedRationality)
+
+# Individual: :term:carbonFootprint (Carbon Footprint)
+
+AnnotationAssertion(rdfs:label :term:carbonFootprint "Carbon Footprint"@en)
+ClassAssertion(top-down-common:Term :term:carbonFootprint)
+
+# Individual: :term:changeInSustainability (Change In Sustainability)
+
+AnnotationAssertion(rdfs:label :term:changeInSustainability "Change In Sustainability"@en)
+ClassAssertion(top-down-common:Term :term:changeInSustainability)
+
+# Individual: :term:civilSociety (Civil Society)
+
+AnnotationAssertion(rdfs:label :term:civilSociety "Civil Society"@en)
+ClassAssertion(top-down-common:Term :term:civilSociety)
+
+# Individual: :term:cleanTechnology (Clean Technology)
+
+AnnotationAssertion(rdfs:label :term:cleanTechnology "Clean Technology"@en)
+ClassAssertion(top-down-common:Term :term:cleanTechnology)
+
+# Individual: :term:cleanerProduction (Cleaner Production)
+
+AnnotationAssertion(rdfs:label :term:cleanerProduction "Cleaner Production"@en)
+ClassAssertion(top-down-common:Term :term:cleanerProduction)
+
+# Individual: :term:climateChange (Climate Change)
+
+AnnotationAssertion(rdfs:label :term:climateChange "Climate Change"@en)
+ClassAssertion(top-down-common:Term :term:climateChange)
+
+# Individual: :term:climatePolicy (Climate Policy)
+
+AnnotationAssertion(rdfs:label :term:climatePolicy "Climate Policy"@en)
+ClassAssertion(top-down-common:Term :term:climatePolicy)
+
+# Individual: :term:clusterAnalysis (Cluster Analysis)
+
+AnnotationAssertion(rdfs:label :term:clusterAnalysis "Cluster Analysis"@en)
+ClassAssertion(top-down-common:Term :term:clusterAnalysis)
+
+# Individual: :term:codingFramework (Coding Framework)
+
+AnnotationAssertion(rdfs:label :term:codingFramework "Coding Framework"@en)
+ClassAssertion(top-down-common:Term :term:codingFramework)
+
+# Individual: :term:cognitiveDissonance (Cognitive Dissonance)
 
+AnnotationAssertion(rdfs:label :term:cognitiveDissonance "Cognitive Dissonance"@en)
+ClassAssertion(top-down-common:Term :term:cognitiveDissonance)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+# Individual: :term:collaborativeConsumption (Collaborative Consumption)
 
-    
+AnnotationAssertion(rdfs:label :term:collaborativeConsumption "Collaborative Consumption"@en)
+ClassAssertion(top-down-common:Term :term:collaborativeConsumption)
 
+# Individual: :term:collectiveInterest (Collective Interest)
 
-    <!-- "http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term -->
+AnnotationAssertion(rdfs:label :term:collectiveInterest "Collective Interest"@en)
+ClassAssertion(top-down-common:Term :term:collectiveInterest)
 
-    <owl:Class rdf:about=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-    
+# Individual: :term:communityArena (Community Arena)
 
+AnnotationAssertion(rdfs:label :term:communityArena "Community Arena"@en)
+ClassAssertion(top-down-common:Term :term:communityArena)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+# Individual: :term:comparativeAnalysis (Comparative Analysis)
 
-    
+AnnotationAssertion(rdfs:label :term:comparativeAnalysis "Comparative Analysis"@en)
+ClassAssertion(top-down-common:Term :term:comparativeAnalysis)
 
+# Individual: :term:conceptualFramework (Conceptual Framework)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:agentBasedModelling -->
+AnnotationAssertion(rdfs:label :term:conceptualFramework "Conceptual Framework"@en)
+ClassAssertion(top-down-common:Term :term:conceptualFramework)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:agentBasedModelling">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Agent BasedModelling</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:consensualValidation (Consensual Validation)
 
+AnnotationAssertion(rdfs:label :term:consensualValidation "Consensual Validation"@en)
+ClassAssertion(top-down-common:Term :term:consensualValidation)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:anInitiative -->
+# Individual: :term:consortiumAgreement (Consortium Agreement)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:anInitiative">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">An Initiative</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:consortiumAgreement "Consortium Agreement"@en)
+ClassAssertion(top-down-common:Term :term:consortiumAgreement)
 
+# Individual: :term:consumerBehavior (Consumer Behavior)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:appliedSocialPsychology -->
+AnnotationAssertion(rdfs:label :term:consumerBehavior "Consumer Behavior"@en)
+ClassAssertion(top-down-common:Term :term:consumerBehavior)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:appliedSocialPsychology">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Applied SocialPsychology</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:consumerExpenditure (Consumer Expenditure)
 
+AnnotationAssertion(rdfs:label :term:consumerExpenditure "Consumer Expenditure"@en)
+ClassAssertion(top-down-common:Term :term:consumerExpenditure)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averageHousehold -->
+# Individual: :term:consumptionExpenditure (Consumption Expenditure)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averageHousehold">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Average Household</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:consumptionExpenditure "Consumption Expenditure"@en)
+ClassAssertion(top-down-common:Term :term:consumptionExpenditure)
 
+# Individual: :term:currentConsumption (Current Consumption)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averagePersonnelCosts -->
+AnnotationAssertion(rdfs:label :term:currentConsumption "Current Consumption"@en)
+ClassAssertion(top-down-common:Term :term:currentConsumption)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:averagePersonnelCosts">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Average PersonnelCosts</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:dcModel (Dc Model)
 
+AnnotationAssertion(rdfs:label :term:dcModel "Dc Model"@en)
+ClassAssertion(top-down-common:Term :term:dcModel)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:basicPsychologicalNeeds -->
+# Individual: :term:directCosts (Direct Costs)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:basicPsychologicalNeeds">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Basic Psychological Needs</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:directCosts "Direct Costs"@en)
+ClassAssertion(top-down-common:Term :term:directCosts)
 
+# Individual: :term:directEnergy (Direct Energy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behavioralChange -->
+AnnotationAssertion(rdfs:label :term:directEnergy "Direct Energy"@en)
+ClassAssertion(top-down-common:Term :term:directEnergy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behavioralChange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Behavioral Change</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:discreteChoice (Discrete Choice)
 
+AnnotationAssertion(rdfs:label :term:discreteChoice "Discrete Choice"@en)
+ClassAssertion(top-down-common:Term :term:discreteChoice)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behaviouralControl -->
+# Individual: :term:discreteChoiceModel (Discrete Choice Model)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:behaviouralControl">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Behavioural Control</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:discreteChoiceModel "Discrete Choice Model"@en)
+ClassAssertion(top-down-common:Term :term:discreteChoiceModel)
 
+# Individual: :term:disseminationStrategy (Dissemination Strategy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:boundedRationality -->
+AnnotationAssertion(rdfs:label :term:disseminationStrategy "Dissemination Strategy"@en)
+ClassAssertion(top-down-common:Term :term:disseminationStrategy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:boundedRationality">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Bounded Rationality</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:ecologicalEconomics (Ecological Economics)
 
+AnnotationAssertion(rdfs:label :term:ecologicalEconomics "Ecological Economics"@en)
+ClassAssertion(top-down-common:Term :term:ecologicalEconomics)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:carbonFootprint -->
+# Individual: :term:ecologicalFootprint (Ecological Footprint)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:carbonFootprint">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Carbon Footprint</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:ecologicalFootprint "Ecological Footprint"@en)
+ClassAssertion(top-down-common:Term :term:ecologicalFootprint)
 
+# Individual: :term:ecologicallySustainable (Ecologically Sustainable)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:changeInSustainability -->
+AnnotationAssertion(rdfs:label :term:ecologicallySustainable "Ecologically Sustainable"@en)
+ClassAssertion(top-down-common:Term :term:ecologicallySustainable)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:changeInSustainability">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Change In Sustainability</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:economicBehavior (Economic Behavior)
 
+AnnotationAssertion(rdfs:label :term:economicBehavior "Economic Behavior"@en)
+ClassAssertion(top-down-common:Term :term:economicBehavior)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:civilSociety -->
+# Individual: :term:economicCrisis (Economic Crisis)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:civilSociety">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Civil Society</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:economicCrisis "Economic Crisis"@en)
+ClassAssertion(top-down-common:Term :term:economicCrisis)
 
+# Individual: :term:egoDepletion (Ego Depletion)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanTechnology -->
+AnnotationAssertion(rdfs:label :term:egoDepletion "Ego Depletion"@en)
+ClassAssertion(top-down-common:Term :term:egoDepletion)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanTechnology">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Clean Technology</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:empiricalResearch (Empirical Research)
 
+AnnotationAssertion(rdfs:label :term:empiricalResearch "Empirical Research"@en)
+ClassAssertion(top-down-common:Term :term:empiricalResearch)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanerProduction -->
+# Individual: :term:energyConservation (Energy Conservation)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cleanerProduction">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Cleaner Production</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:energyConservation "Energy Conservation"@en)
+ClassAssertion(top-down-common:Term :term:energyConservation)
 
+# Individual: :term:energyEfficiency (Energy Efficiency)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climateChange -->
+AnnotationAssertion(rdfs:label :term:energyEfficiency "Energy Efficiency"@en)
+ClassAssertion(top-down-common:Term :term:energyEfficiency)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climateChange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Climate Change</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:energyEfficient (Energy Efficient)
 
+AnnotationAssertion(rdfs:label :term:energyEfficient "Energy Efficient"@en)
+ClassAssertion(top-down-common:Term :term:energyEfficient)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climatePolicy -->
+# Individual: :term:energyIntensity (Energy Intensity)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:climatePolicy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Climate Policy</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:energyIntensity "Energy Intensity"@en)
+ClassAssertion(top-down-common:Term :term:energyIntensity)
 
+# Individual: :term:energyModel (Energy Model)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:clusterAnalysis -->
+AnnotationAssertion(rdfs:label :term:energyModel "Energy Model"@en)
+ClassAssertion(top-down-common:Term :term:energyModel)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:clusterAnalysis">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Cluster Analysis</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:energyPolicy (Energy Policy)
 
+AnnotationAssertion(rdfs:label :term:energyPolicy "Energy Policy"@en)
+ClassAssertion(top-down-common:Term :term:energyPolicy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:codingFramework -->
+# Individual: :term:energyRequirement (Energy Requirement)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:codingFramework">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Coding Framework</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:energyRequirement "Energy Requirement"@en)
+ClassAssertion(top-down-common:Term :term:energyRequirement)
 
+# Individual: :term:energySaving (Energy Saving)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cognitiveDissonance -->
+AnnotationAssertion(rdfs:label :term:energySaving "Energy Saving"@en)
+ClassAssertion(top-down-common:Term :term:energySaving)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:cognitiveDissonance">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Cognitive Dissonance</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:environmentalActivism (Environmental Activism)
 
+AnnotationAssertion(rdfs:label :term:environmentalActivism "Environmental Activism"@en)
+ClassAssertion(top-down-common:Term :term:environmentalActivism)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collaborativeConsumption -->
+# Individual: :term:environmentalAssessment (Environmental Assessment)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collaborativeConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Collaborative Consumption</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:environmentalAssessment "Environmental Assessment"@en)
+ClassAssertion(top-down-common:Term :term:environmentalAssessment)
 
+# Individual: :term:environmentalBehaviour (Environmental Behaviour)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collectiveInterest -->
+AnnotationAssertion(rdfs:label :term:environmentalBehaviour "Environmental Behaviour"@en)
+ClassAssertion(top-down-common:Term :term:environmentalBehaviour)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:collectiveInterest">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Collective Interest</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:environmentalConcern (Environmental Concern)
 
+AnnotationAssertion(rdfs:label :term:environmentalConcern "Environmental Concern"@en)
+ClassAssertion(top-down-common:Term :term:environmentalConcern)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:communityArena -->
+# Individual: :term:environmentalDamage (Environmental Damage)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:communityArena">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Community Arena</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:environmentalDamage "Environmental Damage"@en)
+ClassAssertion(top-down-common:Term :term:environmentalDamage)
 
+# Individual: :term:environmentalEconomics (Environmental Economics)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:comparativeAnalysis -->
+AnnotationAssertion(rdfs:label :term:environmentalEconomics "Environmental Economics"@en)
+ClassAssertion(top-down-common:Term :term:environmentalEconomics)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:comparativeAnalysis">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Comparative Analysis</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:environmentalEducation (Environmental Education)
 
+AnnotationAssertion(rdfs:label :term:environmentalEducation "Environmental Education"@en)
+ClassAssertion(top-down-common:Term :term:environmentalEducation)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:conceptualFramework -->
+# Individual: :term:environmentalEffects (Environmental Effects)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:conceptualFramework">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Conceptual Framework</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:environmentalEffects "Environmental Effects"@en)
+ClassAssertion(top-down-common:Term :term:environmentalEffects)
 
+# Individual: :term:environmentalFootprint (Environmental Footprint)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consensualValidation -->
+AnnotationAssertion(rdfs:label :term:environmentalFootprint "Environmental Footprint"@en)
+ClassAssertion(top-down-common:Term :term:environmentalFootprint)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consensualValidation">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Consensual Validation</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:environmentalImpact (Environmental Impact)
 
+AnnotationAssertion(rdfs:label :term:environmentalImpact "Environmental Impact"@en)
+ClassAssertion(top-down-common:Term :term:environmentalImpact)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consortiumAgreement -->
+# Individual: :term:environmentalPerformance (Environmental Performance)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consortiumAgreement">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Consortium Agreement</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:environmentalPerformance "Environmental Performance"@en)
+ClassAssertion(top-down-common:Term :term:environmentalPerformance)
 
+# Individual: :term:environmentalPolicy (Environmental Policy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerBehavior -->
+AnnotationAssertion(rdfs:label :term:environmentalPolicy "Environmental Policy"@en)
+ClassAssertion(top-down-common:Term :term:environmentalPolicy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerBehavior">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Consumer Behavior</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:environmentalPsychology (Environmental Psychology)
 
+AnnotationAssertion(rdfs:label :term:environmentalPsychology "Environmental Psychology"@en)
+ClassAssertion(top-down-common:Term :term:environmentalPsychology)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerExpenditure -->
+# Individual: :term:environmentalQuality (Environmental Quality)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumerExpenditure">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Consumer Expenditure</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:environmentalQuality "Environmental Quality"@en)
+ClassAssertion(top-down-common:Term :term:environmentalQuality)
 
+# Individual: :term:environmentalSustainability (Environmental Sustainability)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumptionExpenditure -->
+AnnotationAssertion(rdfs:label :term:environmentalSustainability "Environmental Sustainability"@en)
+ClassAssertion(top-down-common:Term :term:environmentalSustainability)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:consumptionExpenditure">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Consumption Expenditure</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:environmentalValues (Environmental Values)
 
+AnnotationAssertion(rdfs:label :term:environmentalValues "Environmental Values"@en)
+ClassAssertion(top-down-common:Term :term:environmentalValues)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:currentConsumption -->
+# Individual: :term:environmentallyFriendly (Environmentally Friendly)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:currentConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Current Consumption</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:environmentallyFriendly "Environmentally Friendly"@en)
+ClassAssertion(top-down-common:Term :term:environmentallyFriendly)
 
+# Individual: :term:environmentallyRelevant (Environmentally Relevant)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:dcModel -->
+AnnotationAssertion(rdfs:label :term:environmentallyRelevant "Environmentally Relevant"@en)
+ClassAssertion(top-down-common:Term :term:environmentallyRelevant)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:dcModel">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Dc Model</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:environmentallyRelevantBehavior (Environmentally RelevantBehavior)
 
+AnnotationAssertion(rdfs:label :term:environmentallyRelevantBehavior "Environmentally RelevantBehavior"@en)
+ClassAssertion(top-down-common:Term :term:environmentallyRelevantBehavior)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directCosts -->
+# Individual: :term:environmentallyResponsible (Environmentally Responsible)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directCosts">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Direct Costs</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:environmentallyResponsible "Environmentally Responsible"@en)
+ClassAssertion(top-down-common:Term :term:environmentallyResponsible)
 
+# Individual: :term:fairTrade (Fair Trade)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directEnergy -->
+AnnotationAssertion(rdfs:label :term:fairTrade "Fair Trade"@en)
+ClassAssertion(top-down-common:Term :term:fairTrade)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:directEnergy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Direct Energy</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:finalConsumption (Final Consumption)
 
+AnnotationAssertion(rdfs:label :term:finalConsumption "Final Consumption"@en)
+ClassAssertion(top-down-common:Term :term:finalConsumption)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoice -->
+# Individual: :term:footprintCalculator (Footprint Calculator)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoice">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Discrete Choice</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:footprintCalculator "Footprint Calculator"@en)
+ClassAssertion(top-down-common:Term :term:footprintCalculator)
 
+# Individual: :term:frameworkProgramme (Framework Programme)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoiceModel -->
+AnnotationAssertion(rdfs:label :term:frameworkProgramme "Framework Programme"@en)
+ClassAssertion(top-down-common:Term :term:frameworkProgramme)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:discreteChoiceModel">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Discrete Choice Model</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:gameTheory (Game Theory)
 
+AnnotationAssertion(rdfs:label :term:gameTheory "Game Theory"@en)
+ClassAssertion(top-down-common:Term :term:gameTheory)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:disseminationStrategy -->
+# Individual: :term:globalClimate (Global Climate)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:disseminationStrategy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Dissemination Strategy</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:globalClimate "Global Climate"@en)
+ClassAssertion(top-down-common:Term :term:globalClimate)
 
+# Individual: :term:globalEnvironmentalChange (Global Environmental Change)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalEconomics -->
+AnnotationAssertion(rdfs:label :term:globalEnvironmentalChange "Global Environmental Change"@en)
+ClassAssertion(top-down-common:Term :term:globalEnvironmentalChange)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalEconomics">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Ecological Economics</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:goodLife (Good Life)
 
+AnnotationAssertion(rdfs:label :term:goodLife "Good Life"@en)
+ClassAssertion(top-down-common:Term :term:goodLife)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalFootprint -->
+# Individual: :term:governanceApproach (Governance Approach)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicalFootprint">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Ecological Footprint</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:governanceApproach "Governance Approach"@en)
+ClassAssertion(top-down-common:Term :term:governanceApproach)
 
+# Individual: :term:greenEconomy (Green Economy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicallySustainable -->
+AnnotationAssertion(rdfs:label :term:greenEconomy "Green Economy"@en)
+ClassAssertion(top-down-common:Term :term:greenEconomy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:ecologicallySustainable">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Ecologically Sustainable</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:greenEconomyGrant (Green Economy Grant)
 
+AnnotationAssertion(rdfs:label :term:greenEconomyGrant "Green Economy Grant"@en)
+ClassAssertion(top-down-common:Term :term:greenEconomyGrant)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicBehavior -->
+# Individual: :term:greenhouseGas (Greenhouse Gas)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicBehavior">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Economic Behavior</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:greenhouseGas "Greenhouse Gas"@en)
+ClassAssertion(top-down-common:Term :term:greenhouseGas)
 
+# Individual: :term:groupIdentification (Group Identification)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicCrisis -->
+AnnotationAssertion(rdfs:label :term:groupIdentification "Group Identification"@en)
+ClassAssertion(top-down-common:Term :term:groupIdentification)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:economicCrisis">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Economic Crisis</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:healthyFood (Healthy Food)
 
+AnnotationAssertion(rdfs:label :term:healthyFood "Healthy Food"@en)
+ClassAssertion(top-down-common:Term :term:healthyFood)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:egoDepletion -->
+# Individual: :term:householdCarbon (Household Carbon)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:egoDepletion">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Ego Depletion</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:householdCarbon "Household Carbon"@en)
+ClassAssertion(top-down-common:Term :term:householdCarbon)
 
+# Individual: :term:householdCarbonFootprint (Household CarbonFootprint)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:empiricalResearch -->
+AnnotationAssertion(rdfs:label :term:householdCarbonFootprint "Household CarbonFootprint"@en)
+ClassAssertion(top-down-common:Term :term:householdCarbonFootprint)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:empiricalResearch">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Empirical Research</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:householdConsumption (Household Consumption)
 
+AnnotationAssertion(rdfs:label :term:householdConsumption "Household Consumption"@en)
+ClassAssertion(top-down-common:Term :term:householdConsumption)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyConservation -->
+# Individual: :term:householdEnergy (Household Energy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyConservation">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Conservation</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:householdEnergy "Household Energy"@en)
+ClassAssertion(top-down-common:Term :term:householdEnergy)
 
+# Individual: :term:householdEnergyUse (Household Energy Use)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficiency -->
+AnnotationAssertion(rdfs:label :term:householdEnergyUse "Household Energy Use"@en)
+ClassAssertion(top-down-common:Term :term:householdEnergyUse)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficiency">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Efficiency</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:householdExpenditure (Household Expenditure)
 
+AnnotationAssertion(rdfs:label :term:householdExpenditure "Household Expenditure"@en)
+ClassAssertion(top-down-common:Term :term:householdExpenditure)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficient -->
+# Individual: :term:householdIncome (Household Income)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyEfficient">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Efficient</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:householdIncome "Household Income"@en)
+ClassAssertion(top-down-common:Term :term:householdIncome)
 
+# Individual: :term:householdProduction (Household Production)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyIntensity -->
+AnnotationAssertion(rdfs:label :term:householdProduction "Household Production"@en)
+ClassAssertion(top-down-common:Term :term:householdProduction)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyIntensity">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Intensity</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:humanDecision (Human Decision)
 
+AnnotationAssertion(rdfs:label :term:humanDecision "Human Decision"@en)
+ClassAssertion(top-down-common:Term :term:humanDecision)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyModel -->
+# Individual: :term:humanDevelopment (Human Development)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyModel">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Model</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:humanDevelopment "Human Development"@en)
+ClassAssertion(top-down-common:Term :term:humanDevelopment)
 
+# Individual: :term:humanEcology (Human Ecology)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyPolicy -->
+AnnotationAssertion(rdfs:label :term:humanEcology "Human Ecology"@en)
+ClassAssertion(top-down-common:Term :term:humanEcology)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyPolicy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Policy</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:humanNeeds (Human Needs)
 
+AnnotationAssertion(rdfs:label :term:humanNeeds "Human Needs"@en)
+ClassAssertion(top-down-common:Term :term:humanNeeds)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyRequirement -->
+# Individual: :term:identityTheory (Identity Theory)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energyRequirement">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Requirement</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:identityTheory "Identity Theory"@en)
+ClassAssertion(top-down-common:Term :term:identityTheory)
 
+# Individual: :term:indirectCost (Indirect Cost)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energySaving -->
+AnnotationAssertion(rdfs:label :term:indirectCost "Indirect Cost"@en)
+ClassAssertion(top-down-common:Term :term:indirectCost)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:energySaving">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Energy Saving</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:indirectCosts (Indirect Costs)
 
+AnnotationAssertion(rdfs:label :term:indirectCosts "Indirect Costs"@en)
+ClassAssertion(top-down-common:Term :term:indirectCosts)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalActivism -->
+# Individual: :term:indirectEffects (Indirect Effects)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalActivism">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Activism</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:indirectEffects "Indirect Effects"@en)
+ClassAssertion(top-down-common:Term :term:indirectEffects)
 
+# Individual: :term:indirectEnergy (Indirect Energy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalAssessment -->
+AnnotationAssertion(rdfs:label :term:indirectEnergy "Indirect Energy"@en)
+ClassAssertion(top-down-common:Term :term:indirectEnergy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalAssessment">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Assessment</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:industrialEcology (Industrial Ecology)
 
+AnnotationAssertion(rdfs:label :term:industrialEcology "Industrial Ecology"@en)
+ClassAssertion(top-down-common:Term :term:industrialEcology)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalBehaviour -->
+# Individual: :term:initialOntology (Initial Ontology)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalBehaviour">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Behaviour</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:initialOntology "Initial Ontology"@en)
+ClassAssertion(top-down-common:Term :term:initialOntology)
 
+# Individual: :term:initiativeLevel (Initiative Level)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalConcern -->
+AnnotationAssertion(rdfs:label :term:initiativeLevel "Initiative Level"@en)
+ClassAssertion(top-down-common:Term :term:initiativeLevel)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalConcern">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Concern</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:initiativeSurvey (Initiative Survey)
 
+AnnotationAssertion(rdfs:label :term:initiativeSurvey "Initiative Survey"@en)
+ClassAssertion(top-down-common:Term :term:initiativeSurvey)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalDamage -->
+# Individual: :term:intelligentCooking (Intelligent Cooking)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalDamage">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Damage</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:intelligentCooking "Intelligent Cooking"@en)
+ClassAssertion(top-down-common:Term :term:intelligentCooking)
 
+# Individual: :term:intentionalCommunity (Intentional Community)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEconomics -->
+AnnotationAssertion(rdfs:label :term:intentionalCommunity "Intentional Community"@en)
+ClassAssertion(top-down-common:Term :term:intentionalCommunity)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEconomics">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Economics</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:landFootprint (Land Footprint)
 
+AnnotationAssertion(rdfs:label :term:landFootprint "Land Footprint"@en)
+ClassAssertion(top-down-common:Term :term:landFootprint)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEducation -->
+# Individual: :term:legalEntity (Legal Entity)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEducation">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Education</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:legalEntity "Legal Entity"@en)
+ClassAssertion(top-down-common:Term :term:legalEntity)
 
+# Individual: :term:lessSustainable (Less Sustainable)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEffects -->
+AnnotationAssertion(rdfs:label :term:lessSustainable "Less Sustainable"@en)
+ClassAssertion(top-down-common:Term :term:lessSustainable)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalEffects">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Effects</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:lifestyleChange (Lifestyle Change)
 
+AnnotationAssertion(rdfs:label :term:lifestyleChange "Lifestyle Change"@en)
+ClassAssertion(top-down-common:Term :term:lifestyleChange)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalFootprint -->
+# Individual: :term:lifestyleSatisfaction (Lifestyle Satisfaction)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalFootprint">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Footprint</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:lifestyleSatisfaction "Lifestyle Satisfaction"@en)
+ClassAssertion(top-down-common:Term :term:lifestyleSatisfaction)
 
+# Individual: :term:lowCarbon (Low Carbon)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalImpact -->
+AnnotationAssertion(rdfs:label :term:lowCarbon "Low Carbon"@en)
+ClassAssertion(top-down-common:Term :term:lowCarbon)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalImpact">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Impact</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:microeconomicModel (Microeconomic Model)
 
+AnnotationAssertion(rdfs:label :term:microeconomicModel "Microeconomic Model"@en)
+ClassAssertion(top-down-common:Term :term:microeconomicModel)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPerformance -->
+# Individual: :term:mindfulnessMeditation (Mindfulness Meditation)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPerformance">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Performance</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:mindfulnessMeditation "Mindfulness Meditation"@en)
+ClassAssertion(top-down-common:Term :term:mindfulnessMeditation)
 
+# Individual: :term:modelRegion (Model Region)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPolicy -->
+AnnotationAssertion(rdfs:label :term:modelRegion "Model Region"@en)
+ClassAssertion(top-down-common:Term :term:modelRegion)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPolicy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Policy</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:moralNorm (Moral Norm)
 
+AnnotationAssertion(rdfs:label :term:moralNorm "Moral Norm"@en)
+ClassAssertion(top-down-common:Term :term:moralNorm)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPsychology -->
+# Individual: :term:motivatingSustainableConsumption (Motivating SustainableConsumption)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalPsychology">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Psychology</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:motivatingSustainableConsumption "Motivating SustainableConsumption"@en)
+ClassAssertion(top-down-common:Term :term:motivatingSustainableConsumption)
 
+# Individual: :term:naturalResource (Natural Resource)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalQuality -->
+AnnotationAssertion(rdfs:label :term:naturalResource "Natural Resource"@en)
+ClassAssertion(top-down-common:Term :term:naturalResource)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalQuality">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Quality</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:networkData (Network Data)
 
+AnnotationAssertion(rdfs:label :term:networkData "Network Data"@en)
+ClassAssertion(top-down-common:Term :term:networkData)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalSustainability -->
+# Individual: :term:normActivation (Norm Activation)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalSustainability">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Sustainability</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:normActivation "Norm Activation"@en)
+ClassAssertion(top-down-common:Term :term:normActivation)
 
+# Individual: :term:opposingSubgroup (Opposing Subgroup)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalValues -->
+AnnotationAssertion(rdfs:label :term:opposingSubgroup "Opposing Subgroup"@en)
+ClassAssertion(top-down-common:Term :term:opposingSubgroup)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentalValues">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmental Values</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:organicFarming (Organic Farming)
 
+AnnotationAssertion(rdfs:label :term:organicFarming "Organic Farming"@en)
+ClassAssertion(top-down-common:Term :term:organicFarming)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyFriendly -->
+# Individual: :term:organicFood (Organic Food)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyFriendly">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmentally Friendly</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:organicFood "Organic Food"@en)
+ClassAssertion(top-down-common:Term :term:organicFood)
 
+# Individual: :term:participatoryVision (Participatory Vision)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevant -->
+AnnotationAssertion(rdfs:label :term:participatoryVision "Participatory Vision"@en)
+ClassAssertion(top-down-common:Term :term:participatoryVision)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevant">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmentally Relevant</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:perceivedBehaviouralControl (Perceived BehaviouralControl)
 
+AnnotationAssertion(rdfs:label :term:perceivedBehaviouralControl "Perceived BehaviouralControl"@en)
+ClassAssertion(top-down-common:Term :term:perceivedBehaviouralControl)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevantBehavior -->
+# Individual: :term:policyLandscape (Policy Landscape)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyRelevantBehavior">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmentally RelevantBehavior</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:policyLandscape "Policy Landscape"@en)
+ClassAssertion(top-down-common:Term :term:policyLandscape)
 
+# Individual: :term:pressureCooker (Pressure Cooker)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyResponsible -->
+AnnotationAssertion(rdfs:label :term:pressureCooker "Pressure Cooker"@en)
+ClassAssertion(top-down-common:Term :term:pressureCooker)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:environmentallyResponsible">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Environmentally Responsible</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:productiveHours (Productive Hours)
 
+AnnotationAssertion(rdfs:label :term:productiveHours "Productive Hours"@en)
+ClassAssertion(top-down-common:Term :term:productiveHours)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:fairTrade -->
+# Individual: :term:prospectTheory (Prospect Theory)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:fairTrade">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Fair Trade</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:prospectTheory "Prospect Theory"@en)
+ClassAssertion(top-down-common:Term :term:prospectTheory)
 
+# Individual: :term:publicPolicy (Public Policy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:finalConsumption -->
+AnnotationAssertion(rdfs:label :term:publicPolicy "Public Policy"@en)
+ClassAssertion(top-down-common:Term :term:publicPolicy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:finalConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Final Consumption</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:publicSector (Public Sector)
 
+AnnotationAssertion(rdfs:label :term:publicSector "Public Sector"@en)
+ClassAssertion(top-down-common:Term :term:publicSector)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:footprintCalculator -->
+# Individual: :term:purposeInLife (Purpose InLife)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:footprintCalculator">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Footprint Calculator</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:purposeInLife "Purpose InLife"@en)
+ClassAssertion(top-down-common:Term :term:purposeInLife)
 
+# Individual: :term:qualitativeAnalysis (Qualitative Analysis)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:frameworkProgramme -->
+AnnotationAssertion(rdfs:label :term:qualitativeAnalysis "Qualitative Analysis"@en)
+ClassAssertion(top-down-common:Term :term:qualitativeAnalysis)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:frameworkProgramme">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Framework Programme</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:quantitativeSurvey (Quantitative Survey)
 
+AnnotationAssertion(rdfs:label :term:quantitativeSurvey "Quantitative Survey"@en)
+ClassAssertion(top-down-common:Term :term:quantitativeSurvey)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:gameTheory -->
+# Individual: :term:reboundEffect (Rebound Effect)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:gameTheory">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Game Theory</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:reboundEffect "Rebound Effect"@en)
+ClassAssertion(top-down-common:Term :term:reboundEffect)
 
+# Individual: :term:reboundEffects (Rebound Effects)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalClimate -->
+AnnotationAssertion(rdfs:label :term:reboundEffects "Rebound Effects"@en)
+ClassAssertion(top-down-common:Term :term:reboundEffects)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalClimate">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Global Climate</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:reflexiveGovernance (Reflexive Governance)
 
+AnnotationAssertion(rdfs:label :term:reflexiveGovernance "Reflexive Governance"@en)
+ClassAssertion(top-down-common:Term :term:reflexiveGovernance)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalEnvironmentalChange -->
+# Individual: :term:regionalSustainability (Regional Sustainability)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:globalEnvironmentalChange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Global Environmental Change</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:regionalSustainability "Regional Sustainability"@en)
+ClassAssertion(top-down-common:Term :term:regionalSustainability)
 
+# Individual: :term:renewableEnergy (Renewable Energy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:goodLife -->
+AnnotationAssertion(rdfs:label :term:renewableEnergy "Renewable Energy"@en)
+ClassAssertion(top-down-common:Term :term:renewableEnergy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:goodLife">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Good Life</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:resourceEconomics (Resource Economics)
 
+AnnotationAssertion(rdfs:label :term:resourceEconomics "Resource Economics"@en)
+ClassAssertion(top-down-common:Term :term:resourceEconomics)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:governanceApproach -->
+# Individual: :term:responsibleConsumption (Responsible Consumption)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:governanceApproach">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Governance Approach</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:responsibleConsumption "Responsible Consumption"@en)
+ClassAssertion(top-down-common:Term :term:responsibleConsumption)
 
+# Individual: :term:sampleSize (Sample Size)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomy -->
+AnnotationAssertion(rdfs:label :term:sampleSize "Sample Size"@en)
+ClassAssertion(top-down-common:Term :term:sampleSize)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Green Economy</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:scenarioDevelopment (Scenario Development)
 
+AnnotationAssertion(rdfs:label :term:scenarioDevelopment "Scenario Development"@en)
+ClassAssertion(top-down-common:Term :term:scenarioDevelopment)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomyGrant -->
+# Individual: :term:seventhFrameworkProgramme (Seventh FrameworkProgramme)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenEconomyGrant">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Green Economy Grant</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:seventhFrameworkProgramme "Seventh FrameworkProgramme"@en)
+ClassAssertion(top-down-common:Term :term:seventhFrameworkProgramme)
 
+# Individual: :term:simplicityLifestyle (Simplicity Lifestyle)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenhouseGas -->
+AnnotationAssertion(rdfs:label :term:simplicityLifestyle "Simplicity Lifestyle"@en)
+ClassAssertion(top-down-common:Term :term:simplicityLifestyle)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:greenhouseGas">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Greenhouse Gas</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:socialChange (Social Change)
 
+AnnotationAssertion(rdfs:label :term:socialChange "Social Change"@en)
+ClassAssertion(top-down-common:Term :term:socialChange)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:groupIdentification -->
+# Individual: :term:socialCohesion (Social Cohesion)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:groupIdentification">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Group Identification</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:socialCohesion "Social Cohesion"@en)
+ClassAssertion(top-down-common:Term :term:socialCohesion)
 
+# Individual: :term:socialContext (Social Context)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:healthyFood -->
+AnnotationAssertion(rdfs:label :term:socialContext "Social Context"@en)
+ClassAssertion(top-down-common:Term :term:socialContext)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:healthyFood">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Healthy Food</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:socialDilemma (Social Dilemma)
 
+AnnotationAssertion(rdfs:label :term:socialDilemma "Social Dilemma"@en)
+ClassAssertion(top-down-common:Term :term:socialDilemma)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbon -->
+# Individual: :term:socialEconomy (Social Economy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbon">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household Carbon</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:socialEconomy "Social Economy"@en)
+ClassAssertion(top-down-common:Term :term:socialEconomy)
 
+# Individual: :term:socialIdentity (Social Identity)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbonFootprint -->
+AnnotationAssertion(rdfs:label :term:socialIdentity "Social Identity"@en)
+ClassAssertion(top-down-common:Term :term:socialIdentity)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdCarbonFootprint">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household CarbonFootprint</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:socialInnovation (Social Innovation)
 
+AnnotationAssertion(rdfs:label :term:socialInnovation "Social Innovation"@en)
+ClassAssertion(top-down-common:Term :term:socialInnovation)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdConsumption -->
+# Individual: :term:socialLearning (Social Learning)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household Consumption</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:socialLearning "Social Learning"@en)
+ClassAssertion(top-down-common:Term :term:socialLearning)
 
+# Individual: :term:socialMarketing (Social Marketing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergy -->
+AnnotationAssertion(rdfs:label :term:socialMarketing "Social Marketing"@en)
+ClassAssertion(top-down-common:Term :term:socialMarketing)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household Energy</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:socialNetwork (Social Network)
 
+AnnotationAssertion(rdfs:label :term:socialNetwork "Social Network"@en)
+ClassAssertion(top-down-common:Term :term:socialNetwork)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergyUse -->
+# Individual: :term:socialNorm (Social Norm)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdEnergyUse">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household Energy Use</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:socialNorm "Social Norm"@en)
+ClassAssertion(top-down-common:Term :term:socialNorm)
 
+# Individual: :term:socialPsychology (Social Psychology)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdExpenditure -->
+AnnotationAssertion(rdfs:label :term:socialPsychology "Social Psychology"@en)
+ClassAssertion(top-down-common:Term :term:socialPsychology)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdExpenditure">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household Expenditure</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:socialRelations (Social Relations)
 
+AnnotationAssertion(rdfs:label :term:socialRelations "Social Relations"@en)
+ClassAssertion(top-down-common:Term :term:socialRelations)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdIncome -->
+# Individual: :term:socialResponsibility (Social Responsibility)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdIncome">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household Income</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:socialResponsibility "Social Responsibility"@en)
+ClassAssertion(top-down-common:Term :term:socialResponsibility)
 
+# Individual: :term:socialStatus (Social Status)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdProduction -->
+AnnotationAssertion(rdfs:label :term:socialStatus "Social Status"@en)
+ClassAssertion(top-down-common:Term :term:socialStatus)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:householdProduction">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Household Production</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:socialStructure (Social Structure)
 
+AnnotationAssertion(rdfs:label :term:socialStructure "Social Structure"@en)
+ClassAssertion(top-down-common:Term :term:socialStructure)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDecision -->
+# Individual: :term:socialSupport (Social Support)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDecision">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Human Decision</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:socialSupport "Social Support"@en)
+ClassAssertion(top-down-common:Term :term:socialSupport)
 
+# Individual: :term:stakeholderAnalysis (Stakeholder Analysis)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDevelopment -->
+AnnotationAssertion(rdfs:label :term:stakeholderAnalysis "Stakeholder Analysis"@en)
+ClassAssertion(top-down-common:Term :term:stakeholderAnalysis)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanDevelopment">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Human Development</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:structuralEquivalence (Structural Equivalence)
 
+AnnotationAssertion(rdfs:label :term:structuralEquivalence "Structural Equivalence"@en)
+ClassAssertion(top-down-common:Term :term:structuralEquivalence)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanEcology -->
+# Individual: :term:studyExchange (Study Exchange)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanEcology">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Human Ecology</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:studyExchange "Study Exchange"@en)
+ClassAssertion(top-down-common:Term :term:studyExchange)
 
+# Individual: :term:subjectiveWellbeing (Subjective Wellbeing)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanNeeds -->
+AnnotationAssertion(rdfs:label :term:subjectiveWellbeing "Subjective Wellbeing"@en)
+ClassAssertion(top-down-common:Term :term:subjectiveWellbeing)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:humanNeeds">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Human Needs</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:summaryReport (Summary Report)
 
+AnnotationAssertion(rdfs:label :term:summaryReport "Summary Report"@en)
+ClassAssertion(top-down-common:Term :term:summaryReport)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:identityTheory -->
+# Individual: :term:supplyChain (Supply Chain)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:identityTheory">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Identity Theory</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:supplyChain "Supply Chain"@en)
+ClassAssertion(top-down-common:Term :term:supplyChain)
 
+# Individual: :term:sustainabilityInitiative (Sustainability Initiative)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCost -->
+AnnotationAssertion(rdfs:label :term:sustainabilityInitiative "Sustainability Initiative"@en)
+ClassAssertion(top-down-common:Term :term:sustainabilityInitiative)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCost">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Indirect Cost</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:sustainabilityTransition (Sustainability Transition)
 
+AnnotationAssertion(rdfs:label :term:sustainabilityTransition "Sustainability Transition"@en)
+ClassAssertion(top-down-common:Term :term:sustainabilityTransition)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCosts -->
+# Individual: :term:sustainableBehavior (Sustainable Behavior)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectCosts">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Indirect Costs</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:sustainableBehavior "Sustainable Behavior"@en)
+ClassAssertion(top-down-common:Term :term:sustainableBehavior)
 
+# Individual: :term:sustainableBehaviour (Sustainable Behaviour)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEffects -->
+AnnotationAssertion(rdfs:label :term:sustainableBehaviour "Sustainable Behaviour"@en)
+ClassAssertion(top-down-common:Term :term:sustainableBehaviour)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEffects">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Indirect Effects</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:sustainableConsumption (Sustainable Consumption)
 
+AnnotationAssertion(rdfs:label :term:sustainableConsumption "Sustainable Consumption"@en)
+ClassAssertion(top-down-common:Term :term:sustainableConsumption)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEnergy -->
+# Individual: :term:sustainableDevelopment (Sustainable Development)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:indirectEnergy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Indirect Energy</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:sustainableDevelopment "Sustainable Development"@en)
+ClassAssertion(top-down-common:Term :term:sustainableDevelopment)
 
+# Individual: :term:sustainableEnergy (Sustainable Energy)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:industrialEcology -->
+AnnotationAssertion(rdfs:label :term:sustainableEnergy "Sustainable Energy"@en)
+ClassAssertion(top-down-common:Term :term:sustainableEnergy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:industrialEcology">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Industrial Ecology</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:sustainableEurope (Sustainable Europe)
 
+AnnotationAssertion(rdfs:label :term:sustainableEurope "Sustainable Europe"@en)
+ClassAssertion(top-down-common:Term :term:sustainableEurope)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initialOntology -->
+# Individual: :term:sustainableFood (Sustainable Food)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initialOntology">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Initial Ontology</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:sustainableFood "Sustainable Food"@en)
+ClassAssertion(top-down-common:Term :term:sustainableFood)
 
+# Individual: :term:sustainableFoodConsumption (Sustainable FoodConsumption)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeLevel -->
+AnnotationAssertion(rdfs:label :term:sustainableFoodConsumption "Sustainable FoodConsumption"@en)
+ClassAssertion(top-down-common:Term :term:sustainableFoodConsumption)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeLevel">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Initiative Level</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:sustainableFuture (Sustainable Future)
 
+AnnotationAssertion(rdfs:label :term:sustainableFuture "Sustainable Future"@en)
+ClassAssertion(top-down-common:Term :term:sustainableFuture)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeSurvey -->
+# Individual: :term:sustainableHousehold (Sustainable Household)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:initiativeSurvey">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Initiative Survey</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:sustainableHousehold "Sustainable Household"@en)
+ClassAssertion(top-down-common:Term :term:sustainableHousehold)
 
+# Individual: :term:sustainableLifestyle (Sustainable Lifestyle)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intelligentCooking -->
+AnnotationAssertion(rdfs:label :term:sustainableLifestyle "Sustainable Lifestyle"@en)
+ClassAssertion(top-down-common:Term :term:sustainableLifestyle)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intelligentCooking">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Intelligent Cooking</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:sustainableLiving (Sustainable Living)
 
+AnnotationAssertion(rdfs:label :term:sustainableLiving "Sustainable Living"@en)
+ClassAssertion(top-down-common:Term :term:sustainableLiving)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intentionalCommunity -->
+# Individual: :term:sustainableMobility (Sustainable Mobility)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:intentionalCommunity">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Intentional Community</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:sustainableMobility "Sustainable Mobility"@en)
+ClassAssertion(top-down-common:Term :term:sustainableMobility)
 
+# Individual: :term:sustainableSociety (Sustainable Society)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:landFootprint -->
+AnnotationAssertion(rdfs:label :term:sustainableSociety "Sustainable Society"@en)
+ClassAssertion(top-down-common:Term :term:sustainableSociety)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:landFootprint">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Land Footprint</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:systemChange (System Change)
 
+AnnotationAssertion(rdfs:label :term:systemChange "System Change"@en)
+ClassAssertion(top-down-common:Term :term:systemChange)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:legalEntity -->
+# Individual: :term:systemInnovation (System Innovation)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:legalEntity">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Legal Entity</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:systemInnovation "System Innovation"@en)
+ClassAssertion(top-down-common:Term :term:systemInnovation)
 
+# Individual: :term:technologicalChange (Technological Change)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lessSustainable -->
+AnnotationAssertion(rdfs:label :term:technologicalChange "Technological Change"@en)
+ClassAssertion(top-down-common:Term :term:technologicalChange)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lessSustainable">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Less Sustainable</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:technologicalForecasting (Technological Forecasting)
 
+AnnotationAssertion(rdfs:label :term:technologicalForecasting "Technological Forecasting"@en)
+ClassAssertion(top-down-common:Term :term:technologicalForecasting)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleChange -->
+# Individual: :term:technologicalProgress (Technological Progress)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleChange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Lifestyle Change</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:technologicalProgress "Technological Progress"@en)
+ClassAssertion(top-down-common:Term :term:technologicalProgress)
 
+# Individual: :term:technologyAnalysis (Technology Analysis)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleSatisfaction -->
+AnnotationAssertion(rdfs:label :term:technologyAnalysis "Technology Analysis"@en)
+ClassAssertion(top-down-common:Term :term:technologyAnalysis)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lifestyleSatisfaction">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Lifestyle Satisfaction</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:timeAffluence (Time Affluence)
 
+AnnotationAssertion(rdfs:label :term:timeAffluence "Time Affluence"@en)
+ClassAssertion(top-down-common:Term :term:timeAffluence)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lowCarbon -->
+# Individual: :term:timeScarcity (Time Scarcity)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:lowCarbon">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Low Carbon</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:timeScarcity "Time Scarcity"@en)
+ClassAssertion(top-down-common:Term :term:timeScarcity)
 
+# Individual: :term:timeSeries (Time Series)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:microeconomicModel -->
+AnnotationAssertion(rdfs:label :term:timeSeries "Time Series"@en)
+ClassAssertion(top-down-common:Term :term:timeSeries)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:microeconomicModel">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Microeconomic Model</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:timeUseSurvey (Time UseSurvey)
 
+AnnotationAssertion(rdfs:label :term:timeUseSurvey "Time UseSurvey"@en)
+ClassAssertion(top-down-common:Term :term:timeUseSurvey)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:mindfulnessMeditation -->
+# Individual: :term:totalEnergy (Total Energy)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:mindfulnessMeditation">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Mindfulness Meditation</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:totalEnergy "Total Energy"@en)
+ClassAssertion(top-down-common:Term :term:totalEnergy)
 
+# Individual: :term:transitionManagement (Transition Management)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:modelRegion -->
+AnnotationAssertion(rdfs:label :term:transitionManagement "Transition Management"@en)
+ClassAssertion(top-down-common:Term :term:transitionManagement)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:modelRegion">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Model Region</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:urbanAgriculture (Urban Agriculture)
 
+AnnotationAssertion(rdfs:label :term:urbanAgriculture "Urban Agriculture"@en)
+ClassAssertion(top-down-common:Term :term:urbanAgriculture)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:moralNorm -->
+# Individual: :term:urbanArea (Urban Area)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:moralNorm">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Moral Norm</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:urbanArea "Urban Area"@en)
+ClassAssertion(top-down-common:Term :term:urbanArea)
 
+# Individual: :term:urbanPlanning (Urban Planning)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:motivatingSustainableConsumption -->
+AnnotationAssertion(rdfs:label :term:urbanPlanning "Urban Planning"@en)
+ClassAssertion(top-down-common:Term :term:urbanPlanning)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:motivatingSustainableConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Motivating SustainableConsumption</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:utilityFunction (Utility Function)
 
+AnnotationAssertion(rdfs:label :term:utilityFunction "Utility Function"@en)
+ClassAssertion(top-down-common:Term :term:utilityFunction)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:naturalResource -->
+# Individual: :term:visionDevelopment (Vision Development)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:naturalResource">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Natural Resource</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:visionDevelopment "Vision Development"@en)
+ClassAssertion(top-down-common:Term :term:visionDevelopment)
 
+# Individual: :term:voluntarySimplicity (Voluntary Simplicity)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:networkData -->
+AnnotationAssertion(rdfs:label :term:voluntarySimplicity "Voluntary Simplicity"@en)
+ClassAssertion(top-down-common:Term :term:voluntarySimplicity)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:networkData">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Network Data</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: :term:voluntarySimplicityLifestyle (Voluntary SimplicityLifestyle)
 
+AnnotationAssertion(rdfs:label :term:voluntarySimplicityLifestyle "Voluntary SimplicityLifestyle"@en)
+ClassAssertion(top-down-common:Term :term:voluntarySimplicityLifestyle)
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:normActivation -->
+# Individual: :term:waterUsage (Water Usage)
 
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:normActivation">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Norm Activation</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label :term:waterUsage "Water Usage"@en)
+ClassAssertion(top-down-common:Term :term:waterUsage)
 
 
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:opposingSubgroup -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:opposingSubgroup">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Opposing Subgroup</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFarming -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFarming">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Organic Farming</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFood -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:organicFood">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Organic Food</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:participatoryVision -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:participatoryVision">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Participatory Vision</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:perceivedBehaviouralControl -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:perceivedBehaviouralControl">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Perceived BehaviouralControl</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:policyLandscape -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:policyLandscape">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Policy Landscape</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:pressureCooker -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:pressureCooker">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Pressure Cooker</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:productiveHours -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:productiveHours">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Productive Hours</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:prospectTheory -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:prospectTheory">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Prospect Theory</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicPolicy -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicPolicy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Public Policy</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicSector -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:publicSector">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Public Sector</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:purposeInLife -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:purposeInLife">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Purpose InLife</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:qualitativeAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:qualitativeAnalysis">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Qualitative Analysis</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:quantitativeSurvey -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:quantitativeSurvey">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Quantitative Survey</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffect -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffect">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Rebound Effect</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffects -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reboundEffects">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Rebound Effects</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reflexiveGovernance -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:reflexiveGovernance">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Reflexive Governance</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:regionalSustainability -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:regionalSustainability">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Regional Sustainability</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:renewableEnergy -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:renewableEnergy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Renewable Energy</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:resourceEconomics -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:resourceEconomics">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Resource Economics</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:responsibleConsumption -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:responsibleConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Responsible Consumption</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sampleSize -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sampleSize">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sample Size</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:scenarioDevelopment -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:scenarioDevelopment">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Scenario Development</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:seventhFrameworkProgramme -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:seventhFrameworkProgramme">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Seventh FrameworkProgramme</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:simplicityLifestyle -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:simplicityLifestyle">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Simplicity Lifestyle</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialChange -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialChange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Change</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialCohesion -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialCohesion">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Cohesion</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialContext -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialContext">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Context</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialDilemma -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialDilemma">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Dilemma</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialEconomy -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialEconomy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Economy</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialIdentity -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialIdentity">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Identity</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialInnovation -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialInnovation">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Innovation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialLearning -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialLearning">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Learning</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialMarketing -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialMarketing">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Marketing</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNetwork -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNetwork">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Network</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNorm -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialNorm">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Norm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialPsychology -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialPsychology">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Psychology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialRelations -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialRelations">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Relations</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialResponsibility -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialResponsibility">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Responsibility</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStatus -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStatus">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Status</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStructure -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialStructure">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Structure</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialSupport -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:socialSupport">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Social Support</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:stakeholderAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:stakeholderAnalysis">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Stakeholder Analysis</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:structuralEquivalence -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:structuralEquivalence">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Structural Equivalence</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:studyExchange -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:studyExchange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Study Exchange</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:subjectiveWellbeing -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:subjectiveWellbeing">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Subjective Wellbeing</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:summaryReport -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:summaryReport">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Summary Report</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:supplyChain -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:supplyChain">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Supply Chain</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityInitiative -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityInitiative">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainability Initiative</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityTransition -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainabilityTransition">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainability Transition</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehavior -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehavior">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Behavior</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehaviour -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableBehaviour">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Behaviour</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableConsumption -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Consumption</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableDevelopment -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableDevelopment">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Development</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEnergy -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEnergy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Energy</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEurope -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableEurope">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Europe</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFood -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFood">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Food</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFoodConsumption -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFoodConsumption">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable FoodConsumption</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFuture -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableFuture">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Future</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableHousehold -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableHousehold">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Household</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLifestyle -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLifestyle">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Lifestyle</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLiving -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableLiving">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Living</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableMobility -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableMobility">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Mobility</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableSociety -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:sustainableSociety">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Sustainable Society</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemChange -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemChange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">System Change</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemInnovation -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:systemInnovation">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">System Innovation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalChange -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalChange">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Technological Change</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalForecasting -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalForecasting">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Technological Forecasting</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalProgress -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologicalProgress">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Technological Progress</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologyAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:technologyAnalysis">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Technology Analysis</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeAffluence -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeAffluence">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Time Affluence</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeScarcity -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeScarcity">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Time Scarcity</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeSeries -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeSeries">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Time Series</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeUseSurvey -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:timeUseSurvey">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Time UseSurvey</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:totalEnergy -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:totalEnergy">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Total Energy</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:transitionManagement -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:transitionManagement">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Transition Management</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanAgriculture -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanAgriculture">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Urban Agriculture</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanArea -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanArea">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Urban Area</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanPlanning -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:urbanPlanning">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Urban Planning</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:utilityFunction -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:utilityFunction">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Utility Function</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:visionDevelopment -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:visionDevelopment">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Vision Development</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicity -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicity">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Voluntary Simplicity</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicityLifestyle -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:voluntarySimplicityLifestyle">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Voluntary SimplicityLifestyle</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:waterUsage -->
-
-    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups#term:waterUsage">
-        <rdf:type rdf:resource=""http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#Term"/>
-        <rdfs:label xml:lang="en">Water Usage</rdfs:label>
-    </owl:NamedIndividual>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
-
+)

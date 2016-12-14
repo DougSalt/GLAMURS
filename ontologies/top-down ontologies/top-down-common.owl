@@ -94,10 +94,8 @@ Declaration(Class(:TransitionManagement))
 Declaration(Class(:TransportStudies))
 Declaration(Class(:UndefinedEntityType))
 Declaration(ObjectProperty(:disciplineHasSpecialization))
-Declaration(ObjectProperty(:hasProperty))
 Declaration(ObjectProperty(:hasSuggestedProperty))
 Declaration(ObjectProperty(:isCommonSense))
-Declaration(ObjectProperty(:isPropertyOf))
 Declaration(ObjectProperty(:partOfAgenBasedModelling))
 Declaration(ObjectProperty(:partOfAnthropology))
 Declaration(ObjectProperty(:partOfArchitecture))
@@ -230,12 +228,6 @@ AnnotationAssertion(rdfs:label :disciplineHasSpecialization "discipline has spec
 SubObjectPropertyOf(:disciplineHasSpecialization basic:hasPart)
 InverseObjectProperties(:disciplineHasSpecialization :partOfDiscipline)
 
-# Object Property: :hasProperty (has property)
-
-AnnotationAssertion(rdfs:label :hasProperty "has property"@en)
-InverseObjectProperties(:hasProperty :hasProperty)
-InverseObjectProperties(:hasProperty :isPropertyOf)
-
 # Object Property: :hasSuggestedProperty (has suggested property)
 
 AnnotationAssertion(rdfs:label :hasSuggestedProperty "has suggested property"@en)
@@ -244,10 +236,6 @@ AnnotationAssertion(rdfs:label :hasSuggestedProperty "has suggested property"@en
 
 AnnotationAssertion(rdfs:label :isCommonSense "is common sense"@en)
 ObjectPropertyRange(:isCommonSense :CommonSense)
-
-# Object Property: :isPropertyOf (is property of)
-
-AnnotationAssertion(rdfs:label :isPropertyOf "is property of"@en)
 
 # Object Property: :partOfAgenBasedModelling (part of agent-based modelling)
 

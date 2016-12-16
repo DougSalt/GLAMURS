@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#"
+     xml:base="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-14</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology will act as the base ontology for Social Network Analysis for the following regions.
+
+Romania
+Spain
+Austria
+Germany
+Italy
+Netherlands</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/social-network-analysis/SNA-RoE#author:DougSalt"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#informationFlow -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#informationFlow">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#negativeFlow -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#negativeFlow">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#relationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#relationship">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#supportFlow -->
+
+    <owl:ObjectProperty rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#supportFlow">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Citizenry -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Citizenry">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#CompanyOrEconomicNetwork -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#CompanyOrEconomicNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Company or economic network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Consumer -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Consumer">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#EducationOrResearchOrConsulting -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#EducationOrResearchOrConsulting">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education, research or consulting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Governance -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Governance">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Media -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Media">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#RegionalDevelopmentInitiative -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#RegionalDevelopmentInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regional development initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SocialCulturalInitiative -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SocialCulturalInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social-cultural initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SpatialElement -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SpatialElement">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SustainabilityInitiative -->
+
+    <owl:Class rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SustainabilityInitiative">
+        <rdfs:subClassOf rdf:resource="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sustainability initiative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#author:DougSalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#author:DougSalt">
+        <rdfs:label>Doug Salt</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

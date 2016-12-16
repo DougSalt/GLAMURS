@@ -1,14 +1,14 @@
-Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(basic:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic#>)
+Prefix(integration:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/integration#>)
 
 
-Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>
-Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic>)
+Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata>
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/integration>)
 Annotation(rdfs:comment "Note the conventions for this ontology are:
 
 The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
@@ -225,7 +225,7 @@ AnnotationPropertyDomain(:periodOfProcess :Process)
 # Object Property: :disciplineHasSpecialization (discipline has specialization)
 
 AnnotationAssertion(rdfs:label :disciplineHasSpecialization "discipline has specialization"@en)
-SubObjectPropertyOf(:disciplineHasSpecialization basic:hasPart)
+SubObjectPropertyOf(:disciplineHasSpecialization integration:hasPart)
 InverseObjectProperties(:disciplineHasSpecialization :partOfDiscipline)
 
 # Object Property: :hasSuggestedProperty (has suggested property)
@@ -299,7 +299,7 @@ ObjectPropertyDomain(:partOfDevelopmentStudies :DevelopmentStudies)
 
 # Object Property: :partOfDiscipline (part of discipline)
 
-SubObjectPropertyOf(:partOfDiscipline basic:partOf)
+SubObjectPropertyOf(:partOfDiscipline integration:partOf)
 
 # Object Property: :partOfEcologicalEconomics (part of ecological economics)
 

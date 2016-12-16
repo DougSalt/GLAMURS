@@ -1,0 +1,27 @@
+digraph G {
+  node [shape = Mrecord, fontsize = 14, style = filled, fontname = Helvetica];
+  edge [color = "#1000D0", fontcolor = "#1000D0", fontsize = 12, labelfontcolor = "#1000D0", labelfontname = Helvetica, fontname = Helvetica];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Citizenry>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = Citizenry];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = Actor];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Media>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = Media];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = Initiative];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SpatialElement>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = SpatialElement];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Governance>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = Governance];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Consumer>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = Consumer];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#RegionalDevelopmentInitiative>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = RegionalDevelopmentInitiative];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#EducationOrResearchOrConsulting>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = EducationOrResearchOrConsulting];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SustainabilityInitiative>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = SustainabilityInitiative];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#CompanyOrEconomicNetwork>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = CompanyOrEconomicNetwork];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SocialCulturalInitiative>" [fillcolor = "#800000", fontcolor = "#FFFFFF", label = SocialCulturalInitiative];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SustainabilityInitiative>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SocialCulturalInitiative>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Governance>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#CompanyOrEconomicNetwork>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Media>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#RegionalDevelopmentInitiative>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Initiative>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Consumer>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#SpatialElement>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Citizenry>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+  "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#EducationOrResearchOrConsulting>" -> "<http://www.glamurs.eu/ontologies/2016/TBOX/bottom-up/sna-roe#Actor>" [color = "#808080", fontcolor = "#808080", arrowhead = empty, label = "is-a"];
+}

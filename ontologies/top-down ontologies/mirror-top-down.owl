@@ -1,0 +1,22 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/KB/mirror-top-down#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(mirror:=<http://www.glamurs.eu/ontologies/2016/KB/mirror#>)
+Prefix(top-down:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down#>)
+
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/KB/mirror-top-down>
+Import(<http://www.glamurs.eu/ontologies/2016/KB/mirror>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down>)
+Annotation(mirror:creator mirror:author:DougSalt)
+
+Declaration(NamedIndividual(:term:Satisfaction))
+AnnotationAssertion(mirror:describes :term:Satisfaction top-down:Satisfaction)
+ClassAssertion(mirror:Term :term:Satisfaction)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Satisfaction mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso top-down:Satisfaction :term:Satisfaction)
+
+)

@@ -1,0 +1,523 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-questionnaire#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(mirror:=<http://www.glamurs.eu/ontologies/2016/KB/mirror#>)
+Prefix(questionnaire:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#>)
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-questionnaire>
+Import(<http://www.glamurs.eu/ontologies/2016/KB/mirror>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire>)
+
+Annotation(mirror:creator mirror:author:DougSalt)
+
+AnnotationAssertion(mirror:describes questionnaire:term:GrassrootsMovement questionnaire:GrassrootsMovement)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:GrassrootsMovement mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Identity))
+AnnotationAssertion(mirror:describes :term:Identity questionnaire:Identity)
+ClassAssertion(mirror:Term :term:Identity)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Identity mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Identity :term:Identity)
+
+Declaration(NamedIndividual(:term:EquilibriumSelection))
+AnnotationAssertion(mirror:describes :term:EquilibriumSelection questionnaire:EquilibriumSelection)
+ClassAssertion(mirror:Term :term:EquilibriumSelection)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:EquilibriumSelection mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:EquilibriumSelection :term:EquilibriumSelection)
+
+Declaration(NamedIndividual(:term:AgentBasedModel))
+AnnotationAssertion(mirror:describes :term:AgentBasedModel questionnaire:AgentBasedModel)
+ClassAssertion(mirror:Term :term:AgentBasedModel)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:AgentBasedModel mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:AgentBasedModel :term:AgentBasedModel)
+
+Declaration(NamedIndividual(:term:Feedback))
+AnnotationAssertion(mirror:describes :term:Feedback questionnaire:Feedback)
+ClassAssertion(mirror:Term :term:Feedback)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Feedback mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Feedback :term:Feedback)
+
+Declaration(NamedIndividual(:term:Ecocide))
+AnnotationAssertion(mirror:describes :term:Ecocide questionnaire:Ecocide)
+ClassAssertion(mirror:Term :term:Ecocide)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Ecocide mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Ecocide :term:Ecocide)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Agent questionnaire:Agent)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Agent mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:wellBeing questionnaire:wellBeing)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:wellBeing mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Crisis))
+AnnotationAssertion(mirror:describes :term:Crisis questionnaire:Crisis)
+ClassAssertion(mirror:Term :term:Crisis)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Crisis mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Crisis :term:Crisis)
+
+Declaration(NamedIndividual(:term:Insight))
+AnnotationAssertion(mirror:describes :term:Insight questionnaire:Insight)
+ClassAssertion(mirror:Term :term:Insight)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Insight mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Insight :term:Insight)
+
+Declaration(NamedIndividual(:term:adaptiveBelief))
+AnnotationAssertion(mirror:describes :term:adaptiveBelief questionnaire:adaptiveBelief)
+ClassAssertion(mirror:Term :term:adaptiveBelief)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:adaptiveBelief mirror:ontology:dataproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:adaptiveBelief :term:adaptiveBelief)
+
+Declaration(NamedIndividual(:term:Income))
+AnnotationAssertion(mirror:describes :term:Income questionnaire:Income)
+ClassAssertion(mirror:Term :term:Income)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Income mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Income :term:Income)
+
+Declaration(NamedIndividual(:term:Practice))
+AnnotationAssertion(mirror:describes :term:Practice questionnaire:Practice)
+ClassAssertion(mirror:Term :term:Practice)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Practice mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Practice :term:Practice)
+
+Declaration(NamedIndividual(:term:Motivation))
+AnnotationAssertion(mirror:describes :term:Motivation questionnaire:Motivation)
+ClassAssertion(mirror:Term :term:Motivation)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Motivation mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Motivation :term:Motivation)
+
+Declaration(NamedIndividual(:term:QualityOfLife))
+AnnotationAssertion(mirror:describes :term:QualityOfLife questionnaire:QualityOfLife)
+ClassAssertion(mirror:Term :term:QualityOfLife)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:QualityOfLife mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:QualityOfLife :term:QualityOfLife)
+
+Declaration(NamedIndividual(:term:EfficiencyIncrease))
+AnnotationAssertion(mirror:describes :term:EfficiencyIncrease questionnaire:EfficiencyIncrease)
+ClassAssertion(mirror:Term :term:EfficiencyIncrease)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:EfficiencyIncrease mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:EfficiencyIncrease :term:EfficiencyIncrease)
+
+Declaration(NamedIndividual(:term:CollectiveWellBeing))
+AnnotationAssertion(mirror:describes :term:CollectiveWellBeing questionnaire:CollectiveWellBeing)
+ClassAssertion(mirror:Term :term:CollectiveWellBeing)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:CollectiveWellBeing mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:CollectiveWellBeing :term:CollectiveWellBeing)
+
+AnnotationAssertion(mirror:describes questionnaire:term:CriticalMass questionnaire:CriticalMass)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:CriticalMass mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Time))
+AnnotationAssertion(mirror:describes :term:Time questionnaire:Time)
+ClassAssertion(mirror:Term :term:Time)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Time mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Time :term:Time)
+
+Declaration(NamedIndividual(:term:Will))
+AnnotationAssertion(mirror:describes :term:Will questionnaire:Will)
+ClassAssertion(mirror:Term :term:Will)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Will mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Will :term:Will)
+
+AnnotationAssertion(mirror:describes questionnaire:term:PathAnalysis questionnaire:PathAnalysis)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:PathAnalysis mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:BackCasting questionnaire:BackCasting)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:BackCasting mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Construct questionnaire:Construct)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Construct mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Interaction questionnaire:Interaction)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Interaction mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:InitativeOrganizers))
+AnnotationAssertion(mirror:describes :term:InitativeOrganizers questionnaire:InitativeOrganizers)
+ClassAssertion(mirror:Term :term:InitativeOrganizers)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:InitativeOrganizers mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:InitativeOrganizers :term:InitativeOrganizers)
+
+Declaration(NamedIndividual(:term:version))
+AnnotationAssertion(mirror:describes :term:version questionnaire:version)
+ClassAssertion(mirror:Term :term:version)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:version mirror:ontology:dataproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:version :term:version)
+
+AnnotationAssertion(mirror:describes questionnaire:term:TippingPoint questionnaire:TippingPoint)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:TippingPoint mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Degrowth questionnaire:Degrowth)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Degrowth mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Governance questionnaire:Governance)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Governance mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Citizens))
+AnnotationAssertion(mirror:describes :term:Citizens questionnaire:Citizens)
+ClassAssertion(mirror:Term :term:Citizens)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Citizens mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Citizens :term:Citizens)
+
+AnnotationAssertion(mirror:describes questionnaire:term:sufficiency questionnaire:sufficiency)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:sufficiency mirror:ontology:objectproperty)
+
+AnnotationAssertion(mirror:describes questionnaire:term:ReboundEffect questionnaire:ReboundEffect)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:ReboundEffect mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:ItemResponseTheory questionnaire:ItemResponseTheory)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:ItemResponseTheory mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:PathCoefficient questionnaire:PathCoefficient)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:PathCoefficient mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:CircularEconomy questionnaire:CircularEconomy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:CircularEconomy mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:personalUncertainty))
+AnnotationAssertion(mirror:describes :term:personalUncertainty questionnaire:personalUncertainty)
+ClassAssertion(mirror:Term :term:personalUncertainty)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:personalUncertainty mirror:ontology:dataproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:personalUncertainty :term:personalUncertainty)
+
+Declaration(NamedIndividual(:term:ModelAccuracy))
+AnnotationAssertion(mirror:describes :term:ModelAccuracy questionnaire:ModelAccuracy)
+ClassAssertion(mirror:Term :term:ModelAccuracy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:ModelAccuracy mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:ModelAccuracy :term:ModelAccuracy)
+
+Declaration(NamedIndividual(:term:Economy))
+AnnotationAssertion(mirror:describes :term:Economy questionnaire:Economy)
+ClassAssertion(mirror:Term :term:Economy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Economy mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Economy :term:Economy)
+
+Declaration(NamedIndividual(:term:constructIsMeasuredBy))
+AnnotationAssertion(mirror:describes :term:constructIsMeasuredBy questionnaire:constructIsMeasuredBy)
+ClassAssertion(mirror:Term :term:constructIsMeasuredBy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:constructIsMeasuredBy mirror:ontology:objectproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:constructIsMeasuredBy :term:constructIsMeasuredBy)
+
+Declaration(NamedIndividual(:term:Citizen))
+AnnotationAssertion(mirror:describes :term:Citizen questionnaire:Citizen)
+ClassAssertion(mirror:Term :term:Citizen)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Citizen mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Citizen :term:Citizen)
+
+AnnotationAssertion(mirror:describes questionnaire:term:simulates questionnaire:simulates)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:simulates mirror:ontology:objectproperty)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Policy questionnaire:Policy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Policy mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Lifestyle questionnaire:Lifestyle)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Lifestyle mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:InformationProcessing))
+AnnotationAssertion(mirror:describes :term:InformationProcessing questionnaire:InformationProcessing)
+ClassAssertion(mirror:Term :term:InformationProcessing)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:InformationProcessing mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:InformationProcessing :term:InformationProcessing)
+
+AnnotationAssertion(mirror:describes questionnaire:term:scenario questionnaire:scenario)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:scenario mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Culture))
+AnnotationAssertion(mirror:describes :term:Culture questionnaire:Culture)
+ClassAssertion(mirror:Term :term:Culture)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Culture mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Culture :term:Culture)
+
+Declaration(NamedIndividual(:term:Attribution))
+AnnotationAssertion(mirror:describes :term:Attribution questionnaire:Attribution)
+ClassAssertion(mirror:Term :term:Attribution)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Attribution mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Attribution :term:Attribution)
+
+AnnotationAssertion(mirror:describes questionnaire:term:altruism questionnaire:altruism)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:altruism mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:SociotechnicalSystem))
+AnnotationAssertion(mirror:describes :term:SociotechnicalSystem questionnaire:SociotechnicalSystem)
+ClassAssertion(mirror:Term :term:SociotechnicalSystem)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:SociotechnicalSystem mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:SociotechnicalSystem :term:SociotechnicalSystem)
+
+Declaration(NamedIndividual(:term:Attention))
+AnnotationAssertion(mirror:describes :term:Attention questionnaire:Attention)
+ClassAssertion(mirror:Term :term:Attention)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Attention mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Attention :term:Attention)
+
+Declaration(NamedIndividual(:term:Individual))
+AnnotationAssertion(mirror:describes :term:Individual questionnaire:Individual)
+ClassAssertion(mirror:Term :term:Individual)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Individual mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Individual :term:Individual)
+
+Declaration(NamedIndividual(:term:InitiativeOrganizer))
+AnnotationAssertion(mirror:describes :term:InitiativeOrganizer questionnaire:InitiativeOrganizer)
+ClassAssertion(mirror:Term :term:InitiativeOrganizer)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:InitiativeOrganizer mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:InitiativeOrganizer :term:InitiativeOrganizer)
+
+Declaration(NamedIndividual(:term:Collective))
+AnnotationAssertion(mirror:describes :term:Collective questionnaire:Collective)
+ClassAssertion(mirror:Term :term:Collective)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Collective mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Collective :term:Collective)
+
+Declaration(NamedIndividual(:term:Footprint))
+AnnotationAssertion(mirror:describes :term:Footprint questionnaire:Footprint)
+ClassAssertion(mirror:Term :term:Footprint)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Footprint mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Footprint :term:Footprint)
+
+Declaration(NamedIndividual(:term:Theory))
+AnnotationAssertion(mirror:describes :term:Theory questionnaire:Theory)
+ClassAssertion(mirror:Term :term:Theory)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Theory mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Theory :term:Theory)
+
+AnnotationAssertion(mirror:describes questionnaire:term:valueActionGap questionnaire:valueActionGap)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:valueActionGap mirror:ontology:objectproperty)
+
+Declaration(NamedIndividual(:term:Consumption))
+AnnotationAssertion(mirror:describes :term:Consumption questionnaire:Consumption)
+ClassAssertion(mirror:Term :term:Consumption)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Consumption mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Consumption :term:Consumption)
+
+Declaration(NamedIndividual(:term:Information))
+AnnotationAssertion(mirror:describes :term:Information questionnaire:Information)
+ClassAssertion(mirror:Term :term:Information)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Information mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Information :term:Information)
+
+Declaration(NamedIndividual(:term:WillOfInitiativeOrganizers))
+AnnotationAssertion(mirror:describes :term:WillOfInitiativeOrganizers questionnaire:WillOfInitiativeOrganizers)
+ClassAssertion(mirror:Term :term:WillOfInitiativeOrganizers)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:WillOfInitiativeOrganizers mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:WillOfInitiativeOrganizers :term:WillOfInitiativeOrganizers)
+
+Declaration(NamedIndividual(:term:WellBeing))
+AnnotationAssertion(mirror:describes :term:WellBeing questionnaire:WellBeing)
+ClassAssertion(mirror:Term :term:WellBeing)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:WellBeing mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:WellBeing :term:WellBeing)
+
+Declaration(NamedIndividual(:term:SocialNorm))
+AnnotationAssertion(mirror:describes :term:SocialNorm questionnaire:SocialNorm)
+ClassAssertion(mirror:Term :term:SocialNorm)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:SocialNorm mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:SocialNorm :term:SocialNorm)
+
+Declaration(NamedIndividual(:term:organizes))
+AnnotationAssertion(mirror:describes :term:organizes questionnaire:organizes)
+ClassAssertion(mirror:Term :term:organizes)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:organizes mirror:ontology:objectproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:organizes :term:organizes)
+
+Declaration(NamedIndividual(:term:Sharing))
+AnnotationAssertion(mirror:describes :term:Sharing questionnaire:Sharing)
+ClassAssertion(mirror:Term :term:Sharing)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Sharing mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Sharing :term:Sharing)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Model questionnaire:Model)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Model mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Network))
+AnnotationAssertion(mirror:describes :term:Network questionnaire:Network)
+ClassAssertion(mirror:Term :term:Network)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Network mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Network :term:Network)
+
+Declaration(NamedIndividual(:term:Experience))
+AnnotationAssertion(mirror:describes :term:Experience questionnaire:Experience)
+ClassAssertion(mirror:Term :term:Experience)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Experience mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Experience :term:Experience)
+
+Declaration(NamedIndividual(:term:Worker))
+AnnotationAssertion(mirror:describes :term:Worker questionnaire:Worker)
+ClassAssertion(mirror:Term :term:Worker)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Worker mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Worker :term:Worker)
+
+AnnotationAssertion(mirror:describes questionnaire:term:VoluntarySimplicity questionnaire:VoluntarySimplicity)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:VoluntarySimplicity mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:SelfPerception))
+AnnotationAssertion(mirror:describes :term:SelfPerception questionnaire:SelfPerception)
+ClassAssertion(mirror:Term :term:SelfPerception)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:SelfPerception mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:SelfPerception :term:SelfPerception)
+
+Declaration(NamedIndividual(:term:name))
+AnnotationAssertion(mirror:describes :term:name questionnaire:name)
+ClassAssertion(mirror:Term :term:name)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:name mirror:ontology:dataproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:name :term:name)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Behaviour questionnaire:Behaviour)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Behaviour mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:CausalRelationship))
+AnnotationAssertion(mirror:describes :term:CausalRelationship questionnaire:CausalRelationship)
+ClassAssertion(mirror:Term :term:CausalRelationship)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:CausalRelationship mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:CausalRelationship :term:CausalRelationship)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Transition questionnaire:Transition)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Transition mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:PersonalUncertainty questionnaire:PersonalUncertainty)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:PersonalUncertainty mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Learning questionnaire:Learning)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Learning mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Unemployment))
+AnnotationAssertion(mirror:describes :term:Unemployment questionnaire:Unemployment)
+ClassAssertion(mirror:Term :term:Unemployment)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Unemployment mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Unemployment :term:Unemployment)
+
+Declaration(NamedIndividual(:term:DecisionMaking))
+AnnotationAssertion(mirror:describes :term:DecisionMaking questionnaire:DecisionMaking)
+ClassAssertion(mirror:Term :term:DecisionMaking)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:DecisionMaking mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:DecisionMaking :term:DecisionMaking)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Commuter questionnaire:Commuter)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Commuter mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:socialPractice questionnaire:socialPractice)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:socialPractice mirror:ontology:objectproperty)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Risk questionnaire:Risk)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Risk mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:ExogenousFactors))
+AnnotationAssertion(mirror:describes :term:ExogenousFactors questionnaire:ExogenousFactors)
+ClassAssertion(mirror:Term :term:ExogenousFactors)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:ExogenousFactors mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:ExogenousFactors :term:ExogenousFactors)
+
+Declaration(NamedIndividual(:term:Surplus))
+AnnotationAssertion(mirror:describes :term:Surplus questionnaire:Surplus)
+ClassAssertion(mirror:Term :term:Surplus)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Surplus mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Surplus :term:Surplus)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Vision questionnaire:Vision)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Vision mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:GreenLifestyle))
+AnnotationAssertion(mirror:describes :term:GreenLifestyle questionnaire:GreenLifestyle)
+ClassAssertion(mirror:Term :term:GreenLifestyle)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:GreenLifestyle mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:GreenLifestyle :term:GreenLifestyle)
+
+Declaration(NamedIndividual(:term:Person))
+AnnotationAssertion(mirror:describes :term:Person questionnaire:Person)
+ClassAssertion(mirror:Term :term:Person)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Person mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Person :term:Person)
+
+Declaration(NamedIndividual(:term:geenLifestyle))
+AnnotationAssertion(mirror:describes :term:geenLifestyle questionnaire:geenLifestyle)
+ClassAssertion(mirror:Term :term:geenLifestyle)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:geenLifestyle mirror:ontology:objectproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:geenLifestyle :term:geenLifestyle)
+
+AnnotationAssertion(mirror:describes questionnaire:term:environmentalFootprint questionnaire:environmentalFootprint)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:environmentalFootprint mirror:ontology:dataproperty)
+
+AnnotationAssertion(mirror:describes questionnaire:term:psychologicalWellBeing questionnaire:psychologicalWellBeing)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:psychologicalWellBeing mirror:ontology:objectproperty)
+
+Declaration(NamedIndividual(:term:TimeAffluence))
+AnnotationAssertion(mirror:describes :term:TimeAffluence questionnaire:TimeAffluence)
+ClassAssertion(mirror:Term :term:TimeAffluence)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:TimeAffluence mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:TimeAffluence :term:TimeAffluence)
+
+Declaration(NamedIndividual(:term:BehaviouralPotential))
+AnnotationAssertion(mirror:describes :term:BehaviouralPotential questionnaire:BehaviouralPotential)
+ClassAssertion(mirror:Term :term:BehaviouralPotential)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:BehaviouralPotential mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:BehaviouralPotential :term:BehaviouralPotential)
+
+AnnotationAssertion(mirror:describes questionnaire:term:attitude questionnaire:attitude)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:attitude mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:CollectiveThinking))
+AnnotationAssertion(mirror:describes :term:CollectiveThinking questionnaire:CollectiveThinking)
+ClassAssertion(mirror:Term :term:CollectiveThinking)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:CollectiveThinking mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:CollectiveThinking :term:CollectiveThinking)
+
+Declaration(NamedIndividual(:term:Actor))
+AnnotationAssertion(mirror:describes :term:Actor questionnaire:Actor)
+ClassAssertion(mirror:Term :term:Actor)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Actor mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Actor :term:Actor)
+
+Declaration(NamedIndividual(:term:construct))
+AnnotationAssertion(mirror:describes :term:construct questionnaire:construct)
+ClassAssertion(mirror:Term :term:construct)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:construct mirror:ontology:dataproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:construct :term:construct)
+
+Declaration(NamedIndividual(:term:PhaseTransition))
+AnnotationAssertion(mirror:describes :term:PhaseTransition questionnaire:PhaseTransition)
+ClassAssertion(mirror:Term :term:PhaseTransition)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:PhaseTransition mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:PhaseTransition :term:PhaseTransition)
+
+Declaration(NamedIndividual(:term:hasBehaviour))
+AnnotationAssertion(mirror:describes :term:hasBehaviour questionnaire:hasBehaviour)
+ClassAssertion(mirror:Term :term:hasBehaviour)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:hasBehaviour mirror:ontology:objectproperty)
+AnnotationAssertion(rdfs:seeAlso questionnaire:hasBehaviour :term:hasBehaviour)
+
+Declaration(NamedIndividual(:term:PriceChange))
+AnnotationAssertion(mirror:describes :term:PriceChange questionnaire:PriceChange)
+ClassAssertion(mirror:Term :term:PriceChange)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:PriceChange mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:PriceChange :term:PriceChange)
+
+AnnotationAssertion(mirror:describes questionnaire:term:SpillOver questionnaire:SpillOver)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:SpillOver mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:RegimeDestabilisation))
+AnnotationAssertion(mirror:describes :term:RegimeDestabilisation questionnaire:RegimeDestabilisation)
+ClassAssertion(mirror:Term :term:RegimeDestabilisation)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:RegimeDestabilisation mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:RegimeDestabilisation :term:RegimeDestabilisation)
+
+AnnotationAssertion(mirror:describes questionnaire:term:upscaling questionnaire:upscaling)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:upscaling mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Ecosystem))
+AnnotationAssertion(mirror:describes :term:Ecosystem questionnaire:Ecosystem)
+ClassAssertion(mirror:Term :term:Ecosystem)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Ecosystem mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Ecosystem :term:Ecosystem)
+
+AnnotationAssertion(mirror:describes questionnaire:term:Item questionnaire:Item)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:Item mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes questionnaire:term:environmentalOrSustainabilityConcern questionnaire:environmentalOrSustainabilityConcern)
+ObjectPropertyAssertion(mirror:isOntologicalEntity questionnaire:term:environmentalOrSustainabilityConcern mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Savings))
+AnnotationAssertion(mirror:describes :term:Savings questionnaire:Savings)
+ClassAssertion(mirror:Term :term:Savings)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Savings mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso questionnaire:Savings :term:Savings)
+
+)

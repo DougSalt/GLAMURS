@@ -99,7 +99,7 @@ while (my $record = <$INPUT>) {
                 $ontology =~ s/>$//;
                 $new_ontology = $ontology;
                 $new_ontology  =~ s/(TBOX|ABOX)/KB/;
-                $new_ontology  =~ s/$ontology_short_name/kb-$ontology_short_name/;
+                $new_ontology  =~ s/$ontology_short_name/mirror-$ontology_short_name/;
                 #print "Ontology = $ontology\n";
                 #print "My short name = $ontology_short_name\n";
         }

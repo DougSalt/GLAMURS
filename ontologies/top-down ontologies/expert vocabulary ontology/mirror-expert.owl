@@ -1,0 +1,415 @@
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-expert#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(mirror:=<http://www.glamurs.eu/ontologies/2016/KB/mirror#>)
+Prefix(expert:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert#>)
+
+Ontology(<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-expert>
+Import(<http://www.glamurs.eu/ontologies/2016/KB/mirror>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert>)
+
+Annotation(mirror:creator mirror:author:DougSalt)
+
+AnnotationAssertion(mirror:describes expert:term:MaterialConsumption expert:MaterialConsumption)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:MaterialConsumption mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:ReboundEffect expert:ReboundEffect)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:ReboundEffect mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:openSpace expert:openSpace)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:openSpace mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Manufacturing))
+AnnotationAssertion(mirror:describes :term:Manufacturing expert:Manufacturing)
+ClassAssertion(mirror:Term :term:Manufacturing)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Manufacturing mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Manufacturing :term:Manufacturing)
+
+Declaration(NamedIndividual(:term:Business))
+AnnotationAssertion(mirror:describes :term:Business expert:Business)
+ClassAssertion(mirror:Term :term:Business)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Business mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Business :term:Business)
+
+AnnotationAssertion(mirror:describes expert:term:technologicalChange expert:technologicalChange)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:technologicalChange mirror:ontology:dataproperty)
+
+AnnotationAssertion(mirror:describes expert:term:PublicGood expert:PublicGood)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:PublicGood mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:TravelMode))
+AnnotationAssertion(mirror:describes :term:TravelMode expert:TravelMode)
+ClassAssertion(mirror:Term :term:TravelMode)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:TravelMode mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:TravelMode :term:TravelMode)
+
+AnnotationAssertion(mirror:describes expert:term:placeAttachment expert:placeAttachment)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:placeAttachment mirror:ontology:objectproperty)
+
+Declaration(NamedIndividual(:term:Region))
+AnnotationAssertion(mirror:describes :term:Region expert:Region)
+ClassAssertion(mirror:Term :term:Region)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Region mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Region :term:Region)
+
+AnnotationAssertion(mirror:describes expert:term:LifeCycle expert:LifeCycle)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:LifeCycle mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Consumption))
+AnnotationAssertion(mirror:describes :term:Consumption expert:Consumption)
+ClassAssertion(mirror:Term :term:Consumption)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Consumption mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Consumption :term:Consumption)
+
+AnnotationAssertion(mirror:describes expert:term:waterFootprint expert:waterFootprint)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:waterFootprint mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Identity))
+AnnotationAssertion(mirror:describes :term:Identity expert:Identity)
+ClassAssertion(mirror:Term :term:Identity)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Identity mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Identity :term:Identity)
+
+Declaration(NamedIndividual(:term:CriticalAnalysis))
+AnnotationAssertion(mirror:describes :term:CriticalAnalysis expert:CriticalAnalysis)
+ClassAssertion(mirror:Term :term:CriticalAnalysis)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:CriticalAnalysis mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:CriticalAnalysis :term:CriticalAnalysis)
+
+AnnotationAssertion(mirror:describes expert:term:timePressure expert:timePressure)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:timePressure mirror:ontology:dataproperty)
+
+AnnotationAssertion(mirror:describes expert:term:EnergyProduction expert:EnergyProduction)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:EnergyProduction mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:economicGrowth expert:economicGrowth)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:economicGrowth mirror:ontology:dataproperty)
+
+AnnotationAssertion(mirror:describes expert:term:GreenEconomy expert:GreenEconomy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:GreenEconomy mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Household))
+AnnotationAssertion(mirror:describes :term:Household expert:Household)
+ClassAssertion(mirror:Term :term:Household)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Household mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Household :term:Household)
+
+Declaration(NamedIndividual(:term:Stakeholder))
+AnnotationAssertion(mirror:describes :term:Stakeholder expert:Stakeholder)
+ClassAssertion(mirror:Term :term:Stakeholder)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Stakeholder mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Stakeholder :term:Stakeholder)
+
+Declaration(NamedIndividual(:term:Technology))
+AnnotationAssertion(mirror:describes :term:Technology expert:Technology)
+ClassAssertion(mirror:Term :term:Technology)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Technology mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Technology :term:Technology)
+
+AnnotationAssertion(mirror:describes expert:term:travelMode expert:travelMode)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:travelMode mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:OutputDemand))
+AnnotationAssertion(mirror:describes :term:OutputDemand expert:OutputDemand)
+ClassAssertion(mirror:Term :term:OutputDemand)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:OutputDemand mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:OutputDemand :term:OutputDemand)
+
+Declaration(NamedIndividual(:term:ExtractionOfRawMatter))
+AnnotationAssertion(mirror:describes :term:ExtractionOfRawMatter expert:ExtractionOfRawMatter)
+ClassAssertion(mirror:Term :term:ExtractionOfRawMatter)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:ExtractionOfRawMatter mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:ExtractionOfRawMatter :term:ExtractionOfRawMatter)
+
+AnnotationAssertion(mirror:describes expert:term:TimeUse expert:TimeUse)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:TimeUse mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:caseStudyRegion expert:caseStudyRegion)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:caseStudyRegion mirror:ontology:objectproperty)
+
+Declaration(NamedIndividual(:term:SupplyChain))
+AnnotationAssertion(mirror:describes :term:SupplyChain expert:SupplyChain)
+ClassAssertion(mirror:Term :term:SupplyChain)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:SupplyChain mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SupplyChain :term:SupplyChain)
+
+Declaration(NamedIndividual(:term:Lifestyle))
+AnnotationAssertion(mirror:describes :term:Lifestyle expert:Lifestyle)
+ClassAssertion(mirror:Term :term:Lifestyle)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Lifestyle mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Lifestyle :term:Lifestyle)
+
+Declaration(NamedIndividual(:term:Country))
+AnnotationAssertion(mirror:describes :term:Country expert:Country)
+ClassAssertion(mirror:Term :term:Country)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Country mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Country :term:Country)
+
+Declaration(NamedIndividual(:term:Society))
+AnnotationAssertion(mirror:describes :term:Society expert:Society)
+ClassAssertion(mirror:Term :term:Society)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Society mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Society :term:Society)
+
+Declaration(NamedIndividual(:term:Utilisation))
+AnnotationAssertion(mirror:describes :term:Utilisation expert:Utilisation)
+ClassAssertion(mirror:Term :term:Utilisation)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Utilisation mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Utilisation :term:Utilisation)
+
+Declaration(NamedIndividual(:term:Agent))
+AnnotationAssertion(mirror:describes :term:Agent expert:Agent)
+ClassAssertion(mirror:Term :term:Agent)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Agent mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Agent :term:Agent)
+
+Declaration(NamedIndividual(:term:Product))
+AnnotationAssertion(mirror:describes :term:Product expert:Product)
+ClassAssertion(mirror:Term :term:Product)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Product mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Product :term:Product)
+
+AnnotationAssertion(mirror:describes expert:term:socialInfluence expert:socialInfluence)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:socialInfluence mirror:ontology:objectproperty)
+
+AnnotationAssertion(mirror:describes expert:term:materialFootprint expert:materialFootprint)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:materialFootprint mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Individual))
+AnnotationAssertion(mirror:describes :term:Individual expert:Individual)
+ClassAssertion(mirror:Term :term:Individual)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Individual mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Individual :term:Individual)
+
+Declaration(NamedIndividual(:term:Interaction))
+AnnotationAssertion(mirror:describes :term:Interaction expert:Interaction)
+ClassAssertion(mirror:Term :term:Interaction)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Interaction mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Interaction :term:Interaction)
+
+Declaration(NamedIndividual(:term:Actor))
+AnnotationAssertion(mirror:describes :term:Actor expert:Actor)
+ClassAssertion(mirror:Term :term:Actor)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Actor mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Actor :term:Actor)
+
+Declaration(NamedIndividual(:term:Decision))
+AnnotationAssertion(mirror:describes :term:Decision expert:Decision)
+ClassAssertion(mirror:Term :term:Decision)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Decision mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Decision :term:Decision)
+
+Declaration(NamedIndividual(:term:EnvironmentalImpact))
+AnnotationAssertion(mirror:describes :term:EnvironmentalImpact expert:EnvironmentalImpact)
+ClassAssertion(mirror:Term :term:EnvironmentalImpact)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:EnvironmentalImpact mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:EnvironmentalImpact :term:EnvironmentalImpact)
+
+Declaration(NamedIndividual(:term:LifeSatisfaction))
+AnnotationAssertion(mirror:describes :term:LifeSatisfaction expert:LifeSatisfaction)
+ClassAssertion(mirror:Term :term:LifeSatisfaction)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:LifeSatisfaction mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:LifeSatisfaction :term:LifeSatisfaction)
+
+AnnotationAssertion(mirror:describes expert:term:FocusGroup expert:FocusGroup)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:FocusGroup mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:GreenGrowth expert:GreenGrowth)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:GreenGrowth mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:EnergyUse))
+AnnotationAssertion(mirror:describes :term:EnergyUse expert:EnergyUse)
+ClassAssertion(mirror:Term :term:EnergyUse)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:EnergyUse mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:EnergyUse :term:EnergyUse)
+
+AnnotationAssertion(mirror:describes expert:term:EnergySaving expert:EnergySaving)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:EnergySaving mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:NormativePressure))
+AnnotationAssertion(mirror:describes :term:NormativePressure expert:NormativePressure)
+ClassAssertion(mirror:Term :term:NormativePressure)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:NormativePressure mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:NormativePressure :term:NormativePressure)
+
+Declaration(NamedIndividual(:term:Mood))
+AnnotationAssertion(mirror:describes :term:Mood expert:Mood)
+ClassAssertion(mirror:Term :term:Mood)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Mood mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Mood :term:Mood)
+
+AnnotationAssertion(mirror:describes expert:term:socialCapital expert:socialCapital)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:socialCapital mirror:ontology:objectproperty)
+
+AnnotationAssertion(mirror:describes expert:term:EnergyDemand expert:EnergyDemand)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:EnergyDemand mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:finalDemand expert:finalDemand)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:finalDemand mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:Place))
+AnnotationAssertion(mirror:describes :term:Place expert:Place)
+ClassAssertion(mirror:Term :term:Place)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Place mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Place :term:Place)
+
+Declaration(NamedIndividual(:term:SelfPerception))
+AnnotationAssertion(mirror:describes :term:SelfPerception expert:SelfPerception)
+ClassAssertion(mirror:Term :term:SelfPerception)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:SelfPerception mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SelfPerception :term:SelfPerception)
+
+Declaration(NamedIndividual(:term:Energy))
+AnnotationAssertion(mirror:describes :term:Energy expert:Energy)
+ClassAssertion(mirror:Term :term:Energy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Energy mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Energy :term:Energy)
+
+Declaration(NamedIndividual(:term:LandUse))
+AnnotationAssertion(mirror:describes :term:LandUse expert:LandUse)
+ClassAssertion(mirror:Term :term:LandUse)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:LandUse mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:LandUse :term:LandUse)
+
+AnnotationAssertion(mirror:describes expert:term:SocialIdentityTheory expert:SocialIdentityTheory)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:SocialIdentityTheory mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:SocialNorm))
+AnnotationAssertion(mirror:describes :term:SocialNorm expert:SocialNorm)
+ClassAssertion(mirror:Term :term:SocialNorm)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:SocialNorm mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SocialNorm :term:SocialNorm)
+
+AnnotationAssertion(mirror:describes expert:term:CapabilityApproach expert:CapabilityApproach)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:CapabilityApproach mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:EconomicOutput))
+AnnotationAssertion(mirror:describes :term:EconomicOutput expert:EconomicOutput)
+ClassAssertion(mirror:Term :term:EconomicOutput)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:EconomicOutput mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:EconomicOutput :term:EconomicOutput)
+
+Declaration(NamedIndividual(:term:Economy))
+AnnotationAssertion(mirror:describes :term:Economy expert:Economy)
+ClassAssertion(mirror:Term :term:Economy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Economy mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Economy :term:Economy)
+
+Declaration(NamedIndividual(:term:ExceedsThreshold))
+AnnotationAssertion(mirror:describes :term:ExceedsThreshold expert:ExceedsThreshold)
+ClassAssertion(mirror:Term :term:ExceedsThreshold)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:ExceedsThreshold mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:ExceedsThreshold :term:ExceedsThreshold)
+
+Declaration(NamedIndividual(:term:Disposal))
+AnnotationAssertion(mirror:describes :term:Disposal expert:Disposal)
+ClassAssertion(mirror:Term :term:Disposal)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Disposal mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Disposal :term:Disposal)
+
+AnnotationAssertion(mirror:describes expert:term:placeIdentity expert:placeIdentity)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:placeIdentity mirror:ontology:objectproperty)
+
+Declaration(NamedIndividual(:term:Space))
+AnnotationAssertion(mirror:describes :term:Space expert:Space)
+ClassAssertion(mirror:Term :term:Space)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Space mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Space :term:Space)
+
+Declaration(NamedIndividual(:term:Travel))
+AnnotationAssertion(mirror:describes :term:Travel expert:Travel)
+ClassAssertion(mirror:Term :term:Travel)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Travel mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Travel :term:Travel)
+
+Declaration(NamedIndividual(:term:SelfReflection))
+AnnotationAssertion(mirror:describes :term:SelfReflection expert:SelfReflection)
+ClassAssertion(mirror:Term :term:SelfReflection)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:SelfReflection mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:SelfReflection :term:SelfReflection)
+
+Declaration(NamedIndividual(:term:Environment))
+AnnotationAssertion(mirror:describes :term:Environment expert:Environment)
+ClassAssertion(mirror:Term :term:Environment)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Environment mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Environment :term:Environment)
+
+AnnotationAssertion(mirror:describes expert:term:TimeManagement expert:TimeManagement)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:TimeManagement mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:SocialNetwork expert:SocialNetwork)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:SocialNetwork mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:PostiveFeedback))
+AnnotationAssertion(mirror:describes :term:PostiveFeedback expert:PostiveFeedback)
+ClassAssertion(mirror:Term :term:PostiveFeedback)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:PostiveFeedback mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:PostiveFeedback :term:PostiveFeedback)
+
+Declaration(NamedIndividual(:term:Distribution))
+AnnotationAssertion(mirror:describes :term:Distribution expert:Distribution)
+ClassAssertion(mirror:Term :term:Distribution)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Distribution mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Distribution :term:Distribution)
+
+Declaration(NamedIndividual(:term:KnowledgeAcquisition))
+AnnotationAssertion(mirror:describes :term:KnowledgeAcquisition expert:KnowledgeAcquisition)
+ClassAssertion(mirror:Term :term:KnowledgeAcquisition)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:KnowledgeAcquisition mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:KnowledgeAcquisition :term:KnowledgeAcquisition)
+
+Declaration(NamedIndividual(:term:CaseStudy))
+AnnotationAssertion(mirror:describes :term:CaseStudy expert:CaseStudy)
+ClassAssertion(mirror:Term :term:CaseStudy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:CaseStudy mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:CaseStudy :term:CaseStudy)
+
+AnnotationAssertion(mirror:describes expert:term:TravelBehaviour expert:TravelBehaviour)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:TravelBehaviour mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:LifestyleChange expert:LifestyleChange)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:LifestyleChange mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:ExternalInfluence))
+AnnotationAssertion(mirror:describes :term:ExternalInfluence expert:ExternalInfluence)
+ClassAssertion(mirror:Term :term:ExternalInfluence)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:ExternalInfluence mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:ExternalInfluence :term:ExternalInfluence)
+
+AnnotationAssertion(mirror:describes expert:term:NetworkAnalysis expert:NetworkAnalysis)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:NetworkAnalysis mirror:ontology:class)
+
+Declaration(NamedIndividual(:term:Experience))
+AnnotationAssertion(mirror:describes :term:Experience expert:Experience)
+ClassAssertion(mirror:Term :term:Experience)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Experience mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Experience :term:Experience)
+
+AnnotationAssertion(mirror:describes expert:term:environmentalImpactAssessment expert:environmentalImpactAssessment)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:environmentalImpactAssessment mirror:ontology:dataproperty)
+
+AnnotationAssertion(mirror:describes expert:term:EconomicSystem expert:EconomicSystem)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:EconomicSystem mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:BehaviourChange expert:BehaviourChange)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:BehaviourChange mirror:ontology:class)
+
+AnnotationAssertion(mirror:describes expert:term:indirectEnergy expert:indirectEnergy)
+ObjectPropertyAssertion(mirror:isOntologicalEntity expert:term:indirectEnergy mirror:ontology:dataproperty)
+
+Declaration(NamedIndividual(:term:collectiveActionProblem))
+AnnotationAssertion(mirror:describes :term:collectiveActionProblem expert:collectiveActionProblem)
+ClassAssertion(mirror:Term :term:collectiveActionProblem)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:collectiveActionProblem mirror:ontology:dataproperty)
+AnnotationAssertion(rdfs:seeAlso expert:collectiveActionProblem :term:collectiveActionProblem)
+
+Declaration(NamedIndividual(:term:Government))
+AnnotationAssertion(mirror:describes :term:Government expert:Government)
+ClassAssertion(mirror:Term :term:Government)
+ObjectPropertyAssertion(mirror:isOntologicalEntity :term:Government mirror:ontology:class)
+AnnotationAssertion(rdfs:seeAlso expert:Government :term:Government)
+
+)

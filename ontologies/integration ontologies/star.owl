@@ -7,12 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
 Prefix(swrla:=<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#>)
 Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
-Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/KB/metadata#>)
+Prefix(mirror:=<http://www.glamurs.eu/ontologies/2016/KB/mirror#>)
 
 
 Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/integration/star>
-Import(<http://www.glamurs.eu/ontologies/2016/KB/metadata>)
-Annotation(metadata:creator metadata:author:DougSalt)
+Import(<http://www.glamurs.eu/ontologies/2016/KB/mirror>)
+Annotation(mirror:creator mirror:author:DougSalt)
 Annotation(rdfs:comment "2016-10-26"^^xsd:date)
 Annotation(rdfs:comment "This is the integration ontology which will map the star pattern for the overall ontology. This enforces (if you don't select the underlying basic vocabulary) the direction of any use of the integration vocabulary (if the reasoner is selected that validates domains and codomains)."@en)
 Annotation(owl:versionInfo "1.0"^^xsd:decimal)
@@ -89,7 +89,7 @@ ObjectPropertyDomain(:hasBottomUpOntologyProperty :BottomUpOntologyClass)
 # Object Property: :hasOntologicalOrientation (has ontological property)
 
 AnnotationAssertion(rdfs:label :hasOntologicalOrientation "has ontological property"@en)
-ObjectPropertyDomain(:hasOntologicalOrientation metadata:Term)
+ObjectPropertyDomain(:hasOntologicalOrientation mirror:Term)
 ObjectPropertyRange(:hasOntologicalOrientation :OntologyOrientation)
 
 # Object Property: :hasTopDownOntologyProperty (has top-down ontology property)
@@ -164,11 +164,11 @@ AnnotationAssertion(rdfs:label :BottomUpOntologyClass "Bottom-up ontology class"
 
 # Class: :BottomUpTerm (:BottomUpTerm)
 
-SubClassOf(:BottomUpTerm metadata:Term)
+SubClassOf(:BottomUpTerm mirror:Term)
 
 # Class: :OntologyOrientation (:OntologyOrientation)
 
-SubClassOf(:OntologyOrientation metadata:MetaDatum)
+SubClassOf(:OntologyOrientation mirror:MetaDatum)
 
 # Class: :TopDownOntology (:TopDownOntology)
 
@@ -180,7 +180,7 @@ AnnotationAssertion(rdfs:label :TopDownOntologyClass "Top-down ontology class"@e
 
 # Class: :TopDownTerm (:TopDownTerm)
 
-SubClassOf(:TopDownTerm metadata:Term)
+SubClassOf(:TopDownTerm mirror:Term)
 
 
 ############################

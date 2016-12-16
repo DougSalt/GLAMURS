@@ -4,15 +4,15 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata#>)
 
 
 Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/single-words-frequency>
-Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata>)
 Annotation(rdfs:isDefinedBy "Doug Salt")
 Annotation(owl:versionInfo "1.0"^^xsd:decimal)
 
-Declaration(Class(top-down-common:Term))
+Declaration(Class(metadata:Term))
 Declaration(NamedIndividual(:activate))
 Declaration(NamedIndividual(:activated))
 Declaration(NamedIndividual(:activating))
@@ -714,13 +714,13 @@ Declaration(NamedIndividual(:wellbeing))
 # Individual: :activate (Activate)
 
 AnnotationAssertion(rdfs:label :activate "Activate"@en)
-ClassAssertion(top-down-common:Term :activate)
+ClassAssertion(metadata:Term :activate)
 SameIndividual(:activate :activated)
 
 # Individual: :activated (Activated)
 
 AnnotationAssertion(rdfs:label :activated "Activated"@en)
-ClassAssertion(top-down-common:Term :activated)
+ClassAssertion(metadata:Term :activated)
 SameIndividual(:activated :activating)
 SameIndividual(:activated :activation)
 SameIndividual(:activated :active)
@@ -732,59 +732,59 @@ SameIndividual(:activated :activity)
 # Individual: :activating (Activating)
 
 AnnotationAssertion(rdfs:label :activating "Activating"@en)
-ClassAssertion(top-down-common:Term :activating)
+ClassAssertion(metadata:Term :activating)
 
 # Individual: :activation (Activation)
 
 AnnotationAssertion(rdfs:label :activation "Activation"@en)
-ClassAssertion(top-down-common:Term :activation)
+ClassAssertion(metadata:Term :activation)
 
 # Individual: :active (Active)
 
 AnnotationAssertion(rdfs:label :active "Active"@en)
-ClassAssertion(top-down-common:Term :active)
+ClassAssertion(metadata:Term :active)
 
 # Individual: :actively (Actively)
 
 AnnotationAssertion(rdfs:label :actively "Actively"@en)
-ClassAssertion(top-down-common:Term :actively)
+ClassAssertion(metadata:Term :actively)
 
 # Individual: :activism (Activism)
 
 AnnotationAssertion(rdfs:label :activism "Activism"@en)
-ClassAssertion(top-down-common:Term :activism)
+ClassAssertion(metadata:Term :activism)
 
 # Individual: :activities (Activities)
 
 AnnotationAssertion(rdfs:label :activities "Activities"@en)
-ClassAssertion(top-down-common:Term :activities)
+ClassAssertion(metadata:Term :activities)
 
 # Individual: :activity (Activity)
 
 AnnotationAssertion(rdfs:label :activity "Activity"@en)
-ClassAssertion(top-down-common:Term :activity)
+ClassAssertion(metadata:Term :activity)
 
 # Individual: :actor (Actor)
 
 AnnotationAssertion(rdfs:label :actor "Actor"@en)
-ClassAssertion(top-down-common:Term :actor)
+ClassAssertion(metadata:Term :actor)
 SameIndividual(:actor :actors)
 
 # Individual: :actors (Actors)
 
 AnnotationAssertion(rdfs:label :actors "Actors"@en)
-ClassAssertion(top-down-common:Term :actors)
+ClassAssertion(metadata:Term :actors)
 
 # Individual: :adapt (Adapt)
 
 AnnotationAssertion(rdfs:label :adapt "Adapt"@en)
-ClassAssertion(top-down-common:Term :adapt)
+ClassAssertion(metadata:Term :adapt)
 SameIndividual(:adapt :adaptability)
 
 # Individual: :adaptability (Adaptability)
 
 AnnotationAssertion(rdfs:label :adaptability "Adaptability"@en)
-ClassAssertion(top-down-common:Term :adaptability)
+ClassAssertion(metadata:Term :adaptability)
 SameIndividual(:adaptability :adaptation)
 SameIndividual(:adaptability :adaptations)
 SameIndividual(:adaptability :adapted)
@@ -795,173 +795,173 @@ SameIndividual(:adaptability :adaptive)
 # Individual: :adaptation (Adaptation)
 
 AnnotationAssertion(rdfs:label :adaptation "Adaptation"@en)
-ClassAssertion(top-down-common:Term :adaptation)
+ClassAssertion(metadata:Term :adaptation)
 
 # Individual: :adaptations (Adaptations)
 
 AnnotationAssertion(rdfs:label :adaptations "Adaptations"@en)
-ClassAssertion(top-down-common:Term :adaptations)
+ClassAssertion(metadata:Term :adaptations)
 
 # Individual: :adapted (Adapted)
 
 AnnotationAssertion(rdfs:label :adapted "Adapted"@en)
-ClassAssertion(top-down-common:Term :adapted)
+ClassAssertion(metadata:Term :adapted)
 
 # Individual: :adapting (Adapting)
 
 AnnotationAssertion(rdfs:label :adapting "Adapting"@en)
-ClassAssertion(top-down-common:Term :adapting)
+ClassAssertion(metadata:Term :adapting)
 
 # Individual: :adaption (Adaption)
 
 AnnotationAssertion(rdfs:label :adaption "Adaption"@en)
-ClassAssertion(top-down-common:Term :adaption)
+ClassAssertion(metadata:Term :adaption)
 
 # Individual: :adaptive (Adaptive)
 
 AnnotationAssertion(rdfs:label :adaptive "Adaptive"@en)
-ClassAssertion(top-down-common:Term :adaptive)
+ClassAssertion(metadata:Term :adaptive)
 
 # Individual: :agencies (Agencies)
 
 AnnotationAssertion(rdfs:label :agencies "Agencies"@en)
-ClassAssertion(top-down-common:Term :agencies)
+ClassAssertion(metadata:Term :agencies)
 SameIndividual(:agencies :agency)
 
 # Individual: :agency (Agency)
 
 AnnotationAssertion(rdfs:label :agency "Agency"@en)
-ClassAssertion(top-down-common:Term :agency)
+ClassAssertion(metadata:Term :agency)
 
 # Individual: :agent (Agent)
 
 AnnotationAssertion(rdfs:label :agent "Agent"@en)
-ClassAssertion(top-down-common:Term :agent)
+ClassAssertion(metadata:Term :agent)
 SameIndividual(:agent :agents)
 
 # Individual: :agents (Agents)
 
 AnnotationAssertion(rdfs:label :agents "Agents"@en)
-ClassAssertion(top-down-common:Term :agents)
+ClassAssertion(metadata:Term :agents)
 
 # Individual: :aggregate (Aggregate)
 
 AnnotationAssertion(rdfs:label :aggregate "Aggregate"@en)
-ClassAssertion(top-down-common:Term :aggregate)
+ClassAssertion(metadata:Term :aggregate)
 SameIndividual(:aggregate :aggregation)
 
 # Individual: :aggregated (Aggregated)
 
 AnnotationAssertion(rdfs:label :aggregated "Aggregated"@en)
-ClassAssertion(top-down-common:Term :aggregated)
+ClassAssertion(metadata:Term :aggregated)
 SameIndividual(:aggregated :aggregation)
 
 # Individual: :aggregates (Aggregates)
 
 AnnotationAssertion(rdfs:label :aggregates "Aggregates"@en)
-ClassAssertion(top-down-common:Term :aggregates)
+ClassAssertion(metadata:Term :aggregates)
 SameIndividual(:aggregates :aggregation)
 
 # Individual: :aggregating (Aggregating)
 
 AnnotationAssertion(rdfs:label :aggregating "Aggregating"@en)
-ClassAssertion(top-down-common:Term :aggregating)
+ClassAssertion(metadata:Term :aggregating)
 SameIndividual(:aggregating :aggregation)
 
 # Individual: :aggregation (Aggregation)
 
 AnnotationAssertion(rdfs:label :aggregation "Aggregation"@en)
-ClassAssertion(top-down-common:Term :aggregation)
+ClassAssertion(metadata:Term :aggregation)
 
 # Individual: :argument (Argument)
 
 AnnotationAssertion(rdfs:label :argument "Argument"@en)
-ClassAssertion(top-down-common:Term :argument)
+ClassAssertion(metadata:Term :argument)
 SameIndividual(:argument :argumentation)
 SameIndividual(:argument :arguments)
 
 # Individual: :argumentation (Argumentation)
 
 AnnotationAssertion(rdfs:label :argumentation "Argumentation"@en)
-ClassAssertion(top-down-common:Term :argumentation)
+ClassAssertion(metadata:Term :argumentation)
 
 # Individual: :arguments (Arguments)
 
 AnnotationAssertion(rdfs:label :arguments "Arguments"@en)
-ClassAssertion(top-down-common:Term :arguments)
+ClassAssertion(metadata:Term :arguments)
 
 # Individual: :assumption (Assumption)
 
 AnnotationAssertion(rdfs:label :assumption "Assumption"@en)
-ClassAssertion(top-down-common:Term :assumption)
+ClassAssertion(metadata:Term :assumption)
 SameIndividual(:assumption :assumptions)
 
 # Individual: :assumptions (Assumptions)
 
 AnnotationAssertion(rdfs:label :assumptions "Assumptions"@en)
-ClassAssertion(top-down-common:Term :assumptions)
+ClassAssertion(metadata:Term :assumptions)
 
 # Individual: :attach (Attach)
 
 AnnotationAssertion(rdfs:label :attach "Attach"@en)
-ClassAssertion(top-down-common:Term :attach)
+ClassAssertion(metadata:Term :attach)
 SameIndividual(:attach :attachment)
 
 # Individual: :attached (Attached)
 
 AnnotationAssertion(rdfs:label :attached "Attached"@en)
-ClassAssertion(top-down-common:Term :attached)
+ClassAssertion(metadata:Term :attached)
 SameIndividual(:attached :attachment)
 
 # Individual: :attachment (Attachment)
 
 AnnotationAssertion(rdfs:label :attachment "Attachment"@en)
-ClassAssertion(top-down-common:Term :attachment)
+ClassAssertion(metadata:Term :attachment)
 SameIndividual(:attachment :attachments)
 
 # Individual: :attachments (Attachments)
 
 AnnotationAssertion(rdfs:label :attachments "Attachments"@en)
-ClassAssertion(top-down-common:Term :attachments)
+ClassAssertion(metadata:Term :attachments)
 
 # Individual: :attention (Attention)
 
 AnnotationAssertion(rdfs:label :attention "Attention"@en)
-ClassAssertion(top-down-common:Term :attention)
+ClassAssertion(metadata:Term :attention)
 SameIndividual(:attention :attentional)
 
 # Individual: :attentional (Attentional)
 
 AnnotationAssertion(rdfs:label :attentional "Attentional"@en)
-ClassAssertion(top-down-common:Term :attentional)
+ClassAssertion(metadata:Term :attentional)
 SameIndividual(:attentional :attentive)
 
 # Individual: :attentive (Attentive)
 
 AnnotationAssertion(rdfs:label :attentive "Attentive"@en)
-ClassAssertion(top-down-common:Term :attentive)
+ClassAssertion(metadata:Term :attentive)
 
 # Individual: :attitude (Attitude)
 
 AnnotationAssertion(rdfs:label :attitude "Attitude"@en)
-ClassAssertion(top-down-common:Term :attitude)
+ClassAssertion(metadata:Term :attitude)
 SameIndividual(:attitude :attitudes)
 
 # Individual: :attitudes (Attitudes)
 
 AnnotationAssertion(rdfs:label :attitudes "Attitudes"@en)
-ClassAssertion(top-down-common:Term :attitudes)
+ClassAssertion(metadata:Term :attitudes)
 
 # Individual: :attributable (Attributable)
 
 AnnotationAssertion(rdfs:label :attributable "Attributable"@en)
-ClassAssertion(top-down-common:Term :attributable)
+ClassAssertion(metadata:Term :attributable)
 SameIndividual(:attributable :attribute)
 
 # Individual: :attribute (Attribute)
 
 AnnotationAssertion(rdfs:label :attribute "Attribute"@en)
-ClassAssertion(top-down-common:Term :attribute)
+ClassAssertion(metadata:Term :attribute)
 SameIndividual(:attribute :attributed)
 SameIndividual(:attribute :attributes)
 SameIndividual(:attribute :attribution)
@@ -971,270 +971,270 @@ SameIndividual(:attribute :attributions)
 # Individual: :attributed (Attributed)
 
 AnnotationAssertion(rdfs:label :attributed "Attributed"@en)
-ClassAssertion(top-down-common:Term :attributed)
+ClassAssertion(metadata:Term :attributed)
 
 # Individual: :attributes (Attributes)
 
 AnnotationAssertion(rdfs:label :attributes "Attributes"@en)
-ClassAssertion(top-down-common:Term :attributes)
+ClassAssertion(metadata:Term :attributes)
 
 # Individual: :attribution (Attribution)
 
 AnnotationAssertion(rdfs:label :attribution "Attribution"@en)
-ClassAssertion(top-down-common:Term :attribution)
+ClassAssertion(metadata:Term :attribution)
 
 # Individual: :attributional (Attributional)
 
 AnnotationAssertion(rdfs:label :attributional "Attributional"@en)
-ClassAssertion(top-down-common:Term :attributional)
+ClassAssertion(metadata:Term :attributional)
 
 # Individual: :attributions (Attributions)
 
 AnnotationAssertion(rdfs:label :attributions "Attributions"@en)
-ClassAssertion(top-down-common:Term :attributions)
+ClassAssertion(metadata:Term :attributions)
 
 # Individual: :autonomy (Autonomy)
 
 AnnotationAssertion(rdfs:label :autonomy "Autonomy"@en)
-ClassAssertion(top-down-common:Term :autonomy)
+ClassAssertion(metadata:Term :autonomy)
 
 # Individual: :average (Average)
 
 AnnotationAssertion(rdfs:label :average "Average"@en)
-ClassAssertion(top-down-common:Term :average)
+ClassAssertion(metadata:Term :average)
 SameIndividual(:average :averages)
 
 # Individual: :averaged (Averaged)
 
 AnnotationAssertion(rdfs:label :averaged "Averaged"@en)
-ClassAssertion(top-down-common:Term :averaged)
+ClassAssertion(metadata:Term :averaged)
 SameIndividual(:averaged :averages)
 
 # Individual: :averages (Averages)
 
 AnnotationAssertion(rdfs:label :averages "Averages"@en)
-ClassAssertion(top-down-common:Term :averages)
+ClassAssertion(metadata:Term :averages)
 SameIndividual(:averages :averaging)
 
 # Individual: :averaging (Averaging)
 
 AnnotationAssertion(rdfs:label :averaging "Averaging"@en)
-ClassAssertion(top-down-common:Term :averaging)
+ClassAssertion(metadata:Term :averaging)
 
 # Individual: :aware (Aware)
 
 AnnotationAssertion(rdfs:label :aware "Aware"@en)
-ClassAssertion(top-down-common:Term :aware)
+ClassAssertion(metadata:Term :aware)
 SameIndividual(:aware :awareness)
 
 # Individual: :awareness (Awareness)
 
 AnnotationAssertion(rdfs:label :awareness "Awareness"@en)
-ClassAssertion(top-down-common:Term :awareness)
+ClassAssertion(metadata:Term :awareness)
 
 # Individual: :behav (Behav)
 
 AnnotationAssertion(rdfs:label :behav "Behav"@en)
-ClassAssertion(top-down-common:Term :behav)
+ClassAssertion(metadata:Term :behav)
 SameIndividual(:behav :behaves)
 
 # Individual: :behave (Behave)
 
 AnnotationAssertion(rdfs:label :behave "Behave"@en)
-ClassAssertion(top-down-common:Term :behave)
+ClassAssertion(metadata:Term :behave)
 SameIndividual(:behave :behaves)
 
 # Individual: :behaves (Behaves)
 
 AnnotationAssertion(rdfs:label :behaves "Behaves"@en)
-ClassAssertion(top-down-common:Term :behaves)
+ClassAssertion(metadata:Term :behaves)
 SameIndividual(:behaves :behaving)
 
 # Individual: :behaving (Behaving)
 
 AnnotationAssertion(rdfs:label :behaving "Behaving"@en)
-ClassAssertion(top-down-common:Term :behaving)
+ClassAssertion(metadata:Term :behaving)
 
 # Individual: :behavior (Behavior)
 
 AnnotationAssertion(rdfs:label :behavior "Behavior"@en)
-ClassAssertion(top-down-common:Term :behavior)
+ClassAssertion(metadata:Term :behavior)
 SameIndividual(:behavior :behavioral)
 
 # Individual: :behavioral (Behavioral)
 
 AnnotationAssertion(rdfs:label :behavioral "Behavioral"@en)
-ClassAssertion(top-down-common:Term :behavioral)
+ClassAssertion(metadata:Term :behavioral)
 SameIndividual(:behavioral :behaviors)
 
 # Individual: :behaviors (Behaviors)
 
 AnnotationAssertion(rdfs:label :behaviors "Behaviors"@en)
-ClassAssertion(top-down-common:Term :behaviors)
+ClassAssertion(metadata:Term :behaviors)
 
 # Individual: :behaviour (Behaviour)
 
 AnnotationAssertion(rdfs:label :behaviour "Behaviour"@en)
-ClassAssertion(top-down-common:Term :behaviour)
+ClassAssertion(metadata:Term :behaviour)
 SameIndividual(:behaviour :behavioural)
 
 # Individual: :behavioural (Behavioural)
 
 AnnotationAssertion(rdfs:label :behavioural "Behavioural"@en)
-ClassAssertion(top-down-common:Term :behavioural)
+ClassAssertion(metadata:Term :behavioural)
 SameIndividual(:behavioural :behaviours)
 
 # Individual: :behaviours (Behaviours)
 
 AnnotationAssertion(rdfs:label :behaviours "Behaviours"@en)
-ClassAssertion(top-down-common:Term :behaviours)
+ClassAssertion(metadata:Term :behaviours)
 
 # Individual: :between (Between)
 
 AnnotationAssertion(rdfs:label :between "Between"@en)
-ClassAssertion(top-down-common:Term :between)
+ClassAssertion(metadata:Term :between)
 SameIndividual(:between :betweenness)
 
 # Individual: :betweenness (Betweenness)
 
 AnnotationAssertion(rdfs:label :betweenness "Betweenness"@en)
-ClassAssertion(top-down-common:Term :betweenness)
+ClassAssertion(metadata:Term :betweenness)
 
 # Individual: :capabilities (Capabilities)
 
 AnnotationAssertion(rdfs:label :capabilities "Capabilities"@en)
-ClassAssertion(top-down-common:Term :capabilities)
+ClassAssertion(metadata:Term :capabilities)
 SameIndividual(:capabilities :capable)
 
 # Individual: :capability (Capability)
 
 AnnotationAssertion(rdfs:label :capability "Capability"@en)
-ClassAssertion(top-down-common:Term :capability)
+ClassAssertion(metadata:Term :capability)
 SameIndividual(:capability :capable)
 
 # Individual: :capable (Capable)
 
 AnnotationAssertion(rdfs:label :capable "Capable"@en)
-ClassAssertion(top-down-common:Term :capable)
+ClassAssertion(metadata:Term :capable)
 
 # Individual: :capital (Capital)
 
 AnnotationAssertion(rdfs:label :capital "Capital"@en)
-ClassAssertion(top-down-common:Term :capital)
+ClassAssertion(metadata:Term :capital)
 SameIndividual(:capital :capitalism)
 
 # Individual: :capitalism (Capitalism)
 
 AnnotationAssertion(rdfs:label :capitalism "Capitalism"@en)
-ClassAssertion(top-down-common:Term :capitalism)
+ClassAssertion(metadata:Term :capitalism)
 
 # Individual: :categorical (Categorical)
 
 AnnotationAssertion(rdfs:label :categorical "Categorical"@en)
-ClassAssertion(top-down-common:Term :categorical)
+ClassAssertion(metadata:Term :categorical)
 SameIndividual(:categorical :categorize)
 
 # Individual: :categories (Categories)
 
 AnnotationAssertion(rdfs:label :categories "Categories"@en)
-ClassAssertion(top-down-common:Term :categories)
+ClassAssertion(metadata:Term :categories)
 SameIndividual(:categories :category)
 
 # Individual: :categorization (Categorization)
 
 AnnotationAssertion(rdfs:label :categorization "Categorization"@en)
-ClassAssertion(top-down-common:Term :categorization)
+ClassAssertion(metadata:Term :categorization)
 SameIndividual(:categorization :categorize)
 
 # Individual: :categorize (Categorize)
 
 AnnotationAssertion(rdfs:label :categorize "Categorize"@en)
-ClassAssertion(top-down-common:Term :categorize)
+ClassAssertion(metadata:Term :categorize)
 SameIndividual(:categorize :categorized)
 SameIndividual(:categorize :categorizing)
 
 # Individual: :categorized (Categorized)
 
 AnnotationAssertion(rdfs:label :categorized "Categorized"@en)
-ClassAssertion(top-down-common:Term :categorized)
+ClassAssertion(metadata:Term :categorized)
 
 # Individual: :categorizing (Categorizing)
 
 AnnotationAssertion(rdfs:label :categorizing "Categorizing"@en)
-ClassAssertion(top-down-common:Term :categorizing)
+ClassAssertion(metadata:Term :categorizing)
 
 # Individual: :category (Category)
 
 AnnotationAssertion(rdfs:label :category "Category"@en)
-ClassAssertion(top-down-common:Term :category)
+ClassAssertion(metadata:Term :category)
 
 # Individual: :central (Central)
 
 AnnotationAssertion(rdfs:label :central "Central"@en)
-ClassAssertion(top-down-common:Term :central)
+ClassAssertion(metadata:Term :central)
 SameIndividual(:central :centralized)
 
 # Individual: :centrality (Centrality)
 
 AnnotationAssertion(rdfs:label :centrality "Centrality"@en)
-ClassAssertion(top-down-common:Term :centrality)
+ClassAssertion(metadata:Term :centrality)
 SameIndividual(:centrality :centralized)
 
 # Individual: :centralization (Centralization)
 
 AnnotationAssertion(rdfs:label :centralization "Centralization"@en)
-ClassAssertion(top-down-common:Term :centralization)
+ClassAssertion(metadata:Term :centralization)
 SameIndividual(:centralization :centralized)
 
 # Individual: :centralized (Centralized)
 
 AnnotationAssertion(rdfs:label :centralized "Centralized"@en)
-ClassAssertion(top-down-common:Term :centralized)
+ClassAssertion(metadata:Term :centralized)
 SameIndividual(:centralized :centrally)
 
 # Individual: :centrally (Centrally)
 
 AnnotationAssertion(rdfs:label :centrally "Centrally"@en)
-ClassAssertion(top-down-common:Term :centrally)
+ClassAssertion(metadata:Term :centrally)
 
 # Individual: :class (Class)
 
 AnnotationAssertion(rdfs:label :class "Class"@en)
-ClassAssertion(top-down-common:Term :class)
+ClassAssertion(metadata:Term :class)
 SameIndividual(:class :classes)
 
 # Individual: :classes (Classes)
 
 AnnotationAssertion(rdfs:label :classes "Classes"@en)
-ClassAssertion(top-down-common:Term :classes)
+ClassAssertion(metadata:Term :classes)
 
 # Individual: :climate (Climate)
 
 AnnotationAssertion(rdfs:label :climate "Climate"@en)
-ClassAssertion(top-down-common:Term :climate)
+ClassAssertion(metadata:Term :climate)
 SameIndividual(:climate :climates)
 
 # Individual: :climates (Climates)
 
 AnnotationAssertion(rdfs:label :climates "Climates"@en)
-ClassAssertion(top-down-common:Term :climates)
+ClassAssertion(metadata:Term :climates)
 SameIndividual(:climates :climatic)
 SameIndividual(:climates :climatically)
 
 # Individual: :climatic (Climatic)
 
 AnnotationAssertion(rdfs:label :climatic "Climatic"@en)
-ClassAssertion(top-down-common:Term :climatic)
+ClassAssertion(metadata:Term :climatic)
 
 # Individual: :climatically (Climatically)
 
 AnnotationAssertion(rdfs:label :climatically "Climatically"@en)
-ClassAssertion(top-down-common:Term :climatically)
+ClassAssertion(metadata:Term :climatically)
 
 # Individual: :cluster (Cluster)
 
 AnnotationAssertion(rdfs:label :cluster "Cluster"@en)
-ClassAssertion(top-down-common:Term :cluster)
+ClassAssertion(metadata:Term :cluster)
 SameIndividual(:cluster :clustered)
 SameIndividual(:cluster :clustering)
 SameIndividual(:cluster :clusters)
@@ -1242,104 +1242,104 @@ SameIndividual(:cluster :clusters)
 # Individual: :clustered (Clustered)
 
 AnnotationAssertion(rdfs:label :clustered "Clustered"@en)
-ClassAssertion(top-down-common:Term :clustered)
+ClassAssertion(metadata:Term :clustered)
 
 # Individual: :clustering (Clustering)
 
 AnnotationAssertion(rdfs:label :clustering "Clustering"@en)
-ClassAssertion(top-down-common:Term :clustering)
+ClassAssertion(metadata:Term :clustering)
 
 # Individual: :clusters (Clusters)
 
 AnnotationAssertion(rdfs:label :clusters "Clusters"@en)
-ClassAssertion(top-down-common:Term :clusters)
+ClassAssertion(metadata:Term :clusters)
 
 # Individual: :cognition (Cognition)
 
 AnnotationAssertion(rdfs:label :cognition "Cognition"@en)
-ClassAssertion(top-down-common:Term :cognition)
+ClassAssertion(metadata:Term :cognition)
 SameIndividual(:cognition :cognitive)
 
 # Individual: :cognitions (Cognitions)
 
 AnnotationAssertion(rdfs:label :cognitions "Cognitions"@en)
-ClassAssertion(top-down-common:Term :cognitions)
+ClassAssertion(metadata:Term :cognitions)
 SameIndividual(:cognitions :cognitive)
 
 # Individual: :cognitive (Cognitive)
 
 AnnotationAssertion(rdfs:label :cognitive "Cognitive"@en)
-ClassAssertion(top-down-common:Term :cognitive)
+ClassAssertion(metadata:Term :cognitive)
 
 # Individual: :collect (Collect)
 
 AnnotationAssertion(rdfs:label :collect "Collect"@en)
-ClassAssertion(top-down-common:Term :collect)
+ClassAssertion(metadata:Term :collect)
 SameIndividual(:collect :collects)
 
 # Individual: :collected (Collected)
 
 AnnotationAssertion(rdfs:label :collected "Collected"@en)
-ClassAssertion(top-down-common:Term :collected)
+ClassAssertion(metadata:Term :collected)
 SameIndividual(:collected :collects)
 
 # Individual: :collecting (Collecting)
 
 AnnotationAssertion(rdfs:label :collecting "Collecting"@en)
-ClassAssertion(top-down-common:Term :collecting)
+ClassAssertion(metadata:Term :collecting)
 SameIndividual(:collecting :collects)
 
 # Individual: :collection (Collection)
 
 AnnotationAssertion(rdfs:label :collection "Collection"@en)
-ClassAssertion(top-down-common:Term :collection)
+ClassAssertion(metadata:Term :collection)
 SameIndividual(:collection :collects)
 
 # Individual: :collections (Collections)
 
 AnnotationAssertion(rdfs:label :collections "Collections"@en)
-ClassAssertion(top-down-common:Term :collections)
+ClassAssertion(metadata:Term :collections)
 SameIndividual(:collections :collects)
 
 # Individual: :collective (Collective)
 
 AnnotationAssertion(rdfs:label :collective "Collective"@en)
-ClassAssertion(top-down-common:Term :collective)
+ClassAssertion(metadata:Term :collective)
 SameIndividual(:collective :collects)
 
 # Individual: :collectively (Collectively)
 
 AnnotationAssertion(rdfs:label :collectively "Collectively"@en)
-ClassAssertion(top-down-common:Term :collectively)
+ClassAssertion(metadata:Term :collectively)
 SameIndividual(:collectively :collects)
 
 # Individual: :collectives (Collectives)
 
 AnnotationAssertion(rdfs:label :collectives "Collectives"@en)
-ClassAssertion(top-down-common:Term :collectives)
+ClassAssertion(metadata:Term :collectives)
 SameIndividual(:collectives :collects)
 
 # Individual: :collectivity (Collectivity)
 
 AnnotationAssertion(rdfs:label :collectivity "Collectivity"@en)
-ClassAssertion(top-down-common:Term :collectivity)
+ClassAssertion(metadata:Term :collectivity)
 SameIndividual(:collectivity :collects)
 
 # Individual: :collects (Collects)
 
 AnnotationAssertion(rdfs:label :collects "Collects"@en)
-ClassAssertion(top-down-common:Term :collects)
+ClassAssertion(metadata:Term :collects)
 
 # Individual: :compete (Compete)
 
 AnnotationAssertion(rdfs:label :compete "Compete"@en)
-ClassAssertion(top-down-common:Term :compete)
+ClassAssertion(metadata:Term :compete)
 SameIndividual(:compete :competence)
 
 # Individual: :competence (Competence)
 
 AnnotationAssertion(rdfs:label :competence "Competence"@en)
-ClassAssertion(top-down-common:Term :competence)
+ClassAssertion(metadata:Term :competence)
 SameIndividual(:competence :competences)
 SameIndividual(:competence :competencies)
 SameIndividual(:competence :competency)
@@ -1349,114 +1349,114 @@ SameIndividual(:competence :competing)
 # Individual: :competences (Competences)
 
 AnnotationAssertion(rdfs:label :competences "Competences"@en)
-ClassAssertion(top-down-common:Term :competences)
+ClassAssertion(metadata:Term :competences)
 
 # Individual: :competencies (Competencies)
 
 AnnotationAssertion(rdfs:label :competencies "Competencies"@en)
-ClassAssertion(top-down-common:Term :competencies)
+ClassAssertion(metadata:Term :competencies)
 
 # Individual: :competency (Competency)
 
 AnnotationAssertion(rdfs:label :competency "Competency"@en)
-ClassAssertion(top-down-common:Term :competency)
+ClassAssertion(metadata:Term :competency)
 
 # Individual: :competent (Competent)
 
 AnnotationAssertion(rdfs:label :competent "Competent"@en)
-ClassAssertion(top-down-common:Term :competent)
+ClassAssertion(metadata:Term :competent)
 
 # Individual: :competing (Competing)
 
 AnnotationAssertion(rdfs:label :competing "Competing"@en)
-ClassAssertion(top-down-common:Term :competing)
+ClassAssertion(metadata:Term :competing)
 
 # Individual: :complex (Complex)
 
 AnnotationAssertion(rdfs:label :complex "Complex"@en)
-ClassAssertion(top-down-common:Term :complex)
+ClassAssertion(metadata:Term :complex)
 SameIndividual(:complex :complexities)
 
 # Individual: :complexities (Complexities)
 
 AnnotationAssertion(rdfs:label :complexities "Complexities"@en)
-ClassAssertion(top-down-common:Term :complexities)
+ClassAssertion(metadata:Term :complexities)
 SameIndividual(:complexities :complexity)
 
 # Individual: :complexity (Complexity)
 
 AnnotationAssertion(rdfs:label :complexity "Complexity"@en)
-ClassAssertion(top-down-common:Term :complexity)
+ClassAssertion(metadata:Term :complexity)
 
 # Individual: :computation (Computation)
 
 AnnotationAssertion(rdfs:label :computation "Computation"@en)
-ClassAssertion(top-down-common:Term :computation)
+ClassAssertion(metadata:Term :computation)
 SameIndividual(:computation :computes)
 
 # Individual: :computational (Computational)
 
 AnnotationAssertion(rdfs:label :computational "Computational"@en)
-ClassAssertion(top-down-common:Term :computational)
+ClassAssertion(metadata:Term :computational)
 SameIndividual(:computational :computes)
 
 # Individual: :compute (Compute)
 
 AnnotationAssertion(rdfs:label :compute "Compute"@en)
-ClassAssertion(top-down-common:Term :compute)
+ClassAssertion(metadata:Term :compute)
 SameIndividual(:compute :computes)
 
 # Individual: :computed (Computed)
 
 AnnotationAssertion(rdfs:label :computed "Computed"@en)
-ClassAssertion(top-down-common:Term :computed)
+ClassAssertion(metadata:Term :computed)
 SameIndividual(:computed :computes)
 
 # Individual: :computer (Computer)
 
 AnnotationAssertion(rdfs:label :computer "Computer"@en)
-ClassAssertion(top-down-common:Term :computer)
+ClassAssertion(metadata:Term :computer)
 SameIndividual(:computer :computes)
 
 # Individual: :computers (Computers)
 
 AnnotationAssertion(rdfs:label :computers "Computers"@en)
-ClassAssertion(top-down-common:Term :computers)
+ClassAssertion(metadata:Term :computers)
 SameIndividual(:computers :computes)
 
 # Individual: :computes (Computes)
 
 AnnotationAssertion(rdfs:label :computes "Computes"@en)
-ClassAssertion(top-down-common:Term :computes)
+ClassAssertion(metadata:Term :computes)
 SameIndividual(:computes :computing)
 
 # Individual: :computing (Computing)
 
 AnnotationAssertion(rdfs:label :computing "Computing"@en)
-ClassAssertion(top-down-common:Term :computing)
+ClassAssertion(metadata:Term :computing)
 
 # Individual: :connect (Connect)
 
 AnnotationAssertion(rdfs:label :connect "Connect"@en)
-ClassAssertion(top-down-common:Term :connect)
+ClassAssertion(metadata:Term :connect)
 SameIndividual(:connect :connection)
 
 # Individual: :connected (Connected)
 
 AnnotationAssertion(rdfs:label :connected "Connected"@en)
-ClassAssertion(top-down-common:Term :connected)
+ClassAssertion(metadata:Term :connected)
 SameIndividual(:connected :connection)
 
 # Individual: :connecting (Connecting)
 
 AnnotationAssertion(rdfs:label :connecting "Connecting"@en)
-ClassAssertion(top-down-common:Term :connecting)
+ClassAssertion(metadata:Term :connecting)
 SameIndividual(:connecting :connection)
 
 # Individual: :connection (Connection)
 
 AnnotationAssertion(rdfs:label :connection "Connection"@en)
-ClassAssertion(top-down-common:Term :connection)
+ClassAssertion(metadata:Term :connection)
 SameIndividual(:connection :connections)
 SameIndividual(:connection :connectivity)
 SameIndividual(:connection :connects)
@@ -1464,159 +1464,159 @@ SameIndividual(:connection :connects)
 # Individual: :connections (Connections)
 
 AnnotationAssertion(rdfs:label :connections "Connections"@en)
-ClassAssertion(top-down-common:Term :connections)
+ClassAssertion(metadata:Term :connections)
 
 # Individual: :connectivity (Connectivity)
 
 AnnotationAssertion(rdfs:label :connectivity "Connectivity"@en)
-ClassAssertion(top-down-common:Term :connectivity)
+ClassAssertion(metadata:Term :connectivity)
 
 # Individual: :connects (Connects)
 
 AnnotationAssertion(rdfs:label :connects "Connects"@en)
-ClassAssertion(top-down-common:Term :connects)
+ClassAssertion(metadata:Term :connects)
 
 # Individual: :conscious (Conscious)
 
 AnnotationAssertion(rdfs:label :conscious "Conscious"@en)
-ClassAssertion(top-down-common:Term :conscious)
+ClassAssertion(metadata:Term :conscious)
 
 # Individual: :constraint (Constraint)
 
 AnnotationAssertion(rdfs:label :constraint "Constraint"@en)
-ClassAssertion(top-down-common:Term :constraint)
+ClassAssertion(metadata:Term :constraint)
 SameIndividual(:constraint :constraints)
 
 # Individual: :constraints (Constraints)
 
 AnnotationAssertion(rdfs:label :constraints "Constraints"@en)
-ClassAssertion(top-down-common:Term :constraints)
+ClassAssertion(metadata:Term :constraints)
 
 # Individual: :contextual (Contextual)
 
 AnnotationAssertion(rdfs:label :contextual "Contextual"@en)
-ClassAssertion(top-down-common:Term :contextual)
+ClassAssertion(metadata:Term :contextual)
 SameIndividual(:contextual :contextualized)
 
 # Individual: :contextualized (Contextualized)
 
 AnnotationAssertion(rdfs:label :contextualized "Contextualized"@en)
-ClassAssertion(top-down-common:Term :contextualized)
+ClassAssertion(metadata:Term :contextualized)
 
 # Individual: :cooper (Cooper)
 
 AnnotationAssertion(rdfs:label :cooper "Cooper"@en)
-ClassAssertion(top-down-common:Term :cooper)
+ClassAssertion(metadata:Term :cooper)
 SameIndividual(:cooper :cooperative)
 
 # Individual: :cooperate (Cooperate)
 
 AnnotationAssertion(rdfs:label :cooperate "Cooperate"@en)
-ClassAssertion(top-down-common:Term :cooperate)
+ClassAssertion(metadata:Term :cooperate)
 SameIndividual(:cooperate :cooperative)
 
 # Individual: :cooperating (Cooperating)
 
 AnnotationAssertion(rdfs:label :cooperating "Cooperating"@en)
-ClassAssertion(top-down-common:Term :cooperating)
+ClassAssertion(metadata:Term :cooperating)
 SameIndividual(:cooperating :cooperative)
 
 # Individual: :cooperation (Cooperation)
 
 AnnotationAssertion(rdfs:label :cooperation "Cooperation"@en)
-ClassAssertion(top-down-common:Term :cooperation)
+ClassAssertion(metadata:Term :cooperation)
 SameIndividual(:cooperation :cooperative)
 
 # Individual: :cooperative (Cooperative)
 
 AnnotationAssertion(rdfs:label :cooperative "Cooperative"@en)
-ClassAssertion(top-down-common:Term :cooperative)
+ClassAssertion(metadata:Term :cooperative)
 SameIndividual(:cooperative :cooperatives)
 
 # Individual: :cooperatives (Cooperatives)
 
 AnnotationAssertion(rdfs:label :cooperatives "Cooperatives"@en)
-ClassAssertion(top-down-common:Term :cooperatives)
+ClassAssertion(metadata:Term :cooperatives)
 
 # Individual: :correlate (Correlate)
 
 AnnotationAssertion(rdfs:label :correlate "Correlate"@en)
-ClassAssertion(top-down-common:Term :correlate)
+ClassAssertion(metadata:Term :correlate)
 SameIndividual(:correlate :correlations)
 
 # Individual: :correlated (Correlated)
 
 AnnotationAssertion(rdfs:label :correlated "Correlated"@en)
-ClassAssertion(top-down-common:Term :correlated)
+ClassAssertion(metadata:Term :correlated)
 SameIndividual(:correlated :correlations)
 
 # Individual: :correlates (Correlates)
 
 AnnotationAssertion(rdfs:label :correlates "Correlates"@en)
-ClassAssertion(top-down-common:Term :correlates)
+ClassAssertion(metadata:Term :correlates)
 SameIndividual(:correlates :correlations)
 
 # Individual: :correlation (Correlation)
 
 AnnotationAssertion(rdfs:label :correlation "Correlation"@en)
-ClassAssertion(top-down-common:Term :correlation)
+ClassAssertion(metadata:Term :correlation)
 SameIndividual(:correlation :correlations)
 
 # Individual: :correlational (Correlational)
 
 AnnotationAssertion(rdfs:label :correlational "Correlational"@en)
-ClassAssertion(top-down-common:Term :correlational)
+ClassAssertion(metadata:Term :correlational)
 SameIndividual(:correlational :correlations)
 
 # Individual: :correlations (Correlations)
 
 AnnotationAssertion(rdfs:label :correlations "Correlations"@en)
-ClassAssertion(top-down-common:Term :correlations)
+ClassAssertion(metadata:Term :correlations)
 
 # Individual: :current (Current)
 
 AnnotationAssertion(rdfs:label :current "Current"@en)
-ClassAssertion(top-down-common:Term :current)
+ClassAssertion(metadata:Term :current)
 SameIndividual(:current :currents)
 
 # Individual: :currently (Currently)
 
 AnnotationAssertion(rdfs:label :currently "Currently"@en)
-ClassAssertion(top-down-common:Term :currently)
+ClassAssertion(metadata:Term :currently)
 SameIndividual(:currently :currents)
 
 # Individual: :currents (Currents)
 
 AnnotationAssertion(rdfs:label :currents "Currents"@en)
-ClassAssertion(top-down-common:Term :currents)
+ClassAssertion(metadata:Term :currents)
 
 # Individual: :demographic (Demographic)
 
 AnnotationAssertion(rdfs:label :demographic "Demographic"@en)
-ClassAssertion(top-down-common:Term :demographic)
+ClassAssertion(metadata:Term :demographic)
 SameIndividual(:demographic :demographics)
 
 # Individual: :demographics (Demographics)
 
 AnnotationAssertion(rdfs:label :demographics "Demographics"@en)
-ClassAssertion(top-down-common:Term :demographics)
+ClassAssertion(metadata:Term :demographics)
 
 # Individual: :differential (Differential)
 
 AnnotationAssertion(rdfs:label :differential "Differential"@en)
-ClassAssertion(top-down-common:Term :differential)
+ClassAssertion(metadata:Term :differential)
 SameIndividual(:differential :differentials)
 
 # Individual: :differentially (Differentially)
 
 AnnotationAssertion(rdfs:label :differentially "Differentially"@en)
-ClassAssertion(top-down-common:Term :differentially)
+ClassAssertion(metadata:Term :differentially)
 SameIndividual(:differentially :differentials)
 
 # Individual: :differentials (Differentials)
 
 AnnotationAssertion(rdfs:label :differentials "Differentials"@en)
-ClassAssertion(top-down-common:Term :differentials)
+ClassAssertion(metadata:Term :differentials)
 SameIndividual(:differentials :differentiate)
 SameIndividual(:differentials :differentiated)
 SameIndividual(:differentials :differentiates)
@@ -1626,67 +1626,67 @@ SameIndividual(:differentials :differentiation)
 # Individual: :differentiate (Differentiate)
 
 AnnotationAssertion(rdfs:label :differentiate "Differentiate"@en)
-ClassAssertion(top-down-common:Term :differentiate)
+ClassAssertion(metadata:Term :differentiate)
 
 # Individual: :differentiated (Differentiated)
 
 AnnotationAssertion(rdfs:label :differentiated "Differentiated"@en)
-ClassAssertion(top-down-common:Term :differentiated)
+ClassAssertion(metadata:Term :differentiated)
 
 # Individual: :differentiates (Differentiates)
 
 AnnotationAssertion(rdfs:label :differentiates "Differentiates"@en)
-ClassAssertion(top-down-common:Term :differentiates)
+ClassAssertion(metadata:Term :differentiates)
 
 # Individual: :differentiating (Differentiating)
 
 AnnotationAssertion(rdfs:label :differentiating "Differentiating"@en)
-ClassAssertion(top-down-common:Term :differentiating)
+ClassAssertion(metadata:Term :differentiating)
 
 # Individual: :differentiation (Differentiation)
 
 AnnotationAssertion(rdfs:label :differentiation "Differentiation"@en)
-ClassAssertion(top-down-common:Term :differentiation)
+ClassAssertion(metadata:Term :differentiation)
 
 # Individual: :distinguish (Distinguish)
 
 AnnotationAssertion(rdfs:label :distinguish "Distinguish"@en)
-ClassAssertion(top-down-common:Term :distinguish)
+ClassAssertion(metadata:Term :distinguish)
 SameIndividual(:distinguish :distinguishing)
 
 # Individual: :distinguished (Distinguished)
 
 AnnotationAssertion(rdfs:label :distinguished "Distinguished"@en)
-ClassAssertion(top-down-common:Term :distinguished)
+ClassAssertion(metadata:Term :distinguished)
 SameIndividual(:distinguished :distinguishing)
 
 # Individual: :distinguishes (Distinguishes)
 
 AnnotationAssertion(rdfs:label :distinguishes "Distinguishes"@en)
-ClassAssertion(top-down-common:Term :distinguishes)
+ClassAssertion(metadata:Term :distinguishes)
 SameIndividual(:distinguishes :distinguishing)
 
 # Individual: :distinguishing (Distinguishing)
 
 AnnotationAssertion(rdfs:label :distinguishing "Distinguishing"@en)
-ClassAssertion(top-down-common:Term :distinguishing)
+ClassAssertion(metadata:Term :distinguishing)
 
 # Individual: :distribute (Distribute)
 
 AnnotationAssertion(rdfs:label :distribute "Distribute"@en)
-ClassAssertion(top-down-common:Term :distribute)
+ClassAssertion(metadata:Term :distribute)
 SameIndividual(:distribute :distributing)
 
 # Individual: :distributed (Distributed)
 
 AnnotationAssertion(rdfs:label :distributed "Distributed"@en)
-ClassAssertion(top-down-common:Term :distributed)
+ClassAssertion(metadata:Term :distributed)
 SameIndividual(:distributed :distributing)
 
 # Individual: :distributing (Distributing)
 
 AnnotationAssertion(rdfs:label :distributing "Distributing"@en)
-ClassAssertion(top-down-common:Term :distributing)
+ClassAssertion(metadata:Term :distributing)
 SameIndividual(:distributing :distribution)
 SameIndividual(:distributing :distributional)
 SameIndividual(:distributing :distributions)
@@ -1694,107 +1694,107 @@ SameIndividual(:distributing :distributions)
 # Individual: :distribution (Distribution)
 
 AnnotationAssertion(rdfs:label :distribution "Distribution"@en)
-ClassAssertion(top-down-common:Term :distribution)
+ClassAssertion(metadata:Term :distribution)
 
 # Individual: :distributional (Distributional)
 
 AnnotationAssertion(rdfs:label :distributional "Distributional"@en)
-ClassAssertion(top-down-common:Term :distributional)
+ClassAssertion(metadata:Term :distributional)
 
 # Individual: :distributions (Distributions)
 
 AnnotationAssertion(rdfs:label :distributions "Distributions"@en)
-ClassAssertion(top-down-common:Term :distributions)
+ClassAssertion(metadata:Term :distributions)
 
 # Individual: :diverse (Diverse)
 
 AnnotationAssertion(rdfs:label :diverse "Diverse"@en)
-ClassAssertion(top-down-common:Term :diverse)
+ClassAssertion(metadata:Term :diverse)
 SameIndividual(:diverse :diversity)
 
 # Individual: :diversity (Diversity)
 
 AnnotationAssertion(rdfs:label :diversity "Diversity"@en)
-ClassAssertion(top-down-common:Term :diversity)
+ClassAssertion(metadata:Term :diversity)
 
 # Individual: :domain (Domain)
 
 AnnotationAssertion(rdfs:label :domain "Domain"@en)
-ClassAssertion(top-down-common:Term :domain)
+ClassAssertion(metadata:Term :domain)
 SameIndividual(:domain :domains)
 
 # Individual: :domains (Domains)
 
 AnnotationAssertion(rdfs:label :domains "Domains"@en)
-ClassAssertion(top-down-common:Term :domains)
+ClassAssertion(metadata:Term :domains)
 
 # Individual: :driver (Driver)
 
 AnnotationAssertion(rdfs:label :driver "Driver"@en)
-ClassAssertion(top-down-common:Term :driver)
+ClassAssertion(metadata:Term :driver)
 SameIndividual(:driver :drivers)
 
 # Individual: :drivers (Drivers)
 
 AnnotationAssertion(rdfs:label :drivers "Drivers"@en)
-ClassAssertion(top-down-common:Term :drivers)
+ClassAssertion(metadata:Term :drivers)
 
 # Individual: :dynamic (Dynamic)
 
 AnnotationAssertion(rdfs:label :dynamic "Dynamic"@en)
-ClassAssertion(top-down-common:Term :dynamic)
+ClassAssertion(metadata:Term :dynamic)
 SameIndividual(:dynamic :dynamical)
 
 # Individual: :dynamical (Dynamical)
 
 AnnotationAssertion(rdfs:label :dynamical "Dynamical"@en)
-ClassAssertion(top-down-common:Term :dynamical)
+ClassAssertion(metadata:Term :dynamical)
 SameIndividual(:dynamical :dynamically)
 SameIndividual(:dynamical :dynamics)
 
 # Individual: :dynamically (Dynamically)
 
 AnnotationAssertion(rdfs:label :dynamically "Dynamically"@en)
-ClassAssertion(top-down-common:Term :dynamically)
+ClassAssertion(metadata:Term :dynamically)
 
 # Individual: :dynamics (Dynamics)
 
 AnnotationAssertion(rdfs:label :dynamics "Dynamics"@en)
-ClassAssertion(top-down-common:Term :dynamics)
+ClassAssertion(metadata:Term :dynamics)
 
 # Individual: :ecologic (Ecologic)
 
 AnnotationAssertion(rdfs:label :ecologic "Ecologic"@en)
-ClassAssertion(top-down-common:Term :ecologic)
+ClassAssertion(metadata:Term :ecologic)
 SameIndividual(:ecologic :ecological)
 
 # Individual: :ecological (Ecological)
 
 AnnotationAssertion(rdfs:label :ecological "Ecological"@en)
-ClassAssertion(top-down-common:Term :ecological)
+ClassAssertion(metadata:Term :ecological)
 SameIndividual(:ecological :ecologically)
 SameIndividual(:ecological :ecology)
 
 # Individual: :ecologically (Ecologically)
 
 AnnotationAssertion(rdfs:label :ecologically "Ecologically"@en)
-ClassAssertion(top-down-common:Term :ecologically)
+ClassAssertion(metadata:Term :ecologically)
 
 # Individual: :ecology (Ecology)
 
 AnnotationAssertion(rdfs:label :ecology "Ecology"@en)
-ClassAssertion(top-down-common:Term :ecology)
+ClassAssertion(metadata:Term :ecology)
 
 # Individual: :econom (Econom)
 
 AnnotationAssertion(rdfs:label :econom "Econom"@en)
-ClassAssertion(top-down-common:Term :econom)
+ClassAssertion(metadata:Term :econom)
 SameIndividual(:econom :economic)
 
 # Individual: :economic (Economic)
 
 AnnotationAssertion(rdfs:label :economic "Economic"@en)
-ClassAssertion(top-down-common:Term :economic)
+ClassAssertion(metadata:Term :economic)
 SameIndividual(:economic :economical)
 SameIndividual(:economic :economically)
 SameIndividual(:economic :economics)
@@ -1802,131 +1802,131 @@ SameIndividual(:economic :economics)
 # Individual: :economical (Economical)
 
 AnnotationAssertion(rdfs:label :economical "Economical"@en)
-ClassAssertion(top-down-common:Term :economical)
+ClassAssertion(metadata:Term :economical)
 
 # Individual: :economically (Economically)
 
 AnnotationAssertion(rdfs:label :economically "Economically"@en)
-ClassAssertion(top-down-common:Term :economically)
+ClassAssertion(metadata:Term :economically)
 
 # Individual: :economics (Economics)
 
 AnnotationAssertion(rdfs:label :economics "Economics"@en)
-ClassAssertion(top-down-common:Term :economics)
+ClassAssertion(metadata:Term :economics)
 
 # Individual: :economie (Economie)
 
 AnnotationAssertion(rdfs:label :economie "Economie"@en)
-ClassAssertion(top-down-common:Term :economie)
+ClassAssertion(metadata:Term :economie)
 SameIndividual(:economie :economies)
 
 # Individual: :economies (Economies)
 
 AnnotationAssertion(rdfs:label :economies "Economies"@en)
-ClassAssertion(top-down-common:Term :economies)
+ClassAssertion(metadata:Term :economies)
 SameIndividual(:economies :economy)
 
 # Individual: :economy (Economy)
 
 AnnotationAssertion(rdfs:label :economy "Economy"@en)
-ClassAssertion(top-down-common:Term :economy)
+ClassAssertion(metadata:Term :economy)
 
 # Individual: :effect (Effect)
 
 AnnotationAssertion(rdfs:label :effect "Effect"@en)
-ClassAssertion(top-down-common:Term :effect)
+ClassAssertion(metadata:Term :effect)
 SameIndividual(:effect :effects)
 
 # Individual: :effected (Effected)
 
 AnnotationAssertion(rdfs:label :effected "Effected"@en)
-ClassAssertion(top-down-common:Term :effected)
+ClassAssertion(metadata:Term :effected)
 SameIndividual(:effected :effects)
 
 # Individual: :effecting (Effecting)
 
 AnnotationAssertion(rdfs:label :effecting "Effecting"@en)
-ClassAssertion(top-down-common:Term :effecting)
+ClassAssertion(metadata:Term :effecting)
 SameIndividual(:effecting :effects)
 
 # Individual: :effective (Effective)
 
 AnnotationAssertion(rdfs:label :effective "Effective"@en)
-ClassAssertion(top-down-common:Term :effective)
+ClassAssertion(metadata:Term :effective)
 SameIndividual(:effective :effects)
 
 # Individual: :effectively (Effectively)
 
 AnnotationAssertion(rdfs:label :effectively "Effectively"@en)
-ClassAssertion(top-down-common:Term :effectively)
+ClassAssertion(metadata:Term :effectively)
 SameIndividual(:effectively :effects)
 
 # Individual: :effectiveness (Effectiveness)
 
 AnnotationAssertion(rdfs:label :effectiveness "Effectiveness"@en)
-ClassAssertion(top-down-common:Term :effectiveness)
+ClassAssertion(metadata:Term :effectiveness)
 SameIndividual(:effectiveness :effects)
 
 # Individual: :effects (Effects)
 
 AnnotationAssertion(rdfs:label :effects "Effects"@en)
-ClassAssertion(top-down-common:Term :effects)
+ClassAssertion(metadata:Term :effects)
 
 # Individual: :efficiency (Efficiency)
 
 AnnotationAssertion(rdfs:label :efficiency "Efficiency"@en)
-ClassAssertion(top-down-common:Term :efficiency)
+ClassAssertion(metadata:Term :efficiency)
 SameIndividual(:efficiency :efficient)
 SameIndividual(:efficiency :efficiently)
 
 # Individual: :efficient (Efficient)
 
 AnnotationAssertion(rdfs:label :efficient "Efficient"@en)
-ClassAssertion(top-down-common:Term :efficient)
+ClassAssertion(metadata:Term :efficient)
 
 # Individual: :efficiently (Efficiently)
 
 AnnotationAssertion(rdfs:label :efficiently "Efficiently"@en)
-ClassAssertion(top-down-common:Term :efficiently)
+ClassAssertion(metadata:Term :efficiently)
 
 # Individual: :embedded (Embedded)
 
 AnnotationAssertion(rdfs:label :embedded "Embedded"@en)
-ClassAssertion(top-down-common:Term :embedded)
+ClassAssertion(metadata:Term :embedded)
 SameIndividual(:embedded :embedding)
 
 # Individual: :embedding (Embedding)
 
 AnnotationAssertion(rdfs:label :embedding "Embedding"@en)
-ClassAssertion(top-down-common:Term :embedding)
+ClassAssertion(metadata:Term :embedding)
 
 # Individual: :embodied (Embodied)
 
 AnnotationAssertion(rdfs:label :embodied "Embodied"@en)
-ClassAssertion(top-down-common:Term :embodied)
+ClassAssertion(metadata:Term :embodied)
 SameIndividual(:embodied :embody)
 
 # Individual: :embody (Embody)
 
 AnnotationAssertion(rdfs:label :embody "Embody"@en)
-ClassAssertion(top-down-common:Term :embody)
+ClassAssertion(metadata:Term :embody)
 
 # Individual: :emerge (Emerge)
 
 AnnotationAssertion(rdfs:label :emerge "Emerge"@en)
-ClassAssertion(top-down-common:Term :emerge)
+ClassAssertion(metadata:Term :emerge)
 SameIndividual(:emerge :emergence)
 
 # Individual: :emerged (Emerged)
 
 AnnotationAssertion(rdfs:label :emerged "Emerged"@en)
-ClassAssertion(top-down-common:Term :emerged)
+ClassAssertion(metadata:Term :emerged)
 SameIndividual(:emerged :emergence)
 
 # Individual: :emergence (Emergence)
 
 AnnotationAssertion(rdfs:label :emergence "Emergence"@en)
-ClassAssertion(top-down-common:Term :emergence)
+ClassAssertion(metadata:Term :emergence)
 SameIndividual(:emergence :emergent)
 SameIndividual(:emergence :emerges)
 SameIndividual(:emergence :emerging)
@@ -1934,445 +1934,445 @@ SameIndividual(:emergence :emerging)
 # Individual: :emergent (Emergent)
 
 AnnotationAssertion(rdfs:label :emergent "Emergent"@en)
-ClassAssertion(top-down-common:Term :emergent)
+ClassAssertion(metadata:Term :emergent)
 
 # Individual: :emerges (Emerges)
 
 AnnotationAssertion(rdfs:label :emerges "Emerges"@en)
-ClassAssertion(top-down-common:Term :emerges)
+ClassAssertion(metadata:Term :emerges)
 
 # Individual: :emerging (Emerging)
 
 AnnotationAssertion(rdfs:label :emerging "Emerging"@en)
-ClassAssertion(top-down-common:Term :emerging)
+ClassAssertion(metadata:Term :emerging)
 
 # Individual: :emission (Emission)
 
 AnnotationAssertion(rdfs:label :emission "Emission"@en)
-ClassAssertion(top-down-common:Term :emission)
+ClassAssertion(metadata:Term :emission)
 SameIndividual(:emission :emissions)
 
 # Individual: :emissions (Emissions)
 
 AnnotationAssertion(rdfs:label :emissions "Emissions"@en)
-ClassAssertion(top-down-common:Term :emissions)
+ClassAssertion(metadata:Term :emissions)
 
 # Individual: :emotion (Emotion)
 
 AnnotationAssertion(rdfs:label :emotion "Emotion"@en)
-ClassAssertion(top-down-common:Term :emotion)
+ClassAssertion(metadata:Term :emotion)
 SameIndividual(:emotion :emotions)
 
 # Individual: :emotional (Emotional)
 
 AnnotationAssertion(rdfs:label :emotional "Emotional"@en)
-ClassAssertion(top-down-common:Term :emotional)
+ClassAssertion(metadata:Term :emotional)
 SameIndividual(:emotional :emotions)
 
 # Individual: :emotions (Emotions)
 
 AnnotationAssertion(rdfs:label :emotions "Emotions"@en)
-ClassAssertion(top-down-common:Term :emotions)
+ClassAssertion(metadata:Term :emotions)
 
 # Individual: :environmental (Environmental)
 
 AnnotationAssertion(rdfs:label :environmental "Environmental"@en)
-ClassAssertion(top-down-common:Term :environmental)
+ClassAssertion(metadata:Term :environmental)
 SameIndividual(:environmental :environmentalism)
 
 # Individual: :environmentalism (Environmentalism)
 
 AnnotationAssertion(rdfs:label :environmentalism "Environmentalism"@en)
-ClassAssertion(top-down-common:Term :environmentalism)
+ClassAssertion(metadata:Term :environmentalism)
 SameIndividual(:environmentalism :environmentally)
 
 # Individual: :environmentally (Environmentally)
 
 AnnotationAssertion(rdfs:label :environmentally "Environmentally"@en)
-ClassAssertion(top-down-common:Term :environmentally)
+ClassAssertion(metadata:Term :environmentally)
 
 # Individual: :equal (Equal)
 
 AnnotationAssertion(rdfs:label :equal "Equal"@en)
-ClassAssertion(top-down-common:Term :equal)
+ClassAssertion(metadata:Term :equal)
 SameIndividual(:equal :equality)
 
 # Individual: :equality (Equality)
 
 AnnotationAssertion(rdfs:label :equality "Equality"@en)
-ClassAssertion(top-down-common:Term :equality)
+ClassAssertion(metadata:Term :equality)
 SameIndividual(:equality :equally)
 SameIndividual(:equality :equals)
 
 # Individual: :equally (Equally)
 
 AnnotationAssertion(rdfs:label :equally "Equally"@en)
-ClassAssertion(top-down-common:Term :equally)
+ClassAssertion(metadata:Term :equally)
 
 # Individual: :equals (Equals)
 
 AnnotationAssertion(rdfs:label :equals "Equals"@en)
-ClassAssertion(top-down-common:Term :equals)
+ClassAssertion(metadata:Term :equals)
 
 # Individual: :equilibrium (Equilibrium)
 
 AnnotationAssertion(rdfs:label :equilibrium "Equilibrium"@en)
-ClassAssertion(top-down-common:Term :equilibrium)
+ClassAssertion(metadata:Term :equilibrium)
 
 # Individual: :extern (Extern)
 
 AnnotationAssertion(rdfs:label :extern "Extern"@en)
-ClassAssertion(top-down-common:Term :extern)
+ClassAssertion(metadata:Term :extern)
 SameIndividual(:extern :externally)
 
 # Individual: :external (External)
 
 AnnotationAssertion(rdfs:label :external "External"@en)
-ClassAssertion(top-down-common:Term :external)
+ClassAssertion(metadata:Term :external)
 SameIndividual(:external :externally)
 
 # Individual: :externalities (Externalities)
 
 AnnotationAssertion(rdfs:label :externalities "Externalities"@en)
-ClassAssertion(top-down-common:Term :externalities)
+ClassAssertion(metadata:Term :externalities)
 SameIndividual(:externalities :externally)
 
 # Individual: :externality (Externality)
 
 AnnotationAssertion(rdfs:label :externality "Externality"@en)
-ClassAssertion(top-down-common:Term :externality)
+ClassAssertion(metadata:Term :externality)
 SameIndividual(:externality :externally)
 
 # Individual: :externalized (Externalized)
 
 AnnotationAssertion(rdfs:label :externalized "Externalized"@en)
-ClassAssertion(top-down-common:Term :externalized)
+ClassAssertion(metadata:Term :externalized)
 SameIndividual(:externalized :externally)
 
 # Individual: :externalizing (Externalizing)
 
 AnnotationAssertion(rdfs:label :externalizing "Externalizing"@en)
-ClassAssertion(top-down-common:Term :externalizing)
+ClassAssertion(metadata:Term :externalizing)
 SameIndividual(:externalizing :externally)
 
 # Individual: :externally (Externally)
 
 AnnotationAssertion(rdfs:label :externally "Externally"@en)
-ClassAssertion(top-down-common:Term :externally)
+ClassAssertion(metadata:Term :externally)
 
 # Individual: :factor (Factor)
 
 AnnotationAssertion(rdfs:label :factor "Factor"@en)
-ClassAssertion(top-down-common:Term :factor)
+ClassAssertion(metadata:Term :factor)
 SameIndividual(:factor :factors)
 
 # Individual: :factors (Factors)
 
 AnnotationAssertion(rdfs:label :factors "Factors"@en)
-ClassAssertion(top-down-common:Term :factors)
+ClassAssertion(metadata:Term :factors)
 
 # Individual: :feedback (Feedback)
 
 AnnotationAssertion(rdfs:label :feedback "Feedback"@en)
-ClassAssertion(top-down-common:Term :feedback)
+ClassAssertion(metadata:Term :feedback)
 SameIndividual(:feedback :feedbacks)
 
 # Individual: :feedbacks (Feedbacks)
 
 AnnotationAssertion(rdfs:label :feedbacks "Feedbacks"@en)
-ClassAssertion(top-down-common:Term :feedbacks)
+ClassAssertion(metadata:Term :feedbacks)
 
 # Individual: :feel (Feel)
 
 AnnotationAssertion(rdfs:label :feel "Feel"@en)
-ClassAssertion(top-down-common:Term :feel)
+ClassAssertion(metadata:Term :feel)
 SameIndividual(:feel :feelings)
 
 # Individual: :feeling (Feeling)
 
 AnnotationAssertion(rdfs:label :feeling "Feeling"@en)
-ClassAssertion(top-down-common:Term :feeling)
+ClassAssertion(metadata:Term :feeling)
 SameIndividual(:feeling :feelings)
 
 # Individual: :feelings (Feelings)
 
 AnnotationAssertion(rdfs:label :feelings "Feelings"@en)
-ClassAssertion(top-down-common:Term :feelings)
+ClassAssertion(metadata:Term :feelings)
 SameIndividual(:feelings :feels)
 
 # Individual: :feels (Feels)
 
 AnnotationAssertion(rdfs:label :feels "Feels"@en)
-ClassAssertion(top-down-common:Term :feels)
+ClassAssertion(metadata:Term :feels)
 
 # Individual: :footprint (Footprint)
 
 AnnotationAssertion(rdfs:label :footprint "Footprint"@en)
-ClassAssertion(top-down-common:Term :footprint)
+ClassAssertion(metadata:Term :footprint)
 SameIndividual(:footprint :footprinting)
 
 # Individual: :footprinting (Footprinting)
 
 AnnotationAssertion(rdfs:label :footprinting "Footprinting"@en)
-ClassAssertion(top-down-common:Term :footprinting)
+ClassAssertion(metadata:Term :footprinting)
 SameIndividual(:footprinting :footprints)
 
 # Individual: :footprints (Footprints)
 
 AnnotationAssertion(rdfs:label :footprints "Footprints"@en)
-ClassAssertion(top-down-common:Term :footprints)
+ClassAssertion(metadata:Term :footprints)
 
 # Individual: :force (Force)
 
 AnnotationAssertion(rdfs:label :force "Force"@en)
-ClassAssertion(top-down-common:Term :force)
+ClassAssertion(metadata:Term :force)
 SameIndividual(:force :forces)
 
 # Individual: :forced (Forced)
 
 AnnotationAssertion(rdfs:label :forced "Forced"@en)
-ClassAssertion(top-down-common:Term :forced)
+ClassAssertion(metadata:Term :forced)
 SameIndividual(:forced :forces)
 
 # Individual: :forces (Forces)
 
 AnnotationAssertion(rdfs:label :forces "Forces"@en)
-ClassAssertion(top-down-common:Term :forces)
+ClassAssertion(metadata:Term :forces)
 SameIndividual(:forces :forcing)
 
 # Individual: :forcing (Forcing)
 
 AnnotationAssertion(rdfs:label :forcing "Forcing"@en)
-ClassAssertion(top-down-common:Term :forcing)
+ClassAssertion(metadata:Term :forcing)
 
 # Individual: :frame (Frame)
 
 AnnotationAssertion(rdfs:label :frame "Frame"@en)
-ClassAssertion(top-down-common:Term :frame)
+ClassAssertion(metadata:Term :frame)
 SameIndividual(:frame :framing)
 
 # Individual: :framed (Framed)
 
 AnnotationAssertion(rdfs:label :framed "Framed"@en)
-ClassAssertion(top-down-common:Term :framed)
+ClassAssertion(metadata:Term :framed)
 SameIndividual(:framed :framing)
 
 # Individual: :frames (Frames)
 
 AnnotationAssertion(rdfs:label :frames "Frames"@en)
-ClassAssertion(top-down-common:Term :frames)
+ClassAssertion(metadata:Term :frames)
 SameIndividual(:frames :framing)
 
 # Individual: :framing (Framing)
 
 AnnotationAssertion(rdfs:label :framing "Framing"@en)
-ClassAssertion(top-down-common:Term :framing)
+ClassAssertion(metadata:Term :framing)
 
 # Individual: :fulfil (Fulfil)
 
 AnnotationAssertion(rdfs:label :fulfil "Fulfil"@en)
-ClassAssertion(top-down-common:Term :fulfil)
+ClassAssertion(metadata:Term :fulfil)
 SameIndividual(:fulfil :fulfilment)
 
 # Individual: :fulfill (Fulfill)
 
 AnnotationAssertion(rdfs:label :fulfill "Fulfill"@en)
-ClassAssertion(top-down-common:Term :fulfill)
+ClassAssertion(metadata:Term :fulfill)
 SameIndividual(:fulfill :fulfilment)
 
 # Individual: :fulfilled (Fulfilled)
 
 AnnotationAssertion(rdfs:label :fulfilled "Fulfilled"@en)
-ClassAssertion(top-down-common:Term :fulfilled)
+ClassAssertion(metadata:Term :fulfilled)
 SameIndividual(:fulfilled :fulfilment)
 
 # Individual: :fulfilling (Fulfilling)
 
 AnnotationAssertion(rdfs:label :fulfilling "Fulfilling"@en)
-ClassAssertion(top-down-common:Term :fulfilling)
+ClassAssertion(metadata:Term :fulfilling)
 SameIndividual(:fulfilling :fulfilment)
 
 # Individual: :fulfillment (Fulfillment)
 
 AnnotationAssertion(rdfs:label :fulfillment "Fulfillment"@en)
-ClassAssertion(top-down-common:Term :fulfillment)
+ClassAssertion(metadata:Term :fulfillment)
 SameIndividual(:fulfillment :fulfilment)
 
 # Individual: :fulfills (Fulfills)
 
 AnnotationAssertion(rdfs:label :fulfills "Fulfills"@en)
-ClassAssertion(top-down-common:Term :fulfills)
+ClassAssertion(metadata:Term :fulfills)
 SameIndividual(:fulfills :fulfilment)
 
 # Individual: :fulfilment (Fulfilment)
 
 AnnotationAssertion(rdfs:label :fulfilment "Fulfilment"@en)
-ClassAssertion(top-down-common:Term :fulfilment)
+ClassAssertion(metadata:Term :fulfilment)
 SameIndividual(:fulfilment :fulfils)
 
 # Individual: :fulfils (Fulfils)
 
 AnnotationAssertion(rdfs:label :fulfils "Fulfils"@en)
-ClassAssertion(top-down-common:Term :fulfils)
+ClassAssertion(metadata:Term :fulfils)
 
 # Individual: :function (Function)
 
 AnnotationAssertion(rdfs:label :function "Function"@en)
-ClassAssertion(top-down-common:Term :function)
+ClassAssertion(metadata:Term :function)
 SameIndividual(:function :functions)
 
 # Individual: :functional (Functional)
 
 AnnotationAssertion(rdfs:label :functional "Functional"@en)
-ClassAssertion(top-down-common:Term :functional)
+ClassAssertion(metadata:Term :functional)
 SameIndividual(:functional :functions)
 
 # Individual: :functionalism (Functionalism)
 
 AnnotationAssertion(rdfs:label :functionalism "Functionalism"@en)
-ClassAssertion(top-down-common:Term :functionalism)
+ClassAssertion(metadata:Term :functionalism)
 SameIndividual(:functionalism :functions)
 
 # Individual: :functionality (Functionality)
 
 AnnotationAssertion(rdfs:label :functionality "Functionality"@en)
-ClassAssertion(top-down-common:Term :functionality)
+ClassAssertion(metadata:Term :functionality)
 SameIndividual(:functionality :functions)
 
 # Individual: :functionally (Functionally)
 
 AnnotationAssertion(rdfs:label :functionally "Functionally"@en)
-ClassAssertion(top-down-common:Term :functionally)
+ClassAssertion(metadata:Term :functionally)
 SameIndividual(:functionally :functions)
 
 # Individual: :functioning (Functioning)
 
 AnnotationAssertion(rdfs:label :functioning "Functioning"@en)
-ClassAssertion(top-down-common:Term :functioning)
+ClassAssertion(metadata:Term :functioning)
 SameIndividual(:functioning :functions)
 
 # Individual: :functionings (Functionings)
 
 AnnotationAssertion(rdfs:label :functionings "Functionings"@en)
-ClassAssertion(top-down-common:Term :functionings)
+ClassAssertion(metadata:Term :functionings)
 SameIndividual(:functionings :functions)
 
 # Individual: :functions (Functions)
 
 AnnotationAssertion(rdfs:label :functions "Functions"@en)
-ClassAssertion(top-down-common:Term :functions)
+ClassAssertion(metadata:Term :functions)
 
 # Individual: :gender (Gender)
 
 AnnotationAssertion(rdfs:label :gender "Gender"@en)
-ClassAssertion(top-down-common:Term :gender)
+ClassAssertion(metadata:Term :gender)
 SameIndividual(:gender :gendered)
 
 # Individual: :gendered (Gendered)
 
 AnnotationAssertion(rdfs:label :gendered "Gendered"@en)
-ClassAssertion(top-down-common:Term :gendered)
+ClassAssertion(metadata:Term :gendered)
 
 # Individual: :good (Good)
 
 AnnotationAssertion(rdfs:label :good "Good"@en)
-ClassAssertion(top-down-common:Term :good)
+ClassAssertion(metadata:Term :good)
 SameIndividual(:good :goods)
 
 # Individual: :goods (Goods)
 
 AnnotationAssertion(rdfs:label :goods "Goods"@en)
-ClassAssertion(top-down-common:Term :goods)
+ClassAssertion(metadata:Term :goods)
 
 # Individual: :growth (Growth)
 
 AnnotationAssertion(rdfs:label :growth "Growth"@en)
-ClassAssertion(top-down-common:Term :growth)
+ClassAssertion(metadata:Term :growth)
 SameIndividual(:growth :growths)
 
 # Individual: :growths (Growths)
 
 AnnotationAssertion(rdfs:label :growths "Growths"@en)
-ClassAssertion(top-down-common:Term :growths)
+ClassAssertion(metadata:Term :growths)
 
 # Individual: :identical (Identical)
 
 AnnotationAssertion(rdfs:label :identical "Identical"@en)
-ClassAssertion(top-down-common:Term :identical)
+ClassAssertion(metadata:Term :identical)
 SameIndividual(:identical :identity)
 
 # Individual: :identification (Identification)
 
 AnnotationAssertion(rdfs:label :identification "Identification"@en)
-ClassAssertion(top-down-common:Term :identification)
+ClassAssertion(metadata:Term :identification)
 
 # Individual: :identities (Identities)
 
 AnnotationAssertion(rdfs:label :identities "Identities"@en)
-ClassAssertion(top-down-common:Term :identities)
+ClassAssertion(metadata:Term :identities)
 SameIndividual(:identities :identity)
 
 # Individual: :identity (Identity)
 
 AnnotationAssertion(rdfs:label :identity "Identity"@en)
-ClassAssertion(top-down-common:Term :identity)
+ClassAssertion(metadata:Term :identity)
 
 # Individual: :impact (Impact)
 
 AnnotationAssertion(rdfs:label :impact "Impact"@en)
-ClassAssertion(top-down-common:Term :impact)
+ClassAssertion(metadata:Term :impact)
 SameIndividual(:impact :impactful)
 
 # Individual: :impacted (Impacted)
 
 AnnotationAssertion(rdfs:label :impacted "Impacted"@en)
-ClassAssertion(top-down-common:Term :impacted)
+ClassAssertion(metadata:Term :impacted)
 SameIndividual(:impacted :impactful)
 
 # Individual: :impactful (Impactful)
 
 AnnotationAssertion(rdfs:label :impactful "Impactful"@en)
-ClassAssertion(top-down-common:Term :impactful)
+ClassAssertion(metadata:Term :impactful)
 SameIndividual(:impactful :impacting)
 SameIndividual(:impactful :impacts)
 
 # Individual: :impacting (Impacting)
 
 AnnotationAssertion(rdfs:label :impacting "Impacting"@en)
-ClassAssertion(top-down-common:Term :impacting)
+ClassAssertion(metadata:Term :impacting)
 
 # Individual: :impacts (Impacts)
 
 AnnotationAssertion(rdfs:label :impacts "Impacts"@en)
-ClassAssertion(top-down-common:Term :impacts)
+ClassAssertion(metadata:Term :impacts)
 
 # Individual: :incentive (Incentive)
 
 AnnotationAssertion(rdfs:label :incentive "Incentive"@en)
-ClassAssertion(top-down-common:Term :incentive)
+ClassAssertion(metadata:Term :incentive)
 SameIndividual(:incentive :incentives)
 
 # Individual: :incentives (Incentives)
 
 AnnotationAssertion(rdfs:label :incentives "Incentives"@en)
-ClassAssertion(top-down-common:Term :incentives)
+ClassAssertion(metadata:Term :incentives)
 
 # Individual: :indicate (Indicate)
 
 AnnotationAssertion(rdfs:label :indicate "Indicate"@en)
-ClassAssertion(top-down-common:Term :indicate)
+ClassAssertion(metadata:Term :indicate)
 SameIndividual(:indicate :indicates)
 
 # Individual: :indicated (Indicated)
 
 AnnotationAssertion(rdfs:label :indicated "Indicated"@en)
-ClassAssertion(top-down-common:Term :indicated)
+ClassAssertion(metadata:Term :indicated)
 SameIndividual(:indicated :indicates)
 
 # Individual: :indicates (Indicates)
 
 AnnotationAssertion(rdfs:label :indicates "Indicates"@en)
-ClassAssertion(top-down-common:Term :indicates)
+ClassAssertion(metadata:Term :indicates)
 SameIndividual(:indicates :indicating)
 SameIndividual(:indicates :indication)
 SameIndividual(:indicates :indications)
@@ -2384,101 +2384,101 @@ SameIndividual(:indicates :indices)
 # Individual: :indicating (Indicating)
 
 AnnotationAssertion(rdfs:label :indicating "Indicating"@en)
-ClassAssertion(top-down-common:Term :indicating)
+ClassAssertion(metadata:Term :indicating)
 
 # Individual: :indication (Indication)
 
 AnnotationAssertion(rdfs:label :indication "Indication"@en)
-ClassAssertion(top-down-common:Term :indication)
+ClassAssertion(metadata:Term :indication)
 
 # Individual: :indications (Indications)
 
 AnnotationAssertion(rdfs:label :indications "Indications"@en)
-ClassAssertion(top-down-common:Term :indications)
+ClassAssertion(metadata:Term :indications)
 
 # Individual: :indicative (Indicative)
 
 AnnotationAssertion(rdfs:label :indicative "Indicative"@en)
-ClassAssertion(top-down-common:Term :indicative)
+ClassAssertion(metadata:Term :indicative)
 
 # Individual: :indicator (Indicator)
 
 AnnotationAssertion(rdfs:label :indicator "Indicator"@en)
-ClassAssertion(top-down-common:Term :indicator)
+ClassAssertion(metadata:Term :indicator)
 
 # Individual: :indicators (Indicators)
 
 AnnotationAssertion(rdfs:label :indicators "Indicators"@en)
-ClassAssertion(top-down-common:Term :indicators)
+ClassAssertion(metadata:Term :indicators)
 
 # Individual: :indices (Indices)
 
 AnnotationAssertion(rdfs:label :indices "Indices"@en)
-ClassAssertion(top-down-common:Term :indices)
+ClassAssertion(metadata:Term :indices)
 
 # Individual: :initial (Initial)
 
 AnnotationAssertion(rdfs:label :initial "Initial"@en)
-ClassAssertion(top-down-common:Term :initial)
+ClassAssertion(metadata:Term :initial)
 SameIndividual(:initial :initiators)
 
 # Individual: :initially (Initially)
 
 AnnotationAssertion(rdfs:label :initially "Initially"@en)
-ClassAssertion(top-down-common:Term :initially)
+ClassAssertion(metadata:Term :initially)
 SameIndividual(:initially :initiators)
 
 # Individual: :initiate (Initiate)
 
 AnnotationAssertion(rdfs:label :initiate "Initiate"@en)
-ClassAssertion(top-down-common:Term :initiate)
+ClassAssertion(metadata:Term :initiate)
 SameIndividual(:initiate :initiators)
 
 # Individual: :initiated (Initiated)
 
 AnnotationAssertion(rdfs:label :initiated "Initiated"@en)
-ClassAssertion(top-down-common:Term :initiated)
+ClassAssertion(metadata:Term :initiated)
 SameIndividual(:initiated :initiators)
 
 # Individual: :initiating (Initiating)
 
 AnnotationAssertion(rdfs:label :initiating "Initiating"@en)
-ClassAssertion(top-down-common:Term :initiating)
+ClassAssertion(metadata:Term :initiating)
 SameIndividual(:initiating :initiators)
 
 # Individual: :initiation (Initiation)
 
 AnnotationAssertion(rdfs:label :initiation "Initiation"@en)
-ClassAssertion(top-down-common:Term :initiation)
+ClassAssertion(metadata:Term :initiation)
 SameIndividual(:initiation :initiators)
 
 # Individual: :initiative (Initiative)
 
 AnnotationAssertion(rdfs:label :initiative "Initiative"@en)
-ClassAssertion(top-down-common:Term :initiative)
+ClassAssertion(metadata:Term :initiative)
 SameIndividual(:initiative :initiators)
 
 # Individual: :initiatives (Initiatives)
 
 AnnotationAssertion(rdfs:label :initiatives "Initiatives"@en)
-ClassAssertion(top-down-common:Term :initiatives)
+ClassAssertion(metadata:Term :initiatives)
 SameIndividual(:initiatives :initiators)
 
 # Individual: :initiator (Initiator)
 
 AnnotationAssertion(rdfs:label :initiator "Initiator"@en)
-ClassAssertion(top-down-common:Term :initiator)
+ClassAssertion(metadata:Term :initiator)
 SameIndividual(:initiator :initiators)
 
 # Individual: :initiators (Initiators)
 
 AnnotationAssertion(rdfs:label :initiators "Initiators"@en)
-ClassAssertion(top-down-common:Term :initiators)
+ClassAssertion(metadata:Term :initiators)
 
 # Individual: :integral (Integral)
 
 AnnotationAssertion(rdfs:label :integral "Integral"@en)
-ClassAssertion(top-down-common:Term :integral)
+ClassAssertion(metadata:Term :integral)
 SameIndividual(:integral :integrate)
 SameIndividual(:integral :integrated)
 SameIndividual(:integral :integrates)
@@ -2490,53 +2490,53 @@ SameIndividual(:integral :integrity)
 # Individual: :integrate (Integrate)
 
 AnnotationAssertion(rdfs:label :integrate "Integrate"@en)
-ClassAssertion(top-down-common:Term :integrate)
+ClassAssertion(metadata:Term :integrate)
 
 # Individual: :integrated (Integrated)
 
 AnnotationAssertion(rdfs:label :integrated "Integrated"@en)
-ClassAssertion(top-down-common:Term :integrated)
+ClassAssertion(metadata:Term :integrated)
 
 # Individual: :integrates (Integrates)
 
 AnnotationAssertion(rdfs:label :integrates "Integrates"@en)
-ClassAssertion(top-down-common:Term :integrates)
+ClassAssertion(metadata:Term :integrates)
 
 # Individual: :integrating (Integrating)
 
 AnnotationAssertion(rdfs:label :integrating "Integrating"@en)
-ClassAssertion(top-down-common:Term :integrating)
+ClassAssertion(metadata:Term :integrating)
 
 # Individual: :integration (Integration)
 
 AnnotationAssertion(rdfs:label :integration "Integration"@en)
-ClassAssertion(top-down-common:Term :integration)
+ClassAssertion(metadata:Term :integration)
 
 # Individual: :integrative (Integrative)
 
 AnnotationAssertion(rdfs:label :integrative "Integrative"@en)
-ClassAssertion(top-down-common:Term :integrative)
+ClassAssertion(metadata:Term :integrative)
 
 # Individual: :integrity (Integrity)
 
 AnnotationAssertion(rdfs:label :integrity "Integrity"@en)
-ClassAssertion(top-down-common:Term :integrity)
+ClassAssertion(metadata:Term :integrity)
 
 # Individual: :intelligence (Intelligence)
 
 AnnotationAssertion(rdfs:label :intelligence "Intelligence"@en)
-ClassAssertion(top-down-common:Term :intelligence)
+ClassAssertion(metadata:Term :intelligence)
 SameIndividual(:intelligence :intelligent)
 
 # Individual: :intelligent (Intelligent)
 
 AnnotationAssertion(rdfs:label :intelligent "Intelligent"@en)
-ClassAssertion(top-down-common:Term :intelligent)
+ClassAssertion(metadata:Term :intelligent)
 
 # Individual: :intense (Intense)
 
 AnnotationAssertion(rdfs:label :intense "Intense"@en)
-ClassAssertion(top-down-common:Term :intense)
+ClassAssertion(metadata:Term :intense)
 SameIndividual(:intense :intensely)
 SameIndividual(:intense :intensions)
 SameIndividual(:intense :intensities)
@@ -2546,32 +2546,32 @@ SameIndividual(:intense :intensive)
 # Individual: :intensely (Intensely)
 
 AnnotationAssertion(rdfs:label :intensely "Intensely"@en)
-ClassAssertion(top-down-common:Term :intensely)
+ClassAssertion(metadata:Term :intensely)
 
 # Individual: :intensions (Intensions)
 
 AnnotationAssertion(rdfs:label :intensions "Intensions"@en)
-ClassAssertion(top-down-common:Term :intensions)
+ClassAssertion(metadata:Term :intensions)
 
 # Individual: :intensities (Intensities)
 
 AnnotationAssertion(rdfs:label :intensities "Intensities"@en)
-ClassAssertion(top-down-common:Term :intensities)
+ClassAssertion(metadata:Term :intensities)
 
 # Individual: :intensity (Intensity)
 
 AnnotationAssertion(rdfs:label :intensity "Intensity"@en)
-ClassAssertion(top-down-common:Term :intensity)
+ClassAssertion(metadata:Term :intensity)
 
 # Individual: :intensive (Intensive)
 
 AnnotationAssertion(rdfs:label :intensive "Intensive"@en)
-ClassAssertion(top-down-common:Term :intensive)
+ClassAssertion(metadata:Term :intensive)
 
 # Individual: :intent (Intent)
 
 AnnotationAssertion(rdfs:label :intent "Intent"@en)
-ClassAssertion(top-down-common:Term :intent)
+ClassAssertion(metadata:Term :intent)
 SameIndividual(:intent :intention)
 SameIndividual(:intent :intentional)
 SameIndividual(:intent :intentions)
@@ -2579,81 +2579,81 @@ SameIndividual(:intent :intentions)
 # Individual: :intention (Intention)
 
 AnnotationAssertion(rdfs:label :intention "Intention"@en)
-ClassAssertion(top-down-common:Term :intention)
+ClassAssertion(metadata:Term :intention)
 
 # Individual: :intentional (Intentional)
 
 AnnotationAssertion(rdfs:label :intentional "Intentional"@en)
-ClassAssertion(top-down-common:Term :intentional)
+ClassAssertion(metadata:Term :intentional)
 
 # Individual: :intentions (Intentions)
 
 AnnotationAssertion(rdfs:label :intentions "Intentions"@en)
-ClassAssertion(top-down-common:Term :intentions)
+ClassAssertion(metadata:Term :intentions)
 
 # Individual: :interact (Interact)
 
 AnnotationAssertion(rdfs:label :interact "Interact"@en)
-ClassAssertion(top-down-common:Term :interact)
+ClassAssertion(metadata:Term :interact)
 SameIndividual(:interact :interactive)
 
 # Individual: :interacted (Interacted)
 
 AnnotationAssertion(rdfs:label :interacted "Interacted"@en)
-ClassAssertion(top-down-common:Term :interacted)
+ClassAssertion(metadata:Term :interacted)
 SameIndividual(:interacted :interactive)
 
 # Individual: :interacting (Interacting)
 
 AnnotationAssertion(rdfs:label :interacting "Interacting"@en)
-ClassAssertion(top-down-common:Term :interacting)
+ClassAssertion(metadata:Term :interacting)
 SameIndividual(:interacting :interactive)
 
 # Individual: :interaction (Interaction)
 
 AnnotationAssertion(rdfs:label :interaction "Interaction"@en)
-ClassAssertion(top-down-common:Term :interaction)
+ClassAssertion(metadata:Term :interaction)
 SameIndividual(:interaction :interactive)
 
 # Individual: :interactional (Interactional)
 
 AnnotationAssertion(rdfs:label :interactional "Interactional"@en)
-ClassAssertion(top-down-common:Term :interactional)
+ClassAssertion(metadata:Term :interactional)
 SameIndividual(:interactional :interactive)
 
 # Individual: :interactions (Interactions)
 
 AnnotationAssertion(rdfs:label :interactions "Interactions"@en)
-ClassAssertion(top-down-common:Term :interactions)
+ClassAssertion(metadata:Term :interactions)
 SameIndividual(:interactions :interactive)
 
 # Individual: :interactive (Interactive)
 
 AnnotationAssertion(rdfs:label :interactive "Interactive"@en)
-ClassAssertion(top-down-common:Term :interactive)
+ClassAssertion(metadata:Term :interactive)
 SameIndividual(:interactive :interacts)
 
 # Individual: :interacts (Interacts)
 
 AnnotationAssertion(rdfs:label :interacts "Interacts"@en)
-ClassAssertion(top-down-common:Term :interacts)
+ClassAssertion(metadata:Term :interacts)
 
 # Individual: :internal (Internal)
 
 AnnotationAssertion(rdfs:label :internal "Internal"@en)
-ClassAssertion(top-down-common:Term :internal)
+ClassAssertion(metadata:Term :internal)
 SameIndividual(:internal :internalize)
 
 # Individual: :internalization (Internalization)
 
 AnnotationAssertion(rdfs:label :internalization "Internalization"@en)
-ClassAssertion(top-down-common:Term :internalization)
+ClassAssertion(metadata:Term :internalization)
 SameIndividual(:internalization :internalize)
 
 # Individual: :internalize (Internalize)
 
 AnnotationAssertion(rdfs:label :internalize "Internalize"@en)
-ClassAssertion(top-down-common:Term :internalize)
+ClassAssertion(metadata:Term :internalize)
 SameIndividual(:internalize :internalized)
 SameIndividual(:internalize :internalizing)
 SameIndividual(:internalize :internally)
@@ -2663,37 +2663,37 @@ SameIndividual(:internalize :interns)
 # Individual: :internalized (Internalized)
 
 AnnotationAssertion(rdfs:label :internalized "Internalized"@en)
-ClassAssertion(top-down-common:Term :internalized)
+ClassAssertion(metadata:Term :internalized)
 
 # Individual: :internalizing (Internalizing)
 
 AnnotationAssertion(rdfs:label :internalizing "Internalizing"@en)
-ClassAssertion(top-down-common:Term :internalizing)
+ClassAssertion(metadata:Term :internalizing)
 
 # Individual: :internally (Internally)
 
 AnnotationAssertion(rdfs:label :internally "Internally"@en)
-ClassAssertion(top-down-common:Term :internally)
+ClassAssertion(metadata:Term :internally)
 
 # Individual: :international (International)
 
 AnnotationAssertion(rdfs:label :international "International"@en)
-ClassAssertion(top-down-common:Term :international)
+ClassAssertion(metadata:Term :international)
 
 # Individual: :interns (Interns)
 
 AnnotationAssertion(rdfs:label :interns "Interns"@en)
-ClassAssertion(top-down-common:Term :interns)
+ClassAssertion(metadata:Term :interns)
 
 # Individual: :interpersonal (Interpersonal)
 
 AnnotationAssertion(rdfs:label :interpersonal "Interpersonal"@en)
-ClassAssertion(top-down-common:Term :interpersonal)
+ClassAssertion(metadata:Term :interpersonal)
 
 # Individual: :interpret (Interpret)
 
 AnnotationAssertion(rdfs:label :interpret "Interpret"@en)
-ClassAssertion(top-down-common:Term :interpret)
+ClassAssertion(metadata:Term :interpret)
 SameIndividual(:interpret :interpretable)
 SameIndividual(:interpret :interpretation)
 SameIndividual(:interpret :interpretations)
@@ -2705,191 +2705,191 @@ SameIndividual(:interpret :interpretive)
 # Individual: :interpretable (Interpretable)
 
 AnnotationAssertion(rdfs:label :interpretable "Interpretable"@en)
-ClassAssertion(top-down-common:Term :interpretable)
+ClassAssertion(metadata:Term :interpretable)
 
 # Individual: :interpretation (Interpretation)
 
 AnnotationAssertion(rdfs:label :interpretation "Interpretation"@en)
-ClassAssertion(top-down-common:Term :interpretation)
+ClassAssertion(metadata:Term :interpretation)
 
 # Individual: :interpretations (Interpretations)
 
 AnnotationAssertion(rdfs:label :interpretations "Interpretations"@en)
-ClassAssertion(top-down-common:Term :interpretations)
+ClassAssertion(metadata:Term :interpretations)
 
 # Individual: :interpretative (Interpretative)
 
 AnnotationAssertion(rdfs:label :interpretative "Interpretative"@en)
-ClassAssertion(top-down-common:Term :interpretative)
+ClassAssertion(metadata:Term :interpretative)
 
 # Individual: :interpreted (Interpreted)
 
 AnnotationAssertion(rdfs:label :interpreted "Interpreted"@en)
-ClassAssertion(top-down-common:Term :interpreted)
+ClassAssertion(metadata:Term :interpreted)
 
 # Individual: :interpreting (Interpreting)
 
 AnnotationAssertion(rdfs:label :interpreting "Interpreting"@en)
-ClassAssertion(top-down-common:Term :interpreting)
+ClassAssertion(metadata:Term :interpreting)
 
 # Individual: :interpretive (Interpretive)
 
 AnnotationAssertion(rdfs:label :interpretive "Interpretive"@en)
-ClassAssertion(top-down-common:Term :interpretive)
+ClassAssertion(metadata:Term :interpretive)
 
 # Individual: :intervention (Intervention)
 
 AnnotationAssertion(rdfs:label :intervention "Intervention"@en)
-ClassAssertion(top-down-common:Term :intervention)
+ClassAssertion(metadata:Term :intervention)
 SameIndividual(:intervention :interventions)
 
 # Individual: :interventions (Interventions)
 
 AnnotationAssertion(rdfs:label :interventions "Interventions"@en)
-ClassAssertion(top-down-common:Term :interventions)
+ClassAssertion(metadata:Term :interventions)
 
 # Individual: :interview (Interview)
 
 AnnotationAssertion(rdfs:label :interview "Interview"@en)
-ClassAssertion(top-down-common:Term :interview)
+ClassAssertion(metadata:Term :interview)
 SameIndividual(:interview :interviews)
 
 # Individual: :interviewed (Interviewed)
 
 AnnotationAssertion(rdfs:label :interviewed "Interviewed"@en)
-ClassAssertion(top-down-common:Term :interviewed)
+ClassAssertion(metadata:Term :interviewed)
 SameIndividual(:interviewed :interviews)
 
 # Individual: :interviewer (Interviewer)
 
 AnnotationAssertion(rdfs:label :interviewer "Interviewer"@en)
-ClassAssertion(top-down-common:Term :interviewer)
+ClassAssertion(metadata:Term :interviewer)
 SameIndividual(:interviewer :interviews)
 
 # Individual: :interviewers (Interviewers)
 
 AnnotationAssertion(rdfs:label :interviewers "Interviewers"@en)
-ClassAssertion(top-down-common:Term :interviewers)
+ClassAssertion(metadata:Term :interviewers)
 SameIndividual(:interviewers :interviews)
 
 # Individual: :interviewing (Interviewing)
 
 AnnotationAssertion(rdfs:label :interviewing "Interviewing"@en)
-ClassAssertion(top-down-common:Term :interviewing)
+ClassAssertion(metadata:Term :interviewing)
 SameIndividual(:interviewing :interviews)
 
 # Individual: :interviews (Interviews)
 
 AnnotationAssertion(rdfs:label :interviews "Interviews"@en)
-ClassAssertion(top-down-common:Term :interviews)
+ClassAssertion(metadata:Term :interviews)
 
 # Individual: :intrinsic (Intrinsic)
 
 AnnotationAssertion(rdfs:label :intrinsic "Intrinsic"@en)
-ClassAssertion(top-down-common:Term :intrinsic)
+ClassAssertion(metadata:Term :intrinsic)
 SameIndividual(:intrinsic :intrinsically)
 
 # Individual: :intrinsically (Intrinsically)
 
 AnnotationAssertion(rdfs:label :intrinsically "Intrinsically"@en)
-ClassAssertion(top-down-common:Term :intrinsically)
+ClassAssertion(metadata:Term :intrinsically)
 
 # Individual: :lifestyle (Lifestyle)
 
 AnnotationAssertion(rdfs:label :lifestyle "Lifestyle"@en)
-ClassAssertion(top-down-common:Term :lifestyle)
+ClassAssertion(metadata:Term :lifestyle)
 SameIndividual(:lifestyle :lifestyles)
 
 # Individual: :lifestyles (Lifestyles)
 
 AnnotationAssertion(rdfs:label :lifestyles "Lifestyles"@en)
-ClassAssertion(top-down-common:Term :lifestyles)
+ClassAssertion(metadata:Term :lifestyles)
 
 # Individual: :macroeconomic (Macroeconomic)
 
 AnnotationAssertion(rdfs:label :macroeconomic "Macroeconomic"@en)
-ClassAssertion(top-down-common:Term :macroeconomic)
+ClassAssertion(metadata:Term :macroeconomic)
 SameIndividual(:macroeconomic :macroeconomics)
 
 # Individual: :macroeconomics (Macroeconomics)
 
 AnnotationAssertion(rdfs:label :macroeconomics "Macroeconomics"@en)
-ClassAssertion(top-down-common:Term :macroeconomics)
+ClassAssertion(metadata:Term :macroeconomics)
 
 # Individual: :material (Material)
 
 AnnotationAssertion(rdfs:label :material "Material"@en)
-ClassAssertion(top-down-common:Term :material)
+ClassAssertion(metadata:Term :material)
 SameIndividual(:material :materialize)
 
 # Individual: :materialism (Materialism)
 
 AnnotationAssertion(rdfs:label :materialism "Materialism"@en)
-ClassAssertion(top-down-common:Term :materialism)
+ClassAssertion(metadata:Term :materialism)
 SameIndividual(:materialism :materialize)
 
 # Individual: :materiality (Materiality)
 
 AnnotationAssertion(rdfs:label :materiality "Materiality"@en)
-ClassAssertion(top-down-common:Term :materiality)
+ClassAssertion(metadata:Term :materiality)
 SameIndividual(:materiality :materialize)
 
 # Individual: :materialize (Materialize)
 
 AnnotationAssertion(rdfs:label :materialize "Materialize"@en)
-ClassAssertion(top-down-common:Term :materialize)
+ClassAssertion(metadata:Term :materialize)
 SameIndividual(:materialize :materially)
 SameIndividual(:materialize :materials)
 
 # Individual: :materially (Materially)
 
 AnnotationAssertion(rdfs:label :materially "Materially"@en)
-ClassAssertion(top-down-common:Term :materially)
+ClassAssertion(metadata:Term :materially)
 
 # Individual: :materials (Materials)
 
 AnnotationAssertion(rdfs:label :materials "Materials"@en)
-ClassAssertion(top-down-common:Term :materials)
+ClassAssertion(metadata:Term :materials)
 
 # Individual: :mean (Mean)
 
 AnnotationAssertion(rdfs:label :mean "Mean"@en)
-ClassAssertion(top-down-common:Term :mean)
+ClassAssertion(metadata:Term :mean)
 SameIndividual(:mean :meanings)
 
 # Individual: :meaning (Meaning)
 
 AnnotationAssertion(rdfs:label :meaning "Meaning"@en)
-ClassAssertion(top-down-common:Term :meaning)
+ClassAssertion(metadata:Term :meaning)
 SameIndividual(:meaning :meanings)
 
 # Individual: :meanings (Meanings)
 
 AnnotationAssertion(rdfs:label :meanings "Meanings"@en)
-ClassAssertion(top-down-common:Term :meanings)
+ClassAssertion(metadata:Term :meanings)
 SameIndividual(:meanings :means)
 
 # Individual: :means (Means)
 
 AnnotationAssertion(rdfs:label :means "Means"@en)
-ClassAssertion(top-down-common:Term :means)
+ClassAssertion(metadata:Term :means)
 
 # Individual: :mediate (Mediate)
 
 AnnotationAssertion(rdfs:label :mediate "Mediate"@en)
-ClassAssertion(top-down-common:Term :mediate)
+ClassAssertion(metadata:Term :mediate)
 SameIndividual(:mediate :mediates)
 
 # Individual: :mediated (Mediated)
 
 AnnotationAssertion(rdfs:label :mediated "Mediated"@en)
-ClassAssertion(top-down-common:Term :mediated)
+ClassAssertion(metadata:Term :mediated)
 SameIndividual(:mediated :mediates)
 
 # Individual: :mediates (Mediates)
 
 AnnotationAssertion(rdfs:label :mediates "Mediates"@en)
-ClassAssertion(top-down-common:Term :mediates)
+ClassAssertion(metadata:Term :mediates)
 SameIndividual(:mediates :mediating)
 SameIndividual(:mediates :mediation)
 SameIndividual(:mediates :mediational)
@@ -2899,49 +2899,49 @@ SameIndividual(:mediates :mediators)
 # Individual: :mediating (Mediating)
 
 AnnotationAssertion(rdfs:label :mediating "Mediating"@en)
-ClassAssertion(top-down-common:Term :mediating)
+ClassAssertion(metadata:Term :mediating)
 
 # Individual: :mediation (Mediation)
 
 AnnotationAssertion(rdfs:label :mediation "Mediation"@en)
-ClassAssertion(top-down-common:Term :mediation)
+ClassAssertion(metadata:Term :mediation)
 
 # Individual: :mediational (Mediational)
 
 AnnotationAssertion(rdfs:label :mediational "Mediational"@en)
-ClassAssertion(top-down-common:Term :mediational)
+ClassAssertion(metadata:Term :mediational)
 
 # Individual: :mediator (Mediator)
 
 AnnotationAssertion(rdfs:label :mediator "Mediator"@en)
-ClassAssertion(top-down-common:Term :mediator)
+ClassAssertion(metadata:Term :mediator)
 
 # Individual: :mediators (Mediators)
 
 AnnotationAssertion(rdfs:label :mediators "Mediators"@en)
-ClassAssertion(top-down-common:Term :mediators)
+ClassAssertion(metadata:Term :mediators)
 
 # Individual: :mental (Mental)
 
 AnnotationAssertion(rdfs:label :mental "Mental"@en)
-ClassAssertion(top-down-common:Term :mental)
+ClassAssertion(metadata:Term :mental)
 SameIndividual(:mental :mentally)
 
 # Individual: :mentality (Mentality)
 
 AnnotationAssertion(rdfs:label :mentality "Mentality"@en)
-ClassAssertion(top-down-common:Term :mentality)
+ClassAssertion(metadata:Term :mentality)
 SameIndividual(:mentality :mentally)
 
 # Individual: :mentally (Mentally)
 
 AnnotationAssertion(rdfs:label :mentally "Mentally"@en)
-ClassAssertion(top-down-common:Term :mentally)
+ClassAssertion(metadata:Term :mentally)
 
 # Individual: :methodological (Methodological)
 
 AnnotationAssertion(rdfs:label :methodological "Methodological"@en)
-ClassAssertion(top-down-common:Term :methodological)
+ClassAssertion(metadata:Term :methodological)
 SameIndividual(:methodological :methodologically)
 SameIndividual(:methodological :methodologies)
 SameIndividual(:methodological :methodology)
@@ -2949,28 +2949,28 @@ SameIndividual(:methodological :methodology)
 # Individual: :methodologically (Methodologically)
 
 AnnotationAssertion(rdfs:label :methodologically "Methodologically"@en)
-ClassAssertion(top-down-common:Term :methodologically)
+ClassAssertion(metadata:Term :methodologically)
 
 # Individual: :methodologies (Methodologies)
 
 AnnotationAssertion(rdfs:label :methodologies "Methodologies"@en)
-ClassAssertion(top-down-common:Term :methodologies)
+ClassAssertion(metadata:Term :methodologies)
 
 # Individual: :methodology (Methodology)
 
 AnnotationAssertion(rdfs:label :methodology "Methodology"@en)
-ClassAssertion(top-down-common:Term :methodology)
+ClassAssertion(metadata:Term :methodology)
 
 # Individual: :mind (Mind)
 
 AnnotationAssertion(rdfs:label :mind "Mind"@en)
-ClassAssertion(top-down-common:Term :mind)
+ClassAssertion(metadata:Term :mind)
 SameIndividual(:mind :minded)
 
 # Individual: :minded (Minded)
 
 AnnotationAssertion(rdfs:label :minded "Minded"@en)
-ClassAssertion(top-down-common:Term :minded)
+ClassAssertion(metadata:Term :minded)
 SameIndividual(:minded :mindful)
 SameIndividual(:minded :mindfulness)
 SameIndividual(:minded :minds)
@@ -2978,117 +2978,117 @@ SameIndividual(:minded :minds)
 # Individual: :mindful (Mindful)
 
 AnnotationAssertion(rdfs:label :mindful "Mindful"@en)
-ClassAssertion(top-down-common:Term :mindful)
+ClassAssertion(metadata:Term :mindful)
 
 # Individual: :mindfulness (Mindfulness)
 
 AnnotationAssertion(rdfs:label :mindfulness "Mindfulness"@en)
-ClassAssertion(top-down-common:Term :mindfulness)
+ClassAssertion(metadata:Term :mindfulness)
 
 # Individual: :minds (Minds)
 
 AnnotationAssertion(rdfs:label :minds "Minds"@en)
-ClassAssertion(top-down-common:Term :minds)
+ClassAssertion(metadata:Term :minds)
 
 # Individual: :model (Model)
 
 AnnotationAssertion(rdfs:label :model "Model"@en)
-ClassAssertion(top-down-common:Term :model)
+ClassAssertion(metadata:Term :model)
 SameIndividual(:model :models)
 
 # Individual: :modeled (Modeled)
 
 AnnotationAssertion(rdfs:label :modeled "Modeled"@en)
-ClassAssertion(top-down-common:Term :modeled)
+ClassAssertion(metadata:Term :modeled)
 SameIndividual(:modeled :models)
 
 # Individual: :modelers (Modelers)
 
 AnnotationAssertion(rdfs:label :modelers "Modelers"@en)
-ClassAssertion(top-down-common:Term :modelers)
+ClassAssertion(metadata:Term :modelers)
 SameIndividual(:modelers :models)
 
 # Individual: :modeling (Modeling)
 
 AnnotationAssertion(rdfs:label :modeling "Modeling"@en)
-ClassAssertion(top-down-common:Term :modeling)
+ClassAssertion(metadata:Term :modeling)
 SameIndividual(:modeling :models)
 
 # Individual: :modelled (Modelled)
 
 AnnotationAssertion(rdfs:label :modelled "Modelled"@en)
-ClassAssertion(top-down-common:Term :modelled)
+ClassAssertion(metadata:Term :modelled)
 SameIndividual(:modelled :models)
 
 # Individual: :modeller (Modeller)
 
 AnnotationAssertion(rdfs:label :modeller "Modeller"@en)
-ClassAssertion(top-down-common:Term :modeller)
+ClassAssertion(metadata:Term :modeller)
 SameIndividual(:modeller :models)
 
 # Individual: :modellers (Modellers)
 
 AnnotationAssertion(rdfs:label :modellers "Modellers"@en)
-ClassAssertion(top-down-common:Term :modellers)
+ClassAssertion(metadata:Term :modellers)
 SameIndividual(:modellers :models)
 
 # Individual: :modelling (Modelling)
 
 AnnotationAssertion(rdfs:label :modelling "Modelling"@en)
-ClassAssertion(top-down-common:Term :modelling)
+ClassAssertion(metadata:Term :modelling)
 SameIndividual(:modelling :models)
 
 # Individual: :models (Models)
 
 AnnotationAssertion(rdfs:label :models "Models"@en)
-ClassAssertion(top-down-common:Term :models)
+ClassAssertion(metadata:Term :models)
 
 # Individual: :motivate (Motivate)
 
 AnnotationAssertion(rdfs:label :motivate "Motivate"@en)
-ClassAssertion(top-down-common:Term :motivate)
+ClassAssertion(metadata:Term :motivate)
 SameIndividual(:motivate :motivator)
 
 # Individual: :motivated (Motivated)
 
 AnnotationAssertion(rdfs:label :motivated "Motivated"@en)
-ClassAssertion(top-down-common:Term :motivated)
+ClassAssertion(metadata:Term :motivated)
 SameIndividual(:motivated :motivator)
 
 # Individual: :motivates (Motivates)
 
 AnnotationAssertion(rdfs:label :motivates "Motivates"@en)
-ClassAssertion(top-down-common:Term :motivates)
+ClassAssertion(metadata:Term :motivates)
 SameIndividual(:motivates :motivator)
 
 # Individual: :motivating (Motivating)
 
 AnnotationAssertion(rdfs:label :motivating "Motivating"@en)
-ClassAssertion(top-down-common:Term :motivating)
+ClassAssertion(metadata:Term :motivating)
 SameIndividual(:motivating :motivator)
 
 # Individual: :motivation (Motivation)
 
 AnnotationAssertion(rdfs:label :motivation "Motivation"@en)
-ClassAssertion(top-down-common:Term :motivation)
+ClassAssertion(metadata:Term :motivation)
 SameIndividual(:motivation :motivator)
 
 # Individual: :motivational (Motivational)
 
 AnnotationAssertion(rdfs:label :motivational "Motivational"@en)
-ClassAssertion(top-down-common:Term :motivational)
+ClassAssertion(metadata:Term :motivational)
 SameIndividual(:motivational :motivator)
 
 # Individual: :motivations (Motivations)
 
 AnnotationAssertion(rdfs:label :motivations "Motivations"@en)
-ClassAssertion(top-down-common:Term :motivations)
+ClassAssertion(metadata:Term :motivations)
 SameIndividual(:motivations :motivator)
 
 # Individual: :motivator (Motivator)
 
 AnnotationAssertion(rdfs:label :motivator "Motivator"@en)
-ClassAssertion(top-down-common:Term :motivator)
+ClassAssertion(metadata:Term :motivator)
 SameIndividual(:motivator :motivators)
 SameIndividual(:motivator :motive)
 SameIndividual(:motivator :motives)
@@ -3096,73 +3096,73 @@ SameIndividual(:motivator :motives)
 # Individual: :motivators (Motivators)
 
 AnnotationAssertion(rdfs:label :motivators "Motivators"@en)
-ClassAssertion(top-down-common:Term :motivators)
+ClassAssertion(metadata:Term :motivators)
 
 # Individual: :motive (Motive)
 
 AnnotationAssertion(rdfs:label :motive "Motive"@en)
-ClassAssertion(top-down-common:Term :motive)
+ClassAssertion(metadata:Term :motive)
 
 # Individual: :motives (Motives)
 
 AnnotationAssertion(rdfs:label :motives "Motives"@en)
-ClassAssertion(top-down-common:Term :motives)
+ClassAssertion(metadata:Term :motives)
 
 # Individual: :multiple (Multiple)
 
 AnnotationAssertion(rdfs:label :multiple "Multiple"@en)
-ClassAssertion(top-down-common:Term :multiple)
+ClassAssertion(metadata:Term :multiple)
 SameIndividual(:multiple :multiplication)
 
 # Individual: :multiplication (Multiplication)
 
 AnnotationAssertion(rdfs:label :multiplication "Multiplication"@en)
-ClassAssertion(top-down-common:Term :multiplication)
+ClassAssertion(metadata:Term :multiplication)
 SameIndividual(:multiplication :multiplicity)
 
 # Individual: :multiplicity (Multiplicity)
 
 AnnotationAssertion(rdfs:label :multiplicity "Multiplicity"@en)
-ClassAssertion(top-down-common:Term :multiplicity)
+ClassAssertion(metadata:Term :multiplicity)
 
 # Individual: :narrative (Narrative)
 
 AnnotationAssertion(rdfs:label :narrative "Narrative"@en)
-ClassAssertion(top-down-common:Term :narrative)
+ClassAssertion(metadata:Term :narrative)
 SameIndividual(:narrative :narratives)
 
 # Individual: :narratives (Narratives)
 
 AnnotationAssertion(rdfs:label :narratives "Narratives"@en)
-ClassAssertion(top-down-common:Term :narratives)
+ClassAssertion(metadata:Term :narratives)
 
 # Individual: :natural (Natural)
 
 AnnotationAssertion(rdfs:label :natural "Natural"@en)
-ClassAssertion(top-down-common:Term :natural)
+ClassAssertion(metadata:Term :natural)
 SameIndividual(:natural :naturally)
 
 # Individual: :naturally (Naturally)
 
 AnnotationAssertion(rdfs:label :naturally "Naturally"@en)
-ClassAssertion(top-down-common:Term :naturally)
+ClassAssertion(metadata:Term :naturally)
 SameIndividual(:naturally :naturalness)
 SameIndividual(:naturally :nature)
 
 # Individual: :naturalness (Naturalness)
 
 AnnotationAssertion(rdfs:label :naturalness "Naturalness"@en)
-ClassAssertion(top-down-common:Term :naturalness)
+ClassAssertion(metadata:Term :naturalness)
 
 # Individual: :nature (Nature)
 
 AnnotationAssertion(rdfs:label :nature "Nature"@en)
-ClassAssertion(top-down-common:Term :nature)
+ClassAssertion(metadata:Term :nature)
 
 # Individual: :network (Network)
 
 AnnotationAssertion(rdfs:label :network "Network"@en)
-ClassAssertion(top-down-common:Term :network)
+ClassAssertion(metadata:Term :network)
 SameIndividual(:network :networker)
 SameIndividual(:network :networkers)
 SameIndividual(:network :networking)
@@ -3171,38 +3171,38 @@ SameIndividual(:network :networks)
 # Individual: :networker (Networker)
 
 AnnotationAssertion(rdfs:label :networker "Networker"@en)
-ClassAssertion(top-down-common:Term :networker)
+ClassAssertion(metadata:Term :networker)
 
 # Individual: :networkers (Networkers)
 
 AnnotationAssertion(rdfs:label :networkers "Networkers"@en)
-ClassAssertion(top-down-common:Term :networkers)
+ClassAssertion(metadata:Term :networkers)
 
 # Individual: :networking (Networking)
 
 AnnotationAssertion(rdfs:label :networking "Networking"@en)
-ClassAssertion(top-down-common:Term :networking)
+ClassAssertion(metadata:Term :networking)
 
 # Individual: :networks (Networks)
 
 AnnotationAssertion(rdfs:label :networks "Networks"@en)
-ClassAssertion(top-down-common:Term :networks)
+ClassAssertion(metadata:Term :networks)
 
 # Individual: :niche (Niche)
 
 AnnotationAssertion(rdfs:label :niche "Niche"@en)
-ClassAssertion(top-down-common:Term :niche)
+ClassAssertion(metadata:Term :niche)
 SameIndividual(:niche :niches)
 
 # Individual: :niches (Niches)
 
 AnnotationAssertion(rdfs:label :niches "Niches"@en)
-ClassAssertion(top-down-common:Term :niches)
+ClassAssertion(metadata:Term :niches)
 
 # Individual: :norm (Norm)
 
 AnnotationAssertion(rdfs:label :norm "Norm"@en)
-ClassAssertion(top-down-common:Term :norm)
+ClassAssertion(metadata:Term :norm)
 SameIndividual(:norm :normative)
 SameIndividual(:norm :normatively)
 SameIndividual(:norm :normativity)
@@ -3211,78 +3211,78 @@ SameIndividual(:norm :norms)
 # Individual: :normal (Normal)
 
 AnnotationAssertion(rdfs:label :normal "Normal"@en)
-ClassAssertion(top-down-common:Term :normal)
+ClassAssertion(metadata:Term :normal)
 SameIndividual(:normal :normally)
 
 # Individual: :normalization (Normalization)
 
 AnnotationAssertion(rdfs:label :normalization "Normalization"@en)
-ClassAssertion(top-down-common:Term :normalization)
+ClassAssertion(metadata:Term :normalization)
 SameIndividual(:normalization :normally)
 
 # Individual: :normalized (Normalized)
 
 AnnotationAssertion(rdfs:label :normalized "Normalized"@en)
-ClassAssertion(top-down-common:Term :normalized)
+ClassAssertion(metadata:Term :normalized)
 SameIndividual(:normalized :normally)
 
 # Individual: :normally (Normally)
 
 AnnotationAssertion(rdfs:label :normally "Normally"@en)
-ClassAssertion(top-down-common:Term :normally)
+ClassAssertion(metadata:Term :normally)
 
 # Individual: :normative (Normative)
 
 AnnotationAssertion(rdfs:label :normative "Normative"@en)
-ClassAssertion(top-down-common:Term :normative)
+ClassAssertion(metadata:Term :normative)
 
 # Individual: :normatively (Normatively)
 
 AnnotationAssertion(rdfs:label :normatively "Normatively"@en)
-ClassAssertion(top-down-common:Term :normatively)
+ClassAssertion(metadata:Term :normatively)
 
 # Individual: :normativity (Normativity)
 
 AnnotationAssertion(rdfs:label :normativity "Normativity"@en)
-ClassAssertion(top-down-common:Term :normativity)
+ClassAssertion(metadata:Term :normativity)
 
 # Individual: :norms (Norms)
 
 AnnotationAssertion(rdfs:label :norms "Norms"@en)
-ClassAssertion(top-down-common:Term :norms)
+ClassAssertion(metadata:Term :norms)
 
 # Individual: :number (Number)
 
 AnnotationAssertion(rdfs:label :number "Number"@en)
-ClassAssertion(top-down-common:Term :number)
+ClassAssertion(metadata:Term :number)
 SameIndividual(:number :numbers)
 
 # Individual: :numbers (Numbers)
 
 AnnotationAssertion(rdfs:label :numbers "Numbers"@en)
-ClassAssertion(top-down-common:Term :numbers)
+ClassAssertion(metadata:Term :numbers)
 
 # Individual: :ontological (Ontological)
 
 AnnotationAssertion(rdfs:label :ontological "Ontological"@en)
-ClassAssertion(top-down-common:Term :ontological)
+ClassAssertion(metadata:Term :ontological)
 SameIndividual(:ontological :ontology)
 
 # Individual: :ontologies (Ontologies)
 
 AnnotationAssertion(rdfs:label :ontologies "Ontologies"@en)
-ClassAssertion(top-down-common:Term :ontologies)
+ClassAssertion(metadata:Term :ontologies)
 SameIndividual(:ontologies :ontology)
 
 # Individual: :ontology (Ontology)
 
 AnnotationAssertion(rdfs:label :ontology "Ontology"@en)
-ClassAssertion(top-down-common:Term :ontology)
+ClassAssertion(metadata:Term :ontology)
 
 # Individual: :open (Open)
 
 AnnotationAssertion(rdfs:label :open "Open"@en)
-ClassAssertion(top-down-common:Term :open)
+ClassAssertion(metadata:Term :open)
 SameIndividual(:open :opened)
 SameIndividual(:open :opening)
 SameIndividual(:open :openness)
@@ -3291,247 +3291,247 @@ SameIndividual(:open :opens)
 # Individual: :opened (Opened)
 
 AnnotationAssertion(rdfs:label :opened "Opened"@en)
-ClassAssertion(top-down-common:Term :opened)
+ClassAssertion(metadata:Term :opened)
 
 # Individual: :opening (Opening)
 
 AnnotationAssertion(rdfs:label :opening "Opening"@en)
-ClassAssertion(top-down-common:Term :opening)
+ClassAssertion(metadata:Term :opening)
 
 # Individual: :openness (Openness)
 
 AnnotationAssertion(rdfs:label :openness "Openness"@en)
-ClassAssertion(top-down-common:Term :openness)
+ClassAssertion(metadata:Term :openness)
 
 # Individual: :opens (Opens)
 
 AnnotationAssertion(rdfs:label :opens "Opens"@en)
-ClassAssertion(top-down-common:Term :opens)
+ClassAssertion(metadata:Term :opens)
 
 # Individual: :optimal (Optimal)
 
 AnnotationAssertion(rdfs:label :optimal "Optimal"@en)
-ClassAssertion(top-down-common:Term :optimal)
+ClassAssertion(metadata:Term :optimal)
 SameIndividual(:optimal :optimization)
 
 # Individual: :optimally (Optimally)
 
 AnnotationAssertion(rdfs:label :optimally "Optimally"@en)
-ClassAssertion(top-down-common:Term :optimally)
+ClassAssertion(metadata:Term :optimally)
 SameIndividual(:optimally :optimization)
 
 # Individual: :optimism (Optimism)
 
 AnnotationAssertion(rdfs:label :optimism "Optimism"@en)
-ClassAssertion(top-down-common:Term :optimism)
+ClassAssertion(metadata:Term :optimism)
 SameIndividual(:optimism :optimization)
 
 # Individual: :optimization (Optimization)
 
 AnnotationAssertion(rdfs:label :optimization "Optimization"@en)
-ClassAssertion(top-down-common:Term :optimization)
+ClassAssertion(metadata:Term :optimization)
 SameIndividual(:optimization :optimize)
 SameIndividual(:optimization :optimized)
 
 # Individual: :optimize (Optimize)
 
 AnnotationAssertion(rdfs:label :optimize "Optimize"@en)
-ClassAssertion(top-down-common:Term :optimize)
+ClassAssertion(metadata:Term :optimize)
 
 # Individual: :optimized (Optimized)
 
 AnnotationAssertion(rdfs:label :optimized "Optimized"@en)
-ClassAssertion(top-down-common:Term :optimized)
+ClassAssertion(metadata:Term :optimized)
 
 # Individual: :organic (Organic)
 
 AnnotationAssertion(rdfs:label :organic "Organic"@en)
-ClassAssertion(top-down-common:Term :organic)
+ClassAssertion(metadata:Term :organic)
 SameIndividual(:organic :organizers)
 
 # Individual: :organically (Organically)
 
 AnnotationAssertion(rdfs:label :organically "Organically"@en)
-ClassAssertion(top-down-common:Term :organically)
+ClassAssertion(metadata:Term :organically)
 SameIndividual(:organically :organizers)
 
 # Individual: :organism (Organism)
 
 AnnotationAssertion(rdfs:label :organism "Organism"@en)
-ClassAssertion(top-down-common:Term :organism)
+ClassAssertion(metadata:Term :organism)
 SameIndividual(:organism :organizers)
 
 # Individual: :organisms (Organisms)
 
 AnnotationAssertion(rdfs:label :organisms "Organisms"@en)
-ClassAssertion(top-down-common:Term :organisms)
+ClassAssertion(metadata:Term :organisms)
 SameIndividual(:organisms :organizers)
 
 # Individual: :organization (Organization)
 
 AnnotationAssertion(rdfs:label :organization "Organization"@en)
-ClassAssertion(top-down-common:Term :organization)
+ClassAssertion(metadata:Term :organization)
 SameIndividual(:organization :organizers)
 
 # Individual: :organizations (Organizations)
 
 AnnotationAssertion(rdfs:label :organizations "Organizations"@en)
-ClassAssertion(top-down-common:Term :organizations)
+ClassAssertion(metadata:Term :organizations)
 SameIndividual(:organizations :organizers)
 
 # Individual: :organize (Organize)
 
 AnnotationAssertion(rdfs:label :organize "Organize"@en)
-ClassAssertion(top-down-common:Term :organize)
+ClassAssertion(metadata:Term :organize)
 SameIndividual(:organize :organizers)
 
 # Individual: :organized (Organized)
 
 AnnotationAssertion(rdfs:label :organized "Organized"@en)
-ClassAssertion(top-down-common:Term :organized)
+ClassAssertion(metadata:Term :organized)
 SameIndividual(:organized :organizers)
 
 # Individual: :organizers (Organizers)
 
 AnnotationAssertion(rdfs:label :organizers "Organizers"@en)
-ClassAssertion(top-down-common:Term :organizers)
+ClassAssertion(metadata:Term :organizers)
 SameIndividual(:organizers :organizes)
 SameIndividual(:organizers :organizing)
 
 # Individual: :organizes (Organizes)
 
 AnnotationAssertion(rdfs:label :organizes "Organizes"@en)
-ClassAssertion(top-down-common:Term :organizes)
+ClassAssertion(metadata:Term :organizes)
 
 # Individual: :organizing (Organizing)
 
 AnnotationAssertion(rdfs:label :organizing "Organizing"@en)
-ClassAssertion(top-down-common:Term :organizing)
+ClassAssertion(metadata:Term :organizing)
 
 # Individual: :outcome (Outcome)
 
 AnnotationAssertion(rdfs:label :outcome "Outcome"@en)
-ClassAssertion(top-down-common:Term :outcome)
+ClassAssertion(metadata:Term :outcome)
 SameIndividual(:outcome :outcomes)
 
 # Individual: :outcomes (Outcomes)
 
 AnnotationAssertion(rdfs:label :outcomes "Outcomes"@en)
-ClassAssertion(top-down-common:Term :outcomes)
+ClassAssertion(metadata:Term :outcomes)
 
 # Individual: :participant (Participant)
 
 AnnotationAssertion(rdfs:label :participant "Participant"@en)
-ClassAssertion(top-down-common:Term :participant)
+ClassAssertion(metadata:Term :participant)
 SameIndividual(:participant :participations)
 
 # Individual: :participants (Participants)
 
 AnnotationAssertion(rdfs:label :participants "Participants"@en)
-ClassAssertion(top-down-common:Term :participants)
+ClassAssertion(metadata:Term :participants)
 SameIndividual(:participants :participations)
 
 # Individual: :participate (Participate)
 
 AnnotationAssertion(rdfs:label :participate "Participate"@en)
-ClassAssertion(top-down-common:Term :participate)
+ClassAssertion(metadata:Term :participate)
 SameIndividual(:participate :participations)
 
 # Individual: :participated (Participated)
 
 AnnotationAssertion(rdfs:label :participated "Participated"@en)
-ClassAssertion(top-down-common:Term :participated)
+ClassAssertion(metadata:Term :participated)
 SameIndividual(:participated :participations)
 
 # Individual: :participates (Participates)
 
 AnnotationAssertion(rdfs:label :participates "Participates"@en)
-ClassAssertion(top-down-common:Term :participates)
+ClassAssertion(metadata:Term :participates)
 SameIndividual(:participates :participations)
 
 # Individual: :participating (Participating)
 
 AnnotationAssertion(rdfs:label :participating "Participating"@en)
-ClassAssertion(top-down-common:Term :participating)
+ClassAssertion(metadata:Term :participating)
 SameIndividual(:participating :participations)
 
 # Individual: :participation (Participation)
 
 AnnotationAssertion(rdfs:label :participation "Participation"@en)
-ClassAssertion(top-down-common:Term :participation)
+ClassAssertion(metadata:Term :participation)
 SameIndividual(:participation :participations)
 
 # Individual: :participations (Participations)
 
 AnnotationAssertion(rdfs:label :participations "Participations"@en)
-ClassAssertion(top-down-common:Term :participations)
+ClassAssertion(metadata:Term :participations)
 SameIndividual(:participations :participative)
 
 # Individual: :participative (Participative)
 
 AnnotationAssertion(rdfs:label :participative "Participative"@en)
-ClassAssertion(top-down-common:Term :participative)
+ClassAssertion(metadata:Term :participative)
 
 # Individual: :participatory (Participatory)
 
 AnnotationAssertion(rdfs:label :participatory "Participatory"@en)
-ClassAssertion(top-down-common:Term :participatory)
+ClassAssertion(metadata:Term :participatory)
 
 # Individual: :payoff (Payoff)
 
 AnnotationAssertion(rdfs:label :payoff "Payoff"@en)
-ClassAssertion(top-down-common:Term :payoff)
+ClassAssertion(metadata:Term :payoff)
 SameIndividual(:payoff :payoffs)
 
 # Individual: :payoffs (Payoffs)
 
 AnnotationAssertion(rdfs:label :payoffs "Payoffs"@en)
-ClassAssertion(top-down-common:Term :payoffs)
+ClassAssertion(metadata:Term :payoffs)
 
 # Individual: :perception (Perception)
 
 AnnotationAssertion(rdfs:label :perception "Perception"@en)
-ClassAssertion(top-down-common:Term :perception)
+ClassAssertion(metadata:Term :perception)
 SameIndividual(:perception :perceptions)
 
 # Individual: :perceptions (Perceptions)
 
 AnnotationAssertion(rdfs:label :perceptions "Perceptions"@en)
-ClassAssertion(top-down-common:Term :perceptions)
+ClassAssertion(metadata:Term :perceptions)
 
 # Individual: :power (Power)
 
 AnnotationAssertion(rdfs:label :power "Power"@en)
-ClassAssertion(top-down-common:Term :power)
+ClassAssertion(metadata:Term :power)
 SameIndividual(:power :powers)
 
 # Individual: :powered (Powered)
 
 AnnotationAssertion(rdfs:label :powered "Powered"@en)
-ClassAssertion(top-down-common:Term :powered)
+ClassAssertion(metadata:Term :powered)
 SameIndividual(:powered :powers)
 
 # Individual: :powerful (Powerful)
 
 AnnotationAssertion(rdfs:label :powerful "Powerful"@en)
-ClassAssertion(top-down-common:Term :powerful)
+ClassAssertion(metadata:Term :powerful)
 SameIndividual(:powerful :powers)
 
 # Individual: :powering (Powering)
 
 AnnotationAssertion(rdfs:label :powering "Powering"@en)
-ClassAssertion(top-down-common:Term :powering)
+ClassAssertion(metadata:Term :powering)
 SameIndividual(:powering :powers)
 
 # Individual: :powers (Powers)
 
 AnnotationAssertion(rdfs:label :powers "Powers"@en)
-ClassAssertion(top-down-common:Term :powers)
+ClassAssertion(metadata:Term :powers)
 
 # Individual: :practical (Practical)
 
 AnnotationAssertion(rdfs:label :practical "Practical"@en)
-ClassAssertion(top-down-common:Term :practical)
+ClassAssertion(metadata:Term :practical)
 SameIndividual(:practical :practicalities)
 SameIndividual(:practical :practically)
 SameIndividual(:practical :practice)
@@ -3542,108 +3542,108 @@ SameIndividual(:practical :practicing)
 # Individual: :practicalities (Practicalities)
 
 AnnotationAssertion(rdfs:label :practicalities "Practicalities"@en)
-ClassAssertion(top-down-common:Term :practicalities)
+ClassAssertion(metadata:Term :practicalities)
 
 # Individual: :practically (Practically)
 
 AnnotationAssertion(rdfs:label :practically "Practically"@en)
-ClassAssertion(top-down-common:Term :practically)
+ClassAssertion(metadata:Term :practically)
 
 # Individual: :practice (Practice)
 
 AnnotationAssertion(rdfs:label :practice "Practice"@en)
-ClassAssertion(top-down-common:Term :practice)
+ClassAssertion(metadata:Term :practice)
 
 # Individual: :practiced (Practiced)
 
 AnnotationAssertion(rdfs:label :practiced "Practiced"@en)
-ClassAssertion(top-down-common:Term :practiced)
+ClassAssertion(metadata:Term :practiced)
 
 # Individual: :practices (Practices)
 
 AnnotationAssertion(rdfs:label :practices "Practices"@en)
-ClassAssertion(top-down-common:Term :practices)
+ClassAssertion(metadata:Term :practices)
 
 # Individual: :practicing (Practicing)
 
 AnnotationAssertion(rdfs:label :practicing "Practicing"@en)
-ClassAssertion(top-down-common:Term :practicing)
+ClassAssertion(metadata:Term :practicing)
 
 # Individual: :predict (Predict)
 
 AnnotationAssertion(rdfs:label :predict "Predict"@en)
-ClassAssertion(top-down-common:Term :predict)
+ClassAssertion(metadata:Term :predict)
 SameIndividual(:predict :predictive)
 
 # Individual: :predictability (Predictability)
 
 AnnotationAssertion(rdfs:label :predictability "Predictability"@en)
-ClassAssertion(top-down-common:Term :predictability)
+ClassAssertion(metadata:Term :predictability)
 SameIndividual(:predictability :predictive)
 
 # Individual: :predictable (Predictable)
 
 AnnotationAssertion(rdfs:label :predictable "Predictable"@en)
-ClassAssertion(top-down-common:Term :predictable)
+ClassAssertion(metadata:Term :predictable)
 SameIndividual(:predictable :predictive)
 
 # Individual: :predicted (Predicted)
 
 AnnotationAssertion(rdfs:label :predicted "Predicted"@en)
-ClassAssertion(top-down-common:Term :predicted)
+ClassAssertion(metadata:Term :predicted)
 SameIndividual(:predicted :predictive)
 
 # Individual: :predicting (Predicting)
 
 AnnotationAssertion(rdfs:label :predicting "Predicting"@en)
-ClassAssertion(top-down-common:Term :predicting)
+ClassAssertion(metadata:Term :predicting)
 SameIndividual(:predicting :predictive)
 
 # Individual: :prediction (Prediction)
 
 AnnotationAssertion(rdfs:label :prediction "Prediction"@en)
-ClassAssertion(top-down-common:Term :prediction)
+ClassAssertion(metadata:Term :prediction)
 SameIndividual(:prediction :predictive)
 
 # Individual: :predictions (Predictions)
 
 AnnotationAssertion(rdfs:label :predictions "Predictions"@en)
-ClassAssertion(top-down-common:Term :predictions)
+ClassAssertion(metadata:Term :predictions)
 SameIndividual(:predictions :predictive)
 
 # Individual: :predictive (Predictive)
 
 AnnotationAssertion(rdfs:label :predictive "Predictive"@en)
-ClassAssertion(top-down-common:Term :predictive)
+ClassAssertion(metadata:Term :predictive)
 SameIndividual(:predictive :predicts)
 
 # Individual: :predicts (Predicts)
 
 AnnotationAssertion(rdfs:label :predicts "Predicts"@en)
-ClassAssertion(top-down-common:Term :predicts)
+ClassAssertion(metadata:Term :predicts)
 
 # Individual: :prefer (Prefer)
 
 AnnotationAssertion(rdfs:label :prefer "Prefer"@en)
-ClassAssertion(top-down-common:Term :prefer)
+ClassAssertion(metadata:Term :prefer)
 SameIndividual(:prefer :preference)
 
 # Individual: :preferable (Preferable)
 
 AnnotationAssertion(rdfs:label :preferable "Preferable"@en)
-ClassAssertion(top-down-common:Term :preferable)
+ClassAssertion(metadata:Term :preferable)
 SameIndividual(:preferable :preference)
 
 # Individual: :preferably (Preferably)
 
 AnnotationAssertion(rdfs:label :preferably "Preferably"@en)
-ClassAssertion(top-down-common:Term :preferably)
+ClassAssertion(metadata:Term :preferably)
 SameIndividual(:preferably :preference)
 
 # Individual: :preference (Preference)
 
 AnnotationAssertion(rdfs:label :preference "Preference"@en)
-ClassAssertion(top-down-common:Term :preference)
+ClassAssertion(metadata:Term :preference)
 SameIndividual(:preference :preferences)
 SameIndividual(:preference :preferred)
 SameIndividual(:preference :preferring)
@@ -3652,33 +3652,33 @@ SameIndividual(:preference :prefers)
 # Individual: :preferences (Preferences)
 
 AnnotationAssertion(rdfs:label :preferences "Preferences"@en)
-ClassAssertion(top-down-common:Term :preferences)
+ClassAssertion(metadata:Term :preferences)
 
 # Individual: :preferred (Preferred)
 
 AnnotationAssertion(rdfs:label :preferred "Preferred"@en)
-ClassAssertion(top-down-common:Term :preferred)
+ClassAssertion(metadata:Term :preferred)
 
 # Individual: :preferring (Preferring)
 
 AnnotationAssertion(rdfs:label :preferring "Preferring"@en)
-ClassAssertion(top-down-common:Term :preferring)
+ClassAssertion(metadata:Term :preferring)
 
 # Individual: :prefers (Prefers)
 
 AnnotationAssertion(rdfs:label :prefers "Prefers"@en)
-ClassAssertion(top-down-common:Term :prefers)
+ClassAssertion(metadata:Term :prefers)
 
 # Individual: :preparation (Preparation)
 
 AnnotationAssertion(rdfs:label :preparation "Preparation"@en)
-ClassAssertion(top-down-common:Term :preparation)
+ClassAssertion(metadata:Term :preparation)
 SameIndividual(:preparation :preparations)
 
 # Individual: :preparations (Preparations)
 
 AnnotationAssertion(rdfs:label :preparations "Preparations"@en)
-ClassAssertion(top-down-common:Term :preparations)
+ClassAssertion(metadata:Term :preparations)
 SameIndividual(:preparations :prepare)
 SameIndividual(:preparations :prepared)
 SameIndividual(:preparations :prepares)
@@ -3687,27 +3687,27 @@ SameIndividual(:preparations :preparing)
 # Individual: :prepare (Prepare)
 
 AnnotationAssertion(rdfs:label :prepare "Prepare"@en)
-ClassAssertion(top-down-common:Term :prepare)
+ClassAssertion(metadata:Term :prepare)
 
 # Individual: :prepared (Prepared)
 
 AnnotationAssertion(rdfs:label :prepared "Prepared"@en)
-ClassAssertion(top-down-common:Term :prepared)
+ClassAssertion(metadata:Term :prepared)
 
 # Individual: :prepares (Prepares)
 
 AnnotationAssertion(rdfs:label :prepares "Prepares"@en)
-ClassAssertion(top-down-common:Term :prepares)
+ClassAssertion(metadata:Term :prepares)
 
 # Individual: :preparing (Preparing)
 
 AnnotationAssertion(rdfs:label :preparing "Preparing"@en)
-ClassAssertion(top-down-common:Term :preparing)
+ClassAssertion(metadata:Term :preparing)
 
 # Individual: :probabilities (Probabilities)
 
 AnnotationAssertion(rdfs:label :probabilities "Probabilities"@en)
-ClassAssertion(top-down-common:Term :probabilities)
+ClassAssertion(metadata:Term :probabilities)
 SameIndividual(:probabilities :probability)
 SameIndividual(:probabilities :probable)
 SameIndividual(:probabilities :probably)
@@ -3715,254 +3715,254 @@ SameIndividual(:probabilities :probably)
 # Individual: :probability (Probability)
 
 AnnotationAssertion(rdfs:label :probability "Probability"@en)
-ClassAssertion(top-down-common:Term :probability)
+ClassAssertion(metadata:Term :probability)
 
 # Individual: :probable (Probable)
 
 AnnotationAssertion(rdfs:label :probable "Probable"@en)
-ClassAssertion(top-down-common:Term :probable)
+ClassAssertion(metadata:Term :probable)
 
 # Individual: :probably (Probably)
 
 AnnotationAssertion(rdfs:label :probably "Probably"@en)
-ClassAssertion(top-down-common:Term :probably)
+ClassAssertion(metadata:Term :probably)
 
 # Individual: :program (Program)
 
 AnnotationAssertion(rdfs:label :program "Program"@en)
-ClassAssertion(top-down-common:Term :program)
+ClassAssertion(metadata:Term :program)
 SameIndividual(:program :programming)
 
 # Individual: :programmed (Programmed)
 
 AnnotationAssertion(rdfs:label :programmed "Programmed"@en)
-ClassAssertion(top-down-common:Term :programmed)
+ClassAssertion(metadata:Term :programmed)
 SameIndividual(:programmed :programming)
 
 # Individual: :programming (Programming)
 
 AnnotationAssertion(rdfs:label :programming "Programming"@en)
-ClassAssertion(top-down-common:Term :programming)
+ClassAssertion(metadata:Term :programming)
 SameIndividual(:programming :programs)
 
 # Individual: :programs (Programs)
 
 AnnotationAssertion(rdfs:label :programs "Programs"@en)
-ClassAssertion(top-down-common:Term :programs)
+ClassAssertion(metadata:Term :programs)
 
 # Individual: :psychological (Psychological)
 
 AnnotationAssertion(rdfs:label :psychological "Psychological"@en)
-ClassAssertion(top-down-common:Term :psychological)
+ClassAssertion(metadata:Term :psychological)
 SameIndividual(:psychological :psychology)
 
 # Individual: :psychologically (Psychologically)
 
 AnnotationAssertion(rdfs:label :psychologically "Psychologically"@en)
-ClassAssertion(top-down-common:Term :psychologically)
+ClassAssertion(metadata:Term :psychologically)
 SameIndividual(:psychologically :psychology)
 
 # Individual: :psychology (Psychology)
 
 AnnotationAssertion(rdfs:label :psychology "Psychology"@en)
-ClassAssertion(top-down-common:Term :psychology)
+ClassAssertion(metadata:Term :psychology)
 
 # Individual: :purpose (Purpose)
 
 AnnotationAssertion(rdfs:label :purpose "Purpose"@en)
-ClassAssertion(top-down-common:Term :purpose)
+ClassAssertion(metadata:Term :purpose)
 SameIndividual(:purpose :purposes)
 
 # Individual: :purposes (Purposes)
 
 AnnotationAssertion(rdfs:label :purposes "Purposes"@en)
-ClassAssertion(top-down-common:Term :purposes)
+ClassAssertion(metadata:Term :purposes)
 SameIndividual(:purposes :purposive)
 
 # Individual: :purposive (Purposive)
 
 AnnotationAssertion(rdfs:label :purposive "Purposive"@en)
-ClassAssertion(top-down-common:Term :purposive)
+ClassAssertion(metadata:Term :purposive)
 
 # Individual: :qualitative (Qualitative)
 
 AnnotationAssertion(rdfs:label :qualitative "Qualitative"@en)
-ClassAssertion(top-down-common:Term :qualitative)
+ClassAssertion(metadata:Term :qualitative)
 SameIndividual(:qualitative :qualitatively)
 
 # Individual: :qualitatively (Qualitatively)
 
 AnnotationAssertion(rdfs:label :qualitatively "Qualitatively"@en)
-ClassAssertion(top-down-common:Term :qualitatively)
+ClassAssertion(metadata:Term :qualitatively)
 
 # Individual: :quantitative (Quantitative)
 
 AnnotationAssertion(rdfs:label :quantitative "Quantitative"@en)
-ClassAssertion(top-down-common:Term :quantitative)
+ClassAssertion(metadata:Term :quantitative)
 SameIndividual(:quantitative :quantitatively)
 
 # Individual: :quantitatively (Quantitatively)
 
 AnnotationAssertion(rdfs:label :quantitatively "Quantitatively"@en)
-ClassAssertion(top-down-common:Term :quantitatively)
+ClassAssertion(metadata:Term :quantitatively)
 
 # Individual: :rational (Rational)
 
 AnnotationAssertion(rdfs:label :rational "Rational"@en)
-ClassAssertion(top-down-common:Term :rational)
+ClassAssertion(metadata:Term :rational)
 SameIndividual(:rational :rationally)
 
 # Individual: :rationality (Rationality)
 
 AnnotationAssertion(rdfs:label :rationality "Rationality"@en)
-ClassAssertion(top-down-common:Term :rationality)
+ClassAssertion(metadata:Term :rationality)
 SameIndividual(:rationality :rationally)
 
 # Individual: :rationalization (Rationalization)
 
 AnnotationAssertion(rdfs:label :rationalization "Rationalization"@en)
-ClassAssertion(top-down-common:Term :rationalization)
+ClassAssertion(metadata:Term :rationalization)
 SameIndividual(:rationalization :rationally)
 
 # Individual: :rationally (Rationally)
 
 AnnotationAssertion(rdfs:label :rationally "Rationally"@en)
-ClassAssertion(top-down-common:Term :rationally)
+ClassAssertion(metadata:Term :rationally)
 SameIndividual(:rationally :rations)
 
 # Individual: :rations (Rations)
 
 AnnotationAssertion(rdfs:label :rations "Rations"@en)
-ClassAssertion(top-down-common:Term :rations)
+ClassAssertion(metadata:Term :rations)
 
 # Individual: :rebound (Rebound)
 
 AnnotationAssertion(rdfs:label :rebound "Rebound"@en)
-ClassAssertion(top-down-common:Term :rebound)
+ClassAssertion(metadata:Term :rebound)
 
 # Individual: :regime (Regime)
 
 AnnotationAssertion(rdfs:label :regime "Regime"@en)
-ClassAssertion(top-down-common:Term :regime)
+ClassAssertion(metadata:Term :regime)
 SameIndividual(:regime :regimes)
 
 # Individual: :regimes (Regimes)
 
 AnnotationAssertion(rdfs:label :regimes "Regimes"@en)
-ClassAssertion(top-down-common:Term :regimes)
+ClassAssertion(metadata:Term :regimes)
 
 # Individual: :regressed (Regressed)
 
 AnnotationAssertion(rdfs:label :regressed "Regressed"@en)
-ClassAssertion(top-down-common:Term :regressed)
+ClassAssertion(metadata:Term :regressed)
 SameIndividual(:regressed :regressions)
 
 # Individual: :regression (Regression)
 
 AnnotationAssertion(rdfs:label :regression "Regression"@en)
-ClassAssertion(top-down-common:Term :regression)
+ClassAssertion(metadata:Term :regression)
 SameIndividual(:regression :regressions)
 
 # Individual: :regressions (Regressions)
 
 AnnotationAssertion(rdfs:label :regressions "Regressions"@en)
-ClassAssertion(top-down-common:Term :regressions)
+ClassAssertion(metadata:Term :regressions)
 
 # Individual: :relationship (Relationship)
 
 AnnotationAssertion(rdfs:label :relationship "Relationship"@en)
-ClassAssertion(top-down-common:Term :relationship)
+ClassAssertion(metadata:Term :relationship)
 SameIndividual(:relationship :relationships)
 
 # Individual: :relationships (Relationships)
 
 AnnotationAssertion(rdfs:label :relationships "Relationships"@en)
-ClassAssertion(top-down-common:Term :relationships)
+ClassAssertion(metadata:Term :relationships)
 
 # Individual: :renewable (Renewable)
 
 AnnotationAssertion(rdfs:label :renewable "Renewable"@en)
-ClassAssertion(top-down-common:Term :renewable)
+ClassAssertion(metadata:Term :renewable)
 SameIndividual(:renewable :renewables)
 
 # Individual: :renewables (Renewables)
 
 AnnotationAssertion(rdfs:label :renewables "Renewables"@en)
-ClassAssertion(top-down-common:Term :renewables)
+ClassAssertion(metadata:Term :renewables)
 SameIndividual(:renewables :renewal)
 SameIndividual(:renewables :renewed)
 
 # Individual: :renewal (Renewal)
 
 AnnotationAssertion(rdfs:label :renewal "Renewal"@en)
-ClassAssertion(top-down-common:Term :renewal)
+ClassAssertion(metadata:Term :renewal)
 
 # Individual: :renewed (Renewed)
 
 AnnotationAssertion(rdfs:label :renewed "Renewed"@en)
-ClassAssertion(top-down-common:Term :renewed)
+ClassAssertion(metadata:Term :renewed)
 
 # Individual: :risk (Risk)
 
 AnnotationAssertion(rdfs:label :risk "Risk"@en)
-ClassAssertion(top-down-common:Term :risk)
+ClassAssertion(metadata:Term :risk)
 SameIndividual(:risk :risks)
 
 # Individual: :risks (Risks)
 
 AnnotationAssertion(rdfs:label :risks "Risks"@en)
-ClassAssertion(top-down-common:Term :risks)
+ClassAssertion(metadata:Term :risks)
 
 # Individual: :rule (Rule)
 
 AnnotationAssertion(rdfs:label :rule "Rule"@en)
-ClassAssertion(top-down-common:Term :rule)
+ClassAssertion(metadata:Term :rule)
 SameIndividual(:rule :rules)
 
 # Individual: :rules (Rules)
 
 AnnotationAssertion(rdfs:label :rules "Rules"@en)
-ClassAssertion(top-down-common:Term :rules)
+ClassAssertion(metadata:Term :rules)
 
 # Individual: :sample (Sample)
 
 AnnotationAssertion(rdfs:label :sample "Sample"@en)
-ClassAssertion(top-down-common:Term :sample)
+ClassAssertion(metadata:Term :sample)
 SameIndividual(:sample :samples)
 
 # Individual: :sampled (Sampled)
 
 AnnotationAssertion(rdfs:label :sampled "Sampled"@en)
-ClassAssertion(top-down-common:Term :sampled)
+ClassAssertion(metadata:Term :sampled)
 SameIndividual(:sampled :samples)
 
 # Individual: :samples (Samples)
 
 AnnotationAssertion(rdfs:label :samples "Samples"@en)
-ClassAssertion(top-down-common:Term :samples)
+ClassAssertion(metadata:Term :samples)
 SameIndividual(:samples :sampling)
 
 # Individual: :sampling (Sampling)
 
 AnnotationAssertion(rdfs:label :sampling "Sampling"@en)
-ClassAssertion(top-down-common:Term :sampling)
+ClassAssertion(metadata:Term :sampling)
 
 # Individual: :satisfied (Satisfied)
 
 AnnotationAssertion(rdfs:label :satisfied "Satisfied"@en)
-ClassAssertion(top-down-common:Term :satisfied)
+ClassAssertion(metadata:Term :satisfied)
 SameIndividual(:satisfied :satisfiers)
 
 # Individual: :satisfier (Satisfier)
 
 AnnotationAssertion(rdfs:label :satisfier "Satisfier"@en)
-ClassAssertion(top-down-common:Term :satisfier)
+ClassAssertion(metadata:Term :satisfier)
 SameIndividual(:satisfier :satisfiers)
 
 # Individual: :satisfiers (Satisfiers)
 
 AnnotationAssertion(rdfs:label :satisfiers "Satisfiers"@en)
-ClassAssertion(top-down-common:Term :satisfiers)
+ClassAssertion(metadata:Term :satisfiers)
 SameIndividual(:satisfiers :satisfies)
 SameIndividual(:satisfiers :satisfy)
 SameIndividual(:satisfiers :satisfying)
@@ -3970,302 +3970,302 @@ SameIndividual(:satisfiers :satisfying)
 # Individual: :satisfies (Satisfies)
 
 AnnotationAssertion(rdfs:label :satisfies "Satisfies"@en)
-ClassAssertion(top-down-common:Term :satisfies)
+ClassAssertion(metadata:Term :satisfies)
 
 # Individual: :satisfy (Satisfy)
 
 AnnotationAssertion(rdfs:label :satisfy "Satisfy"@en)
-ClassAssertion(top-down-common:Term :satisfy)
+ClassAssertion(metadata:Term :satisfy)
 
 # Individual: :satisfying (Satisfying)
 
 AnnotationAssertion(rdfs:label :satisfying "Satisfying"@en)
-ClassAssertion(top-down-common:Term :satisfying)
+ClassAssertion(metadata:Term :satisfying)
 
 # Individual: :scale (Scale)
 
 AnnotationAssertion(rdfs:label :scale "Scale"@en)
-ClassAssertion(top-down-common:Term :scale)
+ClassAssertion(metadata:Term :scale)
 SameIndividual(:scale :scaling)
 
 # Individual: :scaled (Scaled)
 
 AnnotationAssertion(rdfs:label :scaled "Scaled"@en)
-ClassAssertion(top-down-common:Term :scaled)
+ClassAssertion(metadata:Term :scaled)
 SameIndividual(:scaled :scaling)
 
 # Individual: :scales (Scales)
 
 AnnotationAssertion(rdfs:label :scales "Scales"@en)
-ClassAssertion(top-down-common:Term :scales)
+ClassAssertion(metadata:Term :scales)
 SameIndividual(:scales :scaling)
 
 # Individual: :scaling (Scaling)
 
 AnnotationAssertion(rdfs:label :scaling "Scaling"@en)
-ClassAssertion(top-down-common:Term :scaling)
+ClassAssertion(metadata:Term :scaling)
 
 # Individual: :sector (Sector)
 
 AnnotationAssertion(rdfs:label :sector "Sector"@en)
-ClassAssertion(top-down-common:Term :sector)
+ClassAssertion(metadata:Term :sector)
 SameIndividual(:sector :sectoral)
 SameIndividual(:sector :sectors)
 
 # Individual: :sectoral (Sectoral)
 
 AnnotationAssertion(rdfs:label :sectoral "Sectoral"@en)
-ClassAssertion(top-down-common:Term :sectoral)
+ClassAssertion(metadata:Term :sectoral)
 
 # Individual: :sectors (Sectors)
 
 AnnotationAssertion(rdfs:label :sectors "Sectors"@en)
-ClassAssertion(top-down-common:Term :sectors)
+ClassAssertion(metadata:Term :sectors)
 
 # Individual: :segment (Segment)
 
 AnnotationAssertion(rdfs:label :segment "Segment"@en)
-ClassAssertion(top-down-common:Term :segment)
+ClassAssertion(metadata:Term :segment)
 SameIndividual(:segment :segmented)
 
 # Individual: :segmentation (Segmentation)
 
 AnnotationAssertion(rdfs:label :segmentation "Segmentation"@en)
-ClassAssertion(top-down-common:Term :segmentation)
+ClassAssertion(metadata:Term :segmentation)
 SameIndividual(:segmentation :segmented)
 
 # Individual: :segmentations (Segmentations)
 
 AnnotationAssertion(rdfs:label :segmentations "Segmentations"@en)
-ClassAssertion(top-down-common:Term :segmentations)
+ClassAssertion(metadata:Term :segmentations)
 SameIndividual(:segmentations :segmented)
 
 # Individual: :segmented (Segmented)
 
 AnnotationAssertion(rdfs:label :segmented "Segmented"@en)
-ClassAssertion(top-down-common:Term :segmented)
+ClassAssertion(metadata:Term :segmented)
 SameIndividual(:segmented :segments)
 
 # Individual: :segments (Segments)
 
 AnnotationAssertion(rdfs:label :segments "Segments"@en)
-ClassAssertion(top-down-common:Term :segments)
+ClassAssertion(metadata:Term :segments)
 
 # Individual: :shift (Shift)
 
 AnnotationAssertion(rdfs:label :shift "Shift"@en)
-ClassAssertion(top-down-common:Term :shift)
+ClassAssertion(metadata:Term :shift)
 SameIndividual(:shift :shifts)
 
 # Individual: :shifted (Shifted)
 
 AnnotationAssertion(rdfs:label :shifted "Shifted"@en)
-ClassAssertion(top-down-common:Term :shifted)
+ClassAssertion(metadata:Term :shifted)
 SameIndividual(:shifted :shifts)
 
 # Individual: :shifting (Shifting)
 
 AnnotationAssertion(rdfs:label :shifting "Shifting"@en)
-ClassAssertion(top-down-common:Term :shifting)
+ClassAssertion(metadata:Term :shifting)
 SameIndividual(:shifting :shifts)
 
 # Individual: :shifts (Shifts)
 
 AnnotationAssertion(rdfs:label :shifts "Shifts"@en)
-ClassAssertion(top-down-common:Term :shifts)
+ClassAssertion(metadata:Term :shifts)
 
 # Individual: :significance (Significance)
 
 AnnotationAssertion(rdfs:label :significance "Significance"@en)
-ClassAssertion(top-down-common:Term :significance)
+ClassAssertion(metadata:Term :significance)
 SameIndividual(:significance :significant)
 
 # Individual: :significant (Significant)
 
 AnnotationAssertion(rdfs:label :significant "Significant"@en)
-ClassAssertion(top-down-common:Term :significant)
+ClassAssertion(metadata:Term :significant)
 
 # Individual: :significantly (Significantly)
 
 AnnotationAssertion(rdfs:label :significantly "Significantly"@en)
-ClassAssertion(top-down-common:Term :significantly)
+ClassAssertion(metadata:Term :significantly)
 
 # Individual: :simulate (Simulate)
 
 AnnotationAssertion(rdfs:label :simulate "Simulate"@en)
-ClassAssertion(top-down-common:Term :simulate)
+ClassAssertion(metadata:Term :simulate)
 SameIndividual(:simulate :simulations)
 
 # Individual: :simulated (Simulated)
 
 AnnotationAssertion(rdfs:label :simulated "Simulated"@en)
-ClassAssertion(top-down-common:Term :simulated)
+ClassAssertion(metadata:Term :simulated)
 SameIndividual(:simulated :simulations)
 
 # Individual: :simulating (Simulating)
 
 AnnotationAssertion(rdfs:label :simulating "Simulating"@en)
-ClassAssertion(top-down-common:Term :simulating)
+ClassAssertion(metadata:Term :simulating)
 SameIndividual(:simulating :simulations)
 
 # Individual: :simulation (Simulation)
 
 AnnotationAssertion(rdfs:label :simulation "Simulation"@en)
-ClassAssertion(top-down-common:Term :simulation)
+ClassAssertion(metadata:Term :simulation)
 SameIndividual(:simulation :simulations)
 
 # Individual: :simulations (Simulations)
 
 AnnotationAssertion(rdfs:label :simulations "Simulations"@en)
-ClassAssertion(top-down-common:Term :simulations)
+ClassAssertion(metadata:Term :simulations)
 
 # Individual: :social (Social)
 
 AnnotationAssertion(rdfs:label :social "Social"@en)
-ClassAssertion(top-down-common:Term :social)
+ClassAssertion(metadata:Term :social)
 SameIndividual(:social :socializing)
 
 # Individual: :sociale (Sociale)
 
 AnnotationAssertion(rdfs:label :sociale "Sociale"@en)
-ClassAssertion(top-down-common:Term :sociale)
+ClassAssertion(metadata:Term :sociale)
 SameIndividual(:sociale :socializing)
 
 # Individual: :sociality (Sociality)
 
 AnnotationAssertion(rdfs:label :sociality "Sociality"@en)
-ClassAssertion(top-down-common:Term :sociality)
+ClassAssertion(metadata:Term :sociality)
 SameIndividual(:sociality :socializing)
 
 # Individual: :socialization (Socialization)
 
 AnnotationAssertion(rdfs:label :socialization "Socialization"@en)
-ClassAssertion(top-down-common:Term :socialization)
+ClassAssertion(metadata:Term :socialization)
 SameIndividual(:socialization :socializing)
 
 # Individual: :socializing (Socializing)
 
 AnnotationAssertion(rdfs:label :socializing "Socializing"@en)
-ClassAssertion(top-down-common:Term :socializing)
+ClassAssertion(metadata:Term :socializing)
 SameIndividual(:socializing :socially)
 
 # Individual: :socially (Socially)
 
 AnnotationAssertion(rdfs:label :socially "Socially"@en)
-ClassAssertion(top-down-common:Term :socially)
+ClassAssertion(metadata:Term :socially)
 
 # Individual: :sociological (Sociological)
 
 AnnotationAssertion(rdfs:label :sociological "Sociological"@en)
-ClassAssertion(top-down-common:Term :sociological)
+ClassAssertion(metadata:Term :sociological)
 SameIndividual(:sociological :sociology)
 
 # Individual: :sociology (Sociology)
 
 AnnotationAssertion(rdfs:label :sociology "Sociology"@en)
-ClassAssertion(top-down-common:Term :sociology)
+ClassAssertion(metadata:Term :sociology)
 
 # Individual: :spatial (Spatial)
 
 AnnotationAssertion(rdfs:label :spatial "Spatial"@en)
-ClassAssertion(top-down-common:Term :spatial)
+ClassAssertion(metadata:Term :spatial)
 SameIndividual(:spatial :spatially)
 
 # Individual: :spatially (Spatially)
 
 AnnotationAssertion(rdfs:label :spatially "Spatially"@en)
-ClassAssertion(top-down-common:Term :spatially)
+ClassAssertion(metadata:Term :spatially)
 
 # Individual: :specific (Specific)
 
 AnnotationAssertion(rdfs:label :specific "Specific"@en)
-ClassAssertion(top-down-common:Term :specific)
+ClassAssertion(metadata:Term :specific)
 SameIndividual(:specific :specificities)
 
 # Individual: :specifically (Specifically)
 
 AnnotationAssertion(rdfs:label :specifically "Specifically"@en)
-ClassAssertion(top-down-common:Term :specifically)
+ClassAssertion(metadata:Term :specifically)
 SameIndividual(:specifically :specificities)
 
 # Individual: :specification (Specification)
 
 AnnotationAssertion(rdfs:label :specification "Specification"@en)
-ClassAssertion(top-down-common:Term :specification)
+ClassAssertion(metadata:Term :specification)
 SameIndividual(:specification :specificities)
 
 # Individual: :specifications (Specifications)
 
 AnnotationAssertion(rdfs:label :specifications "Specifications"@en)
-ClassAssertion(top-down-common:Term :specifications)
+ClassAssertion(metadata:Term :specifications)
 SameIndividual(:specifications :specificities)
 
 # Individual: :specificities (Specificities)
 
 AnnotationAssertion(rdfs:label :specificities "Specificities"@en)
-ClassAssertion(top-down-common:Term :specificities)
+ClassAssertion(metadata:Term :specificities)
 SameIndividual(:specificities :specificity)
 SameIndividual(:specificities :specifics)
 
 # Individual: :specificity (Specificity)
 
 AnnotationAssertion(rdfs:label :specificity "Specificity"@en)
-ClassAssertion(top-down-common:Term :specificity)
+ClassAssertion(metadata:Term :specificity)
 
 # Individual: :specifics (Specifics)
 
 AnnotationAssertion(rdfs:label :specifics "Specifics"@en)
-ClassAssertion(top-down-common:Term :specifics)
+ClassAssertion(metadata:Term :specifics)
 
 # Individual: :spillover (Spillover)
 
 AnnotationAssertion(rdfs:label :spillover "Spillover"@en)
-ClassAssertion(top-down-common:Term :spillover)
+ClassAssertion(metadata:Term :spillover)
 SameIndividual(:spillover :spillovers)
 
 # Individual: :spillovers (Spillovers)
 
 AnnotationAssertion(rdfs:label :spillovers "Spillovers"@en)
-ClassAssertion(top-down-common:Term :spillovers)
+ClassAssertion(metadata:Term :spillovers)
 
 # Individual: :stakeholder (Stakeholder)
 
 AnnotationAssertion(rdfs:label :stakeholder "Stakeholder"@en)
-ClassAssertion(top-down-common:Term :stakeholder)
+ClassAssertion(metadata:Term :stakeholder)
 SameIndividual(:stakeholder :stakeholders)
 
 # Individual: :stakeholders (Stakeholders)
 
 AnnotationAssertion(rdfs:label :stakeholders "Stakeholders"@en)
-ClassAssertion(top-down-common:Term :stakeholders)
+ClassAssertion(metadata:Term :stakeholders)
 
 # Individual: :status (Status)
 
 AnnotationAssertion(rdfs:label :status "Status"@en)
-ClassAssertion(top-down-common:Term :status)
+ClassAssertion(metadata:Term :status)
 
 # Individual: :structural (Structural)
 
 AnnotationAssertion(rdfs:label :structural "Structural"@en)
-ClassAssertion(top-down-common:Term :structural)
+ClassAssertion(metadata:Term :structural)
 SameIndividual(:structural :structure)
 
 # Individual: :structurally (Structurally)
 
 AnnotationAssertion(rdfs:label :structurally "Structurally"@en)
-ClassAssertion(top-down-common:Term :structurally)
+ClassAssertion(metadata:Term :structurally)
 SameIndividual(:structurally :structure)
 
 # Individual: :structuration (Structuration)
 
 AnnotationAssertion(rdfs:label :structuration "Structuration"@en)
-ClassAssertion(top-down-common:Term :structuration)
+ClassAssertion(metadata:Term :structuration)
 SameIndividual(:structuration :structure)
 
 # Individual: :structure (Structure)
 
 AnnotationAssertion(rdfs:label :structure "Structure"@en)
-ClassAssertion(top-down-common:Term :structure)
+ClassAssertion(metadata:Term :structure)
 SameIndividual(:structure :structured)
 SameIndividual(:structure :structures)
 SameIndividual(:structure :structuring)
@@ -4273,28 +4273,28 @@ SameIndividual(:structure :structuring)
 # Individual: :structured (Structured)
 
 AnnotationAssertion(rdfs:label :structured "Structured"@en)
-ClassAssertion(top-down-common:Term :structured)
+ClassAssertion(metadata:Term :structured)
 
 # Individual: :structures (Structures)
 
 AnnotationAssertion(rdfs:label :structures "Structures"@en)
-ClassAssertion(top-down-common:Term :structures)
+ClassAssertion(metadata:Term :structures)
 
 # Individual: :structuring (Structuring)
 
 AnnotationAssertion(rdfs:label :structuring "Structuring"@en)
-ClassAssertion(top-down-common:Term :structuring)
+ClassAssertion(metadata:Term :structuring)
 
 # Individual: :subject (Subject)
 
 AnnotationAssertion(rdfs:label :subject "Subject"@en)
-ClassAssertion(top-down-common:Term :subject)
+ClassAssertion(metadata:Term :subject)
 SameIndividual(:subject :subjected)
 
 # Individual: :subjected (Subjected)
 
 AnnotationAssertion(rdfs:label :subjected "Subjected"@en)
-ClassAssertion(top-down-common:Term :subjected)
+ClassAssertion(metadata:Term :subjected)
 SameIndividual(:subjected :subjective)
 SameIndividual(:subjected :subjectively)
 SameIndividual(:subjected :subjectivity)
@@ -4303,27 +4303,27 @@ SameIndividual(:subjected :subjects)
 # Individual: :subjective (Subjective)
 
 AnnotationAssertion(rdfs:label :subjective "Subjective"@en)
-ClassAssertion(top-down-common:Term :subjective)
+ClassAssertion(metadata:Term :subjective)
 
 # Individual: :subjectively (Subjectively)
 
 AnnotationAssertion(rdfs:label :subjectively "Subjectively"@en)
-ClassAssertion(top-down-common:Term :subjectively)
+ClassAssertion(metadata:Term :subjectively)
 
 # Individual: :subjectivity (Subjectivity)
 
 AnnotationAssertion(rdfs:label :subjectivity "Subjectivity"@en)
-ClassAssertion(top-down-common:Term :subjectivity)
+ClassAssertion(metadata:Term :subjectivity)
 
 # Individual: :subjects (Subjects)
 
 AnnotationAssertion(rdfs:label :subjects "Subjects"@en)
-ClassAssertion(top-down-common:Term :subjects)
+ClassAssertion(metadata:Term :subjects)
 
 # Individual: :survey (Survey)
 
 AnnotationAssertion(rdfs:label :survey "Survey"@en)
-ClassAssertion(top-down-common:Term :survey)
+ClassAssertion(metadata:Term :survey)
 SameIndividual(:survey :surveyed)
 SameIndividual(:survey :surveying)
 SameIndividual(:survey :surveys)
@@ -4331,34 +4331,34 @@ SameIndividual(:survey :surveys)
 # Individual: :surveyed (Surveyed)
 
 AnnotationAssertion(rdfs:label :surveyed "Surveyed"@en)
-ClassAssertion(top-down-common:Term :surveyed)
+ClassAssertion(metadata:Term :surveyed)
 
 # Individual: :surveying (Surveying)
 
 AnnotationAssertion(rdfs:label :surveying "Surveying"@en)
-ClassAssertion(top-down-common:Term :surveying)
+ClassAssertion(metadata:Term :surveying)
 
 # Individual: :surveys (Surveys)
 
 AnnotationAssertion(rdfs:label :surveys "Surveys"@en)
-ClassAssertion(top-down-common:Term :surveys)
+ClassAssertion(metadata:Term :surveys)
 
 # Individual: :sustain (Sustain)
 
 AnnotationAssertion(rdfs:label :sustain "Sustain"@en)
-ClassAssertion(top-down-common:Term :sustain)
+ClassAssertion(metadata:Term :sustain)
 SameIndividual(:sustain :sustainability)
 
 # Individual: :sustainabilities (Sustainabilities)
 
 AnnotationAssertion(rdfs:label :sustainabilities "Sustainabilities"@en)
-ClassAssertion(top-down-common:Term :sustainabilities)
+ClassAssertion(metadata:Term :sustainabilities)
 SameIndividual(:sustainabilities :sustainability)
 
 # Individual: :sustainability (Sustainability)
 
 AnnotationAssertion(rdfs:label :sustainability "Sustainability"@en)
-ClassAssertion(top-down-common:Term :sustainability)
+ClassAssertion(metadata:Term :sustainability)
 SameIndividual(:sustainability :sustainable)
 SameIndividual(:sustainability :sustainably)
 SameIndividual(:sustainability :sustained)
@@ -4367,119 +4367,119 @@ SameIndividual(:sustainability :sustaining)
 # Individual: :sustainable (Sustainable)
 
 AnnotationAssertion(rdfs:label :sustainable "Sustainable"@en)
-ClassAssertion(top-down-common:Term :sustainable)
+ClassAssertion(metadata:Term :sustainable)
 
 # Individual: :sustainably (Sustainably)
 
 AnnotationAssertion(rdfs:label :sustainably "Sustainably"@en)
-ClassAssertion(top-down-common:Term :sustainably)
+ClassAssertion(metadata:Term :sustainably)
 
 # Individual: :sustained (Sustained)
 
 AnnotationAssertion(rdfs:label :sustained "Sustained"@en)
-ClassAssertion(top-down-common:Term :sustained)
+ClassAssertion(metadata:Term :sustained)
 
 # Individual: :sustaining (Sustaining)
 
 AnnotationAssertion(rdfs:label :sustaining "Sustaining"@en)
-ClassAssertion(top-down-common:Term :sustaining)
+ClassAssertion(metadata:Term :sustaining)
 
 # Individual: :system (System)
 
 AnnotationAssertion(rdfs:label :system "System"@en)
-ClassAssertion(top-down-common:Term :system)
+ClassAssertion(metadata:Term :system)
 SameIndividual(:system :systems)
 
 # Individual: :systemic (Systemic)
 
 AnnotationAssertion(rdfs:label :systemic "Systemic"@en)
-ClassAssertion(top-down-common:Term :systemic)
+ClassAssertion(metadata:Term :systemic)
 SameIndividual(:systemic :systems)
 
 # Individual: :systems (Systems)
 
 AnnotationAssertion(rdfs:label :systems "Systems"@en)
-ClassAssertion(top-down-common:Term :systems)
+ClassAssertion(metadata:Term :systems)
 
 # Individual: :theoretic (Theoretic)
 
 AnnotationAssertion(rdfs:label :theoretic "Theoretic"@en)
-ClassAssertion(top-down-common:Term :theoretic)
+ClassAssertion(metadata:Term :theoretic)
 SameIndividual(:theoretic :theoretically)
 
 # Individual: :theoretical (Theoretical)
 
 AnnotationAssertion(rdfs:label :theoretical "Theoretical"@en)
-ClassAssertion(top-down-common:Term :theoretical)
+ClassAssertion(metadata:Term :theoretical)
 SameIndividual(:theoretical :theoretically)
 
 # Individual: :theoretically (Theoretically)
 
 AnnotationAssertion(rdfs:label :theoretically "Theoretically"@en)
-ClassAssertion(top-down-common:Term :theoretically)
+ClassAssertion(metadata:Term :theoretically)
 
 # Individual: :theorie (Theorie)
 
 AnnotationAssertion(rdfs:label :theorie "Theorie"@en)
-ClassAssertion(top-down-common:Term :theorie)
+ClassAssertion(metadata:Term :theorie)
 SameIndividual(:theorie :theories)
 SameIndividual(:theorie :theory)
 
 # Individual: :theories (Theories)
 
 AnnotationAssertion(rdfs:label :theories "Theories"@en)
-ClassAssertion(top-down-common:Term :theories)
+ClassAssertion(metadata:Term :theories)
 
 # Individual: :theory (Theory)
 
 AnnotationAssertion(rdfs:label :theory "Theory"@en)
-ClassAssertion(top-down-common:Term :theory)
+ClassAssertion(metadata:Term :theory)
 
 # Individual: :transfer (Transfer)
 
 AnnotationAssertion(rdfs:label :transfer "Transfer"@en)
-ClassAssertion(top-down-common:Term :transfer)
+ClassAssertion(metadata:Term :transfer)
 SameIndividual(:transfer :transferring)
 
 # Individual: :transferred (Transferred)
 
 AnnotationAssertion(rdfs:label :transferred "Transferred"@en)
-ClassAssertion(top-down-common:Term :transferred)
+ClassAssertion(metadata:Term :transferred)
 SameIndividual(:transferred :transferring)
 
 # Individual: :transferring (Transferring)
 
 AnnotationAssertion(rdfs:label :transferring "Transferring"@en)
-ClassAssertion(top-down-common:Term :transferring)
+ClassAssertion(metadata:Term :transferring)
 SameIndividual(:transferring :transfers)
 
 # Individual: :transfers (Transfers)
 
 AnnotationAssertion(rdfs:label :transfers "Transfers"@en)
-ClassAssertion(top-down-common:Term :transfers)
+ClassAssertion(metadata:Term :transfers)
 
 # Individual: :transform (Transform)
 
 AnnotationAssertion(rdfs:label :transform "Transform"@en)
-ClassAssertion(top-down-common:Term :transform)
+ClassAssertion(metadata:Term :transform)
 SameIndividual(:transform :transformative)
 
 # Individual: :transformation (Transformation)
 
 AnnotationAssertion(rdfs:label :transformation "Transformation"@en)
-ClassAssertion(top-down-common:Term :transformation)
+ClassAssertion(metadata:Term :transformation)
 SameIndividual(:transformation :transformative)
 
 # Individual: :transformations (Transformations)
 
 AnnotationAssertion(rdfs:label :transformations "Transformations"@en)
-ClassAssertion(top-down-common:Term :transformations)
+ClassAssertion(metadata:Term :transformations)
 SameIndividual(:transformations :transformative)
 
 # Individual: :transformative (Transformative)
 
 AnnotationAssertion(rdfs:label :transformative "Transformative"@en)
-ClassAssertion(top-down-common:Term :transformative)
+ClassAssertion(metadata:Term :transformative)
 SameIndividual(:transformative :transformed)
 SameIndividual(:transformative :transforming)
 SameIndividual(:transformative :transforms)
@@ -4487,206 +4487,206 @@ SameIndividual(:transformative :transforms)
 # Individual: :transformed (Transformed)
 
 AnnotationAssertion(rdfs:label :transformed "Transformed"@en)
-ClassAssertion(top-down-common:Term :transformed)
+ClassAssertion(metadata:Term :transformed)
 
 # Individual: :transforming (Transforming)
 
 AnnotationAssertion(rdfs:label :transforming "Transforming"@en)
-ClassAssertion(top-down-common:Term :transforming)
+ClassAssertion(metadata:Term :transforming)
 
 # Individual: :transforms (Transforms)
 
 AnnotationAssertion(rdfs:label :transforms "Transforms"@en)
-ClassAssertion(top-down-common:Term :transforms)
+ClassAssertion(metadata:Term :transforms)
 
 # Individual: :transit (Transit)
 
 AnnotationAssertion(rdfs:label :transit "Transit"@en)
-ClassAssertion(top-down-common:Term :transit)
+ClassAssertion(metadata:Term :transit)
 SameIndividual(:transit :transitivity)
 
 # Individual: :transition (Transition)
 
 AnnotationAssertion(rdfs:label :transition "Transition"@en)
-ClassAssertion(top-down-common:Term :transition)
+ClassAssertion(metadata:Term :transition)
 SameIndividual(:transition :transitivity)
 
 # Individual: :transitional (Transitional)
 
 AnnotationAssertion(rdfs:label :transitional "Transitional"@en)
-ClassAssertion(top-down-common:Term :transitional)
+ClassAssertion(metadata:Term :transitional)
 SameIndividual(:transitional :transitivity)
 
 # Individual: :transitioning (Transitioning)
 
 AnnotationAssertion(rdfs:label :transitioning "Transitioning"@en)
-ClassAssertion(top-down-common:Term :transitioning)
+ClassAssertion(metadata:Term :transitioning)
 SameIndividual(:transitioning :transitivity)
 
 # Individual: :transitions (Transitions)
 
 AnnotationAssertion(rdfs:label :transitions "Transitions"@en)
-ClassAssertion(top-down-common:Term :transitions)
+ClassAssertion(metadata:Term :transitions)
 SameIndividual(:transitions :transitivity)
 
 # Individual: :transitive (Transitive)
 
 AnnotationAssertion(rdfs:label :transitive "Transitive"@en)
-ClassAssertion(top-down-common:Term :transitive)
+ClassAssertion(metadata:Term :transitive)
 SameIndividual(:transitive :transitivity)
 
 # Individual: :transitivity (Transitivity)
 
 AnnotationAssertion(rdfs:label :transitivity "Transitivity"@en)
-ClassAssertion(top-down-common:Term :transitivity)
+ClassAssertion(metadata:Term :transitivity)
 
 # Individual: :translate (Translate)
 
 AnnotationAssertion(rdfs:label :translate "Translate"@en)
-ClassAssertion(top-down-common:Term :translate)
+ClassAssertion(metadata:Term :translate)
 SameIndividual(:translate :translations)
 
 # Individual: :translated (Translated)
 
 AnnotationAssertion(rdfs:label :translated "Translated"@en)
-ClassAssertion(top-down-common:Term :translated)
+ClassAssertion(metadata:Term :translated)
 SameIndividual(:translated :translations)
 
 # Individual: :translates (Translates)
 
 AnnotationAssertion(rdfs:label :translates "Translates"@en)
-ClassAssertion(top-down-common:Term :translates)
+ClassAssertion(metadata:Term :translates)
 SameIndividual(:translates :translations)
 
 # Individual: :translating (Translating)
 
 AnnotationAssertion(rdfs:label :translating "Translating"@en)
-ClassAssertion(top-down-common:Term :translating)
+ClassAssertion(metadata:Term :translating)
 SameIndividual(:translating :translations)
 
 # Individual: :translation (Translation)
 
 AnnotationAssertion(rdfs:label :translation "Translation"@en)
-ClassAssertion(top-down-common:Term :translation)
+ClassAssertion(metadata:Term :translation)
 SameIndividual(:translation :translations)
 
 # Individual: :translations (Translations)
 
 AnnotationAssertion(rdfs:label :translations "Translations"@en)
-ClassAssertion(top-down-common:Term :translations)
+ClassAssertion(metadata:Term :translations)
 
 # Individual: :treatment (Treatment)
 
 AnnotationAssertion(rdfs:label :treatment "Treatment"@en)
-ClassAssertion(top-down-common:Term :treatment)
+ClassAssertion(metadata:Term :treatment)
 SameIndividual(:treatment :treatments)
 
 # Individual: :treatments (Treatments)
 
 AnnotationAssertion(rdfs:label :treatments "Treatments"@en)
-ClassAssertion(top-down-common:Term :treatments)
+ClassAssertion(metadata:Term :treatments)
 
 # Individual: :uncertainties (Uncertainties)
 
 AnnotationAssertion(rdfs:label :uncertainties "Uncertainties"@en)
-ClassAssertion(top-down-common:Term :uncertainties)
+ClassAssertion(metadata:Term :uncertainties)
 SameIndividual(:uncertainties :uncertainty)
 
 # Individual: :uncertainty (Uncertainty)
 
 AnnotationAssertion(rdfs:label :uncertainty "Uncertainty"@en)
-ClassAssertion(top-down-common:Term :uncertainty)
+ClassAssertion(metadata:Term :uncertainty)
 
 # Individual: :valid (Valid)
 
 AnnotationAssertion(rdfs:label :valid "Valid"@en)
-ClassAssertion(top-down-common:Term :valid)
+ClassAssertion(metadata:Term :valid)
 SameIndividual(:valid :validity)
 
 # Individual: :validate (Validate)
 
 AnnotationAssertion(rdfs:label :validate "Validate"@en)
-ClassAssertion(top-down-common:Term :validate)
+ClassAssertion(metadata:Term :validate)
 SameIndividual(:validate :validity)
 
 # Individual: :validated (Validated)
 
 AnnotationAssertion(rdfs:label :validated "Validated"@en)
-ClassAssertion(top-down-common:Term :validated)
+ClassAssertion(metadata:Term :validated)
 SameIndividual(:validated :validity)
 
 # Individual: :validation (Validation)
 
 AnnotationAssertion(rdfs:label :validation "Validation"@en)
-ClassAssertion(top-down-common:Term :validation)
+ClassAssertion(metadata:Term :validation)
 SameIndividual(:validation :validity)
 
 # Individual: :validity (Validity)
 
 AnnotationAssertion(rdfs:label :validity "Validity"@en)
-ClassAssertion(top-down-common:Term :validity)
+ClassAssertion(metadata:Term :validity)
 
 # Individual: :value (Value)
 
 AnnotationAssertion(rdfs:label :value "Value"@en)
-ClassAssertion(top-down-common:Term :value)
+ClassAssertion(metadata:Term :value)
 SameIndividual(:value :valued)
 
 # Individual: :valued (Valued)
 
 AnnotationAssertion(rdfs:label :valued "Valued"@en)
-ClassAssertion(top-down-common:Term :valued)
+ClassAssertion(metadata:Term :valued)
 SameIndividual(:valued :values)
 SameIndividual(:valued :valuing)
 
 # Individual: :values (Values)
 
 AnnotationAssertion(rdfs:label :values "Values"@en)
-ClassAssertion(top-down-common:Term :values)
+ClassAssertion(metadata:Term :values)
 
 # Individual: :valuing (Valuing)
 
 AnnotationAssertion(rdfs:label :valuing "Valuing"@en)
-ClassAssertion(top-down-common:Term :valuing)
+ClassAssertion(metadata:Term :valuing)
 
 # Individual: :variability (Variability)
 
 AnnotationAssertion(rdfs:label :variability "Variability"@en)
-ClassAssertion(top-down-common:Term :variability)
+ClassAssertion(metadata:Term :variability)
 SameIndividual(:variability :variable)
 SameIndividual(:variability :variables)
 
 # Individual: :variable (Variable)
 
 AnnotationAssertion(rdfs:label :variable "Variable"@en)
-ClassAssertion(top-down-common:Term :variable)
+ClassAssertion(metadata:Term :variable)
 
 # Individual: :variables (Variables)
 
 AnnotationAssertion(rdfs:label :variables "Variables"@en)
-ClassAssertion(top-down-common:Term :variables)
+ClassAssertion(metadata:Term :variables)
 
 # Individual: :vision (Vision)
 
 AnnotationAssertion(rdfs:label :vision "Vision"@en)
-ClassAssertion(top-down-common:Term :vision)
+ClassAssertion(metadata:Term :vision)
 SameIndividual(:vision :visions)
 
 # Individual: :visioning (Visioning)
 
 AnnotationAssertion(rdfs:label :visioning "Visioning"@en)
-ClassAssertion(top-down-common:Term :visioning)
+ClassAssertion(metadata:Term :visioning)
 SameIndividual(:visioning :visions)
 
 # Individual: :visions (Visions)
 
 AnnotationAssertion(rdfs:label :visions "Visions"@en)
-ClassAssertion(top-down-common:Term :visions)
+ClassAssertion(metadata:Term :visions)
 
 # Individual: :wellbeing (Wellbeing)
 
 AnnotationAssertion(rdfs:label :wellbeing "Wellbeing"@en)
-ClassAssertion(top-down-common:Term :wellbeing)
+ClassAssertion(metadata:Term :wellbeing)
 
 
 )

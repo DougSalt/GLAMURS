@@ -4,12 +4,12 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(basic:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic#>)
-Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(integration:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/integration#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata#>)
 
 
 Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire>
-Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata>)
 Annotation(rdfs:comment "Note the conventions for this ontology are:
 
 The underlying name of an entity, i.e. a class, object, datatype or property name is in Camel Case and should indicate the purpose of the entity. This is opposed to some ontologies which randomly name the entity and purely use the label to identify the entity in some meaningful way.
@@ -194,14 +194,14 @@ Declaration(NamedIndividual(:term:wellBeing))
 
 AnnotationAssertion(rdfs:label :constructIsMeasuredBy "construct is measured by"@en)
 AnnotationAssertion(rdfs:seeAlso :constructIsMeasuredBy :term:Construct)
-SubObjectPropertyOf(:constructIsMeasuredBy top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:constructIsMeasuredBy metadata:hasSuggestedProperty)
 ObjectPropertyRange(:constructIsMeasuredBy :Item)
 
 # Object Property: :geenLifestyle (green lifestyle)
 
 AnnotationAssertion(rdfs:label :geenLifestyle "green lifestyle"@en)
 AnnotationAssertion(rdfs:seeAlso :geenLifestyle :term:greenLifestyle)
-SubObjectPropertyOf(:geenLifestyle top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:geenLifestyle metadata:hasSuggestedProperty)
 ObjectPropertyDomain(:geenLifestyle :Person)
 ObjectPropertyRange(:geenLifestyle :Lifestyle)
 
@@ -209,7 +209,7 @@ ObjectPropertyRange(:geenLifestyle :Lifestyle)
 
 AnnotationAssertion(rdfs:label :hasBehaviour "has behaviour"@en)
 AnnotationAssertion(rdfs:seeAlso :hasBehaviour :term:Agent)
-SubObjectPropertyOf(:hasBehaviour top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:hasBehaviour metadata:hasSuggestedProperty)
 ObjectPropertyDomain(:hasBehaviour :Agent)
 ObjectPropertyRange(:hasBehaviour :Behaviour)
 
@@ -217,13 +217,13 @@ ObjectPropertyRange(:hasBehaviour :Behaviour)
 
 AnnotationAssertion(rdfs:comment :organizes :term:BackCasting)
 ObjectPropertyDomain(:organizes :Person)
-SubObjectPropertyOf(:organizes top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:organizes metadata:hasSuggestedProperty)
 
 # Object Property: :psychologicalWellBeing (pychological well-being)
 
 AnnotationAssertion(rdfs:label :psychologicalWellBeing "pychological well-being"@en)
 AnnotationAssertion(rdfs:seeAlso :psychologicalWellBeing :term:psychologicalWellBeing)
-SubObjectPropertyOf(:psychologicalWellBeing top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:psychologicalWellBeing metadata:hasSuggestedProperty)
 ObjectPropertyDomain(:psychologicalWellBeing :Person)
 ObjectPropertyRange(:psychologicalWellBeing :WellBeing)
 
@@ -231,14 +231,14 @@ ObjectPropertyRange(:psychologicalWellBeing :WellBeing)
 
 AnnotationAssertion(rdfs:label :simulates "simulates"@en)
 AnnotationAssertion(rdfs:seeAlso :simulates :term:simulates)
-SubObjectPropertyOf(:simulates top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:simulates metadata:hasSuggestedProperty)
 ObjectPropertyDomain(:simulates :Model)
 
 # Object Property: :socialPractice (social practice)
 
 AnnotationAssertion(rdfs:label :socialPractice "social practice"@en)
 AnnotationAssertion(rdfs:seeAlso :socialPractice :term:socialPractice)
-SubObjectPropertyOf(:socialPractice top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:socialPractice metadata:hasSuggestedProperty)
 ObjectPropertyDomain(:socialPractice :Actor)
 ObjectPropertyRange(:socialPractice :Lifestyle)
 
@@ -246,13 +246,13 @@ ObjectPropertyRange(:socialPractice :Lifestyle)
 
 AnnotationAssertion(rdfs:label :sufficiency "sufficiency"@en)
 AnnotationAssertion(rdfs:seeAlso :sufficiency :term:sufficiency)
-SubObjectPropertyOf(:sufficiency top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:sufficiency metadata:hasSuggestedProperty)
 
 # Object Property: :valueActionGap (value action gap)
 
 AnnotationAssertion(rdfs:label :valueActionGap "value action gap"@en)
 AnnotationAssertion(rdfs:seeAlso :valueActionGap :term:valueActionGap)
-SubObjectPropertyOf(:valueActionGap top-down-common:hasSuggestedProperty)
+SubObjectPropertyOf(:valueActionGap metadata:hasSuggestedProperty)
 ObjectPropertyDomain(:valueActionGap :Behaviour)
 ObjectPropertyRange(:valueActionGap :Behaviour)
 
@@ -265,78 +265,78 @@ ObjectPropertyRange(:valueActionGap :Behaviour)
 
 AnnotationAssertion(rdfs:label :adaptiveBelief "adaptive belief"@en)
 AnnotationAssertion(rdfs:seeAlso :adaptiveBelief :term:AdaptiveBelief)
-SubDataPropertyOf(:adaptiveBelief top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:adaptiveBelief metadata:hasSuggestedAttribute)
 
 # Data Property: :altruism (altruism)
 
 AnnotationAssertion(rdfs:label :altruism "altruism"@en)
 AnnotationAssertion(rdfs:seeAlso :altruism :term:altruism)
-SubDataPropertyOf(:altruism top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:altruism metadata:hasSuggestedAttribute)
 
 # Data Property: :attitude (attitude)
 
 AnnotationAssertion(rdfs:label :attitude "attitude"@en)
 AnnotationAssertion(rdfs:seeAlso :attitude :term:attitude)
-SubDataPropertyOf(:attitude top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:attitude metadata:hasSuggestedAttribute)
 DataPropertyDomain(:attitude :Agent)
 
 # Data Property: :construct (construct)
 
 AnnotationAssertion(rdfs:label :construct "construct"@en)
 AnnotationAssertion(rdfs:seeAlso :construct :term:Construct)
-SubDataPropertyOf(:construct top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:construct metadata:hasSuggestedAttribute)
 
 # Data Property: :environmentalFootprint (environmental footprint)
 
 AnnotationAssertion(rdfs:label :environmentalFootprint "environmental footprint"@en)
 AnnotationAssertion(rdfs:seeAlso :environmentalFootprint :term:environmentalFootprint)
-SubDataPropertyOf(:environmentalFootprint top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:environmentalFootprint metadata:hasSuggestedAttribute)
 
 # Data Property: :environmentalOrSustainabilityConcern (environmental concern or sustainability concern)
 
 AnnotationAssertion(rdfs:label :environmentalOrSustainabilityConcern "environmental concern or sustainability concern"@en)
 AnnotationAssertion(rdfs:seeAlso :environmentalOrSustainabilityConcern :term:environmentalOrSustainabilityConcern)
-SubDataPropertyOf(:environmentalOrSustainabilityConcern top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:environmentalOrSustainabilityConcern metadata:hasSuggestedAttribute)
 
 # Data Property: :name (:name)
 
 AnnotationAssertion(rdfs:comment :name "name"@en)
 AnnotationAssertion(rdfs:seeAlso :name :TiPaC)
-SubDataPropertyOf(:name top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:name metadata:hasSuggestedAttribute)
 DataPropertyDomain(:name :Model)
 
 # Data Property: :personalUncertainty (personal uncertainty)
 
 AnnotationAssertion(rdfs:label :personalUncertainty "personal uncertainty"@en)
 AnnotationAssertion(rdfs:seeAlso :personalUncertainty :term:PersonalUncertainty)
-SubDataPropertyOf(:personalUncertainty top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:personalUncertainty metadata:hasSuggestedAttribute)
 
 # Data Property: :scenario (scenario)
 
 AnnotationAssertion(rdfs:label :scenario "scenario"@en)
 AnnotationAssertion(rdfs:seeAlso :scenario :term:scenario)
-SubDataPropertyOf(:scenario top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:scenario metadata:hasSuggestedAttribute)
 DataPropertyDomain(:scenario :Vision)
 
 # Data Property: :upscaling (up-scaling)
 
 AnnotationAssertion(rdfs:label :upscaling "up-scaling"@en)
 AnnotationAssertion(rdfs:seeAlso :upscaling :term:upscaling)
-SubDataPropertyOf(:upscaling top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:upscaling metadata:hasSuggestedAttribute)
 DataPropertyDomain(:upscaling :Transition)
 
 # Data Property: :version (version)
 
 AnnotationAssertion(rdfs:label :version "version"@en)
 AnnotationAssertion(rdfs:seeAlso :version :term:TiPaC)
-SubDataPropertyOf(:version top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:version metadata:hasSuggestedAttribute)
 DataPropertyDomain(:version :Model)
 
 # Data Property: :wellBeing (well-being)
 
 AnnotationAssertion(rdfs:label :wellBeing "well-being"@en)
 AnnotationAssertion(rdfs:seeAlso :wellBeing :term:wellBeing)
-SubDataPropertyOf(:wellBeing top-down-common:hasSuggestedAttribute)
+SubDataPropertyOf(:wellBeing metadata:hasSuggestedAttribute)
 DataPropertyDomain(:wellBeing :QualityOfLife)
 
 
@@ -349,73 +349,73 @@ DataPropertyDomain(:wellBeing :QualityOfLife)
 
 AnnotationAssertion(rdfs:seeAlso :Actor :term:Governance)
 AnnotationAssertion(rdfs:seeAlso :Actor :term:futureVision)
-SubClassOf(:Actor top-down-common:SuggestedClass)
+SubClassOf(:Actor metadata:SuggestedClass)
 
 # Class: :Agent (Agent)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :Agent top-down-common:discipline:innovationStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :Agent top-down-common:discipline:organizationalPsychology)
-AnnotationAssertion(top-down-common:partOfDiscipline :Agent top-down-common:discipline:transitionManagement)
+AnnotationAssertion(metadata:partOfDiscipline :Agent metadata:discipline:innovationStudies)
+AnnotationAssertion(metadata:partOfDiscipline :Agent metadata:discipline:organizationalPsychology)
+AnnotationAssertion(metadata:partOfDiscipline :Agent metadata:discipline:transitionManagement)
 AnnotationAssertion(rdfs:comment :Agent "The more or less explicit claim or expression of a future that is idealised in order to mobilise present potential to move into the direction of this future(van der Helm, 2009, p. 100)."@en)
 AnnotationAssertion(rdfs:label :Agent "Agent"@en)
 AnnotationAssertion(rdfs:seeAlso :Agent :term:Agent)
 AnnotationAssertion(rdfs:seeAlso :Agent :term:futureVision)
-SubClassOf(:Agent top-down-common:DisagreeWithGlossary)
+SubClassOf(:Agent metadata:DisagreeWithGlossary)
 
 # Class: :AgentBasedModel (Agent-based model)
 
 AnnotationAssertion(rdfs:label :AgentBasedModel "Agent-based model"@en)
 AnnotationAssertion(rdfs:seeAlso :AgentBasedModel :term:TiPaC)
 SubClassOf(:AgentBasedModel :Model)
-SubClassOf(:AgentBasedModel top-down-common:SuggestedClass)
+SubClassOf(:AgentBasedModel metadata:SuggestedClass)
 
 # Class: :Attention (Attention)
 
 AnnotationAssertion(rdfs:label :Attention "Attention"@en)
 AnnotationAssertion(rdfs:seeAlso :Attention :term:Learning)
-SubClassOf(:Attention top-down-common:SuggestedProcess)
+SubClassOf(:Attention metadata:SuggestedProcess)
 
 # Class: :Attribution (Attribution)
 
 AnnotationAssertion(rdfs:label :Attribution "Attribution"@en)
 AnnotationAssertion(rdfs:seeAlso :Attribution :term:SpillOver)
-SubClassOf(:Attribution top-down-common:SuggestedProcess)
+SubClassOf(:Attribution metadata:SuggestedProcess)
 
 # Class: :BackCasting (Back-casting)
 
-AnnotationAssertion(top-down-common:periodOfProcess :BackCasting "several day parts"@en)
+AnnotationAssertion(metadata:periodOfProcess :BackCasting "several day parts"@en)
 AnnotationAssertion(rdfs:label :BackCasting "Back-casting"@en)
 AnnotationAssertion(rdfs:seeAlso :BackCasting :term:BackCasting)
-SubClassOf(:BackCasting top-down-common:Process)
-SubClassOf(Annotation(rdfs:comment "Stakeholders learn to reflect on futures."@en) :BackCasting ObjectSomeValuesFrom(basic:modifies :Insight))
-SubClassOf(Annotation(rdfs:comment "Networks may be formed."@en) :BackCasting ObjectSomeValuesFrom(basic:modifies :Network))
-SubClassOf(Annotation(rdfs:comment "Future visions are explicitly articulated."@en) :BackCasting ObjectSomeValuesFrom(basic:modifies :Vision))
-SubClassOf(:BackCasting ObjectSomeValuesFrom(basic:requires :WillOfInitiativeOrganizers))
+SubClassOf(:BackCasting metadata:Process)
+SubClassOf(Annotation(rdfs:comment "Stakeholders learn to reflect on futures."@en) :BackCasting ObjectSomeValuesFrom(integration:modifies :Insight))
+SubClassOf(Annotation(rdfs:comment "Networks may be formed."@en) :BackCasting ObjectSomeValuesFrom(integration:modifies :Network))
+SubClassOf(Annotation(rdfs:comment "Future visions are explicitly articulated."@en) :BackCasting ObjectSomeValuesFrom(integration:modifies :Vision))
+SubClassOf(:BackCasting ObjectSomeValuesFrom(integration:requires :WillOfInitiativeOrganizers))
 
 # Class: :Behaviour (Behaviour)
 
 AnnotationAssertion(rdfs:label :Behaviour "Behaviour"@en)
 AnnotationAssertion(rdfs:seeAlso :Behaviour :term:Behaviour)
-SubClassOf(:Behaviour top-down-common:AgreeWithGlossary)
+SubClassOf(:Behaviour metadata:AgreeWithGlossary)
 
 # Class: :BehaviouralPotential (Behavioural potential)
 
 AnnotationAssertion(rdfs:label :BehaviouralPotential "Behavioural potential")
 AnnotationAssertion(rdfs:seeAlso :BehaviouralPotential :term:Learning)
-SubClassOf(:BehaviouralPotential top-down-common:SuggestedClass)
+SubClassOf(:BehaviouralPotential metadata:SuggestedClass)
 
 # Class: :CausalRelationship (Causal relationship)
 
 AnnotationAssertion(rdfs:label :CausalRelationship "Causal relationship"@en)
 AnnotationAssertion(rdfs:seeAlso :CausalRelationship :term:PathAnalysis)
-SubClassOf(:CausalRelationship top-down-common:SuggestedProcess)
+SubClassOf(:CausalRelationship metadata:SuggestedProcess)
 
 # Class: :CircularEconomy (Circular economy)
 
 AnnotationAssertion(rdfs:label :CircularEconomy "Circular economy"@en)
 AnnotationAssertion(rdfs:seeAlso :CircularEconomy :term:CircularEconomy)
 SubClassOf(:CircularEconomy :Economy)
-SubClassOf(:CircularEconomy top-down-common:SuggestedClass)
+SubClassOf(:CircularEconomy metadata:SuggestedClass)
 
 # Class: :Citizen (Citizen)
 
@@ -426,142 +426,142 @@ SubClassOf(:Citizen :Person)
 # Class: :Citizens (:Citizens)
 
 SubClassOf(:Citizens :Collective)
-SubClassOf(:Citizens ObjectSomeValuesFrom(basic:hasPart :Citizen))
+SubClassOf(:Citizens ObjectSomeValuesFrom(integration:hasPart :Citizen))
 
 # Class: :Collective (Collective)
 
 AnnotationAssertion(rdfs:label :Collective "Collective"@en)
 AnnotationAssertion(rdfs:seeAlso :Collective :term:BackCasting)
-SubClassOf(:Collective top-down-common:SuggestedClass)
-SubClassOf(:Collective ObjectSomeValuesFrom(basic:hasPart owl:Thing))
+SubClassOf(:Collective metadata:SuggestedClass)
+SubClassOf(:Collective ObjectSomeValuesFrom(integration:hasPart owl:Thing))
 
 # Class: :CollectiveThinking (Collective thinking)
 
 AnnotationAssertion(rdfs:label :CollectiveThinking "Collective thinking"@en)
 AnnotationAssertion(rdfs:seeAlso :CollectiveThinking :term:Degrowth)
-SubClassOf(:CollectiveThinking top-down-common:SuggestedProcess)
+SubClassOf(:CollectiveThinking metadata:SuggestedProcess)
 
 # Class: :CollectiveWellBeing (Collective well-being)
 
 AnnotationAssertion(rdfs:label :CollectiveWellBeing "Collective well-being"@en)
 AnnotationAssertion(rdfs:seeAlso :CollectiveWellBeing :term:Degrowth)
-SubClassOf(:CollectiveWellBeing top-down-common:SuggestedClass)
+SubClassOf(:CollectiveWellBeing metadata:SuggestedClass)
 
 # Class: :Commuter (Commuter)
 
 AnnotationAssertion(rdfs:label :Commuter "Commuter"@en)
 AnnotationAssertion(rdfs:seeAlso :Commuter :term:Commuter)
-SubClassOf(:Commuter top-down-common:CommonSense)
+SubClassOf(:Commuter metadata:CommonSense)
 
 # Class: :Construct (Construct)
 
 AnnotationAssertion(rdfs:label :Construct "Construct")
 AnnotationAssertion(rdfs:seeAlso :Construct :term:Construct)
-SubClassOf(:Construct top-down-common:SuggestedClass)
-SubClassOf(:Construct top-down-common:UndefinedEntityType)
+SubClassOf(:Construct metadata:SuggestedClass)
+SubClassOf(:Construct metadata:UndefinedEntityType)
 
 # Class: :Consumption (Consumption)
 
 AnnotationAssertion(rdfs:label :Consumption "Consumption"@en)
 AnnotationAssertion(rdfs:seeAlso :Consumption :term:Degrowth)
-SubClassOf(:Consumption top-down-common:SuggestedProcess)
+SubClassOf(:Consumption metadata:SuggestedProcess)
 
 # Class: :Crisis (Crisis)
 
 AnnotationAssertion(rdfs:label :Crisis "Crisis"@en)
 AnnotationAssertion(rdfs:seeAlso :Crisis :term:Transition)
-SubClassOf(:Crisis top-down-common:SuggestedProcess)
+SubClassOf(:Crisis metadata:SuggestedProcess)
 
 # Class: :CriticalMass (Critical mass)
 
 AnnotationAssertion(rdfs:label :CriticalMass "Critical mass"@en)
 AnnotationAssertion(rdfs:seeAlso :CriticalMass :term:CriticalMass)
-SubClassOf(:CriticalMass top-down-common:Process)
+SubClassOf(:CriticalMass metadata:Process)
 
 # Class: :Culture (:Culture)
 
 AnnotationAssertion(rdfs:seeAlso :Culture :Transition)
 AnnotationAssertion(rdfs:seeAlso :Culture :term:Lifestyle)
-SubClassOf(:Culture top-down-common:SuggestedClass)
+SubClassOf(:Culture metadata:SuggestedClass)
 
 # Class: :DecisionMaking (Decision making)
 
 AnnotationAssertion(rdfs:label :DecisionMaking "Decision making"@en)
 AnnotationAssertion(rdfs:seeAlso :DecisionMaking :term:SpillOver)
-SubClassOf(:DecisionMaking top-down-common:SuggestedProcess)
+SubClassOf(:DecisionMaking metadata:SuggestedProcess)
 
 # Class: :Degrowth (Degrowth)
 
-AnnotationAssertion(top-down-common:periodOfProcess :Degrowth "1 decade to 1 century"@en)
+AnnotationAssertion(metadata:periodOfProcess :Degrowth "1 decade to 1 century"@en)
 AnnotationAssertion(rdfs:label :Degrowth "Degrowth"@en)
 AnnotationAssertion(rdfs:seeAlso :Degrowth :term:Degrowth)
-SubClassOf(:Degrowth top-down-common:Process)
-SubClassOf(Annotation(rdfs:comment "Gains freedom."@en) :Degrowth ObjectSomeValuesFrom(basic:modifies :Citizens))
-SubClassOf(Annotation(rdfs:comment "Maximized"@en) :Degrowth ObjectSomeValuesFrom(basic:modifies :CollectiveWellBeing))
-SubClassOf(Annotation(rdfs:comment "Diminishes."@en) :Degrowth ObjectSomeValuesFrom(basic:modifies :Consumption))
-SubClassOf(Annotation(rdfs:comment "It thrives."@en) :Degrowth ObjectSomeValuesFrom(basic:modifies :Ecosystem))
-SubClassOf(Annotation(rdfs:comment "Equalized."@en) :Degrowth ObjectSomeValuesFrom(basic:modifies :Income))
-SubClassOf(Annotation(rdfs:comment "Increases."@en) :Degrowth ObjectSomeValuesFrom(basic:modifies :TimeAffluence))
-SubClassOf(Annotation(rdfs:comment "Decreases."@en) :Degrowth ObjectSomeValuesFrom(basic:modifies :Unemployment))
-SubClassOf(:Degrowth ObjectSomeValuesFrom(basic:requires :CollectiveThinking))
-SubClassOf(:Degrowth ObjectSomeValuesFrom(basic:requires :Ecocide))
-SubClassOf(:Degrowth ObjectSomeValuesFrom(basic:requires :Sharing))
-SubClassOf(:Degrowth ObjectSomeValuesFrom(basic:requires :Surplus))
+SubClassOf(:Degrowth metadata:Process)
+SubClassOf(Annotation(rdfs:comment "Gains freedom."@en) :Degrowth ObjectSomeValuesFrom(integration:modifies :Citizens))
+SubClassOf(Annotation(rdfs:comment "Maximized"@en) :Degrowth ObjectSomeValuesFrom(integration:modifies :CollectiveWellBeing))
+SubClassOf(Annotation(rdfs:comment "Diminishes."@en) :Degrowth ObjectSomeValuesFrom(integration:modifies :Consumption))
+SubClassOf(Annotation(rdfs:comment "It thrives."@en) :Degrowth ObjectSomeValuesFrom(integration:modifies :Ecosystem))
+SubClassOf(Annotation(rdfs:comment "Equalized."@en) :Degrowth ObjectSomeValuesFrom(integration:modifies :Income))
+SubClassOf(Annotation(rdfs:comment "Increases."@en) :Degrowth ObjectSomeValuesFrom(integration:modifies :TimeAffluence))
+SubClassOf(Annotation(rdfs:comment "Decreases."@en) :Degrowth ObjectSomeValuesFrom(integration:modifies :Unemployment))
+SubClassOf(:Degrowth ObjectSomeValuesFrom(integration:requires :CollectiveThinking))
+SubClassOf(:Degrowth ObjectSomeValuesFrom(integration:requires :Ecocide))
+SubClassOf(:Degrowth ObjectSomeValuesFrom(integration:requires :Sharing))
+SubClassOf(:Degrowth ObjectSomeValuesFrom(integration:requires :Surplus))
 
 # Class: :Ecocide (Ecocide)
 
 AnnotationAssertion(rdfs:label :Ecocide "Ecocide"@en)
 AnnotationAssertion(rdfs:seeAlso :Ecocide :term:Degrowth)
-SubClassOf(:Ecocide top-down-common:SuggestedProcess)
+SubClassOf(:Ecocide metadata:SuggestedProcess)
 
 # Class: :Economy (Economy)
 
 AnnotationAssertion(rdfs:label :Economy "Economy"@en)
 AnnotationAssertion(rdfs:seeAlso :Economy :term:CircularEconomy)
 AnnotationAssertion(rdfs:seeAlso :Economy :term:Transition)
-SubClassOf(:Economy top-down-common:SuggestedClass)
+SubClassOf(:Economy metadata:SuggestedClass)
 
 # Class: :Ecosystem (Ecosystem)
 
 AnnotationAssertion(rdfs:label :Ecosystem "Ecosystem"@en)
 AnnotationAssertion(rdfs:seeAlso :Ecosystem :term:Degrowth)
-SubClassOf(:Ecosystem top-down-common:SuggestedClass)
+SubClassOf(:Ecosystem metadata:SuggestedClass)
 
 # Class: :EfficiencyIncrease (Efficiency increase)
 
 AnnotationAssertion(rdfs:label :EfficiencyIncrease "Efficiency increase"@en)
 AnnotationAssertion(rdfs:seeAlso :EfficiencyIncrease :term:ReboundEffect)
-SubClassOf(:EfficiencyIncrease top-down-common:SuggestedProcess)
+SubClassOf(:EfficiencyIncrease metadata:SuggestedProcess)
 
 # Class: :EquilibriumSelection (Equilibrium selection)
 
 AnnotationAssertion(rdfs:label :EquilibriumSelection "Equilibrium selection"@en)
 AnnotationAssertion(rdfs:seeAlso :EquilibriumSelection :term:TippingPoint)
-SubClassOf(:EquilibriumSelection top-down-common:SuggestedProcess)
+SubClassOf(:EquilibriumSelection metadata:SuggestedProcess)
 
 # Class: :ExogenousFactors (Exeogenous factors)
 
 AnnotationAssertion(rdfs:label :ExogenousFactors "Exeogenous factors"@en)
 AnnotationAssertion(rdfs:seeAlso :ExogenousFactors :term:Transition)
-SubClassOf(:ExogenousFactors top-down-common:SuggestedProcess)
+SubClassOf(:ExogenousFactors metadata:SuggestedProcess)
 
 # Class: :Experience (Experience)
 
 AnnotationAssertion(rdfs:label :Experience "Experience"@en)
 AnnotationAssertion(rdfs:seeAlso :Experience :term:Learning)
-SubClassOf(:Experience top-down-common:SuggestedProcess)
+SubClassOf(:Experience metadata:SuggestedProcess)
 
 # Class: :Feedback (Feedback)
 
 AnnotationAssertion(rdfs:label :Feedback "Feedback"@en)
 AnnotationAssertion(rdfs:seeAlso :Feedback :term:Learning)
-SubClassOf(:Feedback top-down-common:SuggestedProcess)
+SubClassOf(:Feedback metadata:SuggestedProcess)
 
 # Class: :Footprint (Footprint)
 
 AnnotationAssertion(rdfs:label :Footprint "Footprint"@en)
 AnnotationAssertion(rdfs:seeAlso :Footprint :term:ReboundEffect)
-SubClassOf(:Footprint top-down-common:SuggestedClass)
+SubClassOf(:Footprint metadata:SuggestedClass)
 
 # Class: :Governance (Governance)
 
@@ -582,67 +582,67 @@ SubClassOf(:GreenLifestyle :Lifestyle)
 # Class: :Identity (:Identity)
 
 AnnotationAssertion(rdfs:seeAlso :Identity :term:Lifestyle)
-SubClassOf(:Identity top-down-common:SuggestedClass)
+SubClassOf(:Identity metadata:SuggestedClass)
 
 # Class: :Income (Income)
 
 AnnotationAssertion(rdfs:label :Income "Income"@en)
 AnnotationAssertion(rdfs:seeAlso :Income :term:Degrowth)
-SubClassOf(:Income top-down-common:SuggestedClass)
+SubClassOf(:Income metadata:SuggestedClass)
 
 # Class: :Individual (:Individual)
 
 AnnotationAssertion(rdfs:seeAlso :Individual :term:Lifestyle)
 AnnotationAssertion(rdfs:seeAlso :Individual :term:environmentalOrSustainabilityConcern)
 EquivalentClasses(Annotation(rdfs:isDefinedBy "Doug Salt"^^xsd:string) :Individual :Person)
-SubClassOf(:Individual top-down-common:SuggestedClass)
+SubClassOf(:Individual metadata:SuggestedClass)
 
 # Class: :Information (Information)
 
 AnnotationAssertion(rdfs:label :Information "Information"@en)
 AnnotationAssertion(rdfs:seeAlso :Information :term:Learning)
-SubClassOf(:Information top-down-common:SuggestedClass)
+SubClassOf(:Information metadata:SuggestedClass)
 
 # Class: :InformationProcessing (Information processing)
 
 AnnotationAssertion(rdfs:label :InformationProcessing "Information processing"@en)
 AnnotationAssertion(rdfs:seeAlso :InformationProcessing :term:Learning)
-SubClassOf(:InformationProcessing top-down-common:SuggestedProcess)
+SubClassOf(:InformationProcessing metadata:SuggestedProcess)
 
 # Class: :InitativeOrganizers (Initiative organizers)
 
 AnnotationAssertion(rdfs:label :InitativeOrganizers "Initiative organizers"@en)
 AnnotationAssertion(rdfs:seeAlso :InitativeOrganizers :term:BackCasting)
 SubClassOf(:InitativeOrganizers :Collective)
-SubClassOf(:InitativeOrganizers top-down-common:SuggestedClass)
-SubClassOf(:InitativeOrganizers ObjectSomeValuesFrom(basic:hasPart :InitiativeOrganizer))
+SubClassOf(:InitativeOrganizers metadata:SuggestedClass)
+SubClassOf(:InitativeOrganizers ObjectSomeValuesFrom(integration:hasPart :InitiativeOrganizer))
 
 # Class: :InitiativeOrganizer (Initative organizer)
 
 AnnotationAssertion(rdfs:label :InitiativeOrganizer "Initative organizer"@en)
 AnnotationAssertion(rdfs:seeAlso :InitiativeOrganizer :term:BackCasting)
 SubClassOf(:InitiativeOrganizer :Person)
-SubClassOf(:InitiativeOrganizer top-down-common:SuggestedClass)
+SubClassOf(:InitiativeOrganizer metadata:SuggestedClass)
 SubClassOf(:InitiativeOrganizer ObjectSomeValuesFrom(:organizes :Will))
 
 # Class: :Insight (Insight)
 
 AnnotationAssertion(rdfs:label :Insight "Insight"@en)
 AnnotationAssertion(rdfs:seeAlso :Insight :term:BackCasting)
-SubClassOf(:Insight top-down-common:SuggestedClass)
+SubClassOf(:Insight metadata:SuggestedClass)
 
 # Class: :Interaction (Interaction)
 
 AnnotationAssertion(rdfs:label :Interaction "Interaction"@en)
 AnnotationAssertion(rdfs:seeAlso :Interaction :term:Interaction)
-SubClassOf(:Interaction top-down-common:AgreeWithGlossary)
+SubClassOf(:Interaction metadata:AgreeWithGlossary)
 
 # Class: :Item (Item)
 
 AnnotationAssertion(rdfs:label :Item "Item"@en)
 AnnotationAssertion(rdfs:seeAlso :Item :term:Item)
-SubClassOf(:Item top-down-common:AgreeWithGlossary)
-SubClassOf(:Item top-down-common:UndefinedEntityType)
+SubClassOf(:Item metadata:AgreeWithGlossary)
+SubClassOf(:Item metadata:UndefinedEntityType)
 
 # Class: :ItemResponseTheory (Item response theory)
 
@@ -652,181 +652,181 @@ SubClassOf(:ItemResponseTheory :Theory)
 
 # Class: :Learning (Learning)
 
-AnnotationAssertion(top-down-common:frequencyOfProcess :Learning "continually"@en)
-AnnotationAssertion(top-down-common:periodOfProcess :Learning "always"@en)
+AnnotationAssertion(metadata:frequencyOfProcess :Learning "continually"@en)
+AnnotationAssertion(metadata:periodOfProcess :Learning "always"@en)
 AnnotationAssertion(rdfs:label :Learning "Learning"@en)
 AnnotationAssertion(rdfs:seeAlso :Learning :term:Learning)
-SubClassOf(:Learning top-down-common:AgreeWithGlossary)
-SubClassOf(:Learning top-down-common:Process)
-SubClassOf(Annotation(rdfs:comment "More options."@en) :Learning top-down-common:SuggestedClass)
-SubClassOf(:Learning ObjectSomeValuesFrom(basic:modifies :Behaviour))
-SubClassOf(Annotation(rdfs:comment "Other expression."@en) Annotation(rdfs:comment "Via new information and experiences."@en) :Learning ObjectSomeValuesFrom(basic:modifies :BehaviouralPotential))
-SubClassOf(:Learning ObjectSomeValuesFrom(basic:requires :Attention))
-SubClassOf(:Learning ObjectSomeValuesFrom(basic:requires :Experience))
-SubClassOf(:Learning ObjectSomeValuesFrom(basic:requires :Feedback))
-SubClassOf(:Learning ObjectSomeValuesFrom(basic:requires :InformationProcessing))
-SubClassOf(:Learning ObjectSomeValuesFrom(basic:requires :Motivation))
+SubClassOf(:Learning metadata:AgreeWithGlossary)
+SubClassOf(:Learning metadata:Process)
+SubClassOf(Annotation(rdfs:comment "More options."@en) :Learning metadata:SuggestedClass)
+SubClassOf(:Learning ObjectSomeValuesFrom(integration:modifies :Behaviour))
+SubClassOf(Annotation(rdfs:comment "Other expression."@en) Annotation(rdfs:comment "Via new information and experiences."@en) :Learning ObjectSomeValuesFrom(integration:modifies :BehaviouralPotential))
+SubClassOf(:Learning ObjectSomeValuesFrom(integration:requires :Attention))
+SubClassOf(:Learning ObjectSomeValuesFrom(integration:requires :Experience))
+SubClassOf(:Learning ObjectSomeValuesFrom(integration:requires :Feedback))
+SubClassOf(:Learning ObjectSomeValuesFrom(integration:requires :InformationProcessing))
+SubClassOf(:Learning ObjectSomeValuesFrom(integration:requires :Motivation))
 
 # Class: :Lifestyle (Lifestyle)
 
 AnnotationAssertion(rdfs:label :Lifestyle "Lifestyle"@en)
 AnnotationAssertion(rdfs:seeAlso :Lifestyle :term:Lifestyle)
-SubClassOf(:Lifestyle top-down-common:DisagreeWithGlossary)
+SubClassOf(:Lifestyle metadata:DisagreeWithGlossary)
 
 # Class: :Model (Model)
 
 AnnotationAssertion(rdfs:label :Model "Model"@en)
 AnnotationAssertion(rdfs:seeAlso :Model :term:Model)
-SubClassOf(:Model top-down-common:AgreeWithGlossary)
-SubClassOf(:Model top-down-common:DisagreeWithGlossary)
+SubClassOf(:Model metadata:AgreeWithGlossary)
+SubClassOf(:Model metadata:DisagreeWithGlossary)
 
 # Class: :ModelAccuracy (Accuracy of model)
 
 AnnotationAssertion(rdfs:label :ModelAccuracy "Accuracy of model"@en)
 AnnotationAssertion(rdfs:seeAlso :ModelAccuracy :term:PathAnalysis)
-SubClassOf(:ModelAccuracy top-down-common:SuggestedClass)
+SubClassOf(:ModelAccuracy metadata:SuggestedClass)
 
 # Class: :Motivation (Motivation)
 
 AnnotationAssertion(rdfs:label :Motivation "Motivation"@en)
 AnnotationAssertion(rdfs:seeAlso :Motivation :term:Learning)
-SubClassOf(:Motivation top-down-common:SuggestedProcess)
+SubClassOf(:Motivation metadata:SuggestedProcess)
 
 # Class: :Network (Network)
 
 AnnotationAssertion(rdfs:label :Network "Network"@en)
 AnnotationAssertion(rdfs:seeAlso :Network :term:BackCasting)
-SubClassOf(:Network top-down-common:SuggestedClass)
+SubClassOf(:Network metadata:SuggestedClass)
 
 # Class: :PathAnalysis (Path analysis)
 
-AnnotationAssertion(Annotation(rdfs:comment "Researcher can calculate direct and indirect effects of independent variables."@en) top-down-common:periodOfProcess :PathAnalysis "Causal relations among several variables are represented by graphs (path diagrams) showing the \"paths\" along which causal influences travel."@en)
+AnnotationAssertion(Annotation(rdfs:comment "Researcher can calculate direct and indirect effects of independent variables."@en) metadata:periodOfProcess :PathAnalysis "Causal relations among several variables are represented by graphs (path diagrams) showing the \"paths\" along which causal influences travel."@en)
 AnnotationAssertion(rdfs:label :PathAnalysis "Path analysis"@en)
 AnnotationAssertion(rdfs:seeAlso :PathAnalysis :term:PathAnalysis)
-SubClassOf(:PathAnalysis top-down-common:AgreeWithGlossary)
-SubClassOf(:PathAnalysis top-down-common:Process)
-SubClassOf(:PathAnalysis ObjectSomeValuesFrom(basic:requires :CausalRelationship))
+SubClassOf(:PathAnalysis metadata:AgreeWithGlossary)
+SubClassOf(:PathAnalysis metadata:Process)
+SubClassOf(:PathAnalysis ObjectSomeValuesFrom(integration:requires :CausalRelationship))
 
 # Class: :PathCoefficient (Path coefficient)
 
 AnnotationAssertion(rdfs:label :PathCoefficient "Path coefficient"@en)
 AnnotationAssertion(rdfs:seeAlso :PathCoefficient :term:PathCoefficient)
-SubClassOf(:PathCoefficient top-down-common:AgreeWithGlossary)
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :PathCoefficient top-down-common:SuggestedClass)
-SubClassOf(:PathCoefficient top-down-common:UndefinedEntityType)
+SubClassOf(:PathCoefficient metadata:AgreeWithGlossary)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) :PathCoefficient metadata:SuggestedClass)
+SubClassOf(:PathCoefficient metadata:UndefinedEntityType)
 
 # Class: :Person (:Person)
 
 AnnotationAssertion(rdfs:isDefinedBy :Person :term:Commuter)
 SubClassOf(:Person :Actor)
-SubClassOf(:Person top-down-common:SuggestedClass)
+SubClassOf(:Person metadata:SuggestedClass)
 
 # Class: :PersonalUncertainty (Personal uncertainty)
 
 AnnotationAssertion(rdfs:label :PersonalUncertainty "Personal uncertainty"@en)
 AnnotationAssertion(rdfs:seeAlso :PersonalUncertainty :term:PersonalUncertainty)
-SubClassOf(:PersonalUncertainty top-down-common:UndefinedEntityType)
+SubClassOf(:PersonalUncertainty metadata:UndefinedEntityType)
 
 # Class: :PhaseTransition (Phase transition)
 
 AnnotationAssertion(rdfs:label :PhaseTransition "Phase transition"@en)
 AnnotationAssertion(rdfs:seeAlso :PhaseTransition :term:TippingPoint)
-SubClassOf(:PhaseTransition top-down-common:SuggestedProcess)
+SubClassOf(:PhaseTransition metadata:SuggestedProcess)
 
 # Class: :Policy (:Policy)
 
 AnnotationAssertion(rdfs:seeAlso :Policy :term:Policy)
-SubClassOf(:Policy top-down-common:Process)
+SubClassOf(:Policy metadata:Process)
 
 # Class: :Practice (:Practice)
 
 AnnotationAssertion(rdfs:isDefinedBy :Practice :term:Lifestyle)
-SubClassOf(:Practice top-down-common:SuggestedClass)
+SubClassOf(:Practice metadata:SuggestedClass)
 
 # Class: :PriceChange (Price change)
 
 AnnotationAssertion(rdfs:label :PriceChange "Price change"@en)
 AnnotationAssertion(rdfs:seeAlso :PriceChange :term:ReboundEffect)
-SubClassOf(:PriceChange top-down-common:SuggestedProcess)
+SubClassOf(:PriceChange metadata:SuggestedProcess)
 
 # Class: :QualityOfLife (:QualityOfLife)
 
 AnnotationAssertion(rdfs:seeAlso :QualityOfLife :term:wellBeing)
-SubClassOf(:QualityOfLife top-down-common:SuggestedClass)
+SubClassOf(:QualityOfLife metadata:SuggestedClass)
 
 # Class: :ReboundEffect (Rebound effect)
 
-AnnotationAssertion(top-down-common:frequencyOfProcess :ReboundEffect "whenever there is a saving in efficiency or monetary savings"@en)
-AnnotationAssertion(top-down-common:periodOfProcess :ReboundEffect "months or years"@en)
+AnnotationAssertion(metadata:frequencyOfProcess :ReboundEffect "whenever there is a saving in efficiency or monetary savings"@en)
+AnnotationAssertion(metadata:periodOfProcess :ReboundEffect "months or years"@en)
 AnnotationAssertion(rdfs:label :ReboundEffect "Rebound effect"@en)
 AnnotationAssertion(rdfs:seeAlso :ReboundEffect :term:ReboundEffect)
-SubClassOf(:ReboundEffect top-down-common:Process)
-SubClassOf(Annotation(rdfs:comment "In increase unintendly."@en) :ReboundEffect ObjectSomeValuesFrom(basic:modifies :Footprint))
-SubClassOf(:ReboundEffect ObjectSomeValuesFrom(basic:requires :EfficiencyIncrease))
-SubClassOf(:ReboundEffect ObjectSomeValuesFrom(basic:requires :PriceChange))
-SubClassOf(:ReboundEffect ObjectSomeValuesFrom(basic:requires :Savings))
+SubClassOf(:ReboundEffect metadata:Process)
+SubClassOf(Annotation(rdfs:comment "In increase unintendly."@en) :ReboundEffect ObjectSomeValuesFrom(integration:modifies :Footprint))
+SubClassOf(:ReboundEffect ObjectSomeValuesFrom(integration:requires :EfficiencyIncrease))
+SubClassOf(:ReboundEffect ObjectSomeValuesFrom(integration:requires :PriceChange))
+SubClassOf(:ReboundEffect ObjectSomeValuesFrom(integration:requires :Savings))
 
 # Class: :RegimeDestabilisation (Regime destablisation)
 
 AnnotationAssertion(rdfs:label :RegimeDestabilisation "Regime destablisation"@en)
 AnnotationAssertion(rdfs:seeAlso :RegimeDestabilisation :term:Transition)
-SubClassOf(:RegimeDestabilisation top-down-common:SuggestedProcess)
+SubClassOf(:RegimeDestabilisation metadata:SuggestedProcess)
 
 # Class: :Risk (Risk)
 
 AnnotationAssertion(rdfs:label :Risk "Risk"@en)
 AnnotationAssertion(rdfs:seeAlso :Risk :term:Risk)
-SubClassOf(:Risk top-down-common:AgreeWithGlossary)
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :Risk top-down-common:SuggestedClass)
-SubClassOf(:Risk top-down-common:UndefinedEntityType)
+SubClassOf(:Risk metadata:AgreeWithGlossary)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) :Risk metadata:SuggestedClass)
+SubClassOf(:Risk metadata:UndefinedEntityType)
 
 # Class: :Savings (Savings)
 
 AnnotationAssertion(rdfs:label :Savings "Savings"@en)
 AnnotationAssertion(rdfs:seeAlso :Savings :term:ReboundEffect)
-SubClassOf(:Savings top-down-common:SuggestedProcess)
+SubClassOf(:Savings metadata:SuggestedProcess)
 
 # Class: :SelfPerception (Self perception)
 
 AnnotationAssertion(rdfs:label :SelfPerception "Self perception"@en)
 AnnotationAssertion(rdfs:seeAlso :SelfPerception :term:SpillOver)
-SubClassOf(:SelfPerception top-down-common:SuggestedProcess)
+SubClassOf(:SelfPerception metadata:SuggestedProcess)
 
 # Class: :Sharing (Sharing)
 
 AnnotationAssertion(rdfs:label :Sharing "Sharing"@en)
 AnnotationAssertion(rdfs:seeAlso :Sharing :term:Degrowth)
-SubClassOf(:Sharing top-down-common:SuggestedProcess)
+SubClassOf(:Sharing metadata:SuggestedProcess)
 
 # Class: :SocialNorm (Social norm)
 
 AnnotationAssertion(rdfs:label :SocialNorm "Social norm"@en)
 AnnotationAssertion(rdfs:seeAlso :SocialNorm :term:Governance)
-SubClassOf(:SocialNorm top-down-common:SuggestedClass)
+SubClassOf(:SocialNorm metadata:SuggestedClass)
 
 # Class: :SociotechnicalSystem (Sociotechnical system)
 
 AnnotationAssertion(rdfs:label :SociotechnicalSystem "Sociotechnical system"@en)
 AnnotationAssertion(rdfs:seeAlso :SociotechnicalSystem :term:Transition)
-SubClassOf(:SociotechnicalSystem top-down-common:SuggestedClass)
+SubClassOf(:SociotechnicalSystem metadata:SuggestedClass)
 
 # Class: :SpillOver (Spill-over)
 
-AnnotationAssertion(top-down-common:frequencyOfProcess :SpillOver "As often as one decides between behavioural options."@en)
-AnnotationAssertion(top-down-common:periodOfProcess :SpillOver "Without ending"@en)
+AnnotationAssertion(metadata:frequencyOfProcess :SpillOver "As often as one decides between behavioural options."@en)
+AnnotationAssertion(metadata:periodOfProcess :SpillOver "Without ending"@en)
 AnnotationAssertion(rdfs:label :SpillOver "Spill-over"@en)
 AnnotationAssertion(rdfs:seeAlso :SpillOver :term:SpillOver)
-SubClassOf(:SpillOver top-down-common:AgreeWithGlossary)
-SubClassOf(:SpillOver top-down-common:Process)
-SubClassOf(:SpillOver ObjectSomeValuesFrom(basic:requires :Attribution))
-SubClassOf(:SpillOver ObjectSomeValuesFrom(basic:requires :DecisionMaking))
-SubClassOf(:SpillOver ObjectSomeValuesFrom(basic:requires :SelfPerception))
+SubClassOf(:SpillOver metadata:AgreeWithGlossary)
+SubClassOf(:SpillOver metadata:Process)
+SubClassOf(:SpillOver ObjectSomeValuesFrom(integration:requires :Attribution))
+SubClassOf(:SpillOver ObjectSomeValuesFrom(integration:requires :DecisionMaking))
+SubClassOf(:SpillOver ObjectSomeValuesFrom(integration:requires :SelfPerception))
 
 # Class: :Surplus (Surplus)
 
 AnnotationAssertion(rdfs:label :Surplus "Surplus"@en)
 AnnotationAssertion(rdfs:seeAlso :Surplus :term:Degrowth)
-SubClassOf(:Surplus top-down-common:SuggestedProcess)
+SubClassOf(:Surplus metadata:SuggestedProcess)
 
 # Class: :Theory (Theory)
 
@@ -835,46 +835,46 @@ AnnotationAssertion(rdfs:label :Theory "Theory"@en)
 # Class: :Time (:Time)
 
 AnnotationAssertion(rdfs:seeAlso :Time :term:Lifestyle)
-SubClassOf(:Time top-down-common:SuggestedClass)
+SubClassOf(:Time metadata:SuggestedClass)
 
 # Class: :TimeAffluence (Time affluence)
 
 AnnotationAssertion(rdfs:label :TimeAffluence "Time affluence"@en)
 AnnotationAssertion(rdfs:seeAlso :TimeAffluence :term:Degrowth)
 SubClassOf(:TimeAffluence :Time)
-SubClassOf(:TimeAffluence top-down-common:SuggestedClass)
+SubClassOf(:TimeAffluence metadata:SuggestedClass)
 
 # Class: :TippingPoint (Tipping point)
 
-AnnotationAssertion(top-down-common:frequencyOfProcess :TippingPoint "Rarely"@en)
-AnnotationAssertion(top-down-common:periodOfProcess :TippingPoint "It is 'fast' with respect to the time scale of the process."@en)
+AnnotationAssertion(metadata:frequencyOfProcess :TippingPoint "Rarely"@en)
+AnnotationAssertion(metadata:periodOfProcess :TippingPoint "It is 'fast' with respect to the time scale of the process."@en)
 AnnotationAssertion(rdfs:label :TippingPoint "Tipping point"@en)
 AnnotationAssertion(rdfs:seeAlso :TippingPoint :term:TippingPoint)
-SubClassOf(:TippingPoint top-down-common:Process)
-SubClassOf(Annotation(rdfs:comment "Changes behaviour."@en) :TippingPoint ObjectSomeValuesFrom(basic:modifies :Individual))
-SubClassOf(:TippingPoint ObjectSomeValuesFrom(basic:requires :EquilibriumSelection))
-SubClassOf(:TippingPoint ObjectSomeValuesFrom(basic:requires :PhaseTransition))
+SubClassOf(:TippingPoint metadata:Process)
+SubClassOf(Annotation(rdfs:comment "Changes behaviour."@en) :TippingPoint ObjectSomeValuesFrom(integration:modifies :Individual))
+SubClassOf(:TippingPoint ObjectSomeValuesFrom(integration:requires :EquilibriumSelection))
+SubClassOf(:TippingPoint ObjectSomeValuesFrom(integration:requires :PhaseTransition))
 
 # Class: :Transition (Transition)
 
-AnnotationAssertion(top-down-common:frequencyOfProcess :Transition "rarely"@en)
-AnnotationAssertion(top-down-common:periodOfProcess :Transition "several decades"@en)
+AnnotationAssertion(metadata:frequencyOfProcess :Transition "rarely"@en)
+AnnotationAssertion(metadata:periodOfProcess :Transition "several decades"@en)
 AnnotationAssertion(rdfs:label :Transition "Transition"@en)
 AnnotationAssertion(rdfs:seeAlso :Transition :term:Transition)
-SubClassOf(:Transition top-down-common:AgreeWithGlossary)
-SubClassOf(:Transition top-down-common:Process)
-SubClassOf(Annotation(rdfs:comment "Sustainability practices have become widespread."@en) :Transition ObjectSomeValuesFrom(basic:modifies :Culture))
-SubClassOf(Annotation(rdfs:comment "Production and consumption processes do not deplete finite resources."@en) :Transition ObjectSomeValuesFrom(basic:modifies :Economy))
-SubClassOf(Annotation(rdfs:comment "Technologies and the way these technologies are used in society have become sustainable."@en) :Transition ObjectSomeValuesFrom(basic:modifies :SociotechnicalSystem))
-SubClassOf(:Transition ObjectSomeValuesFrom(basic:requires :Crisis))
-SubClassOf(:Transition ObjectSomeValuesFrom(basic:requires :ExogenousFactors))
-SubClassOf(:Transition ObjectSomeValuesFrom(basic:requires :RegimeDestabilisation))
+SubClassOf(:Transition metadata:AgreeWithGlossary)
+SubClassOf(:Transition metadata:Process)
+SubClassOf(Annotation(rdfs:comment "Sustainability practices have become widespread."@en) :Transition ObjectSomeValuesFrom(integration:modifies :Culture))
+SubClassOf(Annotation(rdfs:comment "Production and consumption processes do not deplete finite resources."@en) :Transition ObjectSomeValuesFrom(integration:modifies :Economy))
+SubClassOf(Annotation(rdfs:comment "Technologies and the way these technologies are used in society have become sustainable."@en) :Transition ObjectSomeValuesFrom(integration:modifies :SociotechnicalSystem))
+SubClassOf(:Transition ObjectSomeValuesFrom(integration:requires :Crisis))
+SubClassOf(:Transition ObjectSomeValuesFrom(integration:requires :ExogenousFactors))
+SubClassOf(:Transition ObjectSomeValuesFrom(integration:requires :RegimeDestabilisation))
 
 # Class: :Unemployment (Unemployment)
 
 AnnotationAssertion(rdfs:label :Unemployment "Unemployment"@en)
 AnnotationAssertion(rdfs:seeAlso :Unemployment :term:Degrowth)
-SubClassOf(:Unemployment top-down-common:SuggestedClass)
+SubClassOf(:Unemployment metadata:SuggestedClass)
 
 # Class: :Vision (Vision)
 
@@ -886,32 +886,32 @@ AnnotationAssertion(rdfs:seeAlso :Vision :term:scenario)
 
 AnnotationAssertion(rdfs:label :VoluntarySimplicity "Voluntary simplicity"@en)
 AnnotationAssertion(rdfs:seeAlso :VoluntarySimplicity :term:VoluntarySimplicity)
-SubClassOf(:VoluntarySimplicity top-down-common:Process)
+SubClassOf(:VoluntarySimplicity metadata:Process)
 
 # Class: :WellBeing (:WellBeing)
 
-SubClassOf(:WellBeing top-down-common:SuggestedClass)
+SubClassOf(:WellBeing metadata:SuggestedClass)
 
 # Class: :Will (Will)
 
 AnnotationAssertion(rdfs:label :Will "Will"@en)
 AnnotationAssertion(rdfs:seeAlso :Will :term:BackCasting)
-SubClassOf(:Will top-down-common:SuggestedClass)
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :Will ObjectSomeValuesFrom(basic:partOf :Person))
+SubClassOf(:Will metadata:SuggestedClass)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) :Will ObjectSomeValuesFrom(integration:partOf :Person))
 
 # Class: :WillOfInitiativeOrganizers (Will of initiative organizers)
 
 AnnotationAssertion(rdfs:label :WillOfInitiativeOrganizers "Will of initiative organizers"@en)
 AnnotationAssertion(rdfs:seeAlso :WillOfInitiativeOrganizers :term:BackCasting)
 SubClassOf(:WillOfInitiativeOrganizers :Will)
-SubClassOf(:WillOfInitiativeOrganizers top-down-common:SuggestedProcess)
-SubClassOf(:WillOfInitiativeOrganizers ObjectSomeValuesFrom(basic:partOf :InitativeOrganizers))
+SubClassOf(:WillOfInitiativeOrganizers metadata:SuggestedProcess)
+SubClassOf(:WillOfInitiativeOrganizers ObjectSomeValuesFrom(integration:partOf :InitativeOrganizers))
 
 # Class: :Worker (:Worker)
 
 AnnotationAssertion(rdfs:seeAlso :Worker :term:Commuter)
 SubClassOf(Annotation(rdfs:isDefinedBy "Doug Salt"^^xsd:string) :Worker :Person)
-SubClassOf(:Worker top-down-common:SuggestedClass)
+SubClassOf(:Worker metadata:SuggestedClass)
 
 
 ############################
@@ -920,401 +920,401 @@ SubClassOf(:Worker top-down-common:SuggestedClass)
 
 # Individual: :term:AdaptiveBelief (Adaptive belief)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:AdaptiveBelief top-down-common:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:AdaptiveBelief metadata:discipline:psychology)
 AnnotationAssertion(rdfs:comment :term:AdaptiveBelief "\"It's a person's or other social entity's mental representation of the likelihood of something being true/being the case. A belief helps to guide one's action. A belief is based on knowledge, experience, intention and learning processes. Beliefs refer to states/entities and processes alike.
 
 (This definition is inspired by Wikipedia, addmitedly, but meets the psychological understanding much better then the one in the glossary. I have some troubles with the \"\"adaptive\"\" part of the term and with the non-directedness of the belief, i.e. belief into/that what...?)\""@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:AdaptiveBelief top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :term:AdaptiveBelief metadata:UFZ)
 AnnotationAssertion(rdfs:label :term:AdaptiveBelief "Adaptive belief"@en)
-ClassAssertion(top-down-common:Term :term:AdaptiveBelief)
+ClassAssertion(metadata:Term :term:AdaptiveBelief)
 
 # Individual: :term:Agent (Agent)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Agent top-down-common:discipline:economics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Agent top-down-common:discipline:socialSimulation)
+AnnotationAssertion(metadata:partOfDiscipline :term:Agent metadata:discipline:economics)
+AnnotationAssertion(metadata:partOfDiscipline :term:Agent metadata:discipline:socialSimulation)
 AnnotationAssertion(rdfs:comment :term:Agent "An agent is the representation of an entity in the real world that, with respect to some narrative thereof, is said to have intentional agency."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:Agent top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:Agent metadata:JHI)
 AnnotationAssertion(rdfs:label :term:Agent "Agent"@en)
-ClassAssertion(top-down-common:Term :term:Agent)
+ClassAssertion(metadata:Term :term:Agent)
 
 # Individual: :term:BackCasting (Back-casting)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:BackCasting top-down-common:discipline:ethics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:BackCasting top-down-common:discipline:innovationStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:BackCasting top-down-common:discipline:philosophy)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:BackCasting top-down-common:discipline:publicAdministration)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:BackCasting top-down-common:discipline:sustainableDevelopment)
-AnnotationAssertion(rdfs:isDefinedBy :term:BackCasting top-down-common:TUD)
+AnnotationAssertion(metadata:partOfDiscipline :term:BackCasting metadata:discipline:ethics)
+AnnotationAssertion(metadata:partOfDiscipline :term:BackCasting metadata:discipline:innovationStudies)
+AnnotationAssertion(metadata:partOfDiscipline :term:BackCasting metadata:discipline:philosophy)
+AnnotationAssertion(metadata:partOfDiscipline :term:BackCasting metadata:discipline:publicAdministration)
+AnnotationAssertion(metadata:partOfDiscipline :term:BackCasting metadata:discipline:sustainableDevelopment)
+AnnotationAssertion(rdfs:isDefinedBy :term:BackCasting metadata:TUD)
 AnnotationAssertion(rdfs:label :term:BackCasting "Back-casting"@en)
-ClassAssertion(top-down-common:Term :term:BackCasting)
+ClassAssertion(metadata:Term :term:BackCasting)
 
 # Individual: :term:Behaviour (Behaviour)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Behaviour top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:Behaviour top-down-common:UNIROMA3)
+AnnotationAssertion(metadata:partOfDiscipline :term:Behaviour metadata:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:Behaviour metadata:UNIROMA3)
 AnnotationAssertion(rdfs:label :term:Behaviour "Behaviour"@en)
-ClassAssertion(top-down-common:Term :term:Behaviour)
+ClassAssertion(metadata:Term :term:Behaviour)
 
 # Individual: :term:CircularEconomy (Circular economy)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:discipline:economics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:discipline:industrialEcology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:CircularEconomy top-down-common:term:business)
+AnnotationAssertion(metadata:partOfDiscipline :term:CircularEconomy metadata:discipline:economics)
+AnnotationAssertion(metadata:partOfDiscipline :term:CircularEconomy metadata:discipline:industrialEcology)
+AnnotationAssertion(metadata:partOfDiscipline :term:CircularEconomy metadata:term:business)
 AnnotationAssertion(rdfs:comment :term:CircularEconomy "A Circular Economy is an economic and industrial system where material loops are closed and value creation is aimed for at every chain in the system."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:CircularEconomy top-down-common:TUD)
+AnnotationAssertion(rdfs:isDefinedBy :term:CircularEconomy metadata:TUD)
 AnnotationAssertion(rdfs:label :term:CircularEconomy "Circular economy"@en)
-ClassAssertion(top-down-common:Term :term:CircularEconomy)
+ClassAssertion(metadata:Term :term:CircularEconomy)
 
 # Individual: :term:Commuter (Commuter)
 
 AnnotationAssertion(rdfs:comment :term:Commuter "A commuter is someone who lives 'sufficiently far' from work that they generally use a form of transport other than walking to get there and back.")
-AnnotationAssertion(rdfs:isDefinedBy :term:Commuter top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:Commuter metadata:JHI)
 AnnotationAssertion(rdfs:label :term:Commuter "Commuter"@en)
-ClassAssertion(top-down-common:Term :term:Commuter)
+ClassAssertion(metadata:Term :term:Commuter)
 
 # Individual: :term:Construct (Construct)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Construct top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:Construct top-down-common:OVGU)
-AnnotationAssertion(rdfs:isDefinedBy :term:Construct top-down-common:UFZ)
+AnnotationAssertion(metadata:partOfDiscipline :term:Construct metadata:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:Construct metadata:OVGU)
+AnnotationAssertion(rdfs:isDefinedBy :term:Construct metadata:UFZ)
 AnnotationAssertion(rdfs:label :term:Construct "Construct"@en)
-ClassAssertion(top-down-common:Term :term:Construct)
+ClassAssertion(metadata:Term :term:Construct)
 
 # Individual: :term:CriticalMass (Critical mass)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:CriticalMass top-down-common:discipline:macroEconomics)
+AnnotationAssertion(metadata:partOfDiscipline :term:CriticalMass metadata:discipline:macroEconomics)
 AnnotationAssertion(rdfs:comment :term:CriticalMass "\"Critical mass, a concept borrowed from nuclear physics and referring to the quantity necessary for starting a chain reaction in its original use, is used in common language to refer to the amount needed for having significant effects. In collective actions and social movements, the term is often used metaphorically to refer to the idea that some threshold of participants or action has to be crossed before a social movement 'explodes' into being\" (Oliver, Marwell and Teixeira, 1985). 
 
 Reference: Oliver, P. E., Marwell, G., & Teixeira, R. (1985). A theory of the critical mass: Interdependence, group heterogenity, and the production of collective action. American Journal of Sociology"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:CriticalMass top-down-common:TSC)
+AnnotationAssertion(rdfs:isDefinedBy :term:CriticalMass metadata:TSC)
 AnnotationAssertion(rdfs:label :term:CriticalMass "Critical mass"@en)
-ClassAssertion(top-down-common:Term :term:CriticalMass)
+ClassAssertion(metadata:Term :term:CriticalMass)
 
 # Individual: :term:Degrowth (Degrowth)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Degrowth top-down-common:discipline:anthropology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Degrowth top-down-common:discipline:environmentalScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Degrowth top-down-common:discipline:macroEconomics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Degrowth top-down-common:discipline:microEconomics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Degrowth top-down-common:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:Degrowth metadata:discipline:anthropology)
+AnnotationAssertion(metadata:partOfDiscipline :term:Degrowth metadata:discipline:environmentalScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:Degrowth metadata:discipline:macroEconomics)
+AnnotationAssertion(metadata:partOfDiscipline :term:Degrowth metadata:discipline:microEconomics)
+AnnotationAssertion(metadata:partOfDiscipline :term:Degrowth metadata:discipline:psychology)
 AnnotationAssertion(rdfs:comment :term:Degrowth "Degrowth (in French: dÃ©croissance, in Spanish: decrecimiento, in Italian: decrescita) is a political, economic, and social movement based on ecological economics, anti-consumerist and anti-capitalist ideas.  Key to the concept of degrowth is that reducing consumption does not require individual martyring or a decrease in well-being.Rather, 'degrowthists' aim to maximize happiness and well-being through non-consumptive meansÃ¢â‚¬â€�sharing work, consuming less, while devoting more time to art, music, family, culture and community."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:Degrowth top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :term:Degrowth metadata:NTNU)
 AnnotationAssertion(rdfs:isDefinedBy :term:Degrowth "https://en.wikipedia.org/wiki/Degrowth"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :term:Degrowth "Degrowth"@en)
-ClassAssertion(top-down-common:Term :term:Degrowth)
+ClassAssertion(metadata:Term :term:Degrowth)
 
 # Individual: :term:Governance (Governance)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Governance top-down-common:discipline:governanceStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Governance top-down-common:discipline:pyschologyOfLearning)
-AnnotationAssertion(rdfs:isDefinedBy :term:Governance top-down-common:JHI)
+AnnotationAssertion(metadata:partOfDiscipline :term:Governance metadata:discipline:governanceStudies)
+AnnotationAssertion(metadata:partOfDiscipline :term:Governance metadata:discipline:pyschologyOfLearning)
+AnnotationAssertion(rdfs:isDefinedBy :term:Governance metadata:JHI)
 AnnotationAssertion(rdfs:label :term:Governance "Governance"@en)
-ClassAssertion(top-down-common:Term :term:Governance)
+ClassAssertion(metadata:Term :term:Governance)
 
 # Individual: :term:GrassrootsMovement (Grassroots movement)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:GrassrootsMovement top-down-common:discipline:ethics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:GrassrootsMovement top-down-common:discipline:innovationStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:GrassrootsMovement top-down-common:discipline:publicAdministration)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:GrassrootsMovement top-down-common:discipline:sustainableDevelopment)
+AnnotationAssertion(metadata:partOfDiscipline :term:GrassrootsMovement metadata:discipline:ethics)
+AnnotationAssertion(metadata:partOfDiscipline :term:GrassrootsMovement metadata:discipline:innovationStudies)
+AnnotationAssertion(metadata:partOfDiscipline :term:GrassrootsMovement metadata:discipline:publicAdministration)
+AnnotationAssertion(metadata:partOfDiscipline :term:GrassrootsMovement metadata:discipline:sustainableDevelopment)
 AnnotationAssertion(rdfs:comment :term:GrassrootsMovement "Grassroots movements are urban-orientated mobilizations that influence structural social change and transform the urban meanings."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:GrassrootsMovement top-down-common:TUD)
+AnnotationAssertion(rdfs:isDefinedBy :term:GrassrootsMovement metadata:TUD)
 AnnotationAssertion(rdfs:label :term:GrassrootsMovement "Grassroots movement"@en)
-ClassAssertion(top-down-common:Term :term:GrassrootsMovement)
+ClassAssertion(metadata:Term :term:GrassrootsMovement)
 
 # Individual: :term:Interaction (Interaction)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Interaction top-down-common:discipline:socialSimulation)
+AnnotationAssertion(metadata:partOfDiscipline :term:Interaction metadata:discipline:socialSimulation)
 AnnotationAssertion(rdfs:comment :term:Interaction "To refine the definition in the glossary, if a behaviour of one agent (potentially) has an effect on another agent (i.e. cause that agent to change its state variables), then it is an interaction."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:Interaction top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:Interaction metadata:JHI)
 AnnotationAssertion(rdfs:label :term:Interaction "Interaction"@en)
-ClassAssertion(top-down-common:Term :term:Interaction)
+ClassAssertion(metadata:Term :term:Interaction)
 
 # Individual: :term:Item (Item)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Item top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:Item top-down-common:UFZ)
+AnnotationAssertion(metadata:partOfDiscipline :term:Item metadata:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:Item metadata:UFZ)
 AnnotationAssertion(rdfs:label :term:Item "Item"@en)
-ClassAssertion(top-down-common:Term :term:Item)
-ClassAssertion(top-down-common:TerminatedQuestionnaire :term:Item)
+ClassAssertion(metadata:Term :term:Item)
+ClassAssertion(metadata:TerminatedQuestionnaire :term:Item)
 
 # Individual: :term:ItemResponseTheory (Item response theory)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ItemResponseTheory top-down-common:discipline:statistics)
+AnnotationAssertion(metadata:partOfDiscipline :term:ItemResponseTheory metadata:discipline:statistics)
 AnnotationAssertion(rdfs:comment :term:ItemResponseTheory "A set of loosely connected, and more or less routinized practices that take place in (and are influenced and mediated by) particular spatio-temporal settings, and that articulate personal as well as socially normativised motivations and habits. The specific organization of an individualÃ¢â‚¬â„¢s lifestyle depends on, inter alia, the characteristics of the component practices (e.g., when and where does it make sense to do what?), the loose connections between the component practices that make up a lifestyle (e.g., sequencing, multitasking, competition for time), and the social and material characteristics of the spatio-temporal settings in which the individual carries out practices (e.g., practices carried out by others, availability of instruments and resources)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:ItemResponseTheory top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:ItemResponseTheory metadata:JHI)
 AnnotationAssertion(rdfs:label :term:ItemResponseTheory "Item response theory"@en)
-ClassAssertion(top-down-common:Term :term:ItemResponseTheory)
+ClassAssertion(metadata:Term :term:ItemResponseTheory)
 
 # Individual: :term:Learning (Learning)
 
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:Learning top-down-common:discipline:innovationStudies)
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) Annotation(rdfs:isDefinedBy top-down-common:UFZ) top-down-common:partOfDiscipline :term:Learning top-down-common:discipline:psychology)
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) top-down-common:partOfDiscipline :term:Learning top-down-common:discipline:transitionManagement)
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) rdfs:comment :term:Learning "A process where new information is assimilated, based on past experiences and via a feedback-stimulus is applied in subsequent actions, leading to permanent or potential behavioural change."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:TUD) metadata:partOfDiscipline :term:Learning metadata:discipline:innovationStudies)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:TUD) Annotation(rdfs:isDefinedBy metadata:UFZ) metadata:partOfDiscipline :term:Learning metadata:discipline:psychology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:TUD) metadata:partOfDiscipline :term:Learning metadata:discipline:transitionManagement)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:TUD) rdfs:comment :term:Learning "A process where new information is assimilated, based on past experiences and via a feedback-stimulus is applied in subsequent actions, leading to permanent or potential behavioural change."@en)
 AnnotationAssertion(rdfs:label :term:Learning "Learning"@en)
-ClassAssertion(top-down-common:Term :term:Learning)
+ClassAssertion(metadata:Term :term:Learning)
 
 # Individual: :term:Lifestyle (Lifestyle)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Lifestyle top-down-common:discipline:industrialEcology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Lifestyle top-down-common:discipline:publicAdministration)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Lifestyle top-down-common:discipline:sociology)
-AnnotationAssertion(rdfs:isDefinedBy :term:Lifestyle top-down-common:TUD)
+AnnotationAssertion(metadata:partOfDiscipline :term:Lifestyle metadata:discipline:industrialEcology)
+AnnotationAssertion(metadata:partOfDiscipline :term:Lifestyle metadata:discipline:publicAdministration)
+AnnotationAssertion(metadata:partOfDiscipline :term:Lifestyle metadata:discipline:sociology)
+AnnotationAssertion(rdfs:isDefinedBy :term:Lifestyle metadata:TUD)
 AnnotationAssertion(rdfs:label :term:Lifestyle "Lifestyle"@en)
-ClassAssertion(top-down-common:Term :term:Lifestyle)
+ClassAssertion(metadata:Term :term:Lifestyle)
 
 # Individual: :term:Model (Model)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Model top-down-common:discipline:economics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Model top-down-common:discipline:psychology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Model top-down-common:discipline:socialSimulation)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Model top-down-common:discipline:sociology)
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:JHI) rdfs:comment :term:Model "The concept of what a model is differs from one discipline to another. Central to the idea is that there is a formal (or semi-formal) abstract conceptualisation of some part(s) of the real world. Terms in the formal language in which the model is constructed are said to represent (or simulate) real world phenomena. (Arguably if we drop the requirement for formality, natural language is itself a model. Generally, a model is a formal thing, and what they (or terms/expressions in them) represent or simulate are terms in netural language.)
+AnnotationAssertion(metadata:partOfDiscipline :term:Model metadata:discipline:economics)
+AnnotationAssertion(metadata:partOfDiscipline :term:Model metadata:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:Model metadata:discipline:socialSimulation)
+AnnotationAssertion(metadata:partOfDiscipline :term:Model metadata:discipline:sociology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:JHI) rdfs:comment :term:Model "The concept of what a model is differs from one discipline to another. Central to the idea is that there is a formal (or semi-formal) abstract conceptualisation of some part(s) of the real world. Terms in the formal language in which the model is constructed are said to represent (or simulate) real world phenomena. (Arguably if we drop the requirement for formality, natural language is itself a model. Generally, a model is a formal thing, and what they (or terms/expressions in them) represent or simulate are terms in netural language.)
 The concept of what a model is differs from one discipline to another. Central to the idea is that there is a formal (or semi-formal) abstract conceptualisation of some part(s) of the real world. Terms in the formal language in which the model is constructed are said to represent (or simulate) real world phenomena. (Arguably if we drop the requirement for formality, natural language is itself a model. Generally, a model is a formal thing, and what they (or terms/expressions in them) represent or simulate are terms in netural language.)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:Model top-down-common:JHI)
-AnnotationAssertion(rdfs:isDefinedBy :term:Model top-down-common:UDC)
+AnnotationAssertion(rdfs:isDefinedBy :term:Model metadata:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:Model metadata:UDC)
 AnnotationAssertion(rdfs:label :term:Model "Model"@en)
-ClassAssertion(top-down-common:Term :term:Model)
+ClassAssertion(metadata:Term :term:Model)
 
 # Individual: :term:PathAnalysis (Path analysis)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:PathAnalysis top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:PathAnalysis top-down-common:UDC)
+AnnotationAssertion(metadata:partOfDiscipline :term:PathAnalysis metadata:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:PathAnalysis metadata:UDC)
 AnnotationAssertion(rdfs:label :term:PathAnalysis "Path analysis"@en)
-ClassAssertion(top-down-common:Term :term:PathAnalysis)
+ClassAssertion(metadata:Term :term:PathAnalysis)
 
 # Individual: :term:PathCoefficient (Path coefficient)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:PathCoefficient top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:PathCoefficient top-down-common:UDC)
+AnnotationAssertion(metadata:partOfDiscipline :term:PathCoefficient metadata:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:PathCoefficient metadata:UDC)
 AnnotationAssertion(rdfs:label :term:PathCoefficient "Path coefficient"@en)
-ClassAssertion(top-down-common:Term :term:PathCoefficient)
-ClassAssertion(top-down-common:TerminatedQuestionnaire :term:PathCoefficient)
+ClassAssertion(metadata:Term :term:PathCoefficient)
+ClassAssertion(metadata:TerminatedQuestionnaire :term:PathCoefficient)
 
 # Individual: :term:PersonalUncertainty (Personal uncertainty)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:PersonalUncertainty top-down-common:discipline:socialPsychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:PersonalUncertainty metadata:discipline:socialPsychology)
 AnnotationAssertion(rdfs:comment :term:PersonalUncertainty "Uncertainty about  the  future  is a ubiquitous human  predicament. Because our  lives involve  endless decisions and  choices, we  need  an appreciable degree  of  subjective certainty to move forward. UMM Uncertainty Management Model  (Van  den Bos, 2009; Van  den Bos & Lind,  2002)  focuses on how  people manage feelings  of personal uncertainty by defending their worldview and cognitively manipulating their perceptions of social justice. An underlying assumption of UMM is that people are \"existential meaning makers\" and that personal uncertainty, defined as a \"subjective sense of doubt or instability in self-views, worldviews, or the inter-relation  between the two\"  (Van  den Bos, 2009, p. 198), constitutes an important threat to the meaning  of existence and is therefore experienced as a highly aversive emotional state. Research based on the UMM has shown that  uncertainty salience  intensifies people's negative  reactions to other  people or to events that  violate  their  cultural  worldview (Van  den  Bos,  van Ameijde, & van Gorp,2006)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:PersonalUncertainty top-down-common:UNIROMA3)
+AnnotationAssertion(rdfs:isDefinedBy :term:PersonalUncertainty metadata:UNIROMA3)
 AnnotationAssertion(rdfs:label :term:PersonalUncertainty "Personal uncertainty"@en)
-ClassAssertion(top-down-common:MissingDefinitions :term:PersonalUncertainty)
-ClassAssertion(top-down-common:TerminatedQuestionnaire :term:PersonalUncertainty)
+ClassAssertion(metadata:MissingDefinitions :term:PersonalUncertainty)
+ClassAssertion(metadata:TerminatedQuestionnaire :term:PersonalUncertainty)
 
 # Individual: :term:Policy (Policy)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Policy top-down-common:discipline:ethics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Policy top-down-common:discipline:innovationStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Policy top-down-common:discipline:publicAdministration)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Policy top-down-common:discipline:sustainableDevelopment)
-AnnotationAssertion(rdfs:isDefinedBy :term:Policy top-down-common:TUD)
+AnnotationAssertion(metadata:partOfDiscipline :term:Policy metadata:discipline:ethics)
+AnnotationAssertion(metadata:partOfDiscipline :term:Policy metadata:discipline:innovationStudies)
+AnnotationAssertion(metadata:partOfDiscipline :term:Policy metadata:discipline:publicAdministration)
+AnnotationAssertion(metadata:partOfDiscipline :term:Policy metadata:discipline:sustainableDevelopment)
+AnnotationAssertion(rdfs:isDefinedBy :term:Policy metadata:TUD)
 AnnotationAssertion(rdfs:isDefinedBy :term:Policy "Policy entails the plans, choices and actions of one or more administrative agencies that are oriented towards the management of a certain societal development."@en)
 AnnotationAssertion(rdfs:label :term:Policy "Policy"@en)
-ClassAssertion(top-down-common:Term :term:Policy)
+ClassAssertion(metadata:Term :term:Policy)
 
 # Individual: :term:ReboundEffect (Rebound effect)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:biology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:energy)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:engineering)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:environmentalScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:ReboundEffect top-down-common:discipline:industrialEcology)
+AnnotationAssertion(metadata:partOfDiscipline :term:ReboundEffect metadata:discipline:biology)
+AnnotationAssertion(metadata:partOfDiscipline :term:ReboundEffect metadata:discipline:energy)
+AnnotationAssertion(metadata:partOfDiscipline :term:ReboundEffect metadata:discipline:engineering)
+AnnotationAssertion(metadata:partOfDiscipline :term:ReboundEffect metadata:discipline:environmentalScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:ReboundEffect metadata:discipline:industrialEcology)
 AnnotationAssertion(rdfs:comment :term:ReboundEffect "is the reduction in expected gains from new technologies that increase the efficiency of resource use, because of behavioral or other systemic responses"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:ReboundEffect top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :term:ReboundEffect metadata:NTNU)
 AnnotationAssertion(rdfs:label :term:ReboundEffect "Rebound effect"@en)
-ClassAssertion(top-down-common:Term :term:ReboundEffect)
+ClassAssertion(metadata:Term :term:ReboundEffect)
 
 # Individual: :term:Risk (Risk)
 
 AnnotationAssertion(rdfs:comment :term:Risk "A major and sudden shift from one to a different state of the social system under study. This may entail a phase transition, if there is a structural change in the system (e.g. from a sparse to a connected social network); alternatively, it can be a jump from one to another equilibrium (e.g. the emergence of cooperative behaviour in a social dilemma like a public good game)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:Risk top-down-common:UDC)
+AnnotationAssertion(rdfs:isDefinedBy :term:Risk metadata:UDC)
 AnnotationAssertion(rdfs:label :term:Risk "Risk"@en)
-ClassAssertion(top-down-common:MissingDefinitions :term:Risk)
-ClassAssertion(top-down-common:Term :term:Risk)
+ClassAssertion(metadata:MissingDefinitions :term:Risk)
+ClassAssertion(metadata:Term :term:Risk)
 
 # Individual: :term:SpillOver (Spill over)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:SpillOver top-down-common:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:SpillOver metadata:discipline:psychology)
 AnnotationAssertion(rdfs:comment :term:SpillOver "To add to the definition provided by the glossary so far: There are different phenomena of negative and positive spillover, meaning that a certain pro-environmental behaviour enhances or reduces the probability of conducting another pro-environmental behaviour from the same or another behavioural domain. It seems that a pro-environmental identity enhances positive spillover, while a low pro-environmental identity enhances negative spillover (Truelove, H. B.; Carrico, A. R.; Weber, E. U.; Toner Raimi, K.; Vandenbergh, M. P., 2014)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:SpillOver top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :term:SpillOver metadata:UFZ)
 AnnotationAssertion(rdfs:label :term:SpillOver "Spill over"@en)
-ClassAssertion(top-down-common:Term :term:SpillOver)
+ClassAssertion(metadata:Term :term:SpillOver)
 
 # Individual: :term:TiPaC (TiPaC)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:TiPaC top-down-common:discipline:socialSimulation)
+AnnotationAssertion(metadata:partOfDiscipline :term:TiPaC metadata:discipline:socialSimulation)
 AnnotationAssertion(rdfs:comment :term:TiPaC "A model of commuting in Aberdeenshire")
-AnnotationAssertion(rdfs:isDefinedBy :term:TiPaC top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:TiPaC metadata:JHI)
 AnnotationAssertion(rdfs:label :term:TiPaC "TiPaC"@en)
 
 # Individual: :term:TippingPoint (Tipping point)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:TippingPoint top-down-common:discipline:economics)
+AnnotationAssertion(metadata:partOfDiscipline :term:TippingPoint metadata:discipline:economics)
 AnnotationAssertion(rdfs:comment :term:TippingPoint "A major and sudden shift from one to a different state of the social system under study. This may entail a phase transition, if there is a structural change in the system (e.g. from a sparse to a connected social network); alternatively, it can be a jump from one to another equilibrium (e.g. the emergence of cooperative behaviour in a social dilemma like a public good game)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:TippingPoint top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :term:TippingPoint metadata:UBAH)
 AnnotationAssertion(rdfs:label :term:TippingPoint "Tipping point"@en)
-ClassAssertion(top-down-common:Term :term:TippingPoint)
+ClassAssertion(metadata:Term :term:TippingPoint)
 
 # Individual: :term:Transition (Transition)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Transition top-down-common:discipline:ethics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Transition top-down-common:discipline:innovationStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Transition top-down-common:discipline:philosophy)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Transition top-down-common:discipline:publicAdministration)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Transition top-down-common:discipline:sustainableDevelopment)
-AnnotationAssertion(rdfs:isDefinedBy :term:Transition top-down-common:TUD)
+AnnotationAssertion(metadata:partOfDiscipline :term:Transition metadata:discipline:ethics)
+AnnotationAssertion(metadata:partOfDiscipline :term:Transition metadata:discipline:innovationStudies)
+AnnotationAssertion(metadata:partOfDiscipline :term:Transition metadata:discipline:philosophy)
+AnnotationAssertion(metadata:partOfDiscipline :term:Transition metadata:discipline:publicAdministration)
+AnnotationAssertion(metadata:partOfDiscipline :term:Transition metadata:discipline:sustainableDevelopment)
+AnnotationAssertion(rdfs:isDefinedBy :term:Transition metadata:TUD)
 AnnotationAssertion(rdfs:label :term:Transition "Transition"@en)
-ClassAssertion(top-down-common:Term :term:Transition)
+ClassAssertion(metadata:Term :term:Transition)
 
 # Individual: :term:Vision (Vision)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Vision top-down-common:discipline:ecologicalEconomics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Vision top-down-common:discipline:happinessResearch)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Vision top-down-common:discipline:qualityOfLifeResearch)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Vision top-down-common:discipline:sustainabilityScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:Vision top-down-common:discipline:transformationScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:Vision metadata:discipline:ecologicalEconomics)
+AnnotationAssertion(metadata:partOfDiscipline :term:Vision metadata:discipline:happinessResearch)
+AnnotationAssertion(metadata:partOfDiscipline :term:Vision metadata:discipline:qualityOfLifeResearch)
+AnnotationAssertion(metadata:partOfDiscipline :term:Vision metadata:discipline:sustainabilityScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:Vision metadata:discipline:transformationScience)
 AnnotationAssertion(rdfs:comment :term:Vision "A future vision is a normative or desirable image of the future. In Glamurs we develop visions of sustainable lifestyles up to 2040."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:Vision top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :term:Vision metadata:UFZ)
 AnnotationAssertion(rdfs:label :term:Vision "Vision"@en)
-ClassAssertion(top-down-common:Term :term:Vision)
+ClassAssertion(metadata:Term :term:Vision)
 
 # Individual: :term:VoluntarySimplicity (Voluntary simplicity)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:VoluntarySimplicity top-down-common:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:VoluntarySimplicity metadata:discipline:psychology)
 AnnotationAssertion(rdfs:comment :term:VoluntarySimplicity "Voluntary simplicity is a lifestyle approach that rejects materialistic and consumption-intensive habits in favour of low-consumption lifestyle choices, and non-material/non-financial sources of wellbeing, self-sufficiency and lifestyle satisfaction."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:VoluntarySimplicity top-down-common:UVT)
+AnnotationAssertion(rdfs:isDefinedBy :term:VoluntarySimplicity metadata:UVT)
 AnnotationAssertion(rdfs:label :term:VoluntarySimplicity "Voluntary simplicity"@en)
-ClassAssertion(top-down-common:Term :term:VoluntarySimplicity)
+ClassAssertion(metadata:Term :term:VoluntarySimplicity)
 
 # Individual: :term:altruism (Altruism)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:altruism top-down-common:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:altruism metadata:discipline:psychology)
 AnnotationAssertion(rdfs:comment :term:altruism "Selflessness. Can be defined as a personal value, trait or motivation to act towards the welfare of others, even at the cost of personal benefits."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:altruism top-down-common:UVT)
+AnnotationAssertion(rdfs:isDefinedBy :term:altruism metadata:UVT)
 AnnotationAssertion(rdfs:label :term:altruism "Altruism"@en)
-ClassAssertion(top-down-common:Term :term:altruism)
+ClassAssertion(metadata:Term :term:altruism)
 
 # Individual: :term:attitude (Attitude)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:attitude top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:attitude top-down-common:UNIROMA3)
+AnnotationAssertion(metadata:partOfDiscipline :term:attitude metadata:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:attitude metadata:UNIROMA3)
 AnnotationAssertion(rdfs:label :term:attitude "Attitude"@en)
-ClassAssertion(top-down-common:Term :term:attitude)
+ClassAssertion(metadata:Term :term:attitude)
 
 # Individual: :term:environmentalFootprint (Environmental footprint)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalFootprint top-down-common:discipline:economics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalFootprint top-down-common:discipline:industrialEcology)
+AnnotationAssertion(metadata:partOfDiscipline :term:environmentalFootprint metadata:discipline:economics)
+AnnotationAssertion(metadata:partOfDiscipline :term:environmentalFootprint metadata:discipline:industrialEcology)
 AnnotationAssertion(rdfs:comment :term:environmentalFootprint "An aggregated indicator intended to be a proxy of the human impact on the environment by estimating emissions or resource use embodied in consumption."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:environmentalFootprint top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :term:environmentalFootprint metadata:NTNU)
 AnnotationAssertion(rdfs:label :term:environmentalFootprint "Environmental footprint"@en)
-ClassAssertion(top-down-common:Term :term:environmentalFootprint)
+ClassAssertion(metadata:Term :term:environmentalFootprint)
 
 # Individual: :term:environmentalOrSustainabilityConcern (Environmental concern or sustainability concern)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalOrSustainabilityConcern top-down-common:discipline:psychology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:environmentalOrSustainabilityConcern top-down-common:discipline:sociology)
+AnnotationAssertion(metadata:partOfDiscipline :term:environmentalOrSustainabilityConcern metadata:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:environmentalOrSustainabilityConcern metadata:discipline:sociology)
 AnnotationAssertion(rdfs:comment :term:environmentalOrSustainabilityConcern "Psychological construct, covering the intention to contribute to pro-environmental activities (activities of relevance fÃƒÂ¼r sustainable development)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:environmentalOrSustainabilityConcern top-down-common:OVGU)
+AnnotationAssertion(rdfs:isDefinedBy :term:environmentalOrSustainabilityConcern metadata:OVGU)
 AnnotationAssertion(rdfs:label :term:environmentalOrSustainabilityConcern "Environmental concern or sustainability concern"@en)
-ClassAssertion(top-down-common:Term :term:environmentalOrSustainabilityConcern)
+ClassAssertion(metadata:Term :term:environmentalOrSustainabilityConcern)
 
 # Individual: :term:futureVision (Future vision)
 
 AnnotationAssertion(rdfs:label :term:futureVision "Future vision"@en)
-ClassAssertion(top-down-common:Term :term:futureVision)
+ClassAssertion(metadata:Term :term:futureVision)
 
 # Individual: :term:greenLifestyle (Green lifestyle)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:greenLifestyle top-down-common:discipline:agentBasedModelling)
+AnnotationAssertion(metadata:partOfDiscipline :term:greenLifestyle metadata:discipline:agentBasedModelling)
 AnnotationAssertion(rdfs:comment :term:greenLifestyle "\"Actually I think the term is self-contradictory with respect to scale. It is impossible to know whether a lifestyle is 'green'... Lifetyle is an individual thing, greenness a global thing. (Similarly, sustainable lifestyle, which is also contradictory with respect to time.)
 
 In general, however, I suspect what is meant is lifestyles that at least at some level involve choices and aspirations that are associated with lower supposed environmental impact.\""@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:greenLifestyle top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:greenLifestyle metadata:JHI)
 AnnotationAssertion(rdfs:label :term:greenLifestyle "Green lifestyle"@en)
-ClassAssertion(top-down-common:Term :term:greenLifestyle)
+ClassAssertion(metadata:Term :term:greenLifestyle)
 
 # Individual: :term:psychologicalWellBeing (Psychological well-being)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:psychologicalWellBeing top-down-common:discipline:behaviouralScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:psychologicalWellBeing top-down-common:discipline:psychology)
-AnnotationAssertion(rdfs:isDefinedBy :term:psychologicalWellBeing top-down-common:UNIROMA3)
+AnnotationAssertion(metadata:partOfDiscipline :term:psychologicalWellBeing metadata:discipline:behaviouralScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:psychologicalWellBeing metadata:discipline:psychology)
+AnnotationAssertion(rdfs:isDefinedBy :term:psychologicalWellBeing metadata:UNIROMA3)
 AnnotationAssertion(rdfs:label :term:psychologicalWellBeing "Psychological well-being"@en)
-ClassAssertion(top-down-common:Term :term:psychologicalWellBeing)
-SameIndividual(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) :term:psychologicalWellBeing :term:wellBeing)
+ClassAssertion(metadata:Term :term:psychologicalWellBeing)
+SameIndividual(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) :term:psychologicalWellBeing :term:wellBeing)
 
 # Individual: :term:scenario (Scenario)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:scenario top-down-common:discipline:ecologicalEconomics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:scenario top-down-common:discipline:happinessResearch)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:scenario top-down-common:discipline:qualityOfLifeResearch)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:scenario top-down-common:discipline:sustainabilityScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:scenario top-down-common:discipline:transformationScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:scenario metadata:discipline:ecologicalEconomics)
+AnnotationAssertion(metadata:partOfDiscipline :term:scenario metadata:discipline:happinessResearch)
+AnnotationAssertion(metadata:partOfDiscipline :term:scenario metadata:discipline:qualityOfLifeResearch)
+AnnotationAssertion(metadata:partOfDiscipline :term:scenario metadata:discipline:sustainabilityScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:scenario metadata:discipline:transformationScience)
 AnnotationAssertion(rdfs:comment :term:scenario "A scenario is not a prediction of what the future will be. Rather it is a description about how the future might unfold. Scenarios explore the possible, not just the probable, and challenge their users to think beyond conventional wisdom. It is a coherent, internally consistent and plausible explanation of how events unfold over time (JÃ¤ger et al., 2008; Gallopin et al., 1997)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:scenario top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :term:scenario metadata:UFZ)
 AnnotationAssertion(rdfs:label :term:scenario "Scenario"@en)
-ClassAssertion(top-down-common:Term :term:scenario)
+ClassAssertion(metadata:Term :term:scenario)
 
 # Individual: :term:simulates (Simulates)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:simulates top-down-common:discipline:socialSimulation)
+AnnotationAssertion(metadata:partOfDiscipline :term:simulates metadata:discipline:socialSimulation)
 AnnotationAssertion(rdfs:comment :term:simulates "If something A simulates something else B, then there is a Model of which A is a part and is argued by the designer of the model to be an abstraction or representation of a real-world entity B."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:simulates top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:simulates metadata:JHI)
 AnnotationAssertion(rdfs:label :term:simulates "Simulates"@en)
-ClassAssertion(top-down-common:Term :term:simulates)
+ClassAssertion(metadata:Term :term:simulates)
 
 # Individual: :term:socialPractice (Social practice)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:socialPractice top-down-common:discipline:industrialEcology)
+AnnotationAssertion(metadata:partOfDiscipline :term:socialPractice metadata:discipline:industrialEcology)
 AnnotationAssertion(rdfs:comment :term:socialPractice "A routinised way in which bodies are moved, objects are handled, subjects are treated, things are described and the world is understood."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:socialPractice top-down-common:TUD)
+AnnotationAssertion(rdfs:isDefinedBy :term:socialPractice metadata:TUD)
 AnnotationAssertion(rdfs:label :term:socialPractice "Social practice"@en)
-ClassAssertion(top-down-common:Term :term:socialPractice)
+ClassAssertion(metadata:Term :term:socialPractice)
 
 # Individual: :term:sufficiency (Sufficiency)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:sufficiency top-down-common:discipline:foresight)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:sufficiency top-down-common:discipline:innovationStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:sufficiency top-down-common:discipline:transitionManagement)
+AnnotationAssertion(metadata:partOfDiscipline :term:sufficiency metadata:discipline:foresight)
+AnnotationAssertion(metadata:partOfDiscipline :term:sufficiency metadata:discipline:innovationStudies)
+AnnotationAssertion(metadata:partOfDiscipline :term:sufficiency metadata:discipline:transitionManagement)
 AnnotationAssertion(rdfs:comment :term:sufficiency "Sufficiency stands for consumption and lifestyles in which the level of material consumption is strongly reduced, and in which quality of life is more determined by wellbeing, social relationships, more quality time, less time pressure. It can also be related to alternative economic models like degrowth, steady state (developed by Herman Daly), and Tim Jacksons (2009) plea for prosperity without growth"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:sufficiency top-down-common:TUD)
+AnnotationAssertion(rdfs:isDefinedBy :term:sufficiency metadata:TUD)
 AnnotationAssertion(rdfs:label :term:sufficiency "Sufficiency"@en)
-ClassAssertion(top-down-common:Term :term:sufficiency)
+ClassAssertion(metadata:Term :term:sufficiency)
 
 # Individual: :term:upscaling (Up-scaling)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:architecture)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:economics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:environmentalScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:industrialEcology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:innovationStudies)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:philosophy)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:psychology)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:upscaling top-down-common:discipline:sociology)
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:SERI) rdfs:comment :term:upscaling "To advance something to a higher level of application. Or to put it differently: to consider something from another perspective - \"\"think bigger\"\""@en)
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:TUD) rdfs:comment :term:upscaling "To increase the spatial coverage of a certain phenomenon (in the case of Glamurs it considers the sptial coverage of sustainable lifestyles)"@en)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:architecture)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:economics)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:environmentalScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:industrialEcology)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:innovationStudies)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:philosophy)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:upscaling metadata:discipline:sociology)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:SERI) rdfs:comment :term:upscaling "To advance something to a higher level of application. Or to put it differently: to consider something from another perspective - \"\"think bigger\"\""@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:TUD) rdfs:comment :term:upscaling "To increase the spatial coverage of a certain phenomenon (in the case of Glamurs it considers the sptial coverage of sustainable lifestyles)"@en)
 AnnotationAssertion(rdfs:label :term:upscaling "Up-scaling"@en)
-ClassAssertion(top-down-common:Term :term:upscaling)
+ClassAssertion(metadata:Term :term:upscaling)
 
 # Individual: :term:valueActionGap (Value action gap)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:valueActionGap top-down-common:discipline:environmentalPsychology)
+AnnotationAssertion(metadata:partOfDiscipline :term:valueActionGap metadata:discipline:environmentalPsychology)
 AnnotationAssertion(rdfs:comment :term:valueActionGap "Lack of conformity between values towards the environment and actual behaviour"@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:valueActionGap top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :term:valueActionGap metadata:JHI)
 AnnotationAssertion(rdfs:label :term:valueActionGap "Value action gap"@en)
-ClassAssertion(top-down-common:Term :term:valueActionGap)
+ClassAssertion(metadata:Term :term:valueActionGap)
 
 # Individual: :term:wellBeing (Well-being)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :term:wellBeing top-down-common:discipline:ecologicalEconomics)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:wellBeing top-down-common:discipline:happinessResearch)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:wellBeing top-down-common:discipline:qualityOfLifeResearch)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:wellBeing top-down-common:discipline:sustainabilityScience)
-AnnotationAssertion(top-down-common:partOfDiscipline :term:wellBeing top-down-common:discipline:transformationScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:wellBeing metadata:discipline:ecologicalEconomics)
+AnnotationAssertion(metadata:partOfDiscipline :term:wellBeing metadata:discipline:happinessResearch)
+AnnotationAssertion(metadata:partOfDiscipline :term:wellBeing metadata:discipline:qualityOfLifeResearch)
+AnnotationAssertion(metadata:partOfDiscipline :term:wellBeing metadata:discipline:sustainabilityScience)
+AnnotationAssertion(metadata:partOfDiscipline :term:wellBeing metadata:discipline:transformationScience)
 AnnotationAssertion(rdfs:comment :term:wellBeing "Well-being is a dynamic concept that includes subjective, social, and psychological dimensions as well as health-related behaviors. The Ryff's conceptualization of Psychological Well-Being is a theoretically grounded framework that specifically focuses on measuring multiple facets of psychological well-being. These facets include the following: self-acceptance, the establishment of quality ties to other a sense of autonomy in thought and action, the ability to manage complex environments to suit personal needs and values the pursuit of meaningful goals and a sense of purpose in life continued growth and development as a person (Ryff & Singer, 2008)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :term:wellBeing top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :term:wellBeing metadata:UFZ)
 AnnotationAssertion(rdfs:label :term:wellBeing "Well-being"@en)
-ClassAssertion(top-down-common:Term :term:wellBeing)
+ClassAssertion(metadata:Term :term:wellBeing)
 
 
 )

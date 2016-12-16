@@ -1,4 +1,4 @@
-Prefix(:=<http://www.glamurs.eu/ontologies/2016/KB/metadata#>)
+Prefix(:=<http://www.glamurs.eu/ontologies/2016/KB/mirror#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://www.glamurs.eu/ontologies/2016/KB/metadata>
+Ontology(<http://www.glamurs.eu/ontologies/2016/KB/mirror>
 Annotation(:creator :author:DougSalt)
 Annotation(rdfs:comment "This is an ontology which will facilitate the conversion of classes into terms and give them an origin and type. It is envisaged that some kind of program will run on an ontology, convert the classes, data values and object values to individuals and categorise them, based on their origin and enity type and also point back to the class from which they were defined. This last is the annotation: \"describes\" and the ontology in which they were first defined is the annotation \"origin\"."@en)
 

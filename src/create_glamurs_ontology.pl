@@ -129,7 +129,7 @@ for my $doc (@ARGV) {
 			$prefix = $5; 
 			$prefix = $3 unless defined $prefix;
 
-			if  ($prefix =~ /^kb-/) {
+			if  ($prefix =~ /^mirror-/) {
 				print $OUTPUT "Import(<$current_ontology>)\n";
 				last;
 			}
@@ -160,7 +160,7 @@ for my $doc (@ARGV) {
 			print "ORIENTATION = $orientation\n";
 			my $short_name = ucfirst($prefix);
 			$short_name =~ s/\-(.)/\U$1/g;
-			next if  ($prefix =~ /^kb-/);
+			next if  ($prefix =~ /^mirror-/);
 			$type->{$prefix}->{"Class"} = $short_name . "OntologyClass";
 			print $OUTPUT "Declaration(Class(:" . $type->{$prefix}->{"Class"} . "))\n";
 			print $OUTPUT "SubClassOf(:" . $type->{$prefix}->{"Class"} . " star:" . $orientation . "OntologyClass)\n";
@@ -174,19 +174,19 @@ for my $doc (@ARGV) {
 			print $OUTPUT "SubDataPropertyOf(:" . $type->{$prefix}->{"DataProperty"} . " star:has" . $orientation . "OntologyDataProperty)\n";
 			print $OUTPUT "\n";
 		}
-		elsif (  $prefix eq "top-down-common" && $record =~ /Declaration\((Class|DataProperty|ObjectProperty)\(\:(.*)\)\)/ ){
+		elsif (  $prefix eq "metadata" && $record =~ /Declaration\((Class|DataProperty|ObjectProperty)\(\:(.*)\)\)/ ){
 			my $ontology_type = $1;
 			my $term = $2;
 			print $OUTPUT "Sub$ontology_type" . "Of($prefix:$term :" . $type->{$prefix}->{$ontology_type} . ")\n";			
 		}
-		elsif (  $prefix !~ /^kb-/ && $record =~ /Declaration\((Class|DataProperty|ObjectProperty)\(\:(.*)\)\)/ ){
+		elsif (  $prefix !~ /^mirror-/ && $record =~ /Declaration\((Class|DataProperty|ObjectProperty)\(\:(.*)\)\)/ ){
 			my $ontology_type = $1;
 			my $term = $2;
 			my $modded_prefix = $prefix;
- 		    $modded_prefix =~ s/^/kb-/ if $modded_prefix !~ /^:/;
+ 		    $modded_prefix =~ s/^/mirror-/ if $modded_prefix !~ /^:/;
 			print $OUTPUT "Sub$ontology_type" . "Of($prefix:$term :" . $type->{$prefix}->{$ontology_type} . ")\n";			
 			# The if on the next statement is because unlike all the other component ontologies the expert and questionnaire ontologies have 
-			# already defined their terms (along with a lot of other meta data not available to the other kb-* ontologies).
+			# already defined their terms (along with a lot of other meta data not available to the other mirror-* ontologies).
 			# I do not like this hard coding, but I cannot currently think of a better way of doing this.
 			print $OUTPUT "ObjectPropertyAssertion(star:hasOntologicalOrientation $modded_prefix:term:$term star:" . lcfirst($orientation) . ":ontology)\n"
 				if $prefix ne "questionnaire" && $prefix ne "expert";			
@@ -240,23 +240,23 @@ if (@process_files > 0) {
 					unless (defined $individual{$domain}) {
 						$domain =~ s/:/:term:/;
 						unless (defined $individual{$domain}) {
-							$domain =~ s/^/kb-/
+							$domain =~ s/^/mirror-/
 						}
 					}
 						
 					unless (defined $individual{$range}) {
 						$range =~ s/:/:term:/;
 						unless (defined $individual{$range}) {
-							$range =~ s/^/kb-/
+							$range =~ s/^/mirror-/
 						}
 					}
 					#$range =~ s/:/:term:/;
 					#$domain =~ s/:/:term:/;
 					# The if on the next two statements is because unlike all the other component ontologies the expert and questionnaire ontologies have 
-					# already defined their terms (along with a lot of other meta data not available to the other kb-* ontologies).
+					# already defined their terms (along with a lot of other meta data not available to the other mirror-* ontologies).
 					# I do not like this hard coding, but I cannot currently think of a better way of doing this.
-					#$domain =~ s/^/kb-/ unless $domain =~ /^:/ or $domain =~ /^expert:/ or $domain =~ /^questionnaire:/;
-					#$range =~ s/^/kb-/ unless $range =~ /^:/ or $range =~ /^expert:/ or $range =~ /^questionnaire:/;
+					#$domain =~ s/^/mirror-/ unless $domain =~ /^:/ or $domain =~ /^expert:/ or $domain =~ /^questionnaire:/;
+					#$range =~ s/^/mirror-/ unless $range =~ /^:/ or $range =~ /^expert:/ or $range =~ /^questionnaire:/;
 					print "ObjectPropertyAssertion(star:$relationship $domain $range)\n";
 					print $OUTPUT "ObjectPropertyAssertion(star:$relationship $domain $range)\n";
 				}

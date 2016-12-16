@@ -4,23 +4,23 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(basic:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic#>)
+Prefix(integration:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/integration#>)
 Prefix(expert:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/expert#>)
 Prefix(glamurs:=<http://www.glamurs.eu/ontologies/glamurs-WS20140131.owl#>)
 Prefix(core:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/core#>)
-Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/KB/metadata#>)
+Prefix(mirror:=<http://www.glamurs.eu/ontologies/2016/KB/mirror#>)
 Prefix(questionnaire:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/questionnaire#>)
-Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
-Prefix(kb-core:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-core#>)
-Prefix(kb-expert:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-expert#>)
-Prefix(kb-questionnaire:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-questionnaire#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata#>)
+Prefix(mirror-core:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-core#>)
+Prefix(mirror-expert:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-expert#>)
+Prefix(mirror-questionnaire:=<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-questionnaire#>)
 
 
 Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down>
-Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-expert>)
-Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-core>)
-Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/kb-questionnaire>)
-Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/basic>)
+Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-expert>)
+Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-core>)
+Import(<http://www.glamurs.eu/ontologies/2016/KB/top-down/mirror-questionnaire>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/integration>)
 
 Annotation(rdfs:comment "Note the conventions for this ontology are:
 
@@ -45,7 +45,7 @@ Annotation(rdfs:isDefinedBy :author:DougSalt)
 Annotation(owl:versionInfo "1.0"^^xsd:decimal)
 
 Declaration(NamedIndividual(:author:DougSalt))
-Declaration(NamedIndividual(basic:author:DougSalt))
+Declaration(NamedIndividual(integration:author:DougSalt))
 Declaration(AnnotationProperty(questionnaire:environmentalOrSustainabilityConcern))
 
 ############################
@@ -54,7 +54,7 @@ Declaration(AnnotationProperty(questionnaire:environmentalOrSustainabilityConcer
 
 # Annotation Property: questionnaire:environmentalOrSustainabilityConcern (environmental concern or sustainability concern)
 
-AnnotationPropertyDomain(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:environmentalOrSustainabilityConcern questionnaire:Person)
+AnnotationPropertyDomain(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) questionnaire:environmentalOrSustainabilityConcern questionnaire:Person)
 
 
 ############################
@@ -65,11 +65,11 @@ AnnotationPropertyDomain(Annotation(rdfs:isDefinedBy top-down-common:author:doug
 
 EquivalentClasses(core:Actor expert:Actor)
 EquivalentClasses(core:Actor questionnaire:Actor)
-SubClassOf(core:Actor ObjectSomeValuesFrom(basic:uses questionnaire:Interaction))
+SubClassOf(core:Actor ObjectSomeValuesFrom(integration:uses questionnaire:Interaction))
 
 # Class: core:EconomicSustainability (core:EconomicSustainability)
 
-SubClassOf(core:EconomicSustainability ObjectSomeValuesFrom(top-down-common:isPropertyOf questionnaire:Economy))
+SubClassOf(core:EconomicSustainability ObjectSomeValuesFrom(metadata:isPropertyOf questionnaire:Economy))
 
 # Class: core:EnergyUseInHomes (core:EnergyUseInHomes)
 
@@ -77,23 +77,23 @@ SubClassOf(core:EnergyUseInHomes expert:EnergyUse)
 
 # Class: core:EnvironmentalSustainability (core:EnvironmentalSustainability)
 
-SubClassOf(core:EnvironmentalSustainability ObjectSomeValuesFrom(top-down-common:isPropertyOf expert:Environment))
+SubClassOf(core:EnvironmentalSustainability ObjectSomeValuesFrom(metadata:isPropertyOf expert:Environment))
 
 # Class: core:Food (core:Food)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Food ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Person))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Food ObjectSomeValuesFrom(integration:isUsedBy questionnaire:Person))
 
 # Class: core:IndividualSustainability (core:IndividualSustainability)
 
-SubClassOf(core:IndividualSustainability ObjectSomeValuesFrom(top-down-common:isPropertyOf questionnaire:Person))
+SubClassOf(core:IndividualSustainability ObjectSomeValuesFrom(metadata:isPropertyOf questionnaire:Person))
 
 # Class: core:Knowledge (core:Knowledge)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Knowledge ObjectSomeValuesFrom(basic:isModifedBy expert:KnowledgeAcquisition))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Knowledge ObjectSomeValuesFrom(integration:isModifedBy expert:KnowledgeAcquisition))
 
 # Class: core:LifestyleDomain (core:LifestyleDomain)
 
-SubClassOf(core:LifestyleDomain ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Actor))
+SubClassOf(core:LifestyleDomain ObjectSomeValuesFrom(integration:isUsedBy questionnaire:Actor))
 
 # Class: core:Nation (core:Nation)
 
@@ -101,11 +101,11 @@ SubClassOf(core:Nation expert:Place)
 
 # Class: core:Policymaker (core:Policymaker)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Policymaker questionnaire:Person)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Policymaker questionnaire:Person)
 
 # Class: core:Project (core:Project)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) core:Project ObjectSomeValuesFrom(basic:uses core:Researcher))
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) core:Project ObjectSomeValuesFrom(integration:uses core:Researcher))
 
 # Class: core:Region (core:Region)
 
@@ -114,37 +114,37 @@ SubClassOf(core:Region expert:Place)
 
 # Class: core:Researcher (core:Researcher)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Researcher questionnaire:Person)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Researcher questionnaire:Person)
 
 # Class: core:Thinking (core:Thinking)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Thinking top-down-common:Process)
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Thinking ObjectUnionOf(ObjectSomeValuesFrom(basic:isModifedBy expert:KnowledgeAcquisition) ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Experience) ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Theory)))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Thinking metadata:Process)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Thinking ObjectUnionOf(ObjectSomeValuesFrom(integration:isModifedBy expert:KnowledgeAcquisition) ObjectSomeValuesFrom(integration:isModifedBy questionnaire:Experience) ObjectSomeValuesFrom(integration:isModifedBy questionnaire:Theory)))
 
 # Class: core:Transformation (core:Transformation)
 
-EquivalentClasses(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Transformation questionnaire:Transition)
+EquivalentClasses(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Transformation questionnaire:Transition)
 
 # Class: core:Transport (core:Transport)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) core:Transport ObjectSomeValuesFrom(basic:isUsedBy expert:Travel))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) core:Transport ObjectSomeValuesFrom(integration:isUsedBy expert:Travel))
 
 # Class: :Satisfaction (:Satisfaction)
 
 AnnotationAssertion(rdfs:isDefinedBy :Satisfaction :author:DougSalt)
-SubClassOf(:Satisfaction top-down-common:SuggestedClass)
+SubClassOf(:Satisfaction metadata:SuggestedClass)
 
 # Class: expert:Actor (Actor)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Actor ObjectSomeValuesFrom(basic:partOf core:Project))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:Actor ObjectSomeValuesFrom(integration:partOf core:Project))
 
 # Class: expert:BehaviourChange (Behaviour change)
 
-SubClassOf(expert:BehaviourChange ObjectSomeValuesFrom(basic:partOf expert:LifestyleChange))
+SubClassOf(expert:BehaviourChange ObjectSomeValuesFrom(integration:partOf expert:LifestyleChange))
 
 # Class: expert:CapabilityApproach (Capability approach)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:CapabilityApproach questionnaire:Theory)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) expert:CapabilityApproach questionnaire:Theory)
 
 # Class: expert:Country (Country)
 
@@ -152,56 +152,56 @@ SubClassOf(expert:Country questionnaire:Agent)
 
 # Class: expert:CriticalAnalysis (Critical analysis)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:CriticalAnalysis core:Thinking)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) expert:CriticalAnalysis core:Thinking)
 
 # Class: expert:Decision (Decision)
 
 EquivalentClasses(expert:Decision questionnaire:DecisionMaking)
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:Decision ObjectSomeValuesFrom(basic:wasCreatedBy questionnaire:Individual))
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) expert:Decision ObjectSomeValuesFrom(integration:wasCreatedBy questionnaire:Individual))
 
 # Class: expert:EconomicOutput (Economic output)
 
-SubClassOf(expert:EconomicOutput ObjectSomeValuesFrom(basic:requires questionnaire:Economy))
+SubClassOf(expert:EconomicOutput ObjectSomeValuesFrom(integration:requires questionnaire:Economy))
 
 # Class: expert:Economy (Economy)
 
-SubClassOf(expert:Economy ObjectSomeValuesFrom(basic:uses expert:EconomicSystem))
+SubClassOf(expert:Economy ObjectSomeValuesFrom(integration:uses expert:EconomicSystem))
 
 # Class: expert:Energy (Energy)
 
-SubClassOf(expert:Energy ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Actor))
+SubClassOf(expert:Energy ObjectSomeValuesFrom(integration:isUsedBy questionnaire:Actor))
 
 # Class: expert:Environment (Environment)
 
-SubClassOf(expert:Environment ObjectSomeValuesFrom(basic:hasPart questionnaire:Ecosystem))
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Environment ObjectSomeValuesFrom(basic:isModifedBy expert:EnvironmentalImpact))
+SubClassOf(expert:Environment ObjectSomeValuesFrom(integration:hasPart questionnaire:Ecosystem))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:Environment ObjectSomeValuesFrom(integration:isModifedBy expert:EnvironmentalImpact))
 
 # Class: expert:Experience (expert:Experience)
 
 EquivalentClasses(expert:Experience questionnaire:Experience)
-SubClassOf(expert:Experience ObjectSomeValuesFrom(basic:creates core:Knowledge))
+SubClassOf(expert:Experience ObjectSomeValuesFrom(integration:creates core:Knowledge))
 
 # Class: expert:FocusGroup (Focus group)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:FocusGroup questionnaire:Collective)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:FocusGroup questionnaire:Collective)
 
 # Class: expert:Government (Government)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:Government expert:Actor)
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Government ObjectSomeValuesFrom(basic:hasPart questionnaire:Governance))
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Government ObjectSomeValuesFrom(basic:partOf expert:Country))
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) expert:Government expert:Actor)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:Government ObjectSomeValuesFrom(integration:hasPart questionnaire:Governance))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:Government ObjectSomeValuesFrom(integration:partOf expert:Country))
 
 # Class: expert:GreenGrowth (Green growth)
 
-SubClassOf(expert:GreenGrowth ObjectSomeValuesFrom(basic:partOf expert:EconomicSystem))
+SubClassOf(expert:GreenGrowth ObjectSomeValuesFrom(integration:partOf expert:EconomicSystem))
 
 # Class: expert:Interaction (Interaction)
 
-SubClassOf(expert:Interaction ObjectSomeValuesFrom(basic:creates questionnaire:Experience))
+SubClassOf(expert:Interaction ObjectSomeValuesFrom(integration:creates questionnaire:Experience))
 
 # Class: expert:KnowledgeAcquisition (expert:KnowledgeAcquisition)
 
-SubClassOf(expert:KnowledgeAcquisition ObjectSomeValuesFrom(basic:modifies core:Knowledge))
+SubClassOf(expert:KnowledgeAcquisition ObjectSomeValuesFrom(integration:modifies core:Knowledge))
 
 # Class: expert:LifeSatisfaction (Life satisfaction)
 
@@ -209,19 +209,19 @@ SubClassOf(expert:LifeSatisfaction :Satisfaction)
 
 # Class: expert:LifestyleChange (Lifestyle change)
 
-SubClassOf(expert:LifestyleChange ObjectSomeValuesFrom(basic:modifies core:LifestyleDomain))
+SubClassOf(expert:LifestyleChange ObjectSomeValuesFrom(integration:modifies core:LifestyleDomain))
 
 # Class: expert:Mood (Mood)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Mood ObjectSomeValuesFrom(basic:isModifedBy core:WorkLifeBalance))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:Mood ObjectSomeValuesFrom(integration:isModifedBy core:WorkLifeBalance))
 
 # Class: expert:NetworkAnalysis (Network analysis)
 
-SubClassOf(expert:NetworkAnalysis ObjectSomeValuesFrom(basic:isUsedBy questionnaire:Theory))
+SubClassOf(expert:NetworkAnalysis ObjectSomeValuesFrom(integration:isUsedBy questionnaire:Theory))
 
 # Class: expert:Place (Place)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:Place core:Geography)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:Place core:Geography)
 
 # Class: expert:PostiveFeedback (Positive feedback)
 
@@ -229,11 +229,11 @@ SubClassOf(expert:PostiveFeedback questionnaire:Feedback)
 
 # Class: expert:Product (Product)
 
-SubClassOf(expert:Product ObjectSomeValuesFrom(basic:uses expert:SupplyChain))
+SubClassOf(expert:Product ObjectSomeValuesFrom(integration:uses expert:SupplyChain))
 
 # Class: expert:PublicGood (Public good)
 
-SubClassOf(expert:PublicGood ObjectSomeValuesFrom(basic:isModifedBy top-down-common:Policy))
+SubClassOf(expert:PublicGood ObjectSomeValuesFrom(integration:isModifedBy metadata:Policy))
 
 # Class: expert:ReboundEffect (Rebound effect)
 
@@ -241,25 +241,25 @@ EquivalentClasses(expert:ReboundEffect questionnaire:ReboundEffect)
 
 # Class: expert:SelfReflection (expert:SelfReflection)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:SelfReflection core:Thinking)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:SelfReflection core:Thinking)
 
 # Class: expert:SocialIdentityTheory (Social identity theory)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:SocialIdentityTheory questionnaire:Theory)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:SocialIdentityTheory questionnaire:Theory)
 
 # Class: expert:SocialNetwork (Social network)
 
 SubClassOf(expert:SocialNetwork expert:SocialNetwork)
 SubClassOf(expert:SocialNetwork questionnaire:Network)
-SubClassOf(expert:SocialNetwork ObjectSomeValuesFrom(top-down-common:hasProperty core:SocialSustainability))
+SubClassOf(expert:SocialNetwork ObjectSomeValuesFrom(metadata:hasProperty core:SocialSustainability))
 
 # Class: expert:Society (Society)
 
-SubClassOf(expert:Society ObjectSomeValuesFrom(basic:modifies core:SocialSustainability))
+SubClassOf(expert:Society ObjectSomeValuesFrom(integration:modifies core:SocialSustainability))
 
 # Class: expert:Space (Space)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) expert:Space core:Geography)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) expert:Space core:Geography)
 
 # Class: expert:Stakeholder (Stakeholder)
 
@@ -267,99 +267,99 @@ SubClassOf(expert:Stakeholder core:Actor)
 
 # Class: expert:TravelBehaviour (Travel behaviour)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) expert:TravelBehaviour questionnaire:Behaviour)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) expert:TravelBehaviour questionnaire:Behaviour)
 
 # Class: questionnaire:Behaviour (Behaviour)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(basic:isModifedBy core:Knowledge))
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(basic:isModifedBy core:Thinking))
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(basic:isModifedBy expert:BehaviourChange))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(integration:isModifedBy core:Knowledge))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(integration:isModifedBy core:Thinking))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Behaviour ObjectSomeValuesFrom(integration:isModifedBy expert:BehaviourChange))
 
 # Class: questionnaire:BehaviouralPotential (Behavioural potential)
 
-SubClassOf(questionnaire:BehaviouralPotential ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Learning))
+SubClassOf(questionnaire:BehaviouralPotential ObjectSomeValuesFrom(integration:isModifedBy questionnaire:Learning))
 
 # Class: questionnaire:CollectiveThinking (Collective thinking)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:CollectiveThinking core:Thinking)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) questionnaire:CollectiveThinking core:Thinking)
 
 # Class: questionnaire:Commuter (Commuter)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Commuter questionnaire:Person)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Commuter questionnaire:Person)
 
 # Class: questionnaire:Construct (Construct)
 
-SubClassOf(questionnaire:Construct ObjectSomeValuesFrom(basic:partOf questionnaire:Theory))
+SubClassOf(questionnaire:Construct ObjectSomeValuesFrom(integration:partOf questionnaire:Theory))
 
 # Class: questionnaire:CriticalMass (Critical mass)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:CriticalMass ObjectSomeValuesFrom(basic:partOf questionnaire:Theory))
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) questionnaire:CriticalMass ObjectSomeValuesFrom(integration:partOf questionnaire:Theory))
 
 # Class: questionnaire:Degrowth (Degrowth)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Degrowth expert:GreenGrowth)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Degrowth expert:GreenGrowth)
 
 # Class: questionnaire:Ecosystem (Ecosystem)
 
-SubClassOf(questionnaire:Ecosystem ObjectSomeValuesFrom(basic:modifies expert:Environment))
-SubClassOf(questionnaire:Ecosystem ObjectSomeValuesFrom(basic:requires expert:Environment))
+SubClassOf(questionnaire:Ecosystem ObjectSomeValuesFrom(integration:modifies expert:Environment))
+SubClassOf(questionnaire:Ecosystem ObjectSomeValuesFrom(integration:requires expert:Environment))
 
 # Class: questionnaire:Footprint (Footprint)
 
-SubClassOf(questionnaire:Footprint ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Agent))
+SubClassOf(questionnaire:Footprint ObjectSomeValuesFrom(integration:isModifedBy questionnaire:Agent))
 
 # Class: questionnaire:GrassrootsMovement (Grassroots movement)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:GrassrootsMovement questionnaire:Collective)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) questionnaire:GrassrootsMovement questionnaire:Collective)
 
 # Class: questionnaire:InformationProcessing (Information processing)
 
-SubClassOf(questionnaire:InformationProcessing ObjectSomeValuesFrom(basic:uses questionnaire:Information))
+SubClassOf(questionnaire:InformationProcessing ObjectSomeValuesFrom(integration:uses questionnaire:Information))
 
 # Class: questionnaire:Item (Item)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Item ObjectSomeValuesFrom(basic:partOf questionnaire:Theory))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Item ObjectSomeValuesFrom(integration:partOf questionnaire:Theory))
 
 # Class: questionnaire:Learning (Learning)
 
-SubClassOf(questionnaire:Learning ObjectSomeValuesFrom(basic:isModifedBy questionnaire:Attention))
+SubClassOf(questionnaire:Learning ObjectSomeValuesFrom(integration:isModifedBy questionnaire:Attention))
 
 # Class: questionnaire:Model (Model)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Model ObjectSomeValuesFrom(basic:isModifedBy questionnaire:ModelAccuracy))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Model ObjectSomeValuesFrom(integration:isModifedBy questionnaire:ModelAccuracy))
 
 # Class: questionnaire:PathAnalysis (Path analysis)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:PathAnalysis questionnaire:Theory)
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:PathAnalysis ObjectSomeValuesFrom(basic:hasPart questionnaire:PathCoefficient))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:PathAnalysis questionnaire:Theory)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:PathAnalysis ObjectSomeValuesFrom(integration:hasPart questionnaire:PathCoefficient))
 
 # Class: questionnaire:Person (questionnaire:Person)
 
-SubClassOf(questionnaire:Person ObjectSomeValuesFrom(basic:hasProperty :Satisfaction))
+SubClassOf(questionnaire:Person ObjectSomeValuesFrom(integration:hasProperty :Satisfaction))
 
 # Class: questionnaire:Policy (questionnaire:Policy)
 
-SubClassOf(questionnaire:Policy ObjectSomeValuesFrom(basic:isModifedBy core:Policymaker))
+SubClassOf(questionnaire:Policy ObjectSomeValuesFrom(integration:isModifedBy core:Policymaker))
 
 # Class: questionnaire:SelfPerception (Self perception)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:SelfPerception core:Knowledge)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:SelfPerception core:Knowledge)
 
 # Class: questionnaire:SpillOver (Spill-over)
 
-SubClassOf(Annotation(rdfs:isDefinedBy top-down-common:author:dougSalt) questionnaire:SpillOver questionnaire:Theory)
+SubClassOf(Annotation(rdfs:isDefinedBy metadata:author:dougSalt) questionnaire:SpillOver questionnaire:Theory)
 
 # Class: questionnaire:Theory (Theory)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Theory ObjectUnionOf(ObjectSomeValuesFrom(top-down-common:isPropertyOf core:Transformation) ObjectSomeValuesFrom(basic:isUsedBy core:Researcher)))
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Theory ObjectUnionOf(ObjectSomeValuesFrom(metadata:isPropertyOf core:Transformation) ObjectSomeValuesFrom(integration:isUsedBy core:Researcher)))
 
 # Class: questionnaire:Vision (Vision)
 
-SubClassOf(Annotation(rdfs:isDefinedBy basic:author:DougSalt) questionnaire:Vision core:Thinking)
+SubClassOf(Annotation(rdfs:isDefinedBy integration:author:DougSalt) questionnaire:Vision core:Thinking)
 
-# Class: top-down-common:Institution (Institution)
+# Class: metadata:Institution (Institution)
 
-SubClassOf(top-down-common:Institution expert:Actor)
+SubClassOf(metadata:Institution expert:Actor)
 
 
 ############################
@@ -370,9 +370,9 @@ SubClassOf(top-down-common:Institution expert:Actor)
 
 AnnotationAssertion(rdfs:label :author:DougSalt "Doug Salt")
 
-# Individual: basic:author:DougSalt (Doug Salt)
+# Individual: integration:author:DougSalt (Doug Salt)
 
-AnnotationAssertion(rdfs:label basic:author:DougSalt "Doug Salt")
+AnnotationAssertion(rdfs:label integration:author:DougSalt "Doug Salt")
 
 
 AnnotationAssertion(rdfs:label core:hasContext "has context"@en)

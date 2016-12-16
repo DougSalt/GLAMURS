@@ -4,11 +4,11 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata#>)
 
 
 Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/glossary>
-Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata>)
 Annotation(rdfs:comment "1.0"^^xsd:decimal)
 Annotation(rdfs:comment "Note the conventions for this ontology are:
 
@@ -40,8 +40,8 @@ Annotation(rdfs:comment "The methodology for the creation of this ontology is as
 Annotation(rdfs:isDefinedBy "Doug Salt")
 
 Declaration(Class(:NotInGlossary))
-Declaration(Class(top-down-common:Glossary))
-Declaration(Class(top-down-common:Term))
+Declaration(Class(metadata:Glossary))
+Declaration(Class(metadata:Term))
 Declaration(NamedIndividual(:actor))
 Declaration(NamedIndividual(:agents))
 Declaration(NamedIndividual(:altruism))
@@ -107,7 +107,7 @@ Declaration(NamedIndividual(:utility))
 Declaration(NamedIndividual(:values))
 Declaration(NamedIndividual(:voluntarySimplicityLifestyle))
 Declaration(NamedIndividual(:waterFootprint))
-Declaration(AnnotationProperty(top-down-common:partOfDiscipline))
+Declaration(AnnotationProperty(metadata:partOfDiscipline))
 
 
 ############################
@@ -117,7 +117,7 @@ Declaration(AnnotationProperty(top-down-common:partOfDiscipline))
 # Class: :NotInGlossary (:NotInGlossary)
 
 AnnotationAssertion(rdfs:comment :NotInGlossary "Not in glossary"@en)
-SubClassOf(:NotInGlossary top-down-common:Glossary)
+SubClassOf(:NotInGlossary metadata:Glossary)
 
 
 ############################
@@ -127,9 +127,9 @@ SubClassOf(:NotInGlossary top-down-common:Glossary)
 # Individual: :actor (Actor)
 
 AnnotationAssertion(rdfs:comment :actor "An actor is an individual person, a group of persons or an organisation. Actors are part of a network; within an initiative there are actors or networks of actors. You can either use their name (Tim Miller) or their role (representative of the community"@en)
-AnnotationAssertion(rdfs:isDefinedBy :actor top-down-common:TUD)
+AnnotationAssertion(rdfs:isDefinedBy :actor metadata:TUD)
 AnnotationAssertion(rdfs:label :actor "Actor"@en)
-ClassAssertion(top-down-common:Term :actor)
+ClassAssertion(metadata:Term :actor)
 
 # Individual: :agents (Agents)
 
@@ -141,145 +141,145 @@ AnnotationAssertion(rdfs:comment :agents "Refers broadly to a bundle of data and
 + autonomy (self-activation and self-determinism based on private internal processes), (Borril & Tesfatsion, 2011).
 
 [See also](http://www2.econ.iastate.edu/tesfatsi/ace.htm)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :agents top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :agents metadata:JHI)
 AnnotationAssertion(rdfs:label :agents "Agents"@en)
-ClassAssertion(top-down-common:Term :agents)
+ClassAssertion(metadata:Term :agents)
 
 # Individual: :altruism (Altruism)
 
 AnnotationAssertion(rdfs:comment :altruism "Concern for others. Environmental concern may be a form of altruism."@en)
-AnnotationAssertion(rdfs:isDefinedBy :altruism top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :altruism metadata:UBAH)
 AnnotationAssertion(rdfs:label :altruism "Altruism"@en)
-ClassAssertion(top-down-common:Term :altruism)
+ClassAssertion(metadata:Term :altruism)
 
 # Individual: :attitude (Attitude)
 
 AnnotationAssertion(rdfs:comment :attitude "A psychological tendency that is expressed by evaluating a particular entity with some degree of favour or disfavour."@en)
-AnnotationAssertion(rdfs:isDefinedBy :attitude top-down-common:UVT)
+AnnotationAssertion(rdfs:isDefinedBy :attitude metadata:UVT)
 AnnotationAssertion(rdfs:label :attitude "Attitude"@en)
-ClassAssertion(top-down-common:Term :attitude)
+ClassAssertion(metadata:Term :attitude)
 
 # Individual: :attribute (Attribute)
 
 AnnotationAssertion(rdfs:comment :attribute "In OWL, attributes are called datatype properties. They provide a vocabulary for describing individuals according to data values, such as age or date of birth. See (http://www.w3.org/TR/2012/REC-owl2-primer-20121211/#Datatypes)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :attribute top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :attribute metadata:JHI)
 AnnotationAssertion(rdfs:label :attribute "Attribute"@en)
-ClassAssertion(top-down-common:Term :attribute)
+ClassAssertion(metadata:Term :attribute)
 
 # Individual: :backcasting (Backcasting)
 
 AnnotationAssertion(rdfs:comment :backcasting "Backcasting literally means looking back from the future. It can be defined as \"generating a desirable future, and then looking backwards from that future to the present in order to strategize and to plan how it could be achieved\" (Vergragt & Quist, 2011: 747)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :backcasting top-down-common:TUD)
+AnnotationAssertion(rdfs:isDefinedBy :backcasting metadata:TUD)
 AnnotationAssertion(rdfs:label :backcasting "Backcasting"@en)
-ClassAssertion(top-down-common:Term :backcasting)
+ClassAssertion(metadata:Term :backcasting)
 
 # Individual: :behaviour (Behaviour)
 
 AnnotationAssertion(rdfs:comment :behaviour "Behaviour is the range of actions towards the social and physical environment. It is a response to various stimuli or inputs, whether internal or external, conscious or subconscious, overt or covert, and voluntary or involuntary. Behaviour can be observed objectively (http://en.wikipedia.org/wiki/Behaviour). For Glamurs, it is essential to agree on the level of the behaviour in order to operationalized it, i.e. is it defined as „daily water usage“, „number of baths“, „way of washing-up“, and so on?"@en)
-AnnotationAssertion(rdfs:isDefinedBy :behaviour top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :behaviour metadata:UFZ)
 AnnotationAssertion(rdfs:label :behaviour "Behaviour"@en)
-ClassAssertion(top-down-common:Term :behaviour)
+ClassAssertion(metadata:Term :behaviour)
 
 # Individual: :carbonFootprint (Carbon footprint)
 
 AnnotationAssertion(rdfs:comment :carbonFootprint "The “carbon footprint” of a functional unit is the climate impact under a specified metric that considers all relevant emission sources, sinks, and storage in both consumption and production within the specified spatial and temporal system boundary. Other names that refer to it are “consumption based emissions” or “consumer emissions”. The total global long-lived greenhouse gas emissions of a system is aggregated using 100-year global warming potential (see Global Warming Potential (GWP)), hence, greenhouse gases with various radiative properties are compared and weighed for a time horizon of 100 years."@en)
-AnnotationAssertion(rdfs:isDefinedBy :carbonFootprint top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :carbonFootprint metadata:NTNU)
 AnnotationAssertion(rdfs:label :carbonFootprint "Carbon footprint"@en)
-ClassAssertion(top-down-common:Term :carbonFootprint)
+ClassAssertion(metadata:Term :carbonFootprint)
 
 # Individual: :class (Class)
 
 AnnotationAssertion(rdfs:comment :class "A class defines a group of individuals that belong together because they share some properties (See http://www.w3.org/TR/2004/REC-owl-features-20040210/#Class). A class can be considered as a label for a set of individuals - for example, the class of Adults (by convention classes are given an initial capital letter) is the class of Persons who are 18 or more years old. As the above example shows, classes can be subclasses of each other (Adults are a subclass of Person because all Adults are persons). Other terms from set theory (intersection and union) can also be applied to class descriptions. See also: (http://www.w3.org/TR/2012/REC-owl2-primer-20121211/#Classes_and_Instances)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :class top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :class metadata:JHI)
 AnnotationAssertion(rdfs:label :class "Class"@en)
-ClassAssertion(top-down-common:Term :class)
+ClassAssertion(metadata:Term :class)
 
 # Individual: :consumptionCategories (Consumption categories)
 
 AnnotationAssertion(rdfs:comment :consumptionCategories "Footprint analyses can allocate total environmental footprints among categories of consumption, typically Food, Shelter, Mobility, Goods (Manufactured Goods, Clothing etc.) and Services. Consistent categorization across studies allows for comparison of the footprint of individual consumption components across regions, and the relative contribution of each category to the region’s overall footprint. To avoid double counting of environmental impacts coming from the production of goods and services, it is important that consumables are allocated to only one consumption category"@en)
-AnnotationAssertion(rdfs:isDefinedBy :consumptionCategories top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :consumptionCategories metadata:NTNU)
 AnnotationAssertion(rdfs:label :consumptionCategories "Consumption categories"@en)
-ClassAssertion(top-down-common:Term :consumptionCategories)
+ClassAssertion(metadata:Term :consumptionCategories)
 
 # Individual: :copingStrategies (Coping strategies)
 
-AnnotationAssertion(top-down-common:partOfDiscipline :copingStrategies top-down-common:discipline:psychology)
+AnnotationAssertion(metadata:partOfDiscipline :copingStrategies metadata:discipline:psychology)
 AnnotationAssertion(rdfs:comment :copingStrategies "Coping is expending conscious effort to solve personal and interpersonal problems, and seeking to master, minimize or tolerate stress or conflict. The effectiveness of the coping efforts depend on the type of stress and/or conflict, the particular individual, and the circumstances (http://en.wikipedia.org/wiki/Coping_(psychology)). We distinguish 2 broad types of coping strategies:
 
 + problem-focused: Directed towards reducing or eliminating a stressor, adaptive behavioural.
 + emotion-focused: Directed towards changing one's own emotional reaction (also via challenging one's own assumptions).
 
 For Glamurs, coping strategies are relevant in terms of dealing with internal conflicts, time scarcity, difficulties in adopting a sustainable lifestyle, or dealing with certain governance policies."@en)
-AnnotationAssertion(rdfs:isDefinedBy :copingStrategies top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :copingStrategies metadata:UFZ)
 AnnotationAssertion(rdfs:label :copingStrategies "Coping strategies"@en)
-ClassAssertion(top-down-common:Term :copingStrategies)
+ClassAssertion(metadata:Term :copingStrategies)
 
 # Individual: :discreteChoice (Discrete choice)
 
 AnnotationAssertion(rdfs:comment :discreteChoice "A decision environment where agents have two or more options to choose from, e.g. green and brown goods / activities. This is an alternative way to modelling choice when the decision variable is assumed to be continuous, e.g. level of consumption."@en)
-AnnotationAssertion(rdfs:isDefinedBy :discreteChoice top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :discreteChoice metadata:UBAH)
 AnnotationAssertion(rdfs:label :discreteChoice "Discrete choice"@en)
-ClassAssertion(top-down-common:Term :discreteChoice)
+ClassAssertion(metadata:Term :discreteChoice)
 
 # Individual: :downshifting (Downshifting)
 
 AnnotationAssertion(rdfs:label :downshifting "Downshifting"@en)
 ClassAssertion(:NotInGlossary :downshifting)
-ClassAssertion(top-down-common:Term :downshifting)
+ClassAssertion(metadata:Term :downshifting)
 
 # Individual: :driver (Driver)
 
 AnnotationAssertion(rdfs:label :driver "Driver"@en)
 ClassAssertion(:NotInGlossary :driver)
-ClassAssertion(top-down-common:Term :driver)
+ClassAssertion(metadata:Term :driver)
 
 # Individual: :ecologicalFootprint (Ecological footprint)
 
 AnnotationAssertion(rdfs:comment :ecologicalFootprint "An aggregated indicator intended to be a proxy of environmental impact by estimating a hypothetical area (footprint) of biologically productive land needed to support the consumption of products and services, or at the aggregate, countries. It can be calculated via many of the existing methods for embodied emissions and land use calculations."@en)
-AnnotationAssertion(rdfs:isDefinedBy :ecologicalFootprint top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :ecologicalFootprint metadata:NTNU)
 AnnotationAssertion(rdfs:label :ecologicalFootprint "Ecological footprint"@en)
-ClassAssertion(top-down-common:Term :ecologicalFootprint)
+ClassAssertion(metadata:Term :ecologicalFootprint)
 
 # Individual: :ecovillage (Ecovillage)
 
 AnnotationAssertion(rdfs:comment :ecovillage "Human-scale full-featured settlement in which human activities are harmlessly integrated into the natural world in a way that is supportive of healthy human development, and can be successfully continued into the indefinite future."@en)
-AnnotationAssertion(rdfs:isDefinedBy :ecovillage top-down-common:UVT)
+AnnotationAssertion(rdfs:isDefinedBy :ecovillage metadata:UVT)
 AnnotationAssertion(rdfs:label :ecovillage "Ecovillage"@en)
-ClassAssertion(top-down-common:Term :ecovillage)
+ClassAssertion(metadata:Term :ecovillage)
 
 # Individual: :emotion (Emotion)
 
 AnnotationAssertion(rdfs:comment :emotion "Emotions are composed by a subjectively experienced feeling, a physiological response, and a behavioural and/or expressive response (Hockenbury & Hockenbury, 2007). Emotions refer to an object or an event and they are conscious and in the centre of attention (Rothermund, 2011). Examples for emotions are: anxiety, anger, disgust, jealousy, surprise, grief, joy, sympathy, gratitude, love and hope. For Glamurs, emotions are of importance as consequences of or motivation for membership/engagement; and in relation to endeavours of sustainable living, internal conflicts, reactions to governance policies, and time-use."@en)
-AnnotationAssertion(rdfs:isDefinedBy :emotion top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :emotion metadata:UFZ)
 AnnotationAssertion(rdfs:label :emotion "Emotion"@en)
-ClassAssertion(top-down-common:Term :emotion)
+ClassAssertion(metadata:Term :emotion)
 
 # Individual: :environmentalImpacts (Environmental impacts)
 
 AnnotationAssertion(rdfs:comment :environmentalImpacts "Environmental stressors can be aggregated into environmental impact categories using life-cycle impact assessment methods. Environmental impact categories (e.g. land use, global warming potential, freshwater use etc.) can be computed by multiplying the emissions of stressors with their equivalence factors."@en)
-AnnotationAssertion(rdfs:isDefinedBy :environmentalImpacts top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :environmentalImpacts metadata:NTNU)
 AnnotationAssertion(rdfs:label :environmentalImpacts "Environmental impacts"@en)
-ClassAssertion(top-down-common:Term :environmentalImpacts)
+ClassAssertion(metadata:Term :environmentalImpacts)
 
 # Individual: :expectations (Expectations)
 
 AnnotationAssertion(rdfs:comment :expectations "Beliefs formed about the probability of certain events occurring, e.g. future prices, proportion of agent types within a population etc."@en)
-AnnotationAssertion(rdfs:isDefinedBy :expectations top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :expectations metadata:UBAH)
 AnnotationAssertion(rdfs:label :expectations "Expectations"@en)
-ClassAssertion(top-down-common:Term :expectations)
+ClassAssertion(metadata:Term :expectations)
 
 # Individual: :finalDemand (Final demand)
 
 AnnotationAssertion(rdfs:comment :finalDemand "Final demand of goods and services within a specific geographical region arises from households, non-profit institutions serving households (NPISH), governments, gross capital formation and changes in inventories and valuables. Additionally, the System of National Accounts considers exports as a separate source of final demand, although in an input-output framework exports are instead allocated to intermediate (e.g. industries) or final users (e.g. households) from other regions."@en)
-AnnotationAssertion(rdfs:isDefinedBy :finalDemand top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :finalDemand metadata:NTNU)
 AnnotationAssertion(rdfs:label :finalDemand "Final demand"@en)
-ClassAssertion(top-down-common:Term :finalDemand)
+ClassAssertion(metadata:Term :finalDemand)
 
 # Individual: :focusGroups (Focus groups)
 
 AnnotationAssertion(rdfs:label :focusGroups "Focus groups"@en)
 ClassAssertion(:NotInGlossary :focusGroups)
-ClassAssertion(top-down-common:Term :focusGroups)
+ClassAssertion(metadata:Term :focusGroups)
 
 # Individual: :governance (Governance)
 
@@ -289,283 +289,283 @@ AnnotationAssertion(rdfs:comment :governance "The preferred definition: \"The su
 + \"The reflexive self-organization of independent actors involved in complex relations of reciprocal interdependence, with such self-organization being based on continuing dialogue and resource-sharing to develop mutually beneficial joint projects and to manage the contradictions and dilemmas inevitably involved in such situations\" (Jessop, 2002: 1). 
 + \"Governance refers to sustaining co-ordination and coherence among a wide variety of actors with different purposes and objectives such as political actors and institutions, civil society, corporate interest and transnational organizations\" (Pierre 2001: 3)"@en)
 AnnotationAssertion(rdfs:label :governance "Governance"@en)
-ClassAssertion(top-down-common:Term :governance)
+ClassAssertion(metadata:Term :governance)
 
 # Individual: :groundedTheory (Grounded theory)
 
 AnnotationAssertion(rdfs:label :groundedTheory "Grounded theory"@en)
 ClassAssertion(:NotInGlossary :groundedTheory)
-ClassAssertion(top-down-common:Term :groundedTheory)
+ClassAssertion(metadata:Term :groundedTheory)
 
 # Individual: :household (Household)
 
 AnnotationAssertion(rdfs:comment :household "A small group of persons who share the same living accommodation, who pool some or all of their income and wealth and who consume certain types of goods and services collectively, mainly housing and food. The individual members of multi-person households are not treated as separate institutional units, because many assets are owned and liabilities incurred jointly. Moreover, many expenditure decisions, e.g. relating to the consumption of food or housing, may be made collectively. This is why the household must be treated as an institutional unit. A person living alone may also constitute a household."@en)
-AnnotationAssertion(rdfs:isDefinedBy :household top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :household metadata:NTNU)
 AnnotationAssertion(rdfs:label :household "Household"@en)
-ClassAssertion(top-down-common:Term :household)
+ClassAssertion(metadata:Term :household)
 
 # Individual: :householdEnvironmentalImpacts (Household environmental impacts)
 
 AnnotationAssertion(rdfs:comment :householdEnvironmentalImpacts "Includes all environmental effects (e.g. CO₂ emissions, resource use etc.) from economic activity that can be linked to households either directly, through their use of products (e.g. driving a car, using electricity at home), or indirectly, through the impacts embodied in their purchases (e.g. use of energy to produce consumable items)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :householdEnvironmentalImpacts top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :householdEnvironmentalImpacts metadata:NTNU)
 AnnotationAssertion(rdfs:label :householdEnvironmentalImpacts "Household environmental impacts"@en)
-ClassAssertion(top-down-common:Term :householdEnvironmentalImpacts)
+ClassAssertion(metadata:Term :householdEnvironmentalImpacts)
 
 # Individual: :intention (Intention)
 
 AnnotationAssertion(rdfs:comment :intention "By intention we refer to what Bamberg (2013) calls goal intention, namely the willingness to alter a current or show a new behaviour (i.e. a single action or a set of actions). Goal intention is a substantiation of a motivational background. In Glamurs, we focus on people with an intention to behave sustainably"@en)
-AnnotationAssertion(rdfs:isDefinedBy :intention top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :intention metadata:UFZ)
 AnnotationAssertion(rdfs:label :intention "Intention"@en)
-ClassAssertion(top-down-common:Term :intention)
+ClassAssertion(metadata:Term :intention)
 
 # Individual: :interactions (Interactions)
 
 AnnotationAssertion(rdfs:comment :interactions "They are the behaviours of agents that may affect the decisions of other agents. Interactions may be direct (norms, negotiation, markets, imitation) or indirect (‘stigmergic’: ant trails, signs, writing, traps). (See also http://www2.econ.iastate.edu/tesfatsi/ace.htm)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :interactions top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :interactions metadata:JHI)
 AnnotationAssertion(rdfs:label :interactions "Interactions"@en)
-ClassAssertion(top-down-common:Term :interactions)
+ClassAssertion(metadata:Term :interactions)
 
 # Individual: :item (Item)
 
 AnnotationAssertion(rdfs:comment :item "An item is the basic element of a standardized questionnaire or test. It can be a question, opinion, or statement that induces a person’s reaction (-> indicator)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :item top-down-common:OVGU)
+AnnotationAssertion(rdfs:isDefinedBy :item metadata:OVGU)
 AnnotationAssertion(rdfs:label :item "Item"@en)
-ClassAssertion(top-down-common:Term :item)
+ClassAssertion(metadata:Term :item)
 
 # Individual: :learning (Learning)
 
 AnnotationAssertion(rdfs:comment :learning "Related to adaptive beliefs/expectations which lie between rational and naïve expectations. Agents learn about future realizations of variables by extrapolating from the past."@en)
-AnnotationAssertion(rdfs:isDefinedBy :learning top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :learning metadata:UBAH)
 AnnotationAssertion(rdfs:label :learning "Learning"@en)
-ClassAssertion(top-down-common:Term :learning)
+ClassAssertion(metadata:Term :learning)
 
 # Individual: :leisure (Leisure)
 
 AnnotationAssertion(rdfs:comment :leisure "Different from the free-time, leisure is an uncoerced activity undertaken during free time where such activity is something people want to do and, at a personally satisfying level using their abilities and resources, they succeed in doing."@en)
-AnnotationAssertion(rdfs:isDefinedBy :leisure top-down-common:UVT)
+AnnotationAssertion(rdfs:isDefinedBy :leisure metadata:UVT)
 AnnotationAssertion(rdfs:label :leisure "Leisure"@en)
-ClassAssertion(top-down-common:Term :leisure)
+ClassAssertion(metadata:Term :leisure)
 
 # Individual: :lifeSatisfaction (Life satisfaction)
 
 AnnotationAssertion(rdfs:label :lifeSatisfaction "Life satisfaction"@en)
 ClassAssertion(:NotInGlossary :lifeSatisfaction)
-ClassAssertion(top-down-common:Term :lifeSatisfaction)
+ClassAssertion(metadata:Term :lifeSatisfaction)
 
 # Individual: :lifestyle (Lifestyle)
 
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:UBAH) rdfs:comment :lifestyle "Patterns of consumption/activities that take place in given locations and have associated time patterns."@en)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:UBAH) rdfs:comment :lifestyle "Patterns of consumption/activities that take place in given locations and have associated time patterns."@en)
 AnnotationAssertion(rdfs:label :lifestyle "Lifestyle"@en)
-ClassAssertion(top-down-common:Term :lifestyle)
+ClassAssertion(metadata:Term :lifestyle)
 
 # Individual: :materialFootprint (Material footprint)
 
 AnnotationAssertion(rdfs:comment :materialFootprint "Life cycle material use of final consumption expressed in tons (t). This only includes economically used materials. The indicator reflects the raw material extraction, particularly that of primary crops, crop residues, fodder crops, grazing, wood, aquatic animals, metal ores, non-metallic minerals and fossil fuels."@en)
-AnnotationAssertion(rdfs:isDefinedBy :materialFootprint top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :materialFootprint metadata:NTNU)
 AnnotationAssertion(rdfs:label :materialFootprint "Material footprint"@en)
-ClassAssertion(top-down-common:Term :materialFootprint)
+ClassAssertion(metadata:Term :materialFootprint)
 
 # Individual: :materialism (Materialism)
 
 AnnotationAssertion(rdfs:label :materialism "Materialism"@en)
 ClassAssertion(:NotInGlossary :materialism)
-ClassAssertion(top-down-common:Term :materialism)
+ClassAssertion(metadata:Term :materialism)
 
 # Individual: :mediation (Mediation)
 
 AnnotationAssertion(rdfs:comment :mediation "In this type of analysis, evidence supporting a mechanism is found in the existence of an indirect effect of X on Y through the proposed mediator variable M. The causal chain of effects from X to M to Y—the indirect effect—represents the mechanism through which X’s effect on Y operates. One can hypothesize the existence of a mediation model when a variable (X) affects one or more mediating variables (M1, M2, ... Mx), which in turn, affect an outcome (Y)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :mediation top-down-common:UNIROMA3)
+AnnotationAssertion(rdfs:isDefinedBy :mediation metadata:UNIROMA3)
 AnnotationAssertion(rdfs:label :mediation "Mediation"@en)
-ClassAssertion(top-down-common:Term :mediation)
+ClassAssertion(metadata:Term :mediation)
 
 # Individual: :memory (Memory)
 
 AnnotationAssertion(rdfs:comment :memory "In a dynamic setting, agents may consider more not just the last value of the fitness of a choice option but some number of previous realizations. In the limit, this may be a weighted average of all past realizations, with an exponentially decaying memory factor"@en)
-AnnotationAssertion(rdfs:isDefinedBy :memory top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :memory metadata:UBAH)
 AnnotationAssertion(rdfs:label :memory "Memory"@en)
-ClassAssertion(top-down-common:Term :memory)
+ClassAssertion(metadata:Term :memory)
 
 # Individual: :mindfulness (Mindfulness)
 
 AnnotationAssertion(rdfs:comment :mindfulness "Mindfulness involves the reflexive contemplation of one’s own experience in the domains of the body, states of mind, feelings and experiential phenomena. It is a process of observation and lucid awareness of one’s experience, which leads to the development of clear comprehension, a cognitive element that helps distinguish between wholesome and unwholesome mental factors. Mindfulness has a strong ethical and emotional component, as it involves qualities such as kindness, tolerance, patience, generosity, courage and equanimity.(cf. Bodhi 2011, Dreyfus 2010)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :mindfulness top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :mindfulness metadata:UFZ)
 AnnotationAssertion(rdfs:label :mindfulness "Mindfulness"@en)
-ClassAssertion(top-down-common:Term :mindfulness)
+ClassAssertion(metadata:Term :mindfulness)
 
 # Individual: :model (Model)
 
 AnnotationAssertion(rdfs:comment :model "A representation or description of something (a phenomenon or set of relationships) that aids in understanding or studying it; a set of assumptions about relationships used to study their interactions. Usually the purpose of constructing a model is to test it. The most common form of model is an equation, which is a model that states a theory in foral, symbolic language, as in a regression equation."@en)
-AnnotationAssertion(rdfs:isDefinedBy :model top-down-common:UDC)
+AnnotationAssertion(rdfs:isDefinedBy :model metadata:UDC)
 AnnotationAssertion(rdfs:label :model "Model"@en)
-ClassAssertion(top-down-common:Term :model)
+ClassAssertion(metadata:Term :model)
 
 # Individual: :moderation (Moderation)
 
 AnnotationAssertion(rdfs:comment :moderation "Moderation approach establishes whether an effect exists under conditions in which the mechanism is allowed to operate but not under conditions in which it is disrupted. For example, a moderation model occurs when a third variable (M) dampens or enhances the effect of an independent variable (X) on outcome (Y). Again, moderation occurs when a third variable (M) reverses the relationship between an independent variable (X) and an outcome variable (Y)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :moderation top-down-common:UNIROMA3)
+AnnotationAssertion(rdfs:isDefinedBy :moderation metadata:UNIROMA3)
 AnnotationAssertion(rdfs:label :moderation "Moderation"@en)
-ClassAssertion(top-down-common:Term :moderation)
+ClassAssertion(metadata:Term :moderation)
 
 # Individual: :motivation (Motivation)
 
 AnnotationAssertion(rdfs:comment :motivation "Motivation is the active orientation on a specific outcome with the aim of reducing needs, maximizing benefits and attaining goals. Internal processes like considerations, behavioural planning, perceptional preparedness, and arousal translate these orientations into specific conduct (Heckhausen, 1980). For Glamurs, motivation is important to be considered in terms of (non-) membership, (non-) engagement, and (non-) sustainable lifestyles"@en)
-AnnotationAssertion(rdfs:isDefinedBy :motivation top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :motivation metadata:UFZ)
 AnnotationAssertion(rdfs:label :motivation "Motivation"@en)
-ClassAssertion(top-down-common:Term :motivation)
+ClassAssertion(metadata:Term :motivation)
 
 # Individual: :needs (Needs)
 
 AnnotationAssertion(rdfs:comment :needs "Most basic reasons for action that require no further explanation or justification. Such abstract needs (for freedom, subsistence, understanding, …) are to be differentiated from the means or strategies used to satisfy/realize the needs  (e.g. cars, specific food, large apartment, university education, …). The fulfilment of needs creates objective and subjective wellbeing."@en)
-AnnotationAssertion(rdfs:isDefinedBy :needs top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :needs metadata:UFZ)
 AnnotationAssertion(rdfs:label :needs "Needs"@en)
-ClassAssertion(top-down-common:Term :needs)
+ClassAssertion(metadata:Term :needs)
 
 # Individual: :network (Network)
 
-AnnotationAssertion(Annotation(rdfs:comment "Taken from Network Analysis document."@en) Annotation(rdfs:isDefinedBy top-down-common:UFZ) rdfs:comment :network "‘‘A network is a more or less stable patterns of social relations between interdependent actors, which take shape around policy problems and/or policy programmes” (Klijn, 1997, 30). In these networks, the institutional context and rules limit and structure the possible range of activities (Ostrom et al., 1994). In our case the region is a network of initiatives or of single actors"@en)
-AnnotationAssertion(rdfs:isDefinedBy :network top-down-common:TUD)
+AnnotationAssertion(Annotation(rdfs:comment "Taken from Network Analysis document."@en) Annotation(rdfs:isDefinedBy metadata:UFZ) rdfs:comment :network "‘‘A network is a more or less stable patterns of social relations between interdependent actors, which take shape around policy problems and/or policy programmes” (Klijn, 1997, 30). In these networks, the institutional context and rules limit and structure the possible range of activities (Ostrom et al., 1994). In our case the region is a network of initiatives or of single actors"@en)
+AnnotationAssertion(rdfs:isDefinedBy :network metadata:TUD)
 AnnotationAssertion(rdfs:label :network "Network"@en)
-ClassAssertion(top-down-common:Term :network)
+ClassAssertion(metadata:Term :network)
 
 # Individual: :ontology (Ontology)
 
 AnnotationAssertion(rdfs:comment :ontology "A formal, explicit representation of a shared conceptualisation. Formal in that the ontology document is machine-readable and allows inferences to be made; explicit in that all concepts are represented; shared in that there is some agreement by a group about the ontology (debatable), conceptualisation in that it is an abstraction of reality. (Gruber 1993; Fensel 2001)"@en)
-AnnotationAssertion(rdfs:isDefinedBy :ontology top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :ontology metadata:JHI)
 AnnotationAssertion(rdfs:label :ontology "Ontology"@en)
-ClassAssertion(top-down-common:Term :ontology)
+ClassAssertion(metadata:Term :ontology)
 
 # Individual: :opportunities (Opportunities)
 
 AnnotationAssertion(rdfs:comment :opportunities "Situational conditions that enable or prevent, facilitate or impede certain behaviours. Application of the term opportunities is based on the NOA-Model (Vlek, Jager, & Steg, 1997 (Needs Opportunities Abilities (NOA) Model)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :opportunities top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :opportunities metadata:UFZ)
 AnnotationAssertion(rdfs:label :opportunities "Opportunities"@en)
-ClassAssertion(top-down-common:Term :opportunities)
+ClassAssertion(metadata:Term :opportunities)
 
 # Individual: :permaculture (Permaculture)
 
 AnnotationAssertion(rdfs:label :permaculture "Permaculture"@en)
 ClassAssertion(:NotInGlossary :permaculture)
-ClassAssertion(top-down-common:Term :permaculture)
+ClassAssertion(metadata:Term :permaculture)
 
 # Individual: :positiveFeedback (Positive feedback)
 
 AnnotationAssertion(rdfs:comment :positiveFeedback "This is the self-reinforcement mechanism of a decision system where an increase (or decrease) of a dynamic variable in the utility leads to higher incentives for agents to increase (or decrease) that variable even further."@en)
-AnnotationAssertion(rdfs:isDefinedBy :positiveFeedback top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :positiveFeedback metadata:UBAH)
 AnnotationAssertion(rdfs:label :positiveFeedback "Positive feedback"@en)
-ClassAssertion(top-down-common:Term :positiveFeedback)
+ClassAssertion(metadata:Term :positiveFeedback)
 
 # Individual: :process (Process)
 
 AnnotationAssertion(rdfs:comment :process "A process is a dynamic that causes the state of the world to change – specifically, assertions about classes, attributes, relationships and individuals would be retracted after the process has run, and new assertions might be made. For example, aging-by-one-year is a process in which an individual’s age is increased by 1. This means retracting the assertion that they are, say, 44, and adding the assertion that they are 45."@en)
-AnnotationAssertion(rdfs:isDefinedBy :process top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :process metadata:JHI)
 AnnotationAssertion(rdfs:label :process "Process"@en)
-ClassAssertion(top-down-common:Term :process)
+ClassAssertion(metadata:Term :process)
 
 # Individual: :prospectTheory (Prospect theory)
 
 AnnotationAssertion(rdfs:comment :prospectTheory "The prospect theory refers to the process of decision making. According to this theory, the utility of an alternative is substituted with the value of an alternative: if utility is defined in terms of net benefit, the value is defined in terms of gain and loss."@en)
-AnnotationAssertion(rdfs:isDefinedBy :prospectTheory top-down-common:UVT)
+AnnotationAssertion(rdfs:isDefinedBy :prospectTheory metadata:UVT)
 AnnotationAssertion(rdfs:label :prospectTheory "Prospect theory"@en)
-ClassAssertion(top-down-common:Term :prospectTheory)
+ClassAssertion(metadata:Term :prospectTheory)
 
 # Individual: :qualityOfLife (Quality of life)
 
 AnnotationAssertion(rdfs:comment :qualityOfLife "Quality of life can be defined as subjective wellbeing and personal growth in a healthy and prosperous environment (Lane, 1996). Thus it has two components, an objective which is given by the frame conditions (income, security, institutions, quality of nature, access to education, talents etc.) and the subjective feeling about one’s own life."@en)
-AnnotationAssertion(rdfs:isDefinedBy :qualityOfLife top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :qualityOfLife metadata:UFZ)
 AnnotationAssertion(rdfs:label :qualityOfLife "Quality of life"@en)
-ClassAssertion(top-down-common:Term :qualityOfLife)
+ClassAssertion(metadata:Term :qualityOfLife)
 
 # Individual: :quotations (Quotations)
 
 AnnotationAssertion(rdfs:label :quotations "Quotations"@en)
 ClassAssertion(:NotInGlossary :quotations)
-ClassAssertion(top-down-common:Term :quotations)
+ClassAssertion(metadata:Term :quotations)
 
 # Individual: :relationship (Relationship)
 
 AnnotationAssertion(rdfs:comment :relationship "In OWL, relationships are called object properties. They allow the assertion that individuals are linked in some way, examples being ‘spouse’, ‘owns’, ‘part’. Relationships can also be asserted to be subproperties of each other. For example, ‘husband’ is a subproperty of ‘spouse’ because if one person is the husband of another, they are necessarily also the latter’s spouse (See http://www.w3.org/TR/2012/REC-owl2-primer-20121211/#Object_Properties)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :relationship top-down-common:JHI)
+AnnotationAssertion(rdfs:isDefinedBy :relationship metadata:JHI)
 AnnotationAssertion(rdfs:label :relationship "Relationship"@en)
-ClassAssertion(top-down-common:Term :relationship)
+ClassAssertion(metadata:Term :relationship)
 
 # Individual: :risk (Risk)
 
 AnnotationAssertion(rdfs:comment :risk "\"Risk is commonly defined concerning two quite distinct dimensions -one concerns probability and the other one concern the effects-, so risk concept arises as the probability of a particular adverse event that occurs in an explicit period of time, (…) but in practice these two dimensions tend to be examined in tandem. (...) In terms of likelihood, risk refers to the probability of concrete negatives events -outlined in terms of amount, intensity and duration- resulted from an exposure to a hazard -anything that could be detrimental-, and in terms of effects, risk is referred to the extent of the detriment -a numerical estimate of the harm- associated with the adverse event.\""@en)
-AnnotationAssertion(rdfs:isDefinedBy :risk top-down-common:UDC)
+AnnotationAssertion(rdfs:isDefinedBy :risk metadata:UDC)
 AnnotationAssertion(rdfs:label :risk "Risk"@en)
-ClassAssertion(top-down-common:Term :risk)
+ClassAssertion(metadata:Term :risk)
 
 # Individual: :situationalFactors (Situational factors)
 
 AnnotationAssertion(rdfs:label :situationalFactors "Situational factors"@en)
 ClassAssertion(:NotInGlossary :situationalFactors)
-ClassAssertion(top-down-common:Term :situationalFactors)
+ClassAssertion(metadata:Term :situationalFactors)
 
 # Individual: :socialCapital (Social capital)
 
 AnnotationAssertion(rdfs:comment :socialCapital "\"A lot of research has been carried out focusing on the relations between social capital and subjective wellbeing. Helliwell (Helliwell, 2001) for instance argues that social capital has substantial effects on wellbeing, and also Diener and Suh (Diener et al., 1997) emphasize the importance of social relations related to subjective wellbeing. […] Social capital generally represents the degree of social cohesion which exists in communities (WHO, 1998) and encompasses networks, together with shared norms, values and understandings which facilitate cooperation within or among groups (OECD, 2001). However, there is a broad variety of definitions related to “social capital”. Coleman (Coleman, 1988) describes social capital as a variety of different entities with two common elements: social structure and certain actions of actors within the structure, which includes vertical (bridging) as well as horizontal (bonding) associations. Social capital is closely linked to existing ties in terms of closeness, kindness, or support, to norms in terms of obligatory rights and duties as well as to mutual trust. On the individual level, social capital is used in order to maximize the level of individual happiness. On the societal level (communities, etc.), social capital is developed and applied in order to assure adequate functioning of societal processes. Social capital can be seen as a measure for the number and strength/intensity of social relationships and can be examined on three levels: the micro-level, the meso-level and the macro-level (Gehmacher et al., 2006).\" (Grünberger & Omann, 2011).
 
 Taken from \"Background information for questions to be included in the in-depth interviews, resulting from 5.1\" internal document"@en)
-AnnotationAssertion(rdfs:isDefinedBy :socialCapital top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :socialCapital metadata:UFZ)
 AnnotationAssertion(rdfs:label :socialCapital "Social capital"@en)
-ClassAssertion(top-down-common:Term :socialCapital)
+ClassAssertion(metadata:Term :socialCapital)
 
 # Individual: :socialInteractions (Social interactions)
 
 AnnotationAssertion(rdfs:comment :socialInteractions "Agents are not isolated in their decisions and other agents’ decisions influence them with a (network) externality. Social interactions enter the utility with a term which depends on the distribution of decision variables across other agents."@en)
-AnnotationAssertion(rdfs:isDefinedBy :socialInteractions top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :socialInteractions metadata:UBAH)
 AnnotationAssertion(rdfs:label :socialInteractions "Social interactions"@en)
-ClassAssertion(top-down-common:Term :socialInteractions)
+ClassAssertion(metadata:Term :socialInteractions)
 
 # Individual: :socialNorms (Social norms)
 
 AnnotationAssertion(rdfs:comment :socialNorms "We adopt the same definitions from psychology, i.e. descriptive, injunctive, subjective. However, when capturing social norms within a framework of utility maximisation we cannot distinguish between these different norms. The gain/loss in utility from compliance/non-compliance relates to all three norms depending on the context. Social norms are generally incorporated within the utility function as the negative of the distance function (absolute or squared) between the individual’s choice variable (to be decided as an outcome of the utility maximisation process) and the norm.  Modelled in this way means that a choice variable different to the norm generates negative utility whereas perfect compliance implies a zero negative term"@en)
-AnnotationAssertion(rdfs:isDefinedBy :socialNorms top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :socialNorms metadata:UBAH)
 AnnotationAssertion(rdfs:label :socialNorms "Social norms"@en)
-ClassAssertion(top-down-common:Term :socialNorms)
+ClassAssertion(metadata:Term :socialNorms)
 
 # Individual: :spillover (Spillover)
 
 AnnotationAssertion(rdfs:comment :spillover "The term spillover in the domain of pro-environmental behaviour refers to the relations between different behavioural domains (e.g. electricity consumption, recycling, car use…). In most empirical studies a moderate positive correlation between such behaviours was found. The correlation is stronger if behaviours are more “similar” (e.g. different forms of recycling)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :spillover top-down-common:OVGU)
+AnnotationAssertion(rdfs:isDefinedBy :spillover metadata:OVGU)
 AnnotationAssertion(rdfs:label :spillover "Spillover"@en)
-ClassAssertion(top-down-common:Term :spillover)
+ClassAssertion(metadata:Term :spillover)
 
 # Individual: :stakeholder (Stakeholder)
 
-AnnotationAssertion(Annotation(rdfs:comment "Taken from Network Analysis guidelines."@en) Annotation(rdfs:isDefinedBy top-down-common:UFZ) rdfs:comment :stakeholder "A stakeholder can be any relevant person, group or organisation with an interest in the issue, either because they will be affected by the subject (victim, gainer) or because they have influence, knowledge or experience with the subject” (European Commission, 2003: 63)."@en)
-AnnotationAssertion(rdfs:isDefinedBy :stakeholder top-down-common:TUD)
+AnnotationAssertion(Annotation(rdfs:comment "Taken from Network Analysis guidelines."@en) Annotation(rdfs:isDefinedBy metadata:UFZ) rdfs:comment :stakeholder "A stakeholder can be any relevant person, group or organisation with an interest in the issue, either because they will be affected by the subject (victim, gainer) or because they have influence, knowledge or experience with the subject” (European Commission, 2003: 63)."@en)
+AnnotationAssertion(rdfs:isDefinedBy :stakeholder metadata:TUD)
 AnnotationAssertion(rdfs:label :stakeholder "Stakeholder"@en)
-ClassAssertion(top-down-common:Term :stakeholder)
+ClassAssertion(metadata:Term :stakeholder)
 
 # Individual: :sustainableLifestyles (Sustainable lifestyles)
 
 AnnotationAssertion(rdfs:comment :sustainableLifestyles "Patterns of consumption/activities that can be continued for the long-run taking into account resource constraints"@en)
-AnnotationAssertion(rdfs:isDefinedBy :sustainableLifestyles top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :sustainableLifestyles metadata:UBAH)
 AnnotationAssertion(rdfs:label :sustainableLifestyles "Sustainable lifestyles"@en)
-ClassAssertion(top-down-common:Term :sustainableLifestyles)
+ClassAssertion(metadata:Term :sustainableLifestyles)
 
 # Individual: :timeScarcity (Time scarcity)
 
 AnnotationAssertion(rdfs:comment :timeScarcity "Time scarcity is the quotient/ difference of the amount of time necessary and the amount of time available for a certain tasks, process or action. For Glamurs, we should agree upon which aspect (time scarcity, perceived time scarcity, perceived time pressure) we refer to."@en)
-AnnotationAssertion(rdfs:isDefinedBy :timeScarcity top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :timeScarcity metadata:UFZ)
 AnnotationAssertion(rdfs:label :timeScarcity "Time scarcity"@en)
-ClassAssertion(top-down-common:Term :timeScarcity)
+ClassAssertion(metadata:Term :timeScarcity)
 
 # Individual: :transition (Transition)
 
 AnnotationAssertion(rdfs:comment :transition "A transition can be defined as a gradual, continuous process of change where the structural character of a society (or a complex sub-system of society) transforms. Transitions are not uniform, and nor is the transition process deterministic: there are large differences in the scale of change and the period over which it occurs. Transitions involve a range of possible development paths, whose direction, scale and speed government policy can influence, but never entirely control."@en)
-AnnotationAssertion(Annotation(rdfs:isDefinedBy top-down-common:UFZ) rdfs:comment :transition "Rotmans et al. (2001: 16): transitions \"can be described as a set of connected changes, which reinforce each other but take place in several different areas, such as technology, the economy, institutions, behaviour, culture, ecology and belief systems\"."@en)
-AnnotationAssertion(rdfs:isDefinedBy :transition top-down-common:TUD)
+AnnotationAssertion(Annotation(rdfs:isDefinedBy metadata:UFZ) rdfs:comment :transition "Rotmans et al. (2001: 16): transitions \"can be described as a set of connected changes, which reinforce each other but take place in several different areas, such as technology, the economy, institutions, behaviour, culture, ecology and belief systems\"."@en)
+AnnotationAssertion(rdfs:isDefinedBy :transition metadata:TUD)
 AnnotationAssertion(rdfs:label :transition "Transition"@en)
-ClassAssertion(top-down-common:Term :transition)
+ClassAssertion(metadata:Term :transition)
 
 # Individual: :utility (Utility)
 
 AnnotationAssertion(rdfs:comment :utility "Satisfaction/enjoyment/well-being derived from certain elements, e.g. consumption, leisure, environment."@en)
-AnnotationAssertion(rdfs:isDefinedBy :utility top-down-common:UBAH)
+AnnotationAssertion(rdfs:isDefinedBy :utility metadata:UBAH)
 AnnotationAssertion(rdfs:label :utility "Utility"@en)
-ClassAssertion(top-down-common:Term :utility)
+ClassAssertion(metadata:Term :utility)
 
 # Individual: :values (Values)
 
@@ -576,22 +576,22 @@ b) general preferences for end states or ways of acting/ guiding principle, and 
 c) we refer to values of individuals and/ or social entities (initiatives,…)?
 
 For empirical work (e.g. task 5.2) the psychological definition seems appropriate, for conceptual work (e.g. parts of task 3.3) the transition science definition seems appropriate."@en)
-AnnotationAssertion(rdfs:isDefinedBy :values top-down-common:UFZ)
+AnnotationAssertion(rdfs:isDefinedBy :values metadata:UFZ)
 AnnotationAssertion(rdfs:label :values "Values"@en)
-ClassAssertion(top-down-common:Term :values)
+ClassAssertion(metadata:Term :values)
 
 # Individual: :voluntarySimplicityLifestyle (Voluntary simplicity lifestyle)
 
 AnnotationAssertion(rdfs:label :voluntarySimplicityLifestyle "Voluntary simplicity lifestyle"@en)
 ClassAssertion(:NotInGlossary :voluntarySimplicityLifestyle)
-ClassAssertion(top-down-common:Term :voluntarySimplicityLifestyle)
+ClassAssertion(metadata:Term :voluntarySimplicityLifestyle)
 
 # Individual: :waterFootprint (Water footprint)
 
 AnnotationAssertion(rdfs:comment :waterFootprint "The volume of water consumed as a result of the delivery of a set of goods or services for final consumption, expressed in cubic meters (m3). The indicator reflects water use for agriculture and livestock, manufacturing, electricity and the direct demand for water. The water footprint can be calculated for blue water (surface, e.g. river and lakes, and groundwater), green water (rainwater), and grey water (freshwater required to assimilate the load of pollutants) consumption/extraction"@en)
-AnnotationAssertion(rdfs:isDefinedBy :waterFootprint top-down-common:NTNU)
+AnnotationAssertion(rdfs:isDefinedBy :waterFootprint metadata:NTNU)
 AnnotationAssertion(rdfs:label :waterFootprint "Water footprint"@en)
-ClassAssertion(top-down-common:Term :waterFootprint)
+ClassAssertion(metadata:Term :waterFootprint)
 
 
 )

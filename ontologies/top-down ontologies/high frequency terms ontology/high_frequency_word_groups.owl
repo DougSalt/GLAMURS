@@ -4,15 +4,15 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(top-down-common:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common#>)
+Prefix(metadata:=<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata#>)
 
 
 Ontology(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/high-frequency-terms/world-groups>
-Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/top-down-common>)
+Import(<http://www.glamurs.eu/ontologies/2016/TBOX/top-down/metadata>)
 Annotation(rdfs:isDefinedBy "Doug Salt")
 Annotation(owl:versionInfo "1.0"^^xsd:decimal)
 
-Declaration(Class(top-down-common:Term))
+Declaration(Class(metadata:Term))
 Declaration(NamedIndividual(:term:agentBasedModelling))
 Declaration(NamedIndividual(:term:anInitiative))
 Declaration(NamedIndividual(:term:appliedSocialPsychology))
@@ -229,1032 +229,1032 @@ Declaration(NamedIndividual(:term:waterUsage))
 # Individual: :term:agentBasedModelling (Agent BasedModelling)
 
 AnnotationAssertion(rdfs:label :term:agentBasedModelling "Agent BasedModelling"@en)
-ClassAssertion(top-down-common:Term :term:agentBasedModelling)
+ClassAssertion(metadata:Term :term:agentBasedModelling)
 
 # Individual: :term:anInitiative (An Initiative)
 
 AnnotationAssertion(rdfs:label :term:anInitiative "An Initiative"@en)
-ClassAssertion(top-down-common:Term :term:anInitiative)
+ClassAssertion(metadata:Term :term:anInitiative)
 
 # Individual: :term:appliedSocialPsychology (Applied SocialPsychology)
 
 AnnotationAssertion(rdfs:label :term:appliedSocialPsychology "Applied SocialPsychology"@en)
-ClassAssertion(top-down-common:Term :term:appliedSocialPsychology)
+ClassAssertion(metadata:Term :term:appliedSocialPsychology)
 
 # Individual: :term:averageHousehold (Average Household)
 
 AnnotationAssertion(rdfs:label :term:averageHousehold "Average Household"@en)
-ClassAssertion(top-down-common:Term :term:averageHousehold)
+ClassAssertion(metadata:Term :term:averageHousehold)
 
 # Individual: :term:averagePersonnelCosts (Average PersonnelCosts)
 
 AnnotationAssertion(rdfs:label :term:averagePersonnelCosts "Average PersonnelCosts"@en)
-ClassAssertion(top-down-common:Term :term:averagePersonnelCosts)
+ClassAssertion(metadata:Term :term:averagePersonnelCosts)
 
 # Individual: :term:basicPsychologicalNeeds (Basic Psychological Needs)
 
 AnnotationAssertion(rdfs:label :term:basicPsychologicalNeeds "Basic Psychological Needs"@en)
-ClassAssertion(top-down-common:Term :term:basicPsychologicalNeeds)
+ClassAssertion(metadata:Term :term:basicPsychologicalNeeds)
 
 # Individual: :term:behavioralChange (Behavioral Change)
 
 AnnotationAssertion(rdfs:label :term:behavioralChange "Behavioral Change"@en)
-ClassAssertion(top-down-common:Term :term:behavioralChange)
+ClassAssertion(metadata:Term :term:behavioralChange)
 
 # Individual: :term:behaviouralControl (Behavioural Control)
 
 AnnotationAssertion(rdfs:label :term:behaviouralControl "Behavioural Control"@en)
-ClassAssertion(top-down-common:Term :term:behaviouralControl)
+ClassAssertion(metadata:Term :term:behaviouralControl)
 
 # Individual: :term:boundedRationality (Bounded Rationality)
 
 AnnotationAssertion(rdfs:label :term:boundedRationality "Bounded Rationality"@en)
-ClassAssertion(top-down-common:Term :term:boundedRationality)
+ClassAssertion(metadata:Term :term:boundedRationality)
 
 # Individual: :term:carbonFootprint (Carbon Footprint)
 
 AnnotationAssertion(rdfs:label :term:carbonFootprint "Carbon Footprint"@en)
-ClassAssertion(top-down-common:Term :term:carbonFootprint)
+ClassAssertion(metadata:Term :term:carbonFootprint)
 
 # Individual: :term:changeInSustainability (Change In Sustainability)
 
 AnnotationAssertion(rdfs:label :term:changeInSustainability "Change In Sustainability"@en)
-ClassAssertion(top-down-common:Term :term:changeInSustainability)
+ClassAssertion(metadata:Term :term:changeInSustainability)
 
 # Individual: :term:civilSociety (Civil Society)
 
 AnnotationAssertion(rdfs:label :term:civilSociety "Civil Society"@en)
-ClassAssertion(top-down-common:Term :term:civilSociety)
+ClassAssertion(metadata:Term :term:civilSociety)
 
 # Individual: :term:cleanTechnology (Clean Technology)
 
 AnnotationAssertion(rdfs:label :term:cleanTechnology "Clean Technology"@en)
-ClassAssertion(top-down-common:Term :term:cleanTechnology)
+ClassAssertion(metadata:Term :term:cleanTechnology)
 
 # Individual: :term:cleanerProduction (Cleaner Production)
 
 AnnotationAssertion(rdfs:label :term:cleanerProduction "Cleaner Production"@en)
-ClassAssertion(top-down-common:Term :term:cleanerProduction)
+ClassAssertion(metadata:Term :term:cleanerProduction)
 
 # Individual: :term:climateChange (Climate Change)
 
 AnnotationAssertion(rdfs:label :term:climateChange "Climate Change"@en)
-ClassAssertion(top-down-common:Term :term:climateChange)
+ClassAssertion(metadata:Term :term:climateChange)
 
 # Individual: :term:climatePolicy (Climate Policy)
 
 AnnotationAssertion(rdfs:label :term:climatePolicy "Climate Policy"@en)
-ClassAssertion(top-down-common:Term :term:climatePolicy)
+ClassAssertion(metadata:Term :term:climatePolicy)
 
 # Individual: :term:clusterAnalysis (Cluster Analysis)
 
 AnnotationAssertion(rdfs:label :term:clusterAnalysis "Cluster Analysis"@en)
-ClassAssertion(top-down-common:Term :term:clusterAnalysis)
+ClassAssertion(metadata:Term :term:clusterAnalysis)
 
 # Individual: :term:codingFramework (Coding Framework)
 
 AnnotationAssertion(rdfs:label :term:codingFramework "Coding Framework"@en)
-ClassAssertion(top-down-common:Term :term:codingFramework)
+ClassAssertion(metadata:Term :term:codingFramework)
 
 # Individual: :term:cognitiveDissonance (Cognitive Dissonance)
 
 AnnotationAssertion(rdfs:label :term:cognitiveDissonance "Cognitive Dissonance"@en)
-ClassAssertion(top-down-common:Term :term:cognitiveDissonance)
+ClassAssertion(metadata:Term :term:cognitiveDissonance)
 
 # Individual: :term:collaborativeConsumption (Collaborative Consumption)
 
 AnnotationAssertion(rdfs:label :term:collaborativeConsumption "Collaborative Consumption"@en)
-ClassAssertion(top-down-common:Term :term:collaborativeConsumption)
+ClassAssertion(metadata:Term :term:collaborativeConsumption)
 
 # Individual: :term:collectiveInterest (Collective Interest)
 
 AnnotationAssertion(rdfs:label :term:collectiveInterest "Collective Interest"@en)
-ClassAssertion(top-down-common:Term :term:collectiveInterest)
+ClassAssertion(metadata:Term :term:collectiveInterest)
 
 # Individual: :term:communityArena (Community Arena)
 
 AnnotationAssertion(rdfs:label :term:communityArena "Community Arena"@en)
-ClassAssertion(top-down-common:Term :term:communityArena)
+ClassAssertion(metadata:Term :term:communityArena)
 
 # Individual: :term:comparativeAnalysis (Comparative Analysis)
 
 AnnotationAssertion(rdfs:label :term:comparativeAnalysis "Comparative Analysis"@en)
-ClassAssertion(top-down-common:Term :term:comparativeAnalysis)
+ClassAssertion(metadata:Term :term:comparativeAnalysis)
 
 # Individual: :term:conceptualFramework (Conceptual Framework)
 
 AnnotationAssertion(rdfs:label :term:conceptualFramework "Conceptual Framework"@en)
-ClassAssertion(top-down-common:Term :term:conceptualFramework)
+ClassAssertion(metadata:Term :term:conceptualFramework)
 
 # Individual: :term:consensualValidation (Consensual Validation)
 
 AnnotationAssertion(rdfs:label :term:consensualValidation "Consensual Validation"@en)
-ClassAssertion(top-down-common:Term :term:consensualValidation)
+ClassAssertion(metadata:Term :term:consensualValidation)
 
 # Individual: :term:consortiumAgreement (Consortium Agreement)
 
 AnnotationAssertion(rdfs:label :term:consortiumAgreement "Consortium Agreement"@en)
-ClassAssertion(top-down-common:Term :term:consortiumAgreement)
+ClassAssertion(metadata:Term :term:consortiumAgreement)
 
 # Individual: :term:consumerBehavior (Consumer Behavior)
 
 AnnotationAssertion(rdfs:label :term:consumerBehavior "Consumer Behavior"@en)
-ClassAssertion(top-down-common:Term :term:consumerBehavior)
+ClassAssertion(metadata:Term :term:consumerBehavior)
 
 # Individual: :term:consumerExpenditure (Consumer Expenditure)
 
 AnnotationAssertion(rdfs:label :term:consumerExpenditure "Consumer Expenditure"@en)
-ClassAssertion(top-down-common:Term :term:consumerExpenditure)
+ClassAssertion(metadata:Term :term:consumerExpenditure)
 
 # Individual: :term:consumptionExpenditure (Consumption Expenditure)
 
 AnnotationAssertion(rdfs:label :term:consumptionExpenditure "Consumption Expenditure"@en)
-ClassAssertion(top-down-common:Term :term:consumptionExpenditure)
+ClassAssertion(metadata:Term :term:consumptionExpenditure)
 
 # Individual: :term:currentConsumption (Current Consumption)
 
 AnnotationAssertion(rdfs:label :term:currentConsumption "Current Consumption"@en)
-ClassAssertion(top-down-common:Term :term:currentConsumption)
+ClassAssertion(metadata:Term :term:currentConsumption)
 
 # Individual: :term:dcModel (Dc Model)
 
 AnnotationAssertion(rdfs:label :term:dcModel "Dc Model"@en)
-ClassAssertion(top-down-common:Term :term:dcModel)
+ClassAssertion(metadata:Term :term:dcModel)
 
 # Individual: :term:directCosts (Direct Costs)
 
 AnnotationAssertion(rdfs:label :term:directCosts "Direct Costs"@en)
-ClassAssertion(top-down-common:Term :term:directCosts)
+ClassAssertion(metadata:Term :term:directCosts)
 
 # Individual: :term:directEnergy (Direct Energy)
 
 AnnotationAssertion(rdfs:label :term:directEnergy "Direct Energy"@en)
-ClassAssertion(top-down-common:Term :term:directEnergy)
+ClassAssertion(metadata:Term :term:directEnergy)
 
 # Individual: :term:discreteChoice (Discrete Choice)
 
 AnnotationAssertion(rdfs:label :term:discreteChoice "Discrete Choice"@en)
-ClassAssertion(top-down-common:Term :term:discreteChoice)
+ClassAssertion(metadata:Term :term:discreteChoice)
 
 # Individual: :term:discreteChoiceModel (Discrete Choice Model)
 
 AnnotationAssertion(rdfs:label :term:discreteChoiceModel "Discrete Choice Model"@en)
-ClassAssertion(top-down-common:Term :term:discreteChoiceModel)
+ClassAssertion(metadata:Term :term:discreteChoiceModel)
 
 # Individual: :term:disseminationStrategy (Dissemination Strategy)
 
 AnnotationAssertion(rdfs:label :term:disseminationStrategy "Dissemination Strategy"@en)
-ClassAssertion(top-down-common:Term :term:disseminationStrategy)
+ClassAssertion(metadata:Term :term:disseminationStrategy)
 
 # Individual: :term:ecologicalEconomics (Ecological Economics)
 
 AnnotationAssertion(rdfs:label :term:ecologicalEconomics "Ecological Economics"@en)
-ClassAssertion(top-down-common:Term :term:ecologicalEconomics)
+ClassAssertion(metadata:Term :term:ecologicalEconomics)
 
 # Individual: :term:ecologicalFootprint (Ecological Footprint)
 
 AnnotationAssertion(rdfs:label :term:ecologicalFootprint "Ecological Footprint"@en)
-ClassAssertion(top-down-common:Term :term:ecologicalFootprint)
+ClassAssertion(metadata:Term :term:ecologicalFootprint)
 
 # Individual: :term:ecologicallySustainable (Ecologically Sustainable)
 
 AnnotationAssertion(rdfs:label :term:ecologicallySustainable "Ecologically Sustainable"@en)
-ClassAssertion(top-down-common:Term :term:ecologicallySustainable)
+ClassAssertion(metadata:Term :term:ecologicallySustainable)
 
 # Individual: :term:economicBehavior (Economic Behavior)
 
 AnnotationAssertion(rdfs:label :term:economicBehavior "Economic Behavior"@en)
-ClassAssertion(top-down-common:Term :term:economicBehavior)
+ClassAssertion(metadata:Term :term:economicBehavior)
 
 # Individual: :term:economicCrisis (Economic Crisis)
 
 AnnotationAssertion(rdfs:label :term:economicCrisis "Economic Crisis"@en)
-ClassAssertion(top-down-common:Term :term:economicCrisis)
+ClassAssertion(metadata:Term :term:economicCrisis)
 
 # Individual: :term:egoDepletion (Ego Depletion)
 
 AnnotationAssertion(rdfs:label :term:egoDepletion "Ego Depletion"@en)
-ClassAssertion(top-down-common:Term :term:egoDepletion)
+ClassAssertion(metadata:Term :term:egoDepletion)
 
 # Individual: :term:empiricalResearch (Empirical Research)
 
 AnnotationAssertion(rdfs:label :term:empiricalResearch "Empirical Research"@en)
-ClassAssertion(top-down-common:Term :term:empiricalResearch)
+ClassAssertion(metadata:Term :term:empiricalResearch)
 
 # Individual: :term:energyConservation (Energy Conservation)
 
 AnnotationAssertion(rdfs:label :term:energyConservation "Energy Conservation"@en)
-ClassAssertion(top-down-common:Term :term:energyConservation)
+ClassAssertion(metadata:Term :term:energyConservation)
 
 # Individual: :term:energyEfficiency (Energy Efficiency)
 
 AnnotationAssertion(rdfs:label :term:energyEfficiency "Energy Efficiency"@en)
-ClassAssertion(top-down-common:Term :term:energyEfficiency)
+ClassAssertion(metadata:Term :term:energyEfficiency)
 
 # Individual: :term:energyEfficient (Energy Efficient)
 
 AnnotationAssertion(rdfs:label :term:energyEfficient "Energy Efficient"@en)
-ClassAssertion(top-down-common:Term :term:energyEfficient)
+ClassAssertion(metadata:Term :term:energyEfficient)
 
 # Individual: :term:energyIntensity (Energy Intensity)
 
 AnnotationAssertion(rdfs:label :term:energyIntensity "Energy Intensity"@en)
-ClassAssertion(top-down-common:Term :term:energyIntensity)
+ClassAssertion(metadata:Term :term:energyIntensity)
 
 # Individual: :term:energyModel (Energy Model)
 
 AnnotationAssertion(rdfs:label :term:energyModel "Energy Model"@en)
-ClassAssertion(top-down-common:Term :term:energyModel)
+ClassAssertion(metadata:Term :term:energyModel)
 
 # Individual: :term:energyPolicy (Energy Policy)
 
 AnnotationAssertion(rdfs:label :term:energyPolicy "Energy Policy"@en)
-ClassAssertion(top-down-common:Term :term:energyPolicy)
+ClassAssertion(metadata:Term :term:energyPolicy)
 
 # Individual: :term:energyRequirement (Energy Requirement)
 
 AnnotationAssertion(rdfs:label :term:energyRequirement "Energy Requirement"@en)
-ClassAssertion(top-down-common:Term :term:energyRequirement)
+ClassAssertion(metadata:Term :term:energyRequirement)
 
 # Individual: :term:energySaving (Energy Saving)
 
 AnnotationAssertion(rdfs:label :term:energySaving "Energy Saving"@en)
-ClassAssertion(top-down-common:Term :term:energySaving)
+ClassAssertion(metadata:Term :term:energySaving)
 
 # Individual: :term:environmentalActivism (Environmental Activism)
 
 AnnotationAssertion(rdfs:label :term:environmentalActivism "Environmental Activism"@en)
-ClassAssertion(top-down-common:Term :term:environmentalActivism)
+ClassAssertion(metadata:Term :term:environmentalActivism)
 
 # Individual: :term:environmentalAssessment (Environmental Assessment)
 
 AnnotationAssertion(rdfs:label :term:environmentalAssessment "Environmental Assessment"@en)
-ClassAssertion(top-down-common:Term :term:environmentalAssessment)
+ClassAssertion(metadata:Term :term:environmentalAssessment)
 
 # Individual: :term:environmentalBehaviour (Environmental Behaviour)
 
 AnnotationAssertion(rdfs:label :term:environmentalBehaviour "Environmental Behaviour"@en)
-ClassAssertion(top-down-common:Term :term:environmentalBehaviour)
+ClassAssertion(metadata:Term :term:environmentalBehaviour)
 
 # Individual: :term:environmentalConcern (Environmental Concern)
 
 AnnotationAssertion(rdfs:label :term:environmentalConcern "Environmental Concern"@en)
-ClassAssertion(top-down-common:Term :term:environmentalConcern)
+ClassAssertion(metadata:Term :term:environmentalConcern)
 
 # Individual: :term:environmentalDamage (Environmental Damage)
 
 AnnotationAssertion(rdfs:label :term:environmentalDamage "Environmental Damage"@en)
-ClassAssertion(top-down-common:Term :term:environmentalDamage)
+ClassAssertion(metadata:Term :term:environmentalDamage)
 
 # Individual: :term:environmentalEconomics (Environmental Economics)
 
 AnnotationAssertion(rdfs:label :term:environmentalEconomics "Environmental Economics"@en)
-ClassAssertion(top-down-common:Term :term:environmentalEconomics)
+ClassAssertion(metadata:Term :term:environmentalEconomics)
 
 # Individual: :term:environmentalEducation (Environmental Education)
 
 AnnotationAssertion(rdfs:label :term:environmentalEducation "Environmental Education"@en)
-ClassAssertion(top-down-common:Term :term:environmentalEducation)
+ClassAssertion(metadata:Term :term:environmentalEducation)
 
 # Individual: :term:environmentalEffects (Environmental Effects)
 
 AnnotationAssertion(rdfs:label :term:environmentalEffects "Environmental Effects"@en)
-ClassAssertion(top-down-common:Term :term:environmentalEffects)
+ClassAssertion(metadata:Term :term:environmentalEffects)
 
 # Individual: :term:environmentalFootprint (Environmental Footprint)
 
 AnnotationAssertion(rdfs:label :term:environmentalFootprint "Environmental Footprint"@en)
-ClassAssertion(top-down-common:Term :term:environmentalFootprint)
+ClassAssertion(metadata:Term :term:environmentalFootprint)
 
 # Individual: :term:environmentalImpact (Environmental Impact)
 
 AnnotationAssertion(rdfs:label :term:environmentalImpact "Environmental Impact"@en)
-ClassAssertion(top-down-common:Term :term:environmentalImpact)
+ClassAssertion(metadata:Term :term:environmentalImpact)
 
 # Individual: :term:environmentalPerformance (Environmental Performance)
 
 AnnotationAssertion(rdfs:label :term:environmentalPerformance "Environmental Performance"@en)
-ClassAssertion(top-down-common:Term :term:environmentalPerformance)
+ClassAssertion(metadata:Term :term:environmentalPerformance)
 
 # Individual: :term:environmentalPolicy (Environmental Policy)
 
 AnnotationAssertion(rdfs:label :term:environmentalPolicy "Environmental Policy"@en)
-ClassAssertion(top-down-common:Term :term:environmentalPolicy)
+ClassAssertion(metadata:Term :term:environmentalPolicy)
 
 # Individual: :term:environmentalPsychology (Environmental Psychology)
 
 AnnotationAssertion(rdfs:label :term:environmentalPsychology "Environmental Psychology"@en)
-ClassAssertion(top-down-common:Term :term:environmentalPsychology)
+ClassAssertion(metadata:Term :term:environmentalPsychology)
 
 # Individual: :term:environmentalQuality (Environmental Quality)
 
 AnnotationAssertion(rdfs:label :term:environmentalQuality "Environmental Quality"@en)
-ClassAssertion(top-down-common:Term :term:environmentalQuality)
+ClassAssertion(metadata:Term :term:environmentalQuality)
 
 # Individual: :term:environmentalSustainability (Environmental Sustainability)
 
 AnnotationAssertion(rdfs:label :term:environmentalSustainability "Environmental Sustainability"@en)
-ClassAssertion(top-down-common:Term :term:environmentalSustainability)
+ClassAssertion(metadata:Term :term:environmentalSustainability)
 
 # Individual: :term:environmentalValues (Environmental Values)
 
 AnnotationAssertion(rdfs:label :term:environmentalValues "Environmental Values"@en)
-ClassAssertion(top-down-common:Term :term:environmentalValues)
+ClassAssertion(metadata:Term :term:environmentalValues)
 
 # Individual: :term:environmentallyFriendly (Environmentally Friendly)
 
 AnnotationAssertion(rdfs:label :term:environmentallyFriendly "Environmentally Friendly"@en)
-ClassAssertion(top-down-common:Term :term:environmentallyFriendly)
+ClassAssertion(metadata:Term :term:environmentallyFriendly)
 
 # Individual: :term:environmentallyRelevant (Environmentally Relevant)
 
 AnnotationAssertion(rdfs:label :term:environmentallyRelevant "Environmentally Relevant"@en)
-ClassAssertion(top-down-common:Term :term:environmentallyRelevant)
+ClassAssertion(metadata:Term :term:environmentallyRelevant)
 
 # Individual: :term:environmentallyRelevantBehavior (Environmentally RelevantBehavior)
 
 AnnotationAssertion(rdfs:label :term:environmentallyRelevantBehavior "Environmentally RelevantBehavior"@en)
-ClassAssertion(top-down-common:Term :term:environmentallyRelevantBehavior)
+ClassAssertion(metadata:Term :term:environmentallyRelevantBehavior)
 
 # Individual: :term:environmentallyResponsible (Environmentally Responsible)
 
 AnnotationAssertion(rdfs:label :term:environmentallyResponsible "Environmentally Responsible"@en)
-ClassAssertion(top-down-common:Term :term:environmentallyResponsible)
+ClassAssertion(metadata:Term :term:environmentallyResponsible)
 
 # Individual: :term:fairTrade (Fair Trade)
 
 AnnotationAssertion(rdfs:label :term:fairTrade "Fair Trade"@en)
-ClassAssertion(top-down-common:Term :term:fairTrade)
+ClassAssertion(metadata:Term :term:fairTrade)
 
 # Individual: :term:finalConsumption (Final Consumption)
 
 AnnotationAssertion(rdfs:label :term:finalConsumption "Final Consumption"@en)
-ClassAssertion(top-down-common:Term :term:finalConsumption)
+ClassAssertion(metadata:Term :term:finalConsumption)
 
 # Individual: :term:footprintCalculator (Footprint Calculator)
 
 AnnotationAssertion(rdfs:label :term:footprintCalculator "Footprint Calculator"@en)
-ClassAssertion(top-down-common:Term :term:footprintCalculator)
+ClassAssertion(metadata:Term :term:footprintCalculator)
 
 # Individual: :term:frameworkProgramme (Framework Programme)
 
 AnnotationAssertion(rdfs:label :term:frameworkProgramme "Framework Programme"@en)
-ClassAssertion(top-down-common:Term :term:frameworkProgramme)
+ClassAssertion(metadata:Term :term:frameworkProgramme)
 
 # Individual: :term:gameTheory (Game Theory)
 
 AnnotationAssertion(rdfs:label :term:gameTheory "Game Theory"@en)
-ClassAssertion(top-down-common:Term :term:gameTheory)
+ClassAssertion(metadata:Term :term:gameTheory)
 
 # Individual: :term:globalClimate (Global Climate)
 
 AnnotationAssertion(rdfs:label :term:globalClimate "Global Climate"@en)
-ClassAssertion(top-down-common:Term :term:globalClimate)
+ClassAssertion(metadata:Term :term:globalClimate)
 
 # Individual: :term:globalEnvironmentalChange (Global Environmental Change)
 
 AnnotationAssertion(rdfs:label :term:globalEnvironmentalChange "Global Environmental Change"@en)
-ClassAssertion(top-down-common:Term :term:globalEnvironmentalChange)
+ClassAssertion(metadata:Term :term:globalEnvironmentalChange)
 
 # Individual: :term:goodLife (Good Life)
 
 AnnotationAssertion(rdfs:label :term:goodLife "Good Life"@en)
-ClassAssertion(top-down-common:Term :term:goodLife)
+ClassAssertion(metadata:Term :term:goodLife)
 
 # Individual: :term:governanceApproach (Governance Approach)
 
 AnnotationAssertion(rdfs:label :term:governanceApproach "Governance Approach"@en)
-ClassAssertion(top-down-common:Term :term:governanceApproach)
+ClassAssertion(metadata:Term :term:governanceApproach)
 
 # Individual: :term:greenEconomy (Green Economy)
 
 AnnotationAssertion(rdfs:label :term:greenEconomy "Green Economy"@en)
-ClassAssertion(top-down-common:Term :term:greenEconomy)
+ClassAssertion(metadata:Term :term:greenEconomy)
 
 # Individual: :term:greenEconomyGrant (Green Economy Grant)
 
 AnnotationAssertion(rdfs:label :term:greenEconomyGrant "Green Economy Grant"@en)
-ClassAssertion(top-down-common:Term :term:greenEconomyGrant)
+ClassAssertion(metadata:Term :term:greenEconomyGrant)
 
 # Individual: :term:greenhouseGas (Greenhouse Gas)
 
 AnnotationAssertion(rdfs:label :term:greenhouseGas "Greenhouse Gas"@en)
-ClassAssertion(top-down-common:Term :term:greenhouseGas)
+ClassAssertion(metadata:Term :term:greenhouseGas)
 
 # Individual: :term:groupIdentification (Group Identification)
 
 AnnotationAssertion(rdfs:label :term:groupIdentification "Group Identification"@en)
-ClassAssertion(top-down-common:Term :term:groupIdentification)
+ClassAssertion(metadata:Term :term:groupIdentification)
 
 # Individual: :term:healthyFood (Healthy Food)
 
 AnnotationAssertion(rdfs:label :term:healthyFood "Healthy Food"@en)
-ClassAssertion(top-down-common:Term :term:healthyFood)
+ClassAssertion(metadata:Term :term:healthyFood)
 
 # Individual: :term:householdCarbon (Household Carbon)
 
 AnnotationAssertion(rdfs:label :term:householdCarbon "Household Carbon"@en)
-ClassAssertion(top-down-common:Term :term:householdCarbon)
+ClassAssertion(metadata:Term :term:householdCarbon)
 
 # Individual: :term:householdCarbonFootprint (Household CarbonFootprint)
 
 AnnotationAssertion(rdfs:label :term:householdCarbonFootprint "Household CarbonFootprint"@en)
-ClassAssertion(top-down-common:Term :term:householdCarbonFootprint)
+ClassAssertion(metadata:Term :term:householdCarbonFootprint)
 
 # Individual: :term:householdConsumption (Household Consumption)
 
 AnnotationAssertion(rdfs:label :term:householdConsumption "Household Consumption"@en)
-ClassAssertion(top-down-common:Term :term:householdConsumption)
+ClassAssertion(metadata:Term :term:householdConsumption)
 
 # Individual: :term:householdEnergy (Household Energy)
 
 AnnotationAssertion(rdfs:label :term:householdEnergy "Household Energy"@en)
-ClassAssertion(top-down-common:Term :term:householdEnergy)
+ClassAssertion(metadata:Term :term:householdEnergy)
 
 # Individual: :term:householdEnergyUse (Household Energy Use)
 
 AnnotationAssertion(rdfs:label :term:householdEnergyUse "Household Energy Use"@en)
-ClassAssertion(top-down-common:Term :term:householdEnergyUse)
+ClassAssertion(metadata:Term :term:householdEnergyUse)
 
 # Individual: :term:householdExpenditure (Household Expenditure)
 
 AnnotationAssertion(rdfs:label :term:householdExpenditure "Household Expenditure"@en)
-ClassAssertion(top-down-common:Term :term:householdExpenditure)
+ClassAssertion(metadata:Term :term:householdExpenditure)
 
 # Individual: :term:householdIncome (Household Income)
 
 AnnotationAssertion(rdfs:label :term:householdIncome "Household Income"@en)
-ClassAssertion(top-down-common:Term :term:householdIncome)
+ClassAssertion(metadata:Term :term:householdIncome)
 
 # Individual: :term:householdProduction (Household Production)
 
 AnnotationAssertion(rdfs:label :term:householdProduction "Household Production"@en)
-ClassAssertion(top-down-common:Term :term:householdProduction)
+ClassAssertion(metadata:Term :term:householdProduction)
 
 # Individual: :term:humanDecision (Human Decision)
 
 AnnotationAssertion(rdfs:label :term:humanDecision "Human Decision"@en)
-ClassAssertion(top-down-common:Term :term:humanDecision)
+ClassAssertion(metadata:Term :term:humanDecision)
 
 # Individual: :term:humanDevelopment (Human Development)
 
 AnnotationAssertion(rdfs:label :term:humanDevelopment "Human Development"@en)
-ClassAssertion(top-down-common:Term :term:humanDevelopment)
+ClassAssertion(metadata:Term :term:humanDevelopment)
 
 # Individual: :term:humanEcology (Human Ecology)
 
 AnnotationAssertion(rdfs:label :term:humanEcology "Human Ecology"@en)
-ClassAssertion(top-down-common:Term :term:humanEcology)
+ClassAssertion(metadata:Term :term:humanEcology)
 
 # Individual: :term:humanNeeds (Human Needs)
 
 AnnotationAssertion(rdfs:label :term:humanNeeds "Human Needs"@en)
-ClassAssertion(top-down-common:Term :term:humanNeeds)
+ClassAssertion(metadata:Term :term:humanNeeds)
 
 # Individual: :term:identityTheory (Identity Theory)
 
 AnnotationAssertion(rdfs:label :term:identityTheory "Identity Theory"@en)
-ClassAssertion(top-down-common:Term :term:identityTheory)
+ClassAssertion(metadata:Term :term:identityTheory)
 
 # Individual: :term:indirectCost (Indirect Cost)
 
 AnnotationAssertion(rdfs:label :term:indirectCost "Indirect Cost"@en)
-ClassAssertion(top-down-common:Term :term:indirectCost)
+ClassAssertion(metadata:Term :term:indirectCost)
 
 # Individual: :term:indirectCosts (Indirect Costs)
 
 AnnotationAssertion(rdfs:label :term:indirectCosts "Indirect Costs"@en)
-ClassAssertion(top-down-common:Term :term:indirectCosts)
+ClassAssertion(metadata:Term :term:indirectCosts)
 
 # Individual: :term:indirectEffects (Indirect Effects)
 
 AnnotationAssertion(rdfs:label :term:indirectEffects "Indirect Effects"@en)
-ClassAssertion(top-down-common:Term :term:indirectEffects)
+ClassAssertion(metadata:Term :term:indirectEffects)
 
 # Individual: :term:indirectEnergy (Indirect Energy)
 
 AnnotationAssertion(rdfs:label :term:indirectEnergy "Indirect Energy"@en)
-ClassAssertion(top-down-common:Term :term:indirectEnergy)
+ClassAssertion(metadata:Term :term:indirectEnergy)
 
 # Individual: :term:industrialEcology (Industrial Ecology)
 
 AnnotationAssertion(rdfs:label :term:industrialEcology "Industrial Ecology"@en)
-ClassAssertion(top-down-common:Term :term:industrialEcology)
+ClassAssertion(metadata:Term :term:industrialEcology)
 
 # Individual: :term:initialOntology (Initial Ontology)
 
 AnnotationAssertion(rdfs:label :term:initialOntology "Initial Ontology"@en)
-ClassAssertion(top-down-common:Term :term:initialOntology)
+ClassAssertion(metadata:Term :term:initialOntology)
 
 # Individual: :term:initiativeLevel (Initiative Level)
 
 AnnotationAssertion(rdfs:label :term:initiativeLevel "Initiative Level"@en)
-ClassAssertion(top-down-common:Term :term:initiativeLevel)
+ClassAssertion(metadata:Term :term:initiativeLevel)
 
 # Individual: :term:initiativeSurvey (Initiative Survey)
 
 AnnotationAssertion(rdfs:label :term:initiativeSurvey "Initiative Survey"@en)
-ClassAssertion(top-down-common:Term :term:initiativeSurvey)
+ClassAssertion(metadata:Term :term:initiativeSurvey)
 
 # Individual: :term:intelligentCooking (Intelligent Cooking)
 
 AnnotationAssertion(rdfs:label :term:intelligentCooking "Intelligent Cooking"@en)
-ClassAssertion(top-down-common:Term :term:intelligentCooking)
+ClassAssertion(metadata:Term :term:intelligentCooking)
 
 # Individual: :term:intentionalCommunity (Intentional Community)
 
 AnnotationAssertion(rdfs:label :term:intentionalCommunity "Intentional Community"@en)
-ClassAssertion(top-down-common:Term :term:intentionalCommunity)
+ClassAssertion(metadata:Term :term:intentionalCommunity)
 
 # Individual: :term:landFootprint (Land Footprint)
 
 AnnotationAssertion(rdfs:label :term:landFootprint "Land Footprint"@en)
-ClassAssertion(top-down-common:Term :term:landFootprint)
+ClassAssertion(metadata:Term :term:landFootprint)
 
 # Individual: :term:legalEntity (Legal Entity)
 
 AnnotationAssertion(rdfs:label :term:legalEntity "Legal Entity"@en)
-ClassAssertion(top-down-common:Term :term:legalEntity)
+ClassAssertion(metadata:Term :term:legalEntity)
 
 # Individual: :term:lessSustainable (Less Sustainable)
 
 AnnotationAssertion(rdfs:label :term:lessSustainable "Less Sustainable"@en)
-ClassAssertion(top-down-common:Term :term:lessSustainable)
+ClassAssertion(metadata:Term :term:lessSustainable)
 
 # Individual: :term:lifestyleChange (Lifestyle Change)
 
 AnnotationAssertion(rdfs:label :term:lifestyleChange "Lifestyle Change"@en)
-ClassAssertion(top-down-common:Term :term:lifestyleChange)
+ClassAssertion(metadata:Term :term:lifestyleChange)
 
 # Individual: :term:lifestyleSatisfaction (Lifestyle Satisfaction)
 
 AnnotationAssertion(rdfs:label :term:lifestyleSatisfaction "Lifestyle Satisfaction"@en)
-ClassAssertion(top-down-common:Term :term:lifestyleSatisfaction)
+ClassAssertion(metadata:Term :term:lifestyleSatisfaction)
 
 # Individual: :term:lowCarbon (Low Carbon)
 
 AnnotationAssertion(rdfs:label :term:lowCarbon "Low Carbon"@en)
-ClassAssertion(top-down-common:Term :term:lowCarbon)
+ClassAssertion(metadata:Term :term:lowCarbon)
 
 # Individual: :term:microeconomicModel (Microeconomic Model)
 
 AnnotationAssertion(rdfs:label :term:microeconomicModel "Microeconomic Model"@en)
-ClassAssertion(top-down-common:Term :term:microeconomicModel)
+ClassAssertion(metadata:Term :term:microeconomicModel)
 
 # Individual: :term:mindfulnessMeditation (Mindfulness Meditation)
 
 AnnotationAssertion(rdfs:label :term:mindfulnessMeditation "Mindfulness Meditation"@en)
-ClassAssertion(top-down-common:Term :term:mindfulnessMeditation)
+ClassAssertion(metadata:Term :term:mindfulnessMeditation)
 
 # Individual: :term:modelRegion (Model Region)
 
 AnnotationAssertion(rdfs:label :term:modelRegion "Model Region"@en)
-ClassAssertion(top-down-common:Term :term:modelRegion)
+ClassAssertion(metadata:Term :term:modelRegion)
 
 # Individual: :term:moralNorm (Moral Norm)
 
 AnnotationAssertion(rdfs:label :term:moralNorm "Moral Norm"@en)
-ClassAssertion(top-down-common:Term :term:moralNorm)
+ClassAssertion(metadata:Term :term:moralNorm)
 
 # Individual: :term:motivatingSustainableConsumption (Motivating SustainableConsumption)
 
 AnnotationAssertion(rdfs:label :term:motivatingSustainableConsumption "Motivating SustainableConsumption"@en)
-ClassAssertion(top-down-common:Term :term:motivatingSustainableConsumption)
+ClassAssertion(metadata:Term :term:motivatingSustainableConsumption)
 
 # Individual: :term:naturalResource (Natural Resource)
 
 AnnotationAssertion(rdfs:label :term:naturalResource "Natural Resource"@en)
-ClassAssertion(top-down-common:Term :term:naturalResource)
+ClassAssertion(metadata:Term :term:naturalResource)
 
 # Individual: :term:networkData (Network Data)
 
 AnnotationAssertion(rdfs:label :term:networkData "Network Data"@en)
-ClassAssertion(top-down-common:Term :term:networkData)
+ClassAssertion(metadata:Term :term:networkData)
 
 # Individual: :term:normActivation (Norm Activation)
 
 AnnotationAssertion(rdfs:label :term:normActivation "Norm Activation"@en)
-ClassAssertion(top-down-common:Term :term:normActivation)
+ClassAssertion(metadata:Term :term:normActivation)
 
 # Individual: :term:opposingSubgroup (Opposing Subgroup)
 
 AnnotationAssertion(rdfs:label :term:opposingSubgroup "Opposing Subgroup"@en)
-ClassAssertion(top-down-common:Term :term:opposingSubgroup)
+ClassAssertion(metadata:Term :term:opposingSubgroup)
 
 # Individual: :term:organicFarming (Organic Farming)
 
 AnnotationAssertion(rdfs:label :term:organicFarming "Organic Farming"@en)
-ClassAssertion(top-down-common:Term :term:organicFarming)
+ClassAssertion(metadata:Term :term:organicFarming)
 
 # Individual: :term:organicFood (Organic Food)
 
 AnnotationAssertion(rdfs:label :term:organicFood "Organic Food"@en)
-ClassAssertion(top-down-common:Term :term:organicFood)
+ClassAssertion(metadata:Term :term:organicFood)
 
 # Individual: :term:participatoryVision (Participatory Vision)
 
 AnnotationAssertion(rdfs:label :term:participatoryVision "Participatory Vision"@en)
-ClassAssertion(top-down-common:Term :term:participatoryVision)
+ClassAssertion(metadata:Term :term:participatoryVision)
 
 # Individual: :term:perceivedBehaviouralControl (Perceived BehaviouralControl)
 
 AnnotationAssertion(rdfs:label :term:perceivedBehaviouralControl "Perceived BehaviouralControl"@en)
-ClassAssertion(top-down-common:Term :term:perceivedBehaviouralControl)
+ClassAssertion(metadata:Term :term:perceivedBehaviouralControl)
 
 # Individual: :term:policyLandscape (Policy Landscape)
 
 AnnotationAssertion(rdfs:label :term:policyLandscape "Policy Landscape"@en)
-ClassAssertion(top-down-common:Term :term:policyLandscape)
+ClassAssertion(metadata:Term :term:policyLandscape)
 
 # Individual: :term:pressureCooker (Pressure Cooker)
 
 AnnotationAssertion(rdfs:label :term:pressureCooker "Pressure Cooker"@en)
-ClassAssertion(top-down-common:Term :term:pressureCooker)
+ClassAssertion(metadata:Term :term:pressureCooker)
 
 # Individual: :term:productiveHours (Productive Hours)
 
 AnnotationAssertion(rdfs:label :term:productiveHours "Productive Hours"@en)
-ClassAssertion(top-down-common:Term :term:productiveHours)
+ClassAssertion(metadata:Term :term:productiveHours)
 
 # Individual: :term:prospectTheory (Prospect Theory)
 
 AnnotationAssertion(rdfs:label :term:prospectTheory "Prospect Theory"@en)
-ClassAssertion(top-down-common:Term :term:prospectTheory)
+ClassAssertion(metadata:Term :term:prospectTheory)
 
 # Individual: :term:publicPolicy (Public Policy)
 
 AnnotationAssertion(rdfs:label :term:publicPolicy "Public Policy"@en)
-ClassAssertion(top-down-common:Term :term:publicPolicy)
+ClassAssertion(metadata:Term :term:publicPolicy)
 
 # Individual: :term:publicSector (Public Sector)
 
 AnnotationAssertion(rdfs:label :term:publicSector "Public Sector"@en)
-ClassAssertion(top-down-common:Term :term:publicSector)
+ClassAssertion(metadata:Term :term:publicSector)
 
 # Individual: :term:purposeInLife (Purpose InLife)
 
 AnnotationAssertion(rdfs:label :term:purposeInLife "Purpose InLife"@en)
-ClassAssertion(top-down-common:Term :term:purposeInLife)
+ClassAssertion(metadata:Term :term:purposeInLife)
 
 # Individual: :term:qualitativeAnalysis (Qualitative Analysis)
 
 AnnotationAssertion(rdfs:label :term:qualitativeAnalysis "Qualitative Analysis"@en)
-ClassAssertion(top-down-common:Term :term:qualitativeAnalysis)
+ClassAssertion(metadata:Term :term:qualitativeAnalysis)
 
 # Individual: :term:quantitativeSurvey (Quantitative Survey)
 
 AnnotationAssertion(rdfs:label :term:quantitativeSurvey "Quantitative Survey"@en)
-ClassAssertion(top-down-common:Term :term:quantitativeSurvey)
+ClassAssertion(metadata:Term :term:quantitativeSurvey)
 
 # Individual: :term:reboundEffect (Rebound Effect)
 
 AnnotationAssertion(rdfs:label :term:reboundEffect "Rebound Effect"@en)
-ClassAssertion(top-down-common:Term :term:reboundEffect)
+ClassAssertion(metadata:Term :term:reboundEffect)
 
 # Individual: :term:reboundEffects (Rebound Effects)
 
 AnnotationAssertion(rdfs:label :term:reboundEffects "Rebound Effects"@en)
-ClassAssertion(top-down-common:Term :term:reboundEffects)
+ClassAssertion(metadata:Term :term:reboundEffects)
 
 # Individual: :term:reflexiveGovernance (Reflexive Governance)
 
 AnnotationAssertion(rdfs:label :term:reflexiveGovernance "Reflexive Governance"@en)
-ClassAssertion(top-down-common:Term :term:reflexiveGovernance)
+ClassAssertion(metadata:Term :term:reflexiveGovernance)
 
 # Individual: :term:regionalSustainability (Regional Sustainability)
 
 AnnotationAssertion(rdfs:label :term:regionalSustainability "Regional Sustainability"@en)
-ClassAssertion(top-down-common:Term :term:regionalSustainability)
+ClassAssertion(metadata:Term :term:regionalSustainability)
 
 # Individual: :term:renewableEnergy (Renewable Energy)
 
 AnnotationAssertion(rdfs:label :term:renewableEnergy "Renewable Energy"@en)
-ClassAssertion(top-down-common:Term :term:renewableEnergy)
+ClassAssertion(metadata:Term :term:renewableEnergy)
 
 # Individual: :term:resourceEconomics (Resource Economics)
 
 AnnotationAssertion(rdfs:label :term:resourceEconomics "Resource Economics"@en)
-ClassAssertion(top-down-common:Term :term:resourceEconomics)
+ClassAssertion(metadata:Term :term:resourceEconomics)
 
 # Individual: :term:responsibleConsumption (Responsible Consumption)
 
 AnnotationAssertion(rdfs:label :term:responsibleConsumption "Responsible Consumption"@en)
-ClassAssertion(top-down-common:Term :term:responsibleConsumption)
+ClassAssertion(metadata:Term :term:responsibleConsumption)
 
 # Individual: :term:sampleSize (Sample Size)
 
 AnnotationAssertion(rdfs:label :term:sampleSize "Sample Size"@en)
-ClassAssertion(top-down-common:Term :term:sampleSize)
+ClassAssertion(metadata:Term :term:sampleSize)
 
 # Individual: :term:scenarioDevelopment (Scenario Development)
 
 AnnotationAssertion(rdfs:label :term:scenarioDevelopment "Scenario Development"@en)
-ClassAssertion(top-down-common:Term :term:scenarioDevelopment)
+ClassAssertion(metadata:Term :term:scenarioDevelopment)
 
 # Individual: :term:seventhFrameworkProgramme (Seventh FrameworkProgramme)
 
 AnnotationAssertion(rdfs:label :term:seventhFrameworkProgramme "Seventh FrameworkProgramme"@en)
-ClassAssertion(top-down-common:Term :term:seventhFrameworkProgramme)
+ClassAssertion(metadata:Term :term:seventhFrameworkProgramme)
 
 # Individual: :term:simplicityLifestyle (Simplicity Lifestyle)
 
 AnnotationAssertion(rdfs:label :term:simplicityLifestyle "Simplicity Lifestyle"@en)
-ClassAssertion(top-down-common:Term :term:simplicityLifestyle)
+ClassAssertion(metadata:Term :term:simplicityLifestyle)
 
 # Individual: :term:socialChange (Social Change)
 
 AnnotationAssertion(rdfs:label :term:socialChange "Social Change"@en)
-ClassAssertion(top-down-common:Term :term:socialChange)
+ClassAssertion(metadata:Term :term:socialChange)
 
 # Individual: :term:socialCohesion (Social Cohesion)
 
 AnnotationAssertion(rdfs:label :term:socialCohesion "Social Cohesion"@en)
-ClassAssertion(top-down-common:Term :term:socialCohesion)
+ClassAssertion(metadata:Term :term:socialCohesion)
 
 # Individual: :term:socialContext (Social Context)
 
 AnnotationAssertion(rdfs:label :term:socialContext "Social Context"@en)
-ClassAssertion(top-down-common:Term :term:socialContext)
+ClassAssertion(metadata:Term :term:socialContext)
 
 # Individual: :term:socialDilemma (Social Dilemma)
 
 AnnotationAssertion(rdfs:label :term:socialDilemma "Social Dilemma"@en)
-ClassAssertion(top-down-common:Term :term:socialDilemma)
+ClassAssertion(metadata:Term :term:socialDilemma)
 
 # Individual: :term:socialEconomy (Social Economy)
 
 AnnotationAssertion(rdfs:label :term:socialEconomy "Social Economy"@en)
-ClassAssertion(top-down-common:Term :term:socialEconomy)
+ClassAssertion(metadata:Term :term:socialEconomy)
 
 # Individual: :term:socialIdentity (Social Identity)
 
 AnnotationAssertion(rdfs:label :term:socialIdentity "Social Identity"@en)
-ClassAssertion(top-down-common:Term :term:socialIdentity)
+ClassAssertion(metadata:Term :term:socialIdentity)
 
 # Individual: :term:socialInnovation (Social Innovation)
 
 AnnotationAssertion(rdfs:label :term:socialInnovation "Social Innovation"@en)
-ClassAssertion(top-down-common:Term :term:socialInnovation)
+ClassAssertion(metadata:Term :term:socialInnovation)
 
 # Individual: :term:socialLearning (Social Learning)
 
 AnnotationAssertion(rdfs:label :term:socialLearning "Social Learning"@en)
-ClassAssertion(top-down-common:Term :term:socialLearning)
+ClassAssertion(metadata:Term :term:socialLearning)
 
 # Individual: :term:socialMarketing (Social Marketing)
 
 AnnotationAssertion(rdfs:label :term:socialMarketing "Social Marketing"@en)
-ClassAssertion(top-down-common:Term :term:socialMarketing)
+ClassAssertion(metadata:Term :term:socialMarketing)
 
 # Individual: :term:socialNetwork (Social Network)
 
 AnnotationAssertion(rdfs:label :term:socialNetwork "Social Network"@en)
-ClassAssertion(top-down-common:Term :term:socialNetwork)
+ClassAssertion(metadata:Term :term:socialNetwork)
 
 # Individual: :term:socialNorm (Social Norm)
 
 AnnotationAssertion(rdfs:label :term:socialNorm "Social Norm"@en)
-ClassAssertion(top-down-common:Term :term:socialNorm)
+ClassAssertion(metadata:Term :term:socialNorm)
 
 # Individual: :term:socialPsychology (Social Psychology)
 
 AnnotationAssertion(rdfs:label :term:socialPsychology "Social Psychology"@en)
-ClassAssertion(top-down-common:Term :term:socialPsychology)
+ClassAssertion(metadata:Term :term:socialPsychology)
 
 # Individual: :term:socialRelations (Social Relations)
 
 AnnotationAssertion(rdfs:label :term:socialRelations "Social Relations"@en)
-ClassAssertion(top-down-common:Term :term:socialRelations)
+ClassAssertion(metadata:Term :term:socialRelations)
 
 # Individual: :term:socialResponsibility (Social Responsibility)
 
 AnnotationAssertion(rdfs:label :term:socialResponsibility "Social Responsibility"@en)
-ClassAssertion(top-down-common:Term :term:socialResponsibility)
+ClassAssertion(metadata:Term :term:socialResponsibility)
 
 # Individual: :term:socialStatus (Social Status)
 
 AnnotationAssertion(rdfs:label :term:socialStatus "Social Status"@en)
-ClassAssertion(top-down-common:Term :term:socialStatus)
+ClassAssertion(metadata:Term :term:socialStatus)
 
 # Individual: :term:socialStructure (Social Structure)
 
 AnnotationAssertion(rdfs:label :term:socialStructure "Social Structure"@en)
-ClassAssertion(top-down-common:Term :term:socialStructure)
+ClassAssertion(metadata:Term :term:socialStructure)
 
 # Individual: :term:socialSupport (Social Support)
 
 AnnotationAssertion(rdfs:label :term:socialSupport "Social Support"@en)
-ClassAssertion(top-down-common:Term :term:socialSupport)
+ClassAssertion(metadata:Term :term:socialSupport)
 
 # Individual: :term:stakeholderAnalysis (Stakeholder Analysis)
 
 AnnotationAssertion(rdfs:label :term:stakeholderAnalysis "Stakeholder Analysis"@en)
-ClassAssertion(top-down-common:Term :term:stakeholderAnalysis)
+ClassAssertion(metadata:Term :term:stakeholderAnalysis)
 
 # Individual: :term:structuralEquivalence (Structural Equivalence)
 
 AnnotationAssertion(rdfs:label :term:structuralEquivalence "Structural Equivalence"@en)
-ClassAssertion(top-down-common:Term :term:structuralEquivalence)
+ClassAssertion(metadata:Term :term:structuralEquivalence)
 
 # Individual: :term:studyExchange (Study Exchange)
 
 AnnotationAssertion(rdfs:label :term:studyExchange "Study Exchange"@en)
-ClassAssertion(top-down-common:Term :term:studyExchange)
+ClassAssertion(metadata:Term :term:studyExchange)
 
 # Individual: :term:subjectiveWellbeing (Subjective Wellbeing)
 
 AnnotationAssertion(rdfs:label :term:subjectiveWellbeing "Subjective Wellbeing"@en)
-ClassAssertion(top-down-common:Term :term:subjectiveWellbeing)
+ClassAssertion(metadata:Term :term:subjectiveWellbeing)
 
 # Individual: :term:summaryReport (Summary Report)
 
 AnnotationAssertion(rdfs:label :term:summaryReport "Summary Report"@en)
-ClassAssertion(top-down-common:Term :term:summaryReport)
+ClassAssertion(metadata:Term :term:summaryReport)
 
 # Individual: :term:supplyChain (Supply Chain)
 
 AnnotationAssertion(rdfs:label :term:supplyChain "Supply Chain"@en)
-ClassAssertion(top-down-common:Term :term:supplyChain)
+ClassAssertion(metadata:Term :term:supplyChain)
 
 # Individual: :term:sustainabilityInitiative (Sustainability Initiative)
 
 AnnotationAssertion(rdfs:label :term:sustainabilityInitiative "Sustainability Initiative"@en)
-ClassAssertion(top-down-common:Term :term:sustainabilityInitiative)
+ClassAssertion(metadata:Term :term:sustainabilityInitiative)
 
 # Individual: :term:sustainabilityTransition (Sustainability Transition)
 
 AnnotationAssertion(rdfs:label :term:sustainabilityTransition "Sustainability Transition"@en)
-ClassAssertion(top-down-common:Term :term:sustainabilityTransition)
+ClassAssertion(metadata:Term :term:sustainabilityTransition)
 
 # Individual: :term:sustainableBehavior (Sustainable Behavior)
 
 AnnotationAssertion(rdfs:label :term:sustainableBehavior "Sustainable Behavior"@en)
-ClassAssertion(top-down-common:Term :term:sustainableBehavior)
+ClassAssertion(metadata:Term :term:sustainableBehavior)
 
 # Individual: :term:sustainableBehaviour (Sustainable Behaviour)
 
 AnnotationAssertion(rdfs:label :term:sustainableBehaviour "Sustainable Behaviour"@en)
-ClassAssertion(top-down-common:Term :term:sustainableBehaviour)
+ClassAssertion(metadata:Term :term:sustainableBehaviour)
 
 # Individual: :term:sustainableConsumption (Sustainable Consumption)
 
 AnnotationAssertion(rdfs:label :term:sustainableConsumption "Sustainable Consumption"@en)
-ClassAssertion(top-down-common:Term :term:sustainableConsumption)
+ClassAssertion(metadata:Term :term:sustainableConsumption)
 
 # Individual: :term:sustainableDevelopment (Sustainable Development)
 
 AnnotationAssertion(rdfs:label :term:sustainableDevelopment "Sustainable Development"@en)
-ClassAssertion(top-down-common:Term :term:sustainableDevelopment)
+ClassAssertion(metadata:Term :term:sustainableDevelopment)
 
 # Individual: :term:sustainableEnergy (Sustainable Energy)
 
 AnnotationAssertion(rdfs:label :term:sustainableEnergy "Sustainable Energy"@en)
-ClassAssertion(top-down-common:Term :term:sustainableEnergy)
+ClassAssertion(metadata:Term :term:sustainableEnergy)
 
 # Individual: :term:sustainableEurope (Sustainable Europe)
 
 AnnotationAssertion(rdfs:label :term:sustainableEurope "Sustainable Europe"@en)
-ClassAssertion(top-down-common:Term :term:sustainableEurope)
+ClassAssertion(metadata:Term :term:sustainableEurope)
 
 # Individual: :term:sustainableFood (Sustainable Food)
 
 AnnotationAssertion(rdfs:label :term:sustainableFood "Sustainable Food"@en)
-ClassAssertion(top-down-common:Term :term:sustainableFood)
+ClassAssertion(metadata:Term :term:sustainableFood)
 
 # Individual: :term:sustainableFoodConsumption (Sustainable FoodConsumption)
 
 AnnotationAssertion(rdfs:label :term:sustainableFoodConsumption "Sustainable FoodConsumption"@en)
-ClassAssertion(top-down-common:Term :term:sustainableFoodConsumption)
+ClassAssertion(metadata:Term :term:sustainableFoodConsumption)
 
 # Individual: :term:sustainableFuture (Sustainable Future)
 
 AnnotationAssertion(rdfs:label :term:sustainableFuture "Sustainable Future"@en)
-ClassAssertion(top-down-common:Term :term:sustainableFuture)
+ClassAssertion(metadata:Term :term:sustainableFuture)
 
 # Individual: :term:sustainableHousehold (Sustainable Household)
 
 AnnotationAssertion(rdfs:label :term:sustainableHousehold "Sustainable Household"@en)
-ClassAssertion(top-down-common:Term :term:sustainableHousehold)
+ClassAssertion(metadata:Term :term:sustainableHousehold)
 
 # Individual: :term:sustainableLifestyle (Sustainable Lifestyle)
 
 AnnotationAssertion(rdfs:label :term:sustainableLifestyle "Sustainable Lifestyle"@en)
-ClassAssertion(top-down-common:Term :term:sustainableLifestyle)
+ClassAssertion(metadata:Term :term:sustainableLifestyle)
 
 # Individual: :term:sustainableLiving (Sustainable Living)
 
 AnnotationAssertion(rdfs:label :term:sustainableLiving "Sustainable Living"@en)
-ClassAssertion(top-down-common:Term :term:sustainableLiving)
+ClassAssertion(metadata:Term :term:sustainableLiving)
 
 # Individual: :term:sustainableMobility (Sustainable Mobility)
 
 AnnotationAssertion(rdfs:label :term:sustainableMobility "Sustainable Mobility"@en)
-ClassAssertion(top-down-common:Term :term:sustainableMobility)
+ClassAssertion(metadata:Term :term:sustainableMobility)
 
 # Individual: :term:sustainableSociety (Sustainable Society)
 
 AnnotationAssertion(rdfs:label :term:sustainableSociety "Sustainable Society"@en)
-ClassAssertion(top-down-common:Term :term:sustainableSociety)
+ClassAssertion(metadata:Term :term:sustainableSociety)
 
 # Individual: :term:systemChange (System Change)
 
 AnnotationAssertion(rdfs:label :term:systemChange "System Change"@en)
-ClassAssertion(top-down-common:Term :term:systemChange)
+ClassAssertion(metadata:Term :term:systemChange)
 
 # Individual: :term:systemInnovation (System Innovation)
 
 AnnotationAssertion(rdfs:label :term:systemInnovation "System Innovation"@en)
-ClassAssertion(top-down-common:Term :term:systemInnovation)
+ClassAssertion(metadata:Term :term:systemInnovation)
 
 # Individual: :term:technologicalChange (Technological Change)
 
 AnnotationAssertion(rdfs:label :term:technologicalChange "Technological Change"@en)
-ClassAssertion(top-down-common:Term :term:technologicalChange)
+ClassAssertion(metadata:Term :term:technologicalChange)
 
 # Individual: :term:technologicalForecasting (Technological Forecasting)
 
 AnnotationAssertion(rdfs:label :term:technologicalForecasting "Technological Forecasting"@en)
-ClassAssertion(top-down-common:Term :term:technologicalForecasting)
+ClassAssertion(metadata:Term :term:technologicalForecasting)
 
 # Individual: :term:technologicalProgress (Technological Progress)
 
 AnnotationAssertion(rdfs:label :term:technologicalProgress "Technological Progress"@en)
-ClassAssertion(top-down-common:Term :term:technologicalProgress)
+ClassAssertion(metadata:Term :term:technologicalProgress)
 
 # Individual: :term:technologyAnalysis (Technology Analysis)
 
 AnnotationAssertion(rdfs:label :term:technologyAnalysis "Technology Analysis"@en)
-ClassAssertion(top-down-common:Term :term:technologyAnalysis)
+ClassAssertion(metadata:Term :term:technologyAnalysis)
 
 # Individual: :term:timeAffluence (Time Affluence)
 
 AnnotationAssertion(rdfs:label :term:timeAffluence "Time Affluence"@en)
-ClassAssertion(top-down-common:Term :term:timeAffluence)
+ClassAssertion(metadata:Term :term:timeAffluence)
 
 # Individual: :term:timeScarcity (Time Scarcity)
 
 AnnotationAssertion(rdfs:label :term:timeScarcity "Time Scarcity"@en)
-ClassAssertion(top-down-common:Term :term:timeScarcity)
+ClassAssertion(metadata:Term :term:timeScarcity)
 
 # Individual: :term:timeSeries (Time Series)
 
 AnnotationAssertion(rdfs:label :term:timeSeries "Time Series"@en)
-ClassAssertion(top-down-common:Term :term:timeSeries)
+ClassAssertion(metadata:Term :term:timeSeries)
 
 # Individual: :term:timeUseSurvey (Time UseSurvey)
 
 AnnotationAssertion(rdfs:label :term:timeUseSurvey "Time UseSurvey"@en)
-ClassAssertion(top-down-common:Term :term:timeUseSurvey)
+ClassAssertion(metadata:Term :term:timeUseSurvey)
 
 # Individual: :term:totalEnergy (Total Energy)
 
 AnnotationAssertion(rdfs:label :term:totalEnergy "Total Energy"@en)
-ClassAssertion(top-down-common:Term :term:totalEnergy)
+ClassAssertion(metadata:Term :term:totalEnergy)
 
 # Individual: :term:transitionManagement (Transition Management)
 
 AnnotationAssertion(rdfs:label :term:transitionManagement "Transition Management"@en)
-ClassAssertion(top-down-common:Term :term:transitionManagement)
+ClassAssertion(metadata:Term :term:transitionManagement)
 
 # Individual: :term:urbanAgriculture (Urban Agriculture)
 
 AnnotationAssertion(rdfs:label :term:urbanAgriculture "Urban Agriculture"@en)
-ClassAssertion(top-down-common:Term :term:urbanAgriculture)
+ClassAssertion(metadata:Term :term:urbanAgriculture)
 
 # Individual: :term:urbanArea (Urban Area)
 
 AnnotationAssertion(rdfs:label :term:urbanArea "Urban Area"@en)
-ClassAssertion(top-down-common:Term :term:urbanArea)
+ClassAssertion(metadata:Term :term:urbanArea)
 
 # Individual: :term:urbanPlanning (Urban Planning)
 
 AnnotationAssertion(rdfs:label :term:urbanPlanning "Urban Planning"@en)
-ClassAssertion(top-down-common:Term :term:urbanPlanning)
+ClassAssertion(metadata:Term :term:urbanPlanning)
 
 # Individual: :term:utilityFunction (Utility Function)
 
 AnnotationAssertion(rdfs:label :term:utilityFunction "Utility Function"@en)
-ClassAssertion(top-down-common:Term :term:utilityFunction)
+ClassAssertion(metadata:Term :term:utilityFunction)
 
 # Individual: :term:visionDevelopment (Vision Development)
 
 AnnotationAssertion(rdfs:label :term:visionDevelopment "Vision Development"@en)
-ClassAssertion(top-down-common:Term :term:visionDevelopment)
+ClassAssertion(metadata:Term :term:visionDevelopment)
 
 # Individual: :term:voluntarySimplicity (Voluntary Simplicity)
 
 AnnotationAssertion(rdfs:label :term:voluntarySimplicity "Voluntary Simplicity"@en)
-ClassAssertion(top-down-common:Term :term:voluntarySimplicity)
+ClassAssertion(metadata:Term :term:voluntarySimplicity)
 
 # Individual: :term:voluntarySimplicityLifestyle (Voluntary SimplicityLifestyle)
 
 AnnotationAssertion(rdfs:label :term:voluntarySimplicityLifestyle "Voluntary SimplicityLifestyle"@en)
-ClassAssertion(top-down-common:Term :term:voluntarySimplicityLifestyle)
+ClassAssertion(metadata:Term :term:voluntarySimplicityLifestyle)
 
 # Individual: :term:waterUsage (Water Usage)
 
 AnnotationAssertion(rdfs:label :term:waterUsage "Water Usage"@en)
-ClassAssertion(top-down-common:Term :term:waterUsage)
+ClassAssertion(metadata:Term :term:waterUsage)
 
 
 )
